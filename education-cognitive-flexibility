@@ -1,0 +1,74 @@
+title education - cognitive flexibility
+// Groups to add
+component systems of education [0.92, 0.32] label [-84, -29]
+component policy [0.88, 0.37] label [12, -9]
+component Government [0.99, 0.39] label [-46, -13]
+component regulators [0.77, 0.05] label [-46, -14]
+component schools [0.98, 0.50] label [-8, -9]
+component fees [0.93, 0.48] label [-34, -9]
+component scoring [0.54, 0.06] label [-9, -12]
+// purpose
+component learner motivation [0.88, 0.66] label [4, -5]
+component goal [0.86, 0.90] label [-27, -13]
+component purpose [0.96, 0.89]
+// curriculum concepts
+component formal [0.82, 0.08]
+component informal [0.76, 0.08]
+component geography [0.85, 0.04] label [-17, -16]
+component culture [0.69, 0.07] label [-26, -11]
+component learning objectives [0.81, 0.56] label [-72, -11]
+//knowledge types
+component specialised [0.11, 0.70]
+component generalised [0.15, 0.79] label [6, 17]
+component knowledge [0.08, 0.77]
+/// basic
+component teachers [0.97, 0.59] label [5, -10]
+component student [0.95, 0.68] label [-10, -10]
+component curriculum [0.89, 0.59] label [-69, 4]
+component test [0.28, 0.72]
+component corporation [0.97, 0.75]
+component skills [0.87, 0.75]
+// subject
+component content [0.78, 0.63]
+pipeline content [0.2, 0.8]
+component new [0.76, 0.30] label [-4, -15]
+component established [0.76, 0.73] label [-3, -14]
+// delivery
+component delivery [0.63, 0.64] label [11, -9]
+pipeline delivery [0.2, 0.8]
+component online [0.61, 0.69] label [1, 29]
+component campus [0.61, 0.41] label [-22, -20]
+/// models
+component learning [0.48, 0.55] label [-52, -15]
+pipeline learning [0.2, 0.8]
+component awareness [0.46, 0.66] label [-11, -16]
+component exploration [0.46, 0.58] label [-44, 32]
+component repetiition [0.46, 0.62] label [-5, 32]
+component understanding [0.46, 0.41] label [-83, 26]
+/// methods
+component critical thinking [0.17, 0.41]
+component metacognition [0.28, 0.39]
+component self reflection [0.15, 0.38] label [-58, -2]
+// links
+corporation->skills
+skills->repetiition
+repetiition->test
+student->curriculum
+teachers->curriculum
+curriculum->content
+content->delivery
+content->learning
+understanding->metacognition
+metacognition->critical thinking
+metacognition->self reflection
+established->repetiition
+new->understanding
+skills->test
+content->understanding
+student->skills
+curriculum->learning objectives
+schools->fees
+Government->systems of education
+systems of education->policy
+Government->policy
+student->learner motivation
