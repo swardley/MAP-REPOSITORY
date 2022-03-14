@@ -1,0 +1,81 @@
+title Telecoms - Space
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+//additions
+component device [0.90, 0.09] label [12, 0]
+component routing [0.78, 0.09] label [10, 1]
+component peering [0.84, 0.09] label [9, 1]
+component data access [0.72, 0.09] label [10, 5]
+component backbone [0.66, 0.09] label [16, 2]
+//Basics
+component consumer [0.95, 0.67] label [5, -10]
+component corporation [0.99, 0.53] label [-55, -10]
+component collaboration [0.86, 0.71] label [2, 14]
+component learning [0.88, 0.67] label [-50, -6]
+component social [0.79, 0.61] label [-46, -3]
+component space [0.64, 0.69] label [10, -4]
+component government [0.99, 0.60]
+component maintenance [0.05, 0.61] label [-88, 7]
+component land [0.05, 0.49] label [-15, 16]
+// Social and Space
+pipeline social [0.42, 0.73]
+component physical practices [0.77, 0.68] label [-10, 14]
+component virtual practices [0.77, 0.46] label [-40, 16]
+pipeline space [0.51, 0.76]
+component physical space [0.62, 0.56] label [-100, -16]
+component virtual space [0.62, 0.71] label [12, 24]
+component geography [0.07, 0.42] label [-77, 10]
+//Network
+component network access [0.48, 0.70] label [10, -6]
+pipeline network access [0.44, 0.77]
+component physical network [0.46, 0.64] label [-64, -25]
+component broadcast [0.46, 0.72] label [-28, 26]
+component topology [0.35, 0.64] label [-47, -13]
+component groundstation [0.25, 0.60] label [-70, -13]
+// Network Analysis
+pipeline topology [0.3, 0.8]
+component 5G [0.33, 0.43] label [2, 23]
+component fibre [0.33, 0.37] label [-28, 26]
+component satellite [0.33, 0.71] label [8, 24]
+// Network components
+component fibre [0.33, 0.37] label [-28, 26]
+component masts [0.15, 0.70] label [9, 7]
+component cubesat [0.25, 0.65] label [-39, 16]
+component wire [0.11, 0.70] label [3, 11]
+component launchers [0.24, 0.68] label [-11, 17]
+component mesh network [0.46, 0.48] label [-40, -18]
+fibre->wire
+5G->masts
+masts->geography
+wire->geography
+satellite->cubesat
+network access ->topology
+physical network->fibre
+virtual practices->virtual space
+physical practices->physical space
+physical space->geography
+socialisation->social
+collaboration->social
+work->collaboration
+work->socialisation
+consumer->work
+virtual space->network access
+social->space
+consumer->status
+status->physical space
+status->physical practices
+physical space->network access
+fibre->geography
+5G->geography
+launchers->satellite
+consumer->government
+government->network access
+consumer->learning
+learning->social
+broadcast->satellite
+broadcast->5G
+corporation->network access
+satellite->groundstation
+masts->maintenance
+wire->maintenance
+masts->land
+consumer->collaboration
