@@ -1,0 +1,57 @@
+title Government - Digital Identity
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
+///actors
+component citizen [0.93, 0.71] label [11, 0]
+component government [0.98, 0.62]
+component corporations [0.95, 0.55] label [-61, -10]
+// To add
+component community [0.64, 0.09]
+component ownership [0.72, 0.09]
+component property [0.80, 0.09]
+component power with [0.88, 0.10]
+component power to [0.56, 0.09]
+/// Need
+component services [0.84, 0.71] label [13, 6]
+component identity [0.73, 0.68] label [-41, -9]
+pipeline identity [0.45, 0.75]
+component multifaceted [0.71, 0.52] label [-52, 26]
+component centralised paper [0.71, 0.63] label [-58, -38]
+component digital identity [0.71, 0.71] label [-24, 16]
+component governance [0.80, 0.50] label [-75, -11]
+component regulation [0.26, 0.58] label [-47, 22]
+/// Practice of
+component biometric [0.51, 0.74]
+component storage [0.15, 0.74] label [12, -4]
+/// Trust
+component trust [0.22, 0.64]
+component narratives [0.11, 0.60] label [5, 17]
+component avoiding harm [0.61, 0.66] label [-94, 1]
+component ethics [0.24, 0.45] label [-41, -8]
+component privacy [0.38, 0.70] label [-27, -15]
+component freedom [0.30, 0.68] label [11, 9]
+/// power
+component power over [0.54, 0.53] label [-30, 20]
+component self sovereign [0.38, 0.37] label [-80, -13]
+//links
+government->citizen
+government->services
+citizen->services
+services->identity
+identity->biometric
+identity->avoiding harm
+avoiding harm->regulation
+governance->avoiding harm
+governance->government
+avoiding harm->privacy
+avoiding harm->trust
+trust->narratives
+biometric->storage
+avoiding harm->ethics
+narratives->ethics
+avoiding harm->freedom
+avoiding harm->power over
+power over->self sovereign
+citizen->power over
+government->power over
+corporations->power over
+citizen->self sovereign
