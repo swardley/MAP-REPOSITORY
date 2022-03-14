@@ -1,0 +1,62 @@
+title Energy - reliability of supply
+
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
+title Energy
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+// components to added
+component regulation [0.80, 0.05]
+component energy policy [0.88, 0.05]
+// end user
+component consumers [0.88, 0.63]
+component industrial [0.86, 0.52] label [-52, 16]
+component Government [0.97, 0.51] label [-38, -16]
+// transmission
+component transmission [0.78, 0.55] label [17, 0]
+component storage [0.68, 0.47] label [-52, -12]
+// output power
+component output fuel [0.64, 0.70] label [-27, -21]
+pipeline output fuel [0.6, 0.79]
+component electricity [0.62, 0.71] label [-16, 27]
+component hydrocarbon [0.62, 0.64] label [-61, 26]
+component heat [0.62, 0.74] label [2, -18]
+// input fuel types
+component input fuel [0.23, 0.65] label [-59, -13]
+pipeline input fuel [0.52, 0.74]
+component renewable [0.21, 0.60] label [-13, 26]
+component nuclear [0.21, 0.56] label [-28, 28]
+component fossil [0.21, 0.69] label [10, -15]
+// generator
+component generator [0.32, 0.58] label [-42, -13]
+pipeline generator [0.36, 0.74]
+component wind turbine [0.30, 0.69] label [-1, -15]
+component gas turbine [0.30, 0.41] label [-9, -15]
+// generation
+component generation [0.46, 0.62] label [-71, -3]
+pipeline generation [0.53, 0.73]
+component decentralised [0.44, 0.57] label [-34, 30]
+component centralised [0.44, 0.67] label [1, -19]
+// security
+component security [0.13, 0.28] label [-54, -8]
+component bad actors [0.08, 0.21] label [-84, -5]
+component geopolitical risk [0.04, 0.37] label [-81, -11]
+component CNI [0.30, 0.24] label [-34, 6]
+component climate changes [0.06, 0.40]
+// links
+industrial->transmission
+consumers->transmission
+transmission->output fuel
+output fuel->generation
+generation->generator
+generator->input fuel
+transmission->storage
+transmission->security
+output fuel->security
+generation->security
+generator->security
+input fuel->security
+security->bad actors
+security->geopolitical risk
+Government->CNI
+security->CNI
+climate changes->security
+Government->consumers
