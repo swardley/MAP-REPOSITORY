@@ -1,0 +1,87 @@
+title construction supply chains
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+//actors
+component purchasor [0.89, 0.65]
+component government [0.96, 0.57]
+component mortgage company [0.96, 0.49] label [-71, -16]
+// components
+component equipment [0.68, 0.64] label [6, -11]
+pipeline equipment [0.52, 0.74]
+component vehicles [0.66, 0.68] label [-21, 26]
+component building materials [0.52, 0.61]
+pipeline building materials [0.4, 0.75]
+component labour [0.74, 0.10]
+component test driven development [0.06, 0.46] label [3, -19]
+component factory mode [0.10, 0.35] label [-73, -11]
+component modular tests [0.17, 0.58] label [7, -16]
+component spot market [0.60, 0.10]
+component hedge [0.67, 0.10]
+component monopoly [0.55, 0.70] label [14, 3]
+component control [0.42, 0.47] label [-31, -10]
+component tradeoffs [0.29, 0.32] label [-67, -2]
+component stock [0.73, 0.75]
+component market [0.65, 0.79]
+component sourcing [0.04, 0.67] label [-68, 7]
+//
+component construction [0.83, 0.60] label [-87, -8]
+component manufacture [0.17, 0.68] label [16, 7]
+component raw materials [0.11, 0.67] label [16, -3]
+component maintenance [0.37, 0.57] label [-63, -11]
+component decomission [0.23, 0.44] label [-42, -21]
+component blueprint [0.64, 0.47] label [-58, -9]
+component planning permission [0.39, 0.39] label [-72, -12]
+component assurance [0.70, 0.33] label [-70, -9]
+component finance [0.81, 0.72]
+component past examples [0.24, 0.54] label [-83, 17]
+component testing [0.32, 0.59] label [7, 10]
+component prefab [0.50, 0.49] label [-39, -16]
+component regulation [0.19, 0.38] label [-71, -7]
+//links
+government->buyer
+buyer->building
+purchasor->finance
+government->purchasor
+purchasor->building
+building->equipment
+equipment->building
+purchasor->construction
+construction->equipment
+construction->building materials
+mortgage company->finance
+mortgage company->assurance
+construction->blueprint
+construction->maintenance
+building materials->manufacture
+manufacture->building materials
+government->assurance
+assurance->planning permission
+planning permission->past examples
+manufacture->raw materials
+building materials->decomission
+decomission->building materials
+maintenance->testing
+testing->past examples
+blueprint->blueprint
+blueprint->planning permission
+planning permission->regulation
+decomission->regulation
+planning permission->tradeoffs
+tradeoffs->regulation
+construction->stock
+building materials->control
+control->building materials
+control->planning permission
+stock->market
+market->finance
+market->monopoly
+monopoly->market
+finance->stock
+raw materials->sourcing
+building materials->testing
+building materials->testing
+testing->building materials
+testing->modular tests
+prefab->modular tests
+modular tests->test driven development
+modular tests->factory mode
+test driven development->factory mode
