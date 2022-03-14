@@ -1,0 +1,64 @@
+title defence- supply chain
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+//actors
+component manufacturer [1.00, 0.57] label [-89, 4]
+component Government [0.98, 0.74]
+//Things to add
+component trust [0.90, 0.10]
+component heirarchy [0.84, 0.10]
+component sensors [0.79, 0.10]
+//Chain
+component sanctions [0.70, 0.60] label [-32, 27]
+component acqusition [0.88, 0.47] label [-38, -16]
+component logistics [0.46, 0.65] label [2, -6]
+component supply chain [0.41, 0.68] label [3, -11]
+pipeline supply chain [0.46, 0.75]
+component centralised [0.39, 0.70] label [-13, 28]
+component decentralised [0.39, 0.51] label [-49, -19]
+component costs [0.20, 0.59] label [-26, -9]
+component experience [0.32, 0.43] label [-15, -11]
+component situational awareness [0.28, 0.37] label [-71, -27]
+pipeline situational awareness [0.27, 0.45]
+component co-ordination [0.17, 0.65] label [19, 4]
+component air support [0.03, 0.65]
+component tactics [0.49, 0.54] label [-49, -6]
+component sourcing [0.14, 0.58] label [-64, -7]
+pipeline sourcing [0.34, 0.68]
+component domestic [0.12, 0.63] label [-36, 23]
+component bespoke [0.12, 0.38] label [-37, -15]
+component materials [0.04, 0.59] label [-62, 11]
+component manufacture [0.79, 0.52] label [-84, 3]
+component conflict [0.88, 0.67] label [6, 27]
+component capability [0.79, 0.68] label [10, -1]
+component kinetic [0.70, 0.68] label [-3, 29]
+component competition [0.90, 0.65] label [-8, -16]
+pipeline competition [0.39, 0.72]
+component delivery [0.60, 0.63] label [8, -5]
+pipeline delivery [0.46, 0.71]
+component Theatre [0.72, 0.66] label [3, -10]
+pipeline Theatre [0.47, 0.72]
+component technology [0.58, 0.50] label [-40, -19]
+component organic [0.58, 0.66] label [-2, 26]
+component assurance [0.04, 0.47] label [-61, -13]
+component collaboration [0.88, 0.62] label [-71, -13]
+//relationships
+manufacturer->manufacture
+Government->competition
+conflict->capability
+capability->Theatre
+kinetic->delivery
+delivery->logistics
+delivery->tactics
+logistics->supply chain
+supply chain->co-ordination
+co-ordination->air support
+supply chain->situational awareness
+supply chain->sourcing
+sourcing->assurance
+sourcing->materials
+manufacture->sourcing
+acqusition->manufacture
+supply chain->costs
+decentralised->experience
+conflict->situational awareness
+situational awareness->kinetic (edited) 
