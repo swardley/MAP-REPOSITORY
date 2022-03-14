@@ -1,0 +1,74 @@
+title regenerative farming
+
+//axis
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+
+//components to add
+component nutrient desnity [0.83, 0.20]
+component preservation [0.82, 0.36]
+component fresh [0.89, 0.20]
+
+// uses
+component supermarket [0.91, 0.65] label [-77, -12]
+component farmer [0.59, 0.66] label [-54, 0]
+component consumer [0.95, 0.71] label [-23, -17]
+component profit [0.86, 0.74]
+component quality [0.62, 0.76]
+component standardised [0.71, 0.69] label [-83, -6]
+component logistics [0.82, 0.68] label [-7, -14]
+
+// Needs
+component Food [0.77, 0.73] label [11, 2]
+component soil [0.54, 0.73]
+
+// Practice
+component farming practice [0.47, 0.65] label [-74, -26]
+pipeline farming practice [0.3, 0.80]
+component regenerative [0.45, 0.35] label [-22, -19]
+component traditional practice [0.45, 0.72] label [4, 13]
+
+// Crop
+component crop [0.33, 0.70] label [-41, -4]
+pipeline crop [0.4, 0.8]
+component monoculture [0.31, 0.72] label [-7, -15]
+component diversity [0.31, 0.50] label [-57, -19]
+component rotation [0.31, 0.66] label [-41, 25]
+// Energy matrix
+component energy matrix [0.21, 0.71] label [-6, -12]
+pipeline energy matrix [0.6, 0.8]
+component microbes [0.11, 0.68] label [-65, -3]
+component photosynthesis [0.19, 0.66] label [-72, -18]
+component microbial quorum [0.08, 0.39] label [-68, -19]
+component solar [0.03, 0.72] label [7, 17]
+component signalling [0.03, 0.32] label [-63, -8]
+component synthetics [0.19, 0.69] label [5, 25]
+component petrochemical [0.12, 0.72] label [15, -3]
+// links
+soil->farming practice
+soil->regenerative farming
+regenerative farming->microbes
+microbes->microbial quorum
+microbial quorum->signalling
+petrochemical->synthetics
+regenerative->photosynthesis
+farming practice->energy matrix
+crop->farming practice
+Food->crop
+Food->soil
+traditional practice->monoculture
+diversity->regenerative
+monoculture->synthetics
+microbial quorum->solar
+photosynthesis->microbes
+regenerative->microbial quorum
+supermarket->farmer
+Food->farmer
+consumer->Food
+consumer->supermarket
+supermarket->profit
+Food->quality
+profit->standardised
+standardised->quality
+logistics->supermarket
+logistics->standardised
+farmer->farming practice
