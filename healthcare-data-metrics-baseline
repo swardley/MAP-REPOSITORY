@@ -1,0 +1,64 @@
+title healthcare - Data, Metrics and Baselines
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+// components to add
+component wellness [0.71, 0.10]
+component drugs [0.64, 0.10] label [5, -10]
+component pharma [0.48, 0.10]
+component authority [0.82, 0.47] label [-56, -7]
+component status [0.56, 0.10]
+component issuance of drug [0.41, 0.10]
+component TCO [0.78, 0.10]
+component purpose [0.30, 0.10]
+component primary care [0.24, 0.10]
+component mental health [0.18, 0.10]
+component clinicians [0.91, 0.59] label [-34, -11]
+component insurance [0.91, 0.65] label [-28, -11]
+component regulators [0.98, 0.57] label [-49, -16]
+component cofactors [0.84, 0.69] label [11, -2]
+component patients [0.98, 0.70] label [-2, -12]
+component outcome [0.83, 0.59] label [-62, 7]
+component Health [0.90, 0.68] label [10, 7]
+component treatment [0.65, 0.55] label [-61, -10]
+pipeline treatment [0.42, 0.67]
+component KPIs [0.72, 0.64] label [13, 4]
+component medical software [0.56, 0.42] label [-69, -13]
+component medical devices [0.53, 0.46] label [6, -2]
+component translation [0.47, 0.40] label [-70, -8]
+component definitions [0.10, 0.39] label [-72, 0]
+component data model [0.26, 0.44] label [-76, -6]
+component coding standards [0.19, 0.46] label [9, -31]
+component codes of practice [0.14, 0.55] label [2, -15]
+component Healthcare Records [0.39, 0.46] label [14, -32]
+pipeline Healthcare Records [0.35, 0.58]
+component EHR [0.37, 0.48] label [-14, 30]
+component paper [0.37, 0.40] label [-19, 29]
+component geography [0.04, 0.41] label [-73, 0]
+patients->patients
+clinicians->KPIs
+KPIs->codes of practice
+outcome->treatment
+clinicians->treatment
+treatment->medical devices
+treatment->medical software
+insurance->treatment
+KPIs->treatment
+medical devices->translation
+medical software->translation
+translation->Healthcare Records
+Healthcare Records->data model
+data model->coding standards
+coding standards->definitions
+data model->geography
+coding standards->codes of practice
+outcome->KPIs
+regulators->outcome
+insurance->KPIs
+codes of practice->geography
+clinicians->outcome
+patients->Health
+Health->outcome
+Health->cofactors
+clinicians->authority
+authority->codes of practice
+regulators->clinicians
+regulators->insurance
