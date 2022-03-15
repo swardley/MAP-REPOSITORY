@@ -1,0 +1,89 @@
+title education - purpose
+
+//actors
+// component students [0.90, 0.66]
+component government [0.99, 0.64] label [8, -14]
+component society [0.99, 0.59] label [-13, -11]
+
+//component
+// component pattern [0.48, 0.65]
+// component survival [0.51, 0.80]
+// component pattern recognition [0.63, 0.75]
+// component social skills [0.60, 0.60]
+// component metacognition [0.48, 0.51]
+// component debate [0.68, 0.50]
+
+
+component law and order [0.97, 0.72]
+
+component teaching establishment [0.56, 0.59] label [-51, -37]
+pipeline teaching establishment [0.3, 0.8]
+component university [0.54, 0.36] label [-16, -21]
+component tradeschool [0.54, 0.51] label [-72, -18]
+component highschool [0.54, 0.65] label [-59, 31]
+// component primary school [0.88, 0.71] label [-3, -24]
+
+component educators [0.69, 0.62] label [-35, -16]
+pipeline educators [0.23, 0.8]
+// component researchers [0.78, 0.27] label [-37, -17]
+component professors [0.67, 0.29] label [-26, -16]
+// component lecturers [0.78, 0.39] label [3, -19]
+component trade teachers [0.67, 0.47] label [3, -16]
+component secondary teachers [0.67, 0.69] label [6, -18]
+// component primary teachers [0.78, 0.71] label [9, -31]
+
+component stages of learning [0.83, 0.57] label [-65, -44]
+pipeline stages of learning [0.30, 0.8]
+// component preschool [0.57, 0.77] label [37, -21]
+// component primary [0.57, 0.75] label [5, -19]
+// component secondary [0.57, 0.66] label [-36, -23]
+// component undergrad [0.57, 0.49] label [-39, 27]
+component vocational [0.81, 0.65] label [-3, 29]
+component postgrad [0.81, 0.46] label [-28, -18]
+// component doctorate [0.57, 0.37] label [-48, -23]
+component research [0.81, 0.37] label [-39, 22]
+
+
+component social cohesion [0.93, 0.73] label [5, -16]
+component learning to learning [0.45, 0.39] label [8, -3]
+component base skills [0.81, 0.72] label [10, -16]
+component base understanding [0.45, 0.72] label [14, 3]
+component menial work [0.33, 0.71]
+pipeline menial work [0.65, 0.86]
+component skilled labour [0.18, 0.61] label [5, -10]
+pipeline skilled labour [0.54, 0.75]
+component trades [0.08, 0.53]
+pipeline trades [0.39, 0.73]
+component professions [0.32, 0.49] label [21, -12]
+pipeline professions [0.3, 0.55]
+component GDP [0.92, 0.65] label [11, 5]
+// component New tech [0.11, 0.20]
+// component New business models [0.22, 0.29]
+
+
+component societal improvement [0.93, 0.58] label [-84, -26]
+
+
+// links
+government->societal improvement
+government->GDP
+social cohesion->stages of learning
+societal improvement->stages of learning
+teaching establishment->educators
+social cohesion->base skills
+stages of learning->educators
+teaching establishment->stages of learning
+GDP->stages of learning
+vocational->base understanding
+vocational->menial work
+highschool->base understanding
+base skills->base understanding
+university->learning to learning
+tradeschool->professions
+professions->skilled labour
+professions->trades
+GDP->vocational
+vocational->tradeschool
+society->societal improvement
+government->law and order
+law and order->social cohesion
