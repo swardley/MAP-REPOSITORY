@@ -1,0 +1,89 @@
+title agriculture - food waste
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+
+note unsed [0.25, 0.11]
+component food health [0.20, 0.05] label [13, -1]
+component satellite [0.16, 0.05] label [18, 1]
+component land use [0.12, 0.05] label [17, 3]
+component yield [0.21, 0.15] label [12, 3]
+component forecast [0.17, 0.15] label [10, 5]
+component farmer [0.12, 0.15] label [12, 4]
+component localisation [0.07, 0.05] label [13, 4]
+component biodiversity [0.08, 0.15] label [12, 3]
+component diet [0.02, 0.05]
+
+// main components
+component consumer [0.84, 0.71]
+component options [0.76, 0.72] label [7, -6]
+component food [0.61, 0.65] label [-32, -9]
+pipeline food [0.54, 0.76]
+component staples [0.59, 0.71] label [-41, 23]
+component luxury [0.59, 0.58] label [-25, 24]
+
+component standard [0.45, 0.52] label [-49, 21]
+component quality check [0.24, 0.56] label [-84, 15]
+component waste [0.18, 0.65]
+pipeline waste [0.35, 0.73]
+
+component unrecycled [0.16, 0.68] label [-3, 24]
+component sustainable [0.16, 0.39] label [-16, 27]
+
+component logistic [0.47, 0.62] label [-51, -4]
+component tranportation [0.35, 0.58] label [-83, -2]
+component warehousing [0.32, 0.62] label [-5, 24]
+component energy [0.10, 0.66] label [2, 14]
+component carbon footprint [0.03, 0.56] label [-66, -15]
+
+component supermarket [0.86, 0.65] label [-45, -12]
+component trade [0.66, 0.73] label [9, -3]
+component exclusion [0.47, 0.73] label [-8, 20]
+
+component government [0.98, 0.64] label [-34, -9]
+component food security [0.94, 0.57] label [-50, -15]
+component policy [0.88, 0.53] label [-43, -9]
+
+component society [0.95, 0.69]
+component social norms [0.75, 0.47] label [-65, -12]
+component education [0.70, 0.58] label [-53, 18]
+component visibility [0.63, 0.43] label [-53, -6]
+component welfare [0.70, 0.27] label [-51, -9]
+
+
+// links
+supermarket->food
+supermarket->consumer
+food->standard
+quality check->standard
+food->logistic
+logistic->tranportation
+logistic->warehousing
+quality check->waste
+tranportation->energy
+food->energy
+waste->energy
+warehousing->quality check
+tranportation->quality check
+consumer->options
+options->food
+government->consumer
+government->food security
+food security->staples
+options->trade
+trade->supermarket
+luxury->exclusion
+exclusion->trade
+energy->carbon footprint
+unrecycled->carbon footprint
+food security->policy
+policy->standard
+policy->education
+consumer->education
+government->society
+society->consumer
+society->social norms
+social norms->education
+education->food
+social norms->visibility
+social norms->welfare
+policy->welfare
+welfare->sustainable
