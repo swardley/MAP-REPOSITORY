@@ -1,0 +1,79 @@
+title healthcare - ethics
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+
+//actors
+component commercial [0.98, 0.64] label [2, -9]
+component lobbyists [0.85, 0.47] label [-40, -11]
+component public health [0.86, 0.60] label [-57, 23]
+component citizens [0.91, 0.75]
+component media [0.85, 0.68] label [-6, -10]
+component government [0.97, 0.56] label [-59, -15]
+component society [0.94, 0.39] label [-53, -3]
+
+note unused [0.27, 0.04]
+component research [0.22, 0.06] label [10, 2]
+component population [0.12, 0.06] label [14, 3]
+component preventative healthcare [0.07, 0.06] label [20, -7]
+component locality [0.17, 0.06] label [14, 1]
+component research ethics [0.43, 0.39] label [-41, 19]
+component clinical code of practice [0.26, 0.23] label [-65, -21]
+component inequality [0.16, 0.23] label [-70, 4]
+component exclusion [0.08, 0.23] label [-68, 7]
+component trade [0.12, 0.23] label [-41, 5]
+
+// theme
+component ethics [0.45, 0.58] label [-45, -4]
+pipeline ethics [0.34, 0.73]
+
+// links
+component access [0.51, 0.67] label [-27, 16]
+component data [0.29, 0.48] label [-35, 21]
+component privacy [0.11, 0.60] label [-29, 20]
+component trade off [0.21, 0.62] label [16, 13]
+component health and safety [0.10, 0.50] label [-59, -10]
+component economy [0.05, 0.69]
+component treatment [0.69, 0.58] label [-54, -10]
+pipeline treatment [0.12, 0.8]
+
+component clinical practice [0.67, 0.73] label [-15, 15]
+
+component health services research [0.67, 0.19] label [-40, 15]
+component payment [0.27, 0.74]
+component code of practice [0.43, 0.68] label [-50, 12]
+component health outcomes [0.77, 0.69] label [-1, 0]
+component committees [0.57, 0.40] label [3, -10]
+component status [0.71, 0.34] label [-45, -14]
+
+// relationships
+commercial->commercial
+commercial->lobbyists
+public health->health outcomes
+citizens->health outcomes
+health outcomes->treatment
+media->ethics
+access->treatment
+healthcare->data
+code of practice->payment
+trade off->data
+trade off->ethics
+trade off->health and safety
+trade off->economy
+trade off->privacy
+health outcomes->health and safety
+lobbyists->ethics
+payment->commercial
+ethics->committees
+code of practice->committees
+public health->status
+status->committees
+government->public health
+citizens->government
+government->society
+society->ethics
+society->citizens
+health outcomes->ethics
+treatment->data
+research ethics->health services research
+clinical practice->code of practice
+payment->payment
+payment->health services research
