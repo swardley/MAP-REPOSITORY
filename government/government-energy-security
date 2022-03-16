@@ -1,0 +1,99 @@
+title Government - Energy security
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
+style wardley
+
+
+note unused [0.25, 0.01]
+component demand control [0.13, 0.02] label [24, 6]
+component tax [0.09, 0.02] label [24, 1]
+
+component social license [0.64, 0.37] label [-50, 19]
+component society [0.17, 0.02] label [21, 5]
+
+component supply chain [0.09, 0.58] label [8, 12]
+component awareness of supply chain [0.03, 0.32] label [-71, -49]
+component digital sovereignty [0.67, 0.51] label [-44, 14]
+
+component demand [0.81, 0.67] label [-27, -11]
+pipeline demand [0.6, 0.78]
+
+component demand response [0.79, 0.64] label [-29, 14]
+
+component political funds [0.89, 0.54] label [-36, -33]
+component bad actors [0.21, 0.02] label [20, 3]
+component status [0.83, 0.54] label [-2, 15]
+
+component government [0.93, 0.60]
+component consumers [0.89, 0.67]
+component fossil fuel companies [0.92, 0.47] label [-84, -28]
+component lobbyists [0.83, 0.45] label [-75, -10]
+component efficiency [0.79, 0.73] label [-41, 28]
+
+component sovereignty [0.69, 0.57] label [-82, -11]
+pipeline sovereignty [0.47, 0.74]
+component territorial [0.67, 0.69] label [-2, 26]
+
+component critical infrastructure [0.67, 0.61] label [-60, 13]
+
+component energy production [0.30, 0.65] label [12, -33]
+pipeline energy production [0.38, 0.76]
+component modular [0.28, 0.69] label [-1, 24]
+component large scale [0.28, 0.43] label [-14, 26]
+
+component fuel [0.18, 0.65] label [-19, -12]
+pipeline fuel [0.34, 0.8]
+component fossil [0.16, 0.75] label [-5, 25]
+component renewable [0.16, 0.68] label [-33, 24]
+
+component distribution [0.55, 0.64] label [19, -16]
+pipeline distribution [0.43, 0.74]
+component microgrids [0.53, 0.54] label [-14, 23]
+component centralised [0.53, 0.68] label [-6, 26]
+component storage [0.42, 0.62] label [-55, -5]
+pipeline storage [0.4, 0.74]
+
+component power [0.84, 0.71] label [0, -15]
+component climate [0.75, 0.40] label [-61, -3]
+component fission [0.16, 0.56] label [-53, -15]
+component fusion [0.16, 0.38] label [-38, -14]
+component distributed [0.53, 0.47] label [-81, -19]
+component battery [0.40, 0.68] label [-11, -15]
+component fuel cells [0.40, 0.45] label [-31, -16]
+
+component raw materials [0.34, 0.75] label [15, 5]
+component environmental impact [0.59, 0.24] label [-89, 6]
+
+
+consumers->power
+power->distribution
+distribution->energy production
+energy production->fuel
+distribution->storage
+fossil->large scale
+large scale->centralised
+renewable->modular
+critical infrastructure->distribution
+government->sovereignty
+fossil fuel companies->lobbyists
+fossil fuel companies->fossil
+
+government->consumers
+climate->renewable
+lobbyists->climate
+distributed->modular
+supply chain->awareness of supply chain
+power->demand
+battery->raw materials
+climate->environmental impact
+environmental impact->awareness of supply chain
+government->political funds
+political funds->lobbyists
+
+demand->climate
+consumers->status
+status->climate
+government->status
+fossil fuel companies->status
+status->social license
+supply chain->fuel
+territorial->supply chain
