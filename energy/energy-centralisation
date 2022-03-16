@@ -1,0 +1,89 @@
+title Energy - Centralisation
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
+style wardley
+
+
+component citizen [0.93, 0.77]
+component decoupled [0.48, 0.59] label [-50, 24]
+component coupled [0.48, 0.67] label [7, 24]
+
+
+// actors
+component Government [0.96, 0.67] label [-29, -9]
+
+component standards [0.38, 0.54] label [-68, -7]
+component regulation [0.31, 0.37] label [-78, -12]
+
+component belonging [0.86, 0.72] label [-55, 23]
+component appearance of success [0.73, 0.88] label [12, -20]
+
+component command & control [0.59, 0.70] label [5, 11]
+component decentralised [0.59, 0.56] label [-97, 31]
+
+component Legitimacy [0.88, 0.68] label [-81, -6]
+pipeline Legitimacy [0.8, 0.32]
+
+component sovereignty [0.77, 0.62] label [-85, -10]
+pipeline sovereignty [0.38, 0.8]
+
+component physical sovereignty [0.75, 0.72] label [13, -40]
+component cultural sovereignty [0.75, 0.65] label [-31, 11]
+component technological sovereignty [0.75, 0.48] label [-67, -42]
+
+component Enforement of Laws/Customs [0.65, 0.45] label [-93, -17]
+component Critical Infrastructure [0.35, 0.69] label [39, -30]
+pipeline Critical Infrastructure [0.77, 0.6]
+
+component control layer [0.61, 0.63] label [9, -7]
+pipeline control layer [0.51, 0.75]
+
+component network [0.50, 0.64] label [-34, -9]
+pipeline network [0.54, 0.73]
+
+component territorial control [0.68, 0.80] label [-34, 6]
+
+component Communications [0.23, 0.71] label [-17, -14]
+component Health Care [0.19, 0.60]
+component Waste Management [0.17, 0.52] label [-67, -3]
+component Transport [0.14, 0.76]
+
+component Food/Water [0.21, 0.79] label [12, -2]
+
+component large scale power plant [0.05, 0.37] label [-44, -70]
+component modular [0.05, 0.67] label [-36, 26]
+
+component Energy [0.07, 0.71] label [8, -4]
+pipeline Energy [0.32, 0.8]
+
+//link
+Critical Infrastructure->Communications
+Critical Infrastructure->Health Care
+Critical Infrastructure->Waste Management
+Critical Infrastructure->Transport
+Critical Infrastructure->Energy
+Critical Infrastructure->Food/Water
+Government->Legitimacy
+Transport->Energy
+Health Care->Energy
+Energy->Waste Management
+Communications->Energy
+Food/Water->Energy
+cultural sovereignty->Enforement of Laws/Customs
+Legitimacy->sovereignty
+technological sovereignty->control layer
+control layer->network
+network->standards
+Enforement of Laws/Customs->regulation
+standards->regulation
+Critical Infrastructure->network
+coupled-> large scale power plant
+command & control->coupled
+modular->decoupled
+decoupled->decentralised
+citizen->Government
+citizen->modular
+physical sovereignty->territorial control
+citizen->belonging
+appearance of success->belonging
+appearance of success->territorial control
+appearance of success->Critical Infrastructure
