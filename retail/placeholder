@@ -1,1 +1,5 @@
-Maps to be added
+// Maps to be added
+component New Map [0.96, 0.26]
+component Needed [0.73, 0.49]
+
+New Map->Needed
