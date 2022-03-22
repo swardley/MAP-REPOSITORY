@@ -1,0 +1,100 @@
+title retail -logistics
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+
+note unused [0.19, 0.05]
+component manufacture on site [0.13, 0.06] label [9, -21]
+component distribution topology [0.21, 0.49] label [-86, -13]
+component refigeration [0.07, 0.06] label [20, 2]
+component exclusion [0.42, 0.79] label [-3, 14]
+component warehouse [0.55, 0.71] label [-15, 20]
+
+component consumer [0.94, 0.76]
+component producer [0.95, 0.68] label [-38, -13]
+component customer experience [0.43, 0.43] label [-82, -11]
+component time sensitivity [0.75, 0.26] label [-74, -9]
+// component
+component behavior [0.89, 0.58] label [-54, -5]
+component A to B [0.88, 0.67] label [-49, -3]
+component good [0.82, 0.61] label [-39, -8]
+pipeline good [0.5,0.7]
+
+component society [0.95, 0.52]
+component sustainability [0.64, 0.26] label [-109, -4]
+
+component socioeconomic class [0.57, 0.44] label [-61, -29]
+
+component logistics [0.69, 0.64] label [7, -9]
+pipeline logistics [0.48, 0.74]
+component centralised [0.67, 0.69] label [-39, 26]
+component decentralised [0.67, 0.52] label [-37, 22]
+component hybrid [0.67, 0.60] label [-38, -14]
+component delivery vehicle [0.42, 0.66] label [-67, -28]
+pipeline delivery vehicle [0.51, 0.74]
+component cost [0.31, 0.72] label [-6, 14]
+component non human [0.40, 0.55] label [-37, 24]
+component human [0.40, 0.69] label [-16, 21]
+component population density [0.05, 0.57] label [-79, -8]
+component fuel [0.09, 0.73]
+component safety [0.33, 0.49] label [-62, 2]
+component security [0.49, 0.70] label [-3, 17]
+component tracking [0.29, 0.53] label [-46, 18]
+component last mile [0.32, 0.65] label [-72, 3]
+component landscape [0.17, 0.64] label [-53, -15]
+pipeline landscape [0.54, 0.7]
+
+component storage [0.57, 0.66] label [-30, -9]
+pipeline storage [0.56, 0.75]
+component Shop [0.55, 0.69] label [-5, -18]
+component Kirb [0.55, 0.59] label [-6, 23]
+component urban [0.15, 0.66] label [-2, 27]
+component rural [0.15, 0.58] label [-31, 28]
+component cross sell [0.85, 0.76] label [5, -6]
+component data [0.25, 0.76] label [-12, 20]
+component convenience [0.81, 0.33] label [-85, -6]
+
+component value [0.73, 0.73] label [-13, -14]
+
+//links
+consumer->A to B
+A to B->producer
+consumer->behavior
+A to B->good
+storage->logistics
+storage->delivery vehicle
+storage->security
+security->tracking
+non human->safety
+delivery vehicle->last mile
+landscape->last mile
+delivery vehicle->cost
+fuel->delivery vehicle
+landscape->population density
+cross sell->producer
+data->cross sell
+data->tracking
+convenience->behavior
+convenience->logistics
+convenience->cost
+storage->cost
+tracking->safety
+value->behavior
+value->cost
+good->logistics
+good->value
+behavior->sustainability
+sustainability->delivery vehicle
+society->sustainability
+logistics->delivery vehicle
+last mile->distribution topology
+distribution topology->landscape
+storage->customer experience
+consumer->customer experience
+convenience->time sensitivity
+good->socioeconomic class
+time sensitivity->socioeconomic class
+value->socioeconomic class
+sustainability->socioeconomic class
+socioeconomic class->exclusion
+good->exclusion
