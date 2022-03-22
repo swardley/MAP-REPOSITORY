@@ -16,7 +16,7 @@ component transport operator [0.91, 0.56] label [-69, -5]
 component A to B [0.85, 0.67]
 component behaviour [0.88, 0.60] label [-22, -10]
 component regulation [0.87, 0.40] label [-62, -13]
-component public infrastructue [0.18, 0.67] label [5, -5]
+component public infrastructure [0.18, 0.67] label [5, -5]
 component sustainability [0.92, 0.45] label [-49, -17]
 component private infrastructure [0.19, 0.54] label [-65, -9]
 component critical national infrastructure [0.06, 0.31] label [-69, -13]
@@ -85,11 +85,11 @@ behaviour->A to B
 A to B->space
 sustainability->regulation
 government->distributed public
-distributed public->public infrastructue
-private->public infrastructue
+distributed public->public infrastructure
+private->public infrastructure
 private->private infrastructure
 regulation->critical national infrastructure
 private infrastructure->critical national infrastructure
-public infrastructue->critical national infrastructure
+public infrastructure->critical national infrastructure
 ease of use->transport information
 ease of use->transportation mode
