@@ -1,8 +1,0 @@
-title Maps to be added
-
-//components
-component New Map [0.96, 0.26]
-component Needed [0.73, 0.49]
-
-//links
-New Map->Needed
