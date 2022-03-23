@@ -1,5 +1,7 @@
 title defence- supply chain
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
 //actors
 component manufacturer [1.00, 0.57] label [-89, 4]
 component Government [0.98, 0.74]
