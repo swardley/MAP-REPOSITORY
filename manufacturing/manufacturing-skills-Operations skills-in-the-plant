@@ -1,0 +1,38 @@
+title manufacturing - Skills - Operations skills in the plant
+evolution genesis / concept -> custom / Hypothesis -> product/ Theory -> commodity / Experienced
+
+style wardley
+
+note Context [0.27, 0.01]
+note + Manufacture plant executing processes [0.24, 0.02]
+note + Machinery provider not located in the plant [0.20, 0.02]
+note + Junior requires gain real experience: issues and machinery [0.16, 0.02]
+note + Augmented reality can help on: [0.11, 0.02]
+note 1.- Training: save videos with key real situations [0.10, 0.29]
+note 2.- Assistance related to configuration of 3rd party machinery [0.06, 0.29]
+note 3.- Asistance on issue from operator located in other geography [0.02, 0.29]
+// components
+component Senior-Operator [0.90, 0.80] label [-20, -19]
+component Junior-Operator [0.90, 0.43] label [-31, -17]
+component resolve-issue [0.67, 0.51] label [-26, 21]
+component Theorical-knowledge [0.31, 0.82] label [35, 10]
+component travel [0.33, 0.46] label [-54, 5]
+component Augmented-Reality [0.42, 0.20] label [12, 6]
+component Accumulated-knowledge (Years) [0.45, 0.79] label [52, -13]
+component machinery-specialist [0.16, 0.75] label [53, -7]
+component real-experience-training [0.74, 0.28] label [-128, -7]
+component assistance [0.59, 0.32] label [-81, -7]
+pipeline assistance [0.3, 0.45]
+evolve Augmented-Reality 0.41 label [5, 6]
+
+//link
+Junior-Operator->resolve-issue
+Senior-Operator->resolve-issue
+Senior-Operator->Accumulated-knowledge (Years)
+Junior-Operator->Theorical-knowledge
+Junior-Operator->real-experience-training
+real-experience-training->Senior-Operator
+Senior-Operator->Theorical-knowledge
+machinery-specialist->travel
+travel->assistance
+assistance->resolve-issue
