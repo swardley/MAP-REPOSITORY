@@ -1,0 +1,95 @@
+title manufacturing - supply chains - dynamics between IP & safety
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+note Positive tension between IP and Safety [0.13, 0.00]
+note +Protect your IP [0.09, 0.02]
+note +Not disclosure relevant design data [0.05, 0.02]
+note +Provide the required data for certification  [0.01, 0.02]
+
+component R&D [0.63, 0.16] label [-23, -12]
+pipeline R&D [0.1, 0.25]
+component government [0.92, 0.56] label [-26, -13]
+component manufacturer [0.92, 0.63]
+component bad actor [0.92, 0.41] label [-76, -6]
+component regulation [0.59, 0.48] label [-82, 4]
+component safety [0.82, 0.56] label [-51, 2]
+component distributor [0.92, 0.48] label [-45, -21]
+component IP [0.75, 0.41] label [-21, -5]
+pipeline IP [0.38, 0.59]
+component materials [0.57, 0.64] label [-77, -10]
+pipeline materials [0.52, 0.76]
+
+component design [0.78, 0.34] label [-30, -16]
+component relationships [0.72, 0.54] label [-13, -18]
+component supply chain [0.46, 0.29] label [-20, -11]
+
+
+component agility [0.84, 0.11] label [-64, 1]
+component transparency [0.05, 0.54] label [-70, 15]
+component awareness [0.24, 0.27] label [-78, 3]
+component certification [0.31, 0.87] label [-7, -16]
+
+component automation [0.10, 0.71] label [-2, 18]
+component clipboard [0.10, 0.44] label [-51, 17]
+
+component reliability [0.78, 0.67] label [-25, 21]
+component inventory management [0.38, 0.64] label [-60, -34]
+pipeline inventory management [0.51, 0.7]
+
+component just in time [0.34, 0.69] label [-4, 19]
+component just in case [0.34, 0.52] label [-12, 20]
+component warehousing [0.22, 0.67] label [3, 10]
+component cost [0.79, 0.76]
+component forecasting [0.35, 0.41] label [-88, 1]
+component logistics [0.14, 0.60] label [11, -9]
+pipeline logistics [0.43, 0.72]
+
+component data [0.02, 0.66] label [9, 7]
+component ROCE [0.89, 0.72]
+
+component capital [0.86, 0.77]
+
+pipeline supply chain [0.23, 0.47]
+
+//link
+manufacturer->agility
+manufacturer->reliability
+distributor->relationships
+government->safety
+safety->regulation
+manufacturer->materials
+reliability->supply chain
+supply chain->inventory management
+supply chain->logistics
+manufacturer->forecasting
+regulation->certification
+awareness->transparency
+warehousing->inventory management
+forecasting->awareness
+supply chain->awareness
+certification->transparency
+materials->supply chain
+bad actor->transparency
+agility->transparency
+data->transparency
+cost->inventory management
+cost->logistics
+warehousing->cost
+manufacturer->ROCE
+ROCE->cost
+relationships->supply chain
+manufacturer->design
+government->critical national infrastructure
+critical national infrastructure->supply chain
+capital->ROCE
+cost->materials
+data->automation
+design->R&D
+
+safety+<>certification
+certification+<>regulation
+regulation+<>safety
+IP+<>R&D
+R&D+<>design
+design+<>IP
