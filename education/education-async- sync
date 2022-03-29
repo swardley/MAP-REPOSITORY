@@ -1,0 +1,84 @@
+title education - synchronous vs asynchronous
+style wardley
+
+component school [0.92, 0.67] label [-16, -11]
+component industry [0.92, 0.61] label [-26, -11]
+component media [0.92, 0.55] label [-20, -11]
+component pandemic [0.92, 0.41] label [-25, -10]
+component isolation economy [0.87, 0.37] label [-79, -13]
+
+component student [0.87, 0.70] label [10, 2]
+component social network [0.81, 0.60] label [-110, 1]
+
+
+
+component learning_mode [0.30, 0.52] label [13, -5]
+pipeline learning_mode [0.44, 0.72]
+component synchronous [0.28, 0.71] label [0, 30]
+component asynchronous [0.28, 0.45] label [-65, 28]
+
+component collaboration [0.16, 0.46] label [-105, -1]
+component reflection [0.11, 0.43] label [-89, 3]
+component standaridisation [0.05, 0.51] label [-94, -8]
+
+component transactional [0.04, 0.72] label [-3, 21]
+component value for money [0.13, 0.67] label [-67, -13]
+component factory [0.48, 0.70] label [11, 8]
+
+component behaviourism [0.41, 0.66] label [-21, 28]
+component cognitivism [0.41, 0.49] label [-51, 26]
+component constructivism [0.41, 0.56] label [-25, 27]
+
+component teaching [0.43, 0.59] label [-65, -14]
+pipeline teaching [0.48, 0.67]
+
+component hybrid [0.80, 0.35] label [-56, 2]
+
+
+component Space [0.54, 0.65] label [-44, -1]
+component remote [0.54, 0.72] label [-6, 17]
+component creative [0.47, 0.37] label [-68, -4]
+
+component learning practices [0.67, 0.56] label [-82, -28]
+pipeline learning practices [0.31, 0.8]
+
+component assets [0.81, 0.66] label [-27, 14]
+component socialisation [0.74, 0.68] label [8, 3]
+
+
+component physical practices [0.65, 0.71] label [-4, 16]
+component virtual practices [0.65, 0.32] label [-49, 16]
+
+evolve Space 0.72 label [13, 2]
+component colocated [0.54, 0.65] label [-67, 15]
+
+school->student
+collaboration->reflection
+pandemic->isolation economy
+student->social network
+student->teaching
+student->value for money
+synchronous->value for money
+transactional->value for money
+teaching->learning_mode
+isolation economy->hybrid
+isolation economy->remote
+media->value for money
+asynchronous->remote
+social network->physical practices
+collaboration->asynchronous
+standaridisation->synchronous
+
+industry->creative
+creative->asynchronous
+assets->school
+assets->colocated
+physical practices -> colocated
+remote -> virtual practices
+
+learning practices->hybrid
+socialisation->physical practices
+social network->socialisation
+Space->synchronous
+industry->factory
+factory->synchronous
