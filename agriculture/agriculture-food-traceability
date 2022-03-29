@@ -1,0 +1,85 @@
+title agriculture - food traceability
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+
+component goverment [0.95, 0.51] label [-75, 0]
+component market [0.58, 0.58] label [-10, -14]
+component producers [0.94, 0.65] label [-74, 4]
+component consumers [0.87, 0.71] label [13, 3]
+component food product [0.56, 0.68] label [14, -7]
+pipeline food product [0.60, 0.8]
+component health [0.67, 0.73] label [10, 1]
+component bad actor [0.95, 0.38] label [-74, 4]
+component adulteration [0.84, 0.37] label [-97, 2]
+component trust [0.28, 0.47] label [-47, 3]
+component transparency [0.16, 0.33] label [-99, 3]
+
+component supply chain [0.13, 0.41] label [-28, 14]
+component traceability [0.22, 0.41] label [-33, -10]
+component food security [0.80, 0.60] label [-88, -11]
+pipeline food security [0.52, 0.69]
+component seasonality [0.68, 0.54] label [-31, -14]
+component education [0.54, 0.48] label [-65, -7]
+component regulation [0.73, 0.45]
+component sovereignty [0.64, 0.41] label [-90, 0]
+pipeline sovereignty 
+
+component food standards [0.07, 0.44] label [9, 2]
+component territory [0.03, 0.35] label [-75, 1]
+component behaviour [0.48, 0.35] label [-81, 1]
+component educational content [0.40, 0.43] label [-18, 8]
+pipeline educational content
+component distribution mechanisms [0.30, 0.61] label [25, -27]
+pipeline distribution mechanisms [0.58, 0.66]
+component social media [0.28, 0.65] label [-40, 25]
+component substitution [0.48, 0.57] label [-26, 18]
+component energy [0.39, 0.71] label [8, 4]
+component farm [0.46, 0.72] label [11, 4]
+
+
+consumers->food product
+health->food product
+bad actor->adulteration
+bad actor->food product
+producers->food product
+consumers->health
+food product->supply chain
+goverment->consumers
+trust->supply chain
+trust->traceability
+transparency->traceability
+transparency->supply chain
+producers->market
+consumers->market
+market->trust
+trust->market
+food security->goverment
+food security->seasonality
+seasonality->education
+health->food security
+goverment->regulation
+adulteration->regulation
+regulation->food security
+consumers->food security
+regulation->sovereignty
+food security->sovereignty
+sovereignty->transparency
+traceability->food standards
+territory->food standards
+sovereignty->territory
+education->behaviour
+educational content->education
+education->distribution mechanisms
+seasonality->food product
+energy->food product
+farm->food product
+farm->territory
+education->substition
+food product->substitution
+seasonality->substitution
+market->substitution
+substitution->market
+substitution->educational content
+market->regulation
+regulation->market
