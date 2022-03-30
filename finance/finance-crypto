@@ -1,88 +1,90 @@
 title Finance- crypto
+// Version 1.1
+// Simon W 1.0
+// Howard Rees Edits 1.1
+
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
 style wardley
-
-
 note unused [0.21, 0.04]
 component transparency [0.34, 0.56] label [-48, -7]
-component taxation [0.90, 0.69] label [15, 4]
-component sovereignty [0.93, 0.52] label [-90, -3]
-
+component taxation [0.84, 0.75] label [15, 4]
+component trade [0.78, 0.68] label [15, 4]
+component sovereignty [0.94, 0.52] label [-90, -3]
 component wallet [0.50, 0.61]
 pipeline wallet [0.42, 0.73]
-
 component crypto wallet [0.48, 0.46] label [-30, -21]
 component physical wallet [0.48, 0.68] label [-7, -37]
 component security [0.13, 0.04] label [16, 2]
 component assurance [0.43, 0.70] label [11, -4]
-
-component liquidity [0.18, 0.04] label [14, 5]
+component liquidity [0.77, 0.42] label [-26, 19]
 component foreign exchange [0.48, 0.34] label [-86, -10]
 component government [0.96, 0.64] label [-59, -13]
-component bank [0.90, 0.61] label [-39, -3]
-component sanctions [0.87, 0.39] label [-49, -12]
+component bank [0.57, 0.80] label [-39, -3]
 component settlement [0.54, 0.33] label [-72, -9]
-
 component citizen [0.94, 0.69]
-component option [0.89, 0.66] label [-7, 23]
-component store of value [0.62, 0.73]
-component trade [0.79, 0.67] label [7, -7]
-component property [0.71, 0.68]
-component exchange protocol [0.64, 0.47] label [-38, 20]
-component trust [0.63, 0.58] label [-38, -12]
-component sustainability [0.85, 0.53] label [-63, -7]
-component education [0.64, 0.37] label [-64, -9]
-
-component 
-
+component financial options [0.86, 0.58] label [-28, 17]
+component store of value [0.60, 0.73] label [5, -10]
+component property (physical) [0.72, 0.74]
+component exchange protocol [0.64, 0.48] label [-38, 20]
+component sustainability [0.88, 0.35] label [-63, -7]
+component education [0.63, 0.54] label [-17, -12]
+component
 component consensus algorithm [0.14, 0.57] label [-43, -35]
 pipeline consensus algorithm [0.45, 0.64]
 component proof of work [0.12, 0.59] label [-44, 21]
 component proof of stake [0.12, 0.51] label [-101, -16]
-
 component control [0.41, 0.63] label [-14, -11]
 pipeline control [0.42, 0.72]
-
 component centralised [0.39, 0.67] label [-2, 24]
 component decentralised [0.39, 0.47] label [-78, 22]
-
 component financial token [0.28, 0.66] label [-63, -30]
 pipeline financial token [0.41, 0.72]
-
 component CDBC [0.26, 0.46] label [-23, -17]
 component fiat [0.26, 0.68] label [-3, 24]
 component crypto [0.26, 0.59] label [3, 20]
-component access [0.74, 0.46] label [-31, -10]
-
+component access [0.71, 0.54] label [-31, -10]
 component power [0.05, 0.71] label [5, -12]
 pipeline power [0.35, 0.8]
 component fossil power [0.03, 0.40] label [-27, -20]
 component renewable [0.03, 0.68] label [-70, -16]
-
 component compute [0.10, 0.71]
-component exclusion [0.64, 0.67] label [-24, 20]
-component redistribution [0.70, 0.58] label [-47, -13]
-component identity [0.59, 0.60] label [-30, 18]
-component equality [0.78, 0.51] label [-58, -9]
-citizen->option
-option->sustainability
-trade->option
-option->equality
-trade->property
-property->store of value
-exclusion->property
+component redistribution [0.61, 0.37] label [-47, -13]
+component wealth [0.78, 0.57] label [-56, 3]
+component identity [0.62, 0.19] label [-30, 18]
+component equality [0.84, 0.44] label [-58, -9]
+component legal system [0.65, 0.79] label [7, 8]
+citizen->financial options
+citizen->sustainability
+government->sustainability
+wealth->financial options
+redistribution->welath
+liquidity->financial options
+trade->financial options
+wealth->redistribution
+financial options->equality
+wealth->property (physical)
+wealth->store of value
+trade->property (physical)
+property (physical)->legal system
+exclusion->property (physical)
 store of value->financial token
 equality->redistribution
 redistribution->exclusion
-government->redistribution
 government->citizen
-trade->trust
+trade->identity
 trade->exchange protocol
-trust->identity
+sovereignty->taxation
+sovereignty->monetary policy
+sovereignty->fiscal policy
+fiscal policy->legal system
+monetary policy->legal system
 equality->access
+identity->bank
+liquidity->bank
+liquidity->P2P
 exchange protocol->financial token
 bank->trade
-bank->exchange protocol
+store of value->bank
 centralised->redistribution
 exchange protocol->control
 centralised->fiat
@@ -94,6 +96,7 @@ compute->power
 CDBC->compute
 access->exchange protocol
 access->education
+equality->taxation
 sanctions->exchange protocol
 exchange protocol->settlement
 sustainability->renewable
@@ -113,3 +116,6 @@ settlement->transparency
 government->sovereignty
 sovereignty->sanctions
 sovereignty->exchange protocol
+component fiscal policy [0.72, 0.85]
+component monetary policy [0.77, 0.81] label [7, -17]
+component P2P [0.58, 0.63]
