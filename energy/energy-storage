@@ -1,0 +1,66 @@
+title Energy - storage
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
+style wardley
+
+component government [0.94, 0.65] label [11, 1]
+component local community [0.90, 0.58] label [-79, -11]
+component consumer [0.89, 0.71] label [13, -1]
+component battery [0.47, 0.68] label [10, 3]
+component vehicle to grid [0.58, 0.41] label [-61, -19]
+component incentives [0.46, 0.37] label [-82, 4]
+component pricing mechanisms [0.36, 0.35]
+component power [0.84, 0.69] label [9, 3]
+component variability [0.67, 0.68] label [11, 4]
+component power grid [0.70, 0.63] label [-82, -2]
+component transmission [0.62, 0.67] label [10, 6]
+component control [0.25, 0.57]
+pipeline control [0.46, 0.67]
+component decentralised [0.23, 0.47] label [-48, 24]
+component centralised [0.23, 0.66] label [-28, 31]
+component communication [0.73, 0.69] label [12, 5]
+component inverter [0.78, 0.56] label [-64, 2]
+component storage [0.56, 0.63] label [-62, -7]
+pipeline storage [0.5, 0.68]
+component big storage [0.54, 0.51] label [-30, 24]
+component little storage [0.54, 0.67] label [16, 9]
+component terrritory [0.05, 0.38] label [-83, 4]
+component crisis [0.11, 0.62] label [5, -8]
+pipeline crisis [0.50, 0.7]
+component weather [0.09, 0.69] label [-19, 25]
+component cost [0.29, 0.66] label [10, 6]
+component geopolitical [0.09, 0.51] label [-50, 29]
+component storage_forms [0.41, 0.67] label [8, -6]
+pipeline storage_forms [0.41, 0.71]
+component chemical [0.39, 0.70] label [-16, 22]
+component potential [0.39, 0.62] label [-38, 22]
+component kinetic [0.39, 0.53] label [-28, 23]
+component biological [0.39, 0.42] label [-38, 25]
+
+note unused [0.16, 0.02]
+component temporal [0.46, 0.55] label [-69, 1]
+
+// link
+government->local community
+government->consumer
+consumer->power
+local community->power
+power->inverter
+inverter->communication
+power->power grid
+power grid->transmission
+power grid->storage
+vehicle to grid->inverter
+little storage->battery
+vehicle to grid->incentives
+incentives->pricing mechanisms
+control->terrritory
+power grid->control
+storage->storage_forms
+storage->cost
+incentives->cost
+government->terrritory
+decentralised->crisis
+power grid->variability
+communication->decentralised
+government->power
+storage->temporal
