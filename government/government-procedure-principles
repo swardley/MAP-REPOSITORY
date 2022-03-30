@@ -1,0 +1,107 @@
+title government - procedures vs principles
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+
+note unused [0.15, 0.03]
+note +technology [0.09, 0.03]
+note +marketing [0.02, 0.03]
+note +NGO [0.06, 0.03]
+note +standards [0.04, 0.03]
+
+
+component lobbying [0.66, 0.36] label [-29, -16]
+component corporate [0.96, 0.67] label [13, 0]
+component integrity [0.06, 0.66] label [-34, 23]
+component competence [0.06, 0.56] label [-45, 25]
+component benevolence [0.06, 0.72] label [-7, 21]
+component government [0.90, 0.71] label [-17, -17]
+component citizen [0.80, 0.75] label [16, 6]
+component society [0.94, 0.62] label [-50, -13]
+
+component bad actor [0.94, 0.44] label [-69, -6]
+
+component bad action [0.88, 0.38] label [-83, -8]
+pipeline bad action [0.29, 0.50]
+
+component sustainability [0.90, 0.53] label [-61, -12]
+
+component corruption [0.86, 0.43] label [-32, 19]
+component exploitation [0.86, 0.30] label [-66, 23]
+component theft [0.86, 0.49] label [-15, 23]
+
+component trust [0.08, 0.68] label [-52, -1]
+pipeline trust [0.55, 0.73]
+
+component value [0.47, 0.36] label [-32, -12]
+component authority [0.75, 0.64] label [-68, -10]
+component power [0.69, 0.64] label [-45, -12]
+pipeline power [0.55, 0.69]
+component power with [0.67, 0.68] label [-36, 29]
+component power over [0.67, 0.56] label [-49, 22]
+
+component legal norms [0.26, 0.57] label [-71, 23]
+
+component control [0.46, 0.62] label [-64, -4]
+pipeline control [0.44, 0.76]
+component rules [0.44, 0.75] label [-9, 24]
+component principle [0.44, 0.45] label [-9, 22]
+
+component accountability [0.28, 0.62] label [-108, -5]
+pipeline accountability [0.56, 0.73]
+component social norm [0.26, 0.72] label [-6, 22]
+component transparency [0.12, 0.52] label [-93, 1]
+component beneficial ownership [0.05, 0.41] label [-90, -17]
+component economic norms [0.26, 0.64] label [-37, 21]
+component legislation [0.53, 0.28] label [-92, 4]
+component speed [0.13, 0.57] label [7, 2]
+
+
+component structure [0.31, 0.36] label [-91, 11]
+pipeline structure
+
+component capital [0.59, 0.55] label [-61, -7]
+pipeline capital
+
+//links
+accountability->speed
+accountability->transparency
+social norm->trust
+beneficial ownership->beneficial ownership
+transparency->beneficial ownership
+legal norms->rules
+social norm->principle
+social norm->value
+society->value
+sustainability->society
+society->citizen
+government->authority
+government->citizen
+authority->power
+society->power with
+power over->rules
+power->process
+power with->principle
+government->legislation
+legislation->rules
+bad actor->bad action
+exploitation->rules
+citizen->social norm
+government->trust
+sustainability->social norm
+power->control
+control->hierarchy
+control->accountability
+bad actor->power over
+control->structure
+sustainability->structure
+power->capital
+capital->legislation
+legislation->structure
+rules->lobbying
+corporate->lobbying
+corporate->capital
+lobbying->speed
+bad actor->lobbying
+citizen->lobbying
+bad action->legislation
