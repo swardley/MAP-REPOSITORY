@@ -1,0 +1,80 @@
+title Finance- risk management
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
+style wardley
+
+note unused [0.77, 0.01]
+note +centralisation of risk [0.74, 0.02]
+note +supervision [0.71, 0.02]
+note +regulators [0.67, 0.02]
+note +consequences [0.64, 0.02]
+note +brand [0.61, 0.02]
+note +enforcement [0.58, 0.02]
+note +incentives [0.54, 0.02]
+
+component public [0.79, 0.71] label [15, 6]
+component nation [0.89, 0.67] label [12, 1]
+component supranation [0.95, 0.50] label [-95, 5]
+component financial services [0.74, 0.65] label [-52, -39]
+component corporation [0.94, 0.61] label [-50, -7]
+pipeline financial services [0.47, 0.69]
+component insurance [0.72, 0.48] label [-47, 24]
+component retail banking [0.72, 0.68] label [-75, 24]
+
+component regulation [0.81, 0.40] label [-84, 4]
+component risk [0.36, 0.64] label [-18, -15]
+pipeline risk [0.28, 0.74]
+component cybersecurity [0.34, 0.51] label [-64, 24]
+component system risk [0.34, 0.35] label [-35, 30]
+component theft [0.34, 0.73] label [-15, 27]
+
+component assets [0.54, 0.62] label [13, -4]
+pipeline assets [0.4, 0.76]
+component process [0.52, 0.57] label [-24, 25]
+component capital [0.52, 0.75] label [-2, 27]
+component governance [0.52, 0.41] label [-43, 25]
+component infrastructure [0.52, 0.67] label [-38, 26]
+component third party [0.34, 0.54] label [-56, -20]
+component credit risk [0.34, 0.58] label [-28, 25]
+component liability [0.24, 0.44] label [-76, 2]
+component cascade failure [0.34, 0.29] label [-32, 20]
+
+component CNI [0.69, 0.28] label [-49, 6]
+component territory [0.53, 0.30] label [-43, 24]
+
+component accountability [0.10, 0.67] label [13, -14]
+pipeline accountability [0.63, 0.74]
+component many players [0.08, 0.64] label [-41, 24]
+component few players [0.08, 0.73] label [-13, 24]
+component awareness [0.22, 0.21] label [-77, 3]
+component supply chain [0.11, 0.27] label [-99, 6]
+
+supranation->nation
+nation->public
+public->financial services
+public->capital
+corporation->public
+corporation->credit risk
+assets->risk
+financial services->assets
+nation->regulation
+regulation->liability
+risk->liability
+corporation->liability
+nation->CNI
+CNI->risk
+CNI->territory
+regulation->territory
+system risk->centralised
+financial services->control
+system risk->monopoly
+cascade failure->awareness
+awareness->few players
+credit risk->many players
+territory->accountability
+supranation->regulation
+
+system risk->few players
+risk->accountability
+awareness->supply chain
+financial services->supply chain
+CNI->awareness
