@@ -12,7 +12,7 @@ component social scoring [0.63, 0.30] label [-111, 2]
 component fairness [0.86, 0.28] label [-70, 4]
 
 component Routing [0.32, 0.72] label [13, 6]
-component suprantional organisations [0.78, 0.41] label [-57, 15]
+component supranational organisations [0.78, 0.41] label [-57, 15]
 component individuality [0.78, 0.67] label [-8, 24]
 component collective [0.78, 0.64] label [-57, 24]
 
@@ -79,9 +79,9 @@ economic sovereignty->data
 spectrum->land
 tech giants->network
 intercept->data
-nation->suprantional organisations
+nation->supranational organisations
 network infrastructure->Routing
-suprantional organisations->Routing
+supranational organisations->Routing
 Routing->balkanisation
 influence opinion->power
 society->consumer
