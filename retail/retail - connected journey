@@ -1,0 +1,106 @@
+title retail - connected journey
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+note unused [0.21, 0.02]
+note +distributor [0.14, 0.03]
+note +context [0.85, 0.76]
+note +analytics [0.11, 0.03]
+note +time [0.87, 0.79]
+note +buying vs shopping [0.18, 0.03]
+note +impulse [0.67, 0.45]
+note +search [0.08, 0.03]
+note +latent needs [0.86, 0.51]
+
+component urgency [0.88, 0.73] label [12, 3]
+component privacy [0.37, 0.34] label [-58, 6]
+component customer [0.92, 0.70] label [6, -2]
+component producer [0.96, 0.64] label [-57, -11]
+component society [0.97, 0.55] label [-60, -8]
+component good [0.64, 0.71]
+pipeline good [0.53, 0.75]
+component mass produced [0.62, 0.74] label [-11, 26]
+component service [0.62, 0.68] label [-41, 26]
+component need [0.85, 0.68] label [-10, -12]
+pipeline need [0.5, 0.73]
+component social needs [0.83, 0.63] label [-28, 21]
+component functional [0.83, 0.72] label [0, 23]
+component emotional [0.83, 0.51] label [-28, 24]
+component behaviour [0.90, 0.42] label [-67, -11]
+component stores [0.50, 0.73] label [8, 20]
+component telesales [0.50, 0.70] label [-35, 23]
+component e-commerce [0.50, 0.67] label [-80, 17]
+component channel [0.52, 0.71] label [7, -10]
+pipeline channel [0.66, 0.74]
+component price [0.75, 0.74] label [9, 6]
+component convenience [0.71, 0.72] label [8, 5]
+component reducing friction [0.61, 0.35] label [-80, -12]
+component engagement [0.75, 0.59] label [8, 3]
+component discovery [0.70, 0.45] label [-28, -15]
+component purchase  [0.13, 0.75] label [11, -8]
+pipeline purchase [0.56, 0.8]
+component experience [0.46, 0.36] label [-89, 3]
+component POS [0.11, 0.79] label [0, 25]
+component device [0.03, 0.68] label [-60, 5]
+component space [0.24, 0.68] label [-45, -7]
+pipeline space [0.53, 0.73]
+component online [0.11, 0.70] label [-2, 25]
+component social [0.11, 0.57] label [-27, 24]
+component physical [0.22, 0.54] label [-40, 29]
+component virtual [0.22, 0.72] label [-12, 22]
+component topology [0.13, 0.36] label [-68, 0]
+component luxury [0.62, 0.54] label [-28, 21]
+component demographics [0.79, 0.29] label [-17, 20]
+component senses [0.38, 0.69] label [-1, -12]
+pipeline senses [0.58, 0.72]
+component touch [0.36, 0.71] label [-9, 21]
+component sight [0.36, 0.68] label [-19, 22]
+component sound [0.36, 0.64] label [-26, 23]
+component smell [0.36, 0.59] label [-20, 22]
+component returns [0.40, 0.47] label [8, 5]
+component trust [0.30, 0.40] label [-48, 12]
+
+// links
+customer->convenience
+convenience->reducing friction
+producer->engagement
+producer->customer
+producer->good
+engagement->discovery
+good->channel
+stores->touch
+e-commerce->sight
+telesales->sound
+good->experience
+experience->returns
+engagement->experience
+reducing friction->experience
+senses->physical
+sight->virtual
+sound->virtual
+virtual->online
+physical->purchase
+physical->topology
+online->device
+social->device
+experience->senses
+experience->channel
+returns->trust
+convenience->returns
+customer->need
+need->engagement
+customer->society
+society->social needs
+society->behaviour
+behaviour->trust
+behaviour->demographics
+need->price
+experience->purchase
+need->good
+stores->senses
+experience->privacy
+trust->privacy
+urgency->customer
+customer->context
+channel->purchase
+discovery->purchase
