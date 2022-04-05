@@ -2,10 +2,13 @@ title transportation - logistics
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note unused [0.09, 0.02]
-note +freeports [0.06, 0.02]
+note unused [0.16, 0.01]
+note +freeports [0.13, 0.01]
+note +modes of transport [0.10, 0.01]
+
 
 //components
+component longhaul [0.54, 0.72] label [-43, 24]
 component consumer [0.86, 0.78] label [6, 16]
 component producer [0.92, 0.75] label [8, -17]
 component good [0.75, 0.70] label [-37, -7]
@@ -21,6 +24,7 @@ component automated delivery [0.26, 0.59] label [21, -19]
 component electric [0.06, 0.75] label [-13, 24]
 component warehouse [0.35, 0.69] label [4, 16]
 component city [0.40, 0.55] label [-10, 27]
+component skills / HGV [0.81, 0.62] label [-88, 5]
 
 component power [0.08, 0.73] label [8, -5]
 pipeline power [0.65, 0.76]
@@ -30,7 +34,7 @@ component drones [0.16, 0.68] label [-18, 26]
 component scout [0.16, 0.60] label [-16, 23]
 component community spaces [0.30, 0.40] label [-76, -31]
 pipeline community spaces [0.3, 0.5]
-component autotrucks [0.15, 0.51] label [-54, 21]
+component autotrucks [0.16, 0.51] label [-54, 21]
 component society [0.89, 0.57] label [-24, 22]
 component government [0.95, 0.59] label [11, -1]
 component regulation [0.67, 0.42] label [11, 4]
@@ -41,14 +45,14 @@ component kerbside [0.28, 0.49] label [-32, 25]
 component hubs [0.28, 0.31] label [-13, 29]
 component planning [0.16, 0.36] label [-74, 1]
 pipeline good [0.62, 0.72]
-component privacy [0.75, 0.54] label [-41, -12]
+component privacy [0.73, 0.54] label [-46, -9]
 
 component mass [0.73, 0.71] label [-37, 23]
 component local [0.73, 0.63] label [-20, 23]
 
-component logistics [0.56, 0.73] label [-81, -4]
+component logistics [0.56, 0.73] label [11, -5]
 pipeline logistics [0.6, 0.76]
-component logistic_hubs [0.54, 0.75] label [-3, 25]
+component logistic_hubs [0.54, 0.75] label [-7, 24]
 component sovereignty [0.90, 0.42] label [-73, -11]
 pipeline sovereignty [0.37, 0.5]
 
@@ -90,3 +94,7 @@ government->sovereignty
 CNI->logistics
 territorial->topology
 sovereignty->awareness
+consumer->skills
+skills->longhaul
+consumer->skills / HGV
+skills / HGV->longhaul
