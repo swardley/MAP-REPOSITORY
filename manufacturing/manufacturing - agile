@@ -5,6 +5,7 @@ style wardley
 note unused [0.37, 0.02]
 note +telemetry [0.34, 0.02]
 note +flow vs stock [0.31, 0.02]
+note +DORA
 
 component quality [0.52, 0.54] label [-46, -10]
 pipeline quality [0.42, 0.6]
