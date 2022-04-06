@@ -1,0 +1,86 @@
+title defence - intelligence
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+note unused [0.15, 0.03]
+note +human on the loop [0.80, 0.73]
+note +human in the loop [0.83, 0.73]
+note +gut feel [0.78, 0.73]
+note +bias [0.12, 0.03]
+
+component operational decision [0.83, 0.65] label [17, -16]
+pipeline operational decision
+component target discovery [0.77, 0.42] label [-68, -9]
+component OSINT [0.71, 0.56] label [-24, 24]
+component crowdsourcing [0.61, 0.46] label [-53, 25]
+component social media [0.36, 0.60] label [-75, 25]
+component intelligence gathering [0.73, 0.60] label [19, -30]
+pipeline intelligence gathering [0.55, 0.72]
+component collectors [0.38, 0.65] label [-40, -17]
+pipeline collectors [0.59, 0.72]
+component mobile [0.36, 0.63] label [-13, 24]
+component people [0.36, 0.71] label [14, 14]
+component cameras [0.27, 0.70] label [4, -10]
+component public_data [0.36, 0.67] label [-6, -17]
+component analysis [0.63, 0.61]
+pipeline analysis [0.45, 0.69]
+component AI [0.61, 0.52] label [-2, -14]
+component data science [0.27, 0.58] label [-99, 4]
+component sources [0.50, 0.65] label [-34, -13]
+pipeline sources [0.5, 0.7]
+component diversity [0.48, 0.51] label [-43, 23]
+component verified [0.48, 0.69] label [-10, -15]
+component AI Engine [0.23, 0.63] label [-43, 13]
+component military [0.94, 0.63] label [-38, -12]
+
+component opponent [0.95, 0.56] label [-63, -7]
+component misinformation [0.89, 0.53] label [-12, -9]
+component geolocation [0.26, 0.67] label [-74, -10]
+
+component government [0.95, 0.67]
+component citizen [0.90, 0.70]
+component privacy [0.83, 0.33] label [-71, -7]
+component regulation [0.43, 0.30] label [-78, 17]
+component data [0.18, 0.71] label [18, 2]
+component ownership [0.14, 0.64] label [6, 14]
+component desk analysis [0.61, 0.68] label [-25, 23]
+component attack vector [0.89, 0.47] label [-95, -5]
+component trust [0.11, 0.45] label [-15, -15]
+pipeline trust [0.35, 0.51]
+component competence [0.09, 0.36] label [-37, 27]
+component integrity [0.09, 0.40] label [-45, -18]
+component benevolence [0.09, 0.50] label [-36, 31]
+
+// link
+operational decision->intelligence gathering
+operational decision->target discovery
+target discovery->intelligence gathering
+OSINT->crowdsourcing
+crowdsourcing->diversity
+intelligence gathering->analysis
+analysis->sources
+sources->collectors
+diversity->social media
+diversity->public_data
+diversity->mobile devices
+mobile->cameras
+AI->data science
+data science->AI Engine
+military->operational decision
+opponent->misinformation
+misinformation->collectors
+mobile->geolocation
+government->citizen
+citizen->privacy
+privacy->regulation
+regulation->collectors
+government->regulation
+AI Engine->data
+geolocation->data
+cameras->data
+data->ownership
+regulation->ownership
+opponent->attack vector
+attack vector->data
+ownership->trust
+misinformation->trust
