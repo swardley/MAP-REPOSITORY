@@ -1,0 +1,97 @@
+title telecom - network
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+note unused [0.33, 0.02]
+note + break wireless into fixed, mobile and unlicensed [0.30, 0.02]
+note + physics reduces free space [0.27, 0.02]
+note + capacity - download / upload [0.24, 0.02]
+note + capacity - fibre - no co channel interference [0.18, 0.02]
+note + capacity - wire - local interference [0.21, 0.02]
+note + capacity - satellite - multi plexing of different signals [0.15, 0.02]
+note + capacity - increasing density / split cells to a network [0.12, 0.02]
+note + need to examine communication [0.09, 0.02]
+note + do we care about protocol? Just mobile network. [0.06, 0.02]
+
+component consumer [0.84, 0.66] label [-17, -13]
+pipeline consumer [0.51, 0.8]
+component public [0.82, 0.79] label [-30, 22]
+component government [0.82, 0.62] label [-53, -14]
+component B2B [0.82, 0.68] label [-11, 23]
+component M2M [0.82, 0.52] label [-15, 25]
+component network access [0.71, 0.72] label [6, -7]
+pipeline network access [0.6, 0.76]
+component wireless [0.69, 0.70] label [-31, 24]
+component satellite [0.69, 0.61] label [-34, 23]
+component wired [0.69, 0.75] label [-3, 26]
+
+component net_topology [0.54, 0.67] label [-94, -4]
+pipeline net_topology [0.38, 0.75]
+component wires [0.52, 0.39] label [-24, 25]
+component towers [0.52, 0.45] label [-13, 28]
+component space [0.52, 0.74] label [-22, 23]
+
+component ownership [0.38, 0.71] label [10, -4]
+pipeline ownership [0.57, 0.76]
+
+component commmunity [0.36, 0.58] label [-67, -14]
+component commercial [0.36, 0.75] label [-3, 20]
+component territory [0.21, 0.40] label [3, 15]
+component price [0.75, 0.85] label [14, 0]
+component telco [0.94, 0.75] label [12, 3]
+
+component protocol [0.22, 0.70] label [8, -9]
+pipeline protocol [0.66, 0.74]
+component 5G [0.20, 0.67] label [-29, 3]
+component 6G [0.20, 0.73] label [13, 3]
+component spectrum [0.12, 0.69] label [7, -6]
+pipeline spectrum [0.63, 0.74]
+
+component physics [0.04, 0.64] label [-62, 3]
+component use cases [0.76, 0.67] label [-36, 19]
+pipeline use cases
+
+component location [0.69, 0.31] label [-71, 4]
+component Starlink [0.93, 0.51] label [-78, 5]
+component availability [0.10, 0.73] label [-26, 23]
+component launchers [0.46, 0.64] label [-76, 3]
+evolve launchers 0.8
+component cubesat [0.42, 0.64] label [-65, 6]
+evolve cubesat 0.8
+component MTBF [0.30, 0.63] label [-32, -4]
+pipeline MTBF [0.5, 0.72]
+component cattle [0.28, 0.71] label [15, 4]
+component valued [0.28, 0.51] label [-24, 23]
+component cost [0.57, 0.85] label [8, 2]
+component identity [0.68, 0.41] label [-36, 16]
+
+// links
+telco->network access
+network access->net_topology
+net_topology->ownership
+net_topology->protocol
+spectrum->protocol
+spectrum->physics
+public->price
+government->spectrum
+wires->territory
+towers->territory
+government->territory
+consumer->use cases
+satellite->space
+use cases->network access
+use cases->location
+location->territory
+Starlink ->satellite
+space->launchers
+space->cubesat
+ownership->MBTF
+Starlink ->cattle
+telco->valued
+wires->valued
+towers->valued
+price->cost
+cost->valued
+use cases->identity
+wireless->towers
+wired->wires
