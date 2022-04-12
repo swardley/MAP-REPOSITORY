@@ -1,0 +1,89 @@
+title  education - lifelong learning
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+note unused [0.28, 0.01]
+note +evidence of application of skills [0.25, 0.01]
+note +economic growth [0.23, 0.01]
+note +job readiness versus skills [0.20, 0.01]
+note +boundary of we vs me, learning for myself, learning for the community [0.15, 0.01]
+note +explore power relationships [0.13, 0.01]
+note +need to unpack what we mean by degree / relationship with micro learning [0.10, 0.01]
+note +social learning relationship to on the job learning [0.08, 0.01]
+note +formal vs informal learning - need to divide the maps? [0.05, 0.01]
+
+component student [0.70, 0.63] label [-26, -19]
+pipeline student [0.5, 0.73]
+component lifelong [0.68, 0.51] label [-16, 25]
+component employee [0.68, 0.72] label [3, 27]
+component employer [0.87, 0.71] label [10, 0]
+component education [0.53, 0.59] label [-46, -12]
+pipeline education [0.34, 0.73]
+component digital identity [0.21, 0.46] label [-57, 8]
+component certification [0.38, 0.56] label [8, 3]
+component standards [0.08, 0.54] label [-86, 1]
+component micro credentials [0.51, 0.48] label [-30, -42]
+component verification [0.58, 0.39] label [-97, 3]
+component assessment [0.75, 0.56] label [-69, -8]
+component skills [0.80, 0.70] label [7, 3]
+component degree [0.51, 0.72] label [-12, 21]
+component portable training accounts [0.51, 0.54] label [-22, 12]
+component regulation [0.78, 0.40] label [-93, 1]
+component regulated jobs [0.85, 0.44] label [-115, 0]
+component government [0.96, 0.63] label [11, -2]
+component identity [0.14, 0.68] label [5, -1]
+component educator [0.07, 0.68] label [-59, -9]
+pipeline educator [0.64, 0.73]
+component online [0.05, 0.65] label [-61, 14]
+component physical [0.05, 0.72] label [20, 10]
+component micro learning [0.51, 0.35] label [-92, 24]
+component status [0.29, 0.45] label [-45, -11]
+pipeline status [0.35, 0.56]
+component institution [0.27, 0.55] label [-30, 23]
+component badges [0.27, 0.36] label [-42, 25]
+component community [0.87, 0.57] label [-72, 2]
+component inclusion [0.82, 0.55] label [-35, 17]
+component exclusion [0.56, 0.69] label [9, 3]
+component social learning [0.69, 0.38] label [-74, -11]
+component evidence [0.63, 0.38] label [-65, 4]
+component economic growth [0.89, 0.61] label [6, -14]
+component power [0.33, 0.38] label [-44, -4]
+
+// links
+employer->skills
+employer->assessment
+government->student
+government->regulated jobs
+assessment->education
+assessment->verification
+digital identity->online
+digital identity->identity
+identity->educator
+certification->verification
+education->certification
+regulated jobs->certification
+regulated jobs->regulation
+regulation->standards
+employee->certification
+skills->certification
+certification->educator
+lifelong->education
+micro learning->online
+certification->status
+skills->status
+institution->physical
+badges->digital identity
+verification->standards
+verification->identity
+community->student
+government->community
+community->participation
+community->inclusion
+skills->exclusion
+exclusion->identity
+community->social learning
+assessment->evidence
+government->economic growth
+economic growth->education
+exclusion->power
+inclusion->power
