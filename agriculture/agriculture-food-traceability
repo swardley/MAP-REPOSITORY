@@ -1,40 +1,81 @@
-// style
+//style
 title agriculture - food traceability
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-// components
+//notes
+note unused [0.26, 0.01]
+note +outlet [0.51, 0.59]
+note +time [0.14, 0.02]
+note +Russian example / allotments [0.17, 0.02]
+note +transportation [0.20, 0.02]
+note +diet [0.65, 0.76]
+note +co-operative farms [0.12, 0.02]
+note +organic [0.23, 0.02]
+note +Ireland Example [0.13, 0.74]
+note +supply chains as trading platforms [0.09, 0.02]
+note +local [0.06, 0.02]
+note +DNA markers [0.09, 0.80]
+
+// components and users
+component transportation [0.18, 0.69] label [-18, -12]
+component preservation [0.29, 0.66] label [9, -5]
+pipeline preservation [0.62, 0.75]
+component dry freeze [0.27, 0.63] label [-39, 21]
+component pickling [0.27, 0.74] label [1, 24]
+component distribution [0.51, 0.53] label [-79, -15]
+component surplus [0.78, 0.57] label [-18, 21]
+component storage [0.78, 0.64] label [-30, 22]
+component JIT [0.68, 0.65] label [9, 3]
+component diversity [0.78, 0.53] label [-57, 27]
+component convenience [0.81, 0.70] label [-67, -12]
+component monoculture [0.56, 0.65] label [-31, -10]
+component fresh [0.45, 0.75] label [-13, 23]
+component tinned [0.45, 0.65] label [-38, 25]
+component preserved [0.45, 0.69] label [-29, 25]
 component goverment [0.95, 0.51] label [-75, 0]
-component market [0.58, 0.58] label [-10, -14]
-component producers [0.94, 0.65] label [-74, 4]
-component consumers [0.87, 0.71] label [13, 3]
-component food product [0.56, 0.68] label [14, -7]
-pipeline food product [0.60, 0.8]
-component health [0.67, 0.73] label [10, 1]
+component market [0.51, 0.58] label [-13, -12]
+component producers [0.95, 0.65] label [-74, 4]
+component consumers [0.88, 0.78] label [5, -4]
+component food product [0.47, 0.68] label [-28, -15]
+pipeline food product [0.34, 0.76]
+component health [0.67, 0.76] label [7, 2]
 component bad actor [0.95, 0.38] label [-74, 4]
 component adulteration [0.84, 0.37] label [-97, 2]
-component trust [0.28, 0.47] label [-47, 3]
-component transparency [0.16, 0.33] label [-99, 3]
-component supply chain [0.13, 0.41] label [-28, 14]
-component traceability [0.22, 0.41] label [-33, -10]
+component trust [0.23, 0.45] label [-33, -7]
+component transparency [0.15, 0.33] label [-99, 3]
+component supply chain [0.11, 0.38] label [-25, 16]
+component traceability [0.19, 0.39] label [-67, -15]
 component food security [0.80, 0.60] label [-88, -11]
-pipeline food security [0.52, 0.69]
-component seasonality [0.68, 0.54] label [-31, -14]
-component education [0.54, 0.48] label [-65, -7]
-component regulation [0.73, 0.45]
-component sovereignty [0.64, 0.41] label [-90, 0]
+pipeline food security [0.52, 0.65]
+component seasonality [0.62, 0.54] label [-51, -12]
+component education [0.38, 0.46] label [-31, -14]
+component regulation [0.73, 0.45] label [-86, 10]
+component sovereignty [0.61, 0.42] label [-93, -7]
 pipeline sovereignty 
-component food standards [0.07, 0.44] label [9, 2]
-component territory [0.03, 0.35] label [-75, 1]
-component behaviour [0.48, 0.35] label [-81, 1]
-component educational content [0.40, 0.43] label [-18, 8]
+component food standards [0.06, 0.43] label [-17, 14]
+component territory [0.01, 0.35] label [-75, 1]
+component behaviour [0.31, 0.31] label [-81, 1]
+component educational content [0.29, 0.43] label [-62, -31]
 pipeline educational content
-component distribution mechanisms [0.30, 0.61] label [25, -27]
+component distribution mechanisms [0.18, 0.60] label [-77, -33]
 pipeline distribution mechanisms [0.58, 0.66]
-component social media [0.28, 0.65] label [-40, 25]
-component substitution [0.48, 0.57] label [-26, 18]
-component energy [0.39, 0.71] label [8, 4]
-component farm [0.46, 0.72] label [11, 4]
+component social media [0.16, 0.65] label [-51, 20]
+component substitution [0.37, 0.57] label [-19, 24]
+component energy [0.06, 0.74] label [7, -7]
+pipeline energy [0.63, 0.8]
+component farm [0.36, 0.71] label [11, 4]
+component foraged [0.45, 0.35] label [-42, -17]
+component solar [0.04, 0.79] label [-6, 22]
+component fertiliser [0.04, 0.64] label [-37, 23]
+
+// changes
+evolve supply chain 0.75 label [5, 0]
+
+//constraints
+diversity+<>monoculture
+distribution+<>supply chain
+JIT+<>distribution
 
 //links
 consumers->food product
@@ -82,3 +123,12 @@ substitution->market
 substitution->educational content
 market->regulation
 regulation->market
+consumers->convenience
+convenience->JIT
+JIT->monoculture
+health->preservation
+monoculture->territory
+foraged->education
+foraged->territory
+distribution->transportation
+transportation->energy
