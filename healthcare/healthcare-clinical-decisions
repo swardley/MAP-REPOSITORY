@@ -1,0 +1,102 @@
+title healthcare - clinical decision making
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+
+note unused [0.18, 0.01]
+note +clinical needs [0.15, 0.01]
+note +UK permissable treatment / thresholds based upon population [0.12, 0.01]
+note +ACO [0.09, 0.01]
+note +reimbursement models - sick versus well care [0.06, 0.01]
+note +pharma [0.03, 0.01]
+
+component ACO [0.45, 0.37] label [-35, 4]
+
+component permissable treatment [0.64, 0.61] label [-31, 14]
+
+component medical practioner [0.85, 0.60] label [-34, -34]
+component medical institute [0.95, 0.58] label [9, -29]
+component patient [0.92, 0.70]
+component health [0.87, 0.68] label [-45, -9]
+component treatment [0.54, 0.65] label [13, -7]
+pipeline treatment [0.43, 0.74]
+component access [0.72, 0.64] label [-52, 2]
+component ailment [0.81, 0.69] label [9, -12]
+pipeline ailment [0.49, 0.8]
+component clinical_decision [0.44, 0.69] label [-21, -21]
+pipeline clinical_decision [0.43, 0.75]
+component historical data [0.15, 0.46] label [-66, -23]
+component triage [0.42, 0.74] label [19, 2]
+component diagnosis [0.33, 0.63] label [-78, -3]
+component point of care [0.22, 0.65] label [-100, -8]
+pipeline point of care [0.50, 0.74]
+component 111 [0.20, 0.51] label [-10, 24]
+component ER [0.20, 0.69] label [14, -15]
+component primary care [0.20, 0.73] label [3, 23]
+component outcome [0.31, 0.53] label [11, 9]
+component population [0.32, 0.75] label [9, 2]
+component AI [0.42, 0.44] label [-10, -18]
+component consultation [0.42, 0.58] label [-36, 25]
+component symptoms [0.52, 0.73] label [12, 4]
+component holistic [0.52, 0.44] label [-24, 22]
+component comorbidity [0.20, 0.33] label [-91, 0]
+component re-admission [0.34, 0.48] label [-96, 14]
+component service objectives [0.87, 0.45] label [-81, -19]
+component national clinical guidelines [0.64, 0.54] label [-42, 11]
+component local protocols [0.64, 0.40] label [-24, 16]
+component cost [0.61, 0.76] label [10, -5]
+component heuristics [0.66, 0.50] label [-29, -18]
+pipeline heuristics [0.32, 0.62]
+component intuition [0.64, 0.33] label [-56, 24]
+component data [0.10, 0.65] label [7, -8]
+pipeline data [0.44, 0.72]
+component observation [0.08, 0.71] label [0, 23]
+component lab tests [0.08, 0.59] label [-19, 26]
+component social [0.08, 0.45] label [-33, 22]
+component biosensors [0.08, 0.51] label [-32, 25]
+pipeline health
+component payers [0.87, 0.55] label [-45, -9]
+pipeline payers
+
+component networked contracts [0.78, 0.42] label [-73, -17]
+
+
+// links
+patient->health
+health->ailment
+ailment->treatment
+ailment->access
+treatment->clinical_decision
+triage->population
+clinical_decision->diagnosis
+diagnosis->outcome
+outcome->historical data
+clinical_decision->point of care
+triage->ER
+outcome->comorbidity
+medical practioner->treatment
+medical practioner->outcome
+medical institute->medical practioner
+medical institute->cost
+holistic->re-admission
+cost->re-admission
+re-admission->outcome
+medical institute->service objectives
+service objectives->heuristics
+national clinical guidelines->symptoms
+medical practioner->heuristics
+historical data->data
+ER->observation
+primary care->lab tests
+primary care->observation
+point of care->data
+social->comorbidity
+national clinical guidelines->historical data
+cost->population
+medical institute->payers
+payers->population
+payers->networked contracts
+networked contracts->outcome
+networked contracts->permissable treatment
+permissable treatment->cost
+payers->ACO
+ACO+<>re-admission
