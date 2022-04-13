@@ -7,53 +7,92 @@ title Finance- risk management
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
 style wardley
 
-note unused [0.77, 0.01]
-note +centralisation of risk [0.74, 0.02]
-note +supervision [0.71, 0.02]
-note +regulators [0.67, 0.02]
-note +consequences [0.64, 0.02]
-note +brand [0.61, 0.02]
-note +enforcement [0.58, 0.02]
-note +incentives [0.54, 0.02]
+note unused [0.41, 0.01]
+note +centralisation of risk [0.07, 0.68]
+note +consequences [0.16, 0.01]
+note +brand [0.13, 0.01]
+note +enforcement [0.09, 0.01]
+note +incentives [0.38, 0.01]
+note +too big too fail [0.02, 0.44]
+note +public perception [0.74, 0.31]
+note +everything north of providers is another map [0.02, 0.01]
+note +access [0.79, 0.78]
+note +non operational risk [0.20, 0.01]
+note +market risk [0.35, 0.01]
+note +credit risk [0.23, 0.01]
+note +liquidity risk [0.31, 0.01]
+note +business risk [0.27, 0.01]
+note +intangible vs tangible, scarcity vs value
+note +circular dependency loops in the map [0.05, 0.01]
 
-component public [0.79, 0.71] label [15, 6]
-component nation [0.89, 0.67] label [12, 1]
+component inclusion [0.81, 0.77] label [8, 4]
+component exclusion [0.39, 0.75] label [7, 7]
+component profit [0.60, 0.78] label [9, 2]
+component people [0.53, 0.71] label [-10, -15]
+component perceived risk [0.68, 0.39] label [-110, 2]
+component gov [0.94, 0.59] label [-21, -8]
+component sovereignty [0.88, 0.46] label [-85, -10]
+pipeline sovereignty [0.3, 0.55]
+component territorial [0.86, 0.54] label [-15, -16]
+component econimic [0.86, 0.31] label [-83, 13]
+component political [0.86, 0.43] label [-71, 25]
+component network effects [0.43, 0.67] label [-64, -24]
+component expectations [0.73, 0.43] label [-94, 9]
+component cost [0.45, 0.79] label [9, 2]
+
+component rating agencies [0.20, 0.51] label [-66, -19]
+component providers [0.66, 0.67] label [11, 0]
+component lending [0.72, 0.67] label [-12, 21]
+component regulators [0.43, 0.44] label [-77, 14]
+component 2B2F [0.03, 0.56] label [-22, -9]
+component public [0.86, 0.72] label [10, 2]
+component nation [0.91, 0.70] label [6, -2]
 component supranation [0.95, 0.50] label [-95, 5]
-component financial services [0.74, 0.65] label [-52, -39]
-component corporation [0.94, 0.61] label [-50, -7]
-pipeline financial services [0.47, 0.69]
-component insurance [0.72, 0.48] label [-47, 24]
-component retail banking [0.72, 0.68] label [-75, 24]
+component financial services [0.74, 0.65] label [3, -34]
+component corporation [0.95, 0.63] label [11, 0]
+pipeline financial services [0.50, 0.71]
+component insurance [0.72, 0.51] label [-20, 23]
+component retail banking [0.72, 0.70] label [13, 4]
 
-component regulation [0.81, 0.40] label [-84, 4]
-component risk [0.36, 0.64] label [-18, -15]
+component regulation [0.46, 0.42] label [-82, -7]
+component risk [0.36, 0.64] label [-23, -16]
 pipeline risk [0.28, 0.74]
-component cybersecurity [0.34, 0.51] label [-64, 24]
+component cybersecurity [0.34, 0.50] label [-82, 22]
 component system risk [0.34, 0.35] label [-35, 30]
 component theft [0.34, 0.73] label [-15, 27]
 
-component assets [0.54, 0.62] label [13, -4]
-pipeline assets [0.4, 0.76]
-component process [0.52, 0.57] label [-24, 25]
-component capital [0.52, 0.75] label [-2, 27]
-component governance [0.52, 0.41] label [-43, 25]
-component infrastructure [0.52, 0.67] label [-38, 26]
+
+component trust [0.63, 0.56] label [-8, -12]
+pipeline trust [0.4, 0.6]
+
+component assets [0.55, 0.62] label [-4, -12]
+pipeline assets [0.38, 0.76]
+
+component information assymetry [0.57, 0.29] label [-76, -15]
+component competency [0.61, 0.59] label [10, 5]
+component integrity [0.61, 0.52] label [-46, 21]
+component benevolence [0.61, 0.41] label [-91, 2]
+component process [0.53, 0.56] label [-40, 20]
+component capital [0.53, 0.75] label [-28, 21]
+component governance [0.53, 0.39] label [-33, -18]
+component infrastructure [0.53, 0.67] label [-90, 20]
 component third party [0.34, 0.54] label [-56, -20]
-component credit risk [0.34, 0.58] label [-28, 25]
+component credit risk [0.34, 0.57] label [4, 20]
 component liability [0.24, 0.44] label [-76, 2]
 component cascade failure [0.34, 0.29] label [-32, 20]
 
-component CNI [0.69, 0.28] label [-49, 6]
-component territory [0.53, 0.30] label [-43, 24]
+component CNI [0.65, 0.25] label [-31, -9]
+component territory [0.47, 0.28] label [-10, 25]
 
-component accountability [0.10, 0.67] label [13, -14]
+component accountability [0.15, 0.67] label [5, -9]
 pipeline accountability [0.63, 0.74]
-component many players [0.08, 0.64] label [-41, 24]
-component few players [0.08, 0.73] label [-13, 24]
+component many players [0.13, 0.64] label [-59, 24]
+component few players [0.13, 0.73] label [-13, 24]
 component awareness [0.22, 0.21] label [-77, 3]
 component supply chain [0.11, 0.27] label [-99, 6]
+component value [0.45, 0.76] label [-7, 18]
 
-supranation->nation
+supranation->gov
 nation->public
 public->financial services
 public->capital
@@ -83,3 +122,40 @@ risk->accountability
 awareness->supply chain
 financial services->supply chain
 CNI->awareness
+nation->financial services
+supranation->financial services
+corporation->financial services
+few players->2B2F
+regulation->regulators
+regulators+<>few players
+financial services->providers
+providers->assets
+assets->regulation
+regulators->risk
+risk->rating agencies
+value->rating agencies
+assets->value
+gov->nation
+territorial->territory
+gov->sovereignty
+public->expectations
+political->expectations
+expectations->expectations
+expectations->risk
+expectations->perceived risk
+assets->cost
+providers->profit
+profit->value
+profit->cost
+providers->competency
+expectations->trust
+value->exclusion
+assets->exclusion
+public->inclusion
+value->network effects
+network effects->many players
+inclusion+<>exclusion
+value->risk
+perceived risk->information assymetry
+information assymetry->awareness
+rating agencies->accountability
