@@ -11,3 +11,6 @@ https://github.com/damonsk/onlinewardleymaps
 
 Mapping itself is creative commons share alike
 https://medium.com/wardleymaps
+
+Contributions to be accepted under same license of creative commons share alike. CC by SA. By making a contribution, you agree to those terms.
+https://creativecommons.org/licenses/by-sa/4.0/
