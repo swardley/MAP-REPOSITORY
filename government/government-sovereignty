@@ -1,0 +1,113 @@
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
+title government -sovereign risk
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+note unused [0.18, 0.02]
+note +faction [0.49, 0.62]
+note +ownership [0.55, 0.70]
+note +policy [0.15, 0.02]
+note +self sufficiency [0.12, 0.02]
+
+// components
+component sovereign risk [0.34, 0.49] label [-5, -13]
+pipeline sovereign risk [0.3, 0.73]
+component energy [0.32, 0.63] label [-27, 25]
+component food [0.32, 0.51] label [-5, 25]
+component territorial [0.32, 0.72] label [-32, -22]
+component digital [0.32, 0.56] label [-18, 26]
+component social [0.32, 0.31] label [-15, 22]
+component political [0.32, 0.40] label [-49, 26]
+component climate [0.32, 0.60] label [-2, -16]
+component awareness [0.24, 0.37] label [-76, 3]
+component risk assement [0.19, 0.41] label [11, 0]
+component risk appetite [0.11, 0.43] label [2, -14]
+component economy [0.77, 0.67] label [13, 4]
+component growth [0.68, 0.73] label [13, 1]
+component economic [0.32, 0.46] label [-35, 24]
+component social norms [0.54, 0.52] label [-94, -7]
+pipeline social norms [0.32, 0.64]
+component integrity [0.52, 0.47] label [-55, 25]
+component benevolence [0.52, 0.33] label [-39, 26]
+component fairness [0.52, 0.63] label [-12, -17]
+component competency [0.52, 0.58] label [-52, 27]
+component society [0.92, 0.61] label [-63, 5]
+component public [0.89, 0.72] label [14, 1]
+component gov [0.94, 0.67] label [12, -4]
+component resources [0.43, 0.44] label [-42, 18]
+component cost [0.41, 0.66] label [-18, 17]
+component crisis response [0.76, 0.40] label [-81, -20]
+component public perception [0.87, 0.50] label [-86, -18]
+component cybersecurity [0.32, 0.67] label [-13, 31]
+component supply chain [0.12, 0.37] label [-98, 2]
+component historical data [0.12, 0.78] label [25, -16]
+component territory [0.04, 0.44] label [-86, 4]
+component crisis [0.96, 0.35] label [-20, -14]
+pipeline crisis [0.3, 0.53]
+component economic shocks [0.94, 0.45] label [-53, -40]
+component war [0.94, 0.52] label [-7, -19]
+component pandemic [0.94, 0.31]
+component historic knowledge [0.23, 0.70] label [-36, 35]
+component "other" [0.80, 0.71]
+component success [0.84, 0.61] label [-15, -7]
+component competition [0.69, 0.61] label [-72, -13]
+pipeline competition [0.47, 0.67]
+component inclusion [0.78, 0.48] label [-48, 18]
+component media [0.80, 0.55] label [-22, 19]
+pipeline media
+component conflict [0.67, 0.66] label [-19, 26]
+component co-operate [0.67, 0.59] label [-45, 24]
+component collaborate [0.67, 0.48] label [-31, 26]
+component exclusion [0.60, 0.72] label [-31, 19]
+
+//links
+gov->public
+gov->society
+society->public
+public->public perception
+public perception->growth
+economy->growth
+growth->historical data
+gov->economy
+crisis response->crisis
+public perception->crisis response
+public perception->social norms
+crisis response->benevolence
+cost->competency
+economy->competency
+cost->integrity
+competency->resources
+crisis response->sovereign risk
+crisis response->awareness
+sovereign risk->risk assement
+awareness->supply chain
+risk assement->risk appetite
+risk appetite->crisis response
+crisis->historic knowledge
+historical data->historic knowledge
+territory->historic knowledge
+historical data->territory
+territorial->territory
+risk appetite->territory
+society->"other"
+success->public perception
+success->"other"
+media->public perception
+war->conflict
+success->competition
+economy->competition
+collaborate->benevolence
+co-operate->integrity
+conflict->territorial
+public perception->inclusion
+economy->exclusion
+society->social norms
+public perception->fairness
+exclusion->gov
+gov->inclusion
+gov->fairness
+fairness->political
