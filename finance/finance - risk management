@@ -7,12 +7,12 @@ title Finance- risk management
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
 style wardley
 
-note unused [0.41, 0.01]
+note unused [0.45, 0.01]
 note +centralisation of risk [0.07, 0.68]
 note +consequences [0.16, 0.01]
 note +brand [0.13, 0.01]
-note +enforcement [0.09, 0.01]
-note +incentives [0.38, 0.01]
+note +enforcement [0.42, 0.01]
+note +incentives [0.39, 0.01]
 note +too big too fail [0.02, 0.44]
 note +public perception [0.74, 0.31]
 note +everything north of providers is another map [0.02, 0.01]
@@ -22,7 +22,7 @@ note +market risk [0.35, 0.01]
 note +credit risk [0.23, 0.01]
 note +liquidity risk [0.31, 0.01]
 note +business risk [0.27, 0.01]
-note +intangible vs tangible, scarcity vs value
+note +intangible vs tangible, scarcity vs value [0.09, 0.01]
 note +circular dependency loops in the map [0.05, 0.01]
 
 component inclusion [0.81, 0.77] label [8, 4]
@@ -89,7 +89,7 @@ pipeline accountability [0.63, 0.74]
 component many players [0.13, 0.64] label [-59, 24]
 component few players [0.13, 0.73] label [-13, 24]
 component awareness [0.22, 0.21] label [-77, 3]
-component supply chain [0.11, 0.27] label [-99, 6]
+component supply chain [0.14, 0.27] label [-103, 2]
 component value [0.45, 0.76] label [-7, 18]
 
 supranation->gov
