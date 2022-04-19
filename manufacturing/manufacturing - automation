@@ -1,0 +1,92 @@
+title manufacturing - automation
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+note unused [0.08, 0.01]
+note +consistency [0.70, 0.74]
+note +time response [0.72, 0.74]
+note +hierarchy [0.41, 0.52]
+
+//component
+component employees [0.64, 0.71] label [10, 1]
+component manufacturer [0.90, 0.63] label [11, -10]
+pipeline manufacturer [0.49, 0.69]
+component customer [0.82, 0.70] label [14, 0]
+component cobots [0.09, 0.46] label [-57, 5]
+component data [0.02, 0.71] label [16, 2]
+component IoT [0.12, 0.72] label [10, 4]
+component predictive maintenance [0.21, 0.54] label [-23, 13]
+component visual testing [0.21, 0.79] label [19, 4]
+component machine learning [0.03, 0.67] label [-70, -8]
+component quality [0.23, 0.69] label [8, -3]
+pipeline quality [0.53, 0.8]
+component logistics [0.31, 0.68] label [-77, -4]
+pipeline logistics [0.44, 0.7]/
+component tuggers [0.29, 0.69] label [14, 5]
+component AGV [0.29, 0.45] label [-7, -13]
+component sustainability [0.68, 0.41] label [-109, 5]
+component design engineer [0.55, 0.66] label [7, -9]
+component manufacturing plant [0.60, 0.54] label [-70, -19]
+component territory [0.10, 0.33] label [-79, -10]
+component government [0.95, 0.46]
+component sovereign risk [0.80, 0.44] label [-104, -19]
+pipeline sovereign risk [0.34, 0.57]
+component territorial [0.78, 0.56] label [-29, 22]
+component supply chain [0.50, 0.41] label [-46, 23]
+component economic [0.78, 0.35] label [-78, 6]
+component goods [0.72, 0.67] label [-49, 0]
+pipeline goods
+component difference [0.70, 0.46] label [-73, -10]
+pipeline difference [0.4, 0.52]
+component status [0.68, 0.51] label [-22, 19]
+component awareness [0.22, 0.33] label [-75, 3]
+component automation [0.52, 0.58] label [-57, -11]
+pipeline automation [0.40, 0.68]
+component process [0.50, 0.63] label [-14, 22]
+component manual work [0.50, 0.67] label [15, 4]
+component productivity [0.73, 0.73]
+component power [0.41, 0.51] label [-19, -17]
+pipeline power [0.46, 0.6]
+component power over [0.39, 0.59] label [14, 5]
+component power with [0.39, 0.47] label [-34, 24]
+component next gen [0.88, 0.50] label [-13, 20]
+component traditional [0.88, 0.68] label [12, 3]
+component culture [0.31, 0.34]
+component audit [0.21, 0.65] label [-29, 22]
+component robot [0.09, 0.67] label [-18, 23]
+component automoton [0.11, 0.60] label [-12, -11]
+pipeline automoton [0.45, 0.68]
+
+//link
+government->manufacturer
+government->customer
+customer->goods
+manufacturer->goods
+manufacturer->productivity
+goods->manufacturing plant
+productivity->automation
+automation->logistics
+manufacturing plant->quality
+manufacturer->difference
+customer->difference
+government->sovereign risk
+economic->supply chain
+automation->power
+next gen->power with
+power with->culture
+traditional->power over
+AGV->cobots
+cobots->power with
+supply chain->awareness
+supply chain->territory
+territory->territorial
+manual work->robot
+power over->robot
+automoton->machine learning
+machine learning->data
+IoT->data
+IoT->predictive maintenance
+manufacturing plant->design engineer
+manufacturing plant->territory
+manufacturer->employees
+employees->power
