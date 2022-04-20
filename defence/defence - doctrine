@@ -1,0 +1,97 @@
+title defence - military doctrine
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+note unused [0.20, 0.02]
+note +physical [0.53, 0.27]
+note +remote [0.55, 0.28]
+note +virtual [0.57, 0.29]
+note +theatre [0.92, 0.41]
+note +awareness [0.75, 0.55]
+note +visibility [0.72, 0.46]
+note +value money [0.18, 0.03]
+
+//components
+component operating environment [0.53, 0.41] label [-77, -25]
+pipeline operating environment
+component economic [0.86, 0.31]
+component public [0.86, 0.71] label [12, 3]
+component gov [0.94, 0.60] label [12, 1]
+component military [0.87, 0.65] label [-68, 0]
+component corporate [0.94, 0.66] label [11, 0]
+component profit [0.41, 0.70] label [9, 4]
+component operating model [0.62, 0.63] label [-65, -30]
+component synchronous [0.60, 0.66] label [1, -17]
+component asynchronous [0.60, 0.52] label [-64, 23]
+component culture [0.46, 0.43] label [-58, -8]
+pipeline culture [0.28, 0.5]
+component investment [0.44, 0.41] label [-28, 25]
+component freedom [0.44, 0.29] label [-69, 1]
+component hiearachy [0.44, 0.49] label [22, 5]
+component composition [0.53, 0.59] label [6, -4]
+pipeline composition [0.5, 0.72]
+component conscripts [0.51, 0.71] label [10, 2]
+component PMC [0.51, 0.51] label [-29, 6]
+component statecraft [0.80, 0.57] label [-21, -13]
+pipeline statecraft [0.49, 0.71]
+component kinetic [0.78, 0.70] label [16, 4]
+component cyber [0.78, 0.50] label [-52, 5]
+component policy [0.78, 0.65] label [-20, 24]
+component operating model [0.62, 0.63] label [-65, -30]
+pipeline operating model [0.50, 0.7]
+component centralised [0.60, 0.69] label [21, 1]
+component decentralised [0.60, 0.51] label [-66, -15]
+component doctrine [0.21, 0.61] label [-71, -9]
+pipeline doctrine [0.44, 0.7]
+component SOP [0.19, 0.69] label [18, 6]
+component Agile [0.19, 0.45] label [-54, 1]
+component sovereignty [0.88, 0.43] label [-86, -8]
+pipeline sovereignty [0.3, 0.54]
+component territorial [0.86, 0.53] label [-75, 24]
+component resources [0.32, 0.66] label [-78, -7]
+pipeline resources [0.52, 0.73]
+component volume operations [0.30, 0.72] label [13, -2]
+component tech superiority [0.30, 0.53] label [-68, 2]
+component lived experience [0.72, 0.44] label [-79, -30]
+pipeline lived experience [0.37, 0.49]
+component gamers [0.70, 0.43] label [-29, 20]
+component weapon [0.09, 0.65] label [7, -12]
+pipeline weapon [0.43, 0.72]
+component drones [0.07, 0.71] label [20, 4]
+component Light vehicles [0.07, 0.63] label [-5, 26]
+component big ticket [0.07, 0.44] label [-87, 5]
+component modern tanks [0.07, 0.53] label [-41, 22]
+
+//link
+gov->military
+gov->public
+public->lived experience
+gov->sovereignty
+sovereignty->statecraft
+statecraft->operating model
+operating model->composition
+composition->culture
+composition->resources
+PMC->profit
+operating model->doctrine
+operating model->weapon
+volume operations->drones
+tech superiority->modern tanks
+tech superiority->big ticket
+Agile->Light vehicles
+Agile->drones
+SOP->modern tanks
+SOP->big ticket
+SOP->hiearachy
+freedom->Agile
+conscripts->investment
+decentralised->Agile
+centralised->SOP
+lived experience->culture
+territorial->kinetic
+economic->cyber
+military->operating model
+corporate->PMC
+military->public
+centralised->hiearachy
+operating model->operating environment
