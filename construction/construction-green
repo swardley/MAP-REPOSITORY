@@ -67,7 +67,7 @@ component fossil [0.18, 0.73] label [-15, 25]
 component renewable [0.18, 0.67] label [-37, 23]
 component status [0.67, 0.42] label [-50, 7]
 component neighbourhood [0.90, 0.37] label [-75, -7]
-component regultory capture [0.78, 0.35] label [-70, -15]
+component regulatory capture [0.78, 0.35] label [-70, -15]
 component methodology [0.30, 0.61] label [-53, -11]
 pipeline methodology [0.53, 0.67]
 component modular [0.28, 0.54] label [-14, 27]
@@ -122,8 +122,8 @@ green homes->modular
 neighbourhood->land
 neighbourhood->status
 status->exclusion
-manufacturer->regultory capture
-regultory capture->regulators
+manufacturer->regulatory capture
+regulatory capture->regulators
 sustainability->green homes
 sustainability->society
 consumer->consumer
