@@ -40,9 +40,15 @@ component gas [0.08, 0.42] label [-1, -18]
 component nuclear [0.08, 0.38] label [-39, 26]
 component space [0.72, 0.34] label [-34, 22]
 component energy generation [0.43, 0.65] label [-80, -32]
-pipeline energy generation [0.49, 0.7]
-component centralised [0.41, 0.69] label [22, 5]
-component localised [0.41, 0.50] label [-76, 24]
+
+pipeline energy generation [0.38, 0.76]
+// Distrubuted generation and consumption, solar roof's feeding into grid
+component distributed-generation distrubuted-consumption [0.41, 0.39]
+// Centralised generation such as gas/coal/nuclear power stations, feeding into national grid
+component centralised-generation distrbuted-consumption [0.41, 0.60] label [-41, 8]
+// localised generation and consumption, camp fire, wood burners, water wheels, flour wind mills
+component localised-generation localisted-consumption [0.41, 0.75] label [-2, -40]
+
 component society [0.93, 0.64] label [-28, -13]
 component competition [0.85, 0.59] label [14, -1]
 component industrial [0.58, 0.62] label [-70, 27]
