@@ -2,83 +2,60 @@ title defence - multi domain
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note + cheaper drones [0.32, 0.32]
-note + economics of war [0.24, 0.25]
-note + digtia twins [0.11, 0.40]
-note + emerging tech [0.30, 0.32]
-note + agility in manufactuing [0.22, 0.25]
-note + sensing mechanisms [0.05, 0.52]
-note + collaboration [0.20, 0.31]
-
-note + military to provide jobs [0.02, 0.01]
-
-component capability [0.32, 0.43] label [-78, -14]
-pipeline capability
-
-component operating model [0.26, 0.43] label [-75, -11]
-pipeline operating model
 
 //actors
 component government [0.96, 0.65] label [-29, -9]
-
-component legitimacy [0.91, 0.58] label [-84, -2]
-component society [0.93, 0.67] label [10, -5]
-
-component citizen [0.88, 0.72] label [8, 3]
-component success [0.68, 0.72] label [8, 1]
-
-component belonging [0.85, 0.63] label [-27, 25]
-
-component trust [0.79, 0.55] label [-42, -3]
+component legitimacy [0.92, 0.58] label [-84, -2]
+component society [0.94, 0.67] label [11, 2]
+component citizen [0.90, 0.71] label [8, 3]
+component success [0.76, 0.72] label [8, 1]
+component belonging [0.87, 0.63] label [-27, 25]
+component trust [0.81, 0.55] label [-42, -3]
 pipeline trust [0.41, 0.58]
-component benevolence [0.77, 0.42] label [-98, 1]
-
-component appearance of success [0.79, 0.72] label [8, -22]
-
-component norms [0.91, 0.62] label [-5, 17]
+component benevolence [0.79, 0.42] label [-98, 1]
+component appearance of success [0.83, 0.72] label [8, -22]
+component norms [0.92, 0.63] label [-5, 17]
 pipeline norms
-component integrity [0.77, 0.57] label [14, 4]
-
-component competence [0.77, 0.51] label [-42, 20]
-
-component sovereignty [0.58, 0.69] label [-1, -17]
+component integrity [0.79, 0.57] label [14, 4]
+component competence [0.79, 0.50] label [-42, 20]
+component sovereignty [0.66, 0.69] label [0, -12]
 pipeline sovereignty [0.45, 0.76]
-
-component theatre [0.46, 0.62] label [-43, -10]
-pipeline theatre [0.43, 0.74]
-
-component physical [0.56, 0.75] label [18, 8]
-component cultural  [0.56, 0.64] label [-37, 23]
-component technological [0.56, 0.46] label [-109, 2]
-component political [0.56, 0.58] label [-45, 24]
-component economic [0.56, 0.52] label [-48, 23]
-
-component air [0.44, 0.67] label [-18, 20]
-component land [0.44, 0.73] label [-15, 24]
-component sea [0.44, 0.69] label [-10, 19]
-component cyber [0.44, 0.53] label [-20, 21]
-component economy [0.44, 0.44] label [-43, 21]
-component art [0.44, 0.56] label [-10, 20]
-component space [0.44, 0.47] label [-7, 21]
-
-component critical national infrastructure [0.44, 0.63] label [-45, 12]
+component theatre [0.52, 0.62] label [-43, -10]
+pipeline theatre [0.39, 0.74]
+component physical [0.64, 0.75] label [17, 7]
+component cultural  [0.64, 0.67] label [-24, 22]
+component technological [0.64, 0.46] label [-109, 2]
+component political [0.64, 0.62] label [-45, 24]
+component economic [0.64, 0.52] label [-48, 23]
+component air [0.50, 0.68] label [-18, 20]
+component land [0.50, 0.73] label [15, 5]
+component sea [0.50, 0.70] label [-10, 19]
+component cyber [0.50, 0.53] label [-20, 21]
+component economy [0.50, 0.40] label [-43, 21]
+component art [0.50, 0.57] label [-11, 20]
+component space [0.50, 0.48] label [-7, 21]
+component critical national infrastructure [0.50, 0.65] label [-45, 12]
 pipeline critical national infrastructure
-
-component CNI [0.23, 0.66] label [-36, -6]
-pipeline CNI [0.54, 0.7]
-component food [0.21, 0.69] label [11, 7]
-component energy [0.21, 0.60] label [-25, 20]
-component water [0.21, 0.64] label [-7, 20]
-component telecoms [0.21, 0.55] label [-42, 21]
-
-component territory [0.16, 0.41] label [-72, 5]
-component supply chain [0.14, 0.67] label [20, 2]
-
+component CNI [0.38, 0.66] label [-36, -6]
+pipeline CNI [0.59, 0.73]
+component food [0.36, 0.72] label [20, 7]
+component energy [0.36, 0.67] label [-25, 20]
+component water [0.36, 0.69] label [-6, -16]
+component telecoms [0.36, 0.60] label [-42, 21]
+component territory [0.20, 0.38] label [-89, 1]
+component supply chain [0.20, 0.63] label [20, 2]
 component situational awareness [0.10, 0.60] label [-74, -25]
 pipeline situational awareness [0.3, 0.7]
 component physical awareness [0.08, 0.69] label [12, -5]
 component economic awareness [0.08, 0.31] label [-84, -10]
 component digital awareness [0.08, 0.43] label [-45, 15]
+component landscape [0.22, 0.56] label [-73, -9]
+pipeline landscape [0.37, 0.64]
+component capability [0.40, 0.43] label [-85, -1]
+pipeline capability
+component operating model [0.33, 0.43] label [-75, -11]
+pipeline operating model
+
 
 //links
 government->society
@@ -130,3 +107,5 @@ theatre->capability
 theatre->operating model
 capability->capability
 capability->supply chain
+landscape->situational awareness
+theatre->landscape
