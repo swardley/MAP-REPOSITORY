@@ -5,54 +5,70 @@
 
 title agriculture - food waste
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
 
-note unsed [0.25, 0.11]
-component food health [0.20, 0.05] label [13, -1]
-component satellite [0.16, 0.05] label [18, 1]
-component land use [0.12, 0.05] label [17, 3]
-component yield [0.21, 0.15] label [12, 3]
-component forecast [0.17, 0.15] label [10, 5]
-component farmer [0.12, 0.15] label [12, 4]
-component localisation [0.07, 0.05] label [13, 4]
-component biodiversity [0.08, 0.15] label [12, 3]
-component diet [0.02, 0.05]
+note unsed [0.93, 0.02]
+note food health [0.89, 0.03] label [9, 5]
+note satellite [0.85, 0.03] label [11, 3]
+note land use [0.07, 0.45] label [-70, 5]
+note yield [0.73, 0.03] label [12, 3]
+note forecast [0.69, 0.03] label [10, 5]
+note farmer [0.81, 0.03] label [10, 4]
+note localisation [0.77, 0.03] label [13, 4]
+note biodiversity [0.66, 0.03] label [12, 3]
 
+component water [0.07, 0.62] label [-4, -15]
+component cost [0.72, 0.72] label [-41, 2]
+component options [0.81, 0.75] label [10, -2]
+component corporate [0.97, 0.59] label [-72, -3]
+
+component diet [0.77, 0.69] label [-25, -8]
 // main components
-component consumer [0.84, 0.71]
-component options [0.76, 0.72] label [7, -6]
-component food [0.61, 0.65] label [-32, -9]
+component consumer [0.87, 0.73] label [13, 1]
+component food [0.52, 0.65] label [-32, -9]
 pipeline food [0.54, 0.76]
-component staples [0.59, 0.71] label [-41, 23]
-component luxury [0.59, 0.58] label [-25, 24]
-
-component standard [0.45, 0.52] label [-49, 21]
-component quality check [0.24, 0.56] label [-84, 15]
-component waste [0.18, 0.65]
+component staples [0.50, 0.75] label [18, 3]
+component luxury [0.50, 0.55] label [-57, 4]
+component standard [0.43, 0.50] label [-69, 4]
+component quality check [0.27, 0.55] label [-101, 0]
+component waste [0.23, 0.66]
 pipeline waste [0.35, 0.73]
-
-component unrecycled [0.16, 0.68] label [-3, 24]
-component sustainable [0.16, 0.39] label [-16, 27]
-
-component logistic [0.47, 0.62] label [-51, -4]
-component tranportation [0.35, 0.58] label [-83, -2]
-component warehousing [0.32, 0.62] label [-5, 24]
-component energy [0.10, 0.66] label [2, 14]
-component carbon footprint [0.03, 0.56] label [-66, -15]
-
-component supermarket [0.86, 0.65] label [-45, -12]
-component trade [0.66, 0.73] label [9, -3]
-component exclusion [0.47, 0.73] label [-8, 20]
-
+component unrecycled [0.21, 0.72] label [18, 0]
+component sustainable [0.21, 0.36] label [-95, -9]
+component logistic [0.40, 0.63] label [-68, -8]
+component tranportation [0.38, 0.55] label [-112, 0]
+component warehousing [0.38, 0.64] label [-58, 20]
+component energy [0.07, 0.69] label [14, 8]
+component carbon footprint [0.02, 0.64] label [-74, -19]
+component supermarket [0.89, 0.67] label [-47, -8]
+component trade [0.72, 0.75] label [10, 5]
+component exclusion [0.40, 0.73] label [12, 4]
 component government [0.98, 0.64] label [-34, -9]
-component food security [0.94, 0.57] label [-50, -15]
-component policy [0.88, 0.53] label [-43, -9]
-
-component society [0.95, 0.69]
-component social norms [0.75, 0.47] label [-65, -12]
-component education [0.70, 0.58] label [-53, 18]
-component visibility [0.63, 0.43] label [-53, -6]
-component welfare [0.70, 0.27] label [-51, -9]
-
+component food security [0.91, 0.57] label [-54, -10]
+component policy [0.84, 0.53] label [9, 6]
+component society [0.95, 0.70] label [8, -6]
+component social norms [0.77, 0.49] label [-42, 18]
+component education [0.74, 0.59] label [-40, 20]
+component transparency [0.16, 0.40] label [-96, -1]
+component welfare [0.69, 0.27] label [-51, -9]
+component supply chain [0.11, 0.39] label [-5, -10]
+component feedstock [0.60, 0.53] label [-52, 24]
+component fertilizers [0.60, 0.65] label [-35, 21]
+component biological byproducts [0.62, 0.64] label [-73, -28]
+pipeline biological byproducts [0.43, 0.74]
+component human food [0.60, 0.73] label [15, 5]
+component chemical [0.60, 0.60] label [-54, 23]
+component clothing [0.60, 0.70] label [3, -15]
+component supply chain standards [0.05, 0.22] label [-70, -22]
+component nutrional value [0.69, 0.44] label [-70, -11]
+component inputs [0.09, 0.55]
+pipeline inputs [0.44, 0.70]
+component recycled waste [0.60, 0.44] label [-116, 3]
+component marketing [0.84, 0.44] label [-68, -12]
+component regulatory capture [0.78, 0.30] label [-78, -18]
+component production [0.38, 0.68] label [-3, 22]
+pipeline logistic [0.54, 0.69]
+component food surplus [0.87, 0.50] label [-53, -11]
 
 // links
 supermarket->food
@@ -60,21 +76,15 @@ supermarket->consumer
 food->standard
 quality check->standard
 food->logistic
-logistic->tranportation
-logistic->warehousing
 quality check->waste
 tranportation->energy
 food->energy
 waste->energy
-warehousing->quality check
-tranportation->quality check
 consumer->options
-options->food
 government->consumer
 government->food security
 food security->staples
 options->trade
-trade->supermarket
 luxury->exclusion
 exclusion->trade
 energy->carbon footprint
@@ -92,3 +102,43 @@ social norms->visibility
 social norms->welfare
 policy->welfare
 welfare->sustainable
+social norms->transparency
+sustainable->transparency
+transparency->supply chain
+waste->supply chain
+human food->food
+trade->biological byproducts
+corporate->biological byproducts
+options->biological byproducts
+consumer->trade
+options->cost
+biological byproducts->supply chain
+
+supply chain->inputs
+logistic->supply chain
+recycled waste->waste
+supply chain->supply chain standards
+transparency->supply chain standards
+options->diet
+diet->education
+diet->cost
+cost->logistic
+education->nutrional value
+corporate->marketing
+marketing->nutrional value
+marketing->nutrional value
+corporate->PR
+PR->nutrional value
+marketing->nutrional value
+nutrional value->marketing
+marketing->supermarket
+supermarket->marketing
+marketing->regulatory capture
+marketing->regulatory capture
+regulatory capture->marketing
+regulatory capture->standard
+supermarket->options
+
+logistic->quality check
+food security->food surplus
+food surplus->logistic
