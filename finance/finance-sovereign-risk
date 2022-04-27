@@ -1,0 +1,94 @@
+title Finance - Sovereign risks
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
+style wardley
+
+
+component legal [0.10, 0.59] label [6, -8]
+pipeline legal [0.50, 0.68]
+component "bad" actors [0.97, 0.50]
+component government [0.96, 0.61] label [9, 0]
+component society [0.91, 0.64] label [12, 2]
+component public [0.86, 0.68] label [10, -5]
+component legitimacy [0.93, 0.57] label [-35, 18]
+component sovereign risk [0.72, 0.62] label [-60, -20]
+pipeline sovereign risk [0.47, 0.7]
+component CNI [0.70, 0.65] label [-7, 23]
+component territorial [0.70, 0.69] label [17, 3]
+component economic [0.70, 0.48] label [-71, 3]
+component political [0.70, 0.58] label [-14, 22]
+component cultural [0.70, 0.54] label [-11, -15]
+component economic risk [0.48, 0.56] label [-31, -14]
+pipeline economic risk [0.44, 0.71]
+component supply chains [0.46, 0.60] label [-66, 22]
+component debt [0.46, 0.65] label [-15, 21]
+component currency [0.46, 0.70] label [15, 1]
+component law [0.87, 0.41] label [-33, 0]
+component taxation [0.46, 0.67] label [-1, 20]
+component  norms [0.73, 0.36] label [-53, -1]
+component belonging [0.81, 0.67] label [9, 2]
+component success [0.85, 0.61] label [7, 4]
+component perceived success [0.76, 0.69] label [14, -9]
+component rule based [0.08, 0.67] label [16, 3]
+component principle [0.08, 0.51] label [-83, 5]
+component CNI Risk [0.62, 0.66]
+pipeline CNI Risk [0.33, 0.73]
+component energy [0.60, 0.68] label [-29, 22]
+component food [0.60, 0.72] label [15, 4]
+component telecom [0.60, 0.62] label [-35, 23]
+component history [0.65, 0.52] label [-5, 14]
+
+component finance [0.60, 0.43] label [-26, -15]
+component smart cities [0.60, 0.34] label [-72, -19]
+component awareness [0.19, 0.51] label [-78, -7]
+pipeline awareness [0.3, 0.7]
+component physical awareness [0.17, 0.69] label [19, -10]
+component economic awareness [0.17, 0.31] label [-81, -8]
+
+component sovereign action [0.33, 0.58] label [11, -26]
+pipeline sovereign action [0.41, 0.67]
+component capital access [0.46, 0.45] label [-115, 2]
+component liquidity [0.46, 0.53] label [-60, 23]
+
+component sanctions [0.31, 0.48] label [-29, 23]
+component protocols [0.46, 0.63] label [-6, -17]
+component international trade [0.53, 0.38] label [-90, -9]
+// component crypto [0.40, 0.18] label [-61, 0]
+
+//links
+government->society
+society->public
+government->legitimacy
+legitimacy->sovereign risk
+economic->economic risk
+legitimacy->law
+law->sovereign risk
+society->norms
+law->norms
+society->success
+norms->success
+public->belonging
+belonging->norms
+belonging->perceived success
+perceived success->CNI
+success->economic
+CNI->CNI Risk
+perceived success->history
+cultural->history
+"bad" actors->legitimacy
+"bad" actors->history
+"bad" actors->perceived success
+CNI Risk->supply chains
+territorial->physical awareness
+supply chains->digital awareness
+finance->economic awareness
+economic risk->awareness
+finance->debt
+sovereign risk->sovereign action
+sanctions->economic awareness
+finance->capital access
+law->legal
+norms->principle
+
+finance->international trade
+international trade->rule based
+international trade->economic risk
