@@ -3,13 +3,16 @@
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
 
-//notes
+
+//note <note text> [<visibility>, <maturity>]
 note unused [0.09, 0.02]
 note +distributed funding?? [0.06, 0.03]
+note conflicts [0.80, 0.66]
 
 title government - open approaches i.e. source, data
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
+
 
 note +open [0.27, 0.58]
 note +open [0.13, 0.59]
@@ -19,6 +22,7 @@ note + Brazil asset list [0.07, 0.44]
 component government [0.96, 0.66] label [-84, 2]
 component society [0.93, 0.70] label [13, 1]
 component citizens [0.86, 0.71] label [7, 4]
+
 component funding [0.46, 0.70] label [2, -8]
 pipeline funding [0.36, 0.73]
 component public purse [0.44, 0.72] label [14, 6]
@@ -27,6 +31,7 @@ component services [0.59, 0.66] label [-64, -4]
 pipeline services [0.57, 0.72]
 component public owned [0.57, 0.71] label [17, 2]
 component proprietary [0.57, 0.58] label [-98, 3]
+
 component supply chain [0.37, 0.63] label [10, 5]
 component awareness [0.15, 0.36] label [-75, -8]
 pipeline awareness [0.3, 0.48]
@@ -46,10 +51,12 @@ component risk mitigation [0.69, 0.69] label [27, -10]
 component perception of success [0.80, 0.64] label [-62, -19]
 component success [0.87, 0.62] label [-21, -13]
 component legitimacy [0.91, 0.58] label [-85, 1]
+
 evolve standardised schemas 0.7 label [18, -16]
 evolve awareness 0.7
 component trust [0.81, 0.43] label [-30, -10]
 pipeline trust [0.35, 0.47]
+
 component transparency [0.03, 0.39] label [-95, 2]
 component integrity [0.79, 0.46] label [14, 3]
 
@@ -62,6 +69,7 @@ component counter2 [0.15, 0.58] label [9, -6]
 profit+<>counter1
 profit+<>counter2
 profit+<>corporate
+
 component supranational [0.44, 0.52] label [-78, 20]
 component crypto [0.44, 0.37] label [-35, 19]
 
