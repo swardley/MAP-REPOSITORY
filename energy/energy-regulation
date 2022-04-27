@@ -1,0 +1,85 @@
+title Energy - regulation
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+
+
+note notes [0.91, 0.04]
+note forcing functions [0.88, 0.04]
+
+component battery storage [0.24, 0.58] label [-56, -39]
+component consumer [0.83, 0.69] label [9, 2]
+component government [0.95, 0.63] label [10, 1]
+component perception of success [0.78, 0.65] label [-63, -29]
+component distributors [0.94, 0.57] label [-53, -10]
+component profit [0.89, 0.75] label [13, 2]
+component price [0.74, 0.73] label [-25, -9]
+component regulation [0.75, 0.44] label [-84, 2]
+component security [0.55, 0.62] label [-14, -14]
+pipeline security [0.52, 0.71]
+component power factors [0.53, 0.58] label [-89, 24]
+component reliability [0.53, 0.66] label [-1, -16]
+component surplus [0.53, 0.63] label [-31, 22]
+component grid [0.38, 0.62] label [13, -9]
+pipeline grid [0.57, 0.69]
+component generation [0.36, 0.68] label [17, 3]
+component transmission [0.36, 0.65] label [-40, 23]
+component storage [0.36, 0.58] label [-39, 23]
+component legitimacy [0.84, 0.45] label [-75, 2]
+component CNI [0.69, 0.66] label [6, -5]
+pipeline CNI [0.46, 0.7]
+component energy [0.67, 0.63] label [-26, 23]
+component food [0.67, 0.69] label [14, 6]
+component standards [0.17, 0.47] label [-77, 7]
+component grid model [0.42, 0.38] label [-82, 1]
+component supply chain [0.15, 0.66] label [5, 8]
+component awareness [0.06, 0.33] label [-78, 3]
+component continuity [0.53, 0.70] label [-29, 24]
+component cost [0.43, 0.76] label [8, 5]
+component safety cases [0.53, 0.53] label [-100, 3]
+component society [0.88, 0.66] label [10, 3]
+component smart cities [0.67, 0.47] label [-103, 3]
+component energy mix [0.26, 0.66] label [-22, -13]
+pipeline energy mix [0.04, 0.73]
+component fossil [0.24, 0.72] label [16, 6]
+component renewable [0.24, 0.67] label [-5, 21]
+component self generation [0.24, 0.62] label [-42, 12]
+component sustainability [0.82, 0.54] label [-61, -12]
+component investors [0.92, 0.52] label [-74, -4]
+component perception [0.89, 0.46] label [-82, 3]
+component fusion [0.24, 0.18] label [-25, 24]
+component workable hydrogen [0.24, 0.28] label [-49, -43]
+component Dyson sphere [0.24, 0.05] label [-12, -19]
+
+//link
+government->society
+society->consumer
+consumer->perception of success
+perception of success->price
+CNI->perception of success
+government->legitimacy
+legitimacy->CNI
+government->regulation
+regulation->CNI
+regulation->security
+regulation->standards
+CNI->security
+security->grid
+security->cost
+security->grid model
+grid model->grid
+grid->energy mix
+supply chain->energy mix
+supply chain->awareness
+grid->standards
+grid model->awareness
+regulation->grid model
+distributors->profit
+profit->cost
+price->cost
+distributors->grid
+cost->supply chain
+society->sustainability
+sustainability->supply chain
+distributors->investors
+investors->perception
+perception->sustainability
