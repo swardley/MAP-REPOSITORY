@@ -17,7 +17,6 @@ style wardley
 //note +social learning relationship to on the job learning [0.05, 0.01]
 //note +formal vs informal learning - need to divide the maps? [0.02, 0.01]
 
-component codified [0.42, 0.68]
 component student [0.70, 0.63] label [-26, -19]
 pipeline student [0.5, 0.73]
 component lifelong [0.68, 0.51] label [-16, 25]
@@ -59,7 +58,11 @@ component AI tutors [0.08, 0.20] label [-41, -19]
 component Synthetic tutors [0.18, 0.13] label [-27, 12]
 
 component content [0.43, 0.62]
-pipeline content [0.34, 0.73]
+pipeline content [0.18, 0.73]
+component assembled [0.41, 0.70] label [3, -21]
+component productized [0.42, 0.46] label [-55, -16]
+component adaptive [0.41, 0.21] label [-3, 22]
+
 component leaderboard [0.03, 0.40] label [-92, 8]
 component brand [0.03, 0.50] label [-48, 6]
 
