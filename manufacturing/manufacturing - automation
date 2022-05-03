@@ -2,91 +2,136 @@ title manufacturing - automation
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note unused [0.03, 0.01]
-note +consistency [0.72, 0.73]
-note +time response [0.74, 0.73]
-note +hierarchy [0.41, 0.54]
+note POV - manufacturer (2022) [0.95, 0.07]
 
-component employees [0.64, 0.71] label [10, 1]
-component manufacturer [0.90, 0.63] label [11, -10]
-pipeline manufacturer [0.49, 0.69]
-component customer [0.82, 0.70] label [14, 0]
-component cobots [0.09, 0.46] label [-57, 5]
-component data [0.02, 0.71] label [16, 2]
-component IoT [0.12, 0.72] label [10, 4]
-component predictive maintenance [0.21, 0.54] label [-34, 14]
-component visual testing [0.21, 0.79] label [19, 4]
-component machine learning [0.03, 0.67] label [-70, -8]
-component quality [0.23, 0.69] label [8, -3]
-pipeline quality [0.53, 0.8]
-component logistics [0.31, 0.68] label [-77, -4]
-pipeline logistics [0.44, 0.7]/
-component tuggers [0.29, 0.69] label [14, 5]
-component AGV [0.29, 0.45] label [-7, -13]
-component sustainability [0.68, 0.41] label [-114, 6]
-component design engineer [0.55, 0.66] label [7, -9]
-component manufacturing plant [0.59, 0.53] label [-57, -19]
-component territory [0.10, 0.33] label [-79, -10]
-component government [0.95, 0.46]
-component sovereign risk [0.80, 0.44] label [-104, -19]
-pipeline sovereign risk [0.34, 0.57]
-component territorial [0.78, 0.56] label [-29, 22]
-component supply chain [0.50, 0.41] label [-46, 23]
-component economic [0.78, 0.35] label [-78, 6]
-component goods [0.72, 0.67] label [-49, 0]
-pipeline goods
-component difference [0.70, 0.46] label [-73, -10]
-pipeline difference [0.4, 0.52]
-component status [0.68, 0.51] label [-22, 19]
-component awareness [0.40, 0.35] label [-75, 3]
-component automation [0.52, 0.58] label [-36, -14]
-pipeline automation [0.40, 0.68]
-component process [0.50, 0.63] label [-14, 22]
-component manual work [0.50, 0.67] label [15, 4]
-component productivity [0.74, 0.71]
-component power [0.41, 0.53] label [-37, -9]
-pipeline power [0.46, 0.6]
-component power over [0.39, 0.59] label [14, 5]
-component power with [0.39, 0.47] label [-34, 24]
-component next gen [0.88, 0.50] label [-13, 20]
-component traditional [0.88, 0.68] label [12, 3]
-component culture [0.31, 0.34] label [-62, 0]
-component audit [0.21, 0.65] label [-29, 22]
-component robot [0.09, 0.67] label [-18, 23]
-component automoton [0.11, 0.58] label [-75, -1]
-pipeline automoton [0.45, 0.68]
+component need [0.69, 0.32] label [-44, -1]
 
-//link
-government->manufacturer
-government->customer
-customer->goods
-manufacturer->goods
-manufacturer->productivity
-goods->manufacturing plant
-productivity->automation
-automation->logistics
-manufacturing plant->quality
-manufacturer->difference
-customer->difference
-government->sovereign risk
-economic->supply chain
-automation->power
-next gen->power with
-power with->culture
-traditional->power over
-AGV->cobots
-cobots->power with
-supply chain->awareness
-supply chain->territory
-territory->territorial
-manual work->robot
-power over->robot
-automoton->machine learning
-machine learning->data
-IoT->data
-IoT->predictive maintenance
-manufacturing plant->design engineer
-manufacturing plant->territory
-manufacturer->employees
-employees->power
-automation->automoton
+anchor manufacturer [0.98, 0.48]
+
+manufacturer -> need
+
+component quality service [0.94, 0.60] label [7, -23]
+
+component continued existence [0.91, 0.48] label [-77, -23]
+pipeline continued existence
+
+component service [0.85, 0.72] label [11, 3]
+pipeline service
+
+manufacturer -> quality service
+
+quality service -> continued existence
+
+quality service -> service
+
+quality service -> quality
+
+quality service -> market need
+
+quality -> need
+
+need -> customer [0.91, 0.10]
+
+component COGS [0.63, 0.72] label [-11, -13]
+pipeline COGS
+
+component cashflow [0.67, 0.66] label [11, 0]
+pipeline cashflow
+
+continued existence -> cashflow
+
+cashflow -> efficiency
+cashflow -> process
+opex -> process
+
+cashflow -> opex
+
+cashflow -> subsidies
+cashflow -> investors
+cashflow -> debt
+
+pipeline subsidies
+component subsidies [0.46, 0.92]
+
+component investors [0.54, 0.79]
+pipeline investors
+
+pipeline debt
+component debt [0.59, 0.81]
+
+component opex [0.49, 0.41] label [-48, 1]
+pipeline opex
+
+COGS -> time
+
+need -> customer
+quality -> customer
+
+quality -> actors
+
+quality -> process
+
+process -> actors
+component actors [0.11, 0.82]
+pipeline actors [0.2, 0.9]
+
+component automation [0.10, 0.77] label [-6, 23]
+
+continued existence -> sustainability
+
+continued existence -> need
+
+service -> need
+
+service -> customer
+
+quality -> sustainability
+
+cashflow -> COGS
+
+COGS -> process
+
+service -> process
+
+process -> time
+
+process -> efficiency
+
+component process [0.38, 0.75] label [16, -3]
+pipeline process [0.3, 0.9]
+
+component materials [0.24, 0.70] label [5, -10]
+pipeline materials
+
+COGS -> materials
+process -> materials
+quality -> materials
+sustainability -> materials
+
+component process [0.38, 0.75] label [16, -3]
+pipeline process
+
+component facilities [0.20, 0.40] label [16, -3]
+pipeline facilities
+sustainability -> facilities
+process -> facilities
+facilities -> actors
+
+opex -> materials
+opex -> facilities
+opex -> actors
+
+sustainability -> process
+
+note unused [0.08, 0.01]
+
+component employees [0.10, 0.39] label [-6, 23]
+
+component customer [0.57, 0.37] label [-77, -1]
+pipeline customer
+
+component quality [0.74, 0.39] label [1, -15]
+pipeline quality
+
+component sustainability [0.54, 0.39] label [16, -9]
+pipeline sustainability
