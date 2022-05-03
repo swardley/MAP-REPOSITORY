@@ -1,3 +1,8 @@
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
 title transportation - changing consumer behaviour and demand
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
@@ -6,11 +11,8 @@ style wardley
 component government [0.99, 0.61] label [-75, -3]
 component transport users [0.94, 0.66] label [2, -19]
 component transport operator [0.93, 0.57] label [-69, -5]
-
-
 component shocks [0.80, 0.47] label [-48, -9]
 pipeline shocks [0.41, 0.5]
-
 
 //components
 component news [0.62, 0.65]
@@ -106,7 +108,6 @@ private infrastructure->critical national infrastructure
 public infrastructue->critical national infrastructure
 ease of use->transport information
 ease of use->transportation mode
-
 safety->awareness
 awareness->sensors
 behaviour->shocks
