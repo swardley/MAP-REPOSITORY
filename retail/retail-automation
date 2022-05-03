@@ -1,0 +1,100 @@
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
+title retail - automation 
+
+//axis
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+
+
+note unused [0.13, 0.01]
+note +guidance [0.10, 0.02]
+note +upsell [0.07, 0.02]
+
+//components
+component showrooms [0.21, 0.34] label [-80, 8]
+component exclusion [0.88, 0.41] label [-65, 24]
+component customer [0.91, 0.70] label [11, 4]
+component goods [0.71, 0.65] label [-13, -14]
+pipeline goods [0.44, 0.7]
+component object recognition [0.45, 0.68] label [-42, 17]
+component vision [0.14, 0.68] label [8, 1]
+component DSC [0.03, 0.72] label [-39, 5]
+component tracking [0.47, 0.65] label [5, -12]
+pipeline tracking [0.42, 0.73]
+component inventory [0.38, 0.59] label [-11, 19]
+component self [0.59, 0.57] label [-46, 4]
+component payment [0.52, 0.72] label [10, 4]
+component ML [0.11, 0.74] label [13, 2]
+component identification [0.86, 0.65] label [-76, 17]
+component RFID [0.45, 0.72] label [17, 6]
+component waste [0.14, 0.47] label [-44, 5]
+component store [0.23, 0.55] label [3, -8]
+pipeline store [0.33, 0.71]
+component physical [0.21, 0.41] label [-28, 21]
+component virtual (e-commerce) [0.21, 0.70] label [25, -10]
+component stock counts [0.45, 0.43] label [-102, 10]
+component customer journey [0.80, 0.53] label [-59, -32]
+pipeline customer journey [0.41, 0.64]
+component MAC [0.45, 0.61] label [-23, 23]
+component behaviour [0.78, 0.42] label [-86, 6]
+component dwell time [0.78, 0.59] label [-40, 23]
+component checkout [0.61, 0.67] label [5, -10]
+pipeline checkout [0.56, 0.71]
+component POS [0.59, 0.70] label [15, -7]
+component data [0.07, 0.73] label [10, 2]
+component digital twin [0.21, 0.59] label [-80, 23]
+component privacy [0.88, 0.48] label [13, -4]
+component ethics [0.90, 0.45] label [-42, -10]
+pipeline ethics [0.40, 0.49]
+component restock [0.33, 0.55] label [-59, -6]
+pipeline restock [0.44, 0.60]
+component human [0.31, 0.45] label [-52, 4]
+component robot [0.31, 0.59] label [-22, 21]
+component retailer [0.96, 0.62] label [-74, 2]
+component society [0.95, 0.68] label [7, -1]
+component experience [0.78, 0.51] label [-43, 23]
+component staples [0.69, 0.69] label [15, 2]
+component luxury [0.69, 0.45] label [-56, 4]
+component convenience [0.78, 0.63] label [15, 6]
+
+society->customer
+society->ethics
+customer->goods
+retailer->identification
+retailer->customer journey
+customer journey->goods
+goods->checkout
+checkout->payment
+checkout->tracking
+self->object recognition
+POS->RFID
+POS->stock counts
+tracking->inventory
+inventory->restock
+goods->restock
+stock counts->human
+restock->store
+object recognition->digital twin
+stock counts->physical
+POS->physical
+RFID->virtual (e-commerce)
+robot->virtual (e-commerce)
+object recognition->vision
+vision->ML
+ML->data
+vision->DSC
+restock->waste
+customer journey->tracking
+customer->convenience
+identification->data
+privacy->privacy
+privacy->identification
+customer->identification
+exclusion->luxury
+payment->exclusion
+experience->human
+experience->showrooms
