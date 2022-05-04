@@ -7,19 +7,39 @@ title construction - alternative construction
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-
 note unused [0.19, 0.01]
+note +urban planning [0.92, 0.53]
+note +strategic local planning [0.84, 0.62]
+note +experimental [0.81, 0.36]
+note +experiment to scale [0.13, 0.01]
+ 
 component discounting future [0.58, 0.75] label [25, -9]
-component Developer [0.98, 0.56] label [11, 3]
-component market [0.83, 0.71] label [0, -10]
+component risk mitigation [0.76, 0.52] label [-66, -8]
+component PPP [0.88, 0.64] label [-13, 20]
+component Developer [0.82, 0.63] label [-35, 21]
+// component market [0.84, 0.70] label [0, -10]
+// component society [0.98, 0.50] label [-60, 0]
+component government [0.88, 0.60] label [-50, -13]
+// component public [0.90, 0.72] label [12, 1]
+
+component principles [0.88, 0.44] label [-94, 1]
+component governance [0.90, 0.66] label [7, -8]
+pipeline governance [0.43, 0.7]
+component market [0.88, 0.69] label [12, 3]
+component community [0.96, 0.46] label [-83, 4]
+
+component society [0.98, 0.59] label [-77, -5]
+pipeline society [0.45, 0.62]
+component network [0.96, 0.61] label [15, 1]
+
 component externality [0.71, 0.75] label [18, 5]
-component education [0.16, 0.02] label [12, 2]
-component property [0.80, 0.68] label [11, 4]
-component agility [0.91, 0.25] label [-60, -13]
+component education [0.16, 0.02] label [12, 3]
+component property [0.79, 0.67] label [14, 2]
+component agility [0.76, 0.22] label [-65, 2]
 
 component access [0.23, 0.23] label [-24, 21]
-component equality [0.85, 0.35] label [-73, 1]
-component society [0.98, 0.50] label [-60, 0]
+component equality [0.81, 0.34] label [-68, 5]
+
 component onsite [0.52, 0.68] label [-4, 28]
 component robotic [0.37, 0.45] label [-9, 25]
 component prefabrication [0.52, 0.52] label [-58, 27]
@@ -34,14 +54,14 @@ component lifecycle management [0.28, 0.41] label [-75, -17]
 component alternative material [0.18, 0.48] label [24, -27]
 pipeline alternative material [0.27, 0.7]
 component artificial wood [0.16, 0.38] label [-18, 17]
-component longevity [0.77, 0.27] label [-36, -11]
+component longevity [0.70, 0.27] label [-36, -11]
 
-component aesthetics [0.81, 0.52] label [-69, 22]
+component aesthetics [0.81, 0.52] label [-3, -13]
 
 component building [0.73, 0.56] label [-14, -17]
 pipeline building [0.35, 0.71]
 
-component dwellings [0.71, 0.67] label [-2, 23]
+component dwellings [0.71, 0.70] label [-28, 25]
 component office [0.71, 0.63] label [-16, 25]
 
 component methods [0.54, 0.58]
@@ -50,7 +70,6 @@ component civil engineering [0.71, 0.58] label [-42, 13]
 
 component regulation [0.50, 0.42] label [-84, -1]
 component planning permission [0.57, 0.41] label [-74, -7]
-component government [0.95, 0.64] label [9, 0]
 component smart materials [0.16, 0.30] label [-27, 12]
 
 component floating buildings [0.71, 0.44] label [-3, 13]
@@ -61,21 +80,22 @@ component factory mode [0.67, 0.20] label [-91, -8]
 component land [0.60, 0.51] label [-7, 21]
 component modular [0.44, 0.41] label [-28, 19]
 
-component public [0.90, 0.72] label [12, 1]
+
 component safety [0.07, 0.43] label [15, 7]
 component wood [0.16, 0.65] label [-14, 30]
 component recycled containters [0.16, 0.51] label [-42, 15]
-component wood skyscrapers [0.71, 0.39] label [-40, 13]
+component wood skyscrapers [0.71, 0.36] label [-40, 13]
 
-component cost [0.80, 0.78]
+component cost [0.78, 0.78]
 component standardisation [0.35, 0.20] label [-97, -8]
-component sustainability [0.81, 0.46] label [-108, 2]
+component sustainability [0.81, 0.44] label [-102, -14]
 
-component values [0.88, 0.49] label [-54, -7]
-
+component values [0.83, 0.49] label [-51, -3]
+pipeline values [0.33, 0.53]
 pipeline standardisation
 
 //links
+PPP->Developer
 government->public
 public->sustainability
 aesthetics->public
@@ -109,20 +129,14 @@ sensors->factory mode
 factory mode->standardisation
 longevity->standardisation
 public -> building
-
 factory mode->planning permission
 society->public
 society->values
-values->sustainability
-values->aesthetics
 safety->research
 safety->firesafety
 regulation->safety
-value->equality
-values->equality
 construction technologies->access
 equality->access
-
 Developer->building
 Developer->market
 cost->market
@@ -134,3 +148,6 @@ externality->discounting future
 longevity->discounting future
 Developer->agility
 agility->factory mode
+network->governance
+community->principles
+PPP->risk mitigation
