@@ -1,3 +1,8 @@
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
 title CNI - Energy
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
@@ -27,7 +32,7 @@ pipeline energy mix [0.18, 0.73]
 
 //3rd order
 component power factors [0.66, 0.48] label [-31, -19]
-component reliability [0.66, 0.66] label [-7, -15]
+component reliability [0.66, 0.67] label [-14, -17]
 component surplus [0.66, 0.56] label [-25, 24]
 component continuity [0.66, 0.71] label [16, 6]
 component safety cases [0.66, 0.39] label [-100, 3]
@@ -52,20 +57,21 @@ component citizen [0.93, 0.70] label [8, 3]
 component sustainability [0.84, 0.46] label [-120, -4]
 
 //changes
-
 component success [0.88, 0.70] label [8, 1]
 component sanctions [0.76, 0.41] label [-78, 5]
-
 component 2 [0.35, 0.58]
-evolve 2 0.64 label [1, 18]
+evolve 2 0.65 label [1, 18]
 component 3 [0.35, 0.28] label [-1, 24]
-evolve 3 0.33 label [-1, -18]
+evolve 3 0.32 label [-1, -18]
 component 1 [0.84, 0.46] label [-2, -13]
-evolve 1 0.56
+evolve 1 0.59
 component 4 [0.76, 0.41] label [-1, -13]
-evolve 4 0.54
+evolve 4 0.55
+component 5 [0.50, 0.42] label [-12, 15]
+evolve 5 0.46 label [1, -9]
 
-//link
+
+//link (many old)
 government->society
 society->consumer
 consumer->perception of success
