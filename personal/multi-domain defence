@@ -4,81 +4,61 @@ style wardley
 
 //actors
 component government [0.96, 0.65] label [-29, -9]
-component society [0.94, 0.67] label [11, 2]
+component society [0.93, 0.68] label [7, -5]
 component citizen [0.90, 0.71] label [8, 3]
 
 // basics
 component legitimacy [0.92, 0.58] label [-84, -2]
-component trust [0.81, 0.55] label [-42, -3]
-pipeline trust [0.41, 0.58]
-component belonging [0.87, 0.63] label [-27, 25]
 
-component sovereignty [0.66, 0.69] label [0, -12]
+component sovereignty [0.71, 0.69] label [-3, -11]
 pipeline sovereignty [0.45, 0.76]
 
-component theatre [0.52, 0.62] label [-43, -10]
+component theatre [0.58, 0.62] label [-43, -10]
 pipeline theatre [0.39, 0.74]
 
-component capability [0.40, 0.43] label [-85, -1]
-pipeline capability
-component operating model [0.33, 0.43] label [-75, -11]
-pipeline operating model
-
-component landscape [0.22, 0.56] label [-73, -9]
+component landscape [0.25, 0.55] label [-73, -9]
 pipeline landscape [0.37, 0.64]
 
 component situational awareness [0.10, 0.60] label [-74, -25]
 pipeline situational awareness [0.3, 0.7]
 
-
 // 2nd order
-component norms [0.92, 0.63] label [-5, 17]
-pipeline norms
-component success [0.75, 0.72] label [8, 1]
-component appearance of success [0.83, 0.72] label [8, -22]
-
-// 3rd order
-component benevolence [0.79, 0.42] label [-97, 4]
-component integrity [0.79, 0.57] label [14, 4]
-component competence [0.79, 0.50] label [-42, 20]
+component success [0.83, 0.70] label [8, 1]
+component appearance of success [0.84, 0.64] label [-64, -21]
 
 //4th order
-component physical [0.64, 0.75] label [17, 7]
-component cultural  [0.64, 0.67] label [-24, 22]
-component digital [0.64, 0.46] label [-71, 3]
-component political [0.64, 0.62] label [-45, 24]
-component economic [0.64, 0.53] label [-21, 22]
+component physical [0.69, 0.75] label [17, 7]
+component cultural  [0.69, 0.67] label [-21, 24]
+component political [0.69, 0.61] label [-45, 26]
+component digital [0.69, 0.46] label [-71, 3]
+component economic [0.69, 0.53] label [-30, 25]
 
 //5th order
-component air [0.50, 0.68] label [-18, 20]
-component land [0.50, 0.73] label [15, 5]
-component sea [0.50, 0.70] label [-10, 19]
-component cyber [0.50, 0.53] label [-20, 21]
-component economy [0.50, 0.40] label [-43, 21]
-component art [0.50, 0.57] label [-11, 20]
-component space [0.50, 0.48] label [-7, 21]
-component critical national infrastructure [0.50, 0.65] label [-45, 12]
+component critical national infrastructure [0.56, 0.66] label [-68, 15]
 pipeline critical national infrastructure
+component land [0.56, 0.73] label [12, -14]
+component sanctions [0.56, 0.40] label [-87, 8]
 
 //6th order
-component CNI [0.38, 0.65] label [-29, -6]
-pipeline CNI [0.59, 0.73]
-component food [0.36, 0.72] label [20, 7]
-component energy [0.36, 0.67] label [-23, 22]
-component water [0.36, 0.69] label [-6, -16]
-component telecoms [0.36, 0.60] label [-64, 20]
-component finance [0.36, 0.63] label [-34, 21]
-
+component CNI [0.42, 0.65] label [-29, -6]
+pipeline CNI [0.59, 0.77]
+component food [0.40, 0.76] label [13, 5]
+component energy [0.40, 0.71] label [-40, -17]
+component water [0.40, 0.73] label [-9, -17]
+component telecoms [0.40, 0.60] label [-75, 5]
+component finance [0.40, 0.63] label [-11, 23]
 
 //7th
-component territory [0.20, 0.38] label [-89, 1]
-component physical awareness [0.08, 0.69] label [12, -5]
+component territory [0.23, 0.38] label [-89, 1]
+component physical awareness [0.08, 0.69] label [15, -5]
 
 //8th
-component supply chain [0.20, 0.63] label [20, 2]
+component supply chain [0.23, 0.63] label [19, 7]
 component economic awareness [0.08, 0.31] label [-84, -10]
-component digital awareness [0.08, 0.43] label [-45, 15]
+component digital awareness [0.08, 0.39] label [-45, 15]
 
+//9th 
+// evolve sanctions 0.55 label [-51, 23]
 
 //links
 government->society
@@ -133,3 +113,8 @@ capability->supply chain
 landscape->situational awareness
 theatre->landscape
 economy->finance
+citizen->appearance of success
+economic->sanctions
+sanctions->supply chain
+sanctions->finance
+appearance of success->cultural
