@@ -1,0 +1,99 @@
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
+title healthcare - clinical trials management
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+
+note +indication [0.46, 0.53]
+component stakeholder [0.39, 0.66] label [-95, -3]
+pipeline stakeholder 
+// [0.56, 0.72]
+component citizens [0.90, 0.69] label [12, -2]
+// component patients [0.37, 0.71] label [21, 1]
+// component vendors [0.37, 0.68] label [-7, 23]
+component pharma [0.95, 0.62] label [-64, 3]
+// component practitioner [0.37, 0.62] label [-43, 23]
+component government [0.95, 0.67] label [14, 0]
+component health [0.86, 0.70] label [14, 5]
+component drug [0.82, 0.65] label [-17, -13]
+pipeline drug [0.43, 0.7]
+component safety [0.72, 0.58] label [-14, 18]
+component clinical research [0.61, 0.61] label [1, -37]
+pipeline clinical research [0.19, 0.66]
+component study [0.59, 0.65] label [18, 6]
+component trial [0.59, 0.49] label [-17, 22]
+component randomisation [0.30, 0.55] label [-104, -5]
+pipeline randomisation [0.46, 0.63]
+// component research [0.37, 0.57] label [-72, 2]
+component scope [0.49, 0.55] label [6, 6]
+component double blind [0.28, 0.47] label [-104, 6]
+component FDA [0.68, 0.47] label [-34, 2]
+component license [0.85, 0.55] label [-58, -5]
+component IP [0.80, 0.44] label [-33, 1]
+component generic [0.80, 0.69] label [14, 4]
+component sample [0.23, 0.64] label [12, -3]
+component costs [0.15, 0.67] label [-3, -12]
+pipeline costs [0.51, 0.71]
+component analysis [0.13, 0.52] label [-70, 2]
+component management [0.13, 0.70] label [19, 2]
+component candidates [0.68, 0.32] label [-75, -10]
+pipeline candidates
+component basket [0.59, 0.42] label [-22, -18]
+component platform [0.59, 0.36] label [-38, -17]
+component umbrella [0.59, 0.45] label [-44, 23]
+component protocol doc [0.48, 0.39] label [-94, 5]
+component funding [0.06, 0.70] label [7, -10]
+pipeline funding [0.64, 0.74]
+component private [0.04, 0.65] label [-66, 5]
+component public [0.04, 0.73] label [17, 3]
+component digital simulation [0.59, 0.20] label [-75, 3]
+component selection [0.21, 0.43] label [-75, -4]
+pipeline selection [0.37, 0.46]
+component site [0.19, 0.38] label [-44, 4]
+component participant [0.19, 0.45] label [16, 5]
+component clinical liability [0.39, 0.44] label [-68, -13]
+component clinical systems [0.07, 0.36] label [5, 5]
+component data collection [0.04, 0.31] label [-62, -7]
+component discovery [0.59, 0.28] label [5, 24]
+component biosimilars [0.80, 0.57] label [-21, 22]
+component open_label [0.90, 0.10]
+
+
+//links
+government->citizens
+citizens->health
+health->drug
+pharma->drug
+drug->safety
+safety->clinical research
+trial->randomisation
+clinical research->stakeholder
+trial->scope
+drug->scope
+safety->FDA
+FDA->trial
+pharma->license
+license->FDA
+license->IP
+trial->scale
+randomisation->sample
+sample->costs
+license->scope
+IP->candidates
+trial->protocol doc
+funding->costs
+safety->clinical liability
+clinical research->clinical liability
+candidates->digital simulation
+sample->selection
+costs->clinical systems
+selection->clinical systems
+stakeholder->clinical systems
+digital simulation->data collection
+clinical systems->data collection
+discovery->data collection
+biosimilars->license
+candidates->discovery
