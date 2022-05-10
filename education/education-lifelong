@@ -26,11 +26,11 @@ component education [0.53, 0.59] label [-46, -12]
 pipeline education [0.34, 0.73]
 component digital identity [0.22, 0.46] label [-57, 8]
 component certification [0.36, 0.56] label [8, 3]
-component standards [0.16, 0.53] label [-75, 5]
+component standards [0.16, 0.51] label [-75, 5]
 component micro credentials [0.51, 0.48] label [-30, -42]
 component verification [0.58, 0.39] label [-97, 3]
 component assessment [0.75, 0.56] label [-69, -8]
-component skills [0.80, 0.70] label [7, 3]
+component skills [0.62, 0.67] label [7, 3]
 component degree [0.51, 0.72] label [-12, 21]
 component portable training accounts [0.51, 0.54] label [-22, 10]
 component regulation [0.78, 0.40] label [-93, 1]
@@ -47,35 +47,44 @@ pipeline status [0.35, 0.56]
 component institution [0.26, 0.55] label [-30, 23]
 component badges [0.26, 0.36] label [-42, 25]
 component community [0.87, 0.57] label [-72, 2]
-component inclusion [0.82, 0.55] label [-35, 17]
-component exclusion [0.56, 0.69] label [9, 3]
-component social learning [0.69, 0.38] label [-74, -11]
+component inclusion [0.60, 0.51] label [-35, 17]
+component exclusion [0.59, 0.69] label [9, 3]
+
 component evidence [0.63, 0.36] label [-65, 4]
-component economic growth [0.89, 0.61] label [6, -14]
-component power [0.34, 0.37] label [-49, 6]
+component economic growth [0.90, 0.64] label [6, -14]
 component rockstar tutors [0.08, 0.47] label [-58, -37]
 component AI tutors [0.08, 0.20] label [-41, -19]
 component Synthetic tutors [0.18, 0.13] label [-27, 12]
 
 component content [0.43, 0.62]
 pipeline content [0.18, 0.73]
-component assembled [0.41, 0.70] label [3, -21]
+component assembled [0.41, 0.72] label [18, 6]
 component productized [0.42, 0.46] label [-55, -16]
-component adaptive [0.41, 0.21] label [-3, 22]
+component adaptive [0.41, 0.19] label [-76, 2]
 
-component leaderboard [0.03, 0.40] label [-92, 8]
+component leaderboard [0.16, 0.28] label [-92, 8]
 component brand [0.03, 0.50] label [-48, 6]
 
 component community learning [0.08, 0.55] label [-26, 10]
+component power [0.61, 0.61]
+pipeline power [0.5, 0.7]
+
+
+component experience [0.75, 0.83] label [5, -10]
+
+
+pipeline skills
 
 // links
+experience->employee
+
+economic growth -> skills
 content->educator
 brand -> institution
 Synthetic tutors -> AI tutors
 status ->rockstar tutors
 employer->skills
 employer->assessment
-government->student
 government->regulated jobs
 assessment->education
 assessment->verification
@@ -107,14 +116,13 @@ exclusion->identity
 community->social learning
 assessment->evidence
 government->economic growth
-economic growth->education
-exclusion->power
-inclusion->power
 component Expert tutor [0.08, 0.41] label [-90, -15]
 education->content
 student->status
 status->status
-rockstar tutors->leaderboard
+leaderboard->status
 leaderboard->evidence
 brand->rockstar tutors
 status->brand
+adaptive->AI tutors
+student->skills
