@@ -12,67 +12,69 @@ note +inclusion [0.07, 0.02]
 note +fragility [0.10, 0.02]
 note +generational aspects [0.04, 0.02]
 
-
 component awareness [0.41, 0.33] label [-78, 2]
 component supply chain [0.30, 0.47] label [-94, 16]
-component "other" [0.78, 0.64] label [8, 1]
-component history [0.46, 0.46] label [-65, 5]
+//component "other" [0.78, 0.64] label [8, 1]
+
+//component history [0.46, 0.46] label [-65, 5]
 component energy usage [0.60, 0.65] label [6, -12]
-pipeline energy usage [0.3, 0.8]
-component air conditioning [0.58, 0.68] label [-30, 12]
-component compute [0.58, 0.73] label [2, 25]
-component heating [0.58, 0.79] label [23, 7]
+pipeline energy usage //[0.3, 0.8]
+//component air conditioning [0.58, 0.68] label [-30, 12]
+//component compute [0.58, 0.73] label [2, 25]
+//component heating [0.58, 0.79] label [23, 7]
 component energy mix [0.33, 0.67] label [5, -12]
 pipeline energy mix [0.59, 0.74]
-component efficiency [0.65, 0.53] label [-39, 19]
+//component efficiency [0.65, 0.53] label [-39, 19]
+
 component energy production [0.10, 0.66] label [18, -31]
 pipeline energy production [0.37, 0.75]
-component consumers [0.89, 0.71] label [12, 2]
+//component consumers [0.89, 0.71] label [12, 2]
 component behaviour [0.74, 0.54] label [-7, -13]
-pipeline behaviour [0.29, 0.71]
-component always on [0.72, 0.39] label [-44, 21]
-component web 3 [0.72, 0.30] label [-51, 20]
-component eco luddites [0.72, 0.45] label [-23, -15]
+pipeline behaviour
+//[0.29, 0.71]
+//component always on [0.72, 0.39] label [-31, 21]
+//component web 3 [0.72, 0.30] label [-40, 24]
+//component eco luddites [0.72, 0.45] label [-23, -15]
 component renewable [0.31, 0.60] label [-84, 5]
 component fossil [0.31, 0.73] label [17, 4]
 component solar [0.08, 0.74] label [-1, 23]
 component gas [0.08, 0.42] label [-1, -18]
 component nuclear [0.08, 0.38] label [-39, 26]
-component space [0.72, 0.34] label [-34, 22]
+//component space [0.72, 0.34] label [-34, 22]
 component energy generation [0.43, 0.65] label [-80, -32]
 
 pipeline energy generation [0.38, 0.76]
 // Distrubuted generation and consumption, solar roof's feeding into grid
-component distributed-generation distrubuted-consumption [0.41, 0.39]
+component distributed-generation distrubuted-consumption [0.41, 0.39] label [1, 15]
 // Centralised generation such as gas/coal/nuclear power stations, feeding into national grid
-component centralised-generation distrbuted-consumption [0.41, 0.60] label [-41, 8]
+component centralised-generation distrbuted-consumption [0.41, 0.60] label [-42, 13]
 // localised generation and consumption, camp fire, wood burners, water wheels, flour wind mills
 component localised-generation localisted-consumption [0.41, 0.75] label [-2, -40]
 
-component society [0.93, 0.64] label [-28, -13]
-component competition [0.85, 0.59] label [14, -1]
-component industrial [0.58, 0.62] label [-70, 27]
+//component society [0.93, 0.64] label [-28, -13]
+component mkt_competition [0.85, 0.59] label [15, 12]
+//component industrial [0.58, 0.62] label [-70, 27]
 component storage [0.23, 0.55] label [-62, -4]
 pipeline storage [0.38, 0.71]
 component battery [0.21, 0.70] label [24, 7]
 component hydrogen [0.21, 0.39] label [-36, 28]
 component potential energy [0.21, 0.51] label [-8, 10]
-component sustainability [0.85, 0.43] label [-116, 0]
+component sustainability [0.85, 0.43] label [-100, -28]
 component survival [0.87, 0.56] label [5, -11]
 pipeline survival [0.42, 0.6]
-component political [0.85, 0.53] label [-22, 23]
+//component political [0.85, 0.53] label [-22, 23]
 component education [0.78, 0.34] label [-79, 1]
 pipeline education
-component expectations [0.51, 0.43] label [17, -1]
-component encumbents [0.96, 0.68] label [12, 2]
-component government [0.98, 0.61]
+//component expectations [0.51, 0.43] label [17, -1]
+//component providers [0.96, 0.68] label [12, 2]
+//component government [0.98, 0.61]
 component regulation [0.80, 0.45] label [-82, 10]
 
 //links
 society->consumers
 consumers->behaviour
 society->survival
-competition->energy usage
+mkt_competition->energy usage
 behaviour->energy usage
 sustainability->education
 education->efficiency
@@ -90,9 +92,12 @@ government->society
 government->political
 sustainability->regulation
 government->regulation
-competition->"other"
+mkt_competition->"other"
 energy generation->supply chain
 regulation->awareness
 awareness->awareness
 supply chain->awareness
 encumbents->energy usage
+education->energy usage
+consumers->mkt_competition
+providers->mkt_competition
