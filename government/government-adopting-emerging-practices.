@@ -1,0 +1,106 @@
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
+note + recruitment [0.11, 0.02]
+note + incentivisation [0.08, 0.02]
+note + inertia [0.60, 0.33]
+note + war / economic / covid /  climate ?? [0.58, 0.03]
+
+title government - adopting emerging practices
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+component Gov [0.99, 0.67] label [14, 2]
+component employee [0.87, 0.73] label [4, 14]
+
+component CNI [0.50, 0.32] label [-31, 9]
+pipeline CNI
+
+component skills [0.64, 0.55] label [-50, 2]
+component verification [0.57, 0.38] label [-25, 19]
+
+component leadership [0.93, 0.46] label [-89, -5]
+pipeline leadership [0.36, 0.50]
+
+component practice [0.27, 0.62] label [0, -13]
+pipeline practice [0.31, 0.73]
+component training [0.44, 0.59] label [-36, -17]
+pipeline training [0.3, 0.65]
+component experience [0.42, 0.31] label [-90, 2]
+component college [0.42, 0.64] label [18, 5]
+component 6sigma [0.25, 0.72] label [19, 4]
+component agile [0.25, 0.44] label [-3, 20]
+
+component certification [0.49, 0.52] label [-32, -11]
+component status [0.54, 0.60] label [8, 7]
+component self [0.42, 0.46] label [-30, -15]
+component technology [0.11, 0.63] label [5, -8]
+pipeline technology [0.38, 0.74]
+
+component appearance of success [0.84, 0.52] label [15, -40]
+pipeline appearance of success [0.36, 0.58]
+component innovation [0.82, 0.37] label [-17, 24]
+component efficiency [0.82, 0.57] label [18, 3]
+component risk mitigation [0.64, 0.37] label [-67, -17]
+component experimentation [0.32, 0.27] label [-97, -7]
+
+component ML [0.09, 0.61] label [-7, 25]
+component DataMLOps [0.25, 0.32] label [-53, 22]
+pipeline certification
+component procurement [0.77, 0.55] label [-50, 15]
+component budget [0.75, 0.62] label [7, 3]
+component cloud [0.09, 0.73] label [14, 4]
+component priority [0.71, 0.33] label [-67, 3]
+component risks (shocks) [0.56, 0.22] label [-112, 4]
+
+component peacetime [0.91, 0.49] label [-57, 22]
+component wartime [0.91, 0.37] label [-70, 4]
+
+evolve agile 0.65 label [0, 19]
+// evolve ML 0.7 label [-3, 28]
+evolve DataMLOps 0.4 label [-39, 23]
+
+
+// link
+college->6sigma
+experience->agile
+training->practice
+Gov->skills
+skills->training
+verification->certification
+verification->status
+status->college
+certification->training
+Gov->employee
+employee->certification
+certification->practice
+practice->technology
+Gov->appearance of success
+appearance of success->risk mitigation
+innovation->technology
+risk mitigation->verification
+employee->status
+innovation->agile
+efficiency->6sigma
+ML->DataMLOps
+appearance of success->procurement
+procurement->cost
+procurement->verification
+Gov->cost
+Gov->budget
+budget->procurement
+experience->experimentation
+budget->priority
+priority->risk mitigation
+risk mitigation->risks (shocks)
+
+
+wartime->risks (shocks)
+wartime->priority
+peacetime->risk mitigation
+peacetime->appearance of success
+Gov->leadership
+CNI->risks (shocks)
+appearance of success->CNI
