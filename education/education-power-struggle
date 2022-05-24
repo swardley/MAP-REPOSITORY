@@ -1,0 +1,49 @@
+title Education (a power struggle)
+
+component government [0.98, 0.72]
+component advantage [0.94, 0.46]
+component economic growth [0.84, 0.38]
+component elite [0.87, 0.65]
+component status [0.61, 0.62]
+component institutions [0.20, 0.70]
+component community [0.88, 0.85]
+component shared values [0.33, 0.82]
+component companies [0.71, 0.49]
+component learner [0.44, 0.56]
+component motivation [0.32, 0.64]
+component challenge [0.32, 0.22]
+component experience [0.03, 0.32]
+component stability [0.31, 0.55] label [11, -3]
+component tutor [0.12, 0.45]
+component exclusion [0.70, 0.74] label [-42, -12]
+component inclusion [0.70, 0.77] label [5, 20]
+
+government->advantage
+government->community
+government->elite
+elite->exclusion
+exclusion->companies
+
+advantage->economic growth
+economic growth->companies
+economic growth->challenge
+companies->learner
+companies->stability
+community->shared  values
+elite->status
+elite->companies
+status->institutions
+shared values->institutions
+motivation->shared values
+learner->motivation
+community->inclusion
+inclusion->shared values
+inclusion->motivation
+economic growth->stability
+learner->stability
+learner->challenge
+learner->tutor
+challenge->experience
+tutor->experience
+stability->institutions
+tutor->institutions
