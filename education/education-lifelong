@@ -1,4 +1,4 @@
-// General - v.20
+// General
 // Map is licensed under creative commons share alike.
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
@@ -16,26 +16,35 @@ style wardley
 //note +need to unpack what we mean by degree / relationship with micro learning [0.08, 0.01]
 //note +social learning relationship to on the job learning [0.05, 0.01]
 //note +formal vs informal learning - need to divide the maps? [0.02, 0.01]
+//note negotiation
+//note sytle of competition
+//note mastery as a counterbalance to power
+//note entrepreneurship
+//note adhoc as deep learning?
 
-component student [0.70, 0.63] label [-26, -19]
-pipeline student [0.5, 0.73]
-component lifelong [0.68, 0.51] label [-16, 25]
-component employee [0.68, 0.72] label [3, 27]
-component employer [0.87, 0.71] label [10, 0]
+component individual [0.97, 0.72] label [10, 1]
+component adhoc [0.71, 0.35] label [-50, 0]
+component social cohesion [0.90, 0.58] label [-68, -31]
+pipeline social cohesion [0.43, 0.7]
+component student [0.73, 0.62] label [-6, -13]
+pipeline student [0.34, 0.73]
+component lifelong [0.71, 0.51] label [-16, 25]
+component employee [0.71, 0.72] label [15, 1]
+component employer [0.97, 0.66] label [-9, -10]
 component education [0.53, 0.59] label [-46, -12]
-pipeline education [0.34, 0.73]
+pipeline education [0.34, 0.75]
 component digital identity [0.22, 0.46] label [-57, 8]
 component certification [0.36, 0.56] label [8, 3]
-component standards [0.16, 0.51] label [-75, 5]
-component micro credentials [0.51, 0.48] label [-30, -42]
+component standards [0.16, 0.51] label [-37, 18]
+component micro credentials [0.51, 0.74] label [22, -20]
 component verification [0.58, 0.39] label [-97, 3]
-component assessment [0.75, 0.56] label [-69, -8]
-component skills [0.62, 0.67] label [7, 3]
-component degree [0.51, 0.72] label [-12, 21]
-component portable training accounts [0.51, 0.54] label [-22, 10]
-component regulation [0.78, 0.40] label [-93, 1]
-component regulated jobs [0.85, 0.44] label [-115, 0]
-component government [0.96, 0.63] label [11, -2]
+component assessment [0.78, 0.58] label [-75, -4]
+component skills [0.65, 0.67] label [9, 1]
+component degree [0.51, 0.68] label [-25, 21]
+// component portable training accounts [0.51, 0.61] label [-60, 11]
+component regulation [0.79, 0.40] label [-85, 3]
+component regulated jobs [0.88, 0.44] label [-115, 2]
+component government [0.97, 0.62] label [-71, -11]
 component identity [0.16, 0.68] label [8, 2]
 component educator [0.10, 0.68] label [-59, -9]
 pipeline educator [0.19, 0.73]
@@ -46,38 +55,41 @@ component status [0.28, 0.46] label [-45, -11]
 pipeline status [0.35, 0.56]
 component institution [0.26, 0.55] label [-30, 23]
 component badges [0.26, 0.36] label [-42, 25]
-component community [0.87, 0.57] label [-72, 2]
-component inclusion [0.60, 0.51] label [-35, 17]
-component exclusion [0.59, 0.69] label [9, 3]
+component community [0.88, 0.56] label [-72, 20]
+component inclusion [0.59, 0.51] label [-79, 0]
+component exclusion [0.59, 0.69] label [16, 4]
 
 component evidence [0.63, 0.36] label [-65, 4]
-component economic growth [0.90, 0.64] label [6, -14]
-component rockstar tutors [0.08, 0.47] label [-58, -37]
+component economic growth [0.88, 0.69] label [13, -10]
+//component rockstar tutors [0.08, 0.47] label [-58, -37]
 component AI tutors [0.08, 0.20] label [-41, -19]
-component Synthetic tutors [0.18, 0.13] label [-27, 12]
+//component Synthetic tutors [0.18, 0.13] label [-27, 12]
 
 component content [0.43, 0.62]
 pipeline content [0.18, 0.73]
 component assembled [0.41, 0.72] label [18, 6]
-component productized [0.42, 0.46] label [-55, -16]
+component productized [0.41, 0.46] label [-55, -16]
 component adaptive [0.41, 0.19] label [-76, 2]
 
-component leaderboard [0.16, 0.28] label [-92, 8]
+component leaderboard [0.16, 0.28] label [-63, 16]
 component brand [0.03, 0.50] label [-48, 6]
 
 component community learning [0.08, 0.55] label [-26, 10]
 component power [0.61, 0.61]
 pipeline power [0.5, 0.7]
 
-
-component experience [0.75, 0.83] label [5, -10]
-
-
+// component experience [0.75, 0.83] label [5, -10]
+//component Expert tutor [0.08, 0.41] label [-90, -15]
+note +componentization [0.48, 0.73]
 pipeline skills
+
+evolve degree 0.74 label [-11, -19]
+
+
+
 
 // links
 experience->employee
-
 economic growth -> skills
 content->educator
 brand -> institution
@@ -85,7 +97,7 @@ Synthetic tutors -> AI tutors
 status ->rockstar tutors
 employer->skills
 employer->assessment
-government->regulated jobs
+// government->regulated jobs
 assessment->education
 assessment->verification
 digital identity->online
@@ -108,15 +120,15 @@ badges->digital identity
 verification->standards
 verification->identity
 community->student
-government->community
+// government->community
 community->participation
 community->inclusion
 skills->exclusion
 exclusion->identity
 community->social learning
 assessment->evidence
-government->economic growth
-component Expert tutor [0.08, 0.41] label [-90, -15]
+// government->economic growth
+
 education->content
 student->status
 status->status
@@ -126,3 +138,11 @@ brand->rockstar tutors
 status->brand
 adaptive->AI tutors
 student->skills
+government->authority
+authority->power
+government->social control
+government->social cohesion
+individual->economic growth
+individual->adhoc
+individual->community
+adhoc->micro credentials
