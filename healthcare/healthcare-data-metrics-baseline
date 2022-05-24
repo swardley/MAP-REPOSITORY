@@ -3,67 +3,90 @@
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
 
-title healthcare - Data, Metrics and Baselines
+title healthcare - data, metrics and baseline
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+
 
 // components to add
-component wellness [0.71, 0.10]
-component drugs [0.64, 0.10] label [5, -10]
-component pharma [0.48, 0.10]
-component authority [0.82, 0.47] label [-56, -7]
-component status [0.56, 0.10]
+// component wellness [0.71, 0.10]
+// component drugs [0.64, 0.10] label [5, -10]
+// component pharma [0.48, 0.10]
+component authority [0.84, 0.41] label [-77, -5]
+// component status [0.56, 0.10]
 
-component issuance of drug [0.41, 0.10]
-component TCO [0.78, 0.10]
-component purpose [0.30, 0.10]
-component primary care [0.24, 0.10]
-component mental health [0.18, 0.10]
-component clinicians [0.91, 0.59] label [-34, -11]
-component insurance [0.91, 0.65] label [-28, -11]
-component regulators [0.98, 0.57] label [-49, -16]
+// component issuance of drug [0.41, 0.10]
+// component TCO [0.78, 0.10]
+// component purpose [0.30, 0.10]
+component primary care [0.68, 0.62] label [15, 3]
+component mental health [0.68, 0.42] label [-111, 2]
 
-component cofactors [0.84, 0.69] label [11, -2]
-component patients [0.98, 0.70] label [-2, -12]
-component outcome [0.83, 0.59] label [-62, 7]
+// component regulation [0.75, 0.50] label [8, -9]
+// pipeline regulation [0.44, 0.56] 
+// component GDPR [0.73, 0.55] label [14, 4]
+// component GCP [0.73, 0.45] label [-39, 6]
 
-component Health [0.90, 0.68] label [10, 7]
-component treatment [0.65, 0.55] label [-61, -10]
-pipeline treatment [0.42, 0.67]
+component social determinants [0.56, 0.38] label [-75, 2]
+note + integrated healthcare [0.05, 0.03] label [0.05, 0.03]
+note + complexity of diseases [0.08, 0.03]
+component clinicians [0.92, 0.62] label [-31, -10]
 
-component KPIs [0.72, 0.64] label [13, 4]
-component drug license [0.55, 0.64] label [13, 4]
+// component insurance [0.92, 0.65] label [-32, -16]
+// component KPIs [0.74, 0.65] label [13, 4]
 
-component clinical trials [0.50, 0.64] label [13, 4]
+// component regulators [0.98, 0.56] label [-40, -10]
 
-component diagnosis [0.42, 0.64] label [13, 4]
-component medical software [0.56, 0.42] label [-69, -13]
-component medical devices [0.53, 0.46] label [6, -2]
+component cofactors [0.58, 0.50] label [-71, -8]
+pipeline cofactors [0.37, 0.57]
+component comorbidity [0.56, 0.56] label [-45, 23]
+component patients [0.95, 0.70] label [3, -11]
+component minimise illness [0.82, 0.62] label [-69, -26]
+pipeline minimise illness [0.51, 0.67]
 
-component translation [0.47, 0.40] label [-70, -8]
+component Health [0.89, 0.68] label [10, 7]
+component treatment package [0.70, 0.54] label [-68, -28]
+pipeline treatment package [0.41, 0.63]
+component preventative [0.80, 0.52] label [-99, 1]
 
-component classification [0.10, 0.39] label [-72, 0]
-component data model [0.26, 0.44] label [-76, -6]
-component coding standards [0.19, 0.46] label [9, -31]
-component codes of practice [0.14, 0.55] label [2, -15]
+// component drug license [0.54, 0.64] label [13, 4]
+// component clinical trials [0.48, 0.64] label [8, -13]
 
-component Healthcare Records [0.39, 0.46] label [14, -32]
-pipeline Healthcare Records [0.35, 0.58]
-component EHR [0.37, 0.48] label [-14, 30]
-component paper [0.37, 0.40] label [-19, 29]
+component diagnosis [0.80, 0.66] label [15, 7]
+component medical software [0.47, 0.51] label [-48, 14]
+component medical devices [0.47, 0.55] label [-24, 14]
+component advice [0.47, 0.61] label [-19, 24]
+// component translation [0.42, 0.39] label [-80, 17]
+//  component classification [0.08, 0.45] label [-116, 8]
+component data model [0.19, 0.38] label [-78, 3]
+component coding standards [0.14, 0.45] label [-25, -36]
+component codes of practice [0.09, 0.52] label [-2, -11]
 
-component geography [0.04, 0.41] label [-73, 0]
+component intervention [0.49, 0.63] label [11, -6]
+pipeline intervention [0.41, 0.68]
+component surgery [0.47, 0.42] label [-66, 3]
+component medication [0.47, 0.67] label [17, 6]
+
+component Healthcare Records [0.30, 0.39] label [-66, -29]
+pipeline Healthcare Records [0.29, 0.44]
+component EHR [0.28, 0.43] label [13, 6]
+component paper [0.28, 0.36] label [-17, 23]
+component verbal [0.28, 0.30] label [-56, 3]
+
+component geography [0.03, 0.35] label [-73, 2]
+component payer [0.96, 0.55] label [-45, 0]
+component claim [0.91, 0.54] label [-49, 1]
 
 patients->patients
 clinicians->KPIs
 KPIs->codes of practice
 outcome->treatment
-clinicians->treatment
-treatment->medical devices
-treatment->medical software
+// clinicians->treatment
+// treatment->medical devices
+// treatment->medical software
 insurance->treatment
 KPIs->treatment
-medical devices->translation
-medical software->translation
+// medical devices->translation
+// medical software->translation
 translation->Healthcare Records
 Healthcare Records->data model
 data model->coding standards
@@ -77,7 +100,7 @@ codes of practice->geography
 clinicians->outcome
 patients->Health
 Health->outcome
-Health->cofactors
+// Health->cofactors
 clinicians->authority
 authority->codes of practice
 regulators->clinicians
@@ -85,8 +108,29 @@ regulators->insurance
 classification->drug license
 clinical trials->drug license
 diagnosis->clinical trials
-classification->diagnosis
-drug license->treatment
-Healthcare Records->diagnosis
-codes of practice->diagnosis
+// classification->diagnosis
+// drug license->treatment
+// Healthcare Records->diagnosis
+// codes of practice->diagnosis
 Healthcare Records->clinical trials
+regulators->regulation
+
+// cofactors->social determinants
+// treatment->social determinants
+treatment->cofactors
+treatment->intervention
+outcome->diagnosis
+Health->illness
+clinicians->illness
+Health->minimal illness
+clinicians->minimal illness
+minimal illness->treatment
+Health->minimise illness
+clinicians->minimise illness
+treatment package->cofactors
+treatment package->intervention
+diagnosis->treatment package
+payer->claim
+cofactors->Healthcare Records
+claim->treatment package
+treatment package->codes of practice
