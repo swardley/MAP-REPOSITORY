@@ -12,12 +12,23 @@ note +inclusion [0.07, 0.02]
 note +fragility [0.10, 0.02]
 note +generational aspects [0.04, 0.02]
 
-component awareness [0.42, 0.30] label [-78, 2]
+component awareness [0.41, 0.30] label [-78, 2]
 component supply chain [0.28, 0.47] label [-93, 11]
+
+component user [0.94, 0.54]
+pipeline user [0.41, 0.64]
+component today [0.92, 0.63] label [18, 5]
+component tomorrow [0.92, 0.42] label [-75, 3]
+component price [0.70, 0.69] label [16, 3]
+component cost [0.72, 0.63] label [-4, -11]
+pipeline cost [0.46, 0.7]
+component externality [0.70, 0.47] label [-92, 4]
+component market [0.61, 0.69] label [19, 4]
+
 //component "other" [0.78, 0.64] label [8, 1]
 
 //component history [0.46, 0.46] label [-65, 5]
-component energy usage [0.81, 0.61] label [15, -3]
+component energy usage [0.54, 0.65] label [12, 5]
 pipeline energy usage //[0.3, 0.8]
 //component air conditioning [0.58, 0.68] label [-30, 12]
 //component compute [0.58, 0.73] label [2, 25]
@@ -29,7 +40,7 @@ pipeline energy mix [0.59, 0.74]
 component energy production [0.10, 0.66] label [18, -31]
 pipeline energy production [0.37, 0.75]
 //component consumers [0.89, 0.71] label [12, 2]
-// component behaviour [0.86, 0.50] label [-2, -12]
+// component behaviour [0.82, 0.55] label [-2, -12]
 // pipeline behaviour
 //[0.29, 0.71]
 //component always on [0.72, 0.39] label [-31, 21]
@@ -41,34 +52,42 @@ component solar [0.08, 0.74] label [-1, 23]
 component gas [0.08, 0.42] label [-1, -18]
 component nuclear [0.08, 0.38] label [-39, 26]
 //component space [0.72, 0.34] label [-34, 22]
-component energy generation [0.43, 0.65] label [7, -44]
+component energy generation [0.43, 0.65] label [-74, -39]
 
-pipeline energy generation [0.38, 0.76]
+pipeline energy generation [0.58, 0.79]
 // Distrubuted generation and consumption, solar roof's feeding into grid
-component distributed-generation distrubuted-consumption [0.41, 0.39] label [1, 15]
+// component distributed-generation distrubuted-consumption [0.41, 0.39] label [1, 15]
 // Centralised generation such as gas/coal/nuclear power stations, feeding into national grid
-component centralised-generation distrbuted-consumption [0.41, 0.60] label [-42, 13]
+// component centralised-generation distrbuted-consumption [0.41, 0.60] label [-42, 13]
 // localised generation and consumption, camp fire, wood burners, water wheels, flour wind mills
-component localised-generation localisted-consumption [0.41, 0.75] label [42, -43]
+// component localised-generation localisted-consumption [0.41, 0.75] label [42, -43]
+
+component spotmarket [0.41, 0.70] label [-31, -19]
+component public good [0.41, 0.78] label [16, 2]
+component OTC market [0.41, 0.59] label [-88, 3]
+// component options [0.58, 0.31] label [-20, 22]
 
 //component society [0.93, 0.64] label [-28, -13]
-component mkt_competition [0.92, 0.59] label [45, -7]
+component security [0.80, 0.68] label [17, 3]
 //component industrial [0.58, 0.62] label [-70, 27]
 component storage [0.23, 0.55] label [-62, -4]
 pipeline storage [0.38, 0.71]
-component battery [0.21, 0.70] label [24, 7]
+component battery [0.21, 0.70] label [15, 7]
 component hydrogen [0.21, 0.39] label [-36, 28]
-component potential energy [0.21, 0.51] label [-8, 10]
-component sustainability [0.92, 0.43] label [-113, -15]
-component behaviour [0.94, 0.55] label [5, -11]
-pipeline behaviour [0.42, 0.6]
+component potential energy [0.21, 0.51] label [-26, 12]
+component sustainability [0.80, 0.43] label [-122, -2]
+component survivability [0.82, 0.55] label [-100, -12]
+pipeline survivability [0.42, 0.69]
 //component political [0.85, 0.53] label [-22, 23]
-component education [0.85, 0.36] label [-79, 1]
+component education [0.74, 0.35] label [-79, 1]
 // pipeline education
 //component expectations [0.51, 0.43] label [17, -1]
 //component providers [0.96, 0.68] label [12, 2]
 //component government [0.98, 0.61]
-component regulation [0.80, 0.44] label [-84, 4]
+component regulation [0.61, 0.60] label [-89, 5]
+
+component control [0.63, 0.64] label [-63, -7]
+pipeline control [0.59, 0.7]
 
 //links
 society->consumers
@@ -103,4 +122,18 @@ consumers->mkt_competition
 providers->mkt_competition
 // behaviour->education
 sustainability->education
-sustainability -> regulation
+// survivability->energy usage
+// today->survivability
+tomorrow->sustainability
+// survivability->price
+sustainability->externality
+user->behaviour
+behaviour->cost
+price->market
+externality->regulation
+today->security
+security->price
+security->energy usage
+user->survivability
+survivability->cost
+survivability->control
