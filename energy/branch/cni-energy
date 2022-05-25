@@ -1,0 +1,168 @@
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
+title CNI - Energy
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+//1st order
+component appearance of success [0.88, 0.67] label [-67, -26]
+component landscape [0.24, 0.55] label [-73, -9]
+pipeline landscape [0.37, 0.64]
+component situational awareness [0.10, 0.60] label [-74, -25]
+pipeline situational awareness [0.3, 0.7]
+component CNI [0.80, 0.66] label [-33, -3]
+pipeline CNI [0.59, 0.75]
+component energy [0.78, 0.74] label [-2, -18]
+component territory [0.22, 0.38] label [-89, 1]
+component physical awareness [0.08, 0.69] label [12, -5]
+component supply chain [0.22, 0.63] label [19, 7]
+component digital awareness [0.08, 0.31] label [-80, -9]
+
+// 2nd order
+component security [0.68, 0.62] label [-54, -12]
+pipeline security [0.38, 0.72]
+component grid [0.56, 0.65] label [-29, -15]
+pipeline grid [0.60, 0.73]
+component energy mix [0.37, 0.66] label [-19, -14]
+pipeline energy mix [0.18, 0.73]
+
+//3rd order
+component power factors [0.66, 0.48] label [-31, -19]
+component reliability [0.66, 0.67] label [-14, -17]
+component surplus [0.66, 0.56] label [-25, 24]
+component continuity [0.66, 0.71] label [16, 6]
+component safety cases [0.66, 0.39] label [-100, 3]
+component standards [0.43, 0.42] label [-77, 7]
+component grid model [0.50, 0.42] label [-82, 1]
+component cost [0.58, 0.79] label [7, 2]
+
+//4th order
+component generation [0.54, 0.72] label [-34, -17]
+component transmission [0.54, 0.67] label [-39, 27]
+component storage [0.54, 0.61] label [-36, 25]
+component fossil [0.35, 0.72] label [16, 6]
+component renewable [0.35, 0.68] label [-18, 20]
+component self generation [0.35, 0.62] label [-40, 12]
+component fusion [0.35, 0.19] label [-25, 24]
+component workable hydrogen [0.35, 0.28] label [-45, -42]
+component battery storage [0.35, 0.58] label [-61, -41]
+
+//3rd order
+component society [0.97, 0.67] label [7, -5]
+component citizen [0.93, 0.70] label [8, 3]
+component sustainability [0.84, 0.46] label [-120, -4]
+
+//changes
+component success [0.88, 0.70] label [8, 1]
+component sanctions [0.76, 0.41] label [-78, 5]
+component 2 [0.35, 0.58]
+evolve 2 0.65 label [1, 18]
+component 3 [0.35, 0.28] label [-1, 24]
+evolve 3 0.32 label [-1, -18]
+component 1 [0.84, 0.46] label [-2, -13]
+evolve 1 0.59
+component 4 [0.76, 0.41] label [-1, -13]
+evolve 4 0.55
+component 5 [0.50, 0.42] label [-12, 15]
+evolve 5 0.46 label [1, -9]
+
+
+//link (many old)
+government->society
+society->consumer
+consumer->perception of success
+perception of success->price
+CNI->perception of success
+government->legitimacy
+legitimacy->CNI
+government->regulation
+regulation->CNI
+regulation->security
+regulation->standards
+security->grid
+security->cost
+security->grid model
+grid model->grid
+grid->energy mix
+supply chain->energy mix
+supply chain->awareness
+grid->standards
+grid model->awareness
+regulation->grid model
+distributors->profit
+profit->cost
+price->cost
+distributors->grid
+cost->supply chain
+society->sustainability
+sustainability->supply chain
+distributors->investors
+investors->perception
+perception->sustainability
+government->society
+society->citizen
+government->legitimacy
+society->success
+citizen->belonging
+belonging->trust
+legitimacy->trust
+competence->success
+belonging->benevolence
+society->norms
+norms->integrity
+legitimacy->sovereignty
+success->physical
+success->economic
+digital ->success
+integrity->political
+integrity->cultural
+cultural->benevolence
+physical->land
+physical->sea
+sovereignty->theatre
+physical->air
+physical->space
+cultural->art
+digital->cyber
+economic->economy
+political->cyber
+belonging->appearance of success
+appearance of success->political
+appearance of success->critical national infrastructure
+critical national infrastructure->CNI
+land->territory
+air->territory
+cyber->telecoms
+space->telecoms
+economy->telecoms
+telecoms->supply chain
+energy->supply chain
+water->supply chain
+food->supply chain
+economy->supply chain
+supply chain->economic awareness
+territory->physical awareness
+theatre->situational awareness
+supply chain->digital awareness
+theatre->capability
+theatre->operating model
+capability->capability
+capability->supply chain
+landscape->situational awareness
+theatre->landscape
+economy->finance
+citizen->appearance of success
+appearance of success->CNI
+grid model->standards
+energy->security
+power factors->grid model
+grid model->energy mix
+appearance of success->cost
+storage->battery storage
+sustainability->grid
+sustainability->grid model
+success->sanctions
+sanctions->supply chain
