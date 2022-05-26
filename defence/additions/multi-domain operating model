@@ -2,53 +2,60 @@ title defence - multi domain - operating model
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-component theatre [0.96, 0.64] label [-55, -4]
+component theatre [0.84, 0.62] label [-55, -4]
 pipeline theatre [0.32, 0.76]
 // component air [0.94, 0.67] label [-21, 24]
-component land [0.94, 0.75] label [20, 5]
+component land [0.82, 0.75] label [20, 5]
 // component sea [0.94, 0.70] label [-10, 22]
-component cyber [0.94, 0.49] label [-20, 21]
-component economy [0.94, 0.33] label [-68, 5]
-component space [0.94, 0.43] label [-7, 21]
+component cyber [0.82, 0.48] label [-20, 21]
+component economy [0.82, 0.33] label [-68, 5]
+component space [0.82, 0.43] label [-7, 21]
 // component capability [0.85, 0.50] label [-83, 0]
-component operating model [0.79, 0.54] label [-58, -29]
+component operating model [0.72, 0.54] label [-58, -29]
 
-
+component sovereignty [0.98, 0.68] label [0, -12]
+pipeline sovereignty [0.45, 0.76]
 
 // 2nd+
 pipeline operating model [0.40, 0.7]
-component centralised [0.77, 0.69] label [-51, -21]
-component decentralised [0.77, 0.41] label [-51, -19]
-component synchronous [0.77, 0.68] label [-37, 23]
-component asynchronous [0.77, 0.42] label [-53, 24]
+component centralised [0.70, 0.69] label [-51, -21]
+component decentralised [0.70, 0.41] label [-51, -19]
+component synchronous [0.70, 0.68] label [-37, 23]
+component asynchronous [0.70, 0.42] label [-53, 24]
+
+component physical [0.96, 0.75] label [17, 7]
+component cultural  [0.96, 0.67] label [-24, 22]
+component digital [0.96, 0.46] label [-71, 3]
+component political [0.96, 0.62] label [-45, 24]
+component economic [0.96, 0.53] label [-21, 22]
 
 //3rd order
 // component operating environment [0.65, 0.39] label [-65, 7]
 // pipeline operating environment
-component doctrine [0.51, 0.64] label [-72, -3]
+component doctrine [0.44, 0.63] label [-72, -3]
 
 //4th order
 pipeline composition
 
 //5th order
-component resources [0.60, 0.53]
+component resources [0.55, 0.53]
 pipeline resources [0.49, 0.73]
-component volume operations [0.58, 0.72] label [-50, -45]
-component tech superiority [0.58, 0.50] label [-84, -17]
-component delivery [0.35, 0.64] label [-32, -9]
+component volume operations [0.53, 0.72] label [-50, -45]
+component tech superiority [0.53, 0.50] label [-84, -17]
+component delivery [0.24, 0.63] label [-32, -9]
 
 //6th order
 pipeline doctrine [0.44, 0.7]
-component SOP [0.49, 0.69] label [15, 6]
-component Agile [0.49, 0.45] label [-54, 1]
+component SOP [0.42, 0.69] label [-14, 24]
+component Agile [0.42, 0.45] label [-37, 24]
 
 
 //8th order
 pipeline delivery [0.43, 0.72]
-component drones [0.33, 0.71] label [20, 4]
-component Light vehicles [0.33, 0.63] label [-5, 26]
-component big ticket [0.33, 0.44] label [-87, 5]
-component modern tanks [0.33, 0.54] label [-41, 22]
+component drones [0.22, 0.71] label [20, 4]
+component Light vehicles [0.22, 0.61] label [-19, 27]
+component big ticket [0.22, 0.44] label [-87, 5]
+component modern tanks [0.22, 0.53] label [-59, -19]
 
 component landscape [0.09, 0.56] label [-73, -9]
 pipeline landscape [0.29, 0.75]
@@ -87,7 +94,7 @@ centralised->hiearachy
 operating model->operating environment
 physical->land
 physical->sea
-sovereignty->theatre
+//sovereignty->theatre
 physical->air
 physical->space
 digital->cyber
@@ -109,7 +116,7 @@ theatre->capability
 theatre->operating model
 landscape->situational awareness
 // theatre->landscape
-supply chain->delivery
+// supply chain->delivery
 military->conscripts
 military->professional
 operating model->culture
@@ -118,3 +125,5 @@ operating model->operating model
 resources->operating model
 economy->supply chain
 supply chain->cyber
+Light vehicles->supply chain
+Light vehicles->territory
