@@ -10,30 +10,24 @@ component citizen [0.90, 0.71] label [8, 3]
 // basics
 component legitimacy [0.92, 0.58] label [-84, -2]
 component trust [0.74, 0.55] label [-42, -3]
-pipeline trust [0.41, 0.58]
 component belonging [0.83, 0.64] label [18, 4]
-
-component sovereignty [0.58, 0.69] label [0, -12]
-pipeline sovereignty [0.45, 0.76]
-
-component theatre [0.41, 0.63] label [-43, -10]
-pipeline theatre [0.33, 0.74]
-
-
-component landscape [0.09, 0.56] label [-73, -9]
-pipeline landscape [0.37, 0.71]
-
-
-// 2nd order
+pipeline trust [0.41, 0.58]
 component norms [0.90, 0.63] label [12, 9]
 pipeline norms
-component success [0.67, 0.73] label [8, 1]
-component appearance of success [0.76, 0.73] label [8, -22]
-
-// 3rd order
+component success [0.65, 0.73] label [7, 3]
+component appearance of success [0.74, 0.73] label [8, -22]
 component benevolence [0.72, 0.42] label [-97, 4]
 component integrity [0.72, 0.57] label [14, 4]
 component competence [0.72, 0.50] label [-42, 20]
+component sovereignty [0.58, 0.69] label [0, -12]
+
+
+//1st Order
+pipeline sovereignty [0.45, 0.76]
+component theatre [0.41, 0.63] label [-43, -10]
+pipeline theatre [0.33, 0.74]
+component landscape [0.09, 0.56] label [-73, -9]
+pipeline landscape [0.37, 0.71]
 
 //4th order
 component physical [0.56, 0.75] label [17, 7]
@@ -75,7 +69,7 @@ society->citizen
 government->legitimacy
 society->success
 citizen->belonging
-belonging->trust
+// belonging->trust
 legitimacy->trust
 competence->success
 belonging->benevolence
@@ -90,7 +84,7 @@ integrity->cultural
 cultural->benevolence
 physical->land
 physical->sea
-sovereignty->theatre
+//sovereignty->theatre
 physical->air
 physical->space
 cultural->art
