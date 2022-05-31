@@ -1,0 +1,78 @@
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
+title retail - sustainability
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+component corporation [0.75, 0.60] label [9, 5]
+component government [0.98, 0.58]
+note + cost of living [0.87, 0.77]
+note + risk [0.38, 0.13]
+note + resilience [0.36, 0.10]
+component ESG [0.30, 0.48] label [8, -7]
+pipeline ESG [0.38, 0.51]
+component internal [0.28, 0.50] label [16, 5]
+component suppliers [0.28, 0.44] label [-12, 26]
+component customer [0.28, 0.39] label [-32, 27]
+component goal [0.70, 0.47] label [-18, -15]
+pipeline goal [0.36, 0.72]
+component carbon neutral [0.68, 0.37] label [-115, 9]
+component meeting a measure [0.68, 0.59] label [-36, 14]
+component supply chain [0.40, 0.18] label [-101, 2]
+component sustainability [0.68, 0.51] label [-73, 25]
+component sanctions [0.67, 0.19] label [-73, 2]
+component sovereignty [0.83, 0.60] label [-76, -14]
+pipeline sovereignty [0.44, 0.79]
+component corporate sovereignty [0.53, 0.46] label [-32, -40]
+pipeline corporate sovereignty [0.36, 0.59]
+component social [0.51, 0.42] label [-24, 23]
+component economic [0.51, 0.58] label [18, 8]
+component environment [0.51, 0.37] label [-93, 3]
+component advantage [0.29, 0.30] label [-31, 20]
+component transparency [0.13, 0.21] label [-101, 4]
+component labelling [0.27, 0.18] label [-84, -10]
+component regulation [0.15, 0.33] label [-39, 26]
+component political [0.81, 0.45] label [-34, -19]
+component territorial [0.81, 0.78] label [18, 5]
+component economy [0.81, 0.59] label [-51, 23]
+component profit [0.68, 0.71] label [-5, 28]
+component price [0.88, 0.76] label [11, -4]
+component behaviour [0.94, 0.64] label [-54, -10]
+pipeline behaviour [0.4, 0.7]
+component convenience [0.92, 0.64] label [-69, 23]
+component self [0.92, 0.69] label [17, 5]
+component community [0.92, 0.41] label [-90, 7]
+component consumer [0.98, 0.68]
+
+// links
+meeting a measure->ESG
+corporation->goal
+sustainability->corporate sovereignty
+environment->carbon neutral
+carbon neutral->carbon neutral
+ESG->corporate sovereignty
+environment->supply chain
+economic->supply chain
+supply chain->suppliers
+supply chain->advantage
+supply chain->transparency
+consumers->labelling
+labelling->transparency
+government->sovereignty
+labelling->regulation
+corporation->economy
+political->regulation
+
+profit->advantage
+consumer->behaviour
+community->environment
+community->labelling
+self->price
+price->profit
+price->environment
+price->political
+political->sanctions
+sanctions->supply chain
