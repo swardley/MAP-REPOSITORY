@@ -2,26 +2,37 @@ title manufacturing - automation
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note POV - manufacturer (2022) [0.95, 0.07]
+note POV - manufacturer (2022) [0.94, 0.01]
 
-component need [0.69, 0.32] label [-44, -1]
+component good [0.86, 0.51] label [-37, -7]
+pipeline good [0.3, 0.7]
 
-anchor manufacturer [0.98, 0.48]
+
+component manufacturer [0.98, 0.56] label [-41, -10]
 
 manufacturer -> need
+manufacturer -> continued existence
+manufacturer -> quality threshold
+continued existence -> good
 
-component quality service [0.94, 0.60] label [7, -23]
+component today [0.84, 0.69] label [12, 5]
+component tomorrow [0.84, 0.31] label [-74, 5]
 
-component continued existence [0.91, 0.48] label [-77, -23]
-pipeline continued existence
+component quality threshold [0.74, 0.51] label [-77, -11]
+// quality threshold -> service
+// quality threshold -> quality
+// component quality service [0.91, 0.67] label [17, -15]
 
-component service [0.85, 0.72] label [11, 3]
+// component continued existence [0.93, 0.62] label [17, -19]
+// pipeline continued existence
+
+component service [0.79, 0.65] label [8, 5]
 pipeline service
 
-manufacturer -> quality service
+// manufacturer -> quality service
 
 quality service -> continued existence
-
+good -> service
 quality service -> service
 
 quality service -> quality
@@ -32,7 +43,7 @@ quality -> need
 
 need -> customer [0.91, 0.10]
 
-component COGS [0.63, 0.72] label [-11, -13]
+component COGS [0.62, 0.66] label [-46, 4]
 pipeline COGS
 
 component cashflow [0.67, 0.66] label [11, 0]
@@ -41,8 +52,8 @@ pipeline cashflow
 continued existence -> cashflow
 
 cashflow -> efficiency
-cashflow -> process
-opex -> process
+cashflow -> SC process
+opex -> SC process
 
 cashflow -> opex
 
@@ -53,16 +64,18 @@ cashflow -> debt
 pipeline subsidies
 component subsidies [0.46, 0.92]
 
-component investors [0.54, 0.79]
+component investors [0.54, 0.79] label [-41, 23]
 pipeline investors
 
 pipeline debt
 component debt [0.59, 0.81]
 
-component opex [0.49, 0.41] label [-48, 1]
+component opex [0.63, 0.57] label [-48, 1]
 pipeline opex
 
 COGS -> time
+
+manufacturer -> customer
 
 need -> customer
 quality -> customer
@@ -72,10 +85,10 @@ quality -> actors
 quality -> process
 
 process -> actors
-component actors [0.11, 0.82]
-pipeline actors [0.2, 0.9]
+component actors [0.24, 0.65] label [-39, -10]
+pipeline actors [0.20, 0.9]
 
-component automation [0.10, 0.77] label [-6, 23]
+component automation [0.22, 0.21] label [-27, 37]
 
 continued existence -> sustainability
 
@@ -89,18 +102,18 @@ quality -> sustainability
 
 cashflow -> COGS
 
-COGS -> process
+COGS -> SC process
 
-service -> process
+service -> SC process
 
-process -> time
+SC process -> time
 
 process -> efficiency
 
-component process [0.38, 0.75] label [16, -3]
-pipeline process [0.3, 0.9]
+component SC process [0.41, 0.75] label [14, -6]
+pipeline SC process [0.3, 0.9]
 
-component materials [0.24, 0.70] label [5, -10]
+component materials [0.12, 0.71] label [5, -10]
 pipeline materials
 
 COGS -> materials
@@ -108,10 +121,7 @@ process -> materials
 quality -> materials
 sustainability -> materials
 
-component process [0.38, 0.75] label [16, -3]
-pipeline process
-
-component facilities [0.20, 0.40] label [16, -3]
+component facilities [0.13, 0.39] label [16, -3]
 pipeline facilities
 sustainability -> facilities
 process -> facilities
@@ -123,15 +133,21 @@ opex -> actors
 
 sustainability -> process
 
-note unused [0.08, 0.01]
+note unused [0.03, 0.01]
 
-component employees [0.10, 0.39] label [-6, 23]
+component employees [0.22, 0.89] label [-28, 34]
 
-component customer [0.57, 0.37] label [-77, -1]
+component customer [0.95, 0.64] label [11, -3]
 pipeline customer
 
-component quality [0.74, 0.39] label [1, -15]
-pipeline quality
+component quality [0.76, 0.57] label [-6, -13]
+pipeline quality [0.5, 0.61]
 
-component sustainability [0.54, 0.39] label [16, -9]
+component sustainability [0.54, 0.35] label [-111, 5]
 pipeline sustainability
+manufacturer->good
+manufacturer->quality service
+manufacturer->cashflow
+customer->good
+good->quality
+good->quality threshold
