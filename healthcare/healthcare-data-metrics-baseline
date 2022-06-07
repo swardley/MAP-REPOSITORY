@@ -7,7 +7,6 @@ title healthcare - data, metrics and baseline
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 
-
 // components to add
 // component wellness [0.71, 0.10]
 // component drugs [0.64, 0.10] label [5, -10]
@@ -19,63 +18,78 @@ component authority [0.84, 0.41] label [-77, -5]
 // component TCO [0.78, 0.10]
 // component purpose [0.30, 0.10]
 component primary care [0.68, 0.62] label [15, 3]
-component mental health [0.68, 0.42] label [-111, 2]
+component mental health [0.68, 0.42] label [-111, 3]
 
 // component regulation [0.75, 0.50] label [8, -9]
 // pipeline regulation [0.44, 0.56] 
 // component GDPR [0.73, 0.55] label [14, 4]
 // component GCP [0.73, 0.45] label [-39, 6]
 
-component social determinants [0.56, 0.38] label [-75, 2]
-note + integrated healthcare [0.05, 0.03] label [0.05, 0.03]
-note + complexity of diseases [0.08, 0.03]
+component social determinants [0.56, 0.38] label [-68, -2]
+note + integrated healthcare [0.05, 0.84] label [0.05, 0.84]
+note + complexity of diseases [0.02, 0.84]
+// note + question of reinforcing bias?? [0.22, 0.64]
+note + access to technology?? [0.24, 0.59]
+
+component p [0.28, 0.60]
+component d [0.28, 0.7] label [14, -5]
 component clinicians [0.92, 0.62] label [-31, -10]
+component AI diagnosis [0.80, 0.22] label [-103, 3]
+component AI model [0.73, 0.21] label [-70, 3]
+
+component transparency [0.08, 0.13] label [-63, 19]
+
+p->AI diagnosis
+d->AI diagnosis
+
+note + issues of bias? [0.83, 0.15]
 
 // component insurance [0.92, 0.65] label [-32, -16]
 // component KPIs [0.74, 0.65] label [13, 4]
 
 // component regulators [0.98, 0.56] label [-40, -10]
-
 component cofactors [0.58, 0.50] label [-71, -8]
 pipeline cofactors [0.37, 0.57]
 component comorbidity [0.56, 0.56] label [-45, 23]
 component patients [0.95, 0.70] label [3, -11]
 component minimise illness [0.82, 0.62] label [-69, -26]
-pipeline minimise illness [0.51, 0.67]
-
+pipeline minimise illness [0.21, 0.67]
 component Health [0.89, 0.68] label [10, 7]
 component treatment package [0.70, 0.54] label [-68, -28]
 pipeline treatment package [0.41, 0.63]
-component preventative [0.80, 0.52] label [-99, 1]
-
+component preventative [0.80, 0.51] label [-59, -16]
 // component drug license [0.54, 0.64] label [13, 4]
 // component clinical trials [0.48, 0.64] label [8, -13]
-
 component diagnosis [0.80, 0.66] label [15, 7]
 component medical software [0.47, 0.51] label [-48, 14]
 component medical devices [0.47, 0.55] label [-24, 14]
 component advice [0.47, 0.61] label [-19, 24]
 // component translation [0.42, 0.39] label [-80, 17]
 //  component classification [0.08, 0.45] label [-116, 8]
-component data model [0.19, 0.38] label [-78, 3]
-component coding standards [0.14, 0.45] label [-25, -36]
-component codes of practice [0.09, 0.52] label [-2, -11]
-
-component intervention [0.49, 0.63] label [11, -6]
+component data model [0.15, 0.38] label [-77, -6]
+component coding standards [0.12, 0.47] label [-25, -36]
+component codes of practice [0.06, 0.52] label [-4, -20]
+component intervention [0.49, 0.63] label [10, -6]
 pipeline intervention [0.41, 0.68]
-component surgery [0.47, 0.42] label [-66, 3]
+component surgery [0.47, 0.42] label [-61, 6]
 component medication [0.47, 0.67] label [17, 6]
-
-component Healthcare Records [0.30, 0.39] label [-66, -29]
+component Healthcare Records [0.30, 0.39] label [-52, -36]
 pipeline Healthcare Records [0.29, 0.44]
-component EHR [0.28, 0.43] label [13, 6]
-component paper [0.28, 0.36] label [-17, 23]
+component EHR [0.28, 0.43] label [-7, -16]
+component paper [0.28, 0.36] label [-40, 23]
 component verbal [0.28, 0.30] label [-56, 3]
-
 component geography [0.03, 0.35] label [-73, 2]
 component payer [0.96, 0.55] label [-45, 0]
 component claim [0.91, 0.54] label [-49, 1]
+component personal [0.28, 0.41] label [1, 23]
+component digital footprint [0.28, 0.39] label [-37, 19]
 
+
+evolve personal 0.60 label [6, -10]
+evolve digital footprint 0.7 label [10, -16]
+
+
+// links
 patients->patients
 clinicians->KPIs
 KPIs->codes of practice
@@ -134,3 +148,8 @@ payer->claim
 cofactors->Healthcare Records
 claim->treatment package
 treatment package->codes of practice
+AI diagnosis->EHR
+AI diagnosis->AI model
+data model->transparency
+AI model->transparency
+social determinants->transparency
