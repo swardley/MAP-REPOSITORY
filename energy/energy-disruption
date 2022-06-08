@@ -7,13 +7,17 @@ title Energy - disruption
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 
-note unused [0.13, 0.01]
-note +inclusion [0.07, 0.02]
-note +fragility [0.10, 0.02]
-note +generational aspects [0.04, 0.02]
+// note unused [0.13, 0.01]
+// note +inclusion [0.07, 0.02]
+// note +fragility [0.10, 0.02]
+// note +generational aspects [0.04, 0.02]
 
-component awareness [0.41, 0.30] label [-78, 2]
-component supply chain [0.28, 0.47] label [-93, 11]
+note $1M / km air, 10x underground [0.31, 0.47]
+note >110kV [0.32, 0.37]
+note <110kV [0.02, 0.58]
+
+component awareness [0.50, 0.31] label [-78, 2]
+component supply chain [0.38, 0.42] label [-104, 7]
 
 component user [0.94, 0.54]
 pipeline user [0.41, 0.64]
@@ -21,23 +25,31 @@ component today [0.92, 0.63] label [18, 5]
 component tomorrow [0.92, 0.42] label [-75, 3]
 component price [0.70, 0.69] label [16, 3]
 component cost [0.72, 0.63] label [-4, -11]
-pipeline cost [0.46, 0.7]
-component externality [0.70, 0.47] label [-92, 4]
+pipeline cost [0.42, 0.7]
+component externality [0.70, 0.43] label [-91, 14]
 component market [0.61, 0.69] label [19, 4]
+component transmission [0.30, 0.41] label [-97, 0]
+component capital [0.02, 0.72] label [12, 2]
+component protection system [0.04, 0.27] label [-75, -18]
+
+component distribution [0.05, 0.61] label [-97, 6]
+component solar collectors [0.11, 0.41] label [-29, 12]
+
+// pipeline distribution
 
 //component "other" [0.78, 0.64] label [8, 1]
 
 //component history [0.46, 0.46] label [-65, 5]
-component energy usage [0.54, 0.65] label [12, 5]
+component energy usage [0.56, 0.65] label [10, 1]
 pipeline energy usage //[0.3, 0.8]
 //component air conditioning [0.58, 0.68] label [-30, 12]
 //component compute [0.58, 0.73] label [2, 25]
 //component heating [0.58, 0.79] label [23, 7]
-component energy mix [0.33, 0.68] label [4, -7]
+component energy mix [0.43, 0.67] label [12, -5]
 pipeline energy mix [0.59, 0.74]
 //component efficiency [0.65, 0.53] label [-39, 19]
 
-component energy production [0.10, 0.66] label [18, -31]
+component energy production [0.13, 0.68] label [13, -30]
 pipeline energy production [0.37, 0.75]
 //component consumers [0.89, 0.71] label [12, 2]
 // component behaviour [0.82, 0.55] label [-2, -12]
@@ -46,13 +58,13 @@ pipeline energy production [0.37, 0.75]
 //component always on [0.72, 0.39] label [-31, 21]
 //component web 3 [0.72, 0.30] label [-40, 24]
 //component eco luddites [0.72, 0.45] label [-23, -15]
-component renewable [0.31, 0.60] label [-84, 5]
-component fossil [0.31, 0.73] label [17, 4]
-component solar [0.08, 0.74] label [-1, 23]
-component gas [0.08, 0.42] label [-1, -18]
-component nuclear [0.08, 0.38] label [-39, 26]
+component renewable [0.41, 0.60] label [-84, 5]
+component fossil [0.41, 0.73] label [17, 4]
+component solar microgen [0.11, 0.74] label [17, 4]
+component gas [0.11, 0.44] label [-1, -18]
+component nuclear [0.11, 0.38] label [-69, 5]
 //component space [0.72, 0.34] label [-34, 22]
-component energy generation [0.43, 0.65] label [-74, -39]
+component energy generation [0.51, 0.65] label [-80, -29]
 
 pipeline energy generation [0.58, 0.79]
 // Distrubuted generation and consumption, solar roof's feeding into grid
@@ -62,19 +74,19 @@ pipeline energy generation [0.58, 0.79]
 // localised generation and consumption, camp fire, wood burners, water wheels, flour wind mills
 // component localised-generation localisted-consumption [0.41, 0.75] label [42, -43]
 
-component spotmarket [0.41, 0.70] label [-31, -19]
-component public good [0.41, 0.78] label [16, 2]
-component OTC market [0.41, 0.59] label [-88, 3]
+component spotmarket [0.49, 0.70] label [-21, -17]
+component public good [0.49, 0.78] label [16, 4]
+component OTC market [0.49, 0.59] label [-88, 3]
 // component options [0.58, 0.31] label [-20, 22]
 
 //component society [0.93, 0.64] label [-28, -13]
 component security [0.80, 0.68] label [17, 3]
 //component industrial [0.58, 0.62] label [-70, 27]
-component storage [0.23, 0.55] label [-62, -4]
+component storage [0.25, 0.57] label [-62, -4]
 pipeline storage [0.38, 0.71]
-component battery [0.21, 0.70] label [15, 7]
-component hydrogen [0.21, 0.39] label [-36, 28]
-component potential energy [0.21, 0.51] label [-26, 12]
+component battery [0.23, 0.70] label [15, 7]
+component hydrogen [0.23, 0.39] label [-36, 28]
+component potential energy [0.23, 0.53] label [-3, 14]
 component sustainability [0.80, 0.43] label [-122, -2]
 component survivability [0.82, 0.55] label [-100, -12]
 pipeline survivability [0.42, 0.69]
@@ -88,6 +100,10 @@ component regulation [0.61, 0.60] label [-89, 5]
 
 component control [0.63, 0.64] label [-63, -7]
 pipeline control [0.59, 0.7]
+
+evolve transmission 0.6 label [8, 6]
+evolve distribution 0.75
+
 
 //links
 society->consumers
@@ -122,6 +138,7 @@ consumers->mkt_competition
 providers->mkt_competition
 // behaviour->education
 sustainability->education
+sustainability->renewable 
 // survivability->energy usage
 // today->survivability
 tomorrow->sustainability
@@ -137,3 +154,13 @@ security->energy usage
 user->survivability
 survivability->cost
 survivability->control
+energy mix->transmission
+transmission->protection system
+energy production->capital
+capital->transmission
+capital->storage
+distribution->energy mix
+supply chain->transmission
+supply chain->distribution
+solar microgen+<>distribution
+distribution->capital
