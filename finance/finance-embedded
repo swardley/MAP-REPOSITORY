@@ -3,42 +3,63 @@
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
 
-title Finance - Embedded
+title Finance - embedded
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
+style wardley
+
 // Add to components
-component identity [0.84, 0.10]
-component KYC [0.77, 0.10]
-component license
+component identity [0.18, 0.50] label [6, 4]
+component KYC [0.05, 0.47] label [12, 6]
+// component license [0.49, 0.04] label [10, 0]
+
 // deep dive into services
+
 // actors
-component customer [0.85, 0.72]
-component good [0.63, 0.74]
+component customer [0.91, 0.71] label [5, -3]
+component good [0.80, 0.72] label [8, 3]
+
 //retails
-component retail [0.97, 0.66]
-component risk management [0.20, 0.36] label [-63, -5]
-component revenue [0.71, 0.68] label [-58, 5]
-component source of funds [0.04, 0.60] label [7, -23]
+component retail [0.95, 0.66] label [2, -9]
+component risk management [0.44, 0.38] label [2, -38]
+component revenue [0.85, 0.68] label [-58, 7]
+component source of funds [0.10, 0.63] label [1, -8]
+
 // delivery mechanism
-component POS [0.51, 0.68]
-pipeline POS [0.57, 0.74]
-component online [0.49, 0.70] label [-14, 26]
-component physical [0.49, 0.60] label [-4, 29]
+component POS [0.76, 0.67]
+pipeline POS [0.59, 0.74]
+component online [0.74, 0.73] label [12, 3]
+component physical [0.74, 0.60] label [-69, 3]
+
 //Gov
-component Gov [0.97, 0.54]
-component regulation [0.80, 0.43] label [-65, -7]
-component harm [0.69, 0.42] label [-34, -8]
+component Gov [0.97, 0.52] label [-14, -12]
+component regulation [0.94, 0.41] label [-84, 4]
+component harm [0.82, 0.44] label [-28, 19]
+component financial model innovation [0.36, 0.30] label [-21, -52]
+
+
 // financial services
-component financial services [0.33, 0.65] label [-74, -29]
-pipeline financial services [0.36, 0.76]
-// component insurance [0.31, 0.72] label [-24, -17]
-component loan [0.31, 0.67] label [-22, 26]
-component payment [0.31, 0.69] label [1, 25]
-component treasury [0.31, 0.48] label [-17, 27]
-component credit checks [0.31, 0.56] label [-60, -20]
+component financial services [0.62, 0.66] label [8, -28]
+pipeline financial services [0.49, 0.71]
+// component insurance [0.60, 0.62] label [-24, -17]
+component loan [0.60, 0.67] label [-22, 26]
+component payment [0.60, 0.70] label [13, 4]
+component treasury [0.60, 0.50] label [-71, 3]
+component credit checks [0.60, 0.59] label [-77, 22]
+
 // banking actors
-component bank [0.98, 0.61]
-component banking platform [0.12, 0.42] label [-68, -10]
-component OTC [0.12, 0.54] label [-31, 15]
+component Financial Institution [0.96, 0.61] label [-26, -35]
+component financial platform [0.43, 0.50] label [14, -15]
+component OTC [0.11, 0.54] label [-9, 19]
+
+component insurance [0.60, 0.62] label [-42, -16]
+component supply chain [0.23, 0.20] label [-96, 2]
+component customer data [0.28, 0.53] label [-44, 17]
+
+component network models [0.07, 0.43] label [-94, 14]
+
+evolve supply chain 0.7
+note +should be more evolved [0.21, 0.27]
+
 //links
 Gov->customer
 retail->revenue
@@ -60,3 +81,23 @@ customer->harm
 regulation->harm
 loan->OTC
 banking platform->source of funds
+risk management->identity
+KYC->identity
+Financial Institution->financial platform platform
+financial platform platform->source of funds
+financial services->financial platform platform
+Financial Institution->financial platform
+financial platform->source of funds
+financial services->financial platform
+financial platform->supply chain
+
+risk management->customer data
+financial platform->customer data
+customer data->identity
+customer data->financial model innovation
+OTC->financial model innovation
+Financial Institution->financial model innovation
+financial platform->financial platform
+financial model innovation->financial platform
+supply chain->network models
+regulation->supply chain
