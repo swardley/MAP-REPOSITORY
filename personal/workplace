@@ -32,7 +32,7 @@ component gift [0.74, 0.26] label [-39, 8]
 component sales [0.74, 0.74]
 component devices [0.02, 0.66] label [-60, 5]
 component device management [0.46, 0.75] label [-15, 14]
-component asset management [0.46, 0.77] label [2, -39]
+component asset management [0.46, 0.77] label [12, -42]
 
 component support [0.46, 0.68] label [-65, 4]
 // component field services [0.53, 0.56] label [-29, 25]
@@ -41,9 +41,9 @@ component office [0.05, 0.71] label [11, 5]
 // note +uptime platform [0.54, 0.74]
 
 component DAO [0.91, 0.29] label [-32, 3]
-component discord [0.46, 0.54] label [-58, -16]
+component discord [0.46, 0.54] label [-67, 4]
 
-component workplace services [0.48, 0.69] label [3, -29]
+component workplace services [0.48, 0.69] label [-5, -38]
 pipeline  workplace services [0.53, 0.78]
 
 component Workplace Business [0.96, 0.69] label [-22, -33]
