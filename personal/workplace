@@ -8,14 +8,14 @@ component workplace [0.21, 0.59] label [-31, -15]
 pipeline workplace [0.46, 0.72]
 
 component workplace_practices [0.35, 0.62] label [-105, -15]
-pipeline workplace_practices [0.4, 0.7]
+pipeline workplace_practices [0.36, 0.7]
 component physical_practices [0.33, 0.69] label [49, -9]
-component virtual_practices [0.33, 0.41] label [-111, -6]
+component virtual_practices [0.33, 0.37] label [-104, -7]
 
 component behaviours [0.76, 0.57] label [-65, -9]
-pipeline behaviours [0.4, 0.65]
-component socialisation [0.74, 0.64] label [-5, 24]
-component collaboration [0.57, 0.50] label [-110, 2]
+pipeline behaviours [0.25, 0.65]
+component socialisation [0.74, 0.64] label [-8, 20]
+component collaboration [0.57, 0.47] label [-110, 2]
 component intelligent collaboration [0.46, 0.71] label [-62, 15]
 
 component physical  [0.19, 0.47] label [-57, 25]
@@ -28,30 +28,32 @@ component benevolence [0.87, 0.44] label [-95, 0]
 component integrity [0.87, 0.52] label [-47, 23]
 component competency [0.87, 0.59] label [12, 2]
 
+component gift [0.74, 0.26] label [-39, 8]
+component sales [0.74, 0.74]
 component devices [0.02, 0.66] label [-60, 5]
 component device management [0.46, 0.75] label [-15, 14]
 component asset management [0.46, 0.77] label [2, -39]
 
-component support [0.46, 0.64] label [-65, 4]
+component support [0.46, 0.68] label [-65, 4]
 // component field services [0.53, 0.56] label [-29, 25]
 component office [0.05, 0.71] label [11, 5]
 // component Uptime platform [0.66, 0.65] label [11, -12]
 // note +uptime platform [0.54, 0.74]
 
 component DAO [0.91, 0.29] label [-32, 3]
-
+component discord [0.46, 0.54] label [-58, -16]
 
 component workplace services [0.48, 0.69] label [3, -29]
-pipeline  workplace services [0.63, 0.78]
+pipeline  workplace services [0.53, 0.78]
 
 component Workplace Business [0.96, 0.69] label [-22, -33]
-component Customers [0.92, 0.71] label [11, 6]
+component Customers [0.91, 0.77] label [11, 6]
 component knowledge management [0.74, 0.55] label [-70, 13]
-component status [0.74, 0.41] label [-63, 4]
+component status [0.74, 0.44] label [-31, -18]
 
 component competition [0.59, 0.55] label [-48, -13]
-pipeline competition [0.49, 0.63]
-component collaboration [0.57, 0.50] label [-110, 2]
+pipeline competition [0.46, 0.63]
+component collaboration [0.57, 0.47] label [-110, 2]
 component conflict [0.57, 0.62] label [12, 4]
 component co-operation [0.57, 0.57] label [-53, 22]
 
@@ -84,3 +86,10 @@ DAO->knowledge management
 DAO->collaboration
 DAO->virtual_practices
 Workplace Business->trust
+gift->DAO
+discord->gift
+Workplace Business->sales
+sales->asset management
+sales->device management
+sales->intelligent collaboration
+sales->support
