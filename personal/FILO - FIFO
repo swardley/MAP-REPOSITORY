@@ -1,0 +1,18 @@
+component app [0.88, 0.62]
+component FIFO [0.73, 0.73]
+pipeline FIFO [0.23, 0.79]
+
+component AWS SNS [0.71, 0.71] label [-28, 31]
+component swardley's SNS [0.71, 0.24] label [-64, 29]
+evolve swardley's SNS 0.42 label [-19, 24]
+app -> AWS SNS
+
+// app -> FIFO
+
+component FILO [0.46, 0.73] label [0, -18]
+pipeline FILO [0.3, 0.75]
+
+component AWS SNS (FILO) [0.44, 0.71] label [-32, 36]
+
+
+AWS SNS (FILO) ->app
