@@ -125,5 +125,5 @@ operating model->operating model
 resources->operating model
 economy->supply chain
 supply chain->cyber
-Light vehicles->supply chain
-Light vehicles->territory
+delivery ->supply chain
+delivery->territory
