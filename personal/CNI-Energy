@@ -22,8 +22,8 @@ component food [0.78, 0.78] label [16, 6]
 component territory [0.22, 0.38] label [-89, 1]
 component physical awareness [0.08, 0.69] label [12, -5]
 component supply chain [0.22, 0.63] label [19, 7]
-component economic awareness [0.08, 0.31] label [-84, -10]
-component digital awareness [0.08, 0.37] label [-45, 15]
+// component economic awareness [0.08, 0.31] label [-84, -10]
+component digital awareness [0.08, 0.31] label [-66, 11]
 
 component sovereignty [0.96, 0.58] label [-85, -9]
 pipeline sovereignty
@@ -55,9 +55,9 @@ component fossil [0.35, 0.72] label [16, 6]
 component renewable [0.35, 0.68] label [-18, 23]
 component self generation [0.35, 0.55] label [-34, 11]
 component fusion [0.35, 0.19] label [-64, 2]
-component workable hydrogen [0.35, 0.28] label [-36, -44]
+component workable hydrogen [0.35, 0.28] label [-30, -44]
 component battery storage [0.35, 0.58] label [-30, -40]
-component space based solar [0.35, 0.24]
+component space based solar [0.35, 0.24] label [-37, 11]
 
 //3rd order
 component society [0.96, 0.67] label [7, -5]
@@ -76,7 +76,11 @@ evolve 1 0.57
 component 4 [0.75, 0.39] label [-1, -13]
 evolve 4 0.55
 component 5 [0.51, 0.42] label [-12, 15]
-evolve 5 0.50 label [1, -9]
+evolve 5 0.52 label [1, -9]
+component 6 [0.40, 0.41] label [-8, -10]
+evolve 6 0.52
+component 7 [0.08, 0.31] label [-2, -17]
+evolve 7 0.52 label [-3, 25]
 
 
 //link (many old)
