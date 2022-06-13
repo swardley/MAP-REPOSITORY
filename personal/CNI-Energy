@@ -53,7 +53,7 @@ component transmission [0.54, 0.67] label [-29, 27]
 component storage [0.54, 0.61] label [-36, 25]
 component fossil [0.35, 0.72] label [16, 6]
 component renewable [0.35, 0.68] label [-18, 23]
-component self generation [0.35, 0.55] label [-40, 12]
+component self generation [0.35, 0.55] label [-34, 11]
 component fusion [0.35, 0.19] label [-64, 2]
 component workable hydrogen [0.35, 0.28] label [-36, -44]
 component battery storage [0.35, 0.58] label [-30, -40]
@@ -181,3 +181,4 @@ sovereignty->CNI
 sovereignty->4
 territory->sovereignty
 transmission->territory
+5->supply chain
