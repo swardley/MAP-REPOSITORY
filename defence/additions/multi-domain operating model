@@ -4,9 +4,9 @@ style wardley
 
 component theatre [0.84, 0.62] label [-55, -4]
 pipeline theatre [0.32, 0.76]
-// component air [0.94, 0.67] label [-21, 24]
+component air [0.82, 0.71] label [-21, 24]
 component land [0.82, 0.75] label [20, 5]
-// component sea [0.94, 0.70] label [-10, 22]
+component sea [0.82, 0.73] label [-10, 22]
 component cyber [0.82, 0.48] label [-20, 21]
 component economy [0.82, 0.33] label [-68, 5]
 component space [0.82, 0.43] label [-7, 21]
@@ -24,7 +24,7 @@ component synchronous [0.70, 0.68] label [-37, 23]
 component asynchronous [0.70, 0.42] label [-53, 24]
 
 component physical [0.96, 0.75] label [17, 7]
-component cultural  [0.96, 0.67] label [-24, 22]
+component cultural  [0.96, 0.70] label [-34, 23]
 component digital [0.96, 0.46] label [-71, 3]
 component political [0.96, 0.62] label [-45, 24]
 component economic [0.96, 0.53] label [-21, 22]
@@ -53,12 +53,12 @@ component Agile [0.42, 0.45] label [-37, 24]
 //8th order
 pipeline delivery [0.43, 0.72]
 component drones [0.22, 0.71] label [20, 4]
-component Light vehicles [0.22, 0.61] label [-19, 27]
+component Light vehicles [0.22, 0.63] label [-19, 27]
 component big ticket [0.22, 0.44] label [-87, 5]
 component modern tanks [0.22, 0.53] label [-59, -19]
 
-component landscape [0.09, 0.56] label [-73, -9]
-pipeline landscape [0.29, 0.75]
+component awareness of landscape [0.09, 0.56] label [-70, -42]
+pipeline awareness of landscape [0.29, 0.75]
 
 //7th
 component territory [0.07, 0.74] label [12, 2]
