@@ -1,0 +1,194 @@
+// https://onlinewardleymaps.com/#qBAufffe3UoS9Sgu1a
+
+title Expand Digital Finance Inclusion
+
+//Axis
+evolution concept / genesis -> emerging / custom -> converging / product -> accepted / commodity
+
+/// actors
+component Chodsani [1.01, 0.78] label [9, 1]
+
+/// needs
+component options [0.97, 0.78] label [12, 5]
+component trade [0.92, 0.78] label [7, 5]
+component equality [0.93, 0.73] label [-23, 21]
+component sustainability [0.95, 0.66] label [-58, -10]
+
+///sub need
+component inclusion [0.91, 0.69] label [-24, -10]
+
+/// inclusion
+component collective [0.81, 0.61] label [-62, 8]
+component information [0.87, 0.62] label [-28, -11]
+
+/// risks
+component identity [0.83, 0.67] label [-47, -2]
+component trust [0.81, 0.69] label [1, 16]
+component risk [0.79, 0.74] label [2, -9]
+component behaviour [0.72, 0.59] label [7, 13]
+/// Aadhaar
+
+/// markets
+component market [0.87, 0.75] label [8, 5]
+component property [0.77, 0.77] label [9, 5]
+component exclusion [0.75, 0.73] label [1, 15]
+component exchange protocol [0.70, 0.51] label [-69, -17]
+
+/// authority
+component authority [0.60, 0.65] label [-61, -2]
+pipeline authority [0.74, 0.47]
+component centralised [0.58, 0.72] label [-10, 28]
+component decentralised [0.58, 0.50] label [-77, 27]
+component redistribution [0.65, 0.71] label [7, 5]
+
+/// banking
+component provision [0.49, 0.67] label [-30, -11]
+pipeline provision [0.46, 0.74]
+component banking services [0.47, 0.58] label [-23, -39]
+component financial infrastructure [0.38, 0.51] label [-72, -12]
+component branches [0.47, 0.50] label [-54, -17]
+component landscape [0.11, 0.36] label [-46, 19]
+component online payment [0.47, 0.70] label [1, -17]
+
+///currency
+component currency [0.35, 0.70] label [6, -3]
+pipeline currency [0.33, 0.77]
+component fiat [0.33, 0.71] label [-3, 28]
+component cryptocurrency [0.33, 0.62] label [-33, 25]
+component CBDC [0.33, 0.39] label [-29, 24]
+/// Sarafu - https://www.voanews.com/a/africa_cryptocurrency-booming-among-kenyan-farmers/6208732.html
+// component micro lending [0.47, 0.63] label [-48, 20]
+/// M-Pesa - https://www.safaricom.co.ke/personal/m-pesa
+
+///technology and process
+component internet access [0.41, 0.69] label [-1, -23]
+component mobile device [0.39, 0.72] label [13, 8]
+component consensus Algorithms [0.25, 0.59] label [-70, -7]
+component computing infrastucture [0.11, 0.71] label [14, -18]
+
+/// Networks
+component network topology [0.21, 0.67] label [2, -29]
+pipeline network topology [0.41, 0.77]
+component mesh [0.19, 0.61] label [-6, 27]
+component satellite [0.19, 0.71] label [-8, 25]
+component 5G [0.19, 0.51] label [-3, 27]
+component copper [0.19, 0.48] label [-6, -16]
+///  https://edition.cnn.com/2021/09/21/business/african-satellites-spc-intl/index.html
+/// 283 companies working in Space
+
+
+/// Energy
+component energy [0.06, 0.69] label [1, -7]
+note (generation) [0.07, 0.73]
+pipeline energy [0.4, 0.71]
+component minigrids [0.04, 0.44] label [-38, 23]
+component renewable [0.04, 0.70] label [-19, 22]
+component fossil [0.04, 0.41] label [-53, 3]
+/// https://edition.cnn.com/2021/09/21/business/african-satellites-spc-intl/index.html
+/// Africa contributes less than 10 percent of the total bitcoin hash rate. 
+/// Mining communities mainly exist in South Africa, Egypt, Kenya, Ghana, 
+/// Nigeria and Uganda.
+/// BitHub Africa has been working with a Zimbabwean company to establish 
+/// a solar mining facility in Africa
+
+
+/// Other actors
+// component corporate [1.00, 0.66] label [-39, -8]
+// component opportunity [0.96, 0.57] label [-70, 12]
+
+// component Government [1.00, 0.61] label [-81, 2]
+// component power [0.88, 0.56] label [-43, 7]
+
+// component Other [1.00, 0.48] label [-47, -2]
+// component gaming [0.68, 0.58] label [-48, -10]
+/// https://skymavis.com/ Axi Infinity. Philoppines
+
+
+//UNUSED
+// component information [0.87, 0.62]
+// component UX [0.87, 0.36] label [-24, 22]
+// component theft [0.78, 0.69] label [-11, -9]
+// component values [0.56, 0.66] label [-8, 16]
+// component China [0.42, 0.13]
+// component privacy [0.59, 0.22]
+// component art [0.29, 0.13]
+// component games [0.28, 0.08]
+// component resources [0.16, 0.10]
+// component common infrastructure [0.90, 0.32]
+// component interoperability [0.80, 0.30] label [26, -16]
+// component profit [0.54, 0.07]
+// component reliability [0.08, 0.69] label [7, 8]
+
+//connections
+Chodsani->options
+equality->inclusion
+options->trade
+options -> sustainability
+inclusion->identity
+trade->identity
+trust->risk
+identity->trust
+risk->property
+trade->market
+market->property
+property->market
+property->exclusion
+inclusion->information
+inclusion->collective
+exclusion->authority
+exclusion -> behaviour
+inclusion->authority
+collective->authority
+trust->authority
+behaviour->values
+collective->behaviour
+collective->values
+market->exchange protocol
+market->exchange protocol
+exchange protocol->market
+exchange protocol->authority
+exchange protocol->provision
+provision->currency
+exchange protocol->currency
+provision->network topology
+copper->landscape
+5G->landscape
+decentralised->consensus Algorithms
+cryptocurrency->consensus Algorithms
+consensus Algorithms->network topology
+consensus Algorithms->computing infrastucture
+network topology->computing infrastucture
+computing infrastucture->energy
+micro lending ->internet access
+online payment->internet access
+internet access->network topology
+internet access->mobile device
+sustainability->renewable
+identity->collective
+Government->power
+power->authority
+power->behaviour
+power->collective
+branches->financial infrastructure
+banking services->financial infrastructure
+online payment->financial infrastructure
+computing infrastucture->reliability
+corporate->options
+corporate->investment
+investment->risk
+investment->information
+corporate->opportunity
+opportunity->information
+opportunity->risk
+opportunity->power
+centralised->CBDC
+decentralised->cryptocurrency
+exclusion->redistribution
+redistribution->centralised
+behaviour->gaming
+gaming->Other
+Other->opportunity
+branches->landscape
+inclusion->behaviour
+options->equality
+equality->redistribution
