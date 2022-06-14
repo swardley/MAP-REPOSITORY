@@ -8,64 +8,66 @@ evolution genesis / concept -> custom / emerging -> product/ converging -> commo
 style wardley
 
 // anchors
-component government [0.97, 0.59] label [-75, -3]
-component transport users [0.94, 0.66] label [2, -19]
-component transport operator [0.93, 0.57] label [-69, -5]
+component government [0.98, 0.58] label [-25, -11]
+component transport public [0.96, 0.66] label [4, -17]
+component transport operator [0.93, 0.57] label [-71, -14]
 note +open? [0.11, 0.21]
 //components
-component supranational [0.99, 0.45]
-component shocks [0.80, 0.47] label [-48, -9]
-pipeline shocks [0.41, 0.5]
+// component supranational [0.99, 0.45]
+component shocks [0.75, 0.46] label [-51, -6]
+pipeline shocks [0.41, 0.50]
 //component news [0.62, 0.65] label [13, 6]
 component connectivity [0.06, 0.67]
 component physical safety [0.75, 0.73] label [14, -9]
-component personal safety [0.75, 0.62] label [-69, -24]
-component A to B [0.86, 0.67] label [7, -5]
+component personal safety [0.75, 0.62] label [-70, -18]
+component A to B [0.90, 0.63] label [16, 1]
 pipeline A to B
-component behaviour [0.90, 0.60] label [-20, -10]
-component regulation [0.87, 0.40] label [-62, -13]
-component public infrastructue [0.18, 0.67] label [5, -5]
-component sustainability [0.92, 0.45] label [-49, -17]
-component private infrastructure [0.19, 0.54] label [-65, -9]
-component critical national infrastructure [0.03, 0.32] label [-80, -22]
-component space [0.67, 0.64] label [-44, -7]
-pipeline space [0.44, 0.72]
-component physical [0.65, 0.71] label [18, 2]
-component virtual [0.65, 0.45] label [-65, 2]
+// component behaviour [0.91, 0.60] label [13, 3]
+component regulation [0.87, 0.40] label [-77, -6]
+component public infrastructure [0.22, 0.66] label [8, -3]
+component sustainability [0.92, 0.45] label [-94, -10]
+component private infrastructure [0.23, 0.57] label [-71, -36]
+component critical national infrastructure [0.03, 0.32] label [-85, -27]
+component space [0.67, 0.67] label [-44, -7]
+pipeline space [0.30, 0.78]
+component physical [0.65, 0.31] label [-72, 3]
+component virtual [0.65, 0.68] label [6, 24]
 component ease of use [0.82, 0.69] label [16, -1]
 component safety [0.77, 0.70] label [11, -5]
 //component public sources [0.49, 0.61] label [-29, -12]
-component awareness [0.70, 0.56] label [-76, 1]
-component transport information [0.55, 0.50] label [-73, -15]
+component awareness [0.81, 0.53] label [-57, -8]
+component transport information [0.50, 0.50] label [-70, -39]
 //component connection details [0.44, 0.49] label [-74, -19]
-component access to service [0.82, 0.37] label [-65, -17]
+component access to service [0.78, 0.34] label [-65, -18]
 //component open data [0.28, 0.26] label [-56, 20]
-component situational services [0.41, 0.21] label [-71, -16]
-component transport integration [0.37, 0.37] label [-33, -46]
-component mobility hubs [0.51, 0.33] label [-70, -11]
-component cost [0.81, 0.63] label [-44, 4]
-component climate [0.78, 0.49] label [-47, 21]
-component transportation mode [0.40, 0.60] label [-66, -34]
-pipeline transportation mode [0.45, 0.71]
-component distributed public [0.39, 0.62] label [-39, 14]
-component shared [0.38, 0.46] label [-66, 2]
-component private [0.39, 0.70] label [15, 0]
+component situational services [0.40, 0.21] label [-82, -14]
+component transport integration [0.37, 0.37] label [-79, -13]
+component mobility hubs [0.55, 0.32] label [-101, 4]
+component cost [0.81, 0.63] label [-39, 4]
+component climate [0.73, 0.49] label [-37, 24]
+component transportation mode [0.40, 0.60] label [-54, -36]
+pipeline transportation mode [0.48, 0.73]
+component distributed public [0.38, 0.64] label [-43, 13]
+component shared [0.38, 0.49] label [-66, 2]
+component private [0.38, 0.72] label [15, 4]
 component city planning [0.17, 0.38] label [-40, -19]
 //component health [0.46, 0.69] label [12, 7]
 //component sensors [0.61, 0.57] label [-1, 14]
 component vehicle [0.14, 0.61] label [-40, -7]
-pipeline vehicle [0.53, 0.7]
-component train [0.13, 0.63] label [-27, 24]
-component car [0.13, 0.66] label [-4, 26]
+pipeline vehicle [0.57, 0.7]
+component train [0.12, 0.58] label [-27, 24]
+component car [0.12, 0.69] label [16, 4]
 pipeline safety [0.61, 0.74]
 evolve connectivity 0.8
-component cybersecurity [0.78, 0.42] label [-87, 24]
+component cybersecurity [0.73, 0.42] label [-67, 23]
 //component trust [0.56, 0.57] label [-6, 15]
 //component bad actor [0.99, 0.46] label [-89, 5]
-evolve virtual 0.6 label [-23, 18]
-component model [0.11, 0.26]
+evolve virtual 0.77 label [-23, 24]
+component model [0.11, 0.26] label [-13, -12]
+component zoom [0.38, 0.68] label [1, -21]
 
 //links
+
 supranational -> government
 bad actor -> trust
 transport information -> transportation mode
@@ -86,7 +88,7 @@ public sources->connection details
 transport information->connection details
 connection details->transport integration
 connection details->transportation mode
-behaviour->safety
+// behaviour->safety
 safety->health
 health->shared
 transport integration->open data
@@ -107,23 +109,39 @@ behaviour->A to B
 A to B->space
 sustainability->regulation
 government->distributed public
-distributed public->public infrastructue
-private->public infrastructue
+// distributed public->public infrastructue
+// private->public infrastructue
 private->private infrastructure
 //regulation->critical national infrastructure
 private infrastructure->critical national infrastructure
-public infrastructue->critical national infrastructure
+public infrastructure->critical national infrastructure
 ease of use->transport information
 ease of use->transportation mode
 safety->awareness
 awareness->sensors
-behaviour->shocks
+// behaviour->shocks
 vehicle->connectivity
 transport information->connectivity
 critical national infrastructure->connectivity
 regulation->city planning
 mobility hubs->city planning
 city planning->vehicle
-public infrastructue->city planning
-A to B -> city planning
+public infrastructure->city planning
+// A to B -> city planning
 city planning -> model
+government->transport people
+transport people->behaviour
+government->public transport
+public transport->behaviour
+government->transport public
+transport public->behaviour
+mobility hubs->transport information
+A to B->access to service
+A to B->awareness
+cost->A to B
+A to B->ease of use
+transport public->A to B
+virtual->zoom
+zoom->connectivity
+zoom->private infrastructure
+transportation mode->public infrastructure
