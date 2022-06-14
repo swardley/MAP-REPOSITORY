@@ -1,97 +1,92 @@
-// General
-// Map is licensed under creative commons share alike.
-// https://creativecommons.org/licenses/by-sa/4.0/
-// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
-
 title retail -logistics
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
+// note unused [0.20, 0.01]
+// component manufacture on site [0.16, 0.02] label [24, -10]
+// component refigeration [0.08, 0.02] label [20, 2]
+// component distribution topology [0.45, 0.32] label [-86, -13]
+// component exclusion [0.42, 0.79] label [-3, 14]
+component warehouse [0.48, 0.71] label [23, 2]
 
-note unused [0.19, 0.05]
-component manufacture on site [0.13, 0.06] label [9, -21]
-component distribution topology [0.21, 0.49] label [-86, -13]
-component refigeration [0.07, 0.06] label [20, 2]
-component exclusion [0.42, 0.79] label [-3, 14]
-component warehouse [0.55, 0.71] label [-15, 20]
-
-component consumer [0.94, 0.76]
-component producer [0.95, 0.68] label [-38, -13]
-component customer experience [0.43, 0.43] label [-82, -11]
-component time sensitivity [0.75, 0.26] label [-74, -9]
+component consumer [0.97, 0.70] label [11, -1]
+component producer [0.52, 0.46] label [-70, 1]
+// component customer experience [0.43, 0.43] label [-82, -11]
+// component time sensitivity [0.75, 0.26] label [-74, -9]
 // component
-component behavior [0.89, 0.58] label [-54, -5]
-component A to B [0.88, 0.67] label [-49, -3]
-component good [0.82, 0.61] label [-39, -8]
-pipeline good [0.5,0.7]
+// component behavior [0.89, 0.58] label [-40, -12]
+// component A to B [0.88, 0.67] label [-33, 19]
+component good [0.91, 0.65] label [-41, 2]
+pipeline good // [0.5,0.7]
 
-component society [0.95, 0.52]
-component sustainability [0.64, 0.26] label [-109, -4]
+component first last delivery vehicle [0.27, 0.69] label [-4, -14]
 
-component socioeconomic class [0.57, 0.44] label [-61, -29]
+// component society [0.95, 0.52]
+component sustainability [0.80, 0.33] label [-114, 3]
 
-component logistics [0.69, 0.64] label [7, -9]
-pipeline logistics [0.48, 0.74]
-component centralised [0.67, 0.69] label [-39, 26]
-component decentralised [0.67, 0.52] label [-37, 22]
-component hybrid [0.67, 0.60] label [-38, -14]
-component delivery vehicle [0.42, 0.66] label [-67, -28]
-pipeline delivery vehicle [0.51, 0.74]
-component cost [0.31, 0.72] label [-6, 14]
-component non human [0.40, 0.55] label [-37, 24]
-component human [0.40, 0.69] label [-16, 21]
-component population density [0.05, 0.57] label [-79, -8]
-component fuel [0.09, 0.73]
-component safety [0.33, 0.49] label [-62, 2]
-component security [0.49, 0.70] label [-3, 17]
-component tracking [0.29, 0.53] label [-46, 18]
-component last mile [0.32, 0.65] label [-72, 3]
-component landscape [0.17, 0.64] label [-53, -15]
-pipeline landscape [0.54, 0.7]
+// component socioeconomic class [0.57, 0.44] label [-65, -34]
 
-component storage [0.57, 0.66] label [-30, -9]
-pipeline storage [0.56, 0.75]
-component Shop [0.55, 0.69] label [-5, -18]
-component Kirb [0.55, 0.59] label [-6, 23]
-component urban [0.15, 0.66] label [-2, 27]
-component rural [0.15, 0.58] label [-31, 28]
-component cross sell [0.85, 0.76] label [5, -6]
-component data [0.25, 0.76] label [-12, 20]
-component convenience [0.81, 0.33] label [-85, -6]
+component inventory management [0.37, 0.62] label [19, -30]
+pipeline inventory management [0.50, 0.71]
+component hub and spoke [0.35, 0.70] label [16, 3]
+component distributed [0.35, 0.51] label [-94, 5]
+// component hybrid [0.67, 0.60] label [-38, -14]
+component last mile delivery vehicle [0.72, 0.70] label [1, -62]
+pipeline last mile delivery vehicle [0.59, 0.74]
+// component cost [0.33, 0.84] label [8, 15]
+component autonomous [0.70, 0.60] label [-14, 28]
+component human [0.70, 0.73] label [19, 5]
+// component population density [0.63, 0.37] label [-71, -19]
+component fuel [0.63, 0.75] label [17, 8]
+component safety [0.64, 0.49] label [-58, 1]
+// component security [0.49, 0.70] label [-3, 17]
+component tracking [0.61, 0.57] label [7, 3]
+component last mile [0.86, 0.67] label [11, -2]
+component landscape [0.81, 0.62] label [-33, -13]
+pipeline landscape [0.54, 0.67]
 
-component value [0.73, 0.73] label [-13, -14]
+component storage [0.50, 0.63] label [-32, -13]
+pipeline storage [0.56, 0.72]
+component Shop [0.48, 0.68] label [-12, -19]
+component Kirb [0.48, 0.57] label [-33, -15]
+component urban [0.79, 0.66] label [-17, 27]
+component rural [0.79, 0.55] label [-55, -3]
+// component cross sell [0.85, 0.76] label [5, -6]
+// component data [0.25, 0.76] label [-12, 20]
+component convenience [0.89, 0.34] label [-91, -1]
+// component value [0.73, 0.76] label [14, -3]
 
 //links
 consumer->A to B
 A to B->producer
 consumer->behavior
 A to B->good
-storage->logistics
+storage->inventory management 
 storage->delivery vehicle
 storage->security
 security->tracking
 non human->safety
-delivery vehicle->last mile
+last mile delivery vehicle->last mile
 landscape->last mile
 delivery vehicle->cost
-fuel->delivery vehicle
+fuel->last mile delivery vehicle
 landscape->population density
 cross sell->producer
 data->cross sell
 data->tracking
 convenience->behavior
-convenience->logistics
-convenience->cost
+// convenience->logistics
+// convenience->cost
 storage->cost
 tracking->safety
 value->behavior
 value->cost
-good->logistics
+// good->logistics
 good->value
 behavior->sustainability
-sustainability->delivery vehicle
+sustainability->last mile delivery vehicle
 society->sustainability
-logistics->delivery vehicle
+inventory management ->last mile delivery vehicle
 last mile->distribution topology
 distribution topology->landscape
 storage->customer experience
@@ -103,3 +98,17 @@ value->socioeconomic class
 sustainability->socioeconomic class
 socioeconomic class->exclusion
 good->exclusion
+producer->good
+consumer->good
+// centralised->warehouse
+// Kirb->decentralised
+convenience->tracking
+consumer->convenience
+consumer->sustainability
+// producer->convenience
+good->last mile
+safety->autonomous
+tracking->inventory management 
+producer->inventory management 
+inventory management->first last delivery vehicle
+last mile delivery vehicle->storage
