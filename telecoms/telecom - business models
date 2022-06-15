@@ -22,70 +22,85 @@ style wardley
 // note + logistics DN: example of inddustrial application [0.16, 0.02]
 
 // note what is mum? [0.39, 0.80]
+note +security [0.62, 0.75]
+note Coverage [0.60, 0.76]
+note Speed [0.58, 0.78]
+// Latency  
+// Reliability
+// Capacity (no of connections) 
+// Security
+
+
+component macrocells [0.35, 0.47] label [-28, -19]
 
 //users
-component public [0.97, 0.77] label [12, 2]
-component gov [0.97, 0.62] label [9, 1]
-component industry [0.97, 0.69] label [7, 1]
-
+component public [0.96, 0.79] label [6, -7]
+component gov [0.98, 0.61] label [-8, -12]
+component Business [0.98, 0.75] label [-31, -10]
+pipeline network access [0.58, 0.75]
+component location based content [0.75, 0.46] label [-20, -57]
+component cloud based apps [0.75, 0.75] label [3, -26]
+component local apps [0.75, 0.65] label [-53, 20]
 //components
-
-component oRAN [0.46, 0.78] label [-17, 23]
-component content [0.84, 0.67] label [-63, 5]
+component oRAN [0.35, 0.67] label [-15, 23]
+component urban [0.48, 0.74] label [14, 4]
+component content [0.77, 0.71] label [-18, -14]
 // component communication [0.84, 0.77] label [8, 2]
-component telecom providers [0.70, 0.73] label [18, -15]
-component content providers [0.70, 0.64] label [-75, -14]
-component B2B [0.70, 0.69] label [-19, 25]
-component spectrum license [0.58, 0.79] label [7, -14]
-component ethernet [0.46, 0.83] label [13, 5]
+component telecom providers [0.55, 0.71] label [7, -7]
+component content providers [0.68, 0.65] label [-74, -12]
+// component B2B [0.70, 0.69] label [-19, 25]
+component spectrum license [0.20, 0.74] label [9, -6]
+component ethernet [0.35, 0.83] label [15, 3]
+component inclusion [0.86, 0.79] label [12, 8]
+component regulatory access [0.28, 0.38] label [-71, -6]
 
-component inclusion [0.90, 0.79] label [8, 4]
-
-component regulatory access [0.59, 0.40] label [-74, -14]
+component population density [0.50, 0.66] label [-71, -26]
+pipeline population density [0.46, 0.75]
+component rural [0.48, 0.47] label [-8, -19]
 
 component sovereignty [0.93, 0.53] label [-78, -11]
-component economic [0.91, 0.48] label [-72, 4]
-component political [0.91, 0.55] label [-47, 21]
+component economic [0.91, 0.43] label [-72, 4]
+component political [0.91, 0.53] label [-50, 25]
 
 component location [0.06, 0.63] label [-79, 7]
 component identity [0.06, 0.69] label [15, 5]
 component data [0.08, 0.65] label [-41, -5]
 // component property [0.21, 0.72] label [8, -5]
-component EM Spectrum [0.53, 0.79] label [14, 3]
+// component EM Spectrum [0.26, 0.79] label [12, 3]
 // component certificates [0.19, 0.59] label [-101, 3]
 // component purchases [0.19, 0.75] label [14, 3]
-component exclusion [0.12, 0.72] label [7, 5]
-component network [0.77, 0.78] label [9, 5]
+component exclusion [0.85, 0.69] label [-49, -14]
+component network access [0.64, 0.71] label [5, -9]
 // component competition [0.57, 0.62] label [-73, -13]
 
 // component collaboration [0.55, 0.46] label [-34, 23]
 // component zero sum [0.55, 0.70] label [-55, -16]
-component territory [0.11, 0.42] label [-73, 4]
-component privacy [0.88, 0.68] label [-16, -10]
+component territory [0.06, 0.42] label [-73, 4]
+// component privacy [0.82, 0.69] label [-58, 5]
 
 // component access device [0.32, 0.75] label [4, 13]
 
 
-component topology [0.34, 0.66] label [-68, -7]
-component space [0.32, 0.70] label [15, 5]
-component legislation [0.67, 0.43] label [-86, -4]
+component topology [0.18, 0.57] label [-68, -7]
+component space [0.16, 0.70] label [-27, 23]
+component legislation [0.58, 0.44] label [-91, 1]
 
 // Access devices - all sorts
 // component phone?? [0.29, 0.71] label [20, 0]
 // component TV?? [0.29, 0.63] label [-44, 3]
-component digital industry [0.72, 0.66] label [-1, -34]
-component territorial [0.91, 0.61] label [-29, 19]
-component real estate [0.32, 0.38] label [-99, 1]
-
-component network building blocks [0.48, 0.74] label [-27, -56]
-pipeline network building blocks [0.60, 0.84]
+//component digital industry [0.72, 0.66] label [-3, -36]
+component territorial [0.91, 0.61] label [-11, -18]
+component real estate [0.16, 0.38] label [-99, 1]
+component satellite dish [0.35, 0.77] label [-34, 23]
+component network building blocks [0.37, 0.72] label [3, -47]
+pipeline network building blocks [0.46, 0.84]
 //pipelines
 // pipeline access device [0.62, 0.72]
 pipeline data [0.62, 0.7]
 pipeline topology [0.37, 0.71]
-pipeline content // [0.6, 0.73]
+pipeline content [0.45, 0.76]
 pipeline digital industry [0.63, 0.74]
-pipeline sovereignty [0.47, 0.62]
+pipeline sovereignty [0.42, 0.62]
 // pipeline competition [0.45, 0.71]
 // pipeline property [0.58, 0.76]
 
@@ -96,7 +111,7 @@ public->privacy
 public->content
 public->communication
 public->inclusion
-public->content providers
+// public->content providers
 
 industry->communication
 industry->privacy
@@ -109,7 +124,7 @@ content providers->collaboration
 
 network->access device
 network->content
-network->topology
+// network->topology
 
 telecoms->zero sum
 telecoms->data
@@ -122,27 +137,27 @@ legislation->territory
 B2B->data
 B2B->network
 
-gov->legislation
+// gov->legislation
 gov->digital industry
 gov->sovereignty
 
 economic->digital industry
-territorial->legislation
+// territorial->legislation
 legislation->property
 legislation->exclusion
 legislation->regulatory access
 
 economic->competition
 
-telecom providers->real estate
+// telecom providers->real estate
 // telecom providers->EM Spectrum
-telecom providers->regulatory access
+// telecom providers->regulatory access
 
 real estate->territory
 
 property->territory
 consumer->telecoms
-content providers->consumer
+// content providers->consumer
 
 digital industry->competition
 privacy->data
@@ -157,7 +172,24 @@ EM Spectrum->network building blocks
 network building blocks->topology
 spectrum license->EM Spectrum
 spectrum license->regulatory access
-telecom providers->spectrum license
+// telecom providers->spectrum license
 regulatory access->real estate
 digital industry->legislation
 economic->legislation
+gov->public
+exclusion->industry
+Business->privacy
+exclusion->Business
+network->telecom providers
+content->network access
+network access->telecom providers
+content->internet access
+internet access->telecom providers
+Business->content
+telecom providers->network building blocks
+// regulatory access->network building blocks
+// macrocells->real estate
+macrocells->regulatory access
+network building blocks->spectrum license
+telecom providers->population density
+urban->macrocells
