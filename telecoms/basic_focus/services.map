@@ -1,0 +1,36 @@
+title Telecom Core Business opportunistic banking on owning the pipe
+
+
+component User [0.96, 0.64]
+
+
+component Communicate [0.87, 0.67]
+
+User -> Communicate
+note Content Communication ... [0.86, 0.68]
+
+component Last Mile [0.69, 0.69]
+component Transport [0.69, 0.60]
+component Peering [0.65, 0.53]
+
+Communicate -> Peering
+Communicate -> Last Mile
+Communicate -> Transport
+
+User -> Last Mile
+
+
+component telco [0.98, 0.46]
+component VAR service provider [0.85, 0.35] label [-76, -16]
+component Market segmentation [0.77, 0.44]
+
+
+telco -> VAR service provider
+telco -> Market segmentation
+
+VAR service provider -> Market segmentation
+
+Market segmentation -> Last Mile
+
+note lots of things below VAR service provider that are not on the map [0.20, 0.03]
+note but I expect the telco are banking on owning the pipeline customer proximity [0.17, 0.03]
