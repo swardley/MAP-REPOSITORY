@@ -1,0 +1,64 @@
+title Telecom Core Business opportunistic banking on meta data
+
+component User [0.96, 0.64]
+
+
+component Communicate [0.87, 0.67]
+
+User -> Communicate
+note Content Communication ... [0.86, 0.68]
+
+component Last Mile [0.69, 0.69]
+component Transport [0.69, 0.60]
+component Peering [0.65, 0.53]
+
+Communicate -> Peering
+Communicate -> Last Mile
+Communicate -> Transport
+
+User -> Last Mile
+
+
+component Topology [0.54, 0.60]
+pipeline Topology  [0.5,  0.9  ]
+
+Last Mile -> Topology
+Transport -> Topology
+
+component Access to commons [0.46, 0.41]
+Topology -> Access to commons
+
+
+
+component telco [0.98, 0.46]
+component government [0.97, 0.54]
+
+
+component commications meta data [0.74, 0.44] label [-100, -39]
+
+commications meta data -> Transport
+commications meta data -> Last Mile
+
+component accountabilty [0.86, 0.38] label [-94, 5]
+
+government -> accountabilty
+accountabilty -> commications meta data
+
+
+component Marketable data [0.87, 0.50]
+telco -> Marketable data
+Marketable data -> commications meta data
+
+
+component privacy [0.91, 0.56]
+
+government -> privacy
+
+
+component Law [0.36, 0.52]
+
+privacy -> Law
+
+Marketable data -> Law // Can't sell it if it is illegal
+
+Access to commons -> Law
