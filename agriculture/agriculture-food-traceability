@@ -64,8 +64,8 @@ pipeline food security [0.52, 0.73]
 // component seasonality [0.60, 0.56] label [-46, -8]
 component education [0.40, 0.53] label [-22, 16]
 // component regulation [0.69, 0.46] label [-39, -10]
-component sovereignty [0.58, 0.47] label [-44, -11]
-pipeline sovereignty 
+component regulation [0.58, 0.47] label [-89, -4]
+pipeline regulation 
 pipeline seed [0.43, 0.67]
 component food standards [0.68, 0.45] label [-34, -11]
 component land [0.13, 0.70] label [14, 3]
@@ -186,3 +186,5 @@ goverment->people
 society->people
 people->convenience
 people->health
+regulation->food standards
+regulation->awareness
