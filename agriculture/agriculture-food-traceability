@@ -45,7 +45,7 @@ component monoculture [0.29, 0.66] label [-62, 25]
 component goverment [0.96, 0.67] label [-43, -11]
 component market [0.64, 0.68] label [-24, -12]
 // component producers [0.88, 0.65] label [-74, 4]
-component consumers [0.86, 0.77] label [7, -4]
+component people [0.86, 0.77] label [7, -4]
 component food product [0.54, 0.72] label [23, 2]
 pipeline food product 
 // [0.34, 0.76]
@@ -182,3 +182,7 @@ farm->land
 sovereignty->awareness
 land->energy
 goverment->society
+goverment->people
+society->people
+people->convenience
+people->health
