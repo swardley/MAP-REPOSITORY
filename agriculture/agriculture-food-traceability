@@ -1,4 +1,4 @@
-title agriculture - food traceability
+title Draft agriculture - food traceability
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
@@ -20,24 +20,17 @@ style wardley
 // note +labour [0.56, 0.02]
 // note +JIT vs JIC (Just in Case) [0.53, 0.02]
 // component transportation [0.18, 0.69] label [-18, -12]
-
-note +assumption [0.71, 0.62]
-note +observability (or lack of) [0.27, 0.14]
-
-component society [0.96, 0.72] label [7, -1]
+component society [0.94, 0.73] label [7, -1]
 component seed [0.31, 0.55] label [8, -3]
 component labour [0.04, 0.68] label [-19, 21]
 pipeline labour
-component land and water management [0.66, 0.31] label [-61, -23]
-component fungicide [0.19, 0.62] label [-72, 3]
-component water [0.08, 0.73] label [9, 2]
 // component preservation [0.29, 0.66] label [9, -5]
 // pipeline preservation [0.62, 0.75]
 // component dry freeze [0.27, 0.63] label [-39, 21]
 // component pickling [0.27, 0.74] label [1, 24]
 component social norms [0.85, 0.46] label [-34, -12]
 pipeline social norms [0.42, 0.51]
-component sustainability [0.83, 0.43] label [-119, 5]
+component sustainability [0.83, 0.43] label [-114, 4]
 component distribution [0.51, 0.59] label [-55, -13]
 // component surplus [0.78, 0.57] label [-12, 21]
 // component storage [0.78, 0.67] label [-25, 21]
@@ -50,7 +43,7 @@ component monoculture [0.29, 0.66] label [-62, 25]
 // component preserved [0.45, 0.71] label [-42, 23]
 // components
 component goverment [0.96, 0.67] label [-43, -11]
-component market [0.64, 0.68] label [-10, -12]
+component market [0.64, 0.68] label [-24, -12]
 // component producers [0.88, 0.65] label [-74, 4]
 component consumers [0.86, 0.77] label [7, -4]
 component food product [0.54, 0.72] label [23, 2]
@@ -65,16 +58,16 @@ component industrial agriculture [0.96, 0.61] label [-77, -17]
 component awareness [0.15, 0.52] label [-67, -13]
 pipeline awareness [0.34, 0.71]
 component supply chain [0.13, 0.35] label [-105, 4]
-component traceability [0.32, 0.32] label [-94, 7]
+component traceability [0.31, 0.34] label [-96, 8]
 component food security [0.79, 0.64] label [-17, -14]
 pipeline food security [0.52, 0.73]
 // component seasonality [0.60, 0.56] label [-46, -8]
 component education [0.40, 0.53] label [-22, 16]
 // component regulation [0.69, 0.46] label [-39, -10]
-component sovereignty [0.58, 0.47] label [-43, 17]
+component sovereignty [0.58, 0.47] label [-44, -11]
 pipeline sovereignty 
 pipeline seed [0.43, 0.67]
-component food standards [0.66, 0.46] label [-51, -10]
+component food standards [0.68, 0.45] label [-34, -11]
 component land [0.13, 0.70] label [14, 3]
 component behaviour [0.48, 0.29] label [-78, -3]
 component JIC [0.49, 0.42] label [-34, 3]
@@ -84,13 +77,13 @@ component JIC [0.49, 0.42] label [-34, 3]
 // pipeline distribution mechanisms [0.58, 0.66]
 // component social media [0.26, 0.67] label [-43, 15]
 component substitution [0.77, 0.53] label [-100, 7]
-component energy [0.06, 0.70] label [-56, -7]
+component energy [0.06, 0.70] label [7, -7]
 pipeline energy [0.61, 0.76]
 component farm [0.41, 0.67] label [6, 5]
 // component foraged [0.45, 0.35] label [-68, 6]
 component solar [0.04, 0.75] label [16, 6]
 component synthetic [0.04, 0.62] label [-89, 5]
-evolve supply chain 0.62 label [-82, 24]
+evolve supply chain 0.64 label [-50, 25]
 component enviormental labelling [0.39, 0.26] label [-82, -18]
 pipeline distribution [0.41, 0.64]
 
@@ -188,13 +181,4 @@ substitution->diversity
 farm->land
 sovereignty->awareness
 land->energy
-monoculture->fungicide
-monoculture->synthetic
-JIC->supply chain
-sustainability -> land and water management
-
-food security +<> market
-land->water
-food security->land and water management
-land and water management->sovereignty
-sustainability->sustainability
+goverment->society
