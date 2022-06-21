@@ -24,6 +24,7 @@ style wardley
 
 component individual [0.82, 0.69] label [-20, 17]
 component adhoc [0.71, 0.35] label [-50, 0]
+component behaviors [0.88, 0.61]
 component social cohesion [0.90, 0.58] label [-68, -31]
 pipeline social cohesion [0.43, 0.74]
 component student [0.73, 0.62] label [-6, -13]
@@ -158,3 +159,6 @@ certification->formal
 certification->standards
 power->curriculum
 // employer->employee
+
+skills->education
+behaviors->individual
