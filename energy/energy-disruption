@@ -12,12 +12,12 @@ style wardley
 // note +fragility [0.10, 0.02]
 // note +generational aspects [0.04, 0.02]
 
-note $1M / km air, 10x underground [0.31, 0.47]
+note $1M / km air, 10x underground [0.28, 0.22]
 note >110kV [0.32, 0.37]
-note <110kV [0.02, 0.58]
+note <110kV [0.36, 0.60]
 
 component awareness [0.50, 0.31] label [-78, 2]
-component supply chain [0.38, 0.42] label [-104, 7]
+component supply chain [0.40, 0.42] label [-101, 4]
 
 component user [0.94, 0.54]
 pipeline user [0.41, 0.64]
@@ -29,11 +29,15 @@ pipeline cost [0.42, 0.7]
 component externality [0.70, 0.43] label [-91, 14]
 component market [0.61, 0.69] label [19, 4]
 component transmission [0.30, 0.41] label [-97, 0]
-component capital [0.02, 0.72] label [12, 2]
+component capital [0.06, 0.72] label [4, 4]
 component protection system [0.04, 0.27] label [-75, -18]
 
-component distribution [0.05, 0.61] label [-97, 6]
+component reserve [0.02, 0.70] label [9, 4]
+pipeline reserve
+
+component distribution [0.35, 0.63] label [-93, 11]
 component solar collectors [0.11, 0.41] label [-29, 12]
+component landscape [0.12, 0.25] label [-76, 2]
 
 // pipeline distribution
 
@@ -48,6 +52,8 @@ pipeline energy usage //[0.3, 0.8]
 component energy mix [0.43, 0.67] label [12, -5]
 pipeline energy mix [0.59, 0.74]
 //component efficiency [0.65, 0.53] label [-39, 19]
+
+note (grid) [0.37, 0.38]
 
 component energy production [0.13, 0.68] label [13, -30]
 pipeline energy production [0.37, 0.75]
@@ -64,7 +70,7 @@ component solar microgen [0.11, 0.74] label [17, 4]
 component gas [0.11, 0.44] label [-1, -18]
 component nuclear [0.11, 0.38] label [-69, 5]
 //component space [0.72, 0.34] label [-34, 22]
-component energy generation [0.51, 0.65] label [-80, -29]
+component energy generation [0.51, 0.65] label [-73, -30]
 
 pipeline energy generation [0.58, 0.79]
 // Distrubuted generation and consumption, solar roof's feeding into grid
@@ -101,7 +107,7 @@ component regulation [0.61, 0.60] label [-89, 5]
 component control [0.63, 0.64] label [-63, -7]
 pipeline control [0.59, 0.7]
 
-evolve transmission 0.6 label [8, 6]
+evolve transmission 0.52 label [8, 6]
 evolve distribution 0.75
 
 
@@ -164,3 +170,5 @@ supply chain->transmission
 supply chain->distribution
 solar microgen+<>distribution
 distribution->capital
+transmission->landscape
+reserve->gas
