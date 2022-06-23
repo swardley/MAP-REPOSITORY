@@ -1,0 +1,75 @@
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
+title Energy - Cloud
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
+style wardley
+
+//component
+component user [0.97, 0.71]
+component application [0.82, 0.61] label [-48, -19]
+pipeline application [0.3, 0.8]
+
+component drone swarming control [0.80, 0.31] label [-81, -12]
+evolve drone swarming control 0.4 label [25, -19]
+
+component payroll system [0.80, 0.67] label [-47, 25]
+component word processing [0.80, 0.79] label [-20, 15]
+
+component ESG [0.95, 0.53] label [-37, -3]
+
+component runtime [0.60, 0.68] label [-48, 19]
+
+evolve runtime 0.75 label [5, -7]
+note +serverless [0.58, 0.77]
+note +LAMP / .NET [0.53, 0.61]
+component machine container [0.42, 0.71] label [12, -12]
+component compute [0.20, 0.67] label [-65, -3]
+component operating system [0.47, 0.71] label [-73, -9]
+component data centre [0.05, 0.69]
+evolve compute 0.80 label [2, -18]
+note +cloud IaaS [0.17, 0.81]
+note +servers [0.18, 0.60]
+component devops [0.31, 0.21] label [-52, 4]
+evolve devops 0.6 label [-42, 28]
+component ITIL [0.31, 0.76] label [19, -14]
+component architectural practice [0.33, 0.66] label [-78, -41]
+pipeline architectural practice [0.2, 0.77]
+component 1 [0.20, 0.81] label [199, 174]
+component application architecture [0.70, 0.63] label [-90, -31]
+pipeline application architecture [0.3, 0.72]
+component finops [0.68, 0.31] label [-54, 14]
+evolve finops 0.4 label [4, -16]
+component 2 [0.60, 0.75] label [292, 423]
+component best coding practice [0.68, 0.71] label [21, -26]
+
+component carbon [0.63, 0.47] label [-20, 16]
+component reporting [0.91, 0.39] label [-80, -2]
+
+note +$ [0.11, 0.66]
+note +$ [0.36, 0.69]
+note +$ [0.52, 0.70]
+note +$ [0.61, 0.45]
+
+// links
+2 -> finops
+1->devops
+user->application
+
+runtime->operating system
+operating system->machine container
+// machine container->compute
+compute->data centre
+machine container->architectural practice
+architectural practice->compute
+ITIL->compute
+application architecture->application
+application architecture->runtime
+best coding practice->runtime
+drone swarming control->finops
+user->ESG
+ESG->reporting
+carbon->reporting
+reporting->application
