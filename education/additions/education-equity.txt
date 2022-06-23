@@ -1,0 +1,83 @@
+// *****************General**Notes**Start*********************//
+
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+// OWM Link: https://onlinewardleymaps.com/#eqNc7nYhRgqdp7QuLn
+
+// *****************General**Notes**End*********************//
+
+title education - equity
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+anchor Governments [0.94, 0.63]
+// Customer: Who pays for the education/training. 
+// Ex: Corporations/Companies pays for training employees.
+// Ex: Parents/Guardians pays tution fees, transport fees, books, etc. to educate their child. 
+anchor Customer [0.94, 0.78]
+// Consumer: Who receives education/training. 
+anchor Consumer [0.94, 0.48]
+// Financial Institutions: Banks, NGOs, Government Scholarship Programs, etc.
+anchor Financial Institutions [0.97, 0.31]
+// Educational Institutions: Schoools, Colleges, Training Centers
+anchor Educational Institutions [0.97, 0.14]
+// Agenda: Purpose of the actors. 
+component Agenda [0.82, 0.49] label [10, -3] 
+// Resources: Tangible, Intangible 
+component Resources [0.33, 0.57] label [10, -2]
+component Access to Resources [0.51, 0.54] label [11, -41]
+component Medium [0.18, 0.61] label [13, -3]
+
+component Financial Instruments [0.22, 0.83] label [14, -5]
+component Outcome [0.61, 0.29] label [10, -2]
+component Social Class [0.60, 0.73] label [9, 4]
+// Business: Ex - Sell Education Loans, Create job ready workforce
+component Business [0.78, 0.74] label [-1, 23]
+// Literacy: Increase or decrease
+component Literacy [0.78, 0.58] label [-1, 24]
+// Power: Ex: - To control the masses, status as student of elite institution.
+component Power [0.78, 0.44] label [0, 24]
+// Expand: Ideologies, Values, Business, Influence
+component Expand [0.78, 0.35] label [-6, 25]
+pipeline Agenda [0.34, 0.75]
+// Resources: Time, Money, Material, Human, Knowledge etc. 
+pipeline Resources [0.35, 0.75]
+// Money: Actual Money, Scholarships, Subsidies, Bitcoins.
+component Money [0.29, 0.74] label [-15, 20]
+// Data: Information, Structured or Non-Structured
+component Data [0.29, 0.53] label [4, 20]
+// Infrastructure: Roads, Computers, Books, Training Materials
+component Infrastructure [0.29, 0.36] label [-54, 22]
+pipeline Access to Resources [0.45, 0.65]
+component inclusion [0.47, 0.46] label [-33, 24]
+component exclusion [0.47, 0.64] label [-26, 21]
+// Medium: Physical, Virtual, Zoom, Books, Classroom, Newspaper, Digital Medium
+pipeline Medium [0.45, 0.75]
+component Physical [0.14, 0.46] label [-28, 22]
+component Virtual [0.14, 0.74] label [-21, 23]
+// Financial Instruments: Loans, Payouts, Salaries, etc.
+pipeline Financial Instruments
+pipeline Outcome [0.2, 0.45]
+component Knowledge [0.57, 0.21] label [-3, 20]
+component Skill [0.57, 0.31] label [-8, 22]
+component Job [0.57, 0.37] label [-9, 22]
+component Profit [0.57, 0.44] label [-16, 21]
+
+Governments->Agenda
+Educational Institutions->Agenda
+Financial Institutions->Agenda
+Customer->Agenda
+Consumer->Agenda
+Agenda-> Outcome
+Agenda-> Access to Resources
+Power-> Social Class
+Business->Social Class
+Access to Resources->Resources
+Resources->Medium
+Money->Financial Instruments
+annotation 1 [0.14, 0.79] Higher equity with Virtual Medium 
+annotation 2 [0.53, 0.79] Social equality with Access to Resources 
+annotations [0.11, 0.02]
+
+// note +a generic note appeared [0.06, 0.03]
+
+style wardley
