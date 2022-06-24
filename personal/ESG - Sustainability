@@ -1,0 +1,55 @@
+title ESG - Sustainability
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+component company [0.96, 0.68] label [-35, -14]
+component survive [0.88, 0.64] label [-61, -11]
+pipeline survive [0.3, 0.71]
+component today [0.86, 0.70] label [14, 3]
+component tomorrow [0.86, 0.31] label [-75, 3]
+component sustainability [0.75, 0.32] label [-109, 5]
+component profit [0.74, 0.74]
+component good [0.66, 0.70] label [-15, -12]
+pipeline good
+component supply chain [0.19, 0.73] label [3, 15]
+component awareness of supply chain [0.43, 0.21] label [-69, -26]
+component standards [0.11, 0.25] label [-78, 13]
+component cost [0.03, 0.65] label [13, 10]
+component competition [0.56, 0.55] label [-81, -11]
+pipeline competition [0.31, 0.64]
+component conflict [0.54, 0.63] label [1, 28]
+component collaboration [0.54, 0.32] label [-73, 26]
+component open data [0.19, 0.40] label [-39, 23]
+component advantage [0.42, 0.60] label [6, 12]
+
+evolve tomorrow 0.7 label [-32, -17]
+evolve open data 0.6 label [-27, 19]
+evolve standards 0.61 label [-16, 19]
+
+note +conflicts [0.28, 0.65]
+note +conflicts [0.28, 0.39]
+note +conflicts [0.25, 0.45]
+note +conflicts [0.47, 0.42]
+
+//link
+company->survive
+tomorrow->sustainability
+today->profit
+profit->good
+good->supply chain
+sustainability->awareness of supply chain
+awareness of supply chain->supply chain
+standards->awareness of supply chain
+competition->survive
+good->conflict
+sustainability->collaboration
+open data->awareness of supply chain
+standards->cost
+awareness of supply chain->cost
+profit +<> cost
+conflict->advantage
+advantage +<>open data
+advantage +<>standards
+
+today->conflict
+collaboration +<>advantage
