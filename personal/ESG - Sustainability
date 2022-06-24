@@ -2,36 +2,41 @@ title ESG - Sustainability
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-component company [0.96, 0.68] label [-35, -14]
+component company [0.95, 0.67] label [-28, -15]
 component survive [0.88, 0.64] label [-61, -11]
 pipeline survive [0.3, 0.71]
 component today [0.86, 0.70] label [14, 3]
 component tomorrow [0.86, 0.31] label [-75, 3]
-component sustainability [0.62, 0.30] label [-109, 5]
+component sustainability [0.64, 0.30] label [-114, 1]
 component profit [0.77, 0.76] label [-6, -12]
-component good [0.74, 0.70] label [-13, -14]
+component good [0.74, 0.70] label [-14, -15]
 pipeline good
 component supply chain [0.19, 0.73] label [3, 15]
-component awareness of supply chain [0.43, 0.21] label [-69, -26]
-component standards [0.11, 0.25] label [-78, 13]
+component awareness of supply chain [0.56, 0.20] label [-70, -18]
+component standards [0.11, 0.25] label [-78, 13] inertia
 component cost [0.03, 0.65] label [13, 10]
-component competition [0.56, 0.55] label [-85, -5]
+component competition [0.56, 0.55] label [-54, -11]
 pipeline competition [0.31, 0.64]
 component conflict [0.54, 0.63] label [1, 28]
-component collaboration [0.54, 0.32] label [-73, 26]
-component open data [0.19, 0.40] label [-39, 23]
+component collaboration [0.54, 0.32] label [-24, 28] inertia
+component open data [0.19, 0.38] label [-58, 16] inertia
 component advantage [0.42, 0.60] label [6, 12]
+component society [0.97, 0.59] label [-63, -4]
 
 component status [0.70, 0.63] label [-26, -13]
 
-evolve tomorrow 0.7 label [-32, -17]
+evolve tomorrow 0.70 label [-884, 604]
 evolve open data 0.6 label [-27, 19]
 evolve standards 0.61 label [-16, 19]
+evolve sustainability 0.6 label [-33, 17]
 
-note +conflicts [0.28, 0.65]
-note +conflicts [0.28, 0.39]
-note +conflicts [0.25, 0.45]
-note +conflicts [0.47, 0.42]
+note +counters [0.28, 0.65]
+note +counters [0.26, 0.37]
+note +counters [0.27, 0.48]
+note +counters [0.46, 0.42]
+
+evolve collaboration 0.5 label [-5, 22]
+
 
 //link
 company->survive
@@ -60,3 +65,5 @@ marketing->sustainability
 marketing->sustainability
 good->status
 status->sustainability
+society->sustainability
+awareness of supply chain->collaboration
