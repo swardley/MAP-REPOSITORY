@@ -25,42 +25,55 @@ component Agenda [0.82, 0.49] label [10, -3]
 // Resources: Tangible, Intangible 
 component Resources [0.33, 0.57] label [10, -2]
 component Access to Resources [0.51, 0.54] label [11, -41]
-component Medium [0.18, 0.61] label [13, -3]
+component Medium [0.10, 0.61] label [13, -3]
 
-component Financial Instruments [0.22, 0.83] label [14, -5]
+component Financial Instruments [0.17, 0.68] label [-78, 2]
 component Outcome [0.61, 0.29] label [10, -2]
 component Social Class [0.60, 0.73] label [9, 4]
 // Business: Ex - Sell Education Loans, Create job ready workforce
-component Business [0.78, 0.74] label [-1, 23]
+component Business [0.80, 0.74] label [-1, 23]
 // Literacy: Increase or decrease
-component Literacy [0.78, 0.58] label [-1, 24]
+component Literacy [0.80, 0.58] label [-1, 24]
 // Power: Ex: - To control the masses, status as student of elite institution.
-component Power [0.78, 0.44] label [0, 24]
+component Power [0.80, 0.44] label [0, 24]
 // Expand: Ideologies, Values, Business, Influence
-component Expand [0.78, 0.35] label [-6, 25]
+component Expand [0.80, 0.35] label [-6, 25]
 pipeline Agenda [0.34, 0.75]
 // Resources: Time, Money, Material, Human, Knowledge etc. 
 pipeline Resources [0.35, 0.75]
 // Money: Actual Money, Scholarships, Subsidies, Bitcoins.
-component Money [0.29, 0.74] label [-15, 20]
+component Money [0.31, 0.74] label [-15, 20]
 // Data: Information, Structured or Non-Structured
-component Data [0.29, 0.53] label [4, 20]
+component Data [0.31, 0.53] label [4, 20]
 // Infrastructure: Roads, Computers, Books, Training Materials
-component Infrastructure [0.29, 0.36] label [-54, 22]
+component Infrastructure [0.31, 0.36] label [-54, 22]
 pipeline Access to Resources [0.45, 0.65]
-component inclusion [0.47, 0.46] label [-33, 24]
-component exclusion [0.47, 0.64] label [-26, 21]
+component inclusion [0.49, 0.46] label [-33, 24]
+component exclusion [0.49, 0.64] label [-26, 21]
 // Medium: Physical, Virtual, Zoom, Books, Classroom, Newspaper, Digital Medium
 pipeline Medium [0.45, 0.75]
-component Physical [0.14, 0.46] label [-28, 22]
-component Virtual [0.14, 0.74] label [-21, 23]
+component Physical [0.08, 0.46] label [-28, 22]
+component Virtual [0.08, 0.74] label [-21, 23]
 // Financial Instruments: Loans, Payouts, Salaries, etc.
 pipeline Financial Instruments
 pipeline Outcome [0.2, 0.45]
-component Knowledge [0.57, 0.21] label [-3, 20]
-component Skill [0.57, 0.31] label [-8, 22]
-component Job [0.57, 0.37] label [-9, 22]
-component Profit [0.57, 0.44] label [-16, 21]
+component Knowledge [0.59, 0.21] label [-3, 20]
+component Skill [0.59, 0.31] label [-8, 22]
+component Job [0.59, 0.37] label [-9, 22]
+component Profit [0.59, 0.44] label [-16, 21]
+market open education [0.20, 0.24] label [-66, -28]
+component Mooc [0.31, 0.71] label [-42, -11]
+component hybrid [0.08, 0.56] label [-34, -17]
+
+
+component academic standards [0.40, 0.67] label [2, -39]
+component scolarship [0.40, 0.60]
+component intelligence traits theory [0.22, 0.67] label [-88, -23]
+anchor NGOs [0.94, 0.42]
+anchor social actors [0.94, 0.55] label [0.94, 0.55]
+
+component school management tools [0.31, 0.47] label [-33, -58]
+
 
 Governments->Agenda
 Educational Institutions->Agenda
@@ -74,10 +87,28 @@ Business->Social Class
 Access to Resources->Resources
 Resources->Medium
 Money->Financial Instruments
-annotation 1 [0.14, 0.79] Higher equity with Virtual Medium 
+annotation 1 [0.27, 0.84] Higher equity with Virtual Medium 
 annotation 2 [0.53, 0.79] Social equality with Access to Resources 
 annotations [0.11, 0.02]
+
+Governments+<>Agenda
+Educational Institutions+<>Agenda
+Power+<>Social Class
+Business+<>Social Class
 
 // note +a generic note appeared [0.06, 0.03]
 
 style wardley
+
+open education->Virtual
+inclusion->open education
+Mooc->open education
+exclusion->academic standards
+Infrastructure->Physical
+Infrastructure->Virtual
+inclusion->scolarship
+
+scolarship->Money
+academic standards->intelligence traits theory
+NGOs->Agenda
+social actors->Agenda
