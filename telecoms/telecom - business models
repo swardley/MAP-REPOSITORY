@@ -22,49 +22,53 @@ style wardley
 // note + logistics DN: example of inddustrial application [0.16, 0.02]
 
 // note what is mum? [0.39, 0.80]
-note +security [0.62, 0.75]
-note Coverage [0.60, 0.76]
-note Speed [0.58, 0.78]
+note +security [0.63, 0.76]
+note Coverage [0.61, 0.76]
+note Speed [0.59, 0.77]
 // Latency  
 // Reliability
 // Capacity (no of connections) 
 // Security
 
 
-component macrocells [0.35, 0.47] label [-28, -19]
+component macrocells [0.28, 0.47] label [-36, 28]
+
+component installation [0.42, 0.66] label [-86, -6]
+pipeline installation [0.37, 0.75]
+
 
 //users
-component public [0.96, 0.79] label [6, -7]
+component public [0.94, 0.78] label [6, -7]
 component gov [0.98, 0.61] label [-8, -12]
 component Business [0.98, 0.75] label [-31, -10]
-pipeline network access [0.58, 0.75]
-component location based content [0.75, 0.46] label [-20, -57]
-component cloud based apps [0.75, 0.75] label [3, -26]
-component local apps [0.75, 0.65] label [-53, 20]
+pipeline network access [0.67, 0.75]
+component location based content [0.78, 0.46] label [-76, -25]
+component cloud based apps [0.78, 0.75] label [3, -26]
+component local apps [0.78, 0.65] label [-53, 20]
 //components
-component oRAN [0.35, 0.67] label [-15, 23]
-component urban [0.48, 0.74] label [14, 4]
-component content [0.77, 0.71] label [-18, -14]
+component oRAN [0.28, 0.62] label [-15, 23]
+component urban [0.51, 0.74] label [30, -2]
+component content [0.80, 0.71] label [-10, -11]
 // component communication [0.84, 0.77] label [8, 2]
-component telecom providers [0.55, 0.71] label [7, -7]
-component content providers [0.68, 0.65] label [-74, -12]
+component telecom providers [0.57, 0.71] label [12, -8]
+component content providers [0.71, 0.66] label [-66, -12]
 // component B2B [0.70, 0.69] label [-19, 25]
-component spectrum license [0.20, 0.74] label [9, -6]
-component ethernet [0.35, 0.83] label [15, 3]
-component inclusion [0.86, 0.79] label [12, 8]
-component regulatory access [0.28, 0.38] label [-71, -6]
+component spectrum license [0.17, 0.75] label [7, -3]
+component ethernet [0.28, 0.83] label [15, 3]
+// component inclusion [0.86, 0.79] label [7, 6]
+component regulatory access [0.23, 0.32] label [-80, -10]
 
-component population density [0.50, 0.66] label [-71, -26]
-pipeline population density [0.46, 0.75]
-component rural [0.48, 0.47] label [-8, -19]
+component population density [0.53, 0.66] label [-62, -29]
+pipeline population density [0.60, 0.75]
+component rural [0.51, 0.61] label [-58, 1]
 
 component sovereignty [0.93, 0.53] label [-78, -11]
 component economic [0.91, 0.43] label [-72, 4]
 component political [0.91, 0.53] label [-50, 25]
 
-component location [0.06, 0.63] label [-79, 7]
-component identity [0.06, 0.69] label [15, 5]
-component data [0.08, 0.65] label [-41, -5]
+component location [0.63, 0.56] label [-79, 7]
+component identity [0.63, 0.63] label [-40, 21]
+component data [0.65, 0.60] label [-41, -5]
 // component property [0.21, 0.72] label [8, -5]
 // component EM Spectrum [0.26, 0.79] label [12, 3]
 // component certificates [0.19, 0.59] label [-101, 3]
@@ -73,30 +77,34 @@ component exclusion [0.85, 0.69] label [-49, -14]
 component network access [0.64, 0.71] label [5, -9]
 // component competition [0.57, 0.62] label [-73, -13]
 
+component fixed line [0.40, 0.38] label [-89, 6]
+component satellite connection [0.40, 0.74] label [24, -16]
+component fibre [0.28, 0.78] label [-15, -17]
 // component collaboration [0.55, 0.46] label [-34, 23]
 // component zero sum [0.55, 0.70] label [-55, -16]
-component territory [0.06, 0.42] label [-73, 4]
+component territory [0.05, 0.42] label [-41, 18]
 // component privacy [0.82, 0.69] label [-58, 5]
 
 // component access device [0.32, 0.75] label [4, 13]
 
 
-component topology [0.18, 0.57] label [-68, -7]
-component space [0.16, 0.70] label [-27, 23]
-component legislation [0.58, 0.44] label [-91, 1]
+component topology [0.16, 0.57] label [-68, -7]
+component space [0.14, 0.70] label [-27, 23]
+component legislation [0.59, 0.39] label [-90, 4]
+component 5G [0.40, 0.47] label [15, 9]
 
 // Access devices - all sorts
 // component phone?? [0.29, 0.71] label [20, 0]
 // component TV?? [0.29, 0.63] label [-44, 3]
 //component digital industry [0.72, 0.66] label [-3, -36]
-component territorial [0.91, 0.61] label [-11, -18]
-component real estate [0.16, 0.38] label [-99, 1]
-component satellite dish [0.35, 0.77] label [-34, 23]
-component network building blocks [0.37, 0.72] label [3, -47]
+component territorial [0.91, 0.61] label [15, 1]
+component real estate [0.14, 0.38] label [-96, 9]
+component satellite dish [0.28, 0.70] label [-33, 27]
+component network building blocks [0.30, 0.65] label [-63, -42]
 pipeline network building blocks [0.46, 0.84]
 //pipelines
 // pipeline access device [0.62, 0.72]
-pipeline data [0.62, 0.7]
+pipeline data [0.55, 0.64]
 pipeline topology [0.37, 0.71]
 pipeline content [0.45, 0.76]
 pipeline digital industry [0.63, 0.74]
@@ -182,14 +190,27 @@ Business->privacy
 exclusion->Business
 network->telecom providers
 content->network access
-network access->telecom providers
 content->internet access
 internet access->telecom providers
 Business->content
-telecom providers->network building blocks
+// telecom providers->network building blocks
 // regulatory access->network building blocks
 // macrocells->real estate
 macrocells->regulatory access
 network building blocks->spectrum license
 telecom providers->population density
-urban->macrocells
+// urban->macrocells
+satellite dish->space
+urban -> fixed line
+rural->satellite connection
+telecom providers->network access
+telecom providers->installation
+installation->network building blocks
+real estate->fixed line
+satellite connection->space
+satellite dish->satellite connection
+// fixed line->macrocells
+fixed line->fibre
+5G->urban
+macrocells->real estate
+macrocells->5G
