@@ -22,54 +22,65 @@ style wardley
 // component transportation [0.18, 0.69] label [-18, -12]
 note (XOr) [0.28, 0.52]
 note (XOr) [0.49, 0.50]
-component society [0.96, 0.72] label [7, -1]
+component society [0.93, 0.74] label [3, -7]
 component seed [0.31, 0.55] label [8, -3]
 component labour [0.04, 0.68] label [-19, 21]
 pipeline labour
+
+component sovereignty [0.89, 0.59] label [-69, -13]
+component political [0.87, 0.48] label [-49, -17]
+pipeline sovereignty [0.40, 0.68]
+component territorial [0.87, 0.67] label [15, 3]
+component CNI [0.87, 0.55] label [-30, 3]
+component economic [0.87, 0.41] label [-72, 2]
 // component preservation [0.29, 0.66] label [9, -5]
 // pipeline preservation [0.62, 0.75]
 // component dry freeze [0.27, 0.63] label [-39, 21]
 // component pickling [0.27, 0.74] label [1, 24]
-component social norms [0.85, 0.46] label [-34, -12]
+component social norms [0.79, 0.48] label [-77, -8]
 pipeline social norms [0.37, 0.51]
-component sustainability [0.83, 0.38] label [-119, 20]
-component distribution [0.51, 0.59] label [-55, -13]
+component sustainability [0.77, 0.38] label [-119, 20]
+component distribution [0.51, 0.59] label [-54, -9]
 // component surplus [0.78, 0.57] label [-12, 21]
 // component storage [0.78, 0.67] label [-25, 21]
 component JIT [0.49, 0.63] label [-23, 22]
 component diversity [0.29, 0.44] label [-35, 23]
-component convenience [0.84, 0.72] label [-64, -10]
+component convenience [0.80, 0.72] label [-70, -9]
 component monoculture [0.29, 0.66] label [-62, 25]
 // component fresh [0.45, 0.75] label [-13, 23]
 // component tinned [0.45, 0.64] label [-38, 25]
 // component preserved [0.45, 0.71] label [-42, 23]
 // components
-component goverment [0.96, 0.67] label [-43, -11]
-component market [0.64, 0.68] label [-24, -12]
+component goverment [0.97, 0.67] label [-34, -9]
+component market [0.63, 0.69] label [11, -2]
 // component producers [0.88, 0.65] label [-74, 4]
-component consumers [0.86, 0.77] label [7, -4]
-component food product [0.54, 0.72] label [23, 2]
-pipeline food product 
+// component consumers [0.86, 0.77] label [7, -4]
+component public [0.83, 0.77] label [9, 1]
+component food product [0.57, 0.71] label [10, -4]
+pipeline food product [0.65, 0.74]
 // [0.34, 0.76]
-component health [0.77, 0.72] label [18, 4]
+component health [0.73, 0.72] label [15, 7]
 // component bad actor [0.95, 0.38] label [-74, 4]
 // component adulteration [0.84, 0.37] label [-97, 2]
 // component trust [0.23, 0.45] label [-17, -7]
 component transparency [0.21, 0.31] label [-94, 3]
-component industrial agriculture [0.96, 0.61] label [-77, -17]
-component awareness [0.15, 0.52] label [-67, -13]
+component industrial agriculture [0.97, 0.61] label [-79, -13]
+component awareness [0.15, 0.52] label [-74, -8]
 pipeline awareness [0.34, 0.71]
 component supply chain [0.13, 0.35] label [-105, 4]
 component traceability [0.31, 0.34] label [-96, 8]
-component food security [0.79, 0.64] label [-17, -14]
+component food security [0.75, 0.64] label [-39, -10]
 pipeline food security [0.52, 0.73]
 // component seasonality [0.60, 0.56] label [-46, -8]
 component education [0.40, 0.53] label [-22, 16]
-// component regulation [0.69, 0.46] label [-39, -10]
-component sovereignty [0.58, 0.47] label [-44, -11]
-pipeline sovereignty 
+// component regulation [0.54, 0.47] label [-39, -10]
+// component sovereignty [0.89, 0.59] label [-44, -11]
+component regulation [0.54, 0.47] label [-78, 1]
+
 pipeline seed [0.43, 0.67]
-component food standards [0.68, 0.45] label [-34, -11]
+component food standards [0.67, 0.45] label [-53, 16]
+component food [0.55, 0.73] label [15, 4]
+component cash [0.55, 0.66] label [-18, 22]
 component land [0.13, 0.70] label [14, 3]
 component behaviour [0.48, 0.29] label [-78, -3]
 component JIC [0.49, 0.42] label [-34, 3]
@@ -78,10 +89,10 @@ component JIC [0.49, 0.42] label [-34, 3]
 // component distribution mechanisms [0.18, 0.60] label [-81, -28]
 // pipeline distribution mechanisms [0.58, 0.66]
 // component social media [0.26, 0.67] label [-43, 15]
-component substitution [0.77, 0.53] label [-100, 7]
+component substitution [0.73, 0.53] label [-101, 6]
 component energy [0.06, 0.70] label [7, -7]
 pipeline energy [0.61, 0.76]
-component farm [0.41, 0.67] label [6, 5]
+component farm [0.41, 0.67] label [8, 5]
 // component foraged [0.45, 0.35] label [-68, 6]
 component solar [0.04, 0.75] label [16, 6]
 component synthetic [0.04, 0.62] label [-89, 5]
@@ -105,7 +116,7 @@ producers->market
 // consumers->market
 market->trust
 trust->market
-food security->goverment
+// food security->goverment
 food security->seasonality
 seasonality->education
 // health->food security
@@ -113,11 +124,11 @@ seasonality->education
 adulteration->regulation
 // regulation->food security
 // consumers->food security
-regulation->sovereignty
+// regulation->sovereignty
 // food security->sovereignty
 traceability->food standards
 // territory->food standards
-sovereignty->landscape
+// sovereignty->landscape
 education->behaviour
 educational content->education
 education->distribution mechanisms
@@ -178,9 +189,20 @@ farm->seed
 food security->regulation
 health->food standards
 food standards->market
-food standards->sovereignty
+// food standards->sovereignty
 substitution->diversity
 farm->land
-sovereignty->awareness
+// sovereignty->awareness
 land->energy
 JIC +<>JIT
+goverment->society
+society->public
+public->convenience
+health->public
+regulation->food standards
+awareness->regulation
+goverment->sovereignty
+CNI->food security
+economic->supply chain
+political+<>market
+note (West) [0.77, 0.55]
