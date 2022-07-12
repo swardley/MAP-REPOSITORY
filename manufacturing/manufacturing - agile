@@ -1,93 +1,135 @@
-// General
-// Map is licensed under creative commons share alike.
-// https://creativecommons.org/licenses/by-sa/4.0/
-// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
-
 title manufacturing - agile manufacturing
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note unused [0.37, 0.02]
-note +telemetry [0.34, 0.02]
-note +flow vs stock [0.31, 0.02]
-note +DORA
+// note unused [0.37, 0.02]
+// note +telemetry [0.34, 0.02]
+// note +flow vs stock [0.31, 0.02]
+component speed of change [0.94, 0.71] label [-5, -21]
+component methodology [0.84, 0.65] label [-75, -13]
+pipeline methodology [0.54, 0.68]
+component demand forecasting [0.85, 0.36] label [-65, -5]
+component manufacturer [0.99, 0.67] label [-94, 1]
+component supply chain [0.64, 0.58] label [-31, -12]
+pipeline supply chain // [0.49, 0.73]
+// component internal [0.65, 0.72] label [15, 4]
+// component external [0.65, 0.50] label [-12, -14]
+component agile [0.82, 0.55] label [-51, 3]
+component lean [0.82, 0.67] label [14, 5]
+component scenario planning [0.90, 0.36] label [-74, -19]
+component value chain awareness [0.75, 0.39] label [-17, -51]
+pipeline value chain awareness [0.25, 0.69]
+component wardley mapping [0.73, 0.26] label [-72, -4]
+component value stream mapping [0.73, 0.59] label [-65, -21]
+component Vendor Lists [0.73, 0.68] label [14, 5]
+component trust [0.60, 0.39] label [-16, -11]
+component transparancy [0.57, 0.34] label [-94, 10]
 
-component quality [0.52, 0.54] label [-46, -10]
-pipeline quality [0.42, 0.6]
-
-component loop [0.45, 0.37] label [-40, 9]
-component convenience [0.90, 0.73] label [7, 7]
-
-component production line [0.52, 0.69] label [17, -13]
-component speed of change [0.85, 0.70] label [1, -6]
 component factory [0.40, 0.69] label [13, 5]
 component retooling [0.29, 0.69] label [14, 5]
-component methodology [0.77, 0.65] label [-78, -10]
-pipeline methodology [0.52, 0.7]
 
-component agile [0.75, 0.53] label [-10, 25]
-component lean [0.75, 0.69] label [-6, 26]
+// component quality [0.48, 0.54] label [-56, -7]
+// pipeline quality [0.42, 0.6]
 
-component modular [0.44, 0.48] label [12, 3]
-component architecture [0.36, 0.49] label [-30, -10]
-component disposability [0.30, 0.50] label [-23, 20]
-component manufacturer [0.95, 0.68] label [-110, 2]
-component substitutability [0.34, 0.55] label [34, -1]
+// component loop [0.43, 0.37] label [-40, 9]
+// component convenience [0.76, 0.75] label [7, 7]
 
-component observability [0.21, 0.45] label [-39, -14]
+component production line [0.52, 0.69] label [17, -13]
+
+component observability [0.23, 0.45] label [-8, -13]
 pipeline observability [0.27, 0.65]
 
 component chain [0.05, 0.28] label [-48, 3]
 
-component test driven development [0.50, 0.43] label [-33, 20]
-component factory mode [0.19, 0.28] label [-103, 2]
+component test driven development [0.40, 0.36] label [-69, -10]
+component factory mode [0.21, 0.28] label [-103, 2]
 
-component optimisation [0.62, 0.56] label [-96, -10]
+// component modular [0.42, 0.54] label [-63, 4]
+component architecture [0.88, 0.54] label [-93, -5]
+
+// component disposability [0.30, 0.50] label [-30, 16]
+// component substitutability [0.34, 0.55] label [34, -1]
+
+component optimisation [0.54, 0.56] label [-97, -3]
 pipeline optimisation [0.40, 0.6]
-component stocks [0.60, 0.59] label [-9, 24]
-component flow [0.60, 0.41] label [-31, 22]
-component exposure of constraints [0.50, 0.59] label [12, -10]
+component stocks [0.52, 0.59] label [16, 5]
+component flow [0.52, 0.41] label [-46, 3]
+component exposure of bottlenecks [0.40, 0.63] label [-71, -11]
 component digital twin [0.12, 0.26] label [-103, 5]
 component simulation [0.05, 0.55] label [-85, 13]
 component sensors [0.06, 0.66] label [6, 3]
 component data [0.02, 0.66] label [13, 3]
-component consumer [0.94, 0.74]
-component OTA [0.80, 0.38] label [-37, 3]
-component reuse [0.25, 0.58] label [8, 2]
-component measurement [0.19, 0.64] label [-51, 25]
+// component awareness of bottlenecks [0.30, 0.41] label [-5, -23]
+// pipeline awareness of bottlenecks
 
+// component consumer [0.94, 0.75]
+// component OTA [0.72, 0.38] label [-37, 3]
+// component reuse [0.25, 0.58] label [8, 2]
+component KPI [0.21, 0.64] label [14, 5]
+note *1 (link) [0.06, 0.28]
+note *1  [0.84, 0.40]
 
 // links
 manufacturer->speed of change
 speed of change->methodology
-methodology->optimisation
-lean->stocks
-agile->flow
+// methodology->optimisation
+// lean->stocks
+// agile->flow
+// methodology->production line
 stocks->exposure of constraints
-flow->modular
+// flow->modular
 modular->architecture
 architecture->substitutability
 architecture->disposability
 flow->test driven development
-test driven development->observability
+// test driven development->observability
 test driven development->factory mode
 factory mode->digital twin
-observability->chain
+// observability->chain
 digital twin->chain
 sensors->data
 digital twin->simulation
 simulation->data
 factory mode->sensors
 OTA->factory mode
-methodology->production line
+
 production line->factory
 factory->retooling
 
-measurement->sensors
+KPI->sensors
 disposability->reuse
 substitutability->reuse
 optimisation->quality
 test driven development->loop
 consumer->convenience
 OTA->convenience
-exposure of constraints->measurement
+exposure of constraints->KPI
+speed of change->supply chain
+methodology->supply chain awareness
+supply chain awareness->supply chain
+speed of change->scenario planning
+scenario planning->supply chain awareness
+scenario planning->demand forecasting
+demand forecasting->supply chain awareness
+methodology->value chain awareness
+value chain awareness->demand forecasting
+supply chain->value chain awareness
+external->trust
+value chain awareness->transparancy
+trust->transparancy
+supply chain->optimisation
+supply chain->production line
+lean->stocks
+agile->flow
+supply chain->modular
+speed of change->architecture
+value chain awareness->architecture
+supply chain->trust
+exposure of constraints->Awareness of constraint
+exposure of constraints->awareness of constraint
+stocks->bottlenecks
+bottlenecks->awareness of constraint
+bottlenecks->KPI
+bottlenecks->awareness of bottlenecks
+stocks->exposure of bottlenecks
+exposure of bottlenecks->KPI
