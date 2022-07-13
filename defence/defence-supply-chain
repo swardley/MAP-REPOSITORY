@@ -1,71 +1,144 @@
-// General
-// Map is licensed under creative commons share alike.
-// https://creativecommons.org/licenses/by-sa/4.0/
-// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
-
-title defence- supply chain
+title defence - supply chain
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
+note unused [0.93, 0.03]
+note domino [0.89, 0.04]
+note corruption [0.91, 0.04]
+
+
 //actors
-component manufacturer [1.00, 0.57] label [-89, 4]
-component Government [0.98, 0.74]
+component Government [0.99, 0.67] label [-24, -10]
+component society [0.96, 0.72] label [6, 4]
+component legitimacy [0.96, 0.64] label [-79, -2]
+component sovereignty [0.91, 0.60] label [-87, -6]
+pipeline sovereignty [0.43, 0.71]
+component territorial [0.89, 0.70] label [12, 4]
+component economic [0.89, 0.52] label [-39, 24]
+component political [0.89, 0.44] label [-79, 4]
+component technological [0.89, 0.63] label [-14, 23]
+component cultural [0.89, 0.48] label [-49, -17]
+component security [0.89, 0.56] label [-7, 24]
+
+component theatre [0.79, 0.60] label [7, -6]
+pipeline theatre [0.46, 0.7]
+component land [0.77, 0.69] label [18, 6]
+component supply chain [0.77, 0.47] label [-101, 4]
+component sea [0.77, 0.65] label [-21, 21]
+component cyber [0.77, 0.55] label [-17, 23]
+
+component competition [0.68, 0.63] label [-32, -11]
+pipeline competition [0.53, 0.68]
+component conflict [0.66, 0.67] label [17, 3]
+component collaboration [0.66, 0.54] label [-110, 2]
+
+component awareness [0.40, 0.59] label [-81, -5]
+pipeline awareness [0.3, 0.73]
+component supply chain awareness [0.38, 0.31] label [-78, -26]
+component territorial awareness [0.38, 0.72] label [28, -9]
+component digital chain awareness [0.38, 0.36] label [4, -57]
+
+component capability [0.58, 0.54] label [-45, -14]
+pipeline capability [0.47, 0.68]
+component kinetic [0.56, 0.67] label [17, 7]
+component inflitration [0.56, 0.57] label [-32, 25]
+component influence [0.56, 0.48] label [-77, 3]
+
+component visibility [0.48, 0.65] label [3, -8]
+pipeline visibility [0.57, 0.68]
+component covert [0.46, 0.58] label [-60, 5]
+component overt [0.46, 0.67] label [-6, 20]
+
+component CNI [0.77, 0.51] label [-7, 26]
+// evolve influence 0.46 label [-13, 22]
 //Things to add
-component trust [0.90, 0.10]
-component heirarchy [0.84, 0.10]
-component sensors [0.79, 0.10]
-//Chain
-component sanctions [0.70, 0.60] label [-32, 27]
-component acqusition [0.88, 0.47] label [-38, -16]
-component logistics [0.46, 0.65] label [2, -6]
-component supply chain [0.41, 0.68] label [3, -11]
-pipeline supply chain [0.46, 0.75]
-component centralised [0.39, 0.70] label [-13, 28]
-component decentralised [0.39, 0.51] label [-49, -19]
-component costs [0.20, 0.59] label [-26, -9]
-component experience [0.32, 0.43] label [-15, -11]
-component situational awareness [0.28, 0.37] label [-71, -27]
-pipeline situational awareness [0.27, 0.45]
-component co-ordination [0.17, 0.65] label [19, 4]
-component air support [0.03, 0.65]
-component tactics [0.49, 0.54] label [-49, -6]
-component sourcing [0.14, 0.58] label [-64, -7]
-pipeline sourcing [0.34, 0.68]
-component domestic [0.12, 0.63] label [-36, 23]
-component bespoke [0.12, 0.38] label [-37, -15]
-component materials [0.04, 0.59] label [-62, 11]
-component manufacture [0.79, 0.52] label [-84, 3]
-component conflict [0.88, 0.67] label [6, 27]
-component capability [0.79, 0.68] label [10, -1]
-component kinetic [0.70, 0.68] label [-3, 29]
-component competition [0.90, 0.65] label [-8, -16]
-pipeline competition [0.39, 0.72]
-component delivery [0.60, 0.63] label [8, -5]
-pipeline delivery [0.46, 0.71]
-component Theatre [0.72, 0.66] label [3, -10]
-pipeline Theatre [0.47, 0.72]
-component technology [0.58, 0.50] label [-40, -19]
-component organic [0.58, 0.66] label [-2, 26]
-component assurance [0.04, 0.47] label [-61, -13]
-component collaboration [0.88, 0.62] label [-71, -13]
-//relationships
-manufacturer->manufacture
-Government->competition
-conflict->capability
-capability->Theatre
-kinetic->delivery
-delivery->logistics
-delivery->tactics
-logistics->supply chain
-supply chain->co-ordination
-co-ordination->air support
-supply chain->situational awareness
-supply chain->sourcing
-sourcing->assurance
-sourcing->materials
-manufacture->sourcing
-acqusition->manufacture
-supply chain->costs
-decentralised->experience
-conflict->situational awareness
-situational awareness->kinetic (edited) 
+// component trust [0.90, 0.10]
+// component heirarchy [0.84, 0.10]
+// component sensors [0.79, 0.10]
+// component manufacturer [1.00, 0.57] label [-89, 4]
+
+
+
+
+// //Chain
+// component sanctions [0.70, 0.60] label [-32, 27]
+// component acqusition [0.88, 0.47] label [-38, -16]
+// component logistics [0.46, 0.65] label [2, -6]
+// component supply chain [0.77, 0.47] label [3, -11]
+// pipeline supply chain [0.46, 0.75]
+// component centralised [0.39, 0.70] label [-13, 28]
+// component decentralised [0.39, 0.51] label [-49, -19]
+// component costs [0.20, 0.59] label [-26, -9]
+// component experience [0.32, 0.43] label [-15, -11]
+// component situational awareness [0.28, 0.37] label [-71, -27]
+// pipeline situational awareness [0.27, 0.45]
+// component co-ordination [0.17, 0.65] label [19, 4]
+// component air support [0.03, 0.65]
+// component tactics [0.49, 0.54] label [-49, -6]
+
+// component sourcing [0.14, 0.58] label [-64, -7]
+// pipeline sourcing [0.34, 0.68]
+// component domestic [0.12, 0.63] label [-36, 23]
+// component bespoke [0.12, 0.38] label [-37, -15]
+
+// component materials [0.04, 0.59] label [-62, 11]
+// component manufacture [0.79, 0.52] label [-84, 3]
+// component conflict [0.66, 0.67] label [-10, 27]
+// component capability [0.58, 0.54] label [10, -1]
+// component kinetic [0.56, 0.67] label [-3, 29]
+// component competition [0.68, 0.63] label [-58, -10]
+// pipeline competition [0.53, 0.68]
+// component delivery [0.60, 0.63] label [8, -5]
+// pipeline delivery [0.46, 0.71]
+// component Theatre [0.72, 0.66] label [3, -10]
+// pipeline Theatre [0.47, 0.72]
+// component technology [0.58, 0.50] label [-40, -19]
+// component organic [0.58, 0.66] label [-2, 26]
+// component assurance [0.04, 0.47] label [-61, -13]
+// component collaboration [0.66, 0.54] label [-75, 24]
+
+// //relationships
+// manufacturer->manufacture
+// Government->competition
+// conflict->capability
+// capability->Theatre
+// kinetic->delivery
+// delivery->logistics
+// delivery->tactics
+// logistics->supply chain
+// supply chain->co-ordination
+// co-ordination->air support
+// supply chain->situational awareness
+// supply chain->sourcing
+// sourcing->assurance
+// sourcing->materials
+// manufacture->sourcing
+// acqusition->manufacture
+// supply chain->costs
+// decentralised->experience
+// conflict->situational awareness
+// situational awareness->kinetic
+// Government->society
+Government->society
+Government->legitimacy
+legitimacy->sovereignty
+territorial->land
+economic->supply chain
+sovereignty->theatre
+sea->territorial
+economic->cyber
+cyber->technological
+cyber->political
+sovereignty->competition
+competition->awareness
+theatre->awareness
+supply chain->supply chain awareness
+land->territorial awareness
+cyber->digital chain awareness
+visibility->competition
+sovereignty->capability
+covert->inflitration
+capability->awareness
+cultural->influence
+CNI->supply chain awareness
+security->CNI
