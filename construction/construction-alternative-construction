@@ -32,7 +32,7 @@ pipeline property
 component society [0.98, 0.59] label [-77, -5]
 pipeline society [0.45, 0.62]
 component network [0.96, 0.61] label [15, 1]
-evolve standardisation 0.5 label [-569, 210]
+evolve standards 0.5 label [-624, 262]
 
 // component externality [0.71, 0.75] label [18, 5]
 // component education [0.16, 0.02] label [12, 3]
@@ -45,8 +45,7 @@ component insurance [0.88, 0.56] label [-50, -15]
 component inspection [0.70, 0.38] label [-77, -9]
 pipeline inspection [0.17, 0.45]
 
-
-component machinery [0.21, 0.60] label [6, -6]
+component machinery [0.30, 0.59] label [11, -4]
 pipeline machinery [0.45, 0.74]
 
 evolve 3D printing 0.55 label [-681, 235]
@@ -54,73 +53,83 @@ evolve prefabrication 0.58 label [-662, 383]
 
 // component access [0.23, 0.23] label [-24, 21]
 component equality [0.81, 0.34] label [-77, 5]
-component brick oven [0.19, 0.73] label [22, 3]
+component brick oven [0.28, 0.73] label [22, 3]
 
-pipeline observability [0.39, 0.51]
-component onsite [0.40, 0.73] label [16, 4]
-component robotic [0.19, 0.63] label [-3, 25]
-component prefabrication [0.40, 0.49] label [-18, 27]
-component 3D printing [0.19, 0.46] label [8, 23]
+pipeline observability [0.35, 0.51]
+component onsite [0.44, 0.73] label [16, 4]
+component robotic [0.28, 0.63] label [-34, 24]
+component prefabrication [0.44, 0.49] label [-18, 27]
+component 3D printing [0.28, 0.46] label [8, 23]
 // component research [0.04, 0.33] label [-69, 1]
-component construction technologies [0.31, 0.64] label [19, -35]
+component construction technologies [0.37, 0.64] label [21, -30]
 pipeline construction technologies [0.58, 0.73]
 // component firesafety [0.02, 0.41] label [11, 6]
 // component maintenance [0.23, 0.39] label [-77, 18]
 // component lifecycle management [0.27, 0.41] label [-74, -25]
 
-component materials [0.10, 0.51] label [13, -6]
-pipeline materials [0.27, 0.7]
-component artificial wood [0.08, 0.38] label [-18, 17]
-component longevity [0.36, 0.40] label [-74, -1]
+component alternative materials [0.18, 0.51] label [-84, -26]
+pipeline alternative materials [0.27, 0.53]
+component artificial wood [0.16, 0.38] label [-57, -26]
+component longevity [0.43, 0.40] label [-74, -1]
 
 component aesthetics [0.81, 0.52] label [17, 14]
 
-component building [0.50, 0.59] label [9, 5]
+component building [0.53, 0.59] label [10, 5]
 // pipeline building // [0.35, 0.71]
 
-component construction [0.52, 0.62] label [-35, -19]
+component construction [0.55, 0.62] label [10, -9]
 pipeline construction [0.46, 0.7]
 // component dwellings [0.71, 0.70] label [-28, 25]
 // component office [0.71, 0.63] label [-16, 25]
 
-component methods [0.42, 0.60] label [9, -6]
+component methods [0.46, 0.60] label [9, -6]
 pipeline methods [0.48, 0.74]
 // component civil engineering [0.71, 0.58] label [-42, 13]
 
 // component regulation [0.46, 0.41] label [-80, 3]
-component planning permission [0.50, 0.47] label [-24, 14]
-component smart materials [0.08, 0.28] label [-78, -12]
+component planning permission [0.53, 0.47] label [-44, 15]
+component smart materials [0.16, 0.28] label [-78, -12]
 
 // component floating buildings [0.71, 0.44] label [-3, 13]
-component machine [0.29, 0.59] label [-70, 1]
-component human [0.29, 0.72] label [19, 4]
+component machine [0.35, 0.59] label [-68, 3]
+component human [0.35, 0.72] label [19, 4]
 component building control [0.68, 0.44] label [15, -15]
 // component sensors [0.63, 0.41] label [-33, -13]
 component observability  [0.61, 0.44] label [-31, -11]
-pipeline observability [0.39, 0.51]
-component embedded building sensors [0.59, 0.40] label [-75, 2]
+pipeline observability [0.35, 0.51]
+component embedded building sensors [0.59, 0.36] label [-77, -1]
 component factory mode [0.68, 0.18] label [-106, 5]
 component eyeballs [0.59, 0.50] label [16, 4]
-component land [0.50, 0.69] label [18, 4]
+component land [0.53, 0.69] label [18, 4]
 
 // component modular [0.44, 0.41] label [-28, 19]
 // component componentisation [0.44, 0.44] label [-106, -11]
 
-component material data [0.18, 0.41] label [-106, 7]
-
+component benchmark [0.25, 0.42] label [-75, 3]
+pipeline benchmark
 evolve machine 0.7 label [-864, 287]
 // component safety [0.33, 0.37] label [-53, 15]
-component wood [0.08, 0.69] label [-14, 30]
-component recycled containters [0.08, 0.53] label [-42, 15]
+component wood [0.17, 0.68] label [-14, 24]
+component recycled containters [0.16, 0.52] label [27, -13]
 // component wood skyscrapers [0.71, 0.36] label [-40, 13]
 
 // component cost [0.78, 0.78]
-component standardisation [0.27, 0.41] label [-95, -13]
+component standards [0.34, 0.43] label [-74, 2]
 component sustainability [0.81, 0.44] label [-70, 22]
+
+component standard materials [0.19, 0.68] label [9, -30]
+pipeline standard materials [0.67, 0.73]
 
 component values [0.83, 0.49] label [-51, -3]
 pipeline values [0.33, 0.53]
-pipeline standardisation
+pipeline standards
+
+component concrete [0.17, 0.72] label [18, 4]
+
+component supply chain [0.10, 0.62] label [12, 9]
+component supply chain awareness [0.05, 0.27] label [-70, -22]
+
+evolve supply chain awareness 0.56 label [-2, -17]
 
 //links
 PPP->Developer
@@ -220,3 +229,19 @@ building control->eyeballs
 building control->eyeballs
 eyeballs->building control
 factory mode->embedded building sensors
+planning permission->standards
+longevity->standards
+standards->material data
+prefabrication->standards
+material data->alternative materials
+construction technologies->alternative materials
+construction technologies->standard materials
+benchmark->standards
+benchmark->alternative materials
+benchmark->standard materials
+supply chain->standard materials
+supply chain->alternative materials
+supply chain->awareness of supply chain
+sustainability->awareness of supply chain
+supply chain->supply chain awareness
+supply chain awareness->sustainability
