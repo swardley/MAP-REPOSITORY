@@ -1,0 +1,74 @@
+title Individual Learning V2
+
+component Motivation [0.97, 0.60]
+pipeline Motivation [0.88, 0.28]
+component Job [0.96, 0.85] label [-12, -20]
+component Joy of Learning [0.96, 0.34] label [-53, -48]
+component Min Time [0.96, 0.39] label [-17, -20]
+evolve Min Time 0.74 label [-17, -15]
+
+component Bloom [0.75, 0.66]
+pipeline Bloom [0.88, 0.44]
+component Mastery [0.73, 0.83] label [-24, -19]
+component Overview [0.74, 0.47] label [-10, -18]
+
+component Social Capabilties [0.47, 0.47] label [-1, -36]
+pipeline Social Capabilties [0.28, 0.88]
+component Coaching [0.46, 0.83] label [-13, -20]
+component Online Simulations [0.45, 0.38] label [-20, -43]
+evolve Online Simulations 0.61 label [-17, -45]
+
+component Find the Right Curse [0.59, 0.61] label [-6, -62]
+pipeline Find the Right Curse [0.88, 0.28]
+component Peers [0.58, 0.82] label [-16, -20]
+component Google for Education [0.58, 0.33] label [-33, -60]
+evolve Google for Education 0.77 label [-34, -60]
+
+component Learn everythere [0.87, 0.50] label [-29, -33]
+pipeline Learn everythere [0.70, 0.28]
+component Apple Glasses [0.85, 0.33] label [-37, -22]
+component mobile [0.85, 0.56] label [-21, -22]
+component VR [0.85, 0.41] label [-8, -21]
+evolve VR 0.6 label [5, -20]
+evolve Apple Glasses 0.66 label [-18, -22]
+
+
+component Curriculum [0.35, 0.62] label [-30, -14]
+pipeline Curriculum [0.88, 0.28]
+component interactive personalized [0.33, 0.34] label [-30, -49]
+evolve interactive personalized 0.77 label [-27, -47]
+
+component fix Curriculum [0.33, 0.82] label [-3, -22]
+
+component Status [0.24, 0.59]
+pipeline Status [0.28, 0.88]
+component Elite Badge Certification [0.22, 0.80] label [-35, -53]
+component Self Learning [0.22, 0.32] label [-26, -20]
+component Independet RockStars MOOCs [0.22, 0.38] label [-10, -60]
+evolve Independet RockStars MOOCs 0.69 label [-46, -58]
+
+component Tech Stack [0.11, 0.64] label [-20, -23]
+pipeline Tech Stack [0.88, 0.28]
+component LMS, LXP [0.10, 0.82] label [-27, -20]
+component Adaptive Learning Engine [0.10, 0.34] label [-27, -59]
+evolve Adaptive Learning Engine 0.77 label [-36, -57]
+component PKM [0.10, 0.43] label [-8, -17]
+evolve PKM 0.61
+
+Find the Right Curse->Curriculum
+Bloom->Curriculum
+Curriculum->Status
+Status->Tech Stack
+Curriculum->Tech Stack
+Learn everythere->Curriculum
+Mastery->Curriculum
+Mastery->Status
+Overview->fix Curriculum
+Min Time->interactive personalized
+Find the Right Curse->Social Capabilties
+Min Time->Learn everythere
+Motivation->Bloom
+Job->Status
+
+Min Time->PKM
+interactive personalized->Adaptive Learning Engine
