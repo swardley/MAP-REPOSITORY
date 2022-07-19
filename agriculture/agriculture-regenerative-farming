@@ -2,89 +2,101 @@ title agriculture - regenerative farming
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 
+note +Knowledge based system [0.38, 0.35]
+note +dependency [0.11, 0.72]
+note +climate change [0.03, 0.71]
 //components to add
-component nutrient density? [0.87, 0.39] label [-79, -7]
-component preservation [0.67, 0.63] label [13, 4]
+component nutrient density? [0.88, 0.39] label [-79, -7]
+component preservation [0.67, 0.63] label [17, 4]
 // component fresh [0.89, 0.19] label [6, 0]
-component water [0.34, 0.71] label [-50, 4]
-component forestation [0.67, 0.49] label [-94, 5]
+component water [0.35, 0.71] label [-57, 16]
+component forestation [0.68, 0.49] label [-58, 30]
 component breeding [0.67, 0.56] label [-36, 23]
-component heritage [0.87, 0.46] label [-43, 22]
-component food security [0.87, 0.49] label [-29, -15]
-component vertical [0.49, 0.38] label [-25, -17]
+component heritage [0.88, 0.46] label [-43, 22]
+component food security [0.88, 0.49] label [-19, -17]
+component vertical [0.50, 0.38] label [-25, -17]
 
 component conservation [0.69, 0.58] label [-87, -10]
 pipeline conservation [0.48, 0.64]
 
-component certification bodies [0.69, 0.39] label [-80, 6]
+component certification bodies [0.62, 0.36] label [-40, -40]
+pipeline certification bodies
+note + incl community driven schemes [0.68, 0.27]
 
 component substrate [0.36, 0.72] label [5, -10]
 pipeline substrate [0.7, 0.75]
 
-component territory [0.62, 0.74] label [7, 5]
-component landscape [0.28, 0.30] label [-80, 11]
+component territory [0.62, 0.74] label [-27, -13]
+component landscape [0.30, 0.30] label [-75, 2]
 
-component supply chain awareness [0.05, 0.19] label [-66, -18]
-component behaviour [0.68, 0.21] label [-72, 0]
-component labelling (visual feedback) [0.45, 0.15] label [-67, -10]
+component supply chain awareness [0.32, 0.19] label [-67, -16]
+component behaviour [0.72, 0.21] label [-72, 0]
+component labelling (visual feedback) [0.65, 0.17] label [-78, -29]
 
-component gov [0.86, 0.57] label [9, -2]
-component policy [0.80, 0.51] label [-25, 15]
+component gov [0.92, 0.57] label [9, -2]
+component policy [0.80, 0.51] label [14, 3]
 component supranational (UN) [0.98, 0.50] label [-55, -28]
-pipeline supranational (UN) [0.44, 0.56]
+pipeline supranational (UN) // [0.44, 0.56]
 
 component treaty [0.89, 0.42] label [-50, -7]
 pipeline treaty [0.38, 0.50]
 
-component social knowledge [0.40, 0.29] label [-72, -12]
+component social knowledge [0.40, 0.31] label [-67, -9]
 component knowledge based systems [0.40, 0.66] label [-59, -19]
+component measure [0.76, 0.73] label [1, -13]
+pipeline measure [0.5, 0.8]
+component grade [0.75, 0.79] label [46, 3]
+
 
 // uses
 // component supermarket [0.91, 0.65] label [-77, -12]
 component retail location [0.96, 0.65] label [-70, -24]
 pipeline retail location
 
-component farmer [0.73, 0.65] label [-53, 1]
+component farmer [0.72, 0.65] label [-52, 7]
 component consumer [0.95, 0.71] label [-18, -14]
 component profit [0.86, 0.74] label [12, 4]
-component quality [0.77, 0.73] label [9, 3]
-component standardised [0.82, 0.65] label [-77, 18]
+component quality [0.74, 0.51] label [-71, -1]
+// pipeline quality
+// note +most measures are product "grades" [0.70, 0.73]
+component standardised [0.82, 0.65] label [-97, -4]
 component logistics [0.88, 0.68] label [-77, 8]
 
 // Needs
 component Food [0.81, 0.73] label [12, 3]
-component soil [0.34, 0.74] label [12, 6]
+component soil [0.35, 0.74] label [21, 11]
 
 // Practice
 component farming practice [0.51, 0.66] label [8, -34]
 pipeline farming practice [0.3, 0.78]
-component regenerative at scale [0.49, 0.31] label [-75, -27]
+component regenerative at scale [0.50, 0.31] label [-74, -36]
 // component industrial [0.53, 0.75] label [12, 4]
-component extractive at scale  [0.49, 0.77] label [2, -32]
+component extractive at scale  [0.49, 0.77] label [27, -12]
 // component knowledge base [0.41, 0.28] label [-107, 4]
 
-component 1 [0.49, 0.31] label [-25, 21]
-evolve 1 0.6 label [-2, 21]
+component 1 [0.49, 0.31] label [-479, 523]
+evolve 1 0.54 label [-929, 514]
 // evolve regenerative at scale 0.6 label [-36, -59]
 
 // Crop
 component crop [0.27, 0.71] label [-37, -3]
 pipeline crop [0.4, 0.75]
-component monoculture [0.25, 0.74] label [16, 2]
-component diversity [0.25, 0.41] label [-15, 26]
-component rotation [0.25, 0.65] label [-41, 25]
+component monoculture [0.26, 0.74] label [18, 6]
+component diversity [0.26, 0.41] label [-15, 26]
+component rotation [0.26, 0.65] label [-41, 25]
 
 // Energy matrix
-component energy matrix [0.17, 0.69] label [10, -8]
+component energy matrix [0.17, 0.72] label [8, -9]
 pipeline energy matrix [0.68, 0.75]
 component microbes [0.08, 0.69] label [-62, -8]
-component photosynthesis [0.15, 0.74] label [17, 5]
-component microbial quorum [0.05, 0.38] label [-72, -27]
+component photosynthesis [0.16, 0.74] label [17, 8]
+component microbial quorum [0.04, 0.38] label [-64, -30]
 // component solar [0.03, 0.72] label [7, 17]
-component signalling [0.02, 0.32] label [-81, 3]
-component synthetics [0.15, 0.69] label [-86, 6]
-component petrochemical [0.08, 0.72] label [9, 3]
-
+component signalling [0.01, 0.32] label [-82, -7]
+component synthetics [0.15, 0.69] label [-94, -1]
+component petrochemical [0.08, 0.73] label [9, 6]
+component supply chain [0.02, 0.61] label [-100, 8]
+component environment [0.02, 0.70] label [8, 4]
 evolve social knowledge 0.5 label [5, -7]
 
 // links
@@ -103,9 +115,9 @@ regenerative at scale->photosynthesis
 // industrial -> monoculture
 extractive at scale -> monoculture
 diversity->regenerative at scale
-monoculture->synthetics
+monoculture->energy matrix
 microbial quorum->solar
-photosynthesis->microbes
+photosynthesis +<>microbes
 regenerative at scale ->microbial quorum
 supermarket->farmer
 Food->farmer
@@ -113,9 +125,9 @@ consumer->Food
 consumer->supermarket
 // supermarket->profit
 retail location -> profit
-Food->quality
+Food->measure
 profit->standardised
-standardised->quality
+standardised->measure
 // logistics->supermarket
 logistics -> retail location
 logistics->standardised
@@ -142,7 +154,16 @@ substrate->landscape
 extractive at scale->knowledge based systems
 consumer->behaviour
 behaviour->labelling (visual feedback)
-regenerative at scale->labelling (visual feedback)
+// regenerative at scale->labelling (visual feedback)
 labelling (visual feedback)->supply chain awareness
 farming practice->supply chain awareness
 policy->behaviour
+// farming practice->supply chain
+supply chain->crop
+supply chain awareness->supply chain
+soil->microbes
+1->supply chain awareness
+environment->microbes
+certification bodies->social knowledge
+certification bodies->labelling (visual feedback)
+grade->extractive at scale
