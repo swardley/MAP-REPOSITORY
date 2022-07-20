@@ -1,0 +1,83 @@
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
+title Disruption in the energy industry
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+
+component Secure Power System [0.77, 0.73] label [5, -14]
+component Contingency Analysis [0.61, 0.73] label [-7, 16]
+component Short Circuit Analysis [0.56, 0.80] label [-3, -4]
+component State Estimation [0.43, 0.74] label [23, -18]
+component System Models [0.31, 0.72] label [-37, 24]
+component SCADA [0.20, 0.81] label [15, 2]
+component State Solution [0.44, 0.23] label [-62, 25]
+component synchrophasor [0.20, 0.73] label [-487, 28]
+
+component 1 [0.20, 0.38] label [-578, 203]
+evolve 1 0.72 label [-993, 194]
+component 2 [0.43, 0.23] label [-305, 471]
+evolve 2 0.48 label [-626, 467]
+component 3 [0.67, 0.41] label [-564, 606]
+evolve 3 0.48 label [-669, 610]
+
+
+component state [0.45, 0.59] label [-28, -11]
+pipeline state [0.22, 0.75]
+
+component renewable [0.81, 0.74] label [5, -1]
+component intermitancy [0.61, 0.61] label [-78, -2]
+component microgrids [0.57, 0.65] label [-67, 22]
+component user [0.97, 0.69]
+
+component secure renewable [0.89, 0.62] label [-79, -7]
+component networks [0.09, 0.73] label [15, 4]
+pipeline networks
+
+component measurer [0.22, 0.63] label [-58, -10]
+pipeline measurer [0.37, 0.82]
+
+component storage [0.47, 0.69] label [-51, 5]
+pipeline storage
+
+component secure power [0.90, 0.66] label [-53, -48]
+pipeline secure power [0.61, 0.78]
+
+component Architectural model [0.69, 0.67] label [-50, -34]
+pipeline Architectural model [0.4, 0.71]
+component chaos engines [0.67, 0.41] label [-106, 1]
+component N+1 [0.67, 0.70] label [-26, 26]
+
+//notes
+note SCADA = 8 Bytes every 1-4 seconds per point (error bar +/- 1-3%) [0.97, 0.04]
+note synchrophasor = (30 bytes * 30Hz) * Per Bus, sub 100ms delay [0.95, 0.04]
+note +efficiency, visibility of supply chain [0.46, 0.28]
+
+
+// link
+State Estimation->System Models
+State Estimation->SCADA
+Secure Power System->Contingency Analysis
+Secure Power System->Short Circuit Analysis
+
+State Solution->System Models
+State Solution->synchrophasor
+Contingency Analysis->state
+Short Circuit Analysis->state
+Secure Power System->Contingency Analysis
+Secure Power System->Short Circuit Analysis
+networks -> State Solution
+variability->renewable
+variability->State Solution
+intermitancy->State Solution
+microgrids->intermitancy
+secure renewable->Secure Power System
+renewable->secure renewable
+user->secure power 
+secure renewable->intermitancy
+microgrids->storage
+Secure Power System->Architectural model
+chaos engines->2
+N+1->State Estimation
