@@ -8,12 +8,12 @@ evolution genesis / concept -> custom / emerging -> product/ converging -> commo
 style wardley
 
 
-note +open [0.20, 0.61]
+note +open [0.20, 0.62]
 // note +open [0.36, 0.10]
 //public money, public good
 component government [0.97, 0.68] label [-55, -10]
-component society [0.92, 0.76] label [13, 1]
-component citizens [0.84, 0.79] label [16, 1]
+component society [0.92, 0.76] label [10, -1]
+component citizens [0.86, 0.79] label [10, 3]
 
 component funding [0.47, 0.69] label [-43, -11]
 pipeline funding [0.66, 0.74]
@@ -24,24 +24,31 @@ component services [0.56, 0.65] label [-21, -10]
 pipeline services [0.57, 0.72]
 component public owned [0.54, 0.71] label [16, 3]
 component proprietary [0.54, 0.58] label [-94, 4]
-component 2 [0.19, 0.70] label [-776, 199]
+component 2 [0.19, 0.75] label [-982, 202]
 pipeline 2
 
+component policy [0.93, 0.57] label [-58, 3]
+component skills [0.02, 0.19] label [-53, 4]
+
+note + proprietary and internal [0.16, 0.69]
+note + internal and management consultants [0.10, 0.41]
+// ponent centre of gravity [0.48, 0.27] label [-70, -14]
+
 component tax [0.37, 0.82] label [-5, 18]
-component supply chain [0.29, 0.62] label [8, 4]
-component awareness [0.07, 0.38] label [-70, -8]
-pipeline awareness [0.3, 0.48]
-component situational [0.05, 0.31] label [-91, 3]
-component asset list [0.05, 0.47] label [23, 3]
+component supply chain [0.36, 0.63] label [5, -10]
+component awareness [0.09, 0.28] label [-35, -13] inertia
+pipeline awareness [0.23, 0.48]
+component situational [0.07, 0.24] label [-13, 26]
+component asset list [0.07, 0.47] label [23, 3]
 component efficiency [0.63, 0.60] label [16, 3]
 //component timing [0.59, 0.05]
-component constructs [0.19, 0.46] label [-56, -13]
-pipeline constructs [0.40, 0.55]
+component constructs [0.19, 0.46] label [-56, -13] inertia
+pipeline constructs [0.41, 0.55]
 // component skunkwork [0.26, 0.20] label [-80, 11]
-component data [0.17, 0.54] label [-5, 24]
-component code [0.17, 0.51] label [-19, 25]
-component API [0.17, 0.46] label [-13, 25]
-component business process [0.17, 0.41] label [-73, -15]
+component data [0.17, 0.54] label [-9, -20]
+component code [0.17, 0.49] label [-6, -21]
+component API [0.17, 0.46] label [-20, 20]
+component business process [0.17, 0.42] label [-85, -3]
 //component pupose
 component advantage [0.65, 0.53] label [-65, -12]
 pipeline advantage [0.20, 0.61]
@@ -49,18 +56,21 @@ component collaboration [0.63, 0.50] label [-87, 24]
 component innovation [0.63, 0.21] label [-91, 1]
 // component competencies [0.48, 0.81] label [-11, 21]
 // component assessment [0.50, 0.44] label [-42, -19]
-component 1 [0.19, 0.61] label [-694, 216]
-component risk mitigation [0.39, 0.53] label [-55, -36]
+component 1 [0.19, 0.62] label [-694, 216]
+component risk mitigation [0.39, 0.54] label [-40, -36]
 pipeline risk mitigation
 component perception of success [0.73, 0.68] label [-65, -23]
-component success [0.87, 0.62] label [-65, 2]
-component legitimacy [0.91, 0.58] label [-85, 1]
+component success [0.80, 0.61] label [-63, 12]
+component legitimacy [0.87, 0.58] label [14, 8]
+component strategic or social intent [0.64, 0.38] label [-41, -68]
+component resources (money etc) [0.14, 0.63] label [6, -17]
+pipeline resources (money etc)
 // note link from funding from innovation [0.48, 0.77]
 // note link to open source? [0.48, 0.22]
 // note include PR? [0.90, 0.06]
 
-evolve constructs 0.70 label [5, -9]
-evolve awareness 0.7
+evolve constructs 0.75 label [7, -4]
+evolve awareness 0.69
 component trust [0.79, 0.38] label [-50, -8]
 pipeline trust [0.29, 0.43]
 
@@ -76,6 +86,8 @@ profit+<>counter1
 profit+<>counter2
 transparency ->1
 profit+<>corporate
+
+resources (money etc) ->1
 
 // links
 innovation->seed
@@ -118,3 +130,12 @@ public->risk mitigation
 risk mitigation -> 1
 public->tax
 tax->government
+awareness -> 1
+strategic or social intent -> 1
+strategic or social intent->centre of gravity
+skills->awareness
+legitimacy->policy
+government->policy
+policy->strategic or social intent
+strategic or social intent->skills
+public->resources (money etc)
