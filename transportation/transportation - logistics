@@ -17,82 +17,93 @@ component 1 [0.18, 0.54] label [-613, 155]
 evolve 1 0.59 label [-658, 153]
 component 2 [0.28, 0.60] label [-650, 211]
 evolve 2 0.74 label [-947, 221]
-component 3 [0.28, 0.45] label [-489, 222]
+
 evolve 3 0.51 label [-542, 223]
 
-component longhaul [0.54, 0.68] label [-43, 23]
+component longhaul [0.60, 0.65] label [-37, 21]
 component Public [0.92, 0.76] label [10, 2]
-component producer [0.77, 0.71] label [18, 1]
+component producer [0.78, 0.71] label [11, 1]
 component good [0.87, 0.70] label [-37, -7]
 component topology [0.38, 0.51] label [-61, -9]
 pipeline topology [0.42, 0.56]
-component commmerce [0.69, 0.76] label [6, -14]
+component commmerce [0.73, 0.76] label [9, -6]
 pipeline commmerce [0.7,0.8]
-component e-commerce [0.67, 0.71] label [-85, 3]
-component last mile [0.54, 0.61] label [-81, 3]
+component e-commerce [0.71, 0.71] label [-90, 0]
+component last mile [0.60, 0.61] label [-89, -9]
 // component robots [0.12, 0.66] label [-18, -10]
 // pipeline robots [0.54, 0.7n
-component vehicle [0.12, 0.60]
-pipeline vehicle [0.5, 0.75]
+component vehicle [0.12, 0.60] label [7, -4]
+pipeline vehicle [0.42, 0.75]
 
-component awareness of supply chain [0.68, 0.33] label [-72, -26]
+component awareness of supply chain [0.73, 0.35] label [-72, -26]
 component automated delivery [0.18, 0.54] label [-78, -13]
 component electric [0.02, 0.71] label [-72, 1]
 component warehouse [0.28, 0.60] label [17, 15]
 component city [0.36, 0.55] label [22, 5]
-component skills / HGV [0.18, 0.63] label [19, -10]
-component supply chain [0.60, 0.66] label [-66, 16]
+component skills / HGV [0.18, 0.63] label [18, 2]
+
 component fossil [0.02, 0.75] label [12, 4]
 component delivery [0.20, 0.59] label [-64, -7]
 pipeline delivery [0.53, 0.64]
 component power [0.04, 0.73] label [5, -9]
 pipeline power [0.70, 0.76]
 
-component information [0.46, 0.68] label [9, -2]
-pipeline information [0.62, 0.73]
+// component consumer transportation [0.66, 0.77] label [10, -6]
+component supply chain [0.66, 0.63] label [-90, 9]
+
+//pipeline real time stock
+evolve real time stock 0.5 label [2, -35]
+
+component information [0.46, 0.65] label [-54, -11]
+pipeline information [0.42, 0.73]
 component data [0.37, 0.71] label [11, 2]
 pipeline data
 
 component traffic [0.44, 0.72] label [17, 5]
 // component infrastructure [0.41, 0.22] label [-29, -17]
-component telematics [0.44, 0.63] label [-56, 21]
+component telematics [0.44, 0.62] label [-45, 23]
 component drones [0.10, 0.69] label [-4, 20]
 component scout [0.10, 0.61] label [-26, 22]
 component trucks [0.10, 0.74] label [18, 7]
 // component community spaces [0.30, 0.40] label [-76, -31]
 // pipeline community spaces [0.3, 0.5]
-component storage [0.30, 0.59] label [4, -12]
-pipeline storage [0.3, 0.61]
+component storage [0.30, 0.59] label [-60, -3]
+pipeline storage [0.42, 0.61]
 
 component economy [0.88, 0.38] label [-69, 4]
 // component territory [0.66, 0.45] label [15, 3]
 // component vehicle [0.12, 0.60] label [14, 4]
 // pipeline vehicle
 
-component autotrucks [0.10, 0.51] label [-98, 4]
+component autotrucks [0.10, 0.43] label [-93, -1]
 component society [0.94, 0.66] label [2, -8]
 component government [0.95, 0.59] label [-38, -13]
-component regulation [0.77, 0.47] label [-76, -7]
-component shop [0.67, 0.79] label [16, 3]
+component regulation [0.51, 0.45] label [-29, 13]
+component shop [0.71, 0.79] label [16, 3]
 // component cohesion [0.73, 0.40] label [-42, -13]
 component rural [0.36, 0.43] label [-53, 1]
-component kerbside [0.28, 0.45] label [-32, 25]
-component hubs [0.28, 0.31] label [-13, 29]
+//component hubs [0.28, 0.31] label [-50, 2]
 // component planning [0.23, 0.02] label [8, 3]
 pipeline good [0.62, 0.73]
 // component privacy [0.78, 0.64] label [-59, -2]
 
-component mass [0.85, 0.72] label [13, 4]
+// component kerbside [0.21, 0.35] label [-41, 29]
+note kerbside [0.24, 0.40]
+
+component 3 [0.28, 0.43] label [-489, 222]
+
+component mass [0.85, 0.72] label [18, 5]
 component local [0.85, 0.63] label [-49, 3]
 
-component logistics [0.56, 0.73] label [11, -5]
-pipeline logistics [0.6, 0.76]
-component logistic_hubs [0.54, 0.75] label [-1, 24]
+component logistics [0.62, 0.72] label [9, -5]
+pipeline logistics [0.60, 0.76]
+component logistic_hubs [0.60, 0.75] label [17, 5]
 component sovereignty [0.90, 0.42] label [-73, -11]
 pipeline sovereignty [0.37, 0.5]
 
 component CNI [0.88, 0.43] label [-14, 25]
 component territorial [0.88, 0.49] label [14, 4]
+component real time stock [0.44, 0.43] label [-67, -20]
 
 // component awareness [0.75, 0.40] label [-45, -9]
 // pipeline awareness [0.3, 0.62]
@@ -155,3 +166,7 @@ producer->awareness of supply chain
 regulation->awareness of supply chain
 Public->society
 Public->good
+real time stock->awareness of supply chain
+e-commerce->real time stock
+shop->consumer transportation
+consumer transportation->last mile
