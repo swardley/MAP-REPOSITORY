@@ -2,28 +2,31 @@ title manufacturing - agile manufacturing
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
+note 2022 [0.95, 0.01]
 // note unused [0.37, 0.02]
 // note +telemetry [0.34, 0.02]
 // note +flow vs stock [0.31, 0.02]
-component speed of change [0.94, 0.71] label [-5, -21]
+note ontology [0.07, 0.47]
+component speed of change [0.95, 0.71] label [-7, -21]
 component methodology [0.84, 0.65] label [-75, -13]
 pipeline methodology [0.54, 0.68]
 component demand forecasting [0.85, 0.36] label [-65, -5]
-component manufacturer [0.99, 0.67] label [-94, 1]
-component supply chain [0.64, 0.58] label [-31, -12]
+component manufacturer [0.99, 0.69] label [-94, 1]
+component supply chain [0.64, 0.58] label [-44, 21]
 pipeline supply chain // [0.49, 0.73]
 // component internal [0.65, 0.72] label [15, 4]
 // component external [0.65, 0.50] label [-12, -14]
 component agile [0.82, 0.55] label [-51, 3]
-component lean [0.82, 0.67] label [14, 5]
+component lean [0.82, 0.67] label [19, 2]
 component scenario planning [0.90, 0.36] label [-74, -19]
-component value chain awareness [0.75, 0.39] label [-17, -51]
-pipeline value chain awareness [0.25, 0.69]
+component value chain awareness [0.75, 0.38] label [-17, -51]
+pipeline value chain awareness [0.25, 0.60]
 component wardley mapping [0.73, 0.26] label [-72, -4]
-component value stream mapping [0.73, 0.59] label [-65, -21]
-component Vendor Lists [0.73, 0.68] label [14, 5]
-component trust [0.60, 0.39] label [-16, -11]
-component transparancy [0.57, 0.34] label [-94, 10]
+component value stream mapping [0.73, 0.59] label [-67, -22]
+component Vendor Lists [0.58, 0.69] label [11, 4]
+component trust [0.60, 0.41] label [-7, -13]
+component transparancy [0.58, 0.37] label [-51, 16]
+component configuration [0.47, 0.67] label [-14, 17]
 
 component factory [0.40, 0.69] label [13, 5]
 component retooling [0.29, 0.69] label [14, 5]
@@ -34,15 +37,15 @@ component retooling [0.29, 0.69] label [14, 5]
 // component loop [0.43, 0.37] label [-40, 9]
 // component convenience [0.76, 0.75] label [7, 7]
 
-component production line [0.52, 0.69] label [17, -13]
+component production line [0.52, 0.69] label [15, -6]
 
-component observability [0.23, 0.45] label [-8, -13]
+component observability [0.38, 0.49] label [-63, -12]
 pipeline observability [0.27, 0.65]
 
-component chain [0.05, 0.28] label [-48, 3]
+component representation of chain [0.03, 0.35] label [-57, -28]
+component factory mode [0.36, 0.28] label [-23, 23]
 
-component test driven development [0.40, 0.36] label [-69, -10]
-component factory mode [0.21, 0.28] label [-103, 2]
+// component test driven development [0.44, 0.37] label [-65, -22]
 
 // component modular [0.42, 0.54] label [-63, 4]
 component architecture [0.88, 0.54] label [-93, -5]
@@ -54,20 +57,31 @@ component optimisation [0.54, 0.56] label [-97, -3]
 pipeline optimisation [0.40, 0.6]
 component stocks [0.52, 0.59] label [16, 5]
 component flow [0.52, 0.41] label [-46, 3]
-component exposure of bottlenecks [0.40, 0.63] label [-71, -11]
-component digital twin [0.12, 0.26] label [-103, 5]
-component simulation [0.05, 0.55] label [-85, 13]
-component sensors [0.06, 0.66] label [6, 3]
-component data [0.02, 0.66] label [13, 3]
+component exposure of bottlenecks [0.44, 0.63] label [-53, -22]
+component digital twin [0.24, 0.44] label [-32, -14]
+component RT simulation [0.22, 0.40] label [-85, 26]
+component sensors [0.02, 0.69] label [9, 2]
+component information [0.14, 0.58] label [11, -4]
+component raw data [0.08, 0.67] label [8, 0]
+pipeline data // [0.42, 0.7]
+pipeline digital twin [0.18, 0.51]
+component model [0.10, 0.49] label [-33, -11]
+pipeline model
+component visualisation of production line [0.22, 0.50] label [29, -31]
+component WhatIf simulation [0.22, 0.19] label [-73, 0]
+// component data model [0.22, 0.40] label [-33, 27]
+
+// component MTTR [0.05, 0.40] label [-41, 8]
+
 // component awareness of bottlenecks [0.30, 0.41] label [-5, -23]
 // pipeline awareness of bottlenecks
 
 // component consumer [0.94, 0.75]
 // component OTA [0.72, 0.38] label [-37, 3]
 // component reuse [0.25, 0.58] label [8, 2]
-component KPI [0.21, 0.64] label [14, 5]
-note *1 (link) [0.06, 0.28]
-note *1  [0.84, 0.40]
+component KPI [0.36, 0.64] label [14, 5]
+note *1 (link) [0.08, 0.30]
+note *1  [0.83, 0.39]
 
 // links
 manufacturer->speed of change
@@ -84,19 +98,19 @@ architecture->disposability
 flow->test driven development
 // test driven development->observability
 test driven development->factory mode
-factory mode->digital twin
+// factory mode->digital twin
 // observability->chain
 digital twin->chain
-sensors->data
+// sensors->data
 digital twin->simulation
 simulation->data
-factory mode->sensors
+// factory mode->sensors
 OTA->factory mode
 
 production line->factory
 factory->retooling
 
-KPI->sensors
+// KPI->sensors
 disposability->reuse
 substitutability->reuse
 optimisation->quality
@@ -133,3 +147,22 @@ bottlenecks->KPI
 bottlenecks->awareness of bottlenecks
 stocks->exposure of bottlenecks
 exposure of bottlenecks->KPI
+digital twin->data
+flow->RT simulation
+stocks->visualisation of production line
+RT simulation->factory mode
+lean->value stream mapping
+// RT simulation->sensors
+flow->factory mode
+KPI->data
+data->sensors
+information->digital twin
+information->KPI
+information->raw data
+raw data->sensors
+information->model
+model->chain
+value chain awareness->WhatIf simulation
+Vendor Lists->supply chain
+model->representation of chain
+production line->configuration
