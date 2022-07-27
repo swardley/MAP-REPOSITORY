@@ -3,95 +3,197 @@
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
 
-title telecom - sovereignty
+title Telecoms - sovereignty
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note unused [0.13, 0.06]
-component techno feudalism [0.78, 0.27] label [-37, 15]
-component techno utopia [0.10, 0.08] label [16, 3]
-component hacker community [0.06, 0.08]
-component society [0.95, 0.48] label [-60, -3]
-component values [0.91, 0.35] label [-30, -13]
-component social scoring [0.63, 0.30] label [-111, 2]
-component fairness [0.86, 0.28] label [-70, 4]
+// note unused [0.18, 0.01]
 
-component Routing [0.32, 0.72] label [13, 6]
-component supranational organisations [0.78, 0.41] label [-57, 15]
-component individuality [0.78, 0.67] label [-8, 24]
-component collective [0.78, 0.64] label [-57, 24]
 
-component nation [0.91, 0.61]
-component consumer [0.83, 0.69] label [13, 2]
+//users
+component people [0.93, 0.69] label [7, 5]
+component gov [1.00, 0.63] label [-10, -12]
+pipeline gov
+component collective [0.97, 0.66] label [8, -6]
+pipeline collective // [0.52, 0.71]
+// component corporations [0.96, 0.63] label [-78, -13]
+// component family [0.96, 0.70] label [20, 7]
 
-component tech giants [0.93, 0.56] label [-46, -9]
 
-component power [0.80, 0.52] label [-47, -4]
-pipeline power [0.22, 0.73]
-component influence opinion [0.85, 0.42] label [-71, -10]
+// component enterprise [0.55, 0.07] label [-31, -10]
+component legitimacy [0.92, 0.57] label [-89, 2]
+pipeline legitimacy
 
-component access [0.63, 0.70] label [8, 3]
+//sovereignty
+component SOVEREIGNTY [0.86, 0.54] label [-83, -10]
+pipeline SOVEREIGNTY [0.41, 0.71]
+component territorial [0.85, 0.70] label [21, 7]
+component political [0.85, 0.60] label [-26, 26]
+component cultural [0.85, 0.65] label [-43, -17]
+component economic [0.85, 0.46] label [-43, -17]
+component digital [0.85, 0.42] label [-72, 9]
+component CNI [0.85, 0.56] label [-31, 29]
 
-component sovereignty [0.54, 0.64]
-pipeline sovereignty [0.34, 0.8]
-component physical sovereignty [0.52, 0.72] label [0, 15]
-component digital sovereignty [0.52, 0.42] label [-48, 11]
-component data [0.05, 0.67] label [12, 5]
-pipeline data
-component network infrastructure [0.41, 0.71] label [40, -12]
-component economic sovereignty [0.52, 0.66] label [-73, 11]
+component perception of success [0.91, 0.66] label [-58, -20]
 
-component network [0.22, 0.69] label [12, -6]
-pipeline network [0.38, 0.8]
-component land [0.10, 0.53] label [-46, -4]
-component space based [0.20, 0.44] label [-51, 27]
-component terrestial [0.20, 0.68] label [-22, 23]
+component THEATRE [0.14, 0.55] label [-34, -13]
+pipeline THEATRE  [0.34, 0.71]
+component awareness of land, sea, air and space [0.13, 0.70] label [15, -51]
+component awareness of supply chains [0.13, 0.35] label [-83, -20]
 
-component emergency services [0.60, 0.40] label [-75, -16]
-component criminal [0.90, 0.47] label [-67, 6]
+component REALITY [0.06, 0.55] label [-59, -5]
+pipeline REALITY  [0.34, 0.70]
 
-component spectrum [0.20, 0.63] label [-38, 22]
-component regulation [0.33, 0.45] label [13, 3]
-component legal compliance [0.39, 0.44] label [-75, -1]
-component security [0.68, 0.50] label [-61, -9]
-component intercept [0.36, 0.32] label [-74, 3]
-component balkanisation [0.05, 0.38] label [-108, 1]
+component geography [0.05, 0.35] label [-37, 27]
+component supply chain [0.05, 0.64] label [-56, 30]
 
-nation->consumer
-consumer->access
-nation->power
-tech giants->power
-nation->sovereignty
-security->consumer
-nation->security
-security->emergency services
-nation->influence opinion
-criminal->access
-power->access
-access->network infrastructure
-network infrastructure->network
-digital sovereignty->network infrastructure
-digital sovereignty->data
-land->terrestial
-land->balkanisation
-physical sovereignty->land
-nation->legal compliance
-legal compliance->regulation
-regulation->land
-emergency services->intercept
-tech giants->data
-economic sovereignty->data
-spectrum->land
-tech giants->network
-intercept->data
-nation->supranational organisations
-network infrastructure->Routing
-supranational organisations->Routing
-Routing->balkanisation
-influence opinion->power
-society->consumer
-society->values
-values->fairness
-fairness->access
-values->social scoring
-nation->social scoring
+component CRITICAL TELECOMS INFRASTRUCTURE [0.76, 0.58] label [35, -42]
+pipeline CRITICAL TELECOMS INFRASTRUCTURE [0.54, 0.69]
+
+component space [0.05, 0.69] label [23, 10]
+
+// component exclusion [0.84, 0.68] label [-49, -14]
+
+// //COMPONENTS
+
+// component content providers [0.74, 0.65] label [-78, -20]
+// //component user data [0.67, 0.57] label [-61, -13]
+// //component location [0.65, 0.54] label [-55, 28]
+// //component identity [0.65, 0.61] label [-29, 29]
+
+// component USER APP [0.80, 0.71] label [-75, -4]
+// component earth monitoring [0.78, 0.48] label [-30, 11]
+// note +disaster comms [0.73, 0.44]
+// note +backhaul, CDN, ... [0.72, 0.44]
+// note navigation [0.71, 0.44] label [0.71, 0.44]
+// component communication [0.78, 0.75] label [-48, 30]
+// note +entertainment (TV, gaming) [0.75, 0.80]
+// note +health, financial [0.76, 0.80]
+
+// note Coverage [0.72, 0.80]
+// note Speed [0.71, 0.80]
+// note Capacity (no. connections x speed) [0.55, 0.77]
+// note Latency [0.70, 0.80]
+
+// component legislation [0.65, 0.33] label [-90, 4]
+// component regulatory access [0.21, 0.32] label [-80, -10]
+
+// component NETWORK ACCESS [0.68, 0.63] label [-122, -5]
+// component Indoor [0.66, 0.55] label [-25, 20]
+// component Outdoor [0.66, 0.68] label [-27, 18]
+// Indoor->FTTP
+// Indoor->WiFi
+// Outdoor->mobile
+// Outdoor->satellite
+// note +physics? [0.58, 0.77]
+// note +rural>remote [0.64, 0.71]
+// note +urban  [0.64, 0.49]
+
+
+// component INSTALLATION [0.58, 0.58] label [-48, -10]
+// component mobile [0.58, 0.43] label [-22, -9]
+// component FTTP [0.56, 0.55] label [-13, 22]
+// component satellite [0.56, 0.71] label [-31, 16]
+// component P2P uW [0.56, 0.46] label [-23, 19]
+// component WiFi [0.57, 0.64] label [-7, -16]
+// satellite->Launch vehicles
+// WiFi->FTTP
+// mobile->FTTP
+// component Launch vehicles [0.46, 0.49] label [-48, 11]
+
+
+// component NETWORK EQPT [0.36, 0.59] label [-52, -15]
+// component legacy [0.34, 0.45] label [-22, 24]
+// component cloud native NFs [0.34, 0.64] label [-28, 10]
+// component fibre [0.40, 0.69] label [-16, 29]
+// NETWORK EQPT->spectrum license
+// NETWORK EQPT->Compute
+// NETWORK EQPT->Eqpt Venders
+
+// component TOPOLOGY [0.14, 0.53] label [-68, -7]
+// component real estate [0.13, 0.42] label [-73, 27]
+// component space [0.05, 0.69] label [-20, 20]
+
+// component Eqpt Venders [0.26, 0.60]
+// component spectrum license [0.16, 0.74] label [7, -3]
+// component territory [0.05, 0.42] label [-41, 18]
+
+// //pipelines
+
+
+// pipeline USER APP [0.45, 0.76]
+
+// pipeline NETWORK ACCESS [0.50, 0.76]
+
+// pipeline INSTALLATION [0.39, 0.75]
+
+// pipeline NETWORK EQPT [0.43, 0.72]
+
+// pipeline TOPOLOGY [0.37, 0.71]
+
+
+// //LINKS
+// gov->SOVEREIGNTY
+// gov->public
+
+// public->USER APP
+
+// enterprise->USER APP
+// enterprise->exclusion
+
+// USER APP->NETWORK ACCESS
+// USER APP->content providers
+
+// NETWORK ACCESS->INSTALLATION
+
+// INSTALLATION->NETWORK EQPT
+// satellite->space
+// satellite dish->satellite
+// FTTP->real estate
+// FTTP->fibre
+// mobile->P2P uW
+// mobile->regulatory access
+// mobile->real estate
+
+// legislation->territory
+// legislation->exclusion
+// legislation->regulatory access
+// real estate->territory
+
+// NETWORK EQPT->TOPOLOGY
+
+// spectrum license->regulatory access
+
+// regulatory access->real estate
+// economic->legislation
+
+// //component Core/Txn n/w [0.49, 0.40] label [-45, 21]
+// NETWORK ACCESS->Core Connxn..
+// NETWORK ACCESS->Core/Txn n/w
+// Core/Txn n/w->fibre
+
+// component Compute [0.21, 0.84] label [12, 0]
+// component Power [0.17, 0.84] label [16, 2]
+// Compute->Power
+
+gov->collective
+collective->people
+collective->behaviours
+gov->legitimacy
+legitimacy->SOVEREIGNTY
+people->perception of success
+perception of success->CNI
+territorial->landscape
+digital->supply chains
+economic->supply chains
+physical geography->territorial
+awareness of physical geography->territorial
+digital->awareness of supply chains
+awareness of supply chains->economic
+awareness of physical geography->geography
+supply chain->awareness of supply chains
+CNI->CRITICAL NATIONAL INFRASTRUCTURE
+awareness of land, sea, air and space->territorial
+geography->awareness of land, sea, air and space
+space->awareness of land, sea, air and space
+CNI->CRITICAL TELECOMS INFRASTRUCTURE
