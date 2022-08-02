@@ -1,0 +1,100 @@
+title institutions
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+
+component supranational government [0.97, 0.61] label [-89, -23]
+
+component Government [0.91, 0.63] label [18, -2]
+pipeline Government
+
+component collective [0.80, 0.68] label [-1, -19]
+pipeline collective [0.63, 0.73]
+component society [0.78, 0.72] label [32, -1]
+component corporation [0.78, 0.64] label [-61, 30]
+component people [0.70, 0.72] label [19, 4]
+component legitimacy [0.88, 0.58] label [-82, -8]
+
+
+component trust [0.82, 0.44] label [-53, -11]
+pipeline trust [0.34, 0.47]
+
+component benevolence [0.80, 0.35] label [-100, 0]
+component integrity [0.80, 0.40] label [-42, 26]
+component competency [0.80, 0.46] label [-28, 21]
+
+
+component sovereignty [0.63, 0.51] label [-26, -14]
+pipeline sovereignty [0.38, 0.7]
+
+
+component territorial [0.61, 0.69] label [19, 0]
+component economic [0.61, 0.39] label [-79, 5]
+component cultural [0.61, 0.55] label [-35, 24]
+component political [0.61, 0.60] label [-26, 26]
+component technological [0.62, 0.48] label [-51, 31]
+component social [0.61, 0.44] label [-47, 23]
+
+component success [0.70, 0.64] label [9, 10]
+
+component values [0.66, 0.66] label [15, 4]
+pipeline values
+
+
+component landscapes [0.10, 0.57] label [11, -13]
+pipeline landscapes [0.35, 0.7]
+
+
+component awareness [0.24, 0.51] label [-50, -14]
+pipeline awareness [0.27, 0.7]
+
+component territory [0.08, 0.41] label [-14, 36]
+component territorial awareness [0.23, 0.70] label [19, -14]
+
+component supply chain [0.08, 0.69] label [13, 4]
+component supply chain awareness [0.23, 0.28] label [-75, -19]
+
+component behaviour [0.09, 0.36] label [-51, 31]
+component behavioural awareness [0.23, 0.38] label [26, -6]
+
+component capability [0.38, 0.53]
+pipeline capability [0.47, 0.60]
+
+component institutions [0.29, 0.60] label [7, 13]
+
+component competition [0.47, 0.59] label [10, -17]
+pipeline competition [0.38, 0.66]
+
+component collaboration [0.45, 0.54] label [-11, 23]
+component co-operation [0.45, 0.45] label [-38, 22]
+component conflict [0.45, 0.65] label [-24, 24]
+component complacency [0.45, 0.39] label [-65, 21]
+
+/// links
+
+collective->people
+Government->collective
+Government->supranational government
+Government->legitimacy
+legitimacy->trust
+sovereignty->legitimacy
+collective->success
+
+success->sovereignty
+success->values
+territorial->territorial awareness
+territorial awareness->territory
+supply chain->supply chain awareness
+supply chain awareness->economic
+technological->supply chain awareness
+behavioural awareness->behaviour
+behavioural awareness->social
+behavioural awareness->cultural
+sovereignty->capability
+instituations->capability
+capability->institutions
+success->competition
+competition->sovereignty
+competency->success
+competency->capability
+competition->competency
+values->institutions
