@@ -1,0 +1,72 @@
+// *****************General**Notes**Start*********************//
+
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+// OWM Link: https://onlinewardleymaps.com/#ezUDtIDNPDD7sTeJTJ
+
+// *****************General**Notes**End*********************//
+
+title Education Equity - financial models
+
+component pupil (root) [0.95, 0.42]
+component pupil [0.79, 0.44]
+component establishment (root) [0.96, 0.56] label [13, -22]
+component establishment [0.78, 0.61] label [-92, -5]
+component teacher [0.96, 0.66]
+
+component resources [0.65, 0.43]
+component time to study [0.65, 0.55]
+component pay fees [0.65, 0.36] label [-53, -10]
+
+component financial security [0.53, 0.56] label [8, -31]
+pipeline financial security [0.21, 0.8]
+
+component state provided [0.51, 0.65] label [4, -15]
+component bursaries [0.51, 0.50] label [-13, -17]
+component informal support [0.51, 0.27] label [3, -39]
+component formal loans [0.51, 0.43] label [-30, -17]
+component informal loans [0.51, 0.35] label [6, 31]
+component self-provided [0.51, 0.22] label [-56, -22]
+
+component state-funding [0.40, 0.52]
+component taxation [0.32, 0.72]
+component personal economic growth [0.35, 0.35]
+
+component training [0.89, 0.65] label [-51, -8]
+component incentivisation [0.90, 0.72] label [12, -17]
+component pay [0.81, 0.78]
+component status [0.81, 0.73]
+
+component funding model [0.73, 0.68]
+pipeline funding model [0.36, 0.8]
+component per-pupil [0.71, 0.79] label [5, -16]
+component philanthropy [0.71, 0.37] label [-82, -17]
+component demographic-based [0.71, 0.63] label [-71, -26]
+
+pupil (root) -> pupil
+pupil->resources
+pupil->time to study
+pupil->pay fees
+time to study->financial security
+resources->financial security
+pay fees->financial security
+
+state provided->taxation
+bursaries->state-funding
+state-funding->taxation
+formal loans->personal economic growth
+informal loans->personal economic growth
+informal support->personal economic growth
+
+teacher->training
+teacher->incentivisation
+incentivisation->pay
+incentivisation->status
+training->pupil
+training->establishment
+
+establishment (root)->establishment
+establishment->funding model
+
+style wardley

@@ -1,0 +1,94 @@
+// *****************General**Notes**Start*********************//
+
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+// OWM Link: https://beta.onlinewardleymaps.com/#mRaeaSPqWNcDv9Ix4C
+
+// *****************General**Notes**End*********************//
+title inequity in education (physical access only)
+
+component infrastructure [0.73, 0.45] label [-84, -11]
+component student cohorts [0.95, 0.63] label [-68, -27]
+
+// need for population density
+component urbanization [0.78, 0.73] label [-102, 11]
+component low child mortality [0.90, 0.79] label [8, -50]
+
+// urbanization enablers
+
+component food surplus [0.71, 0.80]
+
+// low child mortality enablers
+component clean indoor cooking [0.81, 0.77] label [-61, -46]
+
+// need for materials
+
+component concrete [0.25, 0.87] label [11, -6]
+component steel [0.30, 0.86] label [5, -10]
+component steel recycling [0.34, 0.58] label [-81, -9]
+
+// to recycle steel you need to have aging infrastructures
+
+infrastructure +<> steel recycling
+note +++ [0.60, 0.52]
+
+// food surplus drivers
+
+component fertilizers [0.56, 0.73] label [-73, -18]
+component agricultural best practices [0.63, 0.77] label [19, 4]
+component agricultural practices [0.64, 0.62] label [19, 4]
+component ammonia [0.46, 0.81]
+component Natural Gas [0.09, 0.72] label [-1, 26]
+component Coal [0.09, 0.82] label [23, 8]
+component equity in education [0.82, 0.25] label [-59, -19]
+component abolish child labor [0.59, 0.34]
+component energy inputs [0.11, 0.64]
+pipeline energy inputs [0.53, 0.83]
+
+
+// energy input for electricity generation
+
+component power [0.68, 0.74]
+component grid [0.31, 0.63] label [-43, -7]
+component nuclear [0.09, 0.60] label [-40, -17]
+component renewables [0.09, 0.54] label [-73, -21]
+
+component childcare [0.85, 0.55] label [-60, -9]
+component transport [0.91, 0.64]
+pipeline transport
+// need to add the elements of the pipeline and breadth
+
+student cohorts->childcare
+student cohorts->transport
+student cohorts-> equity in education
+childcare->infrastructure
+low child mortality->childcare
+transport->infrastructure
+infrastructure->urbanization
+infrastructure->concrete
+infrastructure->steel
+student cohorts->low child mortality
+low child mortality->food surplus
+food surplus->agricultural practices
+agricultural practices->fertilizers
+fertilizers->ammonia
+ammonia->Natural Gas
+concrete->Natural Gas
+steel->Coal
+urbanization->food surplus
+steel->steel recycling
+infrastructure->steel recycling
+urbanization->power
+food surplus->power
+power->grid
+grid->steel
+equity in education->abolish child labor
+
+grid->energy inputs
+low child mortality->clean indoor cooking
+clean indoor cooking->Coal
+clean indoor cooking->Natural Gas
+steel recycling->grid
+
+style wardley
