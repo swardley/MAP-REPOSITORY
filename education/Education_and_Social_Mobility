@@ -1,11 +1,11 @@
-title Education and Social Mobility
+title Education and Social Mobility v2
 //social mobility defined as the ability to move from the economic level
 //position you are born into, into a position of your desire
 //or at least one that matches your natural ability
-component Social class [0.29, 0.46]
+component Social class [0.16, 0.46]
 pipeline Social class [0.2, 0.8]
-component low [0.28, 0.79] label [5, -17]
-component high [0.28, 0.21] label [1, -22]
+component low [0.15, 0.79] label [5, -17]
+component high [0.15, 0.21] label [1, -22]
 component economic level [0.74, 0.79] label [5, -10]
 component physical location [0.74, 0.59]
 component government [0.95, 0.52]
@@ -15,14 +15,28 @@ component societal demand for labour [0.89, 0.42]
 component family [0.90, 0.60]
 component school [0.69, 0.45]
 pipeline school [0.2, 0.8]
-component employers [0.49, 0.49] label [5, -10]
+component employers [0.32, 0.48] label [5, -10]
 pipeline employers [0.2, 0.8]
 component public [0.68, 0.79]
 component private [0.68, 0.49]
 component elite [0.68, 0.21]
-component blue collar [0.48, 0.68]
-component white collar [0.48, 0.36]
-component education type [0.60, 0.52]
+component blue collar [0.31, 0.70]
+component white collar [0.31, 0.37]
+evolve white collar 0.5
+component new tech [0.42, 0.14]
+component DEI [0.41, 0.40]
+component new roles [0.31, 0.26]
+
+evolve new roles 0.3
+component post grad [0.50, 0.34]
+component masters+ [0.49, 0.25]
+component skills gap [0.41, 0.55]
+component short courses [0.48, 0.40]
+component entrepeneur [0.15, 0.37]
+pipeline post grad [0.2, 0.6]
+
+
+component education type [0.60, 0.52] label [5, -10]
 component merit based management [0.62, 0.10] label [-63, -17]
 //the concept of movement between eduation types based on performance
 //as a tangible result of measured ability
@@ -41,10 +55,10 @@ component choice [0.62, 0.88]
 component patronage [0.80, 0.44]
 component investment funds [0.79, 0.52]
 component alumni [0.59, 0.34]
-component middle [0.28, 0.48]
-component executive [0.48, 0.22]
-component low middle [0.28, 0.66]
-component labour/mundane [0.48, 0.79]
+component middle [0.15, 0.43]
+component executive [0.31, 0.21]
+component low middle [0.15, 0.65]
+component labour/mundane [0.30, 0.79]
 component none [0.59, 0.79]
 
 
@@ -109,3 +123,15 @@ merit based management->education type
 //a representaion of a benevolent donor or social program
 //and is the idea of a merit based system that helps people move to where in the system  
 //they would provide the best value
+
+
+new tech->new roles
+employers->DEI
+employers->skills gap
+middle->skills gap
+middle->DEI
+high->DEI
+skills gap->short courses
+new tech->entrepeneur
+middle->masters+
+masters+->new roles
