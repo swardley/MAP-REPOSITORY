@@ -9,72 +9,85 @@ style wardley
 // note +reimbursement models - sick versus well care [0.06, 0.01]
 // note +pharma [0.03, 0.01]
 
-note -ve [0.89, 0.04]
-note -ve [0.90, 0.93]
-note (ICS) [0.67, 0.04]
-note (admission) [0.35, 0.02]
+// note -ve [0.89, 0.04]
+// note -ve [0.90, 0.93]
+// note (ICS) [0.57, 0.03]
+// note (admission) [0.35, 0.02]
 note behavioural [0.94, 0.01]
-note (SDOH) [0.09, 0.04]
-component ACO [0.69, 0.06] label [-35, 4]
+// note (SDOH) [0.09, 0.04]
+
+
+// component health of patient [0.68, 0.61] label [-61, -14]
+component reviews [0.34, 0.44] label [4, 13]
+pipeline reviews
+component clinical trials [0.28, 0.43] label [-65, -14]
+
+component fairness [0.66, 0.67] label [-17, 22]
+pipeline fairness
+component exceptions (individual funding requests) [0.66, 0.37] label [-83, -30]
+// component ACO [0.54, 0.04] label [13, 2]
 // component economic [0.08, 0.39] label [-34, 23]
 component individual [0.24, 0.36] label [-89, 3]
 // component behavioural [0.08, 0.36] label [-96, 4]
-component permissable treatment [0.41, 0.61] label [27, -8]
-component status [0.82, 0.71] label [16, 2]
-component medical practioner [0.89, 0.64] label [27, -23]
+component permissable treatment [0.40, 0.61] label [27, -8]
+component status [0.84, 0.65] label [-51, -5]
+component medical practioner [0.87, 0.69] label [13, -39]
 component medical institute [0.95, 0.62] label [-34, -36]
 component patient [0.18, 0.81] label [11, 4]
 component health [0.34, 0.79] label [14, 3]
 component treatment of ailment [0.57, 0.64] label [-69, -44]
 pipeline treatment of ailment [0.37, 0.74]
-component access [0.80, 0.93] label [10, 2]
-component assisted living [0.10, 0.43] label [-24, -49]
+// component access [0.80, 0.93] label [10, 2]
+component assisted living [0.09, 0.43] label [-27, -43]
 component Dr Google [0.10, 0.32] label [-92, 4]
 // component ailment [0.69, 0.70] label [12, 3]
 pipeline ailment // [0.63, 0.8]
-component clinical_decision [0.47, 0.66] label [-107, -10]
+component clinical_decision [0.47, 0.67] label [-49, -24]
 pipeline clinical_decision // [0.43, 0.75]
-component historical data [0.31, 0.47] label [-67, -21]
-component triage [0.61, 0.05] label [-28, 22]
-component diagnosis [0.48, 0.41] label [-75, 2]
+component historical data [0.32, 0.38] label [-78, -6]
+pipeline historical data
+// component triage [0.51, 0.04] label [11, 3]
+component diagnosis [0.50, 0.40] label [-75, 2]
 component Setting of care [0.11, 0.59] label [3, -47]
 pipeline Setting of care [0.31, 0.74]
 component 111 [0.09, 0.47] label [-8, 30]
 component ER [0.09, 0.63] label [-10, 23]
 component primary care [0.09, 0.73] label [20, 1]
 component health outcome [0.42, 0.78] label [10, -2]
-component clinical outcome [0.68, 0.65] label [-69, -35]
+component clinical outcome [0.71, 0.65] label [-66, -31]
 //component payer constraints [0.82, 0.08] label [5, -10]
-pipeline clinical outcome [0.5, 0.72]
-component virtual visits [0.10, 0.40] label [-88, 32]
-component population [0.15, 0.05] label [9, 2]
+pipeline clinical outcome // [0.61, 0.72]
+component virtual visits [0.09, 0.40] label [-88, 32]
+// component population [0.15, 0.05] label [9, 2]
 component applied AI [0.41, 0.28] label [-74, 34]
-component consultation [0.46, 0.10] label [-101, 3]
-component symptoms [0.55, 0.73] label [21, 1]
+// component consultation [0.46, 0.10] label [-101, 3]
+component symptoms [0.56, 0.73] label [20, 5]
 component cause [0.56, 0.38] label [-61, 4]
-component comorbidity [0.25, 0.47] label [-40, 35]
-component re-admission [0.41, 0.10] label [-97, 1]
-component service objectives [0.79, 0.44] label [-81, -19]
-component national clinical guidelines [0.41, 0.54] label [-11, 20]
-component local protocols [0.40, 0.39] label [-28, 15]
-component cost [0.85, 0.93] label [10, -5]
-component decision support [0.42, 0.51] label [-36, -38]
+component comorbidity [0.24, 0.47] label [-44, 24]
+// component re-admission [0.41, 0.10] label [-97, 1]
+// component service objectives [0.65, 0.04] label [15, -12]
+component national clinical guidelines [0.40, 0.54] label [-22, 10]
+component local protocols [0.41, 0.39] label [-28, 15]
+// component cost [0.83, 0.93] label [8, 3]
+component decision support [0.42, 0.51] label [-39, -41]
 pipeline decision support [0.27, 0.62]
 component intuition [0.40, 0.33] label [-41, 24]
-component data [0.26, 0.56] label [-20, -16]
+component data [0.26, 0.57] label [-20, -16]
 pipeline data [0.35, 0.72]
-component observation [0.25, 0.71] label [18, 2]
+component observation [0.24, 0.71] label [18, 2]
 component lab tests [0.24, 0.61] label [-15, 26]
 // component social [0.08, 0.43] label [-13, 23]
 component social determinant [0.24, 0.40] label [-36, 13]
 component biosensors [0.24, 0.53] label [-38, 26]
 pipeline health
-component payers [0.86, 0.53] label [-57, 3]
+component payers [0.88, 0.53] label [-57, 3]
 pipeline payers
 
-component compliance to standards of care [0.67, 0.71] label [20, -32]
+component compliance to standards of care [0.68, 0.71] label [12, -36]
 
-component networked contracts [0.74, 0.33] label [-79, -17]
+// component networked contracts [0.71, 0.05] label [19, -13]
+
+component codes of practice [0.64, 0.54] label [-55, -21]
 // component AI model [0.67, 0.21] label [-37, 25]
 
 // links
@@ -103,3 +116,19 @@ medical practioner->medical institute
 medical practioner->clinical outcome
 medical practioner->status
 compliance to standards of care->status
+status->codes of practice
+compliance to standards of care->clinical outcome
+codes of practice->clinical outcome
+clinical outcome->health of patient
+clinical outcome->exceptions (individual funding requests)
+//status->exceptions (individual funding requests)
+payers->exceptions (individual funding requests)
+fairness->clinical outcome
+codes of practice->local protocols
+codes of practice->national clinical guidelines
+permissable treatment->codes of practice
+reviews->historical data
+reviews->local protocols
+reviews->national clinical guidelines
+reviews->permissable treatment
+clinical trials->reviews
