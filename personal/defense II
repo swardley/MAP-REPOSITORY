@@ -27,7 +27,7 @@ pipeline COMPETITION // [0.53, 0.73]
 pipeline AWARENESS // [0.3, 0.73]
 pipeline CAPABILITY // [0.49, 0.68]
 pipeline VISIBILITY // [0.52, 0.68]
-pipeline LANDSCAPE [0.4, 0.7]
+pipeline LANDSCAPE // [0.4, 0.7]
 
 pipeline SOVEREIGNTY [0.43, 0.71]
 pipeline THEATRE [0.38, 0.7]
@@ -35,6 +35,7 @@ pipeline COMPETITION [0.51, 0.73]
 pipeline AWARENESS [0.3, 0.73]
 pipeline CAPABILITY [0.50, 0.68]
 pipeline VISIBILITY [0.52, 0.68]
+pipeline LANDSCAPE [0.4, 0.7]
 
 
 
@@ -64,9 +65,9 @@ component collaboration [0.65, 0.52] label [-110, 2]
 component co-operation [0.65, 0.61] label [-38, 22]
 component supply chain awareness [0.29, 0.31] label [-76, -21]
 component territorial awareness [0.29, 0.72] label [30, -6]
-component digital chain awareness [0.29, 0.38] label [-30, -66]
+component digital chain awareness [0.29, 0.38] label [-32, -60]
 component kinetic [0.52, 0.67] label [-22, 21]
-component inflitration [0.52, 0.60] label [-35, 21]
+component inflitration [0.52, 0.59] label [-35, 21]
 component influence [0.52, 0.51] label [-39, 25]
 component covert [0.40, 0.53] label [-63, 0]
 component overt [0.40, 0.67] label [18, 4]
@@ -237,3 +238,5 @@ cultural awareness->behavioural landscape
 influence->culture
 land->kinetic
 inflitration->cyber
+VISIBILITY->COMPETITION
+AWARENESS->VISIBILITY
