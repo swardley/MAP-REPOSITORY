@@ -1,108 +1,119 @@
-title Finance - embedded
+title Finance- crypto (Howard edits)
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
 style wardley
+// note unused [0.21, 0.04]
+component transparency [0.34, 0.56] label [-48, -7]
+component taxation [0.83, 0.76] label [11, 3]
+component trade [0.78, 0.68] label [15, 4]
+component sovereignty [0.94, 0.52] label [-90, -3]
+component wallet [0.50, 0.61]
+pipeline wallet [0.47, 0.73]
+component crypto wallet [0.48, 0.48] label [-96, -21]
+component physical wallet [0.48, 0.72] label [8, -30]
+// component security [0.13, 0.04] label [16, 2]
+component assurance [0.43, 0.70] label [11, -4]
+component liquidity [0.77, 0.43] label [-8, 21]
+//component foreign exchange [0.48, 0.34] label [-86, -10]
+component government [0.96, 0.64] label [-59, -13]
+component bank [0.57, 0.80] label [8, 18]
+component settlement [0.54, 0.33] label [-72, -9]
+component citizen [0.94, 0.69]
+component financial options [0.86, 0.58] label [-66, -19]
+component store of value [0.59, 0.73] label [5, -10]
+component property (physical) [0.72, 0.74]
+component exchange protocol [0.64, 0.48] label [-38, 20]
+pipeline exchange protocol
+component sustainability [0.88, 0.35] label [-63, -7]
+component education [0.63, 0.54] label [-26, 17]
+// component foreign exhange protocol [0.46, 0.35] label [-64, -2]
 
-// Add to components
-component identity [0.18, 0.50] label [6, 4]
-component KYC [0.05, 0.47] label [12, 6]
-// component license [0.49, 0.04] label [10, 0]
-
-// deep dive into services
-
-// actors
-component customer [0.91, 0.71] label [5, -3]
-component good [0.80, 0.72] label [8, 3]
-
-//retails
-component retail [0.95, 0.66] label [2, -9]
-component risk management [0.52, 0.42] label [2, -38]
-pipeline risk management [0.35, 0.6]
-component Credit rating agencies [0.50, 0.59] label [8, -15]
-component Credit data aggregators [0.50, 0.36] label [-65, -21]
-
-component revenue [0.85, 0.68] label [-58, 7]
-component source of funds [0.38, 0.63] label [2, -22]
-
-component capital [0.34, 0.71] label [1, -8]
-pipeline capital [0.28, 0.8]
-component savings [0.32, 0.79] label [14, 6]
-
-// delivery mechanism
-component POS [0.76, 0.67]
-pipeline POS [0.59, 0.74]
-component online [0.74, 0.73] label [12, 3]
-component physical [0.74, 0.60] label [-69, 3]
-evolve physical 0.65 label [6, 24]
-
-//Gov
-component Gov [0.97, 0.52] label [-14, -12]
-component regulation [0.94, 0.41] label [-84, 4]
-component harm [0.82, 0.44] label [-28, 19]
-component financial model innovation [0.32, 0.29] label [-81, -20]
-
-
-// financial services
-component financial services [0.62, 0.66] label [8, -28]
-pipeline financial services [0.49, 0.71]
-// component insurance [0.60, 0.62] label [-24, -17]
-component loan [0.60, 0.67] label [-22, 26]
-component payment [0.60, 0.70] label [13, 4]
-component treasury [0.60, 0.50] label [-71, 3]
-component credit checks [0.60, 0.59] label [-77, 22]
-
-// banking actors
-component Financial Institution [0.96, 0.61] label [-26, -35]
-component financial platform [0.43, 0.50] label [14, -15]
-component OTC [0.11, 0.54] label [-9, 19]
-
-component insurance [0.60, 0.62] label [-42, -16]
-component supply chain [0.22, 0.21] label [-96, 2]
-component customer data [0.27, 0.51] label [-21, 20]
-
-component network models [0.05, 0.42] label [-94, 14]
-
-evolve supply chain 0.7
-note +should be more evolved [0.20, 0.27]
-
-//links
-source of funds->financial model innovation
-source of funds->capital
-Gov->customer
-retail->revenue
-revenue->good
-customer->good
-revenue->POS
-financial services->POS
-loan->risk management
-loan->banking platform
-banking platform->bank
-Gov->regulation
-regulation->financial services
-risk management->retail
-retail->source of funds
-sponsorship->loantitle Finance
-evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
-source of funds ->loan
-customer->harm
-regulation->harm
-loan->OTC
-banking platform->source of funds
-KYC->identity
-Financial Institution->financial platform platform
-financial platform platform->source of funds
-financial services->financial platform platform
-Financial Institution->financial platform
-financial platform->source of funds
-financial services->financial platform
-financial platform->supply chain
-
-risk management->financial platform
-financial platform->customer data
-customer data->identity
-customer data->financial model innovation
-OTC->financial model innovation
-Financial Institution->financial model innovation
-financial platform->financial platform
-financial model innovation->financial platform
-supply chain->network models
-regulation->supply chain
+component consensus algorithm [0.14, 0.57] label [-43, -35]
+pipeline consensus algorithm [0.48, 0.64]
+component proof of work [0.12, 0.59] label [-44, 21]
+component proof of stake [0.12, 0.49] label [-101, -16]
+component control [0.41, 0.63] label [-14, -11]
+pipeline control [0.47, 0.68]
+component centralised [0.39, 0.67] label [-2, 24]
+component decentralised [0.39, 0.48] label [-111, 13]
+component financial token [0.28, 0.66] label [-63, -30]
+pipeline financial token [0.44, 0.72]
+component CDBC [0.26, 0.45] label [-52, 1]
+component fiat [0.26, 0.68] label [-3, 24]
+component crypto [0.26, 0.59] label [3, 20]
+component access [0.71, 0.54] label [-3, -10]
+component power [0.05, 0.70] label [9, -9]
+pipeline power [0.68, 0.74]
+component fossil power [0.04, 0.73] label [21, 8]
+component renewable [0.03, 0.69] label [-79, 9]
+component compute [0.10, 0.71]
+component redistribution [0.64, 0.38] label [-50, 16]
+component wealth [0.78, 0.57] label [-54, -2]
+component identity [0.62, 0.19] label [-30, 18]
+component equality [0.84, 0.44] label [-58, -9]
+component legal system [0.65, 0.79] label [7, 8]
+citizen->financial options
+citizen->sustainability
+government->sustainability
+wealth->financial options
+redistribution->welath
+liquidity->financial options
+trade->financial options
+wealth->redistribution
+financial options->equality
+wealth->property (physical)
+wealth->store of value
+trade->property (physical)
+property (physical)->legal system
+exclusion->property (physical)
+store of value->financial token
+equality->redistribution
+redistribution->exclusion
+government->citizen
+trade->identity
+trade->exchange protocol
+sovereignty->taxation
+sovereignty->monetary policy
+sovereignty->fiscal policy
+fiscal policy->legal system
+monetary policy->legal system
+equality->access
+identity->bank
+liquidity->bank
+liquidity->P2P
+exchange protocol->financial token
+bank->trade
+store of value->bank
+centralised->redistribution
+exchange protocol->control
+centralised->fiat
+centralised->CDBC
+crypto->decentralised
+crypto->consensus algorithm
+consensus algorithm->compute
+compute->power
+CDBC->compute
+access->exchange protocol
+access->education
+equality->taxation
+sanctions->exchange protocol
+exchange protocol->settlement
+sustainability->renewable
+exchange protocol->foreign exchange
+identity->wallet
+store of value->wallet
+crypto wallet->crypto
+crypto wallet->CDBC
+wallet->assurance
+government->assurance
+assurance->centralised
+government->taxation
+taxation->transparency
+transparency->CDBC
+transparency->fiat
+settlement->transparency
+government->sovereignty
+sovereignty->sanctions
+sovereignty->exchange protocol
+component fiscal policy [0.72, 0.85]
+component monetary policy [0.77, 0.81] label [7, -17]
+component P2P [0.62, 0.62] label [15, 9]
