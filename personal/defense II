@@ -9,21 +9,73 @@ style wardley
 
 
 //actors and chain
-component Government [0.99, 0.67] label [-24, -10]
-component society [0.96, 0.72] label [6, 4]
-component legitimacy [0.96, 0.64] label [-79, -2]
-component sovereignty [0.91, 0.60] label [-87, -6]
-pipeline sovereignty [0.43, 0.71]
-component theatre [0.79, 0.60] label [7, -6]
-pipeline theatre [0.38, 0.7]
-component competition [0.70, 0.63] label [-32, -12]
-pipeline competition [0.53, 0.73]
-component awareness [0.39, 0.57] label [-81, -4]
-pipeline awareness [0.3, 0.73]
-component capability [0.59, 0.54] label [-36, -12]
-pipeline capability [0.49, 0.68]
-component visibility [0.48, 0.65] label [-48, -14]
-pipeline visibility [0.52, 0.68]
+component GOVERNMENT [0.99, 0.67] label [-24, -10]
+component SOCIETY [0.96, 0.72] label [6, 4]
+component LEGITIMACY [0.96, 0.64] label [-79, -2]
+component SOVEREIGNTY [0.91, 0.64] label [4, -12]
+component THEATRE [0.79, 0.65] label [-21, -11]
+component COMPETITION [0.67, 0.62] label [-31, -15]
+component AWARENESS [0.31, 0.57] label [-81, -4]
+component CAPABILITY [0.54, 0.55] label [-16, -15]
+component VISIBILITY [0.42, 0.65] label [-48, -14]
+component LANDSCAPE [0.10, 0.55] label [-46, -17]
+
+// pipelines
+pipeline SOVEREIGNTY // [0.43, 0.71]
+pipeline THEATRE // [0.38, 0.7]
+pipeline COMPETITION // [0.53, 0.73]
+pipeline AWARENESS // [0.3, 0.73]
+pipeline CAPABILITY // [0.49, 0.68]
+pipeline VISIBILITY // [0.52, 0.68]
+pipeline LANDSCAPE [0.4, 0.7]
+
+pipeline SOVEREIGNTY [0.43, 0.71]
+pipeline THEATRE [0.38, 0.7]
+pipeline COMPETITION [0.51, 0.73]
+pipeline AWARENESS [0.3, 0.73]
+pipeline CAPABILITY [0.50, 0.68]
+pipeline VISIBILITY [0.52, 0.68]
+
+
+
+//Deets
+component territorial [0.89, 0.70] label [17, 4]
+component economic [0.89, 0.47] label [-23, -21]
+component political [0.89, 0.52] label [-49, 22]
+component technological [0.89, 0.44] label [-87, 25]
+component cultural [0.89, 0.62] label [-52, -17]
+component security [0.89, 0.56] label [-18, 24]
+component land [0.77, 0.69] label [18, 6]
+component supply chain [0.77, 0.39] label [-60, 21]
+component sea [0.77, 0.67] label [-20, 18]
+component cyber [0.77, 0.49] label [-30, 20]
+
+component culture [0.77, 0.57] label [-6, 25]
+component chain [0.08, 0.69] label [23, 5]
+pipeline chain
+
+component geography [0.08, 0.41] label [-57, 21]
+pipeline geography
+
+component cultural awareness [0.29, 0.41] label [11, -43]
+
+component conflict [0.65, 0.72] label [17, 3]
+component collaboration [0.65, 0.52] label [-110, 2]
+component co-operation [0.65, 0.61] label [-38, 22]
+component supply chain awareness [0.29, 0.31] label [-76, -21]
+component territorial awareness [0.29, 0.72] label [30, -6]
+component digital chain awareness [0.29, 0.38] label [-30, -66]
+component kinetic [0.52, 0.67] label [-22, 21]
+component inflitration [0.52, 0.60] label [-35, 21]
+component influence [0.52, 0.51] label [-39, 25]
+component covert [0.40, 0.53] label [-63, 0]
+component overt [0.40, 0.67] label [18, 4]
+component CNI [0.77, 0.52] label [-7, 26]
+component behavioural landscape [0.08, 0.44] label [3, 13]
+
+
+// old
+
 
 // component forecasting [0.25, 0.36] label [-92, -8]
 // pipeline forecasting [0.25, 0.42]
@@ -38,7 +90,7 @@ pipeline visibility [0.52, 0.68]
 // component RT simuluation [0.32, 0.39] label [-55, 21]
 // component HOOTL [0.32, 0.21] label [-59, 6]
 
-component chain [0.05, 0.67] label [9, 6]
+
 
 // component delivery [0.26, 0.67] label [6, -8]
 // pipeline delivery [0.53, 0.7]
@@ -65,42 +117,6 @@ component chain [0.05, 0.67] label [9, 6]
 // component marketplace [0.24, 0.65] label [-77, -19]
 
 
-//Deets
-component territorial [0.89, 0.70] label [19, 5]
-component economic [0.89, 0.52] label [-39, 24]
-component political [0.89, 0.44] label [-79, 4]
-component technological [0.89, 0.63] label [-14, 23]
-component cultural [0.89, 0.48] label [-29, -19]
-component security [0.89, 0.56] label [-7, 24]
-
-component land [0.77, 0.69] label [18, 6]
-component supply chain [0.77, 0.46] label [-52, 22]
-component sea [0.77, 0.68] label [-20, 18]
-component cyber [0.77, 0.55] label [-17, 23]
-
-component culture [0.77, 0.39] label [-67, 1]
-pipeline chain
-
-component geography [0.05, 0.38] label [-83, 4]
-pipeline geography
-
-component conflict [0.68, 0.72] label [17, 3]
-component collaboration [0.68, 0.54] label [-110, 2]
-component co-operation [0.68, 0.61] label [-38, 22]
-
-component supply chain awareness [0.37, 0.31] label [-80, -20]
-component territorial awareness [0.37, 0.72] label [30, -6]
-component digital chain awareness [0.37, 0.38] label [-30, -61]
-
-component kinetic [0.57, 0.67] label [17, 0]
-component inflitration [0.57, 0.57] label [-35, 21]
-component influence [0.57, 0.50] label [-83, 3]
-
-component covert [0.46, 0.53] label [-63, 0]
-component overt [0.46, 0.67] label [18, 4]
-
-component CNI [0.77, 0.51] label [-7, 26]
-
 // component drones [0.18, 0.65] label [-21, 19]
 // component HGV [0.18, 0.71] label [19, 2]
 // component internet [0.18, 0.69] label [-13, 19]
@@ -117,7 +133,7 @@ component CNI [0.77, 0.51] label [-7, 26]
 // component sanctions [0.70, 0.60] label [-32, 27]
 // component acqusition [0.88, 0.47] label [-38, -16]
 // component logistics [0.24, 0.54] label [2, -6]
-// component supply chain [0.77, 0.46] label [3, -11]
+// component supply chain [0.77, 0.39] label [3, -11]
 // pipeline supply chain [0.46, 0.75]
 // component centralised [0.39, 0.70] label [-13, 28]
 // component decentralised [0.39, 0.51] label [-49, -19]
@@ -136,10 +152,10 @@ component CNI [0.77, 0.51] label [-7, 26]
 
 // component materials [0.04, 0.59] label [-62, 11]
 // component manufacture [0.79, 0.52] label [-84, 3]
-// component conflict [0.68, 0.72] label [-10, 27]
-// component capability [0.59, 0.54] label [10, -1]
-// component kinetic [0.57, 0.67] label [-3, 29]
-// component competition [0.70, 0.63] label [-58, -10]
+// component conflict [0.65, 0.72] label [-10, 27]
+// component capability [0.54, 0.55] label [10, -1]
+// component kinetic [0.52, 0.67] label [-3, 29]
+// component competition [0.67, 0.64] label [-58, -10]
 // pipeline competition [0.53, 0.73]
 // component delivery [0.26, 0.67] label [8, -5]
 // pipeline delivery [0.53, 0.7]
@@ -148,32 +164,33 @@ component CNI [0.77, 0.51] label [-7, 26]
 // component technology [0.58, 0.50] label [-40, -19]
 // component organic [0.58, 0.66] label [-2, 26]
 // component assurance [0.04, 0.47] label [-61, -13]
-// component collaboration [0.68, 0.54] label [-75, 24]
+// component collaboration [0.65, 0.52] label [-75, 24]
 
 // //relationships
-Government->society
-Government->legitimacy
-legitimacy->sovereignty
+GOVERNMENT->SOCIETY
+GOVERNMENT->LEGITIMACY
+LEGITIMACY->SOVEREIGNTY
 territorial->land
 economic->supply chain
-sovereignty->theatre
+SOVEREIGNTY->THEATRE
 sea->territorial
 economic->cyber
 cyber->technological
 cyber->political
-sovereignty->competition
+SOVEREIGNTY->COMPETITION
 competition->awareness
 theatre->awareness
 supply chain->supply chain awareness
 land->territorial awareness
 cyber->digital chain awareness
 visibility->competition
-sovereignty->capability
+SOVEREIGNTY->CAPABILITY
 covert->inflitration
-capability->awareness
-cultural->influence
+CAPABILITY->AWARENESS
+// cultural->influence
 CNI->supply chain awareness
 security->CNI
+AWARENESS -> LANDSCAPE
 
 // manufacturer->manufacture
 // Government->competition
@@ -214,3 +231,9 @@ culture->political
 culture->cultural
 territorial awareness->geography
 influence->covert
+forecasting->chain
+culture->cultural awareness
+cultural awareness->behavioural landscape
+influence->culture
+land->kinetic
+inflitration->cyber
