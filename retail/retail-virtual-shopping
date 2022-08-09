@@ -2,63 +2,95 @@ title retail - virtual shopping
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note unused [0.19, 0.02]
-note + legislation pipeline codified to principles [0.16, 0.02]
+// note unused [0.19, 0.02]
+// note + legislation pipeline codified to principles [0.16, 0.02]
+
+component public [0.92, 0.71] label [16, 0]
+component corporation [0.88, 0.67] label [-75, -7]
+component government [0.97, 0.62] label [-31, -10]
+component channel [0.73, 0.71] label [7, -10]
+component space [0.33, 0.69] label [-45, -7]
+component senses [0.46, 0.68] label [-27, -15]
+
+pipeline space [0.53, 0.73]
+pipeline channel [0.42, 0.77]
+pipeline senses [0.60, 0.74]
+
+component experience [0.63, 0.69] label [-34, -11]
+pipeline experience [0.53, 0.72]
+
+//deets
+component physical stores [0.71, 0.43] label [-52, 11]
+component virtual stores [0.71, 0.76] label [19, 4]
+
+component touch [0.44, 0.68] label [-17, 24]
+component sight [0.44, 0.71] label [-9, 23]
+component sound [0.44, 0.73] label [27, 2]
+component smell [0.44, 0.65] label [-26, 23]
+component taste [0.44, 0.61] label [-53, 2]
+
+component status [0.61, 0.60] label [-9, 21]
+component memory [0.61, 0.67] label [-15, 22]
+component personalisation [0.61, 0.54] label [-101, -12]
+component interaction [0.61, 0.71] label [14, 2]
+
+component social observation [0.54, 0.56] label [-63, -6]
+component belonging [0.61, 0.57] label [-63, 23]
+component convenience [0.62, 0.64] label [-80, -14]
+
+component immersion [0.53, 0.67] label [-77, 1]
 
 //components
-component public [0.85, 0.73] label [11, 3]
-component corporation [0.93, 0.66] label [7, -1]
-component government [0.92, 0.59] label [-84, 12]
-component supranational [0.97, 0.45] label [-103, 4]
-component society [0.88, 0.64] label [-60, 6]
-component social norms [0.69, 0.57] label [-16, -11]
-pipeline social norms [0.43, 0.74]
-component privacy [0.67, 0.44] label [-40, 23]
-component trust [0.67, 0.51] label [-12, 22]
-component safety [0.67, 0.70] label [-25, 22]
-component good [0.79, 0.68] label [-38, -8]
-pipeline good [0.6, 0.74]
-component physical [0.77, 0.61] label [-10, 21]
-component virtual [0.77, 0.73] label [15, 3]
-component ownership [0.50, 0.71] label [15, 3]
-component authority [0.38, 0.61] label [-10, -12]
+// component suprantional (EU) [0.97, 0.60] label [-51, -20]
+component society [0.95, 0.66] label [7, -6]
+// component social norms [0.69, 0.57] label [-97, -13]
+// pipeline social norms [0.43, 0.74]
+// component privacy [0.67, 0.44] label [-40, 23]
+// component trust [0.67, 0.51] label [-12, 22]
+// component safety [0.67, 0.70] label [-25, 22]
+component good [0.85, 0.69] label [8, -6]
+pipeline good [0.62, 0.73]
+component physical [0.83, 0.63] label [-71, 1]
+component virtual [0.83, 0.72] label [16, 3]
+component ownership [0.21, 0.71] label [15, 3]
+component authority [0.13, 0.60] label [10, -6]
 pipeline authority [0.53, 0.72]
-component civil liberties [0.67, 0.66] label [-36, 12]
-component property [0.67, 0.73] label [18, 3]
-component territory [0.04, 0.26] label [-80, 2]
-component device [0.12, 0.65] label [9, -4]
-pipeline device [0.6, 0.75]
-component smart phone [0.10, 0.74] label [12, 4]
-component platform [0.27, 0.67] label [2, -14]
-component governance [0.19, 0.53] label [-44, 17]
-component license [0.52, 0.63] label [-40, -16]
-pipeline license [0.54, 0.72]
-component legislation [0.15, 0.45] label [-54, 17]
-component identity [0.43, 0.53] label [-69, 4]
-component exclusion [0.58, 0.73] label [12, 4]
-component centralised [0.36, 0.71] label [15, 5]
-component decentralised [0.36, 0.54] label [-46, 24]
-component access [0.50, 0.55] label [-60, 1]
-component inclusion [0.67, 0.61] label [-44, 22]
-pipeline platform [0.6, 0.71]
-component aggregator [0.25, 0.70] label [13, 5]
-component co-operative [0.25, 0.61] label [-30, 21]
-component DAO [0.23, 0.32] label [-31, 2]
-component algorithm [0.03, 0.45] label [-92, 0]
-component enforcement [0.05, 0.55] label [-91, -5]
-pipeline enforcement [0.44, 0.65]
-component court [0.03, 0.64] label [18, 3]
+// component civil liberties [0.67, 0.66] label [-36, 12]
+// component property [0.23, 0.61] label [6, -1]
+// component territory [0.04, 0.26] label [-80, 2]
+// component device [0.12, 0.65] label [9, -4]
+// pipeline device [0.6, 0.75]
+// component smart phone [0.10, 0.74] label [12, 4]
+// component platform [0.23, 0.67] label [2, -14]
+// component governance [0.19, 0.53] label [-44, 17]
+component property [0.23, 0.61] label [8, -5]
+pipeline property  [0.54, 0.72]
+// component legislation [0.15, 0.45] label [-40, 23]
+component identity [0.17, 0.59] label [-66, 3]
+// component exclusion [0.67, 0.74] label [8, 4]
+component centralised [0.11, 0.71] label [22, 1]
+component decentralised [0.11, 0.54] label [-117, -1]
+component license [0.21, 0.55] label [-67, 4]
+// component inclusion [0.67, 0.61] label [-44, 22]
+// pipeline platform [0.6, 0.71]
+// component aggregator [0.21, 0.70] label [13, 5]
+// component co-operative [0.21, 0.61] label [-30, 21]
+// component DAO [0.10, 0.33] label [-31, 2]
+component algorithm [0.03, 0.61] label [17, 2]
+component enforcement [0.05, 0.56] label [-77, -9]
+pipeline enforcement [0.49, 0.62]
+component court [0.03, 0.50] label [-51, 3]
 
 // links
 government->society
 society->public
 corporation->good
-corporation->public
+// corporation->public
 good->property
 society->social norms
 property->exclusion
-property->license
-license->identity
+// property->license
+// license->identity
 identity->authority
 authority->governance
 authority->platform
@@ -77,9 +109,22 @@ authority->enforcement
 legislation->court
 exclusion->ownership
 public->good
-physical->ownership
+// physical->ownership
 virtual->access
 trust->authority
 trust->enforcement
 supranational->government
-supranational->corporation
+// supranational->corporation
+suprantional (EU)->government
+// license->virtual
+property->identity
+property->authority
+good->channel
+virtual stores->sight
+virtual stores->sound
+// physical stores->experience
+interaction ->senses
+channel->experience
+status->observation
+status->social observation
+immersion->interaction
