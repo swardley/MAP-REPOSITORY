@@ -1,28 +1,33 @@
-title manufacturing - agile manufacturing
+title manufacturing - problem solving
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
+
+note +adaptability [0.89, 0.74]
 note 2022 [0.95, 0.01]
+note ontology [0.07, 0.47]
 // note unused [0.37, 0.02]
 // note +telemetry [0.34, 0.02]
 // note +flow vs stock [0.31, 0.02]
-note ontology [0.07, 0.47]
-component speed of change [0.95, 0.71] label [-7, -21]
-component methodology [0.84, 0.65] label [-75, -13]
+
+component manifest [0.97, 0.69] label [-65, 1]
+component speed of change [0.91, 0.69] label [-3, -13]
+component methodology [0.84, 0.64] label [-86, -5]
 pipeline methodology [0.54, 0.68]
 component demand forecasting [0.85, 0.36] label [-65, -5]
-component manufacturer [0.99, 0.69] label [-94, 1]
+component manufacturer [1.00, 0.69] label [-93, -2]
+component implement change [0.96, 0.71] label [2, -17]
 component supply chain [0.64, 0.58] label [-44, 21]
 pipeline supply chain // [0.49, 0.73]
 // component internal [0.65, 0.72] label [15, 4]
 // component external [0.65, 0.50] label [-12, -14]
-component agile [0.82, 0.55] label [-51, 3]
-component lean [0.82, 0.67] label [19, 2]
+component agile [0.82, 0.55] label [-54, 0]
+component lean [0.82, 0.67] label [17, -2]
 component scenario planning [0.90, 0.36] label [-74, -19]
 component value chain awareness [0.75, 0.38] label [-17, -51]
 pipeline value chain awareness [0.25, 0.60]
 component wardley mapping [0.73, 0.26] label [-72, -4]
-component value stream mapping [0.73, 0.59] label [-67, -22]
+component value stream mapping [0.73, 0.59] label [12, -18]
 component Vendor Lists [0.58, 0.69] label [11, 4]
 component trust [0.60, 0.41] label [-7, -13]
 component transparancy [0.58, 0.37] label [-51, 16]
@@ -48,7 +53,7 @@ component factory mode [0.36, 0.28] label [-23, 23]
 // component test driven development [0.44, 0.37] label [-65, -22]
 
 // component modular [0.42, 0.54] label [-63, 4]
-component architecture [0.88, 0.54] label [-93, -5]
+component architecture [0.88, 0.54] label [-96, 1]
 
 // component disposability [0.30, 0.50] label [-30, 16]
 // component substitutability [0.34, 0.55] label [34, -1]
@@ -80,11 +85,11 @@ component WhatIf simulation [0.22, 0.19] label [-73, 0]
 // component OTA [0.72, 0.38] label [-37, 3]
 // component reuse [0.25, 0.58] label [8, 2]
 component KPI [0.36, 0.64] label [14, 5]
-note *1 (link) [0.08, 0.30]
-note *1  [0.83, 0.39]
+note *1 (link) [0.07, 0.31]
+note *1  [0.82, 0.39]
 
 // links
-manufacturer->speed of change
+// manufacturer->speed of change
 speed of change->methodology
 // methodology->optimisation
 // lean->stocks
@@ -166,3 +171,7 @@ value chain awareness->WhatIf simulation
 Vendor Lists->supply chain
 model->representation of chain
 production line->configuration
+// manufacturer->implement change
+implement change->speed of change
+manufacturer->manifest
+manifest->implement change
