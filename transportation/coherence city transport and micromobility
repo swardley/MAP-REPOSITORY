@@ -1,39 +1,39 @@
-title transportation - coherence city transport and micromobility
+title transportation - coherence city transport // and micromobility
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note unused [0.09, 0.02]
+// note unused [0.09, 0.02]
 
-component climate change [0.66, 0.43] label [-117, -2]
+component stable climate [0.66, 0.43] label [-117, -2]
 component decarbonisation [0.60, 0.42] label [-97, -5]
 
-component public [0.84, 0.75] label [12, 2]
-component government [0.96, 0.63] label [-82, 1]
+component citizen [0.92, 0.72] label [17, -7]
+component government [0.98, 0.64] label [-81, 0]
 component safety [0.31, 0.63] label [-55, -5]
 pipeline safety [0.51, 0.7]
 component storage [0.29, 0.52] label [-27, 20]
 component obstacles [0.29, 0.69] label [18, 5]
-component vehicles [0.72, 0.70] label [-62, -10]
-pipeline vehicles [0.57, 0.77]
+component vehicles [0.69, 0.70] label [-62, -10]
+pipeline vehicles [0.59, 0.77]
 component rapid bus [0.42, 0.44] label [-85, 5]
-component escooter [0.70, 0.58] label [-29, 23]
-component bipedal [0.70, 0.76] label [13, 4]
-component bus [0.70, 0.68] label [-13, 24]
+component escooter [0.67, 0.60] label [-35, 20]
+component bipedal [0.67, 0.76] label [17, 5]
+component bus [0.67, 0.68] label [-14, 19]
 component legislation [0.18, 0.43] label [-89, 5]
 component enforcement [0.09, 0.56]
 pipeline enforcement [0.4, 0.7]
-component remote work [0.77, 0.41] label [-98, 7]
+// component remote work [0.81, 0.46] label [-77, 27]
 component geofencing [0.07, 0.53] label [-48, 23]
 component monitoring [0.07, 0.69] label [-42, 26]
 component transport schemes [0.44, 0.58] label [-67, -28]
 pipeline transport schemes [0.43, 0.75]
 component bike sharing [0.42, 0.62] label [-28, 22]
 component transport hubs [0.42, 0.52] label [-34, 22]
-component behaviour [0.79, 0.47] label [-71, -11]
-pipeline behaviour [0.40, 0.51]
-component honesty [0.77, 0.50] label [17, 3]
-component social norms [0.15, 0.45] label [-20, 21]
-component society [0.95, 0.69] label [5, -10]
+// component behaviour [0.87, 0.49] label [-71, -11]
+pipeline behaviour [0.43, 0.51]
+// component honesty [0.77, 0.50] label [17, 3]
+// component social norms [0.15, 0.45] label [-20, 21]
+component society [0.96, 0.70] label [3, -11]
 component city coherence [0.60, 0.65] label [10, -6]
 pipeline city coherence [0.61, 0.73]
 component laissez faire [0.58, 0.72] label [14, 6]
@@ -43,15 +43,25 @@ component congestion charging [0.42, 0.70] label [-35, -40]
 component designated lanes [0.29, 0.62] label [-30, 11]
 component regulation [0.22, 0.43] label [-81, 4]
 component territory [0.05, 0.33] label [-72, 3]
-component income [0.91, 0.73] label [9, 2]
+// component income [0.88, 0.74] label [7, 4]
 component parking [0.42, 0.74] label [-27, 24]
+// component mobility [0.79, 0.69] label [-70, -7]
+// pipeline mobility [0.60, 0.76]
+component physical [0.79, 0.62] label [-21, 23]
+component virtual [0.79, 0.72] label [15, 20]
+component funding [0.50, 0.70] label [11, 6]
+component spaces [0.81, 0.68] label [-26, -14]
+pipeline spaces [0.61, 0.73]#
+// component places to go [0.89, 0.54] label [-94, -6]
+// component office work [0.88, 0.85] label [20, 11]
+component practices / activities (places to go) [0.87, 0.72] label [29, -35]
 
 // links
-society->public
-government->public
+society->citizen
+government->citizen
 government->society
-public->vehicles
-public->behaviour
+// citizen->vehicles
+citizen->behaviour
 government->city coherence
 city coherence->transport schemes
 city coherence->safety
@@ -70,6 +80,17 @@ centrally planned->legislation
 income->congestion charging
 income->parking
 government->income
-society->climate change
-climate change->city coherence
-climate change->decarbonisation
+society->stable climate
+stable climate->city coherence
+stable climate->decarbonisation
+// citizen->mobility
+remote work->digital
+physical->vehicles
+city coherence->funding
+mobility->places to go
+citizen->places to go
+citizen->spaces
+citizen->practices (places to go)
+practices (places to go)->spaces
+citizen->practices / activities (places to go)
+practices / activities (places to go)->spaces
