@@ -1,0 +1,68 @@
+// 2022 Research Group
+// Education -> Equity in Education -> Models of Education
+// August 2022
+// https://onlinewardleymaps.com/#EmhpPdghvcJ7cRz9px
+
+title Models of Education
+
+component progression [0.63, 0.39]
+pipeline progression [0.15, 0.65]
+component predictable with time [0.62, 0.64] label [17, -11]
+component personalised progression over time [0.62, 0.16] label [-7, -70]
+
+component conveyor belt [0.15, 0.64] label [18, 4]
+component individual goals [0.34, 0.14] label [10, -5]
+component classrooms [0.66, 0.74] label [12, 7]
+component values/beliefs [0.89, 0.32] label [9, 4]
+pipeline values/beliefs [0.05, 0.8]
+
+component diversity is a superpower [0.79, 0.11] label [-77, -25]
+component one size fits all approach [0.79, 0.79] label [3, -29]
+component approach [0.80, 0.42]
+pipeline approach [0.10, 0.8]
+
+component curriculum [0.68, 0.68] label [7, 5]
+component knowledge [0.21, 0.59] label [14, 6]
+component playground [0.21, 0.09] label [14, 5]
+component market place [0.21, 0.38] label [11, 4]
+component temple [0.21, 0.23] label [17, 2]
+component learners [0.99, 0.37] label [16, -3]
+component teachers [0.99, 0.23]
+component assessment [0.49, 0.29] label [5, -10]
+pipeline assessment [0.10, 0.48]
+
+component feedback based assessment [0.48, 0.11] label [-77, -13]
+component assessment as ranking or comparing [0.48, 0.47] label [-54, -82] // Is this the best term to describe it?
+component learning from failure [0.38, 0.20] label [1, 7]
+component personalised learning [0.13, 0.15] label [19, -7]
+component successful lifelong learning [0.56, 0.15] label [9, -7]
+component seek certain futures [0.88, 0.79] label [5, -23]
+component embrace uncertain futures [0.88, 0.06] label [-31, -51]
+component learning culture [0.22, 0.31] label [-36, -38]
+pipeline learning culture [0.08, .6]
+
+// components that we need to work out what to do with!
+
+component driven by talent shortage [0.97, 0.85] // pipeline - Agora vs traditional in terms of approach (condition vs constraints) label [5, -10]
+component loose - flexible approach [0.79, 0.19]// subject brought up by Joanne that we didn't get to discuss yet properly vs tightly controlled, traditional method 
+
+// links
+teachers->values/beliefs
+learners->values/beliefs
+embrace uncertain futures->diversity is a superpower //Was this the one? or was this from values/beliefs?
+seek certain futures->one size fits all approach
+diversity is a superpower->feedback based assessment
+personalised progression over time->successful lifelong learning
+one size fits all approach->curriculum
+one size fits all approach->classrooms
+one size fits all approach->predictable with time
+diversity is a superpower->personalised progression over time
+curriculum->assessment as ranking or comparing
+feedback based assessment->learning from failure
+learning from failure->individual goals
+classrooms->learning culture
+successful lifelong learning->individual goals
+knowledge->conveyor belt
+playground->personalised learning
+individual goals->playground
+progression->assessment
