@@ -2,10 +2,11 @@
 // Map is licensed under creative commons share alike.
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
-title Telecoms - sovereignty DN
+title Telecoms - sovereignty
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
+note - checking if VS Code and GitHib are working [0.99, 0.13]
 note Need to answer "DNS over HTTPS"? Question [0.95, 0.02]
 note Need to answer "What happens if UK goes to war with China? with US?" [0.93, 0.02]
 
@@ -24,7 +25,7 @@ component SOVEREIGNTY [0.86, 0.54] label [-82, -6]
 pipeline SOVEREIGNTY [0.32, 0.73]
 component territorial [0.84, 0.72] label [22, 3]
 component political [0.84, 0.59] label [-17, 19]
-component cultural [0.84, 0.67] label [-27, 19]
+component cultural [0.84, 0.67] label [-21, 19]
 component economic [0.84, 0.44] label [-63, 20]
 component digital [0.84, 0.33] label [-62, 2]
 component CNI [0.84, 0.52] label [-29, 21]
