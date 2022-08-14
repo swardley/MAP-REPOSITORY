@@ -16,7 +16,7 @@ component gov [1.00, 0.63] label [-10, -12]
 pipeline gov
 component collective [0.97, 0.66] label [8, -6]
 pipeline collective // [0.52, 0.71]
-component perception of success [0.91, 0.66] label [-58, -20]
+component perception of success [0.91, 0.66] label [29, -5]
 component communication [0.77, 0.69] label [5, -6]
 component legitimacy [0.94, 0.58] label [-89, 2]
 pipeline legitimacy
