@@ -6,9 +6,8 @@ title Telecoms - sovereignty
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note - checking if VS Code and GitHib are working [0.99, 0.13]
-note Need to answer "DNS over HTTPS"? Question [0.95, 0.02]
-note Need to answer "What happens if UK goes to war with China? with US?" [0.93, 0.02]
+note DNS over HTTPS? - adds security is all [0.92, 0.02]
+note What happens if UK goes to war with China/US? [0.90, 0.02]
 
 //USERS
 component people [0.93, 0.69] label [12, 1]
@@ -33,132 +32,55 @@ component CNI [0.84, 0.52] label [-29, 21]
 component ACCESS DEVICE [0.72, 0.70] label [3, -6]
 pipeline ACCESS DEVICE [0.57, 0.77]
 component radio/TV [0.70, 0.76] label [14, 1]
-// note (broadcast only) [0.67, 0.88]
 component smartphone [0.70, 0.70] label [-59, 21]
-component sat phone [0.70, 0.67] label [-52, -5]
-component computer [0.70, 0.73] label [-12, 20]
+component sat phone [0.70, 0.67] label [-74, -8]
+component computer [0.70, 0.73] label [-17, -8]
 component IoT [0.70, 0.58] label [-38, 2]
-//ACCESS NETWORK
 
-note Network Perception [0.65, 0.48]
-note Network Topology [0.33, 0.55]
-note Network Components [0.39, 0.43]
+note Network Perception [0.65, 0.01]
+note Network Topology [0.31, 0.02]
 note legislation / regulatory [0.77, 0.45]
-note +expertise to operate? [0.40, 0.17]
+note +expertise to operate? [0.39, 0.00]
 note +authority to operate? [0.75, 0.46]
 
-component ACCESS NETWORK [0.62, 0.56] label [-93, -12]
+//ACCESS NETWORK
+component ACCESS NETWORK [0.62, 0.56] label [-111, -1]
 pipeline ACCESS NETWORK [0.39, 0.74]
-component satellite [0.60, 0.69] label [-12, -19]
-component WiFi [0.60, 0.73] label [21, 1]
+component satellite [0.60, 0.69] label [-20, 23]
+component WiFi [0.60, 0.73] label [25, 23]
 component mobile [0.60, 0.63] label [-34, 22]
-component FTTP [0.60, 0.43] label [2, -19]
+component FTTP [0.60, 0.43] label [0, 22]
 component cable [0.60, 0.40] label [-28, 22]
-// component Ubiquity [0.64, 0.90] inertia label [21, 23]
-// note of existing [0.59, 0.90]
-component BACKHAUL/INTERNET CORE [0.28, 0.58] label [-57, -17]
+
+component BACKHAUL/INTERNET CORE [0.30, 0.59] label [-57, -17]
 component launch vehicles [0.48, 0.54] label [-51, -37]
 pipeline launch vehicles [0.48, 0.57]
-component NETWORK EQPT [0.42, 0.58] label [9, 4]
+
+component NETWORK EQPT [0.45, 0.61] label [9, 4]
 pipeline NETWORK EQPT
 component raw materials [0.23, 0.52] label [11, 2]
 component extraction [0.21, 0.31] label [-87, 3]
-component Components [0.36, 0.51] label [-51, -12]
+component Eqpt Components [0.37, 0.43] label [-78, -13]
 component transport [0.20, 0.47] label [-71, 17]
+
 //THEATRE
 component THEATRE [0.17, 0.51] label [-14, -9]
 pipeline THEATRE  [0.34, 0.71]
 component awareness of land-sea-air-space [0.15, 0.70] label [27, -15]
 component awareness of supply-chains [0.15, 0.35] label [-82, -10]
 //REALITY
+
 component REALITY [0.06, 0.51] label [-28, -8]
 pipeline REALITY  [0.30, 0.73]
 component geography [0.05, 0.36] label [-37, 27]
 component supply chain [0.05, 0.64] label [-74, 30]
 component space [0.04, 0.68] label [-13, 22]
-//COMPONENTS
-// component content providers [0.74, 0.65] label [-78, -20]
-// //component user data [0.67, 0.57] label [-61, -13]
-// //component location [0.65, 0.54] label [-55, 28]
-// //component identity [0.65, 0.61] label [-29, 29]
-// component USER APP [0.80, 0.71] label [-75, -4]
-// component earth monitoring [0.78, 0.48] label [-30, 11]
-// note +disaster comms [0.73, 0.44]
-// note +backhaul, CDN, ... [0.72, 0.44]
-// note navigation [0.71, 0.44] label [0.71, 0.44]
-// component communication [0.77, 0.69] label [-48, 30]
-// note +entertainment (TV, gaming) [0.75, 0.80]
-// note +health, financial [0.76, 0.80]
-// note Coverage [0.72, 0.80]
-// note Speed [0.71, 0.80]
-// note Capacity (no. connections x speed) [0.55, 0.77]
-// note Latency [0.70, 0.80]
-// component legislation [0.65, 0.33] label [-90, 4]
-// component regulatory access [0.21, 0.32] label [-80, -10]
-// component NETWORK ACCESS [0.68, 0.63] label [-122, -5]
-// component Indoor [0.66, 0.55] label [-25, 20]
-// component Outdoor [0.66, 0.68] label [-27, 18]
-// Indoor->FTTP
-// Indoor->WiFi
-// Outdoor->mobile
-// Outdoor->satellite
-// WiFi->FTTP
-// mobile->FTTP
-// note +physics? [0.58, 0.77]
-// note +rural>remote [0.64, 0.71]
-// note +urban  [0.64, 0.49]
-// component legacy [0.34, 0.45] label [-22, 24]
-// component cloud native NFs [0.34, 0.64] label [-28, 10]
-// component fibre [0.40, 0.69] label [-16, 29]
-// NETWORK EQPT->spectrum license
-// NETWORK EQPT->Compute
-// NETWORK EQPT->Eqpt Venders
-// component TOPOLOGY [0.14, 0.53] label [-68, -7]
-// component real estate [0.13, 0.42] label [-73, 27]
-// component space [0.04, 0.68] label [-20, 20]
-// component Eqpt Venders [0.26, 0.60]
-// component spectrum license [0.16, 0.74] label [7, -3]
-// component territory [0.05, 0.42] label [-41, 18]
-//pipelines
-// pipeline USER APP [0.45, 0.76]
-// pipeline NETWORK ACCESS [0.50, 0.76]
-// pipeline DEPLOYMENT [0.39, 0.75]
-// pipeline NETWORK EQPT [0.43, 0.72]
-// pipeline TOPOLOGY [0.37, 0.71]
-// LINKS
-// gov->SOVEREIGNTY
-// gov->public
-// public->USER APP
-// enterprise->USER APP
-// enterprise->exclusion
-// USER APP->NETWORK ACCESS
-// USER APP->content providers
-// NETWORK ACCESS->DEPLOYMENT
-// DEPLOYMENT->NETWORK EQPT
-// satellite->space
-// satellite dish->satellite
-// FTTP->real estate
-// FTTP->fibre
-// mobile->P2P uW
-// mobile->regulatory access
-// mobile->real estate
-// legislation->territory
-// legislation->exclusion
-// legislation->regulatory access
-// real estate->territory
-// NETWORK EQPT->TOPOLOGY
-// spectrum license->regulatory access
-// regulatory access->real estate
-// economic->legislation
-// //component Core/Txn n/w [0.49, 0.40] label [-45, 21]
-// NETWORK ACCESS->Core Connxn..
-// NETWORK ACCESS->Core/Txn n/w
-// Core/Txn n/w->fibre
+
 component Compute [0.14, 0.83] label [12, 0]
 component Power [0.05, 0.84] label [16, 2]
+
 gov->collective
 collective->people
-// people->communication
 collective->behaviours
 gov->legitimacy
 legitimacy->SOVEREIGNTY
@@ -173,22 +95,21 @@ digital->awareness of supply-chains
 awareness of supply-chains->economic
 awareness of physical geography->geography
 supply chain->awareness of supply-chains
-// CNI->ACCESS NETWORK
 satellite->launch vehicles
 awareness of land-sea-air-space->territorial
 geography->awareness of land-sea-air-space
 space->awareness of land-sea-air-space
-Compute->Power
+
 communication->ACCESS DEVICE
 communication->ACCESS NETWORK
-CN->BACKHAUL/INTERNET CORE
 ACCESS DEVICE->NETWORK EQPT
 ACCESS NETWORK->NETWORK EQPT
 ACCESS NETWORK->Compute
-NETWORK EQPT->Components
+NETWORK EQPT->Eqpt Components
 BACKHAUL/INTERNET CORE->NETWORK EQPT
-Components->raw materials
+
+Eqpt Components->raw materials
 raw materials->extraction
-component transport [0.20, 0.47] label [-71, 17]
 raw materials->transport
-communication->CNI
+Compute->Power
+CNI->communication
