@@ -1,0 +1,50 @@
+title society
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+
+component government [0.94, 0.67] label [-44, -13]
+component society [0.89, 0.70] label [10, -1]
+component people [0.80, 0.75] label [11, 7]
+component belonging [0.75, 0.59] label [-78, 1]
+component values [0.67, 0.63] label [0, -10]
+pipeline values // [0.40, 0.76]
+
+pipeline values [0.37, 0.76]
+component property [0.65, 0.72] label [-24, -20]
+component exclusion [0.32, 0.75] label [6, 12]
+component law [0.17, 0.72] label [6, 7]
+component enforcement [0.11, 0.70] label [9, 9]
+
+component fairness [0.65, 0.75] label [13, 8]
+component inclusion [0.56, 0.75] label [3, 15]
+component redistribution [0.47, 0.63] label [-81, -9]
+component taxation [0.21, 0.66] label [-69, 5]
+
+component market [0.95, 0.60] label [-38, -10]
+component trade [0.90, 0.64] label [-45, 12]
+
+// component neoliberalism [0.65, 0.38] label [-113, 2]
+// note NOT [0.41, 0.50]
+
+/links
+society->people
+government->society
+people->belonging
+belonging->society
+belonging->values
+
+trade->market
+trade->people
+trade->property
+property->exclusion
+fairness->inclusion
+inclusion->redistribution
+redistribution->exclusion
+redistribution->taxation
+law->enforcement
+law->exclusion
+government->taxation
+government->law
+neoliberalism->law
+neoliberalism +<> taxation
+taxation->law
