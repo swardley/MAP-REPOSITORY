@@ -1,60 +1,73 @@
-title transportation - coherence city transport // and micromobility
+title mobility - coherence city transport // and micromobility
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
 // note unused [0.09, 0.02]
+note (activities) [0.70, 0.74]
+// note (short) [0.52, 0.77]
+note (5km+) [0.46, 0.69]
+note (1-5km) [0.55, 0.73]
+note (<1km) [0.48, 0.77]
+component stable climate [0.57, 0.42] label [-117, -2]
+component decarbonisation [0.51, 0.39] label [-97, -5]
 
-component stable climate [0.66, 0.43] label [-117, -2]
-component decarbonisation [0.60, 0.42] label [-97, -5]
+component new local engagement [0.76, 0.41] label [-59, -17]
 
-component citizen [0.92, 0.72] label [17, -7]
+note socialisation / collaboration etc [0.80, 0.55]
+component social practices [0.84, 0.66] label [-57, -37]
+pipeline social practices [0.41, 0.77]
+component physical practices [0.82, 0.76] label [23, -12]
+component virtual practices [0.82, 0.42] label [-79, -19]
+component citizen [0.91, 0.73] label [15, -9]
 component government [0.98, 0.64] label [-81, 0]
-component safety [0.31, 0.63] label [-55, -5]
+component safety [0.16, 0.63] label [-55, -5]
 pipeline safety [0.51, 0.7]
-component storage [0.29, 0.52] label [-27, 20]
-component obstacles [0.29, 0.69] label [18, 5]
-component vehicles [0.69, 0.70] label [-62, -10]
-pipeline vehicles [0.59, 0.77]
-component rapid bus [0.42, 0.44] label [-85, 5]
-component escooter [0.67, 0.60] label [-35, 20]
-component bipedal [0.67, 0.76] label [17, 5]
-component bus [0.67, 0.68] label [-14, 19]
-component legislation [0.18, 0.43] label [-89, 5]
-component enforcement [0.09, 0.56]
-pipeline enforcement [0.4, 0.7]
+component storage [0.14, 0.52] label [-27, 20]
+component obstacles [0.14, 0.69] label [18, 5]
+component vehicles [0.53, 0.70] label [-49, -11]
+pipeline vehicles [0.68, 0.77]
+component rapid bus [0.23, 0.44] label [-85, 5]
+component micromobility [0.51, 0.73] label [-11, -20]
+component active travel [0.51, 0.76] label [17, 5]
+component mass transit [0.51, 0.69] label [-40, 22]
+component legislation [0.06, 0.40] label [-87, -3]
+component enforcement [0.05, 0.56]
+pipeline enforcement [0.50, 0.7]
 // component remote work [0.81, 0.46] label [-77, 27]
-component geofencing [0.07, 0.53] label [-48, 23]
-component monitoring [0.07, 0.69] label [-42, 26]
-component transport schemes [0.44, 0.58] label [-67, -28]
+component geofencing [0.03, 0.51] label [-92, 0]
+component monitoring [0.03, 0.69] label [28, -3]
+component transport schemes [0.25, 0.57] label [-67, -28]
 pipeline transport schemes [0.43, 0.75]
-component bike sharing [0.42, 0.62] label [-28, 22]
-component transport hubs [0.42, 0.52] label [-34, 22]
+component bike sharing [0.23, 0.59] label [-18, 24]
+component transport hubs [0.23, 0.51] label [-34, 22]
 // component behaviour [0.87, 0.49] label [-71, -11]
 pipeline behaviour [0.43, 0.51]
 // component honesty [0.77, 0.50] label [17, 3]
 // component social norms [0.15, 0.45] label [-20, 21]
 component society [0.96, 0.70] label [3, -11]
-component city coherence [0.60, 0.65] label [10, -6]
+component city coherence [0.42, 0.64] label [10, -6]
 pipeline city coherence [0.61, 0.73]
-component laissez faire [0.58, 0.72] label [14, 6]
-component centrally planned [0.58, 0.62] label [-85, -13]
-component locally planned [0.58, 0.68] label [-30, 15]
-component congestion charging [0.42, 0.70] label [-35, -40]
-component designated lanes [0.29, 0.62] label [-30, 11]
-component regulation [0.22, 0.43] label [-81, 4]
-component territory [0.05, 0.33] label [-72, 3]
+component laissez faire [0.40, 0.72] label [14, 6]
+component centrally planned [0.40, 0.62] label [-74, -14]
+component locally planned [0.40, 0.68] label [-25, 13]
+component congestion charging [0.23, 0.68] label [-39, -44]
+component designated lanes [0.14, 0.62] label [-30, 11]
+component regulation [0.10, 0.40] label [-81, -3]
+component territory [0.04, 0.35] label [-72, 3]
 // component income [0.88, 0.74] label [7, 4]
-component parking [0.42, 0.74] label [-27, 24]
+component parking [0.23, 0.74] label [-27, 24]
 // component mobility [0.79, 0.69] label [-70, -7]
 // pipeline mobility [0.60, 0.76]
-component physical [0.79, 0.62] label [-21, 23]
-component virtual [0.79, 0.72] label [15, 20]
-component funding [0.50, 0.70] label [11, 6]
-component spaces [0.81, 0.68] label [-26, -14]
+component physical [0.65, 0.62] label [-56, -20]
+component virtual [0.65, 0.72] label [18, 4]
+component funding [0.32, 0.69] label [11, 6]
+component spaces [0.67, 0.67] label [-4, -14]
 pipeline spaces [0.61, 0.73]#
-// component places to go [0.89, 0.54] label [-94, -6]
+// component places to go [0.72, 0.73] label [-94, -6]
 // component office work [0.88, 0.85] label [20, 11]
-component practices / activities (places to go) [0.87, 0.72] label [29, -35]
+component places to go [0.72, 0.73] label [12, 3]
+evolve physical 0.72 label [-906, 654]
+evolve virtual practices 0.5 label [-34, -45]
 
 // links
 society->citizen
@@ -89,8 +102,22 @@ physical->vehicles
 city coherence->funding
 mobility->places to go
 citizen->places to go
-citizen->spaces
+// citizen->spaces
 citizen->practices (places to go)
 practices (places to go)->spaces
 citizen->practices / activities (places to go)
 practices / activities (places to go)->spaces
+places to go->spaces
+// places to go->physical
+virtual ->local facilities
+local facilities->active travel
+physical practices->physical
+virtual practices -> virtual
+social practices->citizen
+// virtual -> local engagement
+// local engagement -> active travel
+
+places to go->new local engagement
+new local engagement->virtual practices
+new local engagement->active travel
+micromobility->new local engagement
