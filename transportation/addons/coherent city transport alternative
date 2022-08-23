@@ -1,0 +1,137 @@
+title Coherent City Transport
+component people [0.98, 0.45]
+component goods [0.94, 0.68]
+component services [0.94, 0.60]
+component culture [0.92, 0.44] label [7, -5]
+component health [0.94, 0.51] label [11, 3]
+component culture [0.92, 0.44] label [7, -5]
+component safety & security [0.93, 0.35] label [2, -37]
+component government [0.99, 0.32] label [5, -10]
+component City Functions [0.87, 0.45] label [-55, -10]
+pipeline City Functions [0.30, 0.72]
+component dwellings [0.85, 0.31] label [-33, 20]
+component shops [0.85, 0.36] label [-14, 21]
+component banks [0.85, 0.53] label [-18, 22]
+component police station [0.85, 0.48] label [6, -8]
+component factories w'hses [0.85, 0.60] label [-42, 11]
+component restaurants [0.85, 0.41] label [-15, 20]
+component space [0.77, 0.41] label [-18, -11]
+pipeline space [0.29, 0.69]
+component physical [0.75, 0.30] label [-2, 22]
+component virtual [0.75, 0.68] label [14, 4]
+component ways [0.70, 0.45]
+pipeline ways [0.36, 0.73]
+component paths [0.69, 0.37]
+component cables [0.68, 0.72]
+component roads [0.69, 0.53]
+component rivers [0.68, 0.43] label [-5, 23]
+component rail [0.69, 0.59]
+component pipes [0.69, 0.66]
+component borders [0.77, 0.22] label [-18, -13]
+
+component construction/maintenance [0.63, 0.35] label [-32, 11]
+component modulation [0.63, 0.47] label [0, 21]
+
+component enforcement [0.50, 0.33] label [-7, 22]
+component vehicles [0.54, 0.64] label [-4, -18]
+pipeline vehicles [0.47, 0.80]
+component walk [0.53, 0.48] label [3, -17]
+component cycle [0.53, 0.54] label [0, -11]
+component trains [0.53, 0.58]
+component automobiles [0.52, 0.63] label [-2, 27]
+component planes [0.53, 0.69] label [6, -17]
+component e-scooters [0.53, 0.74] label [2, -18]
+component zoom meetID [0.85, 0.71] label [-5, 24]
+component internet access [0.52, 0.79]
+component functional transport system [0.67, 0.22] label [13, -18]
+component obstruction removal [0.62, 0.62] label [9, -16]
+component Transport Planning [0.54, 0.21]
+component transport information [0.43, 0.22] label [12, -30]
+pipeline transport information [0.11, 0.42]
+component now [0.41, 0.12] label [4, -18]
+component historical [0.41, 0.18] label [12, 22]
+component digital twin [0.41, 0.41] label [-26, -19]
+component regulation [0.30, 0.31]
+component decision making [0.36, 0.36]
+component Transport Policy [0.32, 0.18] label [5, -10]
+component stable climate [0.92, 0.23] label [-44, -10]
+component sensors [0.23, 0.38]
+component surveys [0.21, 0.29]
+component data analysis [0.23, 0.21]
+component fuel [0.33, 0.73]
+pipeline fuel [0.55, 0.88]
+component hydrogen [0.31, 0.67] label [-9, 24]
+component animal power [0.31, 0.56] label [0, 22]
+component petroleum [0.31, 0.79] label [-24, 22]
+component electricity [0.31, 0.87] label [-19, 22]
+component food & water [0.24, 0.53] label [-4, 18]
+component data centres [0.85, 0.65] label [-24, 20]
+component hubs [0.45, 0.60]
+pipeline hubs [0.47, 0.7]
+component car parks [0.43, 0.48]
+component e-transport hubs [0.44, 0.69] label [-3, -37]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// links
+people -> goods
+people -> services
+people -> health
+people -> culture
+people -> safety & security
+government ->people
+goods -> City Functions
+services -> City Functions
+health -> City Functions
+culture -> City Functions
+safety & security -> City Functions
+City Functions -> space
+City Functions -> ways
+virtual -> cables
+virtual -> data centres
+physical -> borders
+ways -> construction/maintenance
+people -> vehicles
+goods -> vehicles
+City Functions -> vehicles
+vehicles -> ways
+ways -> obstruction removal
+ways -> modulation
+government -> functional transport system
+people -> functional transport system
+functional transport system -> ways
+functional transport system -> vehicles
+functional transport system -> Transport Planning
+Transport Planning -> transport information
+Transport Planning -> enforcement
+Transport Planning -> regulation
+Transport Planning -> decision making
+Transport Planning -> Transport Policy
+ways -> space
+government -> stable climate
+people -> stable climate
+transport information -> data analysis
+transport information -> surveys
+transport information -> sensors
+food & water -> stable climate
+animal power -> food & water
+vehicles -> fuel
+government -> borders
+ways -> hubs
+vehicles -> hubs
+functional transport system -> hubs
+
+
+
