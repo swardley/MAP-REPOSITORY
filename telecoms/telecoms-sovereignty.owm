@@ -2,82 +2,84 @@
 // Map is licensed under creative commons share alike.
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
-title Telecoms - sovereignty
+title Telecoms Group - Sovereignty
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
-
-note DNS over HTTPS? - adds security is all [0.93, 0.02]
-note What happens if UK goes to war with China/US? [0.90, 0.02]
+note DNS over HTTPS? - adds security is all [0.94, 0.01]
+note What happens if UK goes to war with China/US? [0.91, 0.01]
+note individual sovereignty = collective of one? [0.88, 0.01]
 
 //USERS
-component people [0.93, 0.69] label [12, 1]
+component individual sovereignty [0.89, 0.67] label [17, -12]
+pipeline individual sovereignty
+
+component people [0.94, 0.69] label [12, 1]
 component gov [1.00, 0.63] label [-10, -12]
 pipeline gov
 component collective [0.97, 0.66] label [8, -6]
 pipeline collective // [0.52, 0.71]
-component perception of success [0.91, 0.66] label [29, -5]
+component perception of success [0.92, 0.63] label [-49, -22]
 component communication [0.78, 0.66] label [5, -6]
-component legitimacy [0.94, 0.58] label [-89, 2]
+pipeline communication
+component legitimacy [0.96, 0.58] label [-89, 2]
 pipeline legitimacy
+
 //SOVEREIGNTY
-component SOVEREIGNTY [0.86, 0.54] label [-96, -6]
+component SOVEREIGNTY [0.86, 0.54] label [-85, -5]
 pipeline SOVEREIGNTY [0.32, 0.73]
-component territorial [0.84, 0.72] label [-1, 21]
-component political [0.84, 0.59] label [-42, 20]
-component cultural [0.84, 0.67] label [-26, 19]
-component economic [0.84, 0.44] label [-63, 20]
+component territorial [0.84, 0.72] label [17, 1]
+component political [0.84, 0.62] label [-49, 22]
+component cultural [0.84, 0.67] label [-26, 23]
+component economic [0.84, 0.44] label [-33, 20]
 component digital [0.84, 0.33] label [-62, 2]
-component CNI [0.84, 0.52] label [-29, 21]
+component CNI [0.84, 0.52] label [-8, 23]
+
 // ACCESS DEVICE
 component ACCESS DEVICE [0.75, 0.70] label [11, -4]
 pipeline ACCESS DEVICE [0.55, 0.77]
 component radio/TV [0.73, 0.76] label [15, 13]
-component smartphone [0.72, 0.69] label [-50, 17]
-component sat phone [0.72, 0.58] label [-37, 15]
-component computer [0.72, 0.73] label [-8, 19]
+component smartphone [0.73, 0.67] label [-45, 22]
+component sat phone [0.73, 0.59] label [-42, 20]
+component computer [0.73, 0.73] label [-11, 23]
 component IoT [0.73, 0.56] label [-38, 2]
-
-note Network Perception [0.61, 0.01]
+note Network Perception [0.59, 0.01]
 note Network Topology [0.40, 0.01]
-note legislation / regulatory [0.70, 0.01]
+note legislation / regulatory [0.62, 0.01]
 note +expertise to operate? [0.56, 0.01]
 note +authority to operate? [0.53, 0.01]
 
 //ACCESS NETWORK
 component ACCESS NETWORK [0.65, 0.57] label [-116, -5]
-pipeline ACCESS NETWORK [0.39, 0.74]
-component satellite [0.62, 0.68] label [-24, 22]
-component WiFi [0.62, 0.62] label [-14, 22]
-component mobile [0.62, 0.52] label [-1, 20]
-component FTTP [0.62, 0.46] label [-11, 21]
-component cable [0.62, 0.42] label [-28, 22]
-
-component BACKHAUL/INTERNET CORE [0.53, 0.42] label [-3, -19]
+pipeline ACCESS NETWORK [0.39, 0.69]
+component satellite [0.63, 0.68] label [-24, 22]
+component WiFi [0.63, 0.63] label [-14, 22]
+component mobile [0.63, 0.52] label [-1, 20]
+component FTTP [0.63, 0.46] label [-11, 21]
+component cable [0.63, 0.40] label [-28, 22]
+component BACKHAUL/INTERNET CORE [0.55, 0.39] label [-60, -24]
 component launch vehicles [0.48, 0.63] label [-70, -28]
 pipeline launch vehicles [0.60, 0.67]
-
-component NETWORK EQPT [0.44, 0.47] label [-39, 18]
+component NETWORK EQPT [0.44, 0.47] label [14, 3]
 pipeline NETWORK EQPT
-component raw materials [0.26, 0.55] label [12, 2]
-component extraction [0.21, 0.31] label [-87, 3]
-component Eqpt Components [0.38, 0.43] label [27, -13]
-component transport [0.23, 0.51] label [18, 4]
 
+// component extraction [0.21, 0.31] label [-87, 3]
 //THEATRE
-component THEATRE [0.17, 0.51] label [-14, -9]
+component THEATRE [0.17, 0.50] label [-25, -13]
 pipeline THEATRE  [0.34, 0.71]
-component awareness of land-sea-air-space [0.15, 0.70] label [27, -15]
-component awareness of supply-chains [0.15, 0.35] label [-82, -10]
+component awareness of land-sea-air-space [0.15, 0.70] label [24, -17]
+component awareness of supply-chains [0.15, 0.35] label [-80, -19]
+
 //REALITY
-
-component REALITY [0.06, 0.51] label [-28, -8]
+component REALITY [0.06, 0.49] label [-58, -4]
 pipeline REALITY  [0.30, 0.73]
-component geography [0.05, 0.36] label [-37, 27]
-component supply chain [0.05, 0.61] label [-65, 27]
-component space [0.04, 0.68] label [-13, 22]
-
+component geography [0.04, 0.31] label [-85, 2]
+component physical supply chain [0.04, 0.64] label [8, -19]
+component space [0.04, 0.72] label [17, 3]
 component Compute [0.19, 0.83] label [12, 0]
 component Power [0.05, 0.84] label [16, 2]
+component information supply chain [0.04, 0.59] label [-74, -15]
+
+evolve awareness of supply-chains 0.5 label [-590, 59]
 
 gov->collective
 collective->people
@@ -99,29 +101,28 @@ satellite->launch vehicles
 awareness of land-sea-air-space->territorial
 geography->awareness of land-sea-air-space
 space->awareness of land-sea-air-space
-
 communication->ACCESS DEVICE
 communication->ACCESS NETWORK
 ACCESS DEVICE->NETWORK EQPT
 ACCESS NETWORK->NETWORK EQPT
 ACCESS NETWORK->Compute
-NETWORK EQPT->Eqpt Components
-
-
-Eqpt Components->raw materials
-raw materials->extraction
-raw materials->transport
 Compute->Power
 CNI->communication
-
-component Software [0.38, 0.63] label [13, 6]
-NETWORK EQPT->Software
-BACKHAUL/INTERNET CORE->NETWORK EQPT
-component Real estate [0.43, 0.31] label [-93, 2]
+component Real estate [0.42, 0.31] label [-88, 1]
 mobile->Real estate
-component EXPERTISE [0.31, 0.43] label [10, 9]
+component EXPERTISE [0.33, 0.44] label [-25, -11]
 Software->EXPERTISE
-note >>>LINK TO EDUCATION & MANUFACTURING! [0.28, 0.40]
-Eqpt Components->EXPERTISE
+note >>>LINK TO EDUCATION & MANUFACTURING! [0.38, 0.01]
 CNI->BACKHAUL/INTERNET CORE
 BACKHAUL/INTERNET CORE->Real estate
+Real estate->geography
+NETWORK EQPT->supply chain
+NETWORK EQPT->EXPERTISE
+BACKHAUL/INTERNET CORE->NETWORK EQPT
+awareness of supply-chains->EXPERTISE
+EXPERTISE->awareness of land-sea-air-space
+information supply chain->NETWORK EQPT
+NETWORK EQPT->physical supply chain
+information supply chain->awareness of supply-chains
+physical supply chain->awareness of supply-chains
+people->individual sovereignty
