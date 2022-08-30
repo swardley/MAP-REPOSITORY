@@ -1,137 +1,225 @@
-title Education and Social Mobility v2
+title Education and Social Mobility v3
 //social mobility defined as the ability to move from the economic level
 //position you are born into, into a position of your desire
 //or at least one that matches your natural ability
-component Social class [0.16, 0.46]
-pipeline Social class [0.2, 0.8]
-component low [0.15, 0.79] label [5, -17]
-component high [0.15, 0.21] label [1, -22]
-component economic level [0.74, 0.79] label [5, -10]
-component physical location [0.74, 0.59]
-component government [0.95, 0.52]
-component shadow government [0.15, 0.11]
-component individual [0.96, 0.69]
-component societal demand for labour [0.89, 0.42]
-component family [0.90, 0.60]
-component school [0.69, 0.45]
-pipeline school [0.2, 0.8]
-component employers [0.32, 0.48] label [5, -10]
-pipeline employers [0.2, 0.8]
-component public [0.68, 0.79]
-component private [0.68, 0.49]
-component elite [0.68, 0.21]
-component blue collar [0.31, 0.70]
-component white collar [0.31, 0.37]
-evolve white collar 0.5
-component new tech [0.42, 0.14]
-component DEI [0.41, 0.40]
-component new roles [0.31, 0.26]
 
-evolve new roles 0.3
-component post grad [0.50, 0.34]
-component masters+ [0.49, 0.25]
-component skills gap [0.41, 0.55]
-component short courses [0.48, 0.40]
-component entrepeneur [0.15, 0.37]
-pipeline post grad [0.2, 0.6]
+component Class [0.95, 0.05]
+component Merit [0.95, 0.15]
+Class+<>Merit
+Class+'patronage, investment funds, social norms'>Merit
 
-
-component education type [0.60, 0.52] label [5, -10]
-component merit based management [0.62, 0.10] label [-63, -17]
-//the concept of movement between eduation types based on performance
-//as a tangible result of measured ability
-pipeline education type [0.2, 0.8]
-component work specific [0.59, 0.67] label [-25, -21]
-component self enlightenment [0.59, 0.21] label [-33, -46]
-component social anchoring [0.74, 0.12]
-component awareness [0.89, 0.68]
-component natural ability [0.84, 0.58]
-component hope [0.77, 0.67]
-component class indicators [0.79, 0.31]
-component agency [0.76, 0.45] label [5, -10]
-component power [0.94, 0.44]
-component commoditisation of the economy [0.83, 0.81] label [21, -64]
-component choice [0.62, 0.88]
-component patronage [0.80, 0.44]
-component investment funds [0.79, 0.52]
-component alumni [0.59, 0.34]
-component middle [0.15, 0.43]
-component executive [0.31, 0.21]
-component low middle [0.15, 0.65]
-component labour/mundane [0.30, 0.79]
-component none [0.59, 0.79]
+//Flow ~ Class+<>Merit
+//Flow with label ~ Class+'Skills Shortage'>Merit
+//Evolve ~ evolve Class evolve 0.34
+//Inertia ~ component Class [0.1, 0.95] inertia
 
 
 
-individual->family
-individual->awareness
-individual->natural ability
-//the individual based on their family position and desires, awareness
-//of the options they have and theur natural ability will form a
-//base of what they could do     
-family->physical location
-family->investment funds
-family->patronage
-//the ability of the family to send the child into a type of education  
-//and their location and access to funds link to the agancy the individual
-//has to choose their education type
-awareness->hope
-natural ability->hope
-//The individual based on their awareness level will also have a variable
-//level of hope regarding what they could do    
-hope->agency
-patronage->agency
-investment funds->agency
-//These components build to the individuals agency of what choices they have  
-physical location->school
-agency->school
-agency->education type
-//The individual's agency leads to the school they end up in.
 
-commoditisation of the economy->societal demand for labour
-government->power
+
+component social cohesion [0.94, 0.44] label [-19, -38]
+component government [0.95, 0.52] label [5, -10]
+government->social cohesion
 government->societal demand for labour
 //A few incomplete links that need some further working out
 
-school->employers
-employers->Social class
-school->education type
-education type->employers
-//these are our key pathways, the initial school and course selection dictate a lot of   
-//the options the person then has.  This is the limitation on mobility   
+component individuals [0.97, 0.74] label [5, -10]
+individuals->Aspiration
+//the individual based on their family position and desires, awareness
+//of the options they have and theur natural ability will form a
+//base of what they could do     
+//Note! Mental Health, ADHD, etc, will act on the landscape.. i.e. impact ability to learn, be in the class..
+//Does the School accommodate individual needs - this will impact on Aspiration.
 
-elite->self enlightenment
-self enlightenment->white collar
-white collar->high
-public->work specific
-work specific->blue collar
-blue collar->low
-elite->alumni
-white collar->middle
-alumni->executive
-executive->high
-blue collar->low middle
-none->labour/mundane
-labour/mundane->low
-//These are some of the common paths that will be followed, indicating the limitations that  
-//starting position makes on eventual outcome  
 
+component network [0.60, 0.11]
+network->new tech
+
+
+//##Start Aspiration Pipeline##//
+component Aspiration [0.80, 0.43] label [5, -10]
+pipeline Aspiration [0.2, 0.8]
+Aspiration->hope
+Aspiration->School
+//aspiration->awareness
+//aspiration->natural ability
+
+component patronage [0.78, 0.21] label [-36, 27]
+patronage->viability
+component awareness [0.78, 0.36] label [7, 8]
+//awareness->hope
+awareness->network
+component investment funds [0.78, 0.52] label [12, -5]
+investment funds->viability
+component natural ability [0.79, 0.62] label [-9, 6]
+natural ability->viability
+//The individual based on their awareness level will also have a variable
+//level of hope regarding what they could do    
+component family [0.79, 0.71] label [-9, 17]
+family->viability
+//family->aspiration
+//family->physical location
+//family->investment funds
+//family->patronage
+//the ability of the family to send the child into a type of education  
+//and their location and access to funds link to the agancy the individual
+//has to choose their education type
+component social norms [0.79, 0.79] label [25, 13]
+social norms->viability
+//These components build to the individuals agency of what choices they have
+
+
+//Underpinnings of Aspiration
+component hope [0.71, 0.46]
+viability->hope
+component viability [0.64, 0.56] inertia
+evolve viability 0.8
+viability->agency
+component choice [0.61, 0.31] label [-39, -12]
+choice->agency
+choice->School
+component agency [0.64, 0.36] label [5, -10]
+agency->School
+agency->Education type
+agency->Career Progression
+//The individual's agency leads to the school they end up in.
+
+
+
+
+component commoditisation of the economy [0.86, 0.75] label [19, -32]
+commoditisation of the economy->societal demand for labour
+component societal demand for labour [0.86, 0.67] label [1, -30]
 societal demand for labour->merit based management
-merit based management->school
-merit based management->education type
+
+
+//~~Parked just to see the map a bit 'cleaner'~~
+//component merit based management [0.68, 0.09] label [-63, -17]
+//the concept of movement between eduation types based on performance
+//as a tangible result of measured ability
+//merit based management->School
+//merit based management->Education type
 //This component doesn't exist currently in an official way, maybe would be    
 //a representaion of a benevolent donor or social program
 //and is the idea of a merit based system that helps people move to where in the system  
 //they would provide the best value
 
 
+
+//##Start School Pipeline##//
+pipeline School [0.2, 0.8]
+component School [0.59, 0.45]
+//School->Employers
+School->Education type
+
+
+component elite [0.58, 0.21] label [5, -10]
+elite->self enlightenment
+elite->alumni
+component private [0.57, 0.50]
+component public [0.58, 0.79]
+public->work specific
+//##End Pipeline##//
+
+
+
+//##Start Education Pipeline##//
+pipeline Education type [0.2, 0.8]
+component Education type [0.46, 0.52] label [5, -10]
+Education type->Career Progression
+//these are our key pathways, the initial school and course selection dictate a lot of   
+//the options the person then has.  This is the limitation on mobility   
+
+component self enlightenment [0.44, 0.21] label [-71, 3]
+self enlightenment->white collar
+component masters+ [0.44, 0.26] label [-38, 28]
+masters+->alumni
+masters+->middle
+//masters+->new roles
+component uni [0.44, 0.35] label [-37, 24]
+uni->alumni
+component short courses [0.44, 0.45] label [-75, 27]
+short courses->skills gap
+component work specific [0.44, 0.67] label [-80, 26]
+work specific->blue collar
+component none [0.44, 0.79] label [-35, 25]
+none->labour/mundane
+//##End Education Pipeline##//
+
+
+
+
+component alumni [0.36, 0.33] label [6, 8]
+alumni->executive
+alumni->new roles
+alumni+<>DEI
+component skills gap [0.35, 0.57] label [12, 4]
+skills gap->middle
+skills gap->Career Progression
+component new tech [0.32, 0.11] label [-58, 16]
 new tech->new roles
-employers->DEI
-employers->skills gap
-middle->skills gap
-middle->DEI
-high->DEI
-skills gap->short courses
 new tech->entrepeneur
-middle->masters+
-masters+->new roles
+component DEI [0.36, 0.42] label [-36, -1]
+DEI->Career Progression
+DEI->middle
+DEI->high
+
+
+
+//##Start Employers Pipeline##//
+pipeline Career Progression [0.2, 0.8]
+component Career Progression [0.23, 0.48] label [16, -26]
+Career Progression->Social Class
+
+component executive [0.21, 0.21] label [-56, 20]
+executive->high
+
+component new roles [0.21, 0.26] label [-18, 19]
+evolve new roles 0.30 label [8, 19]
+component white collar [0.21, 0.36] label [14, 19]
+evolve white collar 0.5 label [4, 20]
+white collar->high
+white collar->middle
+
+component blue collar [0.21, 0.69] label [22, 21]
+blue collar->low middle
+blue collar->low
+component labour/mundane [0.21, 0.79] label [7, 23]
+labour/mundane->low
+//These are some of the common paths that will be followed, indicating the limitations that  
+//starting position makes on eventual outcome
+//##End Employers Pipeline##//
+
+
+component shadow government [0.07, 0.10] label [-65, 1]
+
+
+
+//##Start Social Class Pipeline##//
+pipeline Social Class [0.2, 0.8]
+component Social Class [0.10, 0.46] label [-3, -15]
+
+component high [0.09, 0.21] label [8, 8]
+component entrepeneur [0.09, 0.30] label [-18, 18]
+component middle [0.09, 0.43] label [6, 7]
+component low middle [0.07, 0.64] label [7, 8]
+component low [0.07, 0.79] label [8, 8]
+//##End Social Class Pipeline##//
+
+
+
+//~~Deprecated - Family and investment funds has a location which speaks to this~~ 
+//component physical location [0.74, 0.59]
+//physical location->School
+
+
+//~~Deprecated - A subset of Education type?~~
+//Start Post Grad Pipeline//
+//pipeline Post Grad [0.2, 0.6]
+//component Post Grad [0.50, 0.34] label [1, -12]
+//End Post Grad Pipeline//
+
+//~~Deprecated - Not sure what this was adding??~~
+//component economic level [0.74, 0.79] label [5, -10]
+//component class indicators [0.77, 0.31]
+
