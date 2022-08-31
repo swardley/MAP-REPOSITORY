@@ -1,0 +1,57 @@
+title Dutch Housing
+
+component user [0.97, 0.57]
+pipeline user [0.34, 0.69]
+component need for property [0.84, 0.63] label [9, -22]
+component today [0.95, 0.68] label [18, 3]
+component tomorrow's [0.95, 0.35] label [-92, 1]
+component sustainability [0.83, 0.33] label [-9, 24]
+evolve tomorrow's 0.68 label [-22, -21]
+evolve sustainability 0.5 label [-20, 20]
+component increase property supply [0.69, 0.64] label [4, -47]
+pipeline increase property supply [0.21, 0.7]
+component new build [0.67, 0.69] label [19, 2]
+component refurbish [0.67, 0.65] label [-27, 24]
+component retrofit [0.67, 0.60] label [-26, -18]
+component matrix like cavern [0.67, 0.22] label [-21, 15]
+component land [0.55, 0.72] label [12, 7]
+component existing housing stock [0.52, 0.59] label [6, -17]
+component out of control AI [0.44, 0.13] label [-52, -10]
+component survey [0.43, 0.61] label [-15, 22]
+component building materials [0.21, 0.64] label [5, -32]
+pipeline building materials [0.48, 0.69]
+component discrete materials [0.19, 0.68] label [15, -9]
+component prefab [0.19, 0.49] label [-53, 1]
+component architectural design [0.36, 0.55] label [-63, -29]
+pipeline architectural design [0.36, 0.72]
+component standardised, eco friendly [0.34, 0.71] label [14, -30]
+component bespoke [0.34, 0.37] label [-69, 6]
+component carbon cost [0.10, 0.53] label [-84, -7]
+component awareness of supply chain [0.06, 0.30] label [-62, -31]
+component supply chain [0.03, 0.69] label [13, 4]
+
+note NOT [0.82, 0.26]
+
+increase property supply->need for property
+new build->land
+retrofit->existing housing stock
+existing housing stock->refurbish
+matrix like cavern->out of control AI
+existing housing stock->survey
+new build->building materials
+new build->standardised, eco friendly
+standardised, eco friendly->prefab
+retrofit->bespoke
+refurbish->bespoke
+bespoke->discrete materials
+discrete materials->carbon cost
+prefab->carbon cost
+existing housing stock->carbon cost
+standardised, eco friendly->carbon cost
+need for property->today
+tomorrow's->need for property
+tomorrow's->sustainability
+sustainability->carbon cost
+carbon cost->awareness of supply chain
+awareness of supply chain->supply chain
+tomorrow's+<>matrix like cavern
