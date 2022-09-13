@@ -1,69 +1,122 @@
-// 2022 Research Group
-// Education -> Equity in Education -> Models of Education
-// August 2022
-// https://onlinewardleymaps.com/#EmhpPdghvcJ7cRz9px
+title Models of Education + individual
 
-title Models of Education
+anchor government [0.95, 0.59]
+anchor business [0.87, 0.77]
+anchor student [0.85, 0.60]
+anchor teachers [0.75, 0.52]
 
-component progression [0.63, 0.39]
-pipeline progression [0.15, 0.65]
-component predictable with time [0.62, 0.64] label [17, -11]
-component personalised progression over time [0.62, 0.16] label [-7, -70]
+component policy [0.91, 0.72]
+component behaviors [0.91, 0.65] label [-98, 9]
+component competence [0.83, 0.67] label [-11, 21]
 
-component conveyor belt [0.15, 0.64] label [18, 4]
-component individual goals [0.34, 0.14] label [10, -5]
-component classrooms [0.66, 0.74] label [12, 7]
-component values/beliefs [0.89, 0.32] label [9, 4]
-pipeline values/beliefs [0.05, 0.8]
+component competence [0.83, 0.67] label [-11, 21]
+component experience [0.68, 0.37] label [-67, -12]
+component learning [0.74, 0.60] label [-48, -15]
 
-component diversity is a superpower [0.79, 0.11] label [-77, -25]
-component one size fits all approach [0.79, 0.79] label [3, -29]
-component approach [0.80, 0.42]
-pipeline approach [0.10, 0.8]
+component cognitive ability [0.23, 0.35] label [-76, -19]
+component notion of intelligence [0.10, 0.44] label [23, -55]
 
-component curriculum [0.68, 0.68] label [7, 5]
-component knowledge [0.21, 0.59] label [14, 6]
-component playground [0.21, 0.09] label [14, 5]
-component market place [0.21, 0.38] label [11, 4]
-component temple [0.21, 0.23] label [17, 2]
-component learners [0.99, 0.37] label [16, -3]
-component teachers [0.99, 0.23]
-component assessment [0.49, 0.29] label [5, -10]
-pipeline assessment [0.10, 0.48]
+component motivation [0.70, 0.65]
+pipeline motivation
+component outcome [0.65, 0.57] label [-62, -14]
+pipeline outcome
 
-component feedback based assessment [0.48, 0.11] label [-77, -13]
-component assessment as ranking or comparing [0.48, 0.47] label [-54, -82] // Is this the best term to describe it?
-component learning from failure [0.38, 0.20] label [1, 7]
-component personalised learning [0.13, 0.15] label [19, -7]
-component successful lifelong learning [0.56, 0.15] label [9, -7]
-component seek certain futures [0.88, 0.79] label [5, -23]
-component embrace uncertain futures [0.88, 0.06] label [-31, -51]
-component learning culture [0.22, 0.31] label [-36, -38]
-pipeline learning culture [0.08, .6]
+component influencers [0.81, 0.44] label [-66, -14]
+pipeline influencers
 
-// components that we need to work out what to do with!
+component mentorship [0.61, 0.34] label [-76, -12]
 
-component driven by talent shortage [0.97, 0.85] // pipeline - Agora vs traditional in terms of approach (condition vs constraints) label [5, -10]
-component loose - flexible approach [0.79, 0.19]// subject brought up by Joanne that we didn't get to discuss yet properly vs tightly controlled, traditional method 
+component values/beliefs [0.61, 0.48] label [-74, -18]
+pipeline values/beliefs
 
-// links
-teachers->values/beliefs
-learners->values/beliefs
-embrace uncertain futures->diversity is a superpower //Was this the one? or was this from values/beliefs?
-seek certain futures->one size fits all approach
-diversity is a superpower->feedback based assessment
-personalised progression over time->successful lifelong learning
-one size fits all approach->curriculum
-one size fits all approach->classrooms
-one size fits all approach->predictable with time
-diversity is a superpower->personalised progression over time
-curriculum->assessment as ranking or comparing
-feedback based assessment->learning from failure
-learning from failure->individual goals
-classrooms->learning culture
-successful lifelong learning->individual goals
-knowledge->conveyor belt
-playground->personalised learning
-individual goals->playground
+component diversity approach [0.58, 0.65] label [-36, -39]
+pipeline diversity approach
+
+component progression [0.55, 0.61] label [-70, -13]
+pipeline progression
+
+component assessment [0.51, 0.46] label [-73, -40]
+pipeline assessment
+
+component learning habitat [0.48, 0.52] label [10, -31]
+pipeline learning habitat
+
+component teaching practices [0.43, 0.57] label [11, -29]
+pipeline teaching practices [0.37, 0.76]
+
+component conveyor belt [0.42, 0.76]
+component stream model [0.42, 0.37] label [-74, -19]
+
+component theories of learning [0.05, 0.58] label [-84, -31]
+pipeline theories of learning
+
+component access [0.28, 0.64] label [11, -7]
+pipeline access
+
+component infrastructure [0.18, 0.67]
+pipeline infrastructure [0.61, 0.72]
+
+component physical [0.17, 0.62] label [-46, -15]
+component digital [0.16, 0.71] label [25, -4]
+
+component content [0.37, 0.50] label [-41, -11]
+pipeline content
+component media [0.33, 0.67]
+
+
+pipeline media
+
+
+style wardley
+
+
+
+
+
+
+
+government->behaviors
+government->policy
+behaviors->competence
+policy->competence
+student->competence
+business->competence
+competence->learning
+learning->experience
+student->motivation
+learning->motivation
+
+motivation->visible outcome
+student->influencers
+motivation->intrinsic outcome
+motivation->outcome
+experience->mentorship
+learning->mentorship
+learning->values/beliefs
+
+
 progression->assessment
+outcome->assessment
+assessment->learning habitat
+student->learning
+values/beliefs->diversity approach
+diversity approach->progression
+learning habitat->teaching practices
 
+
+
+teaching practices->theories of learning
+teaching practices->access
+diversity approach->access
+access->infrastructure
+learning habitat->infrastructure
+teachers->values/beliefs
+teaching practices->content
+content->theories of learning
+content->media
+media->infrastructure
+learning->teaching practices
+learning->cognitive ability
+cognitive ability->notion of intelligence
+progression->cognitive ability
+assessment->notion of intelligence
