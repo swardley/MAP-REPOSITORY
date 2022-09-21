@@ -8,13 +8,13 @@ evolution genesis / concept -> custom / emerging -> product/ converging -> commo
 style wardley
 
 component bad actors [0.97, 0.54] label [-32, -12]
-component consumer [0.88, 0.67] label [-52, -11]
-pipeline consumer [0.15, 0.7]
+component consumer [0.88, 0.68] label [-57, -12]
+pipeline consumer [0.15, 0.72]
 
-note +short-termism [0.82, 0.71]
+note +short-termism [0.84, 0.73]
 note +long-termism [0.83, 0.09]
 
-component today's consumers [0.86, 0.69] label [22, -10]
+component today's consumers [0.87, 0.71] label [22, -10]
 // component business [0.86, 0.60] label [-37, -19]
 component government [0.97, 0.70] label [10, 1]
 component future user [0.86, 0.16] label [-97, 6]
@@ -25,7 +25,7 @@ component sustainability [0.79, 0.36] label [-123, 14]
 component utility [0.69, 0.75] label [2, -14]
 pipeline utility [0.70, 0.78]
 
-component supply chain [0.03, 0.66] label [7, 2]
+component supply chain [0.04, 0.62] label [-52, 19]
 component supply chain awareness [0.09, 0.24] label [-76, -14]
 component power [0.67, 0.74] label [-9, 21]
 component water [0.67, 0.72] label [-34, 22]
@@ -33,7 +33,7 @@ component water [0.67, 0.72] label [-34, 22]
 component standards [0.41, 0.55] label [-73, 19]
 pipeline standards
 
-component distribution [0.40, 0.62] label [-36, -14]
+component distribution [0.41, 0.62] label [-40, -13]
 pipeline distribution
 
 component KPI [0.47, 0.56] label [0, -18]
@@ -44,7 +44,7 @@ pipeline generation [0.53, 0.72]
 component distributed [0.31, 0.54] label [-100, 3]
 component centralised [0.31, 0.71] label [13, 1]
 
-component forecasting [0.25, 0.46] label [-43, -8]
+component forecasting [0.26, 0.44] label [-33, -11]
 component payment [0.67, 0.71] label [-69, 3]
 
 component safety [0.81, 0.48] label [-54, -8]
@@ -55,20 +55,20 @@ pipeline provision [0.58, 0.72]
 component monopoly [0.57, 0.59] label [-57, -19]
 component national [0.57, 0.71] label [17, 2]
 component market [0.57, 0.68] label [-12, 24]
-
-component sensors [0.16, 0.65] label [-45, -14]
+component market loans [0.22, 0.71] label [20, 0]
+component sensors [0.16, 0.65] label [-28, -14]
 pipeline sensors [0.61, 0.7]
-component SCADA [0.14, 0.62] label [-21, 23]
+component SCADA [0.14, 0.62] label [-58, 12]
 component attack vector [0.68, 0.31] label [-102, 5]
 component storage [0.35, 0.60] label [-61, 3]
 pipeline storage
 component internet [0.67, 0.77] label [17, 4]
 component regulation [0.71, 0.48] label [-82, 1]
 component CNI [0.79, 0.57] label [-11, 22]
-component planning [0.19, 0.43] label [-31, 21]
-component waste output [0.25, 0.62] label [12, 4]
-component financial options [0.24, 0.57] label [-72, -10]
-pipeline financial options
+component planning [0.16, 0.42] label [-31, 21]
+component waste output [0.27, 0.65] label [12, 4]
+component financial options [0.24, 0.59] label [-15, -35]
+pipeline financial options [0.36, 0.72]
 
 component knowledge systems [0.49, 0.44] label [-27, -38]
 pipeline knowledge systems [0.25, 0.57]
@@ -78,7 +78,13 @@ component observability [0.47, 0.32] label [-75, 27]
 component training [0.47, 0.46] label [-39, 24]
 
 component corporates [0.97, 0.65] label [-81, 6]
+component government subsidy [0.23, 0.37] label [-83, 6]
 
+component consumables [0.10, 0.69] label [13, -3]
+pipeline consumables [0.67, 0.71]
+component reserves [0.02, 0.70] label [12, 5]
+component renewables [0.08, 0.68] label [-24, 19]
+component finite [0.08, 0.70] label [18, 3]
 // links
 
 government->local government
@@ -121,3 +127,8 @@ safety->regulation
 standards->KPI
 regulation->enforcement
 enforcement->standards
+government->government subsidy
+government subsidy->planning
+generation->consumables
+consumables->supply chain
+reserves->consumables
