@@ -3,7 +3,7 @@ title mobility - coherence city transport // and micromobility
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-component people [0.98, 0.72] label [7, -3]
+component people [0.97, 0.71] label [15, 3]
 //component goods [0.94, 0.68] label [11, 4]
 //component services [0.94, 0.60] label [10, 5]
 //component culture [0.93, 0.44] label [7, -5]
@@ -39,9 +39,9 @@ component territory [0.72, 0.25] label [-18, -13]
 component air [0.58, 0.74] label [19, -8]
 component construction/maintenance [0.53, 0.40] label [-29, 6]
 component signals/signs [0.55, 0.48] label [-54, 13]
-component roundabouts [0.34, 0.69] label [16, 2]
+// component roundabouts [0.34, 0.69] label [16, 2]
 component ISPs [0.35, 0.54] label [-27, 30]
-component PT stations [0.35, 0.59] label [-35, 29]
+component integrated transport station [0.35, 0.59] label [-25, 19]
 component decarbonisation [0.69, 0.19] label [-11, 15]
 component transport schemes [0.19, 0.42] label [-64, -28]
 pipeline transport schemes [0.36, 0.54]
@@ -58,7 +58,7 @@ component e-scooters [0.44, 0.61] label [-34, 28]
 component internet access [0.43, 0.75] label [-11, -48]
 component functional transport system [0.51, 0.28] label [-61, -51]
 component obstruction removal [0.51, 0.54] label [14, -18]
-component Transport Planning [0.38, 0.35] label [-75, -27]
+component Transport Planning [0.38, 0.35] label [-3, -37]
 component transport information [0.11, 0.34] label [-78, -32]
 pipeline transport information [0.22, 0.47]
 //component now [0.37, 0.27] label [-15, 25]
@@ -66,31 +66,39 @@ component historical [0.09, 0.46] label [20, 2]
 component digital twin [0.09, 0.23] label [-114, 1]
 component regulation [0.31, 0.42] label [-20, 15]
 component decision making [0.32, 0.37] label [-69, -9]
-component Transport Policy [0.30, 0.28] label [-72, -17]
+component Transport Policy [0.30, 0.28] label [-79, -7]
 component stable climate [0.85, 0.23] label [-112, -1]
 component sensors [0.03, 0.52] label [-27, 16]
 component surveys [0.03, 0.42] label [-3, 15]
 component data analysis [0.03, 0.30] label [-52, 17]
 component drones [0.44, 0.57] label [-35, -16]
-component awareness [0.26, 0.37] label [9, 12]
+component awareness [0.26, 0.37] label [-5, -11]
 pipeline awareness 
+
+component fuel stations [0.34, 0.69] label [19, 4]
+
+component traffic management [0.44, 0.27] label [-72, -6]
 
 component fuel [0.19, 0.75]
 pipeline fuel
 pipeline fuel [0.62, 0.88]
-component hydrogen [0.17, 0.63] label [-32, 22]
-component animal power [0.17, 0.87] label [-33, 31]
-component petroleum [0.17, 0.78] label [-29, 25]
+component hydrogen [0.17, 0.63] label [-42, 22]
+component animal power [0.17, 0.87] label [-33, 22]
+component petroleum [0.17, 0.78] label [-24, 22]
 component electricity [0.17, 0.71] label [-38, 22]
 // component data centres [0.75, 0.73] label [18, 2]
 // component food & water [0.11, 0.54] label [11, 11]
 
-
+component energy mix [0.09, 0.72] label [6, -8]
+pipeline energy mix [0.64, 0.76]
+component renewable [0.08, 0.69] label [-28, 29]
+component fossil [0.07, 0.75] label [21, 1]
+component nuclear [0.08, 0.65] label [-71, 2]
 component hubs [0.36, 0.58]
-pipeline hubs [0.47, 0.7]
-pipeline hubs [0.47, 0.7]
-component car parks [0.34, 0.65] label [-14, 23]
-component e-transport hubs [0.35, 0.48] label [-58, -33]
+pipeline hubs [0.47, 0.70]
+pipeline hubs [0.47, 0.70]
+component car parks [0.34, 0.65] label [-12, 20]
+component local mobility hubs [0.35, 0.48] label [-64, -41]
 component rapid bus [0.17, 0.37] label [-25, 23]
 
 component bike share [0.17, 0.42] label [-8, 22]
@@ -165,3 +173,9 @@ air->internet access
 Transport Policy->awareness
 WAYS->awareness
 decarbonisation->fuel
+awareness->transport information
+awareness->fuel
+electricity->energy mix
+hydrogen->energy mix
+functional transport system->traffic management
+traffic management->awareness
