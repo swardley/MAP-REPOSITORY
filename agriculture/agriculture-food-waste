@@ -1,74 +1,76 @@
-// General
-// Wardley Mapping is licensed under creative commons share alike - CC by SA - by Simon Wardley
-// https://creativecommons.org/licenses/by-sa/4.0/
-// This Wardley Map is a dynamic document licensed under CC by SA, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
-
 title agriculture - food waste
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 
-note unsed [0.93, 0.02]
-note food health [0.89, 0.03] label [9, 5]
-note satellite [0.85, 0.03] label [11, 3]
-note land use [0.07, 0.45] label [-70, 5]
-note yield [0.73, 0.03] label [12, 3]
-note forecast [0.69, 0.03] label [10, 5]
-note farmer [0.81, 0.03] label [10, 4]
-note localisation [0.77, 0.03] label [13, 4]
-note biodiversity [0.66, 0.03] label [12, 3]
+// note unsed [0.93, 0.02]
+// note food health [0.89, 0.03] label [9, 5]
+// note satellite [0.85, 0.03] label [11, 3]
+// note land use [0.04, 0.42] label [0.04, 0.42]
+// note yield [0.73, 0.03] label [12, 3]
+// note forecast [0.69, 0.03] label [10, 5]
+// note farmer [0.81, 0.03] label [10, 4]
+// note localisation [0.77, 0.03] label [13, 4]
+// note biodiversity [0.66, 0.03] label [12, 3]
 
-component water [0.07, 0.62] label [-4, -15]
-component cost [0.72, 0.72] label [-41, 2]
-component options [0.81, 0.75] label [10, -2]
+component labour [0.08, 0.71] label [18, 4]
+component scarcity [0.33, 0.64] label [-49, 22]
+component abundance [0.33, 0.73] label [16, 2]
+component labelling [0.51, 0.40] label [-81, 2]
+component harvest [0.35, 0.70] label [-36, -8]
+pipeline harvest [0.63, 0.74]
+component water [0.07, 0.63] label [-54, 1]
+component chemical byproducts [0.03, 0.63] label [-69, -10]
+component cost [0.72, 0.72] label [-2, 16]
+component choice [0.81, 0.76] label [7, 2]
 component corporate [0.97, 0.59] label [-72, -3]
-
-component diet [0.77, 0.69] label [-25, -8]
+// component diet [0.76, 0.68] label [-36, -5]
 // main components
 component consumer [0.87, 0.73] label [13, 1]
-component food [0.52, 0.65] label [-32, -9]
-pipeline food [0.54, 0.76]
-component staples [0.50, 0.75] label [18, 3]
-component luxury [0.50, 0.55] label [-57, 4]
-component standard [0.43, 0.50] label [-69, 4]
-component quality check [0.27, 0.55] label [-101, 0]
-component waste [0.23, 0.66]
+component food [0.60, 0.73] label [15, 5]
+pipeline food // [0.54, 0.76]
+// component staples [0.50, 0.75] label [18, 3]
+// component luxury [0.50, 0.55] label [-57, 4]
+component standard [0.47, 0.51] label [-43, 18]
+component quality check [0.27, 0.56] label [-91, 18]
+component waste [0.23, 0.66] label [-24, -12]
 pipeline waste [0.35, 0.73]
-component unrecycled [0.21, 0.72] label [18, 0]
-component sustainable [0.21, 0.36] label [-95, -9]
-component logistic [0.40, 0.63] label [-68, -8]
-component tranportation [0.38, 0.55] label [-112, 0]
-component warehousing [0.38, 0.64] label [-58, 20]
-component energy [0.07, 0.69] label [14, 8]
-component carbon footprint [0.02, 0.64] label [-74, -19]
+component unsustainable [0.21, 0.72] label [18, 0]
+component sustainable [0.21, 0.36] label [-98, -3]
+component logistic [0.43, 0.63] label [-68, -8]
+component tranportation [0.41, 0.55] label [-110, 2]
+component warehousing [0.41, 0.64] label [-50, 20]
+component energy [0.08, 0.69] label [-16, 28]
+component carbon footprint [0.03, 0.65] label [1, -5]
 component supermarket [0.89, 0.67] label [-47, -8]
-component trade [0.72, 0.75] label [10, 5]
-component exclusion [0.40, 0.73] label [12, 4]
+// component trade [0.72, 0.75] label [10, 5]
+// component exclusion [0.44, 0.73] label [12, 4]
 component government [0.98, 0.64] label [-34, -9]
-component food security [0.91, 0.57] label [-54, -10]
-component policy [0.84, 0.53] label [9, 6]
+component food security [0.91, 0.57] label [-68, 22]
+component policy [0.80, 0.49] label [-41, -8]
 component society [0.95, 0.70] label [8, -6]
-component social norms [0.77, 0.49] label [-42, 18]
-component education [0.74, 0.59] label [-40, 20]
-component transparency [0.16, 0.40] label [-96, -1]
-component welfare [0.69, 0.27] label [-51, -9]
-component supply chain [0.11, 0.39] label [-5, -10]
-component feedstock [0.60, 0.53] label [-52, 24]
-component fertilizers [0.60, 0.65] label [-35, 21]
-component biological byproducts [0.62, 0.64] label [-73, -28]
-pipeline biological byproducts [0.43, 0.74]
-component human food [0.60, 0.73] label [15, 5]
-component chemical [0.60, 0.60] label [-54, 23]
-component clothing [0.60, 0.70] label [3, -15]
-component supply chain standards [0.05, 0.22] label [-70, -22]
-component nutrional value [0.69, 0.44] label [-70, -11]
-component inputs [0.09, 0.55]
-pipeline inputs [0.44, 0.70]
-component recycled waste [0.60, 0.44] label [-116, 3]
-component marketing [0.84, 0.44] label [-68, -12]
-component regulatory capture [0.78, 0.30] label [-78, -18]
-component production [0.38, 0.68] label [-3, 22]
+// component social norms [0.77, 0.49] label [-42, 18]
+component education [0.74, 0.59] label [-39, 22]
+component transparency [0.16, 0.40] label [-96, 5]
+component welfare [0.73, 0.28] label [-70, 3]
+component supply chain awareness [0.14, 0.45] label [-24, 9]
+component feedstock [0.60, 0.67] label [9, 22]
+component fertilizers [0.60, 0.65] label [-50, 23]
+component biological byproducts [0.62, 0.64] label [-75, -30]
+pipeline biological byproducts [0.53, 0.74]
+//component human food [0.60, 0.73] label [15, 5]
+component chemical [0.60, 0.59] label [-35, 22]
+component clothing [0.60, 0.70] label [-41, -19]
+// component supply chain standards [0.05, 0.22] label [-70, -22]
+component nutrional value [0.70, 0.46] label [-72, -11]
+component inputs [0.09, 0.65] label [-40, -11]
+pipeline inputs [0.62, 0.72]
+// component recycled waste [0.60, 0.44] label [-116, 3]
+component marketing [0.84, 0.43] label [-68, -12]
+component regulatory capture [0.79, 0.31] label [-74, -20]
+component production [0.41, 0.68] label [-9, -22]
 pipeline logistic [0.54, 0.69]
-component food surplus [0.87, 0.50] label [-53, -11]
+// component food surplus [0.87, 0.50] label [-69, -11]
+component fuel [0.60, 0.54] label [-23, 23]
 
 // links
 supermarket->food
@@ -80,17 +82,17 @@ quality check->waste
 tranportation->energy
 food->energy
 waste->energy
-consumer->options
+consumer->choice
 government->consumer
 government->food security
 food security->staples
-options->trade
+// options->trade
 luxury->exclusion
 exclusion->trade
 energy->carbon footprint
-unrecycled->carbon footprint
+unsustainable->carbon footprint
 food security->policy
-policy->standard
+// policy->standard
 policy->education
 consumer->education
 government->society
@@ -102,24 +104,24 @@ social norms->visibility
 social norms->welfare
 policy->welfare
 welfare->sustainable
-social norms->transparency
+// social norms->transparency
 sustainable->transparency
-transparency->supply chain
-waste->supply chain
+transparency->supply chain awareness
+// waste->supply chain awareness
 human food->food
 trade->biological byproducts
 corporate->biological byproducts
-options->biological byproducts
+choice->biological byproducts
 consumer->trade
-options->cost
-biological byproducts->supply chain
+choice ->cost
+biological byproducts->supply chain awareness
 
-supply chain->inputs
-logistic->supply chain
+supply chain awareness->inputs
+logistic->supply chain awareness
 recycled waste->waste
-supply chain->supply chain standards
+supply chain awareness->supply chain standards
 transparency->supply chain standards
-options->diet
+// options->diet
 diet->education
 diet->cost
 cost->logistic
@@ -137,8 +139,23 @@ marketing->regulatory capture
 marketing->regulatory capture
 regulatory capture->marketing
 regulatory capture->standard
-supermarket->options
+supermarket->choice
 
 logistic->quality check
 food security->food surplus
 food surplus->logistic
+biological byproducts->waste
+food security->food
+education->labelling
+labelling->standard
+transparency->labelling
+nutrional value->labelling
+unsustainable->chemical byproducts
+welfare->standard
+harvest->production
+waste->abundance
+choice->abundance
+education->choice
+policy->scarcity
+policy->supply chain awareness
+harvest->inputs
