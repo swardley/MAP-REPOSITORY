@@ -8,18 +8,26 @@ title Government - Digital Identity
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
 
 ///actors
-
+component bad actor [0.97, 0.50] label [-46, -10]
 component government [0.98, 0.61] label [-15, -14]
 component society [0.96, 0.67] label [9, -4]
-// component corporate [0.89, 0.68] label [-27, 24]
-// component illegal [0.89, 0.64] label [-49, 24]
-// component residents [0.89, 0.72] label [-6, 22]
-// component citizen [0.89, 0.76] label [25, 1]
+// component corporate [0.89, 0.69] label [-51, -12]
+// // component illegal [0.89, 0.64] label [-49, 24]
+// // component residents [0.89, 0.72] label [-6, 22]
+// component citizen [0.89, 0.76] label [20, 8]
+// component robots [0.88, 0.41] label [-65, 1]
+// component river [0.88, 0.59] label [-29, -18]
 component entity [0.90, 0.72] label [0, -11]
-pipeline entity // [0.63, 0.77]
-// pipeline entity [0.63, 0.77]
+pipeline entity // [0.40, 0.77]
+note (subordinate) [0.89, 0.73]
+note (reliant party) [0.82, 0.72]
+note (issuing party == entity) [0.26, 0.68]
+// note (legal) [0.84, 0.86]
+note (what I am) [0.70, 0.77]
+// pipeline entity [0.40, 0.77]
 
-component claim  [0.77, 0.68] label [-47, -2]
+component claim  [0.81, 0.68] label [-52, 1]
+// note (right) [0.78, 0.64]
 
 // component corporations [0.98, 0.54] label [-75, -10]
 // note +competition [0.92, 0.06]
@@ -29,10 +37,10 @@ component claim  [0.77, 0.68] label [-47, -2]
 // note +credentials [0.84, 0.06]
 // note +veified person [0.86, 0.06]
 
-component power [0.06, 0.66] label [12, -16]
+component power [0.06, 0.66] label [8, -10]
 pipeline power [0.50, 0.69]
 
-component regulators (authorities) [0.84, 0.43] label [-78, 7]
+component regulators (authorities) [0.75, 0.40] label [-75, 3]
 
 // note +permission to modify? [0.74, 0.23]
 // To add
@@ -43,8 +51,8 @@ component regulators (authorities) [0.84, 0.43] label [-78, 7]
 // component power to [0.76, 0.03] label [11, 3]
 
 /// Need
-component services [0.83, 0.72] label [8, 9]
-component identity [0.64, 0.72] label [4, -8]
+component services [0.85, 0.72] label [8, 9]
+component identity [0.69, 0.72] label [8, -10]
 pipeline identity [0.63, 0.75]
 
 // component multifaceted [0.43, 0.46] label [-104, 4]
@@ -53,39 +61,39 @@ pipeline identity [0.63, 0.75]
 // component self identity [0.43, 0.65] label [-27, 23]
 component centralised authority [0.24, 0.75] label [28, -9]
 component decentralised authority [0.24, 0.42] label [-100, -18]
-component credential [0.35, 0.61] label [-55, 22]
+component credential [0.33, 0.62] label [-65, 19]
 
 // component exclusion [0.35, 0.71] label [11, 1]
 
-component identification [0.53, 0.73] label [6, -9]
+component identification [0.53, 0.73] label [-29, -14]
 pipeline identification [0.66, 0.77]
-component physical [0.51, 0.67] label [-19, -21]
+component physical [0.51, 0.67] label [-35, -20]
 component digital [0.51, 0.76] label [19, 11]
-component authority [0.26, 0.67] label [1, -14]
+component authority [0.26, 0.68] label [-11, -16]
 pipeline authority [0.41, 0.76]
 
-component identifiers [0.43, 0.61] label [-85, -13]
+component identifiers [0.43, 0.61] label [-79, -10]
 pipeline identifiers [0.46, 0.71]
 component mutable (name) [0.41, 0.70] label [20, 0]
 component immutable (facial geometry) [0.41, 0.64] label [4, 13]
 component connectedness (FOAF) [0.41, 0.47] label [-99, -17]
-component people [0.62, 0.74] label [25, 1]
-component physical material [0.62, 0.71] label [-28, 16]
-component digital material [0.62, 0.64] label [-64, -37]
-component collective (company) [0.62, 0.68] label [-33, -47]
+component people [0.68, 0.74] label [17, 11]
+component physical material [0.67, 0.71] label [-18, 11]
+component digital material [0.67, 0.64] label [-76, -17]
+component collective (company) [0.68, 0.68] label [-36, -38]
 
 component rules [0.17, 0.58] label [11, 9]
 component exception [0.12, 0.55] label [-82, 3]
 
-component over [0.04, 0.63] label [-16, 19]
+component over [0.04, 0.63] label [-18, 21]
 component with [0.04, 0.68] label [21, 2]
 // component referential [0.31, 0.17] label [-93, 2]
 // component legitimate [0.15, 0.16] label [-84, 8]
-component symbolic [0.04, 0.51] label [-76, 3]
+component symbolic [0.05, 0.51] label [-76, 3]
 // component information [0.57, 0.17] label [-102, 1]
 // component coercive [0.37, 0.16] label [-75, 6]
 // component expert [0.54, 0.16] label [-57, 2]
-component to [0.04, 0.57] label [-7, -24]
+component to [0.05, 0.57] label [-10, -15]
 
 // component self signed [0.30, 0.42] label [-96, 4]
 
@@ -93,11 +101,11 @@ component to [0.04, 0.57] label [-7, -24]
 // component government identity [0.42, 0.17]
 
 // component governance [0.89, 0.56] label [-45, -15]
-component regulation [0.94, 0.46] label [-84, 5]
+component regulation [0.89, 0.45] label [-84, 5]
 
-component legitimacy [0.44, 0.11] label [-93, 3]
-component sovereignty [0.47, 0.11] label [-92, 0]
-component trust [0.19, 0.70] label [12, -4]
+// component legitimacy [0.44, 0.11] label [-93, 3]
+// component sovereignty [0.47, 0.11] label [-92, 0]
+component trust [0.16, 0.69] label [7, 7]
 // component evidence [0.05, 0.69] label [9, 2]
 
 // component permission to act [0.61, 0.66] label [24, -9]
@@ -109,7 +117,7 @@ component trust [0.19, 0.70] label [12, -4]
 // component storage [0.02, 0.74] label [10, 2]
 
 // /// Trust
-// component trust [0.19, 0.70] label [-41, -7]
+// component trust [0.16, 0.69] label [-41, -7]
 // // component narratives [0.07, 0.39] label [-17, 24]
 // component avoiding harm [0.29, 0.58] label [-29, -13]
 // pipeline avoiding harm [0.41, 0.62]
@@ -124,8 +132,8 @@ component trust [0.19, 0.70] label [12, -4]
 // component consensus alogrithm [0.42, 0.50] label [-37, 11]
 // component delegated [0.42, 0.54] label [-6, 20]
 
-note credibility reliability safety valued heard [0.16, 0.69]
-note is the mechanism of issuing different from the identifiers? [0.47, 0.32]
+// note credibility reliability safety valued heard [0.54, 0.03]
+// note is the mechanism of issuing different from the identifiers? [0.51, 0.03]
 
 
 //links
@@ -214,3 +222,11 @@ digital material->digital
 regulation->rules
 authority->rules
 rules->exception
+corporate->services
+bridge->services
+services->robots
+river->services
+digital->physical material
+digital->collective (company)
+bad actor->rules
+bad actor->trust
