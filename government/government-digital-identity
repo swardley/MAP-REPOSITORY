@@ -4,9 +4,10 @@
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
 
 style wardley
-title Government - Digital Identity
+title Government - Identity
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
 
+// note (enity == authority) [0.91, 0.75]
 ///actors
 component bad actor [0.97, 0.50] label [-46, -10]
 component government [0.98, 0.61] label [-15, -14]
@@ -20,13 +21,13 @@ component society [0.96, 0.67] label [9, -4]
 component entity [0.90, 0.72] label [0, -11]
 pipeline entity // [0.40, 0.77]
 note (subordinate) [0.89, 0.73]
-note (reliant party) [0.82, 0.72]
-note (issuing party == entity) [0.26, 0.68]
+note (reliant party) [0.83, 0.72]
+note (issuing party == entity) [0.26, 0.69]
 // note (legal) [0.84, 0.86]
 note (what I am) [0.70, 0.77]
 // pipeline entity [0.40, 0.77]
 
-component claim  [0.81, 0.68] label [-52, 1]
+component claim  [0.79, 0.68] label [16, 2]
 // note (right) [0.78, 0.64]
 
 // component corporations [0.98, 0.54] label [-75, -10]
@@ -40,7 +41,7 @@ component claim  [0.81, 0.68] label [-52, 1]
 component power [0.06, 0.66] label [8, -10]
 pipeline power [0.50, 0.69]
 
-component regulators (authorities) [0.75, 0.40] label [-75, 3]
+component regulators (authorities) [0.79, 0.40] label [-82, -6]
 
 // note +permission to modify? [0.74, 0.23]
 // To add
@@ -51,7 +52,7 @@ component regulators (authorities) [0.75, 0.40] label [-75, 3]
 // component power to [0.76, 0.03] label [11, 3]
 
 /// Need
-component services [0.85, 0.72] label [8, 9]
+component services [0.86, 0.72] label [8, 9]
 component identity [0.69, 0.72] label [8, -10]
 pipeline identity [0.63, 0.75]
 
@@ -60,7 +61,7 @@ pipeline identity [0.63, 0.75]
 // component digital identity [0.43, 0.74] label [17, -12]
 // component self identity [0.43, 0.65] label [-27, 23]
 component centralised authority [0.24, 0.75] label [28, -9]
-component decentralised authority [0.24, 0.42] label [-100, -18]
+component decentralised authority [0.24, 0.42] label [-95, -21]
 component credential [0.33, 0.62] label [-65, 19]
 
 // component exclusion [0.35, 0.71] label [11, 1]
@@ -76,14 +77,14 @@ component identifiers [0.43, 0.61] label [-79, -10]
 pipeline identifiers [0.46, 0.71]
 component mutable (name) [0.41, 0.70] label [20, 0]
 component immutable (facial geometry) [0.41, 0.64] label [4, 13]
-component connectedness (FOAF) [0.41, 0.47] label [-99, -17]
+component connectedness (FOAF) [0.41, 0.47] label [-4, 19]
 component people [0.68, 0.74] label [17, 11]
 component physical material [0.67, 0.71] label [-18, 11]
 component digital material [0.67, 0.64] label [-76, -17]
 component collective (company) [0.68, 0.68] label [-36, -38]
 
-component rules [0.17, 0.58] label [11, 9]
-component exception [0.12, 0.55] label [-82, 3]
+component rules [0.14, 0.58] label [5, 10]
+component exception [0.10, 0.55] label [-76, 6]
 
 component over [0.04, 0.63] label [-18, 21]
 component with [0.04, 0.68] label [21, 2]
@@ -105,7 +106,22 @@ component regulation [0.89, 0.45] label [-84, 5]
 
 // component legitimacy [0.44, 0.11] label [-93, 3]
 // component sovereignty [0.47, 0.11] label [-92, 0]
-component trust [0.16, 0.69] label [7, 7]
+component trust [0.17, 0.43] label [-47, -5]
+pipeline trust [0.36, 0.53]
+
+component benevolence [0.15, 0.45] label [-21, 22]
+pipeline benevolence
+component capability [0.15, 0.52] label [-23, -21]
+pipeline capability
+component integrity [0.15, 0.37] label [-86, 0]
+pipeline integrity
+
+component situation [0.03, 0.25] label [-81, 2]
+
+// component credibility [0.17, 0.45] label [-50, 23]
+// pipeline credibility 
+// component reliability [0.17, 0.53] label [-36, 24]
+// pipeline reliability
 // component evidence [0.05, 0.69] label [9, 2]
 
 // component permission to act [0.61, 0.66] label [24, -9]
@@ -117,7 +133,7 @@ component trust [0.16, 0.69] label [7, 7]
 // component storage [0.02, 0.74] label [10, 2]
 
 // /// Trust
-// component trust [0.16, 0.69] label [-41, -7]
+// component trust [0.17, 0.43] label [-41, -7]
 // // component narratives [0.07, 0.39] label [-17, 24]
 // component avoiding harm [0.29, 0.58] label [-29, -13]
 // pipeline avoiding harm [0.41, 0.62]
@@ -193,7 +209,7 @@ decentralised authority->self signed
 issuing authority->exclusion
 // digital->consensus alogrithm
 // digital->self signed
-authority->trust
+// authority->trust
 // power->citizen
 // corporate->power
 society->entity
@@ -230,3 +246,8 @@ digital->physical material
 digital->collective (company)
 bad actor->rules
 bad actor->trust
+//entity->trust
+authority->trust
+bad actor->claim
+trust->awareness of context
+trust->situation
