@@ -69,13 +69,13 @@ component credential [0.33, 0.62] label [-65, 19]
 component identification [0.53, 0.73] label [-29, -14]
 pipeline identification [0.66, 0.77]
 component physical [0.51, 0.67] label [-35, -20]
-component digital [0.51, 0.76] label [19, 11]
+component digital [0.51, 0.76] label [19, 1]
 component authority [0.26, 0.68] label [-11, -16]
 pipeline authority [0.41, 0.76]
 
 component identifiers [0.43, 0.61] label [-79, -10]
 pipeline identifiers [0.46, 0.71]
-component mutable (name) [0.41, 0.70] label [20, 0]
+component mutable (name) [0.41, 0.70] label [14, 20]
 component immutable (facial geometry) [0.41, 0.64] label [4, 13]
 component connectedness (FOAF) [0.41, 0.47] label [-4, 19]
 component people [0.68, 0.74] label [17, 11]
@@ -97,10 +97,7 @@ component symbolic [0.05, 0.51] label [-76, 3]
 component to [0.05, 0.57] label [-10, -15]
 
 // component self signed [0.30, 0.42] label [-96, 4]
-
-
 // component government identity [0.42, 0.17]
-
 // component governance [0.89, 0.56] label [-45, -15]
 component regulation [0.89, 0.45] label [-84, 5]
 
@@ -117,6 +114,11 @@ component integrity [0.15, 0.37] label [-86, 0]
 pipeline integrity
 
 component situation [0.03, 0.25] label [-81, 2]
+
+component transport layer [0.46, 0.77] label [13, -4]
+pipeline transport layer
+
+note (e.g. internet) [0.44, 0.82]
 
 // component credibility [0.17, 0.45] label [-50, 23]
 // pipeline credibility 
@@ -251,3 +253,4 @@ authority->trust
 bad actor->claim
 trust->awareness of context
 trust->situation
+transport layer->digital
