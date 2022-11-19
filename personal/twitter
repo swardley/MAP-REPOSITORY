@@ -1,0 +1,111 @@
+
+title twitter
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+
+// users
+component user [0.98, 0.70] label [1, -15]
+component twitter [0.98, 0.52] label [-40, -17]
+component advertisers [0.98, 0.66] label [-49, -15]
+component regulators [0.98, 0.58] label [-46, -16]
+component device [0.95, 0.72] label [18, 5]
+
+//Specific needs
+component adverts [0.96, 0.68] label [-61, 4]
+
+
+// presentation
+component front_end [0.91, 0.65] label [-89, 0]
+component brand [0.88, 0.55] label [-48, 7]
+
+component network_access [0.87, 0.71] label [10, -10]
+pipeline network_access [0.69, 0.73]
+
+component mobile [0.86, 0.70] label [-60, 7]
+component web [0.85, 0.72] label [18, 2]
+
+component protocol [0.79, 0.72] label [-62, -15]
+pipeline protocol [0.69, 0.74]
+component graphQL [0.77, 0.70] label [-66, 1]
+component TLS-API [0.77, 0.73] label [20, 4]
+
+
+// control layers
+component timeline_mixer_(Control) [0.70, 0.68] label [-115, -21]
+pipeline timeline_mixer_(Control) [0.63, 0.78]
+
+component conversation module [0.68, 0.64] label [-96, -12]
+component ad_injector [0.69, 0.75] label [8, -10]
+component recommendation [0.68, 0.67] label [-64, 25]
+component pagination [0.68, 0.73] label [-45, -20]
+component data_logging [0.68, 0.77] label [17, 7]
+component dedup [0.68, 0.71] label [-1, 22]
+
+//Alt control layer
+component home_mixer_(Control) [0.57, 0.59] label [-109, -24]
+pipeline home_mixer_(Control)
+
+//backend service
+component backend components [0.50, 0.63] label [-34, -41]
+pipeline backend components [0.49, 0.71]
+component onboarding [0.48, 0.68] label [-37, -20]
+component admixer [0.48, 0.70] label [24, 2]
+component people discovery [0.48, 0.66] label [12, 15]
+component timeline scorer [0.49, 0.61] label [-21, 20]
+component home ranker [0.48, 0.50] label [-94, 0]
+component timeline service [0.49, 0.57] label [-42, 20]
+component home_score [0.37, 0.57] label [-87, 7]
+component candidate_fetch [0.36, 0.63] label [9, -23]
+
+//business processes
+component business_process [0.28, 0.57] label [-58, -28]
+pipeline business_process [0.51, 0.75]
+component feature hydration [0.26, 0.64] label [-53, 8]
+component prediction_service [0.26, 0.52] label [-112, -9]
+component crMixer [0.26, 0.66] label [-19, -19]
+component earlyBird [0.26, 0.68] label [-23, 25]
+component Uteg [0.26, 0.70] label [-15, -19]
+component space [0.26, 0.74] label [-20, 26]
+component commissioning [0.26, 0.72] label [-6, -18]
+
+//infrastructure components
+component foundational components [0.15, 0.59] label [-71, -37]
+pipeline foundational components [0.57, 0.73]
+component manhattan [0.14, 0.64] label [-36, -14]
+component memcache [0.13, 0.72] label [19, 2]
+component tweety pie [0.13, 0.67] label [-5, -22]
+component gizmoduck [0.13, 0.58] label [-90, 0]
+component social graph [0.13, 0.70] label [-30, 24]
+
+
+component infrastructure [0.04, 0.70] label [8, 2]
+pipeline infrastructure
+
+//relationships
+user->device
+device->front_end
+front_end->brand
+front_end->twitter
+advertisers->adverts
+network_access->front_end
+graphQL->mobile
+TLS-API->web
+business_process->foundational components
+foundational components->infrastructure
+graphQL->timeline_mixer_(Control)
+graphQL->home_mixer_(Control)
+timeline_mixer_(Control)->TLS-API
+home_mixer_(Control)->backend components
+timeline_mixer_(Control)->backend components
+home_mixer_(Control)->foundational components
+candidate_fetch->home ranker
+home_score->home ranker
+adverts->commissioning
+prediction_service->home_score
+crMixer->candidate_fetch
+earlyBird->candidate_fetch
+Uteg->candidate_fetch
+commissioning->candidate_fetch
+space->candidate_fetch
+feature hydration->home_score
