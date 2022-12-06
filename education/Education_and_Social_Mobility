@@ -1,4 +1,10 @@
-title Education and Social Mobility v4.5
+title Education and Social Mobility v4.6
+style wardley
+note (+opportunity) [0.83, 0.14]
+note (+task orientation) [0.96, 0.79]
+note (+thinking) [0.88, 0.59]
+note (+AI automation) [0.54, 0.13]
+note (+robotic automation) [0.52, 0.78]
 
 component government [1.00, 0.47] label [5, -10]
 government->regulation
@@ -6,94 +12,97 @@ government-> social cohesion
 government->societal demand for labour
 government->economy
 
-component societal demand for labour [0.96, 0.55] label [3, -47]
-component regulation [0.93, 0.36] label [-33, -12]
+component societal demand for labour [0.96, 0.55] label [-6, -37]
+component regulation [0.93, 0.36] label [-71, -4]
 societal demand for labour->Business
 regulation->agency
 regulation-> Business
 societal demand for labour->merit based management
 societal demand for labour->economy
 
-component social cohesion [0.94, 0.71] label [-44, -58]
-pipeline social cohesion [0.6, 0.8]
-component taught processes [0.92, 0.61] label [5, -45]
+component social cohesion [0.94, 0.71] label [-11, -39]
+pipeline social cohesion [0.63, 0.8]
+component taught principles [0.92, 0.64] label [-73, -7]
 component rules and rulers [0.92, 0.79] label [6, -27]
 social cohesion->social norms
 
-component economy [0.87, 0.49]
-pipeline economy [0.2, 0.8]
-component commoditisation of the economy [0.85, 0.79] label [24, -14]
-component new tech [0.85, 0.21] label [-58, 16]
+component economy [0.87, 0.49] label [-45, -12]
+pipeline economy [0.2, 0.82]
+component commoditisation of the economy [0.86, 0.81] label [40, -2]
+component new tech [0.85, 0.21] label [-76, -2]
 economy->choice
 economy->Business
 new tech->Business
 new tech->new roles
 new tech->entrepeneur
 
-component Business [0.77, 0.48] label [16, -26]
-pipeline Business [0.2, 0.8]
-component labour/mundane [0.75, 0.79] label [7, 23]
-component blue collar [0.75, 0.65] label [22, 21]
-component white collar [0.75, 0.37] label [14, 19]
-component new roles [0.76, 0.30] label [-30, -20]
-component entrepeneur [0.75, 0.26] label [-4, 44]
+component Business [0.77, 0.48] label [9, -5]
+pipeline Business [0.23, 0.79]
+component labour/mundane [0.76, 0.78] label [20, 9]
+component blue collar [0.75, 0.65] label [-53, 23]
+component white collar [0.75, 0.37] label [-43, 23]
+component new roles [0.75, 0.30] label [-51, 23]
+component entrepeneur [0.75, 0.24] label [-91, 2]
 Business->Work actions
 
-component DEI [0.70, 0.41] label [-36, -1]
-component skills gap [0.67, 0.56] label [12, 4]
+component DEI [0.67, 0.39] label [-35, 0]
+component skills gap [0.69, 0.56] label [12, 4]
 skills gap->skills training
 skills gap->Business
 DEI->Business
 
 component Work actions [0.59, 0.45] label [5, -10]
 pipeline Work actions [0.2, 0.8]
-component problem solving [0.57, 0.21] label [-15, 28]
-component task completion [0.57, 0.79] label [5, 17]
+component problem solving [0.57, 0.21] label [-72, -18]
+component task completion [0.57, 0.79] label [3, -3]
 
-component alumni [0.50, 0.34] label [-33, -12]
+component alumni [0.48, 0.34] label [-52, -3]
 alumni->skills training
 alumni->agency
 alumni->DEI
 
-component Education type [0.45, 0.60] label [5, -10]
+component Education type [0.45, 0.60] label [-35, -19]
 pipeline Education type [0.5, 0.8]
-component none [0.43, 0.78] label [-35, 25]
-component masters+ [0.43, 0.51] label [-60, 36]
-component uni [0.43, 0.57] label [-8, 32]
-component short courses [0.43, 0.63] label [-25, 26]
-component work specific [0.43, 0.71] label [-39, 42]
+component none [0.43, 0.79] label [23, 1]
+component masters+ [0.43, 0.51] label [-74, 4]
+component uni [0.43, 0.57] label [-14, 23]
+component short courses [0.43, 0.63] label [-41, 21]
+component work specific [0.43, 0.71] label [-29, 20]
 short courses->skills gap
 uni->alumni
 masters->alumni
 Education type->Business
 Education type-> Work actions
 
-component choice [0.36, 0.36] label [-39, -12]
+component choice [0.35, 0.36] label [-52, 5]
 choice->agency
 choice->School
 
-component agency [0.28, 0.51] label [5, -10]
+component agency [0.27, 0.51] label [11, 4]
 agency->Education type
 
-component awareness [0.29, 0.37] label [-5, 23]
+component awareness [0.24, 0.38] label [-51, 18]
 awareness->Social affordances
 awareness->choice
 
-component social norms [0.24, 0.77] label [25, 13]
+component social norms [0.26, 0.77] label [11, 4]
 
-component skills training [0.24, 0.21] label [-71, -16]
+component skills training [0.25, 0.22] label [-70, -21]
 skills training->problem solving
 skills training->individuals
 skills training->awareness
 skills training->Education type
 
 
-component Social affordances [0.17, 0.45] 
-component patronage [0.08, 0.31] label [-36, 27]
-component investment funds [0.08, 0.48] label [-34, 25]
-component natural ability [0.13, 0.57] label [-25, 21]
-component family [0.15, 0.64] label [-9, 17]
-component hope [0.09, 0.39]
+component social capital [0.06, 0.27] label [-89, 7]
+component real life experience [0.06, 0.61] label [-9, -7]
+
+component Social affordances [0.19, 0.45] label [-35, -36]
+component patronage [0.05, 0.55] label [-30, 20]
+component investment funds [0.11, 0.69] label [2, -19]
+component natural ability [0.08, 0.43] label [-41, 13]
+component family [0.09, 0.63] label [13, 7]
+component hope [0.09, 0.39] label [-37, 18]
 Social affordances->individuals
 Social affordances->hope
 Social affordances->agency
@@ -103,9 +112,24 @@ natural ability->Social affordances
 investment funds->Social affordances
 patronage->Social affordances
 
-component individuals choice [0.10, 0.08] label [-28, -35]
+component individuals choice [0.10, 0.20] label [-72, -16]
 individuals choice->Social affordances
 individuals choice->skills training
 
-component shocks [0.03, 0.07]
+component shocks [0.06, 0.49] label [-25, 19]
 shocks->Social affordances
+
+rules and rulers->blue collar
+rules and rulers->labour/mundane
+taught principles->entrepeneur
+social capital->Social affordances
+Social affordances->real life experience
+blue collar->task completion
+labour/mundane->task completion
+problem solving->entrepeneur
+white collar->problem solving
+white collar->task completion
+task completion->work specific
+task completion->short courses
+masters+->problem solving
+uni->problem solving
