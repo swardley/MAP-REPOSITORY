@@ -1,63 +1,123 @@
-// General
-// Map is licensed under creative commons share alike.
-// https://creativecommons.org/licenses/by-sa/4.0/
-// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+// https://onlinewardleymaps.com/#teHWp93XwxdnNpKX3b
 
-title Telecoms - Space
+title Space
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
 //additions
-component device [0.90, 0.09] label [12, 0]
-component routing [0.78, 0.09] label [10, 1]
-component peering [0.84, 0.09] label [9, 1]
-component data access [0.72, 0.09] label [10, 5]
-component backbone [0.66, 0.09] label [16, 2]
+// component device [0.87, 0.09] label [8, 3]
+// component routing [0.76, 0.09] label [8, 2]
+// component peering [0.82, 0.09] label [9, 5]
+// component data access [0.71, 0.09] label [9, 4]
+// component backbone [0.66, 0.09] label [10, 5]
+
 //Basics
 component consumer [0.95, 0.67] label [5, -10]
 component corporation [0.99, 0.53] label [-55, -10]
-component collaboration [0.86, 0.71] label [2, 14]
-component learning [0.88, 0.67] label [-50, -6]
-component social [0.79, 0.61] label [-46, -3]
-component space [0.64, 0.69] label [10, -4]
-component government [0.99, 0.60]
-component maintenance [0.05, 0.61] label [-88, 7]
-component land [0.05, 0.49] label [-15, 16]
+// component collaboration [0.86, 0.71] label [2, 14]
+// component learning [0.88, 0.67] label [-66, -6]
+// component social [0.79, 0.61] label [-52, -3]
+// component space [0.64, 0.69] label [11, -7]
+component government [0.99, 0.60] label [-14, -15]
+
+component LEO microsat [0.71, 0.70] label [20, 8]
+component GEO Sat [0.71, 0.39] label [-24, -20]
+component backhaul [0.50, 0.73] label [10, 5]
+component user terminal [0.61, 0.72] label [7, 3]
+component phased_array_antennas [0.46, 0.67] label [-122, -2]
+component satellite [0.73, 0.66] label [-72, -11]
+pipeline satellite [0.38, 0.71]
+
+// component maintenance [0.03, 0.64] label [-118, 4]
+//component land [0.04, 0.47] label [-25, 26]
+
 // Social and Space
-pipeline social [0.42, 0.73]
-component physical practices [0.77, 0.68] label [-10, 14]
-component virtual practices [0.77, 0.46] label [-40, 16]
+// pipeline social [0.42, 0.73]
+// component physical practices [0.77, 0.72] label [28, -4]
+// component virtual practices [0.78, 0.43] label [-75, 4]
+
 pipeline space [0.51, 0.76]
-component physical space [0.62, 0.56] label [-100, -16]
-component virtual space [0.62, 0.71] label [12, 24]
-component geography [0.07, 0.42] label [-77, 10]
+// component physical space [0.63, 0.52] label [-129, 6]
+// component virtual space [0.62, 0.75] label [22, 4]
+component geography [0.04, 0.42] label [-80, 0]
+
 //Network
-component network access [0.48, 0.70] label [10, -6]
-pipeline network access [0.44, 0.77]
-component physical network [0.46, 0.64] label [-64, -25]
-component broadcast [0.46, 0.72] label [-28, 26]
-component topology [0.35, 0.64] label [-47, -13]
-component groundstation [0.25, 0.60] label [-70, -13]
+component network access [0.88, 0.68] label [8, -7]
+pipeline network access [0.46, 0.77]
+
+component physical network [0.87, 0.59] label [-57, -40]
+component broadcast [0.86, 0.76] label [21, -1]
+component topology [0.81, 0.66] label [11, -5]
+component groundstation [0.53, 0.67] label [9, -1]
+
+component spectrum [0.33, 0.68] label [8, -6]
+pipeline spectrum [0.66, 0.71]
+component fleet management [0.20, 0.38] label [-71, -2]
+
+component Optical Sat2Sat Coms [0.56, 0.40] label [-32, -52]
+component propolsion [0.59, 0.66] label [-83, -7]
+pipeline propolsion [0.58, 0.68]
+
+component Krypton [0.57, 0.67] label [15, 1]
+component Xenon [0.57, 0.59] label [-57, 1]
+
+component power [0.65, 0.72] label [11, 3]
+component cooling [0.67, 0.60] label [-61, -5]
+pipeline cooling [0.5, 0.64]
+
 // Network Analysis
-pipeline topology [0.3, 0.8]
-component 5G [0.33, 0.43] label [2, 23]
-component fibre [0.33, 0.37] label [-28, 26]
-component satellite [0.33, 0.71] label [8, 24]
+pipeline topology [0.34, 0.74]
+component mobile [0.79, 0.42] label [-49, 20]
+component fibre [0.80, 0.35] label [-57, 7]
+component NTN (non terrestrial Network) [0.80, 0.73] label [17, -11]
+pipeline NTN (non terrestrial Network)
+
+component control_systems [0.22, 0.55] label [-31, -24]
+pipeline control_systems [0.37, 0.7]
+
+component orbit tracking [0.20, 0.69] label [19, 1]
+component debris tracking [0.20, 0.46] label [-35, 11]
+
+component Thermal Electric [0.65, 0.51] label [-78, -17]
+component Radiative [0.66, 0.63] label [16, 10]
+component Cryogens [0.65, 0.61] label [-48, 18]
+
+
+component automated_manufacturing [0.11, 0.61] label [-125, -4]
+pipeline automated_manufacturing
+
+component supply chains [0.02, 0.65] label [19, -1]
+
 // Network components
-component fibre [0.33, 0.37] label [-28, 26]
-component masts [0.15, 0.70] label [9, 7]
-component cubesat [0.25, 0.65] label [-39, 16]
-component wire [0.11, 0.70] label [3, 11]
-component launchers [0.24, 0.68] label [-11, 17]
-component mesh network [0.46, 0.48] label [-40, -18]
+component fibre [0.80, 0.35] label [-57, 7]
+// component masts [0.09, 0.69] label [18, 7]
+// component cubesat [0.43, 0.65] label [-39, 16]
+// component wire [0.06, 0.69] label [3, 11]
+component launchers [0.45, 0.69] label [21, 2]
+component mesh network [0.86, 0.47] label [-113, 2]
+
+//Satellite
+component beamforming [0.39, 0.67] label [-89, 3]
+component beam_steering [0.42, 0.65] label [-110, 3]
+component antenna [0.47, 0.68] label [-54, -8]
+pipeline antenna [0.66, 0.7]
+
+component Ku (12GHz) [0.31, 0.70] label [16, 1]
+component Ka (27GHz) [0.31, 0.68] label [-33, 26]
+component V (40GHz) [0.31, 0.67] label [-83, 1]
+component supply chain awareness [0.05, 0.53] label [-75, -16]
+//links
 fibre->wire
 5G->masts
 masts->geography
 wire->geography
-satellite->cubesat
+// satellite->cubesat
 network access ->topology
 physical network->fibre
 virtual practices->virtual space
 physical practices->physical space
 physical space->geography
+
 socialisation->social
 collaboration->social
 work->collaboration
@@ -71,16 +131,47 @@ status->physical practices
 physical space->network access
 fibre->geography
 5G->geography
-launchers->satellite
+// launchers->satellite
 consumer->government
 government->network access
 consumer->learning
 learning->social
-broadcast->satellite
+// broadcast->satellite
 broadcast->5G
 corporation->network access
-satellite->groundstation
+// satellite->groundstation
 masts->maintenance
 wire->maintenance
 masts->land
 consumer->collaboration
+consumer->network access
+mobile->geography
+masts->mobile
+broadcast->NTN (non terrestrial Network)
+broadcast->mobile
+NTN (non terrestrial Network)->satellite
+user terminal->satellite
+groundstation->satellite
+backhaul->groundstation
+LEO microsat->phased array antennas
+phased array antennas->groundstation
+LEO microsat->launchers
+LEO microsat->antenna
+antenna->spectrum
+groundstation->antenna
+phased_array_antennas->beam_steering
+beamforming->phased_array_antennas
+groundstation->control_systems
+satellite->control_systems
+LEO microsat->propolsion
+propolsion->fleet management
+LEO microsat->Sat2Sat
+LEO microsat->Optical Sat2Sat Coms
+power->satellite
+satellite->cooling
+LEO microsat->automated factory
+LEO microsat->automated_manufacturing
+
+automated_manufacturing->supply chain awareness
+supply chains->supply chain awareness
+automated_manufacturing->supply chains
