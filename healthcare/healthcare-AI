@@ -1,48 +1,49 @@
-// General
-// Map is licensed under creative commons share alike.
-// https://creativecommons.org/licenses/by-sa/4.0/
-// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
 title healthcare - AI
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 
-//notes
-note unused [0.16, 0.02]
-note + pharma / drug discovery [0.13, 0.02]
-note + insurance use of data [0.10, 0.02]
-note + implementation of standards [0.07, 0.02]
-note + training interface [0.04, 0.02]
-note + unless Elon buys twitter!! [0.29, 0.05]
-note + explore link history to standards [0.01, 0.02]
+// //notes
+// note unused [0.21, 0.01]
+// note + pharma / drug discovery [0.15, 0.02]
+// note + insurance use of data [0.12, 0.02]
+// note + implementation of standards [0.09, 0.02]
+// note + training interface [0.06, 0.02]
+// note + unless Elon buys twitter!! [0.18, 0.02]
+// note + explore link history to standards [0.03, 0.02]
+
 //components
-component clinician [0.80, 0.69] label [16, 4]
+component clinician [0.80, 0.69] label [16, 3]
 component patient [0.97, 0.64] label [13, 0]
+component 
+component micro expression analysis [0.51, 0.54] label [-10, 21]
+component predictive analytics [0.50, 0.70] label [-2, -45]
+component PACS [0.10, 0.72] label [17, 2]
 
-component AI capability [0.52, 0.60] label [-56, -12]
-pipeline AI capability [0.35, 0.73]
+component AI capability [0.52, 0.60] label [-55, -16]
+pipeline AI capability [0.35, 0.75]
 
-component doc scan [0.50, 0.56] label [-30, 24]
-component categorisation [0.50, 0.72] label [16, 3]
-component object recognition [0.50, 0.68] label [-14, 11]
-component clinical decision making [0.50, 0.42] label [-49, 15]
-component pathway management [0.50, 0.50] label [-43, 15]
-component clinical notes [0.50, 0.36] label [-100, 21]
-component voice [0.50, 0.64] label [-24, 23]
+component doc scan [0.51, 0.62] label [-19, 26]
+component categorisation [0.50, 0.74] label [16, 3]
+component object recognition [0.50, 0.68] label [-18, 14]
+component clinical decision making [0.50, 0.42] label [-40, 15]
+component pathway management [0.50, 0.51] label [-48, 7]
+component clinical notes [0.50, 0.36] label [-95, -21]
+component voice [0.50, 0.66] label [-2, -19]
 
 component data [0.23, 0.68] label [3, -11]
 pipeline data [0.56, 0.74]
 component structured [0.21, 0.73] label [17, 3]
-component unstructured [0.21, 0.57] label [-103, 4]
-component standards [0.12, 0.47] label [-9, -14]
-pipeline standards [0.40, 0.6]
-component snowmed [0.10, 0.45] label [-31, 24]
-component financial codes [0.10, 0.59] label [19, -3]
-component EHR [0.10, 0.41] label [-38, 5]
+component unstructured [0.21, 0.57] label [-103, -2]
+component standards [0.12, 0.47] label [9, -6]
+pipeline standards [0.38, 0.73]
+component snomed [0.10, 0.65] label [-19, 24]
+component financial codes [0.10, 0.62] label [-57, 14]
+component EHR [0.10, 0.39] label [-38, 0]
 
 component AI [0.36, 0.63] label [-22, -10]
 pipeline AI [0.15, 0.72]
 component machine learning [0.34, 0.71] label [19, -15]
-component deep learning [0.34, 0.53] label [-116, -14]
+component deep learning [0.34, 0.53] label [-86, -20]
 component General purpose [0.34, 0.16] label [-74, -12]
 
 component HCI [0.72, 0.54] label [-18, -11]
@@ -50,27 +51,31 @@ pipeline HCI [0.36, 0.59]
 component replace tasks [0.70, 0.58] label [13, 5]
 component replace people [0.70, 0.37] label [-122, 3]
 
+component clinical support [0.51, 0.46] label [-20, -36]
+
 component ethics [0.63, 0.43] label [-45, -9]
 pipeline ethics [0.34, 0.46]
 component bias [0.61, 0.39] label [-9, 18]
-component audit [0.61, 0.45] label [11, -7]
+component audit [0.61, 0.45] label [16, -6]
 component training data [0.28, 0.43] label [-109, 4]
 pipeline training data
-component history [0.15, 0.38] label [-62, 2]
+component history [0.18, 0.38] label [-61, 6]
 component healthcare [0.90, 0.61] label [-77, -8]
 pipeline healthcare [0.55, 0.69]
 component diagnosis [0.88, 0.68] label [18, 4]
 component triage [0.88, 0.56] label [-62, 5]
-component provider [0.82, 0.60] label [12, -3]
+component provider [0.82, 0.60] label [7, -5]
 pipeline provider [0.40, 0.7]
-component virtual assistant [0.80, 0.41] label [-78, -9]
-component chatbot [0.80, 0.53] label [-48, 21]
-component data store [0.04, 0.68] label [10, 5]
+component virtual assistant [0.80, 0.41] label [-91, -13]
+component chatbot [0.80, 0.53] label [-57, 21]
+component data store [0.05, 0.72] label [15, 15]
 component trust [0.93, 0.47]
 pipeline trust
 component augment tasks [0.70, 0.56] label [-5, 25]
-component regulation [0.53, 0.31] label [-83, 5]
+component regulation [0.38, 0.31] label [-85, 5]
 component consent [0.61, 0.35] label [-66, 5]
+component general practice EHR [0.10, 0.59] label [-17, -61]
+component digital pathology [0.10, 0.69] label [-26, -45]
 
 //link
 patient->trust
@@ -115,3 +120,4 @@ healthcare->provider
 regulation->standards
 
 object recognition->deep learning
+AI capability->regulation
