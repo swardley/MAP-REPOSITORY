@@ -1,123 +1,163 @@
-// General
-// Map is licensed under creative commons share alike.
-// https://creativecommons.org/licenses/by-sa/4.0/
-// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
-
-title government -sovereign risk
+title GOVERNMENT-SOVEREIGNTY
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-component law [0.59, 0.71] label [6, 13]
 
-component sovereign risk [0.34, 0.49] label [-57, -14]
-pipeline sovereign risk [0.3, 0.73]
-component CNI [0.32, 0.59] label [-3, 26]
-pipeline CNI
-// component energy [0.32, 0.63] label [-27, 25]
-// component food [0.32, 0.51] label [-5, 25]
-component territorial [0.32, 0.72] label [22, 6]
-// component digital [0.32, 0.56] label [-18, 26]
-component social [0.32, 0.31] label [-59, 3]
-component political [0.32, 0.40] label [-59, 26]
-// component climate [0.32, 0.60] label [-2, -16]
-component awareness [0.14, 0.20] label [-76, 3]
-component risk assement [0.20, 0.28] label [-19, 18]
-// component risk appetite [0.11, 0.43] label [0, -15]
-component economy [0.78, 0.73] label [6, -3]
-// component growth [0.70, 0.74] label [13, 1]
-component economic [0.32, 0.53] label [-35, 24]
-component social norms [0.54, 0.52] label [-55, -14]
-pipeline social norms [0.37, 0.71]
-component integrity [0.52, 0.47] label [-49, 24]
-component benevolence [0.52, 0.38] label [-53, 24]
-component fairness [0.52, 0.70] label [20, 3]
-component competency [0.52, 0.60] label [-28, 26]
-component society [0.92, 0.61] label [-63, 5]
-component public [0.90, 0.71] label [11, 5]
-component gov [0.95, 0.68] label [10, -7]
-// component resources [0.43, 0.44] label [-42, 18]
-// component cost [0.41, 0.66] label [-18, 17]
-component crisis response [0.75, 0.32] label [-70, -18]
-component public perception [0.86, 0.50] label [-77, -22]
-// component cybersecurity [0.32, 0.67] label [-13, 31]
-component supply chain [0.05, 0.21] label [-105, 7]
-// component historical data [0.12, 0.78] label [25, -16]
-// component territory [0.04, 0.44] label [-86, 4]
-component crisis [0.96, 0.35] label [-28, -9]
-pipeline crisis [0.3, 0.53]
-component economic shocks [0.94, 0.45] label [-52, -40]
-component war [0.94, 0.52] label [-7, -19]
-component pandemic [0.94, 0.31] label [-74, 6]
-component historic knowledge [0.23, 0.70] label [-32, 12]
-component "other" [0.77, 0.65] label [-5, -5]
-component success [0.83, 0.61] label [6, -2]
-
-component competition [0.69, 0.61] label [-29, -11]
-pipeline competition [0.47, 0.67]
-
-component inclusion [0.78, 0.48] label [-56, 18]
-component media [0.80, 0.55] label [-22, 19]
+//actors and chain
+component GOVERNMENT [0.99, 0.68] label [-24, -10]
+component society [0.96, 0.72] label [6, 4]
+component legitimacy [0.97, 0.64] label [-83, -7]
+component success [0.87, 0.70] label [8, 6]
+component public belonging [0.92, 0.58] label [-73, -32]
+component inclusion [0.87, 0.53] label [-76, 1]
+component crisis [0.97, 0.38] label [-52, 0]
+pipeline crisis //[0.3, 0.53]
+component crisis response [0.88, 0.36] label [-71, -9]
+component media [0.88, 0.59] label [-17, 20]
 pipeline media
 
-component conflict [0.67, 0.66] label [-19, 26]
-component co-operate [0.67, 0.59] label [-45, 24]
-component collaborate [0.67, 0.48] label [-97, 9]
-component exclusion [0.67, 0.72] label [-1, 17]
+
+//SOVREIGN
+component SOVEREIGNTY [0.80, 0.60] label [-45, -15]
+pipeline SOVEREIGNTY // [0.40, 0.71]
+component THEATRE [0.71, 0.60] label [7, -6]
+pipeline THEATRE // [0.46, 0.7]
+component COMPETITION [0.58, 0.63] label [-46, -14]
+pipeline COMPETITION // [0.53, 0.68]
+component AWARENESS [0.27, 0.64] label [-81, -4]
+pipeline AWARENESS // [0.3, 0.73]
+component CAPABILITY [0.41, 0.55] label [-52, -8]
+pipeline CAPABILITY // [0.49, 0.68]
+component VISIBILITY [0.34, 0.66] label [5, -7]
+pipeline VISIBILITY // [0.55, 0.68]
+component LANDSCAPE [0.06, 0.55] label [-72, -3]
+pipeline LANDSCAPE // [0.37, 0.66]
+
+// // MAJOR PIPELINES
+pipeline SOVEREIGNTY [0.40, 0.71]
+component territorial [0.79, 0.70] label [16, 8]
+component economic [0.79, 0.51] label [-21, -15]
+component political [0.79, 0.45] label [-50, -15]
+component digital [0.78, 0.41] label [-47, 23]
+component cultural [0.79, 0.63] label [-22, 28]
+component security [0.78, 0.54] label [-18, 22]
+
+pipeline THEATRE [0.46, 0.7]
+component land [0.70, 0.69] label [16, 6]
+component supply chain [0.69, 0.47] label [-106, 0]
+// component sea [0.67, 0.65] label [-17, 26]
+component cyber [0.70, 0.56] label [-23, 25]
+component CNI [0.69, 0.50] label [-11, -18]
+
+pipeline COMPETITION [0.53, 0.69]
+component conflict [0.56, 0.68] label [15, 3]
+component collaboration [0.56, 0.54] label [-111, -2]
+
+// component economy [0.64, 0.73] label [13, 3]
+component Trade [0.64, 0.74] label [13, -2]
+component exclusion [0.60, 0.74] label [10, 0]
+component law [0.53, 0.74] label [10, 5]
+
+component SOCIAL NORMS [0.50, 0.52] label [-55, -14]
+pipeline SOCIAL NORMS [0.36, 0.72]
+component integrity [0.48, 0.47] label [-49, 24]
+component benevolence [0.48, 0.37] label [-106, -4]
+component fairness [0.48, 0.71] label [17, 1]
+component competency [0.48, 0.59] label [-28, 26]
 
 
-//link
-gov->public
-gov->society
-society->public
-public->public perception
-public perception->growth
-economy->growth
-growth->historical data
-gov->economy
-crisis response->crisis
-public perception->crisis response
-public perception->social norms
-crisis response->benevolence
-cost->competency
-economy->competency
-cost->integrity
-competency->resources
-crisis response->sovereign risk
-crisis response->awareness
-sovereign risk->risk assement
-awareness->supply chain
-risk assement->risk appetite
-risk appetite->crisis response
-crisis->historic knowledge
-historical data->historic knowledge
-territory->historic knowledge
-historical data->territory
-territorial->territory
-risk appetite->territory
-// society->"other"
-success->public perception
-success->"other"
-media->public perception
-war->conflict
-success->competition
-economy->competition
-collaborate->benevolence
-co-operate->integrity
-conflict->territorial
-public perception->inclusion
-inclusion->fairness
-economy->exclusion
-law->exclusion
-society->social norms
+pipeline AWARENESS [0.3, 0.73]
+component supply chain awareness [0.26, 0.31] label [-86, -21]
+component territorial awareness [0.25, 0.72] label [30, -6]
+component digital chain awareness [0.26, 0.40] label [14, -52]
+
+pipeline LANDSCAPE [0.37, 0.66]
+component chain [0.04, 0.65] label [18, 2]
+component territory [0.04, 0.38] label [-80, 3]
+
+// OTHER PIPELINES
+pipeline CAPABILITY [0.49, 0.68]
+component kinetic [0.39, 0.67] label [17, 0]
+component inflitration [0.40, 0.58] label [-34, 28]
+component influence [0.39, 0.50] label [-83, 3]
+
+pipeline VISIBILITY [0.55, 0.68]
+component covert [0.32, 0.56] label [-60, 3]
+component overt [0.32, 0.67] label [16, 3]
+
+// AWARENESS CHAINS
+component FORECASTING [0.19, 0.36] label [-88, -8]
+component MODEL [0.12, 0.36] label [-1, -13]
+
+// AWARENESS DEETS
+pipeline FORECASTING [0.25, 0.4]
+component scenario planning [0.17, 0.39] label [21, -9]
+component simulation [0.17, 0.26] label [-97, 1]
+
+pipeline MODEL [0.2, 0.48]
+component visualisation [0.10, 0.47] label [20, 4]
+component RT simuluation [0.10, 0.36] label [-55, 21]
+component HOOTL [0.10, 0.21] label [-59, 6]
+component whatif simulation [0.10, 0.27] label [-40, 11]
+
+
+// //relationships
+GOVERNMENT->society
+GOVERNMENT->legitimacy
+legitimacy->SOVEREIGNTY
+territorial->land
+economic->supply chain
+SOVEREIGNTY->THEATRE
+sea->territorial
+economic->cyber
+cyber->technological
+cyber->political
+SOVEREIGNTY->COMPETITION
+COMPETITION->AWARENESS
+THEATRE->AWARENESS
+supply chain->supply chain awareness
+land->territorial awareness
+cyber->digital chain awareness
+VISIBILITY->COMPETITION
+SOVEREIGNTY->CAPABILITY
+covert->inflitration
+CAPABILITY->AWARENESS
+cultural->influence
+CNI->supply chain awareness
+security->CNI
+supply chain awareness->chain
+chain->digital chain awareness
+chain->manufacturer
+manufacturer->supplier
+chain->delivery
+delivery->manufacturer
+CAPABILITY->chain
+logistics->transportation
+supply chain awareness->FORECASTING
+digital chain awareness->FORECASTING
+MODEL->simulation
+chain->MODEL
+digital->cyber
+inflitration->cyber
+other knowledge->chain
+AWARENESS->LANDSCAPE
+territory->territorial awareness
 society->success
-success->economy
-"other"->conflict
-CNI->public perception
-// success->sovereign risk
-integrity->political
-benevolence->social
-// fairness->law
-competency->economic
-law->social norms
-risk assement->awareness
-crisis response->collaborate
+society->public belonging
+public belonging->media
+public belonging->inclusion
+crisis->crisis response
+success->SOVEREIGNTY
+success->COMPETITION
+fairness->inclusion
+supply chain->Trade
+Trade->exclusion
+law->exclusion
+Trade->COMPETITION
+exclusion->conflict
+SOCIAL NORMS->law
+public belonging->crisis response
+THEATRE->crisis response
+benevolence->crisis response
+public belonging->SOCIAL NORMS
+public belonging->success
