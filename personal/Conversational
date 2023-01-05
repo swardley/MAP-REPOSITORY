@@ -1,8 +1,12 @@
 title technology
 component user [0.99, 0.67] label [7, -5]
 
-component APPLICATION [0.95, 0.66] label [-97, -3]
+component APPLICATION [0.93, 0.65] label [-97, -3]
 pipeline APPLICATION
+
+component SPIMESCRIPT [0.89, 0.79]
+component DEVICE [0.93, 0.75] label [8, -12]
+component NEED [0.90, 0.68]
 
 component IDE [0.76, 0.67] label [6, -13]
 pipeline IDE [0.4, 0.75]
@@ -30,6 +34,9 @@ pipeline CODE REPOSITORY [0.54, 0.75]
 component SVN [0.58, 0.55] label [-47, 0]
 component Github [0.59, 0.74] label [22, 10]
 component CPAN [0.58, 0.68] label [-17, 24]
+
+component SERVICE RESPOSITORY [0.62, 0.46] label [-78, -2]
+pipeline SERVICE RESPOSITORY
 
 component CODING PRACTICE [0.50, 0.65] label [-70, -35]
 pipeline CODING PRACTICE [0.52, 0.75]
