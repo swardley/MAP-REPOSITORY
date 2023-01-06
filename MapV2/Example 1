@@ -1,0 +1,52 @@
+title Example
+
+component tribe [1.00, 0.69] label [-39, 0]
+component hunter [0.95, 0.71] label [12, 4]
+
+// component Need0 [0.90, 0.13] label [-43, -13]
+// pipeline Need0 [0.1, 0.90]
+
+// component Need1 [0.80, 0.11] label [-43, -13]
+// pipeline Need1 [0.11, 0.12]
+
+
+component Need2 [0.69, 0.30] label [5, -9]
+pipeline Need2 [0.18, 0.39]
+
+component Existing2 [0.67, 0.24] label [0, 26]
+component Entrant2 [0.67, 0.43] label [0, 26]
+
+component Existing2 [0.67, 0.24] label [0, 26]
+component Entrant2 [0.67, 0.43] label [0, 26]
+
+
+component Need3a [0.57, 0.61] label [13, -13]
+pipeline Need3a [0.18, 0.69]
+
+component Existing3a [0.55, 0.24] label [0, 26]
+component Entrant3a [0.55, 0.43] label [-13, 25]
+
+component Need3b [0.43, 0.61] label [13, -13]
+pipeline Need3b [0.18, 0.69]
+
+component Existing3b [0.42, 0.23] label [0, 26]
+component Entrant3b [0.41, 0.64] label [-24, 26]
+component Existing3b2 [0.42, 0.43] label [-16, 31]
+
+
+// component ConstrainedNeed1 [0.35, 0.62] label [-97, -11]
+// pipeline ConstrainedNeed1 [0.41, 0.69]
+
+// component ConstrainedNeed2 [0.24, 0.80] label [22, -21]
+// pipeline ConstrainedNeed2 [0.71, 0.9]
+
+// component ConstrainedNeed3 [0.10, 0.81] label [-7, -20]
+// pipeline ConstrainedNeed3 [0.40, 0.9]
+
+
+// component Need4 [0.48, 0.81] label [9, -11]
+// pipeline Need4 [0.18, 0.9]
+
+hunter->telltime0
+tribe->hunter
+hunter->Need0
