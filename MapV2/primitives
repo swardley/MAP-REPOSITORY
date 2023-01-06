@@ -1,4 +1,4 @@
-title tribe
+title primitives
 
 component tribe [1.00, 0.69] label [-39, 0]
 component hunter [0.95, 0.71] label [12, 4]
