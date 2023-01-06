@@ -10,14 +10,18 @@ component hunter [0.95, 0.71] label [12, 4]
 // pipeline Need1 [0.11, 0.12]
 
 
-component Need2 [0.69, 0.30] label [5, -9]
+component Need2 [0.82, 0.38] label [-18, -15]
 pipeline Need2 [0.18, 0.39]
 
-component Existing2 [0.67, 0.24] label [0, 26]
-component Entrant2 [0.67, 0.43] label [0, 26]
+component Existing2 [0.80, 0.22] label [-17, 24]
+component Entrant2 [0.80, 0.45] label [8, 4]
 
-component Existing2 [0.67, 0.24] label [0, 26]
-component Entrant2 [0.67, 0.43] label [0, 26]
+
+component Need25 [0.71, 0.47] label [5, -9]
+pipeline Need25 [0.18, 0.48]
+
+component Existing25 [0.69, 0.22] label [0, 26]
+component Entrant25 [0.69, 0.45] label [-20, 30]
 
 
 component Need3a [0.57, 0.61] label [13, -13]
