@@ -14,7 +14,7 @@ component Need2 [0.82, 0.38] label [-18, -15]
 pipeline Need2 [0.18, 0.39]
 
 component Existing2 [0.80, 0.22] label [-17, 24]
-component Entrant2 [0.80, 0.45] label [8, 4]
+component Entrant2 [0.80, 0.46] label [8, 4]
 
 
 component Need25 [0.71, 0.47] label [5, -9]
@@ -24,13 +24,13 @@ component Existing25 [0.69, 0.22] label [0, 26]
 component Entrant25 [0.69, 0.45] label [-20, 30]
 
 
-component Need3a [0.57, 0.61] label [13, -13]
+component Need3a [0.57, 0.68] label [13, -13]
 pipeline Need3a [0.18, 0.69]
 
 component Existing3a [0.55, 0.24] label [0, 26]
 component Entrant3a [0.55, 0.43] label [-13, 25]
 
-component Need3b [0.43, 0.61] label [13, -13]
+component Need3b [0.43, 0.68] label [13, -13]
 pipeline Need3b [0.18, 0.69]
 
 component Existing3b [0.42, 0.23] label [0, 26]
