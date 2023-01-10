@@ -1,62 +1,73 @@
-// General
-// Map is licensed under creative commons share alike.
-// https://creativecommons.org/licenses/by-sa/4.0/
-// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
-
 title manufacturing - supply chains
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note unused [0.21, 0.07]
-component inept actors [0.18, 0.08] label [12, 2]
-component availablity [0.14, 0.08]
-component sensors [0.10, 0.08] label [12, 4]
-component R&D [0.53, 0.21] label [-23, -12]
-component checksum [0.06, 0.08] label [12, 3]
+// note unused [0.21, 0.01]
+// component inept actors [0.19, 0.02] label [9, 4]
+// component availablity [0.17, 0.02] label [12, 1]
+// component sensors [0.15, 0.02] label [12, 4]
+// component checksum [0.13, 0.02] label [12, 3]
 
-component government [0.92, 0.56] label [-26, -13]
-component manufacturer [0.92, 0.63]
-component bad actor [0.92, 0.41] label [-76, -6]
-component regulation [0.59, 0.48] label [-82, 4]
-component safety [0.82, 0.56] label [-51, 2]
-component distributor [0.92, 0.48] label [-45, -21]
+
+component product [0.87, 0.64] label [-60, 3]
+pipeline product 
+
+component sales forecasting [0.82, 0.62] label [-57, 0]
+
+component R&D [0.53, 0.22] label [-35, 5]
+
+component government [0.93, 0.56] label [-29, -15]
+component manufacturer [0.95, 0.65] label [9, -6]
+// component bad actor [0.92, 0.41] label [-76, -6]
+component regulation [0.65, 0.47] label [-86, 4]
+component safety [0.87, 0.55] label [-51, 4]
+component distributor [0.92, 0.48] label [-54, -12]
 component IP [0.74, 0.49] label [-21, -5]
-pipeline IP [0.38, 0.59]
-component materials [0.59, 0.64] label [-77, -10]
-pipeline materials [0.52, 0.76]
+pipeline IP [0.41, 0.54]
+component materials [0.59, 0.64] label [-59, -12]
+pipeline materials [0.40, 0.76]
 
-component design [0.72, 0.42] label [-30, -16]
-component relationships [0.72, 0.54] label [-13, -18]
-component supply chain [0.46, 0.29] label [-94, -7]
+component design [0.72, 0.42] label [-64, 0]
+component relationships [0.73, 0.53] label [19, 9]
+component supply chain [0.47, 0.64] label [9, -8]
 
 
 component agility [0.81, 0.33] label [-64, 1]
-component transparency [0.06, 0.54] label [-72, 19]
-component awareness [0.22, 0.41] label [-78, 3]
-component certification [0.28, 0.49] label [-103, 0]
+component transparency [0.10, 0.43] label [-96, 4]
+pipeline transparency
+component awareness [0.24, 0.30] label [-79, 3]
+component certification [0.53, 0.70] label [9, 6]
 
-component automation [0.12, 0.68] label [-3, 28]
-component clipboard [0.12, 0.47] label [-54, 25]
+component automation [0.20, 0.69] label [18, 10]
+component clipboard [0.19, 0.44] label [-27, -22]
 
-component reliability [0.78, 0.67] label [-25, 21]
-component inventory management [0.35, 0.62] label [-75, -26]
+component reliability [0.78, 0.68] label [8, 5]
+component inventory management [0.33, 0.64] label [18, -30]
 pipeline inventory management [0.51, 0.7]
 
-component just in time [0.33, 0.66] label [-40, 26]
-component just in case [0.33, 0.54] label [-33, 24]
-component warehousing [0.21, 0.65] label [3, 10]
-component cost [0.79, 0.76]
-component forecasting [0.38, 0.41] label [-88, 1]
-component logistics [0.14, 0.60] label [11, -9]
-pipeline logistics [0.43, 0.72]
+component just in time [0.31, 0.69] label [17, 2]
+component just in case [0.31, 0.52] label [-105, -2]
+component warehousing [0.26, 0.66] label [3, 1]
+component cost [0.77, 0.77] label [8, 3]
+component forecasting [0.38, 0.44] label [-44, -13]
+component logistics [0.21, 0.60] label [12, -7]
+pipeline logistics [0.43, 0.70]
 
 component data [0.02, 0.66] label [11, 1]
-component ROCE [0.89, 0.72]
+component ROCE [0.91, 0.72] label [8, -3]
 
-component critical national infrastructure [0.67, 0.23] label [-75, -19]
-component capital [0.86, 0.77]
+component energy [0.41, 0.70] label [13, 6]
+pipeline energy
 
-pipeline supply chain [0.23, 0.47]
+component critical national infrastructure [0.68, 0.58] label [12, -15]
+pipeline critical national infrastructure
+
+component capital [0.85, 0.78] label [10, 4]
+
+pipeline supply chain [0.51, 0.73]
+
+component authority [0.49, 0.51] label [-78, 2]
+
 
 //link
 manufacturer->agility
@@ -64,26 +75,26 @@ manufacturer->reliability
 distributor->relationships
 government->safety
 safety->regulation
-manufacturer->materials
+// manufacturer->materials
 reliability->supply chain
 supply chain->inventory management
 supply chain->logistics
-manufacturer->forecasting
+// manufacturer->forecasting
 regulation->certification
 awareness->transparency
 warehousing->inventory management
 forecasting->awareness
-supply chain->awareness
+// supply chain->awareness
 certification->transparency
 materials->supply chain
 bad actor->transparency
 agility->transparency
 data->transparency
-cost->inventory management
-cost->logistics
-warehousing->cost
+// cost->inventory management
+// cost->logistics
+// warehousing->cost
 manufacturer->ROCE
-ROCE->cost
+// ROCE->cost
 relationships->supply chain
 manufacturer->design
 government->critical national infrastructure
@@ -92,3 +103,13 @@ capital->ROCE
 cost->materials
 data->automation
 design->R&D
+supply chain->forecasting
+product->manufacturer
+product->cost
+product->sales forecasting
+product->materials
+ROCE->product
+
+certification->materials
+authority->certification
+supply chain->energy
