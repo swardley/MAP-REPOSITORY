@@ -1,7 +1,6 @@
-title construction
+title construction - supply chain
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
-
 
 //actors
 
@@ -26,8 +25,8 @@ component trade [0.47, 0.68] label [22, 0]
 component labour [0.58, 0.66] label [5, -8]
 pipeline labour [0.62, 0.73]
 
-component unskilled_labour [0.56, 0.72] label [40, -6]
-component skilled_labour [0.56, 0.63] label [-27, 22]
+component unskilled_labour [0.56, 0.72] label [50, -13]
+component skilled_labour [0.56, 0.63] label [-56, 19]
 // component training [0.33, 0.61] label [-16, 28]
 // component training content [0.22, 0.50] label [-69, -18]
 component certification [0.39, 0.58] label [11, 5]
@@ -36,7 +35,7 @@ component certification [0.39, 0.58] label [11, 5]
 // component process automation [0.13, 0.31] label [-81, -32]
 // component specialist_labour [0.06, 0.17] label [-93, -20]
 
-component foreman [0.47, 0.47] label [-66, 3]
+component foreman [0.48, 0.47] label [-66, 3]
 component machinery [0.47, 0.56] label [-35, 21]
 component skills [0.49, 0.62] label [7, -6]
 pipeline skills [0.46, 0.69]
@@ -85,7 +84,7 @@ component quality assurance [0.92, 0.46] label [-68, -32]
 component standards [0.26, 0.58] label [8, 2]
 component testing [0.34, 0.51] label [-40, -13]
 pipeline testing [0.45, 0.60]
-component prefab [0.61, 0.50] label [-59, 4]
+component prefab [0.62, 0.50] label [-59, 4]
 component regulation [0.71, 0.52] label [-84, 5]
 pipeline regulation
 
@@ -189,3 +188,29 @@ benchmarks->standards
 prefab->modular
 raw materials->supply chain
 factory mode (Inflight)->test driven development
+component Logistics [0.43, 0.50] label [-88, -4]
+pipeline Logistics [0.38, 0.73]
+//component Durability [0.18, 0.17]
+component Supply Chain Awareness [0.44, 0.25] label [-40, 13]
+//pipeline Local Supply [0.05, 0.13]
+//component Local Supply [0.51, 0.09] label [-69, -17]
+building materials->
+prefab->Logistics
+skilled_labour->Logistics
+manufacture->Logistics
+foreman->Supply Chain Awareness
+Logistics->Supply Chain Awareness
+manufacture->Supply Chain Awareness
+supply chain->Supply Chain Awareness
+component Substitutability [0.55, 0.29] label [-89, -23]
+Supply Chain Awareness->Substitutability
+blueprint->Supply Chain Awareness
+blueprint->Substitutability
+component CNI [0.80, 0.26] label [-14, -10]
+government->CNI
+CNI->Supply Chain Awareness
+//note Local supply of skills and labour (decentralised + distributed) - open question [0.59, 0.02]
+//note Need Local supply of skill labour [0.68, 0.08]
+CNI->skilled_labour
+component locality [0.71, 0.29] label [-13, 20]
+CNI->locality
