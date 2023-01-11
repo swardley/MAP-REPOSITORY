@@ -23,7 +23,8 @@ component government [0.99, 0.60] label [-14, -15]
 component LEO microsat [0.71, 0.70] label [20, 8]
 component GEO Sat [0.71, 0.39] label [-24, -20]
 component backhaul [0.50, 0.73] label [10, 5]
-component user terminal [0.61, 0.72] label [7, 3]
+component user terminal [0.61, 0.72] label [5, 1]
+pipeline user terminal
 component phased_array_antennas [0.46, 0.67] label [-122, -2]
 component satellite [0.73, 0.66] label [-72, -11]
 pipeline satellite [0.38, 0.71]
@@ -39,7 +40,7 @@ pipeline satellite [0.38, 0.71]
 pipeline space [0.51, 0.76]
 // component physical space [0.63, 0.52] label [-129, 6]
 // component virtual space [0.62, 0.75] label [22, 4]
-component geography [0.04, 0.42] label [-80, 0]
+component geography [0.04, 0.42] label [-74, 12]
 
 //Network
 component network access [0.88, 0.68] label [8, -7]
@@ -55,8 +56,8 @@ pipeline spectrum [0.66, 0.71]
 component fleet management [0.20, 0.38] label [-71, -2]
 
 component Optical Sat2Sat Coms [0.56, 0.40] label [-32, -52]
-component propolsion [0.59, 0.66] label [-83, -7]
-pipeline propolsion [0.58, 0.68]
+component propulsion [0.59, 0.66] label [-83, -7]
+pipeline propulsion [0.58, 0.68]
 
 component Krypton [0.57, 0.67] label [15, 1]
 component Xenon [0.57, 0.59] label [-57, 1]
@@ -69,35 +70,35 @@ pipeline cooling [0.5, 0.64]
 pipeline topology [0.34, 0.74]
 component mobile [0.79, 0.42] label [-49, 20]
 component fibre [0.80, 0.35] label [-57, 7]
-component NTN (non terrestrial Network) [0.80, 0.73] label [17, -11]
+component NTN (non terrestrial Network) [0.79, 0.73] label [17, -11]
 pipeline NTN (non terrestrial Network)
 
 component control_systems [0.22, 0.55] label [-31, -24]
 pipeline control_systems [0.37, 0.7]
 
 component orbit tracking [0.20, 0.69] label [19, 1]
-component debris tracking [0.20, 0.46] label [-35, 11]
+component debris tracking [0.20, 0.46] label [-15, 11]
 
 component Thermal Electric [0.65, 0.51] label [-78, -17]
-component Radiative [0.66, 0.63] label [16, 10]
+component Radiative [0.65, 0.63] label [16, 10]
 component Cryogens [0.65, 0.61] label [-48, 18]
 
 
-component automated_manufacturing [0.11, 0.61] label [-125, -4]
+component automated_manufacturing [0.11, 0.61] label [72, -7]
 pipeline automated_manufacturing
 
-component supply chains [0.02, 0.65] label [19, -1]
+component supply chains [0.02, 0.65] label [11, 1]
 
 // Network components
 component fibre [0.80, 0.35] label [-57, 7]
 // component masts [0.09, 0.69] label [18, 7]
 // component cubesat [0.43, 0.65] label [-39, 16]
 // component wire [0.06, 0.69] label [3, 11]
-component launchers [0.45, 0.69] label [21, 2]
+component launchers [0.67, 0.72] label [21, 2]
 component mesh network [0.86, 0.47] label [-113, 2]
 
 //Satellite
-component beamforming [0.39, 0.67] label [-89, 3]
+component beamforming [0.39, 0.67] label [-94, 2]
 component beam_steering [0.42, 0.65] label [-110, 3]
 component antenna [0.47, 0.68] label [-54, -8]
 pipeline antenna [0.66, 0.7]
@@ -105,7 +106,7 @@ pipeline antenna [0.66, 0.7]
 component Ku (12GHz) [0.31, 0.70] label [16, 1]
 component Ka (27GHz) [0.31, 0.68] label [-33, 26]
 component V (40GHz) [0.31, 0.67] label [-83, 1]
-component supply chain awareness [0.05, 0.53] label [-75, -16]
+component supply chain awareness [0.05, 0.53] label [-66, -16]
 //links
 fibre->wire
 5G->masts
@@ -163,9 +164,9 @@ phased_array_antennas->beam_steering
 beamforming->phased_array_antennas
 groundstation->control_systems
 satellite->control_systems
-LEO microsat->propolsion
-propolsion->fleet management
-LEO microsat->Sat2Sat
+LEO microsat->propulsion
+propulsion->fleet management
+LEO microsat->Sat2Satp
 LEO microsat->Optical Sat2Sat Coms
 power->satellite
 satellite->cooling
@@ -175,3 +176,10 @@ LEO microsat->automated_manufacturing
 automated_manufacturing->supply chain awareness
 supply chains->supply chain awareness
 automated_manufacturing->supply chains
+component space_regulation [0.10, 0.39] label [-86, -20]
+pipeline space_regulation 
+spectrum->space_regulation
+orbit tracking->space_regulation
+space_regulation->space_regulation
+debris tracking->space_regulation
+component mobility management [0.20, 0.51] label [12, 12]
