@@ -1,10 +1,15 @@
-title Education and Social Mobility v4.6
+title Education and Social Mobility v4.8
 style wardley
 note (+opportunity) [0.83, 0.14]
-note (+task orientation) [0.96, 0.79]
-note (+thinking) [0.88, 0.59]
+note (+task orientation) [0.71, 0.79]
+note (+thinking) [0.72, 0.11]
 note (+AI automation) [0.54, 0.13]
 note (+robotic automation) [0.52, 0.78]
+note (change to post compulsary) [0.39, 0.68]
+note (does this need its own map) [0.45, 0.22]
+//skills training being a big challenge to execute and there being
+//a correlated skills gap for trainers that can perform this
+//economics of this as well  
 
 component government [1.00, 0.47] label [5, -10]
 government->regulation
@@ -15,16 +20,17 @@ government->economy
 component societal demand for labour [0.96, 0.55] label [-6, -37]
 component regulation [0.93, 0.36] label [-71, -4]
 societal demand for labour->Business
-regulation->agency
+//regulation->agency
 regulation-> Business
 societal demand for labour->merit based management
 societal demand for labour->economy
 
 component social cohesion [0.94, 0.71] label [-11, -39]
-pipeline social cohesion [0.63, 0.8]
-component taught principles [0.92, 0.64] label [-73, -7]
-component rules and rulers [0.92, 0.79] label [6, -27]
+//pipeline social cohesion [0.63, 0.8]
+//component taught principles [0.92, 0.64] label [-73, -7]
+//component rules and rulers [0.92, 0.79] label [6, -27]
 social cohesion->social norms
+note (correct this) [0.76, 0.10]
 
 component economy [0.87, 0.49] label [-45, -12]
 pipeline economy [0.2, 0.82]
@@ -36,41 +42,51 @@ new tech->Business
 new tech->new roles
 new tech->entrepeneur
 
+
+component collaboration [0.66, 0.25] label [-26, -16]
+
 component Business [0.77, 0.48] label [9, -5]
 pipeline Business [0.23, 0.79]
 component labour/mundane [0.76, 0.78] label [20, 9]
 component blue collar [0.75, 0.65] label [-53, 23]
 component white collar [0.75, 0.37] label [-43, 23]
 component new roles [0.75, 0.30] label [-51, 23]
-component entrepeneur [0.75, 0.24] label [-91, 2]
+component entrepeneur [0.75, 0.24] label [-100, 2]
 Business->Work actions
 
-component DEI [0.67, 0.39] label [-35, 0]
-component skills gap [0.69, 0.56] label [12, 4]
-skills gap->skills training
-skills gap->Business
+component DEI [0.66, 0.42] label [-35, 0]
+component skills gap [0.65, 0.34] label [-55, 25]
+skills gap+<>skills training
+skills gap+<>Business
 DEI->Business
 
 component Work actions [0.59, 0.45] label [5, -10]
-pipeline Work actions [0.2, 0.8]
-component problem solving [0.57, 0.21] label [-72, -18]
+pipeline Work actions [0.1, 0.8]
+component problem solving [0.57, 0.19] label [-28, -48]
 component task completion [0.57, 0.79] label [3, -3]
+component identify new market [0.57, 0.11] label [-38, -64]
 
-component alumni [0.48, 0.34] label [-52, -3]
+component alumni [0.50, 0.42] label [-55, -12]
 alumni->skills training
 alumni->agency
 alumni->DEI
 
-component Education type [0.45, 0.60] label [-35, -19]
+component Experienced individual [0.40, 0.24] label [-29, 8]
+Work actions+<>Experienced individual
+Experienced individual+<>short courses
+
+component new agency [0.47, 0.47]
+
+component Education type [0.36, 0.59] label [-35, -19]
 pipeline Education type [0.5, 0.8]
-component none [0.43, 0.79] label [23, 1]
-component masters+ [0.43, 0.51] label [-74, 4]
-component uni [0.43, 0.57] label [-14, 23]
-component short courses [0.43, 0.63] label [-41, 21]
-component work specific [0.43, 0.71] label [-29, 20]
-short courses->skills gap
+component none [0.34, 0.78] label [23, 1]
+component masters, phd+ [0.34, 0.52] label [-97, 26]
+component uni [0.34, 0.55] label [-14, 23]
+component short courses [0.34, 0.64] label [4, -18]
+component work specific [0.34, 0.72] label [-29, 20]
+//short courses->skills gap
 uni->alumni
-masters->alumni
+masters, phd+->alumni
 Education type->Business
 Education type-> Work actions
 
@@ -78,8 +94,10 @@ component choice [0.35, 0.36] label [-52, 5]
 choice->agency
 choice->School
 
-component agency [0.27, 0.51] label [11, 4]
-agency->Education type
+
+component initial agency [0.27, 0.51] label [14, -3]
+initial agency->Education type
+
 
 component awareness [0.24, 0.38] label [-51, 18]
 awareness->Social affordances
@@ -87,12 +105,13 @@ awareness->choice
 
 component social norms [0.26, 0.77] label [11, 4]
 
-component skills training [0.25, 0.22] label [-70, -21]
+component skills training [0.42, 0.36] label [-70, -21]
 skills training->problem solving
 skills training->individuals
-skills training->awareness
-skills training->Education type
-
+//skills training->awareness
+skills training+<>short courses
+short courses+<>new agency
+new agency+<>Work actions
 
 component social capital [0.06, 0.27] label [-89, 7]
 component real life experience [0.06, 0.61] label [-9, -7]
@@ -105,7 +124,7 @@ component family [0.09, 0.63] label [13, 7]
 component hope [0.09, 0.39] label [-37, 18]
 Social affordances->individuals
 Social affordances->hope
-Social affordances->agency
+Social affordances->initial agency
 family->Social affordances
 social norms->Social affordances
 natural ability->Social affordances
@@ -114,7 +133,9 @@ patronage->Social affordances
 
 component individuals choice [0.10, 0.20] label [-72, -16]
 individuals choice->Social affordances
-individuals choice->skills training
+//individuals choice->skills training
+component high school [0.25, 0.69] label [-27, -17]
+component primary school [0.16, 0.75]
 
 component shocks [0.06, 0.49] label [-25, 19]
 shocks->Social affordances
@@ -133,3 +154,8 @@ task completion->work specific
 task completion->short courses
 masters+->problem solving
 uni->problem solving
+primary school->high school
+Social affordances->primary school
+high school->initial agency
+
+entrepeneur->identify new market
