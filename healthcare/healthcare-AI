@@ -2,15 +2,6 @@ title healthcare - AI
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 
-// //notes
-// note unused [0.21, 0.01]
-// note + pharma / drug discovery [0.15, 0.02]
-// note + insurance use of data [0.12, 0.02]
-// note + implementation of standards [0.09, 0.02]
-// note + training interface [0.06, 0.02]
-// note + unless Elon buys twitter!! [0.18, 0.02]
-// note + explore link history to standards [0.03, 0.02]
-
 //components
 component clinician [0.80, 0.69] label [16, 3]
 component patient [0.97, 0.64] label [13, 0]
@@ -20,14 +11,14 @@ component predictive analytics [0.50, 0.70] label [-2, -45]
 component PACS [0.10, 0.72] label [17, 2]
 
 component AI capability [0.52, 0.60] label [-55, -16]
-pipeline AI capability [0.35, 0.75]
+pipeline AI capability [0.25, 0.75]
 
 component doc scan [0.51, 0.62] label [-19, 26]
 component categorisation [0.50, 0.74] label [16, 3]
 component object recognition [0.50, 0.68] label [-18, 14]
 component clinical decision making [0.50, 0.42] label [-40, 15]
 component pathway management [0.50, 0.51] label [-48, 7]
-component clinical notes [0.50, 0.36] label [-95, -21]
+component clinical notes [0.50, 0.36] label [-102, 18]
 component voice [0.50, 0.66] label [-2, -19]
 
 component data [0.23, 0.68] label [3, -11]
@@ -57,8 +48,8 @@ component ethics [0.63, 0.43] label [-45, -9]
 pipeline ethics [0.34, 0.46]
 component bias [0.61, 0.39] label [-9, 18]
 component audit [0.61, 0.45] label [16, -6]
-component training data [0.28, 0.43] label [-109, 4]
-pipeline training data
+component training data [0.28, 0.43] label [-109, -3]
+pipeline training data [0.22, 0.5]
 component history [0.18, 0.38] label [-61, 6]
 component healthcare [0.90, 0.61] label [-77, -8]
 pipeline healthcare [0.55, 0.69]
@@ -72,20 +63,27 @@ component data store [0.05, 0.72] label [15, 15]
 component trust [0.93, 0.47]
 pipeline trust
 component augment tasks [0.70, 0.56] label [-5, 25]
-component regulation [0.38, 0.31] label [-85, 5]
+component regulation [0.43, 0.32] label [-76, -3]
 component consent [0.61, 0.35] label [-66, 5]
 component general practice EHR [0.10, 0.59] label [-17, -61]
 component digital pathology [0.10, 0.69] label [-26, -45]
+component explainability [0.56, 0.25] label [-107, 16]
+component intersectionality [0.26, 0.23] label [-80, 14]
+component regulators [0.38, 0.30] label [-77, -3]
+component health [0.93, 0.64] label [9, 8]
+component precision medicine [0.50, 0.26] label [-91, -13]
+
 
 //link
 patient->trust
-patient->healthcare
+patient->health
+health->healthcare
 diagnosis->clinician
 diagnosis->virtual assistant
 triage->chatbot
 clinician->replace tasks
 virtual assistant->replace people
-provider->HCI
+clinician->HCI
 clinician->augment tasks
 HCI->ethics
 replace people->bias
@@ -102,6 +100,8 @@ categorisation->machine learning
 doc scan->machine learning
 virtual assistant->General purpose
 clinical decision making->deep learning
+bias->explainability
+audit->explainability
 
 AI->training data
 training data->data
@@ -118,6 +118,7 @@ trust->ethics
 audit->AI capability
 healthcare->provider
 regulation->standards
+regulation->regulators
 
 object recognition->deep learning
 AI capability->regulation
