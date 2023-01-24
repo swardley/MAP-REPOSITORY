@@ -15,6 +15,10 @@ pipeline product
 component sales forecasting [0.82, 0.62] label [-57, 0]
 
 component R&D [0.53, 0.22] label [-35, 5]
+pipeline R&D
+component prototype [0.73, 0.19] label [-68, -17]
+agility -> prototype
+component trial [0.73, 0.34]
 
 component government [0.93, 0.56] label [-29, -15]
 component manufacturer [0.95, 0.65] label [9, -6]
@@ -23,36 +27,50 @@ component regulation [0.65, 0.47] label [-86, 4]
 component safety [0.87, 0.55] label [-51, 4]
 component distributor [0.92, 0.48] label [-54, -12]
 component IP [0.74, 0.49] label [-21, -5]
-pipeline IP [0.41, 0.54]
+pipeline IP [0.18, 0.54]
 component materials [0.59, 0.64] label [-59, -12]
 pipeline materials [0.40, 0.76]
+component raw [0.58, 0.75] label [-21, -18]
+component branded [0.58, 0.49] label [-30, -17]
+component refined [0.58, 0.68] label [-19, -19]
+component novel [0.58, 0.41] label [-20, -17]
 
-component design [0.72, 0.42] label [-64, 0]
+component design [0.73, 0.42] label [-29, -16]
 component relationships [0.73, 0.53] label [19, 9]
 component supply chain [0.47, 0.64] label [9, -8]
 
-
 component agility [0.81, 0.33] label [-64, 1]
-component transparency [0.10, 0.43] label [-96, 4]
-pipeline transparency
-component awareness [0.24, 0.30] label [-79, 3]
+component metrics [0.10, 0.43] label [-70, 4]
+pipeline metrics
+
+component visibility [0.31, 0.30]
+//component responsiveness [0.79, 0.35] label [3, 19]
+//component resiliency [0.79, 0.26] label [-87, 18]
+
+component awareness [0.70, 0.27] label [-79, 3]
+visibility->awareness
+awareness->supply chain
+R&D->supply chain
 component certification [0.53, 0.70] label [9, 6]
 
-component automation [0.20, 0.69] label [18, 10]
-component clipboard [0.19, 0.44] label [-27, -22]
+component automation [0.20, 0.27] label [-26, -18]
+component clipboard [0.20, 0.64] label [-27, -22]
 
 component reliability [0.78, 0.68] label [8, 5]
 component inventory management [0.33, 0.64] label [18, -30]
 pipeline inventory management [0.51, 0.7]
 
-component just in time [0.31, 0.69] label [17, 2]
-component just in case [0.31, 0.52] label [-105, -2]
+component just in time [0.32, 0.69] label [17, 2]
+component just in case [0.32, 0.52] label [-111, 5]
 component warehousing [0.26, 0.66] label [3, 1]
 component cost [0.77, 0.77] label [8, 3]
 component forecasting [0.38, 0.44] label [-44, -13]
-component logistics [0.21, 0.60] label [12, -7]
-pipeline logistics [0.43, 0.70]
+component logistics [0.21, 0.60] label [-87, -13]
+pipeline logistics [0.26, 0.7]
 
+component rate of change [0.20, 0.41] label [-75, -22]
+visibility->rate of change
+rate of change->metrics
 component data [0.02, 0.66] label [11, 1]
 component ROCE [0.91, 0.72] label [8, -3]
 
@@ -68,7 +86,6 @@ pipeline supply chain [0.51, 0.73]
 
 component authority [0.49, 0.51] label [-78, 2]
 
-
 //link
 manufacturer->agility
 manufacturer->reliability
@@ -81,15 +98,17 @@ supply chain->inventory management
 supply chain->logistics
 // manufacturer->forecasting
 regulation->certification
-awareness->transparency
+awareness->reports
 warehousing->inventory management
 forecasting->awareness
 // supply chain->awareness
-certification->transparency
+certification->metrics
 materials->supply chain
-bad actor->transparency
-agility->transparency
-data->transparency
+bad actor->metrics
+agility->awareness
+awareness->R&D
+
+data->metrics
 // cost->inventory management
 // cost->logistics
 // warehousing->cost
@@ -101,7 +120,6 @@ government->critical national infrastructure
 critical national infrastructure->supply chain
 capital->ROCE
 cost->materials
-data->automation
 design->R&D
 supply chain->forecasting
 product->manufacturer
