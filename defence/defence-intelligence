@@ -1,91 +1,109 @@
-// General
-// Map is licensed under creative commons share alike.
-// https://creativecommons.org/licenses/by-sa/4.0/
-// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
-
 title defence - intelligence
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note unused [0.15, 0.03]
-note +human on the loop [0.80, 0.73]
-note +human in the loop [0.83, 0.73]
-note +gut feel [0.78, 0.73]
-note +bias [0.12, 0.03]
+// note unused [0.15, 0.03]
+// note +human on the loop [0.75, 0.76]
+// note +human in the loop [0.77, 0.74]
+// note +gut feel [0.73, 0.82]
+// note +bias [0.12, 0.03]
 
-component operational decision [0.83, 0.65] label [17, -16]
-pipeline operational decision
-component target discovery [0.77, 0.42] label [-68, -9]
-component OSINT [0.71, 0.56] label [-24, 24]
-component crowdsourcing [0.61, 0.46] label [-53, 25]
-component social media [0.36, 0.60] label [-75, 25]
-component intelligence gathering [0.73, 0.60] label [19, -30]
-pipeline intelligence gathering [0.55, 0.72]
-component collectors [0.38, 0.65] label [-40, -17]
-pipeline collectors [0.59, 0.72]
-component mobile [0.36, 0.63] label [-13, 24]
-component people [0.36, 0.71] label [14, 14]
-component cameras [0.27, 0.70] label [4, -10]
-component public_data [0.36, 0.67] label [-6, -17]
-component analysis [0.63, 0.61]
-pipeline analysis [0.45, 0.69]
-component AI [0.61, 0.52] label [-2, -14]
+component OPERATIONAL DECISION [0.83, 0.65] label [14, -26]
+pipeline OPERATIONAL DECISION [0.54, 0.71]
+component HOTL [0.81, 0.55] label [-48, 1]
+component HITL [0.81, 0.70] label [17, 6]
+evolve HOTL 0.6
+
+
+component target discovery [0.77, 0.46] label [-75, -9]
+component OSINT [0.71, 0.56] label [-23, 25]
+component crowdsourcing [0.61, 0.46] label [-114, 0]
+component social media [0.36, 0.60] label [-110, 4]
+
+component INTELLIGENCE GATHERING [0.73, 0.60] label [19, -30]
+pipeline INTELLIGENCE GATHERING [0.55, 0.70]
+component agency [0.71, 0.69] label [19, 5]
+
+component COLLECTORS [0.38, 0.65] label [-52, -15]
+pipeline COLLECTORS [0.59, 0.72]
+component machine [0.36, 0.63] label [-13, 24]
+component people [0.36, 0.71] label [17, 4]
+
+component public_data [0.36, 0.67] label [1, 23]
+component ANALYSIS [0.63, 0.61]
+pipeline ANALYSIS [0.45, 0.69]
+component AI [0.61, 0.52] label [0, -20]
 component data science [0.27, 0.58] label [-99, 4]
-component sources [0.50, 0.65] label [-34, -13]
-pipeline sources [0.5, 0.7]
+component SOURCES [0.50, 0.65] label [-34, -13]
+pipeline SOURCES [0.5, 0.7]
 component diversity [0.48, 0.51] label [-43, 23]
-component verified [0.48, 0.69] label [-10, -15]
-component AI Engine [0.23, 0.63] label [-43, 13]
-component military [0.94, 0.63] label [-38, -12]
+component verified [0.48, 0.69] label [26, 5]
+component AI Engine [0.20, 0.65] label [-43, 18]
 
-component opponent [0.95, 0.56] label [-63, -7]
-component misinformation [0.89, 0.53] label [-12, -9]
-component geolocation [0.26, 0.67] label [-74, -10]
+component ACTORS [0.99, 0.60] label [-11, -14]
+pipeline ACTORS [0.54, 0.68]
+component military [0.97, 0.63] label [-49, 25]
+component opponent [0.97, 0.55] label [-74, 1]
 
-component government [0.95, 0.67]
+component government [0.97, 0.67] label [24, 2]
 component citizen [0.90, 0.70]
 component privacy [0.83, 0.33] label [-71, -7]
-component regulation [0.43, 0.30] label [-78, 17]
-component data [0.18, 0.71] label [18, 2]
-component ownership [0.14, 0.64] label [6, 14]
-component desk analysis [0.61, 0.68] label [-25, 23]
-component attack vector [0.89, 0.47] label [-95, -5]
-component trust [0.11, 0.45] label [-15, -15]
-pipeline trust [0.35, 0.51]
-component competence [0.09, 0.36] label [-37, 27]
-component integrity [0.09, 0.40] label [-45, -18]
-component benevolence [0.09, 0.50] label [-36, 31]
+component regulation [0.43, 0.30] label [-85, 6]
+component data [0.14, 0.71] label [18, 2]
+component ownership [0.12, 0.64] label [6, 14]
+component desk ANALYSIS [0.61, 0.68] label [20, 2]
+
+component TRUST [0.09, 0.45] label [-15, -15]
+pipeline TRUST [0.35, 0.51]
+component competence [0.07, 0.36] label [-96, 1]
+component integrity [0.07, 0.43] label [-32, 27]
+component benevolence [0.07, 0.50] label [21, 2]
+
+component CAPABILITY [0.92, 0.51] label [-79, -8]
+pipeline CAPABILITY [0.45, 0.55]
+component misinformation [0.90, 0.54] label [22, 2]
+component attack vector [0.90, 0.46] label [-117, 0]
+pipeline attack vector
+
+component SENSORS [0.29, 0.69]
+pipeline SENSORS [0.66, 0.73]
+component GPS [0.27, 0.70] label [-1, 20]
+component cameras [0.27, 0.72] label [14, -1]
+component network signals [0.27, 0.67] label [-73, -20]
+
+evolve AI 0.59 label [-14, 22]
+evolve AI Engine 0.75 label [12, 8]
+
 
 // link
-operational decision->intelligence gathering
-operational decision->target discovery
-target discovery->intelligence gathering
+OPERATIONAL DECISION->INTELLIGENCE GATHERING
+OPERATIONAL DECISION->target discovery
+target discovery->INTELLIGENCE GATHERING
 OSINT->crowdsourcing
 crowdsourcing->diversity
-intelligence gathering->analysis
-analysis->sources
-sources->collectors
+INTELLIGENCE GATHERING->ANALYSIS
+ANALYSIS->SOURCES
+SOURCES->COLLECTORS
 diversity->social media
 diversity->public_data
-diversity->mobile devices
-mobile->cameras
+diversity->machine devices
+machine->SENSORS
 AI->data science
 data science->AI Engine
-military->operational decision
-opponent->misinformation
-misinformation->collectors
-mobile->geolocation
+ACTORS->OPERATIONAL DECISION
+
+// misinformation->COLLECTORS
+CAPABILITY -> INTELLIGENCE GATHERING
 government->citizen
 citizen->privacy
 privacy->regulation
-regulation->collectors
+regulation->COLLECTORS
 government->regulation
 AI Engine->data
-geolocation->data
-cameras->data
+SENSORS->data
 data->ownership
 regulation->ownership
-opponent->attack vector
-attack vector->data
-ownership->trust
-misinformation->trust
+ACTORS->CAPABILITY
+// attack vector->data
+ownership->TRUST
+misinformation->TRUST
