@@ -2,7 +2,9 @@ title construction - supply chain
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-
+note - need to address the position of Logistics [0.90, 0.01]
+note - need to reset the relationship between logistics, manufacture, [0.88, 0.01]
+note and building materials [0.86, 0.01]
 //actors
 
 component government [1.00, 0.65] label [-79, -3]
