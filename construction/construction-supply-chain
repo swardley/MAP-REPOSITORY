@@ -2,6 +2,7 @@ title construction - supply chain
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
+
 //actors
 
 component government [1.00, 0.65] label [-79, -3]
@@ -13,6 +14,7 @@ component social [0.91, 0.71] label [-58, 0]
 component mortgage company [0.99, 0.53] label [-71, -18]
 
 component building inspectors [0.84, 0.47] label [-69, -16]
+pipeline building inspectors
 
 // components
 component equipment [0.73, 0.66] label [-13, -15]
@@ -81,7 +83,7 @@ component blueprint [0.79, 0.52] label [-25, 17]
 component planning permission [0.75, 0.41] label [-78, -18]
 component quality assurance [0.92, 0.46] label [-68, -32]
 
-component standards [0.26, 0.58] label [8, 2]
+component standards [0.24, 0.58] label [8, 2]
 component testing [0.34, 0.51] label [-40, -13]
 pipeline testing [0.45, 0.60]
 component prefab [0.62, 0.50] label [-59, 4]
@@ -91,7 +93,7 @@ pipeline regulation
 component laws [0.66, 0.68] label [5, 10]
 component land [0.73, 0.59] label [-41, 1]
 
-component benchmarks [0.23, 0.43] label [-86, 3]
+component benchmarks [0.21, 0.43] label [-86, 3]
 
 
 
@@ -111,8 +113,7 @@ construction->building materials
 mortgage company->assurance
 construction->blueprint
 construction->maintenance
-building materials->manufacture
-manufacture->building materials
+//building materials->manufacture
 government->assurance
 assurance->planning permission
 planning permission->past examples
@@ -147,6 +148,7 @@ stock->market
 market->finance
 monopoly->market
 finance->stock
+raw materials->supply chain
 raw materials->sourcing
 // testing->modular tests
 prefab->modular tests
@@ -186,21 +188,31 @@ testing->standards
 standards->planning permission
 benchmarks->standards
 prefab->modular
-raw materials->supply chain
+raw materialols->supply chain
 factory mode (Inflight)->test driven development
-component Logistics [0.43, 0.50] label [-88, -4]
-pipeline Logistics [0.38, 0.73]
+component Logistics [0.53, 0.52] label [-88, -4]
+pipeline Logistics 
+
+component recycling [0.16, 0.55] label [-52, -16]
+component circular materials [0.62, 0.55] label [-43, 16]
+note economy of reuse from preparing sites [0.93, 0.07]
+component distributors [0.29, 0.64]
+pipeline distributors [0.43, 0.72]
+component integrated [0.28, 0.49] label [-27, -13]
+component traditional [0.28, 0.71] label [-1, 28]
+component platform [0.27, 0.44] label [-86, 1]
+distributors->manufacture
 //component Durability [0.18, 0.17]
 component Supply Chain Awareness [0.44, 0.25] label [-40, 13]
 //pipeline Local Supply [0.05, 0.13]
 //component Local Supply [0.51, 0.09] label [-69, -17]
-building materials->
+Logistics->building materials
 prefab->Logistics
 skilled_labour->Logistics
-manufacture->Logistics
+Logistics->distributors
 foreman->Supply Chain Awareness
 Logistics->Supply Chain Awareness
-manufacture->Supply Chain Awareness
+
 supply chain->Supply Chain Awareness
 component Substitutability [0.55, 0.29] label [-89, -23]
 Supply Chain Awareness->Substitutability
