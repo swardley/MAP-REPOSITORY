@@ -1,4 +1,6 @@
 title Technology
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
 
 // // STAGE I
 // component USER [0.99, 0.67] label [7, -5]
@@ -10,28 +12,28 @@ title Technology
 // component APPLICATION [0.83, 0.64] label [-97, 2]
 // pipeline APPLICATION
 
-// component DEVICE [0.82, 0.68] label [10, -7]
+// component DEVICE [0.82, 0.68] label [13, 5]
 // pipeline DEVICE
 
-// component IDE [0.73, 0.67] label [5, -8]
+// component IDE [0.73, 0.67] label [8, 2]
 // pipeline IDE
 
-// component COMPOSABLE ELEMENTS [0.36, 0.69] label [22, -19]
+// component COMPOSABLE ELEMENTS [0.36, 0.69] label [20, -15]
 // pipeline COMPOSABLE ELEMENTS 
 
-// component RUNTIME [0.47, 0.69] label [-5, -12]
+// component RUNTIME [0.47, 0.69] label [13, 0]
 // pipeline RUNTIME 
 
-// component CODING PRACTICE [0.57, 0.65] label [-78, -20]
+// component CODING PRACTICE [0.57, 0.65] label [-73, -13]
 // pipeline CODING PRACTICE 
 
-// component CONTAINER [0.22, 0.69] label [-90, 5]
+// component CONTAINER [0.22, 0.69] label [-81, 2]
 // pipeline CONTAINER
 
 // component ARCHITECTURAL PRACTICE [0.14, 0.68] label [-81, -21]
 // pipeline ARCHITECTURAL PRACTICE 
 
-// component COMPUTE [0.05, 0.70] label [-1, -12]
+// component COMPUTE [0.05, 0.70] label [11, 5]
 // pipeline COMPUTE 
 
 // //STAGE I LINKS
@@ -66,15 +68,15 @@ title Technology
 
 // component RUNTIME [0.47, 0.69] label [-25, -11]
 // pipeline RUNTIME [0.62, 0.73]
-// component Serverless [0.45, 0.72] label [22, 11]
-// component Lamp / .Net [0.45, 0.64] label [-86, 1]
+// component Serverless [0.46, 0.72] label [22, 11]
+// component Lamp / .Net [0.45, 0.63] label [-99, 2]
 
 
 // component CODING PRACTICE [0.57, 0.65] label [-73, -29]
 // pipeline CODING PRACTICE [0.52, 0.75]
 // component FinOps [0.55, 0.53] label [-71, 7]
-// component operating system [0.27, 0.72] label [11, -17]
-// component orchestration tools [0.28, 0.62] label [-75, -15]
+// component operating system [0.27, 0.72] label [7, -16]
+// component orchestration tools [0.28, 0.62] label [-82, -14]
 
 // component CONTAINER [0.22, 0.69] label [-90, 5]
 // pipeline CONTAINER
@@ -86,8 +88,8 @@ title Technology
 
 // component COMPUTE [0.05, 0.70] label [-13, -18]
 // pipeline COMPUTE [0.66, 0.77]
-// component servers [0.03, 0.67] label [-63, 11]
-// component cloud [0.03, 0.76] label [19, 3]
+// component servers [0.03, 0.67] label [-67, 0]
+// component cloud [0.03, 0.76] label [18, 1]
 
 
 // //links STAGE II
@@ -112,13 +114,79 @@ title Technology
 // APPLICATION->NEED
 // NEED->DEVICE
 // Component services->FinOps
-// CODING PRACTICE->RUNTIME
-// RUNTIME->COMPOSABLE ELEMENTS
-// COMPOSABLE ELEMENTS->CONTAINER
-// CONTAINER->ARCHITECTURAL PRACTICE
-// ARCHITECTURAL PRACTICE->COMPUTE
 
-//STAGE III
+
+// // //STAGE III
+// component USER [0.99, 0.67] label [7, -5]
+// pipeline USER
+
+// component NEED [0.92, 0.66] label [10, -5]
+// pipeline NEED
+// component APPLICATION [0.83, 0.64] label [-97, 2]
+// pipeline APPLICATION
+
+// component DEVICE [0.82, 0.68]
+// pipeline DEVICE
+
+// component IDE [0.73, 0.67] label [10, 4]
+// pipeline IDE
+
+// component "common library" [0.34, 0.65] label [-60, -28]
+// component Component services [0.34, 0.73] label [8, -16]
+// component "Best" (legacy)  [0.55, 0.74] label [10, -7]
+
+// component Serverless [0.45, 0.72] label [13, 6]
+// component Lamp / .Net [0.45, 0.64] label [-70, -11]
+
+// component CODING PRACTICE [0.57, 0.65] label [-73, -29]
+// pipeline CODING PRACTICE [0.52, 0.75]
+// component FinOps [0.55, 0.53] label [-58, 2]
+// component operating system [0.27, 0.72] label [9, -15]
+// component orchestration tools [0.28, 0.62] label [-72, -22]
+
+// component CONTAINER [0.22, 0.69] label [-73, 8]
+// pipeline CONTAINER
+
+// component DevOps [0.12, 0.59] label [-56, 3]
+// component Legacy [0.12, 0.79] label [12, 5]
+
+// component servers [0.03, 0.67] label [-58, 5]
+// component cloud [0.03, 0.76] label [12, 5]
+
+// evolve Lamp / .Net 0.72 label [-997, 420]
+// evolve servers 0.76 label [-1054, 62]
+// evolve DevOps 0.68 label [-947, 140]
+// evolve FinOps 0.6 label [-832, 511]
+// evolve "common library" 0.73 label [-981, 311]
+
+// //links
+// "Best" (legacy) ->Lamp / .Net
+// Serverless->FinOps
+// orchestration tools->Lamp / .Net
+// Lamp / .Net->operating system
+// orchestration tools->DevOps
+// cloud->DevOps
+// cloud->CONTAINER
+// CONTAINER->operating system
+// orchestration tools->CONTAINER
+// servers->Legacy
+// Legacy->operating system
+// large language models->conversational (AI+Human)
+// IDE->CODING PRACTICE
+// "Best" (legacy)->"common library"
+// human centric->"Best" (legacy)
+// conversational (AI+Human)->FinOps
+// APPLICATION->IDE
+// USER->NEED
+// APPLICATION->NEED
+// NEED->DEVICE
+// Component services->FinOps
+
+
+
+
+
+//STAGE IV
 component USER [0.99, 0.67] label [7, -5]
 pipeline USER
 
@@ -131,35 +199,39 @@ component DEVICE [0.82, 0.68]
 pipeline DEVICE
 
 component IDE [0.73, 0.67] label [2, -12]
-pipeline IDE
+pipeline IDE [0.50, 0.7]
+component conversational (AI+Human) [0.71, 0.51] label [-100, -12]
+component human centric [0.71, 0.69] label [16, 5]
 
-component "common library" [0.34, 0.65] label [-22, 14]
-component Component services [0.34, 0.73] label [26, -10]
+component "common library" [0.34, 0.65] label [-60, -28]
+component Component services [0.34, 0.73] label [8, -16]
 component "Best" (legacy)  [0.55, 0.74] label [10, -7]
 
 component Serverless [0.45, 0.72] label [13, 6]
-component Lamp / .Net [0.45, 0.64] label [-55, -13]
+component Lamp / .Net [0.45, 0.64] label [-70, -11]
 
-component CODING PRACTICE [0.57, 0.65] label [-73, -29]
-pipeline CODING PRACTICE [0.52, 0.75]
+component large language model [0.64, 0.65] label [-34, 5]
+
 component FinOps [0.55, 0.53] label [-58, 2]
-component operating system [0.27, 0.72] label [11, -17]
-component orchestration tools [0.28, 0.62] label [-75, -15]
+component operating system [0.27, 0.72] label [9, -15]
+component orchestration tools [0.28, 0.62] label [-72, -22]
 
-component CONTAINER [0.22, 0.69] label [-90, 5]
+component CONTAINER [0.22, 0.69] label [-73, 8]
 pipeline CONTAINER
 
-component DevOps [0.12, 0.59] label [-71, 3]
-component Legacy [0.12, 0.79] label [20, 2]
+component DevOps [0.12, 0.59] label [-56, 3]
+component Legacy [0.12, 0.79] label [12, 5]
 
-component servers [0.03, 0.67] label [-63, 11]
-component cloud [0.03, 0.76] label [19, 3]
+component servers [0.03, 0.67] label [-58, 5]
+component cloud [0.03, 0.76] label [12, 5]
 
 evolve Lamp / .Net 0.72 label [-997, 420]
 evolve servers 0.76 label [-1054, 62]
 evolve DevOps 0.68 label [-947, 140]
 evolve FinOps 0.6 label [-832, 511]
-
+evolve "common library" 0.73 label [-981, 311]
+evolve large language model 0.73 label [-990, 564]
+evolve conversational (AI+Human) 0.59 label [-932, 622]
 
 //links
 "Best" (legacy) ->Lamp / .Net
@@ -173,7 +245,7 @@ CONTAINER->operating system
 orchestration tools->CONTAINER
 servers->Legacy
 Legacy->operating system
-large language models->conversational (AI+Human)
+large language model->conversational (AI+Human)
 IDE->CODING PRACTICE
 "Best" (legacy)->"common library"
 human centric->"Best" (legacy)
@@ -183,13 +255,6 @@ USER->NEED
 APPLICATION->NEED
 NEED->DEVICE
 Component services->FinOps
-CODING PRACTICE->RUNTIME
-RUNTIME->COMPOSABLE ELEMENTS
-COMPOSABLE ELEMENTS->CONTAINER
-CONTAINER->ARCHITECTURAL PRACTICE
-ARCHITECTURAL PRACTICE->COMPUTE
-
-
 
 
 // //STAGE IV
@@ -206,7 +271,7 @@ ARCHITECTURAL PRACTICE->COMPUTE
 
 // component IDE [0.73, 0.67] label [2, -12]
 // pipeline IDE [0.6, 0.70]
-// component conversational (AI+Human) [0.72, 0.61] label [-90, -11]
+// component conversational (AI+Human) [0.71, 0.61] label [-90, -11]
 // component human centric [0.71, 0.69] label [18, 3]
 
 // component COMPOSABLE ELEMENTS [0.36, 0.69] label [16, -37]
@@ -217,8 +282,8 @@ ARCHITECTURAL PRACTICE->COMPUTE
 
 // component RUNTIME [0.47, 0.69] label [-25, -11]
 // pipeline RUNTIME [0.62, 0.73]
-// component Serverless [0.45, 0.72] label [22, 11]
-// component Lamp / .Net [0.45, 0.64] label [-86, 1]
+// component Serverless [0.46, 0.72] label [22, 11]
+// component Lamp / .Net [0.45, 0.63] label [-86, 1]
 // component large language models [0.65, 0.68] label [-21, 9]
 
 // component CODING PRACTICE [0.57, 0.65] label [-73, -29]
