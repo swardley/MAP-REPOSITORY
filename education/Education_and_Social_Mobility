@@ -1,15 +1,15 @@
-title Education and Social Mobility v4.8
+title Education and Social Mobility v5
 style wardley
 note (+opportunity) [0.83, 0.14]
 note (+task orientation) [0.71, 0.79]
 note (+thinking) [0.72, 0.11]
 note (+AI automation) [0.54, 0.13]
 note (+robotic automation) [0.52, 0.78]
-note (change to post compulsary) [0.39, 0.68]
-note (does this need its own map) [0.45, 0.22]
+
 //skills training being a big challenge to execute and there being
 //a correlated skills gap for trainers that can perform this
 //economics of this as well  
+
 
 component government [1.00, 0.47] label [5, -10]
 government->regulation
@@ -30,7 +30,6 @@ component social cohesion [0.94, 0.71] label [-11, -39]
 //component taught principles [0.92, 0.64] label [-73, -7]
 //component rules and rulers [0.92, 0.79] label [6, -27]
 social cohesion->social norms
-note (correct this) [0.76, 0.10]
 
 component economy [0.87, 0.49] label [-45, -12]
 pipeline economy [0.2, 0.82]
@@ -40,10 +39,10 @@ economy->choice
 economy->Business
 new tech->Business
 new tech->new roles
-new tech->entrepeneur
+new tech->entrepreneur
 
 
-component collaboration [0.66, 0.25] label [-26, -16]
+//component collaboration [0.66, 0.25] label [-26, -16]
 
 component Business [0.77, 0.48] label [9, -5]
 pipeline Business [0.23, 0.79]
@@ -51,7 +50,7 @@ component labour/mundane [0.76, 0.78] label [20, 9]
 component blue collar [0.75, 0.65] label [-53, 23]
 component white collar [0.75, 0.37] label [-43, 23]
 component new roles [0.75, 0.30] label [-51, 23]
-component entrepeneur [0.75, 0.24] label [-100, 2]
+component entrepreneur [0.75, 0.24] label [-100, 2]
 Business->Work actions
 
 component DEI [0.66, 0.42] label [-35, 0]
@@ -65,6 +64,8 @@ pipeline Work actions [0.1, 0.8]
 component problem solving [0.57, 0.19] label [-28, -48]
 component task completion [0.57, 0.79] label [3, -3]
 component identify new market [0.57, 0.11] label [-38, -64]
+component mentoring [0.45, 0.62]
+note (+external coaching) [0.48, 0.63]
 
 component alumni [0.50, 0.42] label [-55, -12]
 alumni->skills training
@@ -73,12 +74,12 @@ alumni->DEI
 
 component Experienced individual [0.40, 0.24] label [-29, 8]
 Work actions+<>Experienced individual
-Experienced individual+<>short courses
+Experienced individual+<>Post compulsary
 
-component new agency [0.47, 0.47]
+component new agency [0.47, 0.47] label [2, -17]
 
-component Education type [0.36, 0.59] label [-35, -19]
-pipeline Education type [0.5, 0.8]
+component Post compulsary [0.36, 0.59] label [-21, -38]
+pipeline Post compulsary [0.5, 0.8]
 component none [0.34, 0.78] label [23, 1]
 component masters, phd+ [0.34, 0.52] label [-97, 26]
 component uni [0.34, 0.55] label [-14, 23]
@@ -87,17 +88,15 @@ component work specific [0.34, 0.72] label [-29, 20]
 //short courses->skills gap
 uni->alumni
 masters, phd+->alumni
-Education type->Business
-Education type-> Work actions
+Post compulsary->Business
+Post compulsary-> Work actions
 
 component choice [0.35, 0.36] label [-52, 5]
 choice->agency
 choice->School
 
-
 component initial agency [0.27, 0.51] label [14, -3]
-initial agency->Education type
-
+initial agency->Post compulsary
 
 component awareness [0.24, 0.38] label [-51, 18]
 awareness->Social affordances
@@ -105,12 +104,12 @@ awareness->choice
 
 component social norms [0.26, 0.77] label [11, 4]
 
-component skills training [0.42, 0.36] label [-70, -21]
+component skills training [0.43, 0.36] label [-70, -21]
 skills training->problem solving
 skills training->individuals
 //skills training->awareness
-skills training+<>short courses
-short courses+<>new agency
+skills training+<>Post compulsary
+Post compulsary+<>new agency
 new agency+<>Work actions
 
 component social capital [0.06, 0.27] label [-89, 7]
@@ -142,12 +141,12 @@ shocks->Social affordances
 
 rules and rulers->blue collar
 rules and rulers->labour/mundane
-taught principles->entrepeneur
+taught principles->entrepreneur
 social capital->Social affordances
 Social affordances->real life experience
 blue collar->task completion
 labour/mundane->task completion
-problem solving->entrepeneur
+problem solving->entrepreneur
 white collar->problem solving
 white collar->task completion
 task completion->work specific
@@ -159,3 +158,9 @@ Social affordances->primary school
 high school->initial agency
 
 entrepeneur->identify new market
+mentoring->skills gap
+mentoring->alumni
+mentoring->new agency
+mentoring->Experienced individual
+Post compulsary->mentoring
+skills training->mentoring
