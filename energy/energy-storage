@@ -7,8 +7,6 @@ title Energy - storage v1.0
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
 style wardley
 
-
-
 component CONSUMER [0.96, 0.68] label [-43, -14]
 pipeline CONSUMER   [0.66, 0.72]
 // component households [0.94, 0.67] label [-92, 1]
@@ -36,23 +34,25 @@ pipeline POWER [0.61, 0.79]
 // component nuclear [0.63, 0.62] label [-66, 4]
 // component electrical [0.63, 0.70] label [-69, 22]
 
-component TRANSPORTATION [0.58, 0.69] label [-120, -3]
-pipeline TRANSPORTATION [0.4, 0.9]
-// component grid [0.50, 0.32] label [13, -2]
-// component bulk carrier [0.51, 0.28] label [6, -16]
-// component pipe [0.52, 0.24]
+component TRANSPORTATION [0.58, 0.72] label [-108, -3]
+pipeline TRANSPORTATION [0.68, 0.9]
+component grid [0.56, 0.83] label [-11, 20]
+component bulk carrier [0.56, 0.78] label [-10, -20]
+component pipe [0.56, 0.89] label [15, 3]
 
 component STORAGE [0.40, 0.64] label [-64, -4]
-pipeline STORAGE [0.4, 0.9]
-// component battery [0.42, 0.30] label [16, 3]
-// component hydro [0.40, 0.28] label [-54, 6]
-// component stockpile [0.43, 0.24] label [-82, 2]
-// component spinning reserve [0.44, 0.24]
+pipeline STORAGE [0.46, 0.80]
+component battery [0.38, 0.68] label [-9, -20]
+component hydro [0.38, 0.79] label [14, 1]
+//component stockpile [0.38, 0.84] label [-80, 2]
+component spinning reserve [0.38, 0.47] label [-73, -19]
+component mobile battery [0.38, 0.57] label [-46, 27]
 
 component ENERGY PLATFORM [0.48, 0.67] label [-76, -28]
 pipeline ENERGY PLATFORM   [0.4, 0.9]
 // component JIT [0.32, 0.25] label [-38, 4]
 // component low latency demand [0.32, 0.33] label [-71, -8]
+
 
 component  GENERATION [0.32, 0.73] label [11, -7]
 pipeline  GENERATION [0.4, 0.9]
@@ -91,7 +91,8 @@ thermal->chemical
 thermal->nuclear
 thermal->electrical
 POWER->TRANSPORTATION
-TRANSPORTATION->ENERGY PLATFORM
+//TRANSPORTATION->ENERGY PLATFORM
+grid->ENERGY PLATFORM
 STORAGE-> GENERATION
 ENERGY PLATFORM -> ENERGY PLATFORM
 SOURCES->SUPPLY_CHAIN
