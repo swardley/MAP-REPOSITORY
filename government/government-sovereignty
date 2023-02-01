@@ -2,7 +2,6 @@ title GOVERNMENT-SOVEREIGNTY
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-
 //actors and chain
 component GOVERNMENT [0.99, 0.68] label [-24, -10]
 component society [0.96, 0.72] label [6, 4]
@@ -13,11 +12,11 @@ component inclusion [0.85, 0.53] label [-82, 2]
 component crisis [0.97, 0.38] label [-52, 0]
 pipeline crisis //[0.3, 0.53]
 component crisis response [0.88, 0.37] label [-71, -9]
-component media [0.12, 0.50] label [-17, 20]
-pipeline media
+component MEDIA [0.12, 0.50] label [-17, -13]
+pipeline MEDIA [0.3, 0.8]
+component Social MEDIA [0.11, 0.35]
 
-
-//SOVREIGN
+//SOVEREIGN
 component SOVEREIGNTY [0.58, 0.59] label [-19, -14]
 note  (authority + power to enforce?) [0.48, 0.71]
 pipeline SOVEREIGNTY // [0.40, 0.71]
@@ -59,21 +58,24 @@ component CNI [0.38, 0.50] label [-11, -18]
 // component exclusion [0.60, 0.74] label [10, 0]
 // component law [0.53, 0.74] label [10, 5]
 
+component Education [0.10, 0.68] label [-43, 25]
+component Art [0.10, 0.38] label [-11, 30]
+component Mainstream MEDIA [0.10, 0.75]
+pipeline Art 
 component SOCIAL NORMS [0.76, 0.52] label [-55, -14]
 pipeline SOCIAL NORMS [0.36, 0.72]
 component integrity [0.74, 0.47] label [-16, 24]
 component benevolence [0.74, 0.37] label [-106, -4]
 component fairness [0.74, 0.71] label [22, 1]
 component competency [0.75, 0.57] label [-28, 26]
-
+component elections [0.38, 0.66] label [-40, 20]
+component identity [0.75, 0.40] label [-18, -17]
 
 pipeline AWARENESS [0.3, 0.73]
 component supply chain awareness [0.26, 0.31] label [-86, -21]
 note  (additional components of awareness?) [0.22, 0.21]
 component territorial awareness [0.25, 0.72] label [30, -6]
 component digital chain awareness [0.26, 0.40] label [14, -52]
-
-note  (expand) [0.08, 0.48]
 
 // pipeline LANDSCAPE [0.37, 0.66]
 // component chain [0.04, 0.65] label [18, 2]
@@ -148,7 +150,7 @@ AWARENESS->LANDSCAPE
 territory->territorial awareness
 society->success
 society->public belonging
-public belonging->media
+public belonging->MEDIA
 public belonging->inclusion
 crisis->crisis response
 perception of success->SOVEREIGNTY
@@ -162,9 +164,10 @@ exclusion->conflict
 SOCIAL NORMS->law
 public belonging->crisis response
 THEATRE->crisis response
-benevolence->crisis response
+SOCIAL NORMS->crisis response
 public belonging->SOCIAL NORMS
 public belonging->perception of success
-media -> AWARENESS
-media -> SOCIAL NORMS
-media -> perception of success
+MEDIA -> AWARENESS
+MEDIA -> SOCIAL NORMS
+MEDIA -> perception of success
+political -> elections
