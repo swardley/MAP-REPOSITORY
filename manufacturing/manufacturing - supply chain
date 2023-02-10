@@ -1,5 +1,5 @@
-title manufacturing - supply chains
-evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+title manufacturing - SUPPLY CHAINs
+evolution genesis / concept -> custom / emerging -> PRODUCT/ converging -> commodity / accepted
 style wardley
 
 // note unused [0.21, 0.01]
@@ -9,125 +9,139 @@ style wardley
 // component checksum [0.13, 0.02] label [12, 3]
 
 
-component product [0.87, 0.64] label [-60, 3]
-pipeline product 
+component PRODUCT [0.87, 0.64] label [-60, 3]
+pipeline PRODUCT 
 
 component sales forecasting [0.82, 0.62] label [-57, 0]
 
-component R&D [0.53, 0.22] label [-35, 5]
+component R&D [0.51, 0.22] label [-35, 5]
 pipeline R&D
-component prototype [0.73, 0.19] label [-68, -17]
+component prototype [0.73, 0.19] label [-83, 8]
 agility -> prototype
-component trial [0.73, 0.34]
+component trial [0.72, 0.34] label [-15, -21]
+
+component EQUIPMENT [0.67, 0.61] label [-60, -10]
+pipeline EQUIPMENT 
 
 component government [0.93, 0.56] label [-29, -15]
 component manufacturer [0.95, 0.65] label [9, -6]
 // component bad actor [0.92, 0.41] label [-76, -6]
-component regulation [0.65, 0.47] label [-86, 4]
+component REGULATION [0.65, 0.47] label [-78, -10]
+pipeline REGULATION [0.37, 0.54]
+component lobbying [0.63, 0.38] label [-54, -20]
+component compliance [0.64, 0.53] label [-36, -12]
 component safety [0.87, 0.55] label [-51, 4]
 component distributor [0.92, 0.48] label [-54, -12]
 component IP [0.74, 0.49] label [-21, -5]
 pipeline IP [0.18, 0.54]
-component materials [0.59, 0.64] label [-59, -12]
-pipeline materials [0.40, 0.76]
-component raw [0.58, 0.75] label [-21, -18]
-component branded [0.58, 0.49] label [-30, -17]
-component refined [0.58, 0.68] label [-19, -19]
-component novel [0.58, 0.41] label [-20, -17]
+component MATERIALS [0.58, 0.63] label [-73, -8]
+pipeline MATERIALS [0.40, 0.76]
+component raw [0.57, 0.75] label [18, 9]
+component branded [0.56, 0.50] label [-32, -20]
+component refined [0.56, 0.69] label [-11, -19]
+component novel [0.56, 0.41] label [-32, 29]
 
-component design [0.73, 0.42] label [-29, -16]
-component relationships [0.73, 0.53] label [19, 9]
-component supply chain [0.47, 0.64] label [9, -8]
+component design [0.72, 0.42] label [-33, -19]
+component relationships [0.73, 0.53] label [13, 9]
+component SUPPLY CHAIN [0.44, 0.62] label [9, -4]
 
 component agility [0.81, 0.33] label [-64, 1]
-component metrics [0.10, 0.43] label [-70, 4]
-pipeline metrics
+component METRICS [0.10, 0.43] label [-64, 7]
+pipeline METRICS
 
-component visibility [0.31, 0.30]
+component visibility [0.31, 0.30] label [-89, 5]
 //component responsiveness [0.79, 0.35] label [3, 19]
 //component resiliency [0.79, 0.26] label [-87, 18]
 
-component awareness [0.70, 0.27] label [-79, 3]
-visibility->awareness
-awareness->supply chain
-R&D->supply chain
-component certification [0.53, 0.70] label [9, 6]
+component AWARENESS [0.67, 0.28] label [-72, 3]
+pipeline AWARENESS
+visibility->AWARENESS
+AWARENESS->SUPPLY CHAIN
+R&D->SUPPLY CHAIN
+component certification [0.51, 0.70] label [10, 4]
 
-component automation [0.20, 0.27] label [-26, -18]
-component clipboard [0.20, 0.64] label [-27, -22]
+component automation [0.19, 0.27] label [-93, 0]
+component clipboard [0.19, 0.67] label [15, 3]
 
-component reliability [0.78, 0.68] label [8, 5]
-component inventory management [0.33, 0.64] label [18, -30]
-pipeline inventory management [0.51, 0.7]
+component reliability [0.78, 0.70] label [-33, 21]
+component INVENTORY MANAGEMENT [0.33, 0.64] label [12, -31]
+pipeline INVENTORY MANAGEMENT [0.51, 0.7]
 
-component just in time [0.32, 0.69] label [17, 2]
-component just in case [0.32, 0.52] label [-111, 5]
-component warehousing [0.26, 0.66] label [3, 1]
-component cost [0.77, 0.77] label [8, 3]
-component forecasting [0.38, 0.44] label [-44, -13]
-component logistics [0.21, 0.60] label [-87, -13]
-pipeline logistics [0.26, 0.7]
+component just in time [0.31, 0.69] label [12, 4]
+component just in case [0.31, 0.52] label [-102, 8]
+component warehousing [0.26, 0.66] label [12, 1]
+component cost [0.76, 0.78] label [8, 3]
+component forecasting [0.36, 0.44] label [-91, 6]
+component LOGISTICS [0.21, 0.60] label [-72, -7]
+pipeline LOGISTICS [0.26, 0.68]
 
-component rate of change [0.20, 0.41] label [-75, -22]
+component rate of change [0.20, 0.41] label [-16, -17]
 visibility->rate of change
-rate of change->metrics
+rate of change->METRICS
 component data [0.02, 0.66] label [11, 1]
 component ROCE [0.91, 0.72] label [8, -3]
 
-component energy [0.41, 0.70] label [13, 6]
-pipeline energy
+component ENERGY [0.39, 0.70] label [13, 8]
+pipeline ENERGY
 
-component critical national infrastructure [0.68, 0.58] label [12, -15]
-pipeline critical national infrastructure
+component CNI [0.76, 0.57] label [8, 2]
+pipeline CNI
 
 component capital [0.85, 0.78] label [10, 4]
 
-pipeline supply chain [0.51, 0.73]
+pipeline SUPPLY CHAIN // [0.46, 0.73]
+// component simple [0.42, 0.72] label [16, 1]
+// component complicated [0.42, 0.47] label [-62, -19]
 
-component authority [0.49, 0.51] label [-78, 2]
+
+component authority [0.49, 0.51] label [-71, 2]
 
 //link
 manufacturer->agility
 manufacturer->reliability
 distributor->relationships
 government->safety
-safety->regulation
-// manufacturer->materials
-reliability->supply chain
-supply chain->inventory management
-supply chain->logistics
+safety->REGULATION
+// manufacturer->MATERIALS
+reliability->SUPPLY CHAIN
+SUPPLY CHAIN->INVENTORY MANAGEMENT
+SUPPLY CHAIN->LOGISTICS
 // manufacturer->forecasting
-regulation->certification
-awareness->reports
-warehousing->inventory management
-forecasting->awareness
-// supply chain->awareness
-certification->metrics
-materials->supply chain
-bad actor->metrics
-agility->awareness
-awareness->R&D
+REGULATION->certification
+AWARENESS->reports
+warehousing->INVENTORY MANAGEMENT
+forecasting->AWARENESS
+// SUPPLY CHAIN->AWARENESS
+certification->METRICS
+MATERIALS->SUPPLY CHAIN
+bad actor->METRICS
+agility->AWARENESS
+AWARENESS->R&D
 
-data->metrics
-// cost->inventory management
-// cost->logistics
+data->METRICS
+// cost->INVENTORY MANAGEMENT
+// cost->LOGISTICS
 // warehousing->cost
 manufacturer->ROCE
 // ROCE->cost
-relationships->supply chain
+relationships->SUPPLY CHAIN
 manufacturer->design
-government->critical national infrastructure
-critical national infrastructure->supply chain
+government->CNI
+CNI->SUPPLY CHAIN
 capital->ROCE
-cost->materials
+cost->MATERIALS
 design->R&D
-supply chain->forecasting
-product->manufacturer
-product->cost
-product->sales forecasting
-product->materials
-ROCE->product
+SUPPLY CHAIN->forecasting
+PRODUCT->manufacturer
+PRODUCT->cost
+PRODUCT->sales forecasting
+PRODUCT->MATERIALS
+ROCE->PRODUCT
 
-certification->materials
+certification->MATERIALS
 authority->certification
-supply chain->energy
+SUPPLY CHAIN->ENERGY
+novel->R&D
+cost->EQUIPMENT
+EQUIPMENT->MATERIALS
+EQUIPMENT->certification
