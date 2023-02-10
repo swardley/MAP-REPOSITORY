@@ -38,7 +38,7 @@ component SOURCES [0.50, 0.65] label [-34, -13]
 pipeline SOURCES [0.5, 0.7]
 component diversity [0.48, 0.51] label [-43, 23]
 component verified [0.48, 0.69] label [26, 5]
-component AI Engine [0.20, 0.65] label [-43, 18]
+component ML Engine [0.20, 0.65] label [-43, 18]
 
 component ACTORS [0.99, 0.60] label [-11, -14]
 pipeline ACTORS [0.54, 0.68]
@@ -60,10 +60,11 @@ component integrity [0.07, 0.43] label [-32, 27]
 component benevolence [0.07, 0.50] label [21, 2]
 
 component CAPABILITY [0.92, 0.51] label [-79, -8]
-pipeline CAPABILITY [0.45, 0.55]
+pipeline CAPABILITY [0.3, 0.55]
 component misinformation [0.90, 0.54] label [22, 2]
-component attack vector [0.90, 0.46] label [-117, 0]
+component attack vector [0.90, 0.43] label [-57, 26]
 pipeline attack vector
+component Prompt Engineering [0.90, 0.31] label [-27, -45]
 
 component SENSORS [0.29, 0.69]
 pipeline SENSORS [0.66, 0.73]
@@ -72,7 +73,7 @@ component cameras [0.27, 0.72] label [14, -1]
 component network signals [0.27, 0.67] label [-73, -20]
 
 evolve AI 0.59 label [-14, 22]
-evolve AI Engine 0.75 label [12, 8]
+evolve ML Engine 0.75 label [12, 8]
 
 
 // link
@@ -89,8 +90,9 @@ diversity->public_data
 diversity->machine devices
 machine->SENSORS
 AI->data science
-data science->AI Engine
+data science->ML Engine
 ACTORS->OPERATIONAL DECISION
+Prompt Engineering->AI
 
 // misinformation->COLLECTORS
 CAPABILITY -> INTELLIGENCE GATHERING
@@ -99,7 +101,7 @@ citizen->privacy
 privacy->regulation
 regulation->COLLECTORS
 government->regulation
-AI Engine->data
+ML Engine->data
 SENSORS->data
 data->ownership
 regulation->ownership
