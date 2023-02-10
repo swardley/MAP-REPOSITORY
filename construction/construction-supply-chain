@@ -2,56 +2,59 @@ title construction - supply chain
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-note - need to address the position of Logistics [0.90, 0.01]
-note - need to reset the relationship between logistics, manufacture, [0.88, 0.01]
-note and building materials [0.86, 0.01]
+//note - need to address the position of LOGISTICS [0.92, 0.01]
+//note - need to reset the relationship between LOGISTICS, MANUFACTURE, [0.90, 0.01]
+//note and BUILDING MATERIALS [0.88, 0.02]
 //actors
 
 component government [1.00, 0.65] label [-79, -3]
 component citizens [0.97, 0.71] label [14, -6]
-component homes [0.93, 0.73] label [7, -3]
-pipeline homes [0.7, 0.76]
+component HOMES [0.93, 0.73] label [7, -3]
+pipeline HOMES [0.7, 0.76]
 component private [0.91, 0.75] label [15, -2]
 component social [0.91, 0.71] label [-58, 0]
 component mortgage company [0.99, 0.53] label [-71, -18]
 
-component building inspectors [0.84, 0.47] label [-69, -16]
-pipeline building inspectors
+component BUILDING INSPECTORS [0.84, 0.47] label [-73, -12]
+pipeline BUILDING INSPECTORS
 
 // components
 component equipment [0.73, 0.66] label [-13, -15]
 pipeline equipment // [0.54, 0.74]
 // component vehicles [0.75, 0.67] label [-21, 26]
-component building materials [0.63, 0.57] label [-72, -29]
-pipeline building materials [0.49, 0.64]
+component BUILDING MATERIALS [0.63, 0.57] label [-72, -29]
+pipeline BUILDING MATERIALS [0.49, 0.64]
 component trade [0.47, 0.68] label [22, 0]
 
-component labour [0.58, 0.66] label [5, -8]
-pipeline labour [0.62, 0.73]
+component LABOUR [0.58, 0.66] label [5, -8]
+pipeline LABOUR [0.62, 0.73]
 
 component unskilled_labour [0.56, 0.72] label [50, -13]
 component skilled_labour [0.56, 0.63] label [-56, 19]
 // component training [0.33, 0.61] label [-16, 28]
 // component training content [0.22, 0.50] label [-69, -18]
-component certification [0.39, 0.58] label [11, 5]
+component certification [0.39, 0.57] label [4, 10]
 
 // component specialist_equipment [0.09, 0.25] label [-118, -24]
 // component process automation [0.13, 0.31] label [-81, -32]
-// component specialist_labour [0.06, 0.17] label [-93, -20]
+// component specialist_LABOUR [0.06, 0.17] label [-93, -20]
 
-component foreman [0.48, 0.47] label [-66, 3]
-component machinery [0.47, 0.56] label [-35, 21]
-component skills [0.49, 0.62] label [7, -6]
-pipeline skills [0.46, 0.69]
+component project management [0.47, 0.47] label [-37, 9]
+component machinery [0.47, 0.56] label [-48, 20]
+component SKILLS [0.49, 0.62] label [7, -6]
+pipeline SKILLS [0.46, 0.69]
+
+construction->project management
+project management->LOGISTICS
 
 // component quality control [0.44, 0.17] label [11, -11]
-component End of Line Inspection [0.15, 0.71] label [1, -28]
-// component craft_skills [0.82, 0.09]
+component End of Line Inspection [0.15, 0.71] label [8, -37]
+// component craft_SKILLS [0.82, 0.09]
 
 // pipeline skilled_labour // [0.4, 0.76]
-// pipeline equipment_skills //[0.4, 0.7]
+// pipeline equipment_SKILLS //[0.4, 0.7]
 
-// note Need to work on pipelines for skills and labour [0.39, 0.01]
+// note Need to work on pipelines for SKILLS and LABOUR [0.39, 0.01]
 
 // note Differing job types - hourly vs subcontracting vs salaried [0.96, 0.02]
 // note are changing [0.94, 0.02]
@@ -67,37 +70,47 @@ component modular [0.32, 0.46] label [-69, 2]
 // component monopoly [0.69, 0.73] label [14, 3]
 // component control [0.52, 0.06] label [-61, 3]
 // component tradeoffs [0.65, 0.33] label [-76, -4]
-component stock [0.87, 0.71] label [22, 0]
+component stock [0.87, 0.71] label [5, 2]
 component market [0.78, 0.77] label [8, 4]
-component supply chain [0.04, 0.69] label [8, 3]
+component material supply chain [0.03, 0.70] label [-73, -19]
 component finance [0.81, 0.69] label [7, 4]
 pipeline finance
-component building codes [0.32, 0.59] label [14, 2]
+component building codes [0.32, 0.59] label [14, 0]
 
 // 
 component construction [0.83, 0.64] label [-96, -1]
-component manufacture [0.17, 0.67] label [-88, -10]
-pipeline manufacture [0.44, 0.72]
-component raw materials [0.08, 0.69] label [-107, -5]
+component MANUFACTURE [0.17, 0.66] label [-88, -10]
+pipeline MANUFACTURE [0.44, 0.72]
+component raw materials [0.10, 0.69] label [-12, -13]
+
+component MATERIALS [0.11, 0.58] label [5, -5]
+pipeline MATERIALS [0.44, 0.7]
+
 // component maintenance [0.54, 0.54] label [-39, -8]
 // component decomission [0.60, 0.44] label [-90, 22]
+
+component recycled materials [0.09, 0.45] label [-23, 13]
+
 component blueprint [0.79, 0.52] label [-25, 17]
 component planning permission [0.75, 0.41] label [-78, -18]
 component quality assurance [0.92, 0.46] label [-68, -32]
 
 component standards [0.24, 0.58] label [8, 2]
-component testing [0.34, 0.51] label [-40, -13]
-pipeline testing [0.45, 0.60]
-component prefab [0.62, 0.50] label [-59, 4]
-component regulation [0.71, 0.52] label [-84, 5]
-pipeline regulation
+component TESTING [0.34, 0.51] label [-40, -13]
+pipeline TESTING [0.45, 0.60]
+component prefab [0.61, 0.50] label [-59, 4]
+component REGULATION [0.71, 0.52] label [-84, 5]
+pipeline REGULATION
 
 component laws [0.66, 0.68] label [5, 10]
-component land [0.73, 0.59] label [-41, 1]
+component land [0.73, 0.58] label [-41, 1]
 
 component benchmarks [0.21, 0.43] label [-86, 3]
 
+component waste materials [0.06, 0.70] label [14, -15]
 
+recycled materials->waste materials
+waste materials->material supply chain
 
 //links
 government->buyer
@@ -110,112 +123,112 @@ equipment->building
 
 purchasor->construction
 construction->equipment
-construction->building materials
+construction->BUILDING MATERIALS
 // mortgage company->finance
 mortgage company->assurance
 construction->blueprint
 construction->maintenance
-//building materials->manufacture
+//BUILDING MATERIALS->MANUFACTURE
 government->assurance
 assurance->planning permission
 planning permission->past examples
-manufacture->raw materials
-maintenance->testing
-testing->past examples
+MANUFACTURE->MATERIALS
+maintenance->TESTING
+TESTING->past examples
 
 certification->training content
 training->training content
 
-// building materials->skilled_labour
+// BUILDING MATERIALS->skilled_labour
 // equipment->skilled_labour
 
-// skilled_labour->equipment_skills
-equipment_skills->training
-equipment_skills->certification
+// skilled_labour->equipment_SKILLS
+equipment_SKILLS->training
+equipment_SKILLS->certification
 
 prefab->process automation
 factory mode->process automation
 process automation->specialist_equipment
-specialist_equipment->specialist_labour
+specialist_equipment->specialist_LABOUR
 
 blueprint->blueprint
 blueprint->planning permission
-planning permission->regulation
-decomission->regulation
+planning permission->REGULATION
+decomission->REGULATION
 planning permission->tradeoffs
-tradeoffs->regulation
+tradeoffs->REGULATION
 construction->stock
 
 stock->market
 market->finance
 monopoly->market
 finance->stock
-raw materials->supply chain
+MATERIALS->material supply chain
 raw materials->sourcing
-// testing->modular tests
+// TESTING->modular tests
 prefab->modular tests
 modular tests->test driven development
 modular tests->factory mode
 test driven development->factory mode
 citizens->government
-citizens->homes
+citizens->HOMES
 // citizens->finance
 social->government
 // finance->government
-stock->homes
-homes->mortgage company
+stock->HOMES
+HOMES->mortgage company
 quality assurance->mortgage company
 government->quality assurance
-quality assurance->building inspectors
-building inspectors->blueprint
-blueprint->building inspectors
-building inspectors->planning permission
-planning permission->building inspectors
-stock->building inspectors
+quality assurance->BUILDING INSPECTORS
+BUILDING INSPECTORS->blueprint
+blueprint->BUILDING INSPECTORS
+BUILDING INSPECTORS->planning permission
+planning permission->BUILDING INSPECTORS
+stock->BUILDING INSPECTORS
 market->laws
 laws->market
-regulation->laws
+REGULATION->laws
 government->laws
 construction->land
 land->laws
-labour->construction
-equipment->equipment_skills
-skilled_labour->skills
+LABOUR->construction
+equipment->equipment_SKILLS
+skilled_labour->SKILLS
 equipment->machinery
-certification->testing
-certification->skills
-building materials->certification
-certification->building materials
-testing->standards
+certification->TESTING
+certification->SKILLS
+BUILDING MATERIALS->certification
+certification->BUILDING MATERIALS
+TESTING->standards
 standards->planning permission
 benchmarks->standards
 prefab->modular
-raw materialols->supply chain
+raw materialols->material supply chain
 factory mode (Inflight)->test driven development
-component Logistics [0.53, 0.52] label [-88, -4]
-pipeline Logistics 
+component LOGISTICS [0.54, 0.52] label [-78, 1]
+pipeline LOGISTICS 
 
-component recycling [0.16, 0.55] label [-52, -16]
+
 component circular materials [0.62, 0.55] label [-43, 16]
-note economy of reuse from preparing sites [0.93, 0.07]
-component distributors [0.29, 0.64]
-pipeline distributors [0.43, 0.72]
-component integrated [0.28, 0.49] label [-27, -13]
-component traditional [0.28, 0.71] label [-1, 28]
-component platform [0.27, 0.44] label [-86, 1]
-distributors->manufacture
+//note economy of reuse from preparing sites [0.95, 0.01]
+component DISTRIBUTORS [0.29, 0.64] label [9, -4]
+pipeline DISTRIBUTORS [0.41, 0.72]
+component integrated [0.27, 0.49] label [-25, 20]
+component traditional [0.28, 0.71] label [17, 10]
+component platform [0.27, 0.42] label [-79, 1]
+DISTRIBUTORS->MANUFACTURE
 //component Durability [0.18, 0.17]
 component Supply Chain Awareness [0.44, 0.25] label [-40, 13]
 //pipeline Local Supply [0.05, 0.13]
 //component Local Supply [0.51, 0.09] label [-69, -17]
-Logistics->building materials
-prefab->Logistics
-skilled_labour->Logistics
-Logistics->distributors
-foreman->Supply Chain Awareness
-Logistics->Supply Chain Awareness
+LOGISTICS->BUILDING MATERIALS
+prefab->LOGISTICS
+skilled_labour->LOGISTICS
+LOGISTICS->DISTRIBUTORS
+project management->Supply Chain Awareness
+LOGISTICS->Supply Chain Awareness
 
-supply chain->Supply Chain Awareness
+material supply chain->Supply Chain Awareness
 component Substitutability [0.55, 0.29] label [-89, -23]
 Supply Chain Awareness->Substitutability
 blueprint->Supply Chain Awareness
@@ -223,8 +236,8 @@ blueprint->Substitutability
 component CNI [0.80, 0.26] label [-14, -10]
 government->CNI
 CNI->Supply Chain Awareness
-//note Local supply of skills and labour (decentralised + distributed) - open question [0.59, 0.02]
-//note Need Local supply of skill labour [0.68, 0.08]
+//note Local supply of SKILLS and LABOUR (decentralised + distributed) - open question [0.59, 0.02]
+//note Need Local supply of skill LABOUR [0.68, 0.08]
 CNI->skilled_labour
 component locality [0.71, 0.29] label [-13, 20]
 CNI->locality
