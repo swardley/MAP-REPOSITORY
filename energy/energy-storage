@@ -3,80 +3,93 @@
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
 
-title Energy - storage v1.0
+title Electrical Energy - storage v1.0
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
 style wardley
 
-component CONSUMER [0.96, 0.68] label [-43, -14]
-pipeline CONSUMER   [0.66, 0.72]
+
+note +REGULATION - where is Gov in this? [0.90, 0.01]
+note +SOLAR / WIND issues with spinning reserve [0.87, 0.01]
+note +MODEL OF CONTROL LINK TO "What is in the GRID? (CHAIN OF COMPONENTS)" [0.93, 0.01]
+
+component CONSUMER [0.92, 0.68] label [-43, -14]
+pipeline CONSUMER   //[0.66, 0.72]
 // component households [0.94, 0.67] label [-92, 1]
 // component industrial [0.94, 0.71] label [15, 2]
 // component large sites [0.95, 0.69] label [-6, 30]
 
-component ACTIVITY [0.86, 0.68] label [11, -10]
-pipeline ACTIVITY [0.64, 0.73]
+component ACTIVITY [0.86, 0.68] label [-75, 9]
+pipeline ACTIVITY //[0.64, 0.73]
 // component cooking [0.84, 0.72] label [26, 2]
 // component steel making [0.85, 0.65] label [-108, 9]
 // pipeline steel making
 
-component CONTROL [0.76, 0.76] label [-2, -12]
-pipeline CONTROL [0.71, 0.80]
+component CONTROL [0.82, 0.73] label [10, 3]
+pipeline CONTROL //[0.71, 0.80]
 // component environment [0.76, 0.72] label [-96, 2]
 // component lighting [0.76, 0.79] label [21, 2]
 // component mechanical [0.76, 0.74] label [-67, 23]
 // component thermal [0.76, 0.76] label [-4, 22]
 
-component POWER [0.68, 0.72] label [-52, -5]
-pipeline POWER [0.61, 0.79]
+component ELECTRICITY [0.76, 0.71] label [12, 4]
+pipeline ELECTRICITY // [0.61, 0.79]
 // component chemical [0.63, 0.78] label [19, 1]
 // component potential [0.63, 0.75] label [-11, -18]
 // component kinetic [0.63, 0.73] label [-17, 22]
 // component nuclear [0.63, 0.62] label [-66, 4]
 // component electrical [0.63, 0.70] label [-69, 22]
 
-component TRANSPORTATION [0.58, 0.72] label [-108, -3]
-pipeline TRANSPORTATION [0.68, 0.9]
-component grid [0.56, 0.83] label [-11, 20]
-component bulk carrier [0.56, 0.78] label [-10, -20]
-component pipe [0.56, 0.89] label [15, 3]
+component GRID [0.71, 0.69] label [-41, -4]
+pipeline GRID [0.34, 0.81]
+component Trad grid [0.69, 0.80] label [12, 0]
+component Distributed grid [0.69, 0.35] label [-70, -32]
+//component micro grid [0.56, 0.26] label [-20, -18]
 
-component STORAGE [0.40, 0.64] label [-64, -4]
-pipeline STORAGE [0.46, 0.80]
-component battery [0.38, 0.68] label [-9, -20]
-component hydro [0.38, 0.79] label [14, 1]
+component Auto Generation Control (Trad) [0.58, 0.79] label [4, -3]
+component Fault Tolerant Network [0.58, 0.31] label [-80, -19]
+
+component STORAGE [0.33, 0.68] label [9, -9]
+pipeline STORAGE [0.66, 0.72]
+component battery [0.31, 0.67] label [-72, 1]
+component hydro [0.31, 0.71] label [28, 0]
 //component stockpile [0.38, 0.84] label [-80, 2]
-component spinning reserve [0.38, 0.47] label [-73, -19]
-component mobile battery [0.38, 0.57] label [-46, 27]
+component spinning reserve [0.44, 0.69] label [17, -6]
+component fast response [0.44, 0.26] label [-117, 1]
 
-component ENERGY PLATFORM [0.48, 0.67] label [-76, -28]
-pipeline ENERGY PLATFORM   [0.4, 0.9]
+component ENERGY PLATFORM [0.46, 0.65] label [-76, -28]
+pipeline ENERGY PLATFORM   [0.25, 0.7]
 // component JIT [0.32, 0.25] label [-38, 4]
 // component low latency demand [0.32, 0.33] label [-71, -8]
 
 
-component  GENERATION [0.32, 0.73] label [11, -7]
-pipeline  GENERATION [0.4, 0.9]
+component MODEL OF CONTROL [0.60, 0.67] label [-65, -46]
+pipeline MODEL OF CONTROL [0.3, 0.80]
 
-component STOCKPILE [0.23, 0.68] label [-74, -11]
-pipeline STOCKPILE [0.4, 0.9]
+component  GENERATION [0.21, 0.70] label [12, -8]
+pipeline  GENERATION [0.63, 0.75]
 
-component SOURCES [0.14, 0.71] label [20, -10]
-pipeline SOURCES [0.4, 0.9]
+component STOCKPILE [0.10, 0.65] label [-82, 3]
+pipeline STOCKPILE // [0.4, 0.9]
+
+component SOURCES [0.07, 0.70] label [17, 7]
+pipeline SOURCES // [0.4, 0.9]
 // component LNG [0.15, 0.27] label [-34, 4]
 // component hydrogen [0.18, 0.36] label [-66, 2]
 // component coal [0.15, 0.30] label [12, 2]
 // component solar [0.18, 0.29] label [-47, 3]
 // component oil [0.16, 0.21]
 
-component SUPPLY_CHAIN [0.06, 0.69] label [25, -10]
-pipeline SUPPLY_CHAIN [0.4, 0.9]
+component SUPPLY_CHAIN [0.02, 0.68] label [12, 1]
+pipeline SUPPLY_CHAIN // [0.4, 0.9]
+
+evolve Fault Tolerant Network 0.5 label [-27, 13]
 
 // link
 government->local community
 government->consumer
-consumer->power
-local community->power
-power->inverter
+consumer->ELECTRICITY
+local community->ELECTRICITY
+ELECTRICITY->inverter
 inverter->communication
 consumer->activity
 activity->control
@@ -86,13 +99,15 @@ steel making->thermal
 industrial->steel making
 CONSUMER->ACTIVITY
 ACTIVITY->CONTROL
-CONTROL->POWER
+CONTROL->ELECTRICITY
 thermal->chemical
 thermal->nuclear
 thermal->electrical
-POWER->TRANSPORTATION
-//TRANSPORTATION->ENERGY PLATFORM
-grid->ENERGY PLATFORM
+ELECTRICITY->GRID
+//GRID->ENERGY PLATFORM
+//grid->ENERGY PLATFORM
+//GRID -> STORAGE
+//GRID ->GENERATION
 STORAGE-> GENERATION
 ENERGY PLATFORM -> ENERGY PLATFORM
 SOURCES->SUPPLY_CHAIN
@@ -100,3 +115,8 @@ SOURCES->SUPPLY_CHAIN
 SOURCES->STOCKPILE
 STOCKPILE-> GENERATION
 STORAGE->ENERGY PLATFORM
+Trad grid -> Auto Generation Control (Trad)
+Distributed grid -> Fault Tolerant Network
+Auto Generation Control (Trad)->spinning reserve
+Fault Tolerant Network->fast response battery
+fast response->Fault Tolerant Network
