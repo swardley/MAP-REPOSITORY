@@ -1,68 +1,73 @@
-title Purpose of Education V2.0
-anchor Individual [0.96, 0.13]
-component Reach Full Potential [0.88, 0.27] label [-25, -52]
-component Virtue [0.78, 0.26] label [9, -7]
-pipeline Virtue
+style wardley
 
-component Wealth [0.81, 0.35] label [12, 9]
-component Pleasure [0.79, 0.81] label [9, 4]
-component Liberation [0.76, 0.18] label [-80, 2]
-component Knowledge [0.48, 0.51] label [-7, -15]
-pipeline Knowledge [0.3, 0.8]
-component Low Level (Practices + Ignorance) [0.46, 0.79] label [5, -10]
-component High Level (Experience + Self) [0.46, 0.31] label [-67, -6]
-component Obligatory Duties [0.46, 0.62] label [-27, 18]
-component Purpose [0.46, 0.46] label [-5, 28]
-component Trade [0.46, 0.72] label [-12, 29]
+title Purpose of Education V3.0
 
-component Environment [0.07, 0.70] label [7, -11]
-pipeline Environment [0.6, 0.8]
-component Formal (School) [0.04, 0.61] label [-73, -16]
-component Informal (Twitter Spaces) [0.04, 0.79] label [10, -25]
+component Happiness [0.87, 0.41] label [-78, 11]
+component Survival [0.87, 0.81] label [-4, 31]
+component Goals [0.89, 0.51] label [-16, -14]
+pipeline Goals [0.40, 0.82]
+
+component Wealth [0.76, 0.91] label [-2, -17]
+component Pleasure [0.65, 0.78] label [-19, -10]
+component Fairness [0.64, 0.91] label [-19, -12]
+component Formal (School) [0.10, 0.64] label [-37, 19]
+component Informal (Twitter Spaces) [0.10, 0.82] label [-27, 18]
+component Environment [0.12, 0.73] label [1, -3]
+pipeline Environment [0.63, 0.83]
+
+component Inductive (Observe) [0.22, 0.68] label [3, 15]
+component Deductive (Act) [0.22, 0.58] label [-34, 15]
+component Reasoning [0.24, 0.64] label [-30, -6]
+pipeline Reasoning [0.57, 0.69]
+
+component HITL [0.16, 0.54] label [3, 31]
+component HOOTL [0.16, 0.22] label [-26, 35]
+component Mentors [0.18, 0.36] label [-52, -14]
+pipeline Mentors [0.21, 0.55]
+component Society [0.77, 0.76] label [7, 25]
+component Government [0.96, 0.81] label [-31, -8]
+component Individual [0.97, 0.38] label [-34, 29]
+
+component Personal  [0.39, 0.36] label [-30, 29]
+component Literacy [0.38, 0.72] label [-26, 29]
+component Critical thinking [0.38, 0.52] label [-36, 30]
+component Procedural [0.39, 0.81] label [-30, 29]
+component Skills [0.41, 0.42] label [-17, -9]
+pipeline Skills [0.35, 0.82]
+
+component Knowledge [0.55, 0.70] label [-39, 31]
+component Behavior [0.54, 0.34] label [-26, 29]
+component Shared beliefs [0.54, 0.52] label [-40, 32]
+component Individual beliefs [0.55, 0.21] label [-66, 29]
+component Culture [0.57, 0.39] label [-21, -7]
+pipeline Culture [0.20, 0.71]
+component Creativity [0.73, 0.31] label [-34, 29]
+component Educational industry [0.95, 0.65] label [-74, -6]
+component Opportunity [0.72, 0.57] label [-38, 29]
+component Exclusion [0.56, 0.84] label [-30, 29]
+component useful economic units [0.93, 0.72] label [-1, -36]
 
 
-component Reasoning [0.32, 0.54]
-pipeline Reasoning [0.5, 0.6]
-
-component Inductive (Observe) [0.30, 0.59] label [-14, 17]
-component Deductive (Act) [0.30, 0.51] label [-33, 17]
-
-component Mentors [0.17, 0.40] label [-49, -12]
-pipeline Mentors [0.3, 0.5]
-
-component Sentient [0.15, 0.49] label [-25, 26]
-component Insentient [0.14, 0.31] label [-26, 22]
-
-Individual->Reach Full Potential
-Reach Full Potential->Liberation
-Reach Full Potential->Virtue
-Reach Full Potential->Wealth
-Reach Full Potential->Pleasure
-Liberation->Knowledge
-Virtue->Knowledge
-Wealth->Knowledge
-Pleasure->Knowledge
-Knowledge->Reasoning
-Knowledge->Mentors
+Survival->Wealth
 Reasoning->Mentors
-
 Reasoning->Environment
 Mentors->Environment
-
-note Survival [0.68, 0.43]
-note Food,Clothing, Shelter, Power [0.66, 0.43]
-note Society [0.72, 0.26]
-note I am, because you are! [0.70, 0.26]
-note Self [0.71, 0.18]
-note Who Am I? [0.68, 0.18]
-note Propagate [0.69, 0.74]
-note How to Enjoy Red Wine? [0.66, 0.74]
-
-component Society [0.73, 0.56] label [9, -6]
-Society->Virtue
-
-anchor Government [0.95, 0.59]
+Society->Shared beliefs
+Society->Survival
+Individual->Goals
+Wealth->Government
 Government->Society
-Government->Wealth
+Happiness->Shared beliefs
+Happiness->Pleasure
+Knowledge->Reasoning
+Skills->Knowledge
+Fairness->Knowledge
+Skills->Reasoning
+Skills->Mentors
+Creativity->Happiness
+Happiness->Fairness
+Wealth->Exclusion
+Educational industry->Happiness
+Educational industry->useful economic units
 
-style wardley
+component Creative commons [0.87, 0.20]
