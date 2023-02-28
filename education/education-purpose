@@ -1,92 +1,68 @@
-// General
-// Map is licensed under creative commons share alike.
-// https://creativecommons.org/licenses/by-sa/4.0/
-// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+title Purpose of Education V2.0
+anchor Individual [0.96, 0.13]
+component Reach Full Potential [0.88, 0.27] label [-25, -52]
+component Virtue [0.78, 0.26] label [9, -7]
+pipeline Virtue
 
-title education - purpose
+component Wealth [0.81, 0.35] label [12, 9]
+component Pleasure [0.79, 0.81] label [9, 4]
+component Liberation [0.76, 0.18] label [-80, 2]
+component Knowledge [0.48, 0.51] label [-7, -15]
+pipeline Knowledge [0.3, 0.8]
+component Low Level (Practices + Ignorance) [0.46, 0.79] label [5, -10]
+component High Level (Experience + Self) [0.46, 0.31] label [-67, -6]
+component Obligatory Duties [0.46, 0.62] label [-27, 18]
+component Purpose [0.46, 0.46] label [-5, 28]
+component Trade [0.46, 0.72] label [-12, 29]
+
+component Environment [0.07, 0.70] label [7, -11]
+pipeline Environment [0.6, 0.8]
+component Formal (School) [0.04, 0.61] label [-73, -16]
+component Informal (Twitter Spaces) [0.04, 0.79] label [10, -25]
+
+
+component Reasoning [0.32, 0.54]
+pipeline Reasoning [0.5, 0.6]
+
+component Inductive (Observe) [0.30, 0.59] label [-14, 17]
+component Deductive (Act) [0.30, 0.51] label [-33, 17]
+
+component Mentors [0.17, 0.40] label [-49, -12]
+pipeline Mentors [0.3, 0.5]
+
+component Sentient [0.15, 0.49] label [-25, 26]
+component Insentient [0.14, 0.31] label [-26, 22]
+
+Individual->Reach Full Potential
+Reach Full Potential->Liberation
+Reach Full Potential->Virtue
+Reach Full Potential->Wealth
+Reach Full Potential->Pleasure
+Liberation->Knowledge
+Virtue->Knowledge
+Wealth->Knowledge
+Pleasure->Knowledge
+Knowledge->Reasoning
+Knowledge->Mentors
+Reasoning->Mentors
+
+Reasoning->Environment
+Mentors->Environment
+
+note Survival [0.68, 0.43]
+note Food,Clothing, Shelter, Power [0.66, 0.43]
+note Society [0.72, 0.26]
+note I am, because you are! [0.70, 0.26]
+note Self [0.71, 0.18]
+note Who Am I? [0.68, 0.18]
+note Propagate [0.69, 0.74]
+note How to Enjoy Red Wine? [0.66, 0.74]
+
+component Society [0.73, 0.56] label [9, -6]
+Society->Virtue
+
+anchor Government [0.95, 0.59]
+Government->Society
+Government->Wealth
+
 style wardley
-
-//actors
-// component students [0.90, 0.66]
-component government [0.99, 0.64] label [8, -14]
-component society [0.99, 0.59] label [-13, -11]
-
-//component
-// component pattern [0.48, 0.65]
-// component survival [0.51, 0.80]
-// component pattern recognition [0.63, 0.75]
-// component social skills [0.60, 0.60]
-// component metacognition [0.48, 0.51]
-// component debate [0.68, 0.50]
-
-component law and order [0.95, 0.74]
-component teaching establishment [0.60, 0.60] label [-62, -30]
-pipeline teaching establishment [0.34, 0.69]
-component university [0.58, 0.35] label [-61, 26]
-component tradeschool [0.58, 0.50] label [-79, 23]
-component highschool [0.58, 0.68] label [-72, 26]
-// component primary school [0.88, 0.71] label [-3, -24]
-
-component educators [0.71, 0.62] label [-35, -16]
-pipeline educators [0.29, 0.70]
-// component researchers [0.78, 0.27] label [-37, -17]
-component professors [0.69, 0.30] label [-59, 24]
-// component lecturers [0.78, 0.39] label [3, -19]
-component trade teachers [0.69, 0.46] label [-48, 22]
-component secondary teachers [0.69, 0.69] label [-1, 12]
-// component primary teachers [0.78, 0.71] label [9, -31]
-
-component stages of learning [0.83, 0.57] label [-59, -55]
-pipeline stages of learning [0.3, 0.76]
-// component preschool [0.57, 0.77] label [37, -21]
-// component primary [0.57, 0.75] label [5, -19]
-// component secondary [0.57, 0.66] label [-36, -23]
-// component undergrad [0.57, 0.49] label [-39, 27]
-component vocational [0.81, 0.65] label [-17, 23]
-component postgrad [0.81, 0.46] label [-22, 20]
-// component doctorate [0.57, 0.37] label [-48, -23]
-component research [0.81, 0.31] label [-39, 22]
-
-component social cohesion [0.91, 0.67] label [-66, -22]
-component learning to learning [0.50, 0.37] label [8, -3]
-component base skills [0.81, 0.75] label [5, 25]
-component base understanding [0.51, 0.71] label [14, 3]
-component menial work [0.41, 0.68] label [14, -6]
-pipeline menial work [0.65, 0.73]
-component skilled labour [0.30, 0.61] label [12, -3]
-pipeline skilled labour [0.54, 0.75]
-component trades [0.21, 0.52]
-pipeline trades [0.39, 0.73]
-component professions [0.39, 0.48] label [21, -12]
-pipeline professions [0.36, 0.55]
-
-component New tech [0.43, 0.16] label [-34, 22]
-component New business models [0.43, 0.24]
-component societal improvement [0.88, 0.39] label [-79, -25]
-component GDP [0.90, 0.74] label [18, 2]
-
-
-//links
-social cohesion->stages of learning
-teaching establishment->educators
-social cohesion->base skills
-stages of learning->educators
-teaching establishment->stages of learning
-vocational->base understanding
-vocational->menial work
-highschool->base understanding
-base skills->base understanding
-university->learning to learning
-tradeschool->professions
-professions->skilled labour
-professions->trades
-vocational->tradeschool
-government->law and order
-law and order->social cohesion
-society->social cohesion
-government->GDP
-society->societal improvement
-societal improvement->stages of learning
-GDP->stages of learning
-research->New tech
-New business models->research
