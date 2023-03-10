@@ -1,0 +1,62 @@
+title ORCA
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+
+component contributor [0.73, 0.59] label [-102, 4]
+component corporation [0.92, 0.66] label [-81, -11]
+
+component code [0.81, 0.67] label [-37, 1]
+component user [0.93, 0.76] label [3, -10]
+component application [0.86, 0.69] label [-89, 5]
+pipeline application
+
+component developer [0.75, 0.64] label [-59, -11]
+pipeline developer [0.58, 0.7]
+
+component employee [0.73, 0.69] label [-23, -21]
+
+component financial_contribution [0.65, 0.67] label [-128, -10]
+
+component price_point [0.47, 0.62] label [-34, -10]
+pipeline price_point [0.38, 0.71]
+
+component ORCA [0.55, 0.39] label [-51, 3]
+component polyform [0.55, 0.62] label [-27, -23]
+
+
+component agreement [0.57, 0.55] label [-76, -9]
+pipeline agreement [0.38, 0.74]
+component commercial_license [0.55, 0.73] label [16, -32]
+
+component owner_set [0.45, 0.70] label [-55, 22]
+component consumer_set [0.46, 0.39] label [-108, 10]
+
+component transparency [0.31, 0.58] label [-86, -12]
+pipeline transparency [0.46, 0.7]
+component closed [0.29, 0.69] label [23, 3]
+component visible [0.29, 0.47] label [-72, 4]
+
+component social [0.20, 0.60] label [7, -8]
+pipeline social [0.56, 0.66]
+component pressure [0.19, 0.65] label [18, 6]
+component proof [0.18, 0.57] label [-57, 1]
+
+
+// links
+corporation->application
+user->application
+application->code
+code->developer
+contributor->financial_contribution
+financial_contribution->agreement
+owner_set->polyform
+ORCA->consumer_set
+financial_contribution->price_point
+commercial_license->owner_set
+commercial_license->closed
+visible->consumer_set
+polyform->visible
+visible->social pressure
+social->visible
+user->social
