@@ -1,22 +1,22 @@
 style wardley
+title Purpose of Education V4.0, March 2023
 
-title Purpose of Education V3.0
-
-component Happiness [0.87, 0.41] label [-78, 11]
-component Survival [0.87, 0.81] label [-4, 31]
-component Goals [0.89, 0.51] label [-16, -14]
-pipeline Goals [0.40, 0.82]
-
-component Wealth [0.76, 0.91] label [-2, -17]
-component Pleasure [0.65, 0.78] label [-19, -10]
-component Fairness [0.64, 0.91] label [-19, -12]
+component Survival [0.69, 0.77] label [10, -5]
+component spread of knowledge [0.85, 0.65] label [-10, 7]
+component shared language [0.77, 0.60] label [-67, -14]
+component Wealth [0.65, 0.87] label [12, -2]
+component Pleasure [0.64, 0.56] label [1, -10]
+component Fairness [0.61, 0.70] label [8, 2]
+component social cohesion [0.85, 0.59] label [-69, -9]
+component R&D [0.85, 0.37] label [-36, 1]
 component Formal (School) [0.10, 0.64] label [-37, 19]
 component Informal (Twitter Spaces) [0.10, 0.82] label [-27, 18]
 component Environment [0.12, 0.73] label [1, -3]
 pipeline Environment [0.63, 0.83]
 
-component Inductive (Observe) [0.22, 0.68] label [3, 15]
-component Deductive (Act) [0.22, 0.58] label [-34, 15]
+component social engineering [0.79, 0.05]
+component Inductive (Observe) [0.22, 0.68] label [26, -14]
+component Deductive (Act) [0.22, 0.58] label [-79, -35]
 component Reasoning [0.24, 0.64] label [-30, -6]
 pipeline Reasoning [0.57, 0.69]
 
@@ -24,50 +24,73 @@ component HITL [0.16, 0.54] label [3, 31]
 component HOOTL [0.16, 0.22] label [-26, 35]
 component Mentors [0.18, 0.36] label [-52, -14]
 pipeline Mentors [0.21, 0.55]
-component Society [0.77, 0.76] label [7, 25]
-component Government [0.96, 0.81] label [-31, -8]
-component Individual [0.97, 0.38] label [-34, 29]
 
-component Personal  [0.39, 0.36] label [-30, 29]
-component Literacy [0.38, 0.72] label [-26, 29]
-component Critical thinking [0.38, 0.52] label [-36, 30]
-component Procedural [0.39, 0.81] label [-30, 29]
+component useful members [0.71, 0.67] label [-65, -12]
+component social justice [0.38, 0.05] label [16, 0]
+component Society [0.74, 0.76] label [11, 1]
+component Government [0.98, 0.78] label [-2, -11]
+component Individual [0.98, 0.68] label [-19, -16]
+component Governance [0.67, 0.05] label [10, 1]
+component ecosystems [0.60, 0.05] label [16, -1]
+component standardisation [0.70, 0.05] label [33, -7]
+component communication [0.74, 0.05] label [13, 4]
+component collective intelligence [0.50, 0.05] label [23, -12]
+component industry requirements [0.45, 0.05] label [18, -7]
+
+component well being [0.85, 0.44] label [-46, 25]
+
+component Personal  [0.39, 0.36] label [-46, 23]
+component Literacy [0.40, 0.72] label [-26, 29]
+component Critical thinking [0.39, 0.52] label [-11, 10]
+component Procedural [0.39, 0.81] label [-29, 25]
 component Skills [0.41, 0.42] label [-17, -9]
 pipeline Skills [0.35, 0.82]
-
 component Knowledge [0.55, 0.70] label [-39, 31]
-component Behavior [0.54, 0.34] label [-26, 29]
-component Shared beliefs [0.54, 0.52] label [-40, 32]
-component Individual beliefs [0.55, 0.21] label [-66, 29]
-component Culture [0.57, 0.39] label [-21, -7]
+component Behavior [0.55, 0.34] label [-22, 22]
+component Shared beliefs [0.56, 0.54] label [-61, 29]
+component Individual beliefs [0.55, 0.21] label [-53, 10]
+component Culture [0.57, 0.39] label [-9, -12]
 pipeline Culture [0.20, 0.71]
-component Creativity [0.73, 0.31] label [-34, 29]
-component Educational industry [0.95, 0.65] label [-74, -6]
-component Opportunity [0.72, 0.57] label [-38, 29]
-component Exclusion [0.56, 0.84] label [-30, 29]
-component useful economic units [0.93, 0.72] label [-1, -36]
 
+component Creativity [0.64, 0.38] label [-86, 4]
+component Educational industry [0.98, 0.63] label [-74, -26]
+component Opportunity [0.33, 0.05] label [16, 0]
 
+component Exclusion [0.59, 0.84] label [16, 2]
+component creative commons [0.55, 0.05] label [8, -18]
+component useful economic units [0.85, 0.71] label [6, -5]
+
+// links
 Survival->Wealth
 Reasoning->Mentors
 Reasoning->Environment
 Mentors->Environment
 Society->Shared beliefs
-Society->Survival
-Individual->Goals
 Wealth->Government
 Government->Society
-Happiness->Shared beliefs
-Happiness->Pleasure
+well being->Shared beliefs
+well being->Pleasure
 Knowledge->Reasoning
 Skills->Knowledge
 Fairness->Knowledge
 Skills->Reasoning
 Skills->Mentors
-Creativity->Happiness
-Happiness->Fairness
+Creativity->well being
+well being->Fairness
 Wealth->Exclusion
-Educational industry->Happiness
-Educational industry->useful economic units
-
-component Creative commons [0.87, 0.20]
+Government->useful economic units
+useful economic units->Educational industry
+well being->Educational industry
+Society->useful members
+Society->Survival
+Individual->useful economic units
+Individual->useful members
+well being->Individual
+Society->well being
+Government->social cohesion
+Educational industry->spread of knowledge
+Educational industry->R&D
+Society->spread of knowledge
+Society->social cohesion
+Government->R&D
+spread of knowledge->shared language
