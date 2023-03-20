@@ -1,0 +1,110 @@
+title AI, Societal Change, March 2023, version 0.6
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+//Copyright - Creative commmons 4.0 share alike - CC by SA - by the mapping community
+//Contributors John Grant, Pamela Isom, Ben Steward, Alastair Moore
+
+
+
+anchor We [0.95, 0.47]
+anchor Me [0.95, 0.73]
+
+component Identity [0.89, 0.54] label [-10, -20]
+
+
+component BELONGING [0.79, 0.44] label [-21, -10]
+pipeline BELONGING [0.12, 0.9]
+
+component Self worth [0.77, 0.55] label [-32, -16]
+component Role models [0.77, 0.48] label [6, 25]
+component Isolation [0.77, 0.66] label [-36, 27]
+component Companionship [0.77, 0.25] label [-104, -17]
+
+
+component Safety [0.69, 0.52] label [19, -4]
+
+component Power [0.69, 0.42] label [19, -4]
+
+component Equity [0.56, 0.35] label [19, -4]
+component Equality [0.56, 0.45] label [19, -4]
+
+
+component Societal Bias [0.09, 0.61] label [-14, 19]
+
+
+component Pschology [0.32, 0.33] label [19, -4]
+component Mental Health [0.31, 0.26] label [-108, -9]
+
+
+component EDUCATION [0.42, 0.44] label [-38, -11]
+pipeline EDUCATION [0.12, 0.9]
+
+component Learning Tools [0.40, 0.31] label [-44, -20]
+component Differentiated Learning [0.40, 0.25] label [-79, -45]
+component Fixed Syllabus Learning [0.40, 0.63] label [-26, -63]
+
+component Storytelling [0.40, 0.72] label [7, 27]
+
+
+component Mirroring [0.27, 0.32] label [-75, -7]
+component Mimicary [0.25, 0.38] label [19, -4]
+
+component SOCIAL COMMUNITY [0.20, 0.34] label [-83, -32]
+pipeline SOCIAL COMMUNITY [0.12, 0.9]
+
+component Machine Mediated Community [0.18, 0.20] label [-79, -56]
+component Social Media [0.18, 0.64] label [-64, -21]
+
+component Non-mediated Community [0.18, 0.80] label [-56, -47]
+
+
+component LEGAL FRAMEWORKS [0.06, 0.42] label [-59, -37]
+pipeline LEGAL FRAMEWORKS [0.12, 0.9]
+
+component Common Law [0.04, 0.78] label [10, -19]
+component GDPR [0.04, 0.48] label [-38, 22]
+component EU AI Act [0.04, 0.28] label [-77, 23]
+
+
+component LLM Model [0.11, 0.66] label [19, -4]
+component Foundation Model [0.11, 0.22] label [20, -6]
+component Artificial Minds [0.12, 0.03]6] label [19, -4]
+
+//relationships
+We->Identity
+Me->Identity
+Me->Isolation
+We->Companionship
+
+Companionship->Identity
+Isolation->Identity
+
+Self worth->Me
+Identity->BELONGING
+
+Power->Equity
+Power->Equality 
+Safety->Equity
+Safety->Equality
+Learning Tools->Pschology
+Differentiated Learning->Pschology
+Mental Health->Pschology
+Pschology->Mirroring
+Pschology->Mimicary
+
+Fixed Syllabus Learning->Equality
+Differentiated Learning->Equity
+
+Machine Mediated Community->Differentiated Learning
+//Machine Mediated Community->Companionship
+//Machine Mediated Community->Isolation
+
+Common Law->Non-mediated Community
+
+//Organic 
+annotation 1 [0.24, 0.07] Transition to inorganic society
+//Inorganic 
+
+
+
+annotations [0.65, 0.03]
