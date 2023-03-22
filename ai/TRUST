@@ -1,26 +1,23 @@
-title AI, TRUST, March 2023, version 0.8
+title AI, TRUST, March 2023, version 0.9976
 evolution genesis / concept  -> custom / emerging  -> product / converging  -> commodity / accepted
 style wardley
 //Copyright - Creative commmons 4.0 share alike - CC by SA - by the mapping community
 //Contributors
-
-
+// 1. Manish Andankar
+// 2. Cristene Gonzalez-Wertz
+// 3. Tudor Girba
 
 anchor individuals [0.93, 0.26] label [0.92, 0.26]
-
 anchor government [0.93, 0.65] label [-33, -7]
-
 anchor business [0.93, 0.44] label [-23, -10]
 
-component Safety [0.81, 0.29] label [-55, -8]
-
+component Safety [0.81, 0.29] label [-55, -3]
 component Competitive advantage [0.83, 0.52] label [25, -6]
-
 component Reputation [0.82, 0.38] label [12, 10]
 
-component Power [0.79, 0.85] label [-8, 24]
-component Enforcement [0.43, 0.04] label [-36, 21]
-component Regulations [0.43, 0.14] label [-41, 19]
+component Power [0.84, 0.76] label [13, 6]
+component Enforcement [0.43, 0.04] label [-36, 18]
+component Regulations [0.43, 0.14] label [-40, 18]
 
 component Objectively evaluatable [0.41, 0.79] label [-22, 18]
 component Believed [0.41, 0.61] label [-14, 32]
@@ -28,11 +25,11 @@ component OUTPUT [0.43, 0.70] label [-6, -12]
 pipeline OUTPUT [0.6, 0.8]
 
 component Algorithm / Model [0.58, 0.61] label [21, -9]
-component Policy [0.49, 0.11] label [-53, 2]
+component Policy [0.53, 0.09] label [-53, 2]
 
 component DATA [0.20, 0.70]
 pipeline DATA [0.6, 0.80]
-component Input  DATA [0.18, 0.61] label [-32, 29]
+component Input  DATA [0.18, 0.61] label [-34, 27]
 component Training [0.18, 0.79] label [-24, 27]
 component ACCESS [0.68, 0.30] label [-24, -12]
 pipeline ACCESS [0.2, 0.4]
@@ -48,24 +45,29 @@ component Lagging [0.27, 0.19] label [-1, 24]
 
 component Computation [0.05, 0.75] label [-39, 20]
 
-component Feedback Loop [0.11, 0.05] label [-45, 22]
+component Feedback Loop [0.11, 0.05] label [-38, 18]
 
-component constitution [0.22, 0.03] label [-28, -28]
+component constitution [0.22, 0.03] label [-20, 17]
+pipeline constitution
 
 component Ranking (Reputation Engine / Trust Broker) [0.30, 0.35] label [17, -7]
 
-component Checks and balances (Guardrails) [0.12, 0.26] label [-27, 5]
+component Checks and balances (Guardrails) [0.16, 0.31] label [-27, 9]
 
-component Forensics [0.17, 0.13] label [-74, 2]
+component Forensics [0.15, 0.13] label [-33, 19]
 
-component Audits [0.10, 0.15] label [-16, 15]
+component Audits [0.10, 0.17] label [-16, 15]
 component Benchmarks [0.04, 0.37] label [-37, 18]
 
-component Defend (IP) [0.66, 0.39] label [-17, 30]
+component Defend (IP) [0.66, 0.39] label [-15, 24]
 
-component Transparency [0.66, 0.21] label [-73, 15]
-component Technologists [0.06, 0.12] label [-42, 20]
+component Transparency [0.66, 0.21] label [-72, 23]
+component Technologists [0.04, 0.18] label [-41, 19]
 component Source [0.07, 0.55] label [-22, 19]
+
+component Asymmetrical [0.73, 0.22] label [-94, 4]
+component Shared Responsibilities [0.64, 0.07]
+ 
 
 Reputation->CONTROLS
 Transparency->Whitehat Developer
@@ -100,7 +102,10 @@ Policy->constitution
 constitution->CONTROLS
 constitution->Feedback Loop
 constitution->Technologists
-CONTROLS->Computation
+CONTROLS->Computation language
+Computation language->Computation
+Computation language->constitution
+Regulations->Computation language
 Safety->CONTROLS
 Enforcement->CONTROLS
 DATA->Bias
@@ -108,3 +113,12 @@ Ranking (Reputation Engine / Trust Broker)->Benchmarks
 Quality->Benchmarks
 DATA->Source
 Algorithm / Model->Ranking (Reputation Engine / Trust Broker)
+Competitive advantage->Asymmetrical
+Asymmetrical->ACCESS
+Safety->Shared Responsibilities
+Power->Shared Responsibilities
+
+
+note +Speed:human->computation [0.17, 0.01]
+
+component Computation language [0.24, 0.28] label [-13, 9]
