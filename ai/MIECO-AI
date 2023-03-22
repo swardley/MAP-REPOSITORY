@@ -1,6 +1,7 @@
 title LLM - v 1.0 - 28/02/23
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
+//Copyright - Creative commmons 4.0 share alike - CC by SA - by MIECO Group
 
 component USERS [0.98, 0.61] label [-1, -8]
 component FUNDERS [0.97, 0.70] label [15, -8]
