@@ -1,10 +1,8 @@
-title AI, Societal Change, March 2023, version 0.6
+title AI, Societal Change, March 2023
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 //Copyright - Creative commmons 4.0 share alike - CC by SA - by the mapping community
-//Contributors John Grant, Pamela Isom, Ben Steward, Alastair Moore
-
-
+//Contributors John Grant, Pamela Isom, Ben Steward, Alastair Moore, Joaquin Pena Fernandez, Kartik Arora 
 
 anchor We [0.95, 0.47]
 anchor Me [0.95, 0.73]
@@ -12,63 +10,118 @@ anchor Me [0.95, 0.73]
 component Identity [0.89, 0.54] label [-10, -20]
 
 
-component BELONGING [0.79, 0.44] label [-21, -10]
+component BELONGING [0.79, 0.40] label [-77, -11]
 pipeline BELONGING [0.12, 0.9]
 
-component Self worth [0.77, 0.55] label [-32, -16]
-component Role models [0.77, 0.48] label [6, 25]
-component Isolation [0.77, 0.66] label [-36, 27]
-component Companionship [0.77, 0.25] label [-104, -17]
+component Self worth [0.78, 0.55] label [-33, -16]
+component Role models [0.78, 0.48] label [-51, -16]
+component Isolation [0.78, 0.70] label [12, -13]
+component Companionship [0.78, 0.25] label [-104, -18]
 
 
-component Safety [0.69, 0.52] label [19, -4]
+component Safety [0.71, 0.39] label [-65, -9]
 
-component Power [0.69, 0.42] label [19, -4]
+component Power [0.71, 0.52] label [-17, -14]
 
-component Equity [0.56, 0.35] label [19, -4]
-component Equality [0.56, 0.45] label [19, -4]
-
-
-component Societal Bias [0.09, 0.61] label [-14, 19]
+component Equity [0.66, 0.38] label [-65, -7]
+component Equality [0.66, 0.53] label [16, -4]
 
 
-component Pschology [0.32, 0.33] label [19, -4]
-component Mental Health [0.31, 0.26] label [-108, -9]
+component Societal Biases [0.30, 0.54] label [-71, -14]
+component Individual Biases [0.17, 0.86] label [21, -5]
 
 
-component EDUCATION [0.42, 0.44] label [-38, -11]
-pipeline EDUCATION [0.12, 0.9]
+component Pschology [0.15, 0.60] label [20, 0]
+component Mental Health [0.14, 0.51] label [-120, -2]
 
-component Learning Tools [0.40, 0.31] label [-44, -20]
-component Differentiated Learning [0.40, 0.25] label [-79, -45]
-component Fixed Syllabus Learning [0.40, 0.63] label [-26, -63]
+component MACHINE LEARNING [0.49, 0.34] label [13, -27]
+pipeline MACHINE LEARNING [0.08, 0.9]
 
-component Storytelling [0.40, 0.72] label [7, 27]
+component NATURAL LEARNING [0.39, 0.54] label [11, -32]
+pipeline NATURAL LEARNING [0.12, 0.9]
 
+component Learning Tools [0.38, 0.40] label [-101, -15]
+component Differentiated Learning [0.38, 0.25] label [-98, -42]
+component Syllabus Learning [0.38, 0.66] label [1, -42]
 
-component Mirroring [0.27, 0.32] label [-75, -7]
-component Mimicary [0.25, 0.38] label [19, -4]
-
-component SOCIAL COMMUNITY [0.20, 0.34] label [-83, -32]
-pipeline SOCIAL COMMUNITY [0.12, 0.9]
-
-component Machine Mediated Community [0.18, 0.20] label [-79, -56]
-component Social Media [0.18, 0.64] label [-64, -21]
-
-component Non-mediated Community [0.18, 0.80] label [-56, -47]
+component Storytelling [0.38, 0.82] label [-9, -33]
+component Oral Tradition [0.38, 0.85] label [19, -17]
 
 
-component LEGAL FRAMEWORKS [0.06, 0.42] label [-59, -37]
-pipeline LEGAL FRAMEWORKS [0.12, 0.9]
+component Mirroring [0.12, 0.55] label [-39, 20]
+component Mimicary [0.17, 0.50] label [-77, 0]
 
-component Common Law [0.04, 0.78] label [10, -19]
-component GDPR [0.04, 0.48] label [-38, 22]
-component EU AI Act [0.04, 0.28] label [-77, 23]
+component COMMUNITIES [0.27, 0.45] label [-56, -11]
+pipeline  COMMUNITIES [0.05, 0.88]
+
+component Machine Mediated Community [0.26, 0.13] label [-66, -61]
+component Social Media [0.26, 0.55] label [-21, 28]
+component Non-mediated Community [0.26, 0.81] label [52, -41]
+
+component MINDS [0.07, 0.43] label [11, -3]
+pipeline MINDS [0.01, 0.95]
 
 
-component LLM Model [0.11, 0.66] label [19, -4]
-component Foundation Model [0.11, 0.22] label [20, -6]
-component Artificial Minds [0.12, 0.03]6] label [19, -4]
+component LEGAL FRAMEWORKS [0.58, 0.52] label [-80, -29]
+pipeline LEGAL FRAMEWORKS [0.12, 0.85]
+
+component Common Law [0.57, 0.76] label [-74, -20]
+component GDPR [0.57, 0.40] label [-34, -15]
+component EU AI Act [0.57, 0.30] label [-65, -14]
+
+
+component LLM Model [0.48, 0.25] label [-73, -17]
+component Foundation Model [0.48, 0.17] label [-97, -45]
+component Artificial Minds [0.06, 0.04]6] label [-17, -39]
+
+component Natural Minds [0.06, 0.82] label [9, -21]
+
+///////// 21/03/2023
+
+
+component node [0.18, 0.06] label [-43, -5]
+
+component Cultural OS [0.31, 0.43] label [-79, -15]
+component Open Source [0.26, 0.67] label [-28, -23]
+component Ritual [0.38, 0.87] label [16, 33]
+component Symbols [0.38, 0.88] label [51, 15]
+
+component Tirelessness [0.53, 0.08] label [-73, -17]
+
+component Uncertainty [0.66, 0.71] label [15, 6]
+component Doubt [0.69, 0.77] label [13, 0]
+
+component Loneliness [0.78, 0.65] label [-68, -14]
+component Confidence [0.70, 0.73] label [-88, -7]
+component Empowerment [0.71, 0.60] label [-38, -16]
+
+component Societal Disadvantage [0.34, 0.50] label [-79, -20]
+component Individual Disadvantage [0.21, 0.83] label [31, -14]
+
+component Disparities [0.32, 0.60] label [-25, -15]
+
+component Systemic [0.33, 0.55] label [-43, -15]
+
+component Accuracy [0.51, 0.29] label [-63, -10]
+
+component Copyright [0.42, 0.50] label [-36, -13]
+component Copyleft [0.42, 0.42] label [-36, -13]
+component Skill Augmentation [0.44, 0.38] label [-69, -12]
+
+component Personalisation [0.11, 0.18] label [49, -9]
+
+component protocol [0.10, 0.16] label [-76, 2]
+
+component agency [0.14, 0.17] label [-68, 2]
+component psychological safety [0.32, 0.66] label [27, -24]
+
+component AGI [0.48, 0.06] label [-29, -15]
+
+component State Mediated Communities [0.26, 0.73] label [18, -58]
+
+//society disadvantage 
+
+////////////////////////////////////
 
 //relationships
 We->Identity
@@ -80,7 +133,9 @@ Companionship->Identity
 Isolation->Identity
 
 Self worth->Me
-Identity->BELONGING
+Identity->Belonging
+
+Individual Biases->Societal Biases
 
 Power->Equity
 Power->Equality 
@@ -91,8 +146,12 @@ Differentiated Learning->Pschology
 Mental Health->Pschology
 Pschology->Mirroring
 Pschology->Mimicary
+Pschology->Natural Minds
+Pschology->Syllabus Learning
+Natural Minds->Non-mediated Community
+LLM Model->Mimicary
 
-Fixed Syllabus Learning->Equality
+Syllabus Learning->Equality
 Differentiated Learning->Equity
 
 Machine Mediated Community->Differentiated Learning
@@ -100,11 +159,17 @@ Machine Mediated Community->Differentiated Learning
 //Machine Mediated Community->Isolation
 
 Common Law->Non-mediated Community
+Non-mediated Community->Storytelling
+Non-mediated Community->Oral Tradition
+
+Society Disadvantage->Equity
+Individual Disadvantage->Society Disadvantage
 
 //Organic 
-annotation 1 [0.24, 0.07] Transition to inorganic society
+annotation 1 [0.22, 0.13] Transition to inorganic society
 //Inorganic 
 
 
 
-annotations [0.65, 0.03]
+annotations [0.23, 0.16]
+EU AI Act->EU AI Act
