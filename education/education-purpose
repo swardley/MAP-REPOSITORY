@@ -1,22 +1,21 @@
 style wardley
 
-title Purpose of Education V5.0, March 2023
+title Purpose of Education V6.1, April 11/04 2023
 
 component Survival [0.69, 0.77] label [10, -5]
 
-component spread of knowledge [0.85, 0.65] label [-10, 7]
-component shared language [0.77, 0.60] label [-67, -14]
+component spread of knowledge [0.68, 0.65] label [13, -16]
+
 component Wealth [0.65, 0.87] label [12, -2]
-component Pleasure [0.62, 0.56] label [1, -10]
+component Pleasure [0.59, 0.56] label [-9, -10]
 component Fairness [0.61, 0.70] label [8, 2]
-component social cohesion [0.85, 0.59] label [-69, -9]
-component R&D [0.85, 0.37] label [-36, 1]
+component social cohesion [0.90, 0.62] label [-70, -10]
+component R&D [0.87, 0.38] label [-36, 1]
 component Formal (School) [0.10, 0.64] label [-37, 19]
 component Informal (Twitter Spaces) [0.10, 0.82] label [-27, 18]
 component Environment [0.12, 0.73] label [1, -3]
 pipeline Environment [0.63, 0.83]
 
-component social engineering [0.79, 0.05]
 
 component Inductive (Observe) [0.22, 0.68] label [26, -14]
 component Deductive (Act) [0.22, 0.58] label [-79, -35]
@@ -30,19 +29,12 @@ component HOOTL [0.16, 0.22] label [-26, 35]
 component Mentors [0.18, 0.36] label [-52, -14]
 pipeline Mentors [0.21, 0.55]
 
-component useful members [0.71, 0.64] label [-65, -12]
-component social justice [0.38, 0.05] label [16, 0]
-component Society [0.74, 0.76] label [11, 1]
-component Government [0.92, 0.78] label [-2, -11]
-component Individual [0.98, 0.68] label [-19, -16]
-component Governance [0.67, 0.05] label [10, 1]
-component ecosystems [0.60, 0.05] label [16, -1]
-component standardisation [0.70, 0.05] label [33, -7]
-component communication [0.74, 0.05] label [13, 4]
-component collective intelligence [0.50, 0.05] label [23, -12]
-component industry requirements [0.45, 0.05] label [18, -7]
 
-component well being [0.85, 0.44] label [-46, 25]
+component Society [0.81, 0.76] label [11, 1]
+component Government [1.00, 0.78] label [-2, -11]
+component Individual [0.80, 0.69] label [-44, -11]
+
+component well being [0.67, 0.45] label [-93, -3]
 
 component Personal  [0.39, 0.36] label [-46, 23]
 component Literacy [0.40, 0.72] label [-26, 29]
@@ -58,22 +50,44 @@ component Individual beliefs [0.55, 0.21] label [-53, 10]
 component Culture [0.57, 0.39] label [-9, -12]
 pipeline Culture [0.20, 0.71]
 
-component Creativity [0.64, 0.38] label [-86, 4]
+component Creativity [0.61, 0.36] label [-86, 4]
 
-component Educational industry [0.98, 0.63] label [-74, -26]
+component Educational industry [0.80, 0.62] label [-63, -39]
 
-component Opportunity [0.33, 0.05] label [16, 0]
+component Exclusion [0.60, 0.83] label [16, 2]
 
-component Exclusion [0.59, 0.84] label [16, 2]
-component creative commons [0.55, 0.05] label [8, -18]
-component useful economic units [0.88, 0.72] label [11, -10]
+component useful economic units [0.91, 0.71] label [5, -4]
 
-component institutions [0.89, 0.07]
-pipeline institutions [0.03, 0.10]
+pipeline spread of knowledge
 
-component business [0.79, 0.27]
-component infrastructures [0.94, 0.32] label [6, -21]
 
+//component shared language [0.65, 0.61] label [-66, -13]
+
+// component useful members [0.75, 0.65] label [-45, 13]
+
+// component Opportunity [0.33, 0.05] label [16, 0]
+
+// component communication [0.74, 0.05] label [13, 4]
+// component ecosystems [0.60, 0.05] label [16, -1]
+
+// component social engineering [0.79, 0.05]
+// component Governance [0.67, 0.05] label [10, 1]
+
+// component industry requirements [0.45, 0.05] label [18, -7]
+
+// component social justice [0.38, 0.05] label [16, 0]
+
+// component collective intelligence [0.50, 0.05] label [23, -12]
+
+// component institutions [0.89, 0.07]
+// pipeline institutions [0.03, 0.10]
+
+// component standardisation [0.70, 0.05] label [33, -7]
+
+// component business [0.79, 0.27]
+// component infrastructures [0.94, 0.32] label [6, -21]
+
+// component creative commons [0.55, 0.05] label [8, -18]
 
 
 // links
@@ -88,7 +102,7 @@ Government->Society
 well being->Pleasure
 Knowledge->Reasoning
 Skills->Knowledge
-Fairness->Knowledge
+Fairness->Knowledge // symmetry
 Skills->Reasoning
 Skills->Mentors
 Creativity->well being
@@ -96,13 +110,13 @@ well being->Fairness
 Wealth->Exclusion
 Government->useful economic units
 useful economic units->Educational industry
-well being->Educational industry
+// well being->Educational industry
 Society->useful members
 Society->Survival
 Individual->useful economic units
 Individual->useful members
 well being->Individual
-Society->well being
+
 Government->social cohesion
 Educational industry->spread of knowledge
 Educational industry->R&D
@@ -112,3 +126,8 @@ Government->R&D
 spread of knowledge->shared language
 well being->Culture
 Society->Culture
+
+Society->Individual
+Individual->Survival
+Exclusion->Knowledge
+spread of knowledge->Exclusion
