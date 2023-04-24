@@ -1,4 +1,4 @@
-title manufacturing - SUPPLY CHAINs
+title manufacturing - SUPPLY CHAINs, Feb 2023
 evolution genesis / concept -> custom / emerging -> PRODUCT/ converging -> commodity / accepted
 style wardley
 
@@ -12,7 +12,7 @@ style wardley
 component PRODUCT [0.87, 0.64] label [-60, 3]
 pipeline PRODUCT 
 
-component sales forecasting [0.82, 0.62] label [-57, 0]
+component sales forecasting [0.82, 0.62] label [-58, -6]
 
 component R&D [0.51, 0.22] label [-35, 5]
 pipeline R&D
@@ -29,7 +29,7 @@ component manufacturer [0.95, 0.65] label [9, -6]
 component REGULATION [0.65, 0.47] label [-78, -10]
 pipeline REGULATION [0.37, 0.54]
 component lobbying [0.63, 0.38] label [-54, -20]
-component compliance [0.64, 0.53] label [-36, -12]
+component compliance [0.63, 0.53] label [-36, -20]
 component safety [0.87, 0.55] label [-51, 4]
 component distributor [0.92, 0.48] label [-54, -12]
 component IP [0.74, 0.49] label [-21, -5]
@@ -42,7 +42,7 @@ component refined [0.56, 0.69] label [-11, -19]
 component novel [0.56, 0.41] label [-32, 29]
 
 component design [0.72, 0.42] label [-33, -19]
-component relationships [0.73, 0.53] label [13, 9]
+component relationships [0.72, 0.53] label [18, 1]
 component SUPPLY CHAIN [0.44, 0.62] label [9, -4]
 
 component agility [0.81, 0.33] label [-64, 1]
