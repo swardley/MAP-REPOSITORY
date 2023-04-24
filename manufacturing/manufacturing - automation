@@ -1,4 +1,4 @@
-title manufacturing - supply chain
+title manufacturing - supply chain, June 2022
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
@@ -20,8 +20,8 @@ component good [0.90, 0.65] label [-7, -14]
 component future line [0.88, 0.30] label [-99, 5]
 component Subject Expert [0.68, 0.41] label [-43, 19]
 component standards [0.30, 0.28] label [-1, 22]
-component 2 [0.3, 0.28] label [-286, 235]
-evolve 2 0.44 label [-382, 235]
+component 2 [0.3, 0.28] label [-405, -3225]
+evolve 2 0.44 label [-382, -3236]
 
 // quality -> customer
 // good->quality threshold
@@ -55,7 +55,7 @@ pipeline good [0.29, 0.7]
 evolve good 0.8 label [14, 0]
 evolve facilities 0.71 label [13, 4]
 
-component l [0.35, 0.65] label [-748, 264]
+component l [0.35, 0.65] label [-748, -3264]
 l -> SC process
 
 component AI model [0.11, 0.37] label [-69, 3]
@@ -153,8 +153,8 @@ process -> efficiency
 
 component external supply chain [0.18, 0.69] label [4, -34]
 component awareness of [0.55, 0.35] label [-91, -11]
-component 1 [0.55. 0.18] label [-112, 395]
-evolve 1 0.35 label [-409, 398]
+component 1 [0.55. 0.18] label [-112, -395]
+evolve 1 0.35 label [-409, -398]
 
 
 component materials [0.29, 0.68] label [12, 1]
