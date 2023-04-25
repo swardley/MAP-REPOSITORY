@@ -1,10 +1,10 @@
 style wardley
 
-title Purpose of Education V6.1, April 11/04 2023
+title Purpose of Education V6.2, April 25/04 2023
 
 component Survival [0.69, 0.77] label [10, -5]
 
-component spread of knowledge [0.68, 0.65] label [13, -16]
+component knowledge dissemination [0.68, 0.65] label [30, -23]
 
 component Wealth [0.65, 0.87] label [12, -2]
 component Pleasure [0.59, 0.56] label [-9, -10]
@@ -21,7 +21,7 @@ component Inductive (Observe) [0.22, 0.68] label [26, -14]
 component Deductive (Act) [0.22, 0.58] label [-79, -35]
 component Reasoning [0.24, 0.64] label [-30, -6]
 pipeline Reasoning [0.57, 0.69]
-component values [0.55, 0.45] label [-32, -19]
+component values [0.55, 0.45] label [-24, 26]
 component principles [0.55, 0.60] label [-3, -21]
 
 component HITL [0.16, 0.54] label [3, 31]
@@ -47,10 +47,10 @@ component Knowledge [0.55, 0.70] label [-39, 31]
 component Behavior [0.55, 0.34] label [-22, 22]
 component Shared beliefs [0.56, 0.54] label [-61, 29]
 component Individual beliefs [0.55, 0.21] label [-53, 10]
-component Culture [0.57, 0.39] label [-9, -12]
+component Culture [0.57, 0.39] label [21, -2]
 pipeline Culture [0.20, 0.71]
 
-component Creativity [0.61, 0.36] label [-86, 4]
+component Creativity [0.41, 0.25] label [-86, 4]
 
 component Educational industry [0.80, 0.62] label [-63, -39]
 
@@ -58,7 +58,8 @@ component Exclusion [0.60, 0.83] label [16, 2]
 
 component useful economic units [0.91, 0.71] label [5, -4]
 
-pipeline spread of knowledge
+pipeline knowledge dissemination
+pipeline Knowledge
 
 
 //component shared language [0.65, 0.61] label [-66, -13]
@@ -118,16 +119,18 @@ Individual->useful members
 well being->Individual
 
 Government->social cohesion
-Educational industry->spread of knowledge
+Educational industry->knowledge dissemination
 Educational industry->R&D
-Society->spread of knowledge
+Society->knowledge dissemination
 Society->social cohesion
 Government->R&D
-spread of knowledge->shared language
+knowledge dissemination->shared language
 well being->Culture
 Society->Culture
 
 Society->Individual
 Individual->Survival
 Exclusion->Knowledge
-spread of knowledge->Exclusion
+knowledge dissemination->Exclusion
+Knowledge->Creativity
+R&D->Creativity
