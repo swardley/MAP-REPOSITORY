@@ -4,7 +4,7 @@ title Purpose of Education V6.2, April 25/04 2023
 
 component Survival [0.69, 0.77] label [10, -5]
 
-component knowledge dissemination [0.68, 0.65] label [-23, 13]
+component KNOWLEDGE DISSEMINATION [0.68, 0.65] label [-23, 13]
 
 component Wealth [0.65, 0.87] label [12, -2]
 
@@ -13,21 +13,21 @@ component social cohesion [0.90, 0.62] label [-70, -10]
 component R&D [0.87, 0.38] label [-36, 1]
 component Formal (School) [0.10, 0.64] label [-37, 19]
 component Informal (Twitter Spaces) [0.10, 0.82] label [-27, 18]
-component Environment [0.12, 0.73] label [1, -3]
-pipeline Environment [0.63, 0.83]
+component ENVIRONMENT [0.12, 0.73] label [8, -6]
+pipeline ENVIRONMENT [0.63, 0.83]
 
 
 component Inductive (Observe) [0.22, 0.68] label [26, -14]
-component Deductive (Act) [0.22, 0.58] label [-79, -35]
-component Reasoning [0.24, 0.64] label [-30, -6]
-pipeline Reasoning [0.57, 0.69]
+component Deductive (Act) [0.22, 0.58] label [-72, -35]
+component REASONING [0.24, 0.64] label [11, -9]
+pipeline REASONING [0.57, 0.69]
 component values [0.55, 0.45] label [-24, 26]
-component principles [0.55, 0.60] label [-3, -21]
+component principles [0.55, 0.60] label [-12, -24]
 
 component HITL [0.16, 0.54] label [3, 31]
-component HOOTL [0.16, 0.22] label [-26, 35]
-component Mentors [0.18, 0.36] label [-52, -14]
-pipeline Mentors [0.21, 0.55]
+component HOOTL [0.16, 0.22] label [-57, 2]
+component MENTORS [0.18, 0.36] label [-52, -14]
+pipeline MENTORS [0.21, 0.55]
 
 
 component Society [0.81, 0.76] label [11, 1]
@@ -38,17 +38,17 @@ component agency [0.75, 0.45] label [-39, -18]
 
 component Personal  [0.39, 0.36] label [-46, 23]
 component Literacy [0.40, 0.72] label [-26, 29]
-component Critical thinking [0.39, 0.52] label [-11, 10]
-component Procedural [0.39, 0.81] label [-29, 25]
-component Skills [0.41, 0.42] label [-17, -9]
-pipeline Skills [0.35, 0.82]
+component Critical thinking [0.39, 0.52] label [5, -45]
+component Procedural [0.39, 0.81] label [22, 5]
+component SKILLS [0.41, 0.42] label [-17, -9]
+pipeline SKILLS [0.35, 0.82]
 
-component Knowledge [0.55, 0.70] label [-39, 31]
-component Behavior [0.55, 0.34] label [-22, 22]
-component Shared beliefs [0.56, 0.54] label [-61, 29]
-component Individual beliefs [0.55, 0.21] label [-53, 10]
-component Culture [0.57, 0.39] label [21, -2]
-pipeline Culture [0.20, 0.71]
+component KNOWLEDGE [0.55, 0.70] label [0, 26]
+component Behavior [0.55, 0.35] label [-22, 22]
+component Shared beliefs [0.56, 0.54] label [-58, -16]
+component Individual beliefs [0.55, 0.21] label [-89, -12]
+component CULTURE [0.57, 0.39] label [21, -2]
+pipeline CULTURE [0.20, 0.71]
 
 component Creativity [0.41, 0.25] label [-86, 4]
 
@@ -58,8 +58,8 @@ component knowledge exclusion [0.60, 0.83] label [16, 2]
 
 component useful economic units [0.91, 0.71] label [5, -4]
 
-pipeline knowledge dissemination
-pipeline Knowledge
+pipeline KNOWLEDGE DISSEMINATION
+pipeline KNOWLEDGE
 
 
 //component shared language [0.65, 0.61] label [-66, -13]
@@ -93,19 +93,19 @@ pipeline Knowledge
 
 // links
 Survival->Wealth
-Reasoning->Mentors
-Reasoning->Environment
-Mentors->Environment
+REASONING->MENTORS
+REASONING->ENVIRONMENT
+MENTORS->ENVIRONMENT
 
 Wealth->Government
 Government->Society
 
 agency->Pleasure
-Knowledge->Reasoning
-Skills->Knowledge
-Fairness->Knowledge // symmetry
-Skills->Reasoning
-Skills->Mentors
+KNOWLEDGE->REASONING
+SKILLS->KNOWLEDGE
+Fairness->KNOWLEDGE // symmetry
+SKILLS->REASONING
+SKILLS->MENTORS
 Creativity->agency
 agency->Fairness
 Wealth->knowledge exclusion
@@ -119,22 +119,22 @@ Individual->useful members
 agency->Individual
 
 Government->social cohesion
-Educational industry->knowledge dissemination
+Educational industry->KNOWLEDGE DISSEMINATION
 Educational industry->R&D
-Society->knowledge dissemination
+Society->KNOWLEDGE DISSEMINATION
 Society->social cohesion
 Government->R&D
-knowledge dissemination->shared language
-agency->Culture
-Society->Culture
+KNOWLEDGE DISSEMINATION->shared language
+agency->CULTURE
+Society->CULTURE
 
 Society->Individual
 
-knowledge exclusion->Knowledge
-knowledge dissemination->knowledge exclusion
-Knowledge->Creativity
+knowledge exclusion->KNOWLEDGE
+KNOWLEDGE DISSEMINATION->knowledge exclusion
+KNOWLEDGE->Creativity
 R&D->Creativity
 agency->Survival
-knowledge dissemination->Culture
+KNOWLEDGE DISSEMINATION->CULTURE
 
-agency->Knowledge
+agency->KNOWLEDGE
