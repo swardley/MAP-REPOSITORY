@@ -4,11 +4,11 @@ title Purpose of Education V6.2, April 25/04 2023
 
 component Survival [0.69, 0.77] label [10, -5]
 
-component knowledge dissemination [0.68, 0.65] label [30, -23]
+component knowledge dissemination [0.68, 0.65] label [-23, 13]
 
 component Wealth [0.65, 0.87] label [12, -2]
-component Pleasure [0.59, 0.56] label [-9, -10]
-component Fairness [0.61, 0.70] label [8, 2]
+
+// component Fairness [0.61, 0.70] label [8, 2]
 component social cohesion [0.90, 0.62] label [-70, -10]
 component R&D [0.87, 0.38] label [-36, 1]
 component Formal (School) [0.10, 0.64] label [-37, 19]
@@ -34,7 +34,7 @@ component Society [0.81, 0.76] label [11, 1]
 component Government [1.00, 0.78] label [-2, -11]
 component Individual [0.80, 0.69] label [-44, -11]
 
-component well being [0.67, 0.45] label [-93, -3]
+component agency [0.75, 0.45] label [-39, -18]
 
 component Personal  [0.39, 0.36] label [-46, 23]
 component Literacy [0.40, 0.72] label [-26, 29]
@@ -54,7 +54,7 @@ component Creativity [0.41, 0.25] label [-86, 4]
 
 component Educational industry [0.80, 0.62] label [-63, -39]
 
-component Exclusion [0.60, 0.83] label [16, 2]
+component knowledge exclusion [0.60, 0.83] label [16, 2]
 
 component useful economic units [0.91, 0.71] label [5, -4]
 
@@ -100,23 +100,23 @@ Mentors->Environment
 Wealth->Government
 Government->Society
 
-well being->Pleasure
+agency->Pleasure
 Knowledge->Reasoning
 Skills->Knowledge
 Fairness->Knowledge // symmetry
 Skills->Reasoning
 Skills->Mentors
-Creativity->well being
-well being->Fairness
-Wealth->Exclusion
+Creativity->agency
+agency->Fairness
+Wealth->knowledge exclusion
 Government->useful economic units
 useful economic units->Educational industry
-// well being->Educational industry
+// agency->Educational industry
 Society->useful members
 Society->Survival
 Individual->useful economic units
 Individual->useful members
-well being->Individual
+agency->Individual
 
 Government->social cohesion
 Educational industry->knowledge dissemination
@@ -125,12 +125,16 @@ Society->knowledge dissemination
 Society->social cohesion
 Government->R&D
 knowledge dissemination->shared language
-well being->Culture
+agency->Culture
 Society->Culture
 
 Society->Individual
-Individual->Survival
-Exclusion->Knowledge
-knowledge dissemination->Exclusion
+
+knowledge exclusion->Knowledge
+knowledge dissemination->knowledge exclusion
 Knowledge->Creativity
 R&D->Creativity
+agency->Survival
+knowledge dissemination->Culture
+
+agency->Knowledge
