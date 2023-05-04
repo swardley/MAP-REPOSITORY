@@ -41,7 +41,7 @@ evolve 2 0.44 label [-526, 625]
 component infrastructure [0.03, 0.67] label [10, 5]
 component 4 [0.03, 0.42] label [-525, 57]
 evolve 4 0.67 label [-794, 59]
-// note +decay [0.04, 0.49]
+note +need to modernise (tech debt) [0.01, 0.46]
 note +market [0.90, 0.35]
 note +market [0.77, 0.32]
 // component socioeconomic class [0.57, 0.44] label [-65, -34]
@@ -51,8 +51,8 @@ pipeline INVENTORY MGMT [0.50, 0.71]
 component hub and spoke [0.37, 0.70] label [16, 3]
 component distributed [0.37, 0.51] label [-97, 4]
 // component hybrid [0.67, 0.60] label [-38, -14]
-component LAST MILE [0.72, 0.70] label [4, -10]
-pipeline LAST MILE [0.59, 0.74]
+component LAST MILE OPTIONS [0.72, 0.70] label [-5, -51]
+pipeline LAST MILE OPTIONS [0.59, 0.74]
 // component cost [0.33, 0.84] label [8, 15]
 component autonomous [0.70, 0.60] label [-41, 28]
 component human [0.70, 0.73] label [19, 5]
@@ -101,10 +101,10 @@ STORAGE->delivery VEHICLE
 STORAGE->security
 security->tracking
 non human->safety
-LAST MILE->last mile
+LAST MILE OPTIONS->last mile
 LANDSCAPE->last mile
 delivery VEHICLE->cost
-fuel->LAST MILE
+fuel->LAST MILE OPTIONS
 LANDSCAPE->population density
 cross sell->producer
 data->cross sell
@@ -119,10 +119,10 @@ value->cost
 // GOOD->logistics
 GOOD->value
 behavior->sustainability
-sustainability->LAST MILE
+sustainability->LAST MILE OPTIONS
 society->sustainability
-INVENTORY MGMT ->LAST MILE
-last mile->distribution topology
+INVENTORY MGMT ->LAST MILE OPTIONS
+LAST MILE OPTIONS->distribution topology
 distribution topology->LANDSCAPE
 STORAGE->customer experience
 consumer->customer experience
@@ -146,7 +146,7 @@ safety->autonomous
 tracking->INVENTORY MGMT 
 producer->INVENTORY MGMT 
 INVENTORY MGMT->first last delivery VEHICLE
-LAST MILE->STORAGE
+LAST MILE OPTIONS->STORAGE
 supply chain->awareness
 sustainability->awareness
 supply chain awareness->supply chain
