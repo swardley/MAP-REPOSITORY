@@ -1,6 +1,6 @@
 style wardley
 
-title Purpose of Education V6.2, April 25/04 2023
+title Purpose of Education V6.3, 09/05 2023
 
 component Survival [0.69, 0.77] label [10, -5]
 
@@ -11,20 +11,20 @@ component Wealth [0.65, 0.87] label [12, -2]
 // component Fairness [0.61, 0.70] label [8, 2]
 component social cohesion [0.90, 0.62] label [-70, -10]
 component R&D [0.87, 0.38] label [-36, 1]
-component Formal (School) [0.10, 0.64] label [-37, 19]
-component Informal (Twitter Spaces) [0.10, 0.82] label [-27, 18]
+component Formal (School) [0.10, 0.64] label [-78, -19]
+component Informal (Twitter Spaces) [0.10, 0.82] label [20, -20]
 component ENVIRONMENT [0.12, 0.73] label [8, -6]
 pipeline ENVIRONMENT [0.63, 0.83]
 
 
-component Inductive (Observe) [0.22, 0.68] label [26, -14]
-component Deductive (Act) [0.22, 0.58] label [-72, -35]
-component REASONING [0.24, 0.64] label [11, -9]
-pipeline REASONING [0.57, 0.69]
-component values [0.55, 0.45] label [-24, 26]
-component principles [0.55, 0.60] label [-12, -24]
+component Inductive (Observe) [0.25, 0.68] label [26, -14]
+component Deductive (Act) [0.25, 0.55] label [-79, -20]
+component REASONING [0.27, 0.64] label [11, -9]
+pipeline REASONING [0.54, 0.69]
+component values [0.55, 0.45] label [-24, 25]
+component principles [0.55, 0.60] label [-15, -22]
 
-component HITL [0.16, 0.54] label [3, 31]
+component HITL [0.16, 0.54] label [20, 1]
 component HOOTL [0.16, 0.22] label [-57, 2]
 component MENTORS [0.18, 0.36] label [-52, -14]
 pipeline MENTORS [0.21, 0.55]
@@ -37,18 +37,18 @@ component Individual [0.80, 0.69] label [-44, -11]
 component agency [0.75, 0.45] label [-39, -18]
 
 component Personal  [0.39, 0.36] label [-46, 23]
-component Literacy [0.40, 0.72] label [-26, 29]
-component Critical thinking [0.39, 0.52] label [5, -45]
+component Literacy [0.39, 0.72] label [-26, 29]
+component Critical thinking [0.39, 0.52] label [1, -44]
 component Procedural [0.39, 0.81] label [22, 5]
 component SKILLS [0.41, 0.42] label [-17, -9]
 pipeline SKILLS [0.35, 0.82]
 
-component KNOWLEDGE [0.55, 0.70] label [0, 26]
+component KNOWLEDGE [0.55, 0.69] label [-3, 25]
 component Behavior [0.55, 0.35] label [-22, 22]
-component Shared beliefs [0.56, 0.54] label [-58, -16]
-component Individual beliefs [0.55, 0.21] label [-89, -12]
+component Shared beliefs [0.55, 0.54] label [-58, -21]
+component Individual beliefs [0.55, 0.21] label [-88, -16]
 component CULTURE [0.57, 0.39] label [21, -2]
-pipeline CULTURE [0.20, 0.71]
+pipeline CULTURE [0.2, 0.70]
 
 component Creativity [0.41, 0.25] label [-86, 4]
 
@@ -57,6 +57,9 @@ component Educational industry [0.80, 0.62] label [-63, -39]
 component knowledge exclusion [0.60, 0.83] label [16, 2]
 
 component useful economic units [0.91, 0.71] label [5, -4]
+
+component MODELS OF LEARNING [0.04, 0.53] label [-69, -19]
+pipeline MODELS OF LEARNING
 
 pipeline KNOWLEDGE DISSEMINATION
 pipeline KNOWLEDGE
@@ -138,3 +141,5 @@ agency->Survival
 KNOWLEDGE DISSEMINATION->CULTURE
 
 agency->KNOWLEDGE
+MENTORS->MODELS OF LEARNING
+REASONING->MODELS OF LEARNING
