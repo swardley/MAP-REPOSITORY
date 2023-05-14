@@ -1,0 +1,73 @@
+title Security - Risk management, May 2023
+style wardley
+
+component government [0.97, 0.67] label [-25, -14]
+component society [0.86, 0.69] label [9, -2]
+component citizens [0.77, 0.69] label [14, 2]
+component SAFETY [0.67, 0.63] label [15, -6]
+component corporations [0.88, 0.60] label [-95, 4]
+component shareholders [0.94, 0.59] label [-84, -10]
+component regulation [0.74, 0.49] label [-81, 2]
+component profits [0.85, 0.65] label [-16, -12]
+component risk management [0.79, 0.59] label [-6, -3]
+pipeline SAFETY [0.40, 0.7]
+component economic [0.65, 0.57] label [-28, -20]
+component physical [0.65, 0.69] label [18, -1]
+component technology [0.11, 0.55] label [-29, 22]
+component cultural [0.65, 0.41] label [-71, 2]
+component digital [0.65, 0.50] label [-30, -18]
+
+component AWARENESS [0.43, 0.48] label [-63, -12]
+pipeline AWARENESS [0.28, 0.72]
+component stories [0.41, 0.29] label [-72, 1]
+component wardley maps [0.41, 0.41] label [-55, 20]
+component ordinance surveys [0.41, 0.71] label [19, -16]
+component LANDSCAPE [0.13, 0.49] label [-74, -6]
+pipeline LANDSCAPE [0.33, 0.63]
+
+component supply chains [0.11, 0.62] label [-17, 22]
+component digital [0.65, 0.50] label [-30, -18]
+component territorial [0.11, 0.40] label [-39, 28]
+component beliefs & behaviours [0.11, 0.34] label [-87, -31]
+component CAPABILITY [0.56, 0.60] label [10, 2]
+pipeline CAPABILITY
+component radars [0.41, 0.68] label [-11, -12]
+
+government->society
+government->corporations
+regulation->risk management
+society->citizens
+citizens->SAFETY
+SAFETY->risk management
+corporations->shareholders
+corporations->profits
+risk management->corporations
+SAFETY->AWARENESS
+AWARENESS->LANDSCAPE
+government->risk management
+profits->citizens
+
+note Citizens wants SAFETY from cyber threat/risks [0.75, 0.70] label [0.75, 0.70]
+note corporations wants to avoid losses in order to make profits for its shareholders [0.91, 0.17]
+note corporations are forced to manage risk in order to avoid moral hazards [0.81, 0.23]
+note SAFERTY assumes something to protect (a landscape), awareness of the landscape and capability to protect it [0.62, 0.34]
+note we have very good awareness and protection of territorial spaces [0.38, 0.62]
+note this we protect well [0.05, 0.36]
+note this is know as softpower and is considered "fuzzy" [0.07, 0.05]
+note these can be protected but we have poor awareness of the spaces (no radars, no maps) [0.05, 0.50]
+
+shareholders->government
+ordinance surveys->territorial
+wardley maps->technology
+wardley maps->supply chains
+digital->technology
+economic->supply chains
+physical->territorial
+cultural->beliefs & behaviours
+beliefs & behaviours->stories
+radars->territorial
+SAFETY->CAPABILITY
+supply chains->stories
+technology->stories
+
+evolve wardley maps 0.6 label [-786, -3371]
