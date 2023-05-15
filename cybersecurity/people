@@ -1,4 +1,4 @@
-title Cybersecurity, People, May 2023, version 0.1
+title Cybersecurity, People, May 2023, version 0.2
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
@@ -32,15 +32,16 @@ component THREATS [0.30, 0.47] label [-7, -14]
 pipeline THREATS [0.22, 0.73]
 
 component GDPR [0.44, 0.07] label [18, 1]
-component IoT Surveillance [0.29, 0.36] label [-41, 19]
-component Deep Fakes [0.28, 0.60] label [-34, 21]
+component IoT Surveillance [0.29, 0.35] label [-39, 21]
+component Deep Fakes [0.28, 0.43] label [-39, 23]
 component Digital Signatures [0.50, 0.07] label [17, -6]
-component Public image scraping [0.28, 0.51] label [-32, 10]
-component Prompt Insertion [0.28, 0.23] label [-33, 19]
-component social engineering [0.28, 0.55] label [-25, -47]
-component behavioural attacks [0.29, 0.40] label [-28, -39]
-component malicious algorithms [0.28, 0.63] label [-11, -46]
-component cracking [0.28, 0.72] label [17, 2]
+component Public image scraping [0.28, 0.51] label [-25, 18]
+component Prompt Insertion [0.28, 0.23] label [-86, -15]
+component social engineering [0.29, 0.56] label [-31, -38]
+component behavioural attacks [0.29, 0.40] label [-28, -41]
+component malicious algorithms [0.28, 0.62] label [-11, -45]
+component script kiddie [0.28, 0.72] label [17, 2]
+component email phishing [0.28, 0.70] label [-20, 23]
 
 // link
 External Users -> safety
@@ -53,5 +54,4 @@ risk management->Annualised Loss Expectancy
 regulators->risk management
 risk management->brand / ASSETS
 safety->ASSETS
-
 safety->THREATS
