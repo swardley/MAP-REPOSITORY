@@ -1,0 +1,57 @@
+title Cybersecurity, People, May 2023, version 0.1
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+component External Users [0.95, 0.70] label [2, -10]
+component Internal Stakeholders [0.96, 0.63] label [-26, -37]
+component safety [0.89, 0.66] label [8, 6]
+
+component regulators [0.77, 0.64] label [6, 15]
+component SITUATIONAL AWARENESS [0.71, 0.40] label [-69, -37]
+pipeline SITUATIONAL AWARENESS [0.18, 0.72]
+
+component supply chains [0.69, 0.22] label [-48, 23]
+component SBOMs [0.69, 0.42] label [-18, 30]
+component cultural landscape [0.69, 0.19] label [-86, -20]
+component territorial maps [0.69, 0.71] label [30, -2]
+component economy [0.69, 0.24] label [-13, -22]
+component building access [0.69, 0.68] label [-47, 19]
+component viral threats [0.69, 0.64] label [-66, -22]
+
+component risk management [0.95, 0.58] label [-71, -33]
+component Annualised Loss Expectancy [0.92, 0.43] label [-74, -25]
+component ASSETS [0.85, 0.55] label [-4, -15]
+pipeline ASSETS [0.34, 0.71]
+component people [0.83, 0.35] label [-70, 2]
+component reputation [0.83, 0.39] label [-40, 23]
+component wealth [0.83, 0.70] label [19, 0]
+component infrastructrue [0.83, 0.68] label [-20, 24]
+component brand [0.83, 0.47] label [-16, -20]
+
+component THREATS [0.30, 0.47] label [-7, -14]
+pipeline THREATS [0.22, 0.73]
+
+component GDPR [0.44, 0.07] label [18, 1]
+component IoT Surveillance [0.29, 0.36] label [-41, 19]
+component Deep Fakes [0.28, 0.60] label [-34, 21]
+component Digital Signatures [0.50, 0.07] label [17, -6]
+component Public image scraping [0.28, 0.51] label [-32, 10]
+component Prompt Insertion [0.28, 0.23] label [-33, 19]
+component social engineering [0.28, 0.55] label [-25, -47]
+component behavioural attacks [0.29, 0.40] label [-28, -39]
+component malicious algorithms [0.28, 0.63] label [-11, -46]
+component cracking [0.28, 0.72] label [17, 2]
+
+// link
+External Users -> safety
+safety -> regulators
+regulators->SITUATIONAL AWARENESS
+Internal Stakeholders->risk management
+SITUATIONAL AWARENESS->risk management
+safety->risk management
+risk management->Annualised Loss Expectancy
+regulators->risk management
+risk management->brand / ASSETS
+safety->ASSETS
+
+safety->THREATS
