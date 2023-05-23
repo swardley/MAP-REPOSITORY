@@ -1,247 +1,144 @@
-title construction - alternative construction
-evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+title Purpose of Education V6.4, May 2023
 
-note (PPP) [0.68, 0.67]
-note June, 2022 [0.01, 0.00]
+component Survival [0.69, 0.77] label [10, -5]
 
-// note unused [0.19, 0.01]
-// note +urban planning [0.92, 0.53]
-// note +strategic local planning [0.84, 0.62]
-// note +experimental [0.81, 0.36]
-// note +experiment to scale [0.13, 0.01]
- 
+component KNOWLEDGE DISSEMINATION [0.68, 0.65] label [-23, 13]
 
-// component discounting future [0.67, 0.75] label [25, -9]
-// component risk mitigation [0.76, 0.52] label [-66, -8]
-// component PPP [0.80, 0.62] label [10, 4]
-// Public private partnership
+component Wealth [0.65, 0.87] label [12, -2]
 
-component Developer [0.71, 0.64] label [-37, 19]
-// component market [0.88, 0.69] label [0, -10]
-// component society [0.98, 0.50] label [-60, 0]
-component government [0.88, 0.63] label [-54, -17]
-// component public [0.90, 0.72] label [12, 1]
+// component Fairness [0.61, 0.70] label [8, 2]
+component social cohesion [0.90, 0.62] label [-70, -10]
+component R&D [0.87, 0.38] label [-36, 1]
+component Formal (School) [0.10, 0.64] label [-78, -19]
+component Informal (Twitter Spaces) [0.10, 0.82] label [20, -20]
+component ENVIRONMENT [0.12, 0.73] label [8, -6]
+pipeline ENVIRONMENT [0.63, 0.83]
 
-component principles [0.88, 0.44] label [-94, 1]
-component governance [0.90, 0.66] label [3, -14]
-pipeline governance [0.43, 0.7]
-component market [0.88, 0.69] label [18, 1]
-component community [0.96, 0.46] label [-83, 4]
-pipeline property
-component society [0.98, 0.59] label [-77, -5]
-pipeline society [0.45, 0.62]
-component network [0.96, 0.61] label [15, 1]
-evolve standards 0.5 label [-624, 262]
+component Inductive (Observe) [0.25, 0.68] label [26, -14]
+component Deductive (Act) [0.25, 0.55] label [-79, -20]
+component REASONING [0.27, 0.64] label [11, -9]
+pipeline REASONING [0.54, 0.69]
+component values [0.55, 0.45] label [-24, 25]
+component principles [0.55, 0.60] label [-15, -22]
 
-// component externality [0.71, 0.75] label [18, 5]
-// component education [0.16, 0.02] label [12, 3]
-component property [0.79, 0.65] label [8, 5]
-component insurance [0.88, 0.56] label [-50, -15]
+component HITL [0.16, 0.54] label [20, 1]
+component HOOTL [0.16, 0.22] label [-57, 2]
+component MENTORS [0.18, 0.36] label [-52, -14]
+pipeline MENTORS [0.21, 0.55]
 
-// component agility [0.76, 0.22] label [-65, 2]
+component Society [0.81, 0.76] label [11, 1]
+component Government [1.00, 0.78] label [-2, -11]
+component Individual [0.80, 0.69] label [-44, -11]
 
-// component composition [0.76, 0.23] label [-90, 0]
-component inspection [0.70, 0.38] label [-77, -9]
-pipeline inspection [0.17, 0.45]
+component agency [0.75, 0.45] label [-39, -18]
 
-component machinery [0.30, 0.59] label [11, -4]
-pipeline machinery [0.45, 0.74]
+component Declarative  [0.39, 0.64] label [-66, 24]
+component Literacy [0.39, 0.77] label [-30, 21]
+component Critical thinking [0.40, 0.52] label [1, -36]
+component Procedural [0.39, 0.81] label [18, 2]
+component SKILLS [0.41, 0.42] label [-17, -9]
+pipeline SKILLS [0.25, 0.82]
 
-evolve 3D printing 0.55 label [-681, 235]
-evolve prefabrication 0.58 label [-662, 383]
+component KNOWLEDGE [0.55, 0.69] label [-3, 25]
+component Behavior [0.55, 0.35] label [-22, 22]
+component Shared beliefs [0.55, 0.54] label [-58, -21]
+component Individual beliefs [0.55, 0.21] label [-88, -16]
+component CULTURE [0.57, 0.39] label [21, -2]
+pipeline CULTURE [0.2, 0.70]
 
-// component access [0.23, 0.23] label [-24, 21]
-component equality [0.81, 0.34] label [-77, 5]
-component brick oven [0.28, 0.73] label [22, 3]
+component Creativity [0.39, 0.26] label [-94, -1]
 
-pipeline observability [0.35, 0.51]
-component onsite [0.44, 0.73] label [16, 4]
-component robotic [0.28, 0.63] label [-34, 24]
-component prefabrication [0.44, 0.49] label [-18, 27]
-component 3D printing [0.28, 0.46] label [8, 23]
-// component research [0.04, 0.33] label [-69, 1]
-component construction technologies [0.37, 0.64] label [21, -30]
-pipeline construction technologies [0.58, 0.73]
-// component firesafety [0.02, 0.41] label [11, 6]
-// component maintenance [0.23, 0.39] label [-77, 18]
-// component lifecycle management [0.27, 0.41] label [-74, -25]
+component Educational industry [0.80, 0.62] label [-63, -39]
 
-component alternative materials [0.18, 0.51] label [-84, -26]
-pipeline alternative materials [0.27, 0.53]
-component artificial wood [0.16, 0.38] label [-57, -26]
-component longevity [0.43, 0.40] label [-74, -1]
+component knowledge exclusion [0.60, 0.83] label [16, 2]
 
-component aesthetics [0.81, 0.52] label [17, 14]
+component useful economic units [0.91, 0.71] label [5, -4]
 
-component building [0.53, 0.59] label [10, 5]
-// pipeline building // [0.35, 0.71]
+component MODELS OF LEARNING [0.04, 0.53] label [-69, -19]
+pipeline MODELS OF LEARNING
 
-component construction [0.55, 0.62] label [10, -9]
-pipeline construction [0.46, 0.7]
-// component dwellings [0.71, 0.70] label [-28, 25]
-// component office [0.71, 0.63] label [-16, 25]
-
-component methods [0.46, 0.60] label [9, -6]
-pipeline methods [0.48, 0.74]
-// component civil engineering [0.71, 0.58] label [-42, 13]
-
-// component regulation [0.46, 0.41] label [-80, 3]
-component planning permission [0.53, 0.47] label [-44, 15]
-component smart materials [0.16, 0.28] label [-78, -12]
-
-// component floating buildings [0.71, 0.44] label [-3, 13]
-component machine [0.35, 0.59] label [-68, 3]
-component human [0.35, 0.72] label [19, 4]
-component building control [0.68, 0.44] label [15, -15]
-// component sensors [0.63, 0.41] label [-33, -13]
-component observability  [0.61, 0.44] label [-31, -11]
-pipeline observability [0.35, 0.51]
-component embedded building sensors [0.59, 0.36] label [-77, -1]
-component factory mode [0.68, 0.18] label [-106, 5]
-component eyeballs [0.59, 0.50] label [16, 4]
-component land [0.53, 0.69] label [18, 4]
-
-// component modular [0.44, 0.41] label [-28, 19]
-// component componentisation [0.44, 0.44] label [-106, -11]
-
-component benchmark [0.25, 0.42] label [-75, 3]
-pipeline benchmark
-evolve machine 0.7 label [-864, 287]
-// component safety [0.33, 0.37] label [-53, 15]
-component wood [0.17, 0.68] label [-14, 24]
-component recycled containters [0.16, 0.52] label [27, -13]
-// component wood skyscrapers [0.71, 0.36] label [-40, 13]
-
-// component cost [0.78, 0.78]
-component standards [0.34, 0.43] label [-74, 2]
-component sustainability [0.81, 0.44] label [-70, 22]
-
-component standard materials [0.19, 0.68] label [9, -30]
-pipeline standard materials [0.67, 0.73]
-
-component values [0.83, 0.49] label [-51, -3]
-pipeline values [0.33, 0.53]
-pipeline standards
-
-component concrete [0.17, 0.72] label [18, 4]
-
-component supply chain [0.10, 0.62] label [12, 9]
-component supply chain awareness [0.05, 0.27] label [-70, -22]
-
-evolve supply chain awareness 0.56 label [-2, -17]
-
-//links
-PPP->Developer
-// government->public
-// public->sustainability
-// aesthetics->public
-public->cost
-cost->construction
-building->methods
-methods->building
-building->land
-// land->building
-// planning permission->land
-regulation->planning permission
-government->regulation
-// aesthetics->building
-
-// modular->prefabrication
-// modular->standardisation
+pipeline KNOWLEDGE DISSEMINATION
+pipeline KNOWLEDGE
 
 
-methods->construction technologies
-construction technologies->lifecycle management
-lifecycle management->maintenance
-construction technologies-> materials
-alternative material->safety
-standardisation->maintenance
-safety->standardisation
-regulation->standardisation
-sustainability->methods
-// sustainability->materials
-sustainability->longevity
-alternative material->longevity
-building->sensors
-// sensors->building
-// sensors->factory mode
+//component shared language [0.65, 0.61] label [-66, -13]
 
-observability->building
-// observability->factory mode
+// component useful members [0.75, 0.65] label [-45, 13]
 
-inspection -> observability
+// component Opportunity [0.33, 0.05] label [16, 0]
+
+// component communication [0.74, 0.05] label [13, 4]
+// component ecosystems [0.60, 0.05] label [16, -1]
+
+// component social engineering [0.79, 0.05]
+// component Governance [0.67, 0.05] label [10, 1]
+
+// component industry requirements [0.45, 0.05] label [18, -7]
+
+// component social justice [0.38, 0.05] label [16, 0]
+
+// component collective intelligence [0.50, 0.05] label [23, -12]
+
+// component institutions [0.89, 0.07]
+// pipeline institutions [0.03, 0.10]
+
+// component standardisation [0.70, 0.05] label [33, -7]
+
+// component business [0.79, 0.27]
+// component infrastructures [0.94, 0.32] label [6, -21]
+
+// component creative commons [0.55, 0.05] label [8, -18]
 
 
-// inspection -> standardisation
-planning permission -> standardisation
-longevity->standardisation
-// public -> building
-inspection->planning permission
-society->public
-society->values
-safety->research
-safety->firesafety
-regulation->safety
-construction technologies->access
-equality->access
-Developer->construction
-// Developer->market
-cost->market
-property->market
-// property->construction
-property->regulation
-externality->market
-externality->discounting future
-longevity->discounting future
-// Developer->agility
-// agility->factory mode
-// composition -> factory mode
-Developer -> composition
-network->governance
-community->principles
-PPP->risk mitigation
-composition->componentisation
+// links
+Survival->Wealth
+REASONING->MENTORS
+REASONING->ENVIRONMENT
+MENTORS->ENVIRONMENT
 
-standardisation->componentisation
-// componentisation->prefabrication
-prefabrication->componentisation
-// componentisation->construction technologies
-// construction technologies->componentisation
-machine->machinery
-government->PPP
-// PPP->market
-// PPP->building
-// PPP->composition
-// government->Developer
-values->regulation
-composition->inspection
-standardisation->material data
-material data->materials
-aesthetics->construction
-government->inspection
-insurance->inspection
-government->property
-property->insurance
-property->Developer
-prefabrication->standardisation
-building control->eyeballs
-building control->eyeballs
-eyeballs->building control
-factory mode->embedded building sensors
-planning permission->standards
-longevity->standards
-standards->material data
-prefabrication->standards
-material data->alternative materials
-construction technologies->alternative materials
-construction technologies->standard materials
-benchmark->standards
-benchmark->alternative materials
-benchmark->standard materials
-supply chain->standard materials
-supply chain->alternative materials
-supply chain->awareness of supply chain
-sustainability->awareness of supply chain
-supply chain->supply chain awareness
-supply chain awareness->sustainability
+Wealth->Government
+Government->Society
+
+agency->Pleasure
+KNOWLEDGE->REASONING
+SKILLS->KNOWLEDGE
+Fairness->KNOWLEDGE // symmetry
+SKILLS->REASONING
+SKILLS->MENTORS
+Creativity->agency
+agency->Fairness
+Wealth->knowledge exclusion
+Government->useful economic units
+useful economic units->Educational industry
+// agency->Educational industry
+Society->useful members
+Society->Survival
+Individual->useful economic units
+Individual->useful members
+agency->Individual
+
+Government->social cohesion
+Educational industry->KNOWLEDGE DISSEMINATION
+Educational industry->R&D
+Society->KNOWLEDGE DISSEMINATION
+Society->social cohesion
+Government->R&D
+KNOWLEDGE DISSEMINATION->shared language
+agency->CULTURE
+Society->CULTURE
+
+Society->Individual
+
+knowledge exclusion->KNOWLEDGE
+KNOWLEDGE DISSEMINATION->knowledge exclusion
+KNOWLEDGE->Creativity
+R&D->Creativity
+agency->Survival
+KNOWLEDGE DISSEMINATION->CULTURE
+
+agency->KNOWLEDGE
+MENTORS->MODELS OF LEARNING
+REASONING->MODELS OF LEARNING
+ENVIRONMENT->MODELS OF LEARNING
