@@ -1,0 +1,62 @@
+title Colombia v0.1
+
+component fairness [0.19, 0.67] label [-8, 21]
+component accessibility [0.26, 0.71] label [10, 7]
+component insurance [0.75, 0.74] label [8, -5]
+pipeline insurance
+
+component providers [0.50, 0.69] label [2, 22]
+pipeline providers
+component denial of service [0.56, 0.75] label [1, -17]
+component mandatory healthcare [0.86, 0.70] label [17, -8]
+component Government [0.95, 0.67] label [-22, -19]
+component subscription model [0.66, 0.71] label [18, -10]
+component demand management [0.60, 0.63] label [-40, -38]
+component budget [0.24, 0.64] label [-43, 24]
+component queuing system [0.42, 0.60] label [-102, 2]
+component auditing [0.32, 0.71] label [14, 4]
+component education [0.49, 0.55] label [-69, 2]
+component local services [0.73, 0.49] label [21, 8]
+component central services [0.73, 0.38] label [-74, -9]
+component voters [0.95, 0.61] label [-14, -16]
+
+component medical needs [0.87, 0.56] label [-93, 3]
+pipeline medical needs
+
+component services [0.74, 0.45]
+pipeline services [0.37, 0.5]
+component politicians [0.95, 0.56] label [-44, -12]
+component payment [0.27, 0.59] label [-60, 4]
+component guidelines (NICE) [0.04, 0.58] label [-70, -6]
+component treatment [0.35, 0.67] label [10, -11]
+component healthy ageing agenda [0.09, 0.70]
+
+component pathway management [0.13, 0.52] label [-75, -7]
+
+component lobbyists [0.92, 0.72] label [10, 3]
+
+//link
+voters->mandatory healthcare
+mandatory healthcare->politicians
+Government->budget
+mandatory healthcare->budget
+mandatory healthcare->insurance
+insurance->subscription model
+denial of service->subscription model
+subscription model->demand management
+demand management->providers
+providers->insurance
+demand management->queuing system
+demand management->education
+voters->education
+providers->treatment
+treatment->auditing
+accessibility->treatment
+treatment->payment
+payment->budget
+guidelines (NICE)->payment
+voters->medical needs
+medical needs->services
+medical needs->treatment
+auditing->guidelines (NICE)
+fairness->treatment
