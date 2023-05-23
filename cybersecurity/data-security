@@ -1,0 +1,132 @@
+title Data (organizations)
+
+component Government Entity [0.98, 0.72] label [7, -20]
+component Corporate/NGO Actor [0.96, 0.60] label [29, -4]
+component Threat Actor [0.90, 0.29]
+pipeline Threat Actor [0.10, 0.8]
+
+component Vulnerability [0.84, 0.12] label [-74, -9]
+component Sharing [0.82, 0.20] label [-65, -2]
+component Attribution [0.86, 0.28] label [-71, -4]
+component Data Privacy [0.86, 0.34] label [-64, -8]
+component Informed [0.86, 0.37] label [4, -5]
+component Deletion [0.86, 0.42]
+component Protect [0.86, 0.59] label [-48, -7]
+component Integrity [0.86, 0.70]
+component Availability [0.84, 0.76]
+component History [0.86, 0.65] label [4, -6]
+
+Corporate/NGO Actor -> Data Privacy
+Corporate/NGO Actor -> Informed
+Corporate/NGO Actor -> Deletion
+Corporate/NGO Actor -> Integrity
+Corporate/NGO Actor -> Sharing
+
+Threat Actor -> Vulnerability
+Threat Actor -> Attribution
+Threat Actor -> Availability
+
+Vulnerability -> Data store
+Vulnerability -> Data source
+
+component Data Location [0.83, 0.59] label [9, -1]
+component analytics [0.80, 0.67]
+component Policy [0.81, 0.40] label [-24, -16]
+
+Data Privacy -> Data Security
+Data Privacy -> Regulations
+Data Privacy -> Policy
+Protect -> Policy
+Protect -> Data Location
+Protect -> Incident Response
+Data Location -> Regulations
+Data Location -> Policy
+
+Informed -> analytics
+analytics -> Incident Response
+analytics -> Forensics
+analytics -> Data store
+analytics -> Transmission
+
+Policy -> Enforcement
+Policy -> Personnel
+Policy -> Regulations
+Data Privacy -> Cryptography
+Data Security -> Cryptography
+Incident Response -> Cryptography
+Incident Response -> Threat detection
+Incident Response -> Investigate Incidents
+Threat detection -> Monitoring
+Monitoring -> Data protection
+
+Investigate Incidents -> Forensics
+
+Integrity -> Transmission
+Cryptography -> Transmission
+Transmission -> Data store
+Transmission -> Data sharing protocols
+Deletion -> Distributed Ledger
+Deletion -> Policy
+
+History -> analytics
+
+component Open data standards [0.63, 0.39] label [-13, -52]
+pipeline Open data standards
+
+Sharing -> Open data standards
+Sharing -> Distributed Ledger
+Open data standards -> Data source
+
+component Data sharing protocols [0.40, 0.73] label [3, -43]
+
+component Regulations [0.77, 0.43] label [-14, -15]
+pipeline Regulations [0.1, 0.8]
+component ChatGPT interface ban [0.75, 0.11] label [-31, 3]
+component central govt crypto [0.76, 0.16] label [-50, -50]
+component GDPR [0.77, 0.71]
+component SOC [0.76, 0.76] label [-17, -8]
+component HIPPA [0.77, 0.77]
+
+component Personnel [0.72, 0.37] label [-59, -8]
+component Enforcement [0.71, 0.70]
+component Incident Response [0.72, 0.53] label [-73, -21]
+component Investigate Incidents [0.68, 0.73] label [9, -18]
+component Data Security [0.68, 0.27]
+component Forensics [0.65, 0.59] label [-42, -16]
+pipeline Forensics
+component Threat detection [0.60, 0.59]
+component Monitoring [0.54, 0.63]
+
+Forensics -> Data store
+
+component Cryptography [0.53, 0.44] label [-92, -7]
+pipeline Cryptography [0.1, 0.8]
+component zero-knowledge proofs [0.52, 0.21] label [-53, -35]
+component end-to-end cryptography [0.52, 0.71] label [15, -36]
+component symmetric/asymmetric cryptography [0.52, 0.78] label [29, -33]
+component Quantum Resistant Cryptography [0.36, 0.61] label [24, -41]
+
+zero-knowledge proofs -> Digital Wallet   
+
+component Data protection [0.45, 0.56] label [-73, -17]
+component Transmission [0.43, 0.61]
+
+component Data store [0.37, 0.46] label [-62, -10]
+pipeline Data store [0.1, 0.8]
+component Digital Wallet [0.37, 0.17]
+component Distributed Ledger [0.36, 0.32] label [12, -26]
+component CMDB [0.36, 0.71]
+component SIEM [0.36, 0.75]
+
+Data store -> Data source
+Attribution -> Data source
+Attribution -> Distributed Ledger
+
+component Data source [0.29, 0.45]
+pipeline Data source [0.1, 0.8]
+component completeness [0.28, 0.26]
+component assisted [0.28, 0.34] label [-29, -12]
+component validated [0.28, 0.38] label [-21, -12]
+component Open data [0.28, 0.66] label [-4, -13]
+component automated [0.27, 0.71] label [-5, 15]
+component manual [0.28, 0.74]
