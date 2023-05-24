@@ -1,22 +1,21 @@
-title Coherent City Transport
+// General
+// Map is licensed under creative commons share alike.
+// https://creativecommons.org/licenses/by-sa/4.0/
+// As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
+
+title Coherent City Transport, Sept 2022
 title mobility - coherence city transport // and micromobility
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
 component people [0.97, 0.71] label [15, 3]
-//component goods [0.94, 0.68] label [11, 4]
-//component services [0.94, 0.60] label [10, 5]
-//component culture [0.93, 0.44] label [7, -5]
-//component health [0.94, 0.51] label [11, 3]
-//component culture [0.93, 0.44] label [7, -5]
-//component safety & security [0.93, 0.35] label [2, -37]
 component government [0.99, 0.48] label [5, -10]
-component City Functions [0.77, 0.56] label [-12, -13]
-component social practices [0.88, 0.66] label [-59, -35]
-pipeline social practices [0.35, 0.77]
+component CITY FUNCTIONS [0.77, 0.56] label [-12, -13]
+component SOCIAL PRACTICES [0.88, 0.66] label [-59, -35]
+pipeline SOCIAL PRACTICES [0.35, 0.77]
 component physical practices [0.86, 0.76] label [23, -12]
 component virtual practices [0.87, 0.36] label [-81, -1]
-pipeline City Functions [0.36, 0.66]
+pipeline CITY FUNCTIONS [0.36, 0.66]
 component dwellings [0.75, 0.37] label [-46, -27]
 component shops [0.75, 0.41] label [-28, 21]
 component banks [0.75, 0.61] label [-1, 20]
@@ -29,39 +28,36 @@ component physical [0.66, 0.45] label [-76, 4]
 component virtual [0.66, 0.72] label [21, 2]
 component WAYS [0.60, 0.48] label [-30, -12]
 pipeline WAYS [0.36, 0.75]
-component paths [0.58, 0.37] label [-31, -23]
-component cables [0.58, 0.71] label [-16, 19]
+component paths [0.58, 0.37] label [-57, -9]
+component cables [0.59, 0.71] label [-23, 28]
 component roads [0.58, 0.53] label [-15, -19]
-component waterways [0.58, 0.42] label [-37, -22]
+component waterways [0.58, 0.42] label [-38, -17]
 component rail [0.58, 0.58] label [-12, -20]
 component pipes [0.58, 0.64] label [-15, -19]
 component territory [0.72, 0.25] label [-18, -13]
 component air [0.58, 0.74] label [19, -8]
 component construction/maintenance [0.53, 0.40] label [-29, 6]
 component signals/signs [0.55, 0.48] label [-54, 13]
-// component roundabouts [0.34, 0.69] label [16, 2]
-component ISPs [0.35, 0.54] label [-27, 30]
-component integrated transport station [0.35, 0.59] label [-25, 19]
+component ISPs [0.34, 0.54] label [-26, 23]
+component integrated transport station [0.34, 0.59] label [-26, 9]
 component decarbonisation [0.69, 0.19] label [-11, 15]
-component transport schemes [0.19, 0.42] label [-64, -28]
-pipeline transport schemes [0.36, 0.54]
+component TRANSPORT SCHEMES [0.19, 0.42] label [-53, -35]
+pipeline TRANSPORT SCHEMES [0.36, 0.54]
 component enforcement [0.29, 0.49] label [11, 13]
 component MODE [0.45, 0.68] label [-19, -18]
 pipeline MODE [0.46, 0.8]
 component walk [0.43, 0.79] label [20, 5]
-component cycle [0.44, 0.77] label [-16, 33]
+component cycle [0.43, 0.77] label [-5, 24]
 component trains [0.43, 0.73] label [-37, -21]
-component automobiles [0.43, 0.70] label [-7, 23]
-component planes [0.43, 0.68] label [-30, 22]
-component e-scooters [0.44, 0.61] label [-34, 28]
-//component zoom meetID [0.85, 0.71] label [-5, 24]
-component internet access [0.43, 0.75] label [-11, -48]
+component automobiles [0.43, 0.70] label [-15, 24]
+component planes [0.43, 0.68] label [-40, 21]
+component e-scooters [0.43, 0.61] label [-34, 19]
+component internet access [0.43, 0.75] label [-6, -44]
 component functional transport system [0.51, 0.28] label [-61, -51]
 component obstruction removal [0.51, 0.54] label [14, -18]
 component Transport Planning [0.38, 0.35] label [-3, -37]
-component transport information [0.11, 0.34] label [-78, -32]
-pipeline transport information [0.22, 0.47]
-//component now [0.37, 0.27] label [-15, 25]
+component TRANSPORT INFORMATION [0.11, 0.34] label [-78, -32]
+pipeline TRANSPORT INFORMATION [0.22, 0.47]
 component historical [0.09, 0.46] label [20, 2]
 component digital twin [0.09, 0.23] label [-114, 1]
 component regulation [0.31, 0.42] label [-20, 15]
@@ -71,38 +67,36 @@ component stable climate [0.85, 0.23] label [-112, -1]
 component sensors [0.03, 0.52] label [-27, 16]
 component surveys [0.03, 0.42] label [-3, 15]
 component data analysis [0.03, 0.30] label [-52, 17]
-component drones [0.44, 0.57] label [-35, -16]
-component awareness [0.26, 0.37] label [-5, -11]
-pipeline awareness 
+component drones [0.43, 0.57] label [-37, -18]
+component AWARENESS [0.26, 0.37] label [-5, -11]
+pipeline AWARENESS 
 
 component fuel stations [0.34, 0.69] label [19, 4]
 
 component traffic management [0.44, 0.27] label [-72, -6]
 
-component fuel [0.19, 0.75]
-pipeline fuel
-pipeline fuel [0.62, 0.88]
+component FUEL [0.19, 0.75]
+pipeline FUEL
+pipeline FUEL [0.62, 0.88]
 component hydrogen [0.17, 0.63] label [-42, 22]
 component animal power [0.17, 0.87] label [-33, 22]
 component petroleum [0.17, 0.78] label [-24, 22]
 component electricity [0.17, 0.71] label [-38, 22]
-// component data centres [0.75, 0.73] label [18, 2]
-// component food & water [0.11, 0.54] label [11, 11]
 
-component energy mix [0.09, 0.72] label [6, -8]
-pipeline energy mix [0.64, 0.76]
-component renewable [0.08, 0.69] label [-28, 29]
-component fossil [0.07, 0.75] label [21, 1]
-component nuclear [0.08, 0.65] label [-71, 2]
-component hubs [0.36, 0.58]
-pipeline hubs [0.47, 0.70]
-pipeline hubs [0.47, 0.70]
-component car parks [0.34, 0.65] label [-12, 20]
-component local mobility hubs [0.35, 0.48] label [-64, -41]
+component ENERGY INPUT MIX [0.06, 0.73] label [-8, -44]
+pipeline ENERGY INPUT MIX [0.64, 0.76]
+component renewable [0.04, 0.69] label [-61, -23]
+component fossil [0.04, 0.75] label [21, 1]
+component nuclear [0.04, 0.65] label [-71, 2]
+component HUBS [0.36, 0.58] label [-8, -19]
+pipeline HUBS [0.47, 0.70]
+pipeline HUBS [0.47, 0.70]
+component car parks [0.34, 0.65] label [-26, -18]
+component local mobility hubs [0.34, 0.48] label [-64, -41]
 component rapid bus [0.17, 0.37] label [-25, 23]
 
 component bike share [0.17, 0.42] label [-8, 22]
-component congestion charge [0.17, 0.46] label [-31, -41]
+component congestion charge [0.17, 0.46] label [-20, -45]
 component parking [0.17, 0.53] label [18, 2]
 component 15 minute city [0.17, 0.49] label [-9, 23]
 component autonomous vehicles [0.43, 0.47] label [-28, -44]
@@ -111,26 +105,17 @@ component autonomous vehicles [0.43, 0.47] label [-28, -44]
 
 
 // links
-//people -> goods
-//people -> services
-//people -> health
-//people -> culture
-//people -> safety & security
 government ->people
-goods -> City Functions
-services -> City Functions
-//health -> City Functions
-//culture -> City Functions
-safety & security -> City Functions
-City Functions -> SPACE
-City Functions -> WAYS
-//virtual -> cables
-//virtual -> data centres
+goods -> CITY FUNCTIONS
+services -> CITY FUNCTIONS
+safety & security -> CITY FUNCTIONS
+CITY FUNCTIONS -> SPACE
+CITY FUNCTIONS -> WAYS
 physical -> territory
 WAYS -> construction/maintenance
 people -> MODE
 goods -> MODE
-City Functions -> MODE
+CITY FUNCTIONS -> MODE
 MODE -> WAYS
 WAYS -> obstruction removal
 WAYS -> signals/signs
@@ -139,7 +124,7 @@ people -> functional transport system
 functional transport system -> WAYS
 functional transport system -> MODE
 functional transport system -> Transport Planning
-Transport Planning -> transport information
+Transport Planning -> TRANSPORT INFORMATION
 Transport Planning -> enforcement
 Transport Planning -> regulation
 Transport Planning -> decision making
@@ -147,35 +132,36 @@ Transport Planning -> Transport Policy
 //ways -> space
 government -> stable climate
 people -> stable climate
-transport information -> data analysis
-transport information -> surveys
-transport information -> sensors
+TRANSPORT INFORMATION -> data analysis
+TRANSPORT INFORMATION -> surveys
+TRANSPORT INFORMATION -> sensors
 food & water -> stable climate
 animal power -> food & water
-MODE -> fuel
+MODE -> FUEL
 government -> territory
-WAYS -> hubs
-MODE -> hubs
-functional transport system -> hubs
-people -> City Functions
+WAYS -> HUBS
+MODE -> HUBS
+functional transport system -> HUBS
+people -> CITY FUNCTIONS
 WAYS -> SPACE
 stable climate -> decarbonisation
-Transport Policy -> transport schemes
+Transport Policy -> TRANSPORT SCHEMES
 decarbonisation -> Transport Policy
 
 physical practices->physical
 virtual->virtual practices
-social practices->people
+SOCIAL PRACTICES->people
 virtual->air
 virtual->cables
 cables -> internet access
 air->internet access
-Transport Policy->awareness
-WAYS->awareness
-decarbonisation->fuel
-awareness->transport information
-awareness->fuel
-electricity->energy mix
-hydrogen->energy mix
+Transport Policy->AWARENESS
+WAYS->AWARENESS
+decarbonisation->FUEL
+AWARENESS->TRANSPORT INFORMATION
+AWARENESS->FUEL
+electricity->ENERGY INPUT MIX
+hydrogen->ENERGY INPUT MIX
 functional transport system->traffic management
-traffic management->awareness
+traffic management->AWARENESS
+fuel stations->FUEL
