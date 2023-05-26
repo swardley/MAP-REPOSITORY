@@ -1,3 +1,5 @@
+
+
 component toast [0.95, 0.69] label [-11, -14]
 
 component heatsource [0.32, 0.66] label [-80, -3]
@@ -28,8 +30,11 @@ pipeline toast maker [0.34, 0.7]
 
 //djfference between a class of things and an instance of a thing. Symbol.
 
-
 stove toaster->coal
 electricity->electric_toaster
 
 toast->toast maker
+
+// the more we advertise the existence of a need, the faster it will evolve.
+// rate at which people are willing to uptake substitutes
+// rate at which people are willing contruct substitutes.
