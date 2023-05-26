@@ -1,20 +1,13 @@
-
-
 component toast [0.95, 0.69] label [-11, -14]
-
 component heatsource [0.32, 0.66] label [-80, -3]
 pipeline heatsource [0.55, 0.73]
 component wood [0.30, 0.72] label [14, 4]
 component coal [0.30, 0.71] label [-11, 22]
-
 component stove toaster [0.71, 0.69] label [-48, -23]
 component electric_toaster [0.71, 0.35] label [-67, -31]
-
 component electricity [0.30, 0.69] label [-51, 23]
-
 component toast maker [0.73, 0.58] label [-56, -14]
 pipeline toast maker [0.34, 0.7]
-
 
 // Genesis -> no substituional is possible.
 // Custom - > substitutes are constructed on demand
@@ -29,7 +22,6 @@ pipeline toast maker [0.34, 0.7]
 // Electric toaster
 
 //djfference between a class of things and an instance of a thing. Symbol.
-
 stove toaster->coal
 electricity->electric_toaster
 
@@ -41,4 +33,5 @@ toast->toast maker
 ... Timeless product, if the pain can get low enough that you will never be displaced i.e. people will never switch - timeless brands and products e.g. KitchenAiD
 ... other things can substitute the concept.
 
-
+NEXT SECTION
+RELEVANCE OF CONCEPT.
