@@ -1,4 +1,4 @@
-title healthcare - clinical decision making
+title healthcare - clinical decision making - AUG 2022
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 
@@ -13,13 +13,13 @@ style wardley
 // note -ve [0.90, 0.93]
 // note (ICS) [0.57, 0.03]
 // note (admission) [0.35, 0.02]
-note behavioural [0.94, 0.01]
+// note behavioural [0.80, 0.04]
 // note (SDOH) [0.09, 0.04]
 
 
 // component health of patient [0.68, 0.61] label [-61, -14]
-component reviews [0.34, 0.44] label [4, 13]
-pipeline reviews
+component REVIEWS [0.33, 0.45] label [10, 11]
+pipeline REVIEWS
 component clinical trials [0.28, 0.43] label [-65, -14]
 
 component fairness [0.66, 0.67] label [-17, 22]
@@ -31,104 +31,104 @@ component individual [0.24, 0.36] label [-89, 3]
 // component behavioural [0.08, 0.36] label [-96, 4]
 component permissable treatment [0.40, 0.61] label [27, -8]
 component status [0.84, 0.65] label [-51, -5]
-component medical practioner [0.87, 0.69] label [13, -39]
+component medical practioner [0.87, 0.69] label [12, -9]
 component medical institute [0.95, 0.62] label [-34, -36]
 component patient [0.18, 0.81] label [11, 4]
-component health [0.34, 0.79] label [14, 3]
-component treatment of ailment [0.57, 0.64] label [-69, -44]
-pipeline treatment of ailment [0.37, 0.74]
+component HEALTH [0.34, 0.79] label [14, 3]
+component TREATMENT OF AILMENT [0.57, 0.64] label [-69, -44]
+pipeline TREATMENT OF AILMENT [0.37, 0.74]
 // component access [0.80, 0.93] label [10, 2]
 component assisted living [0.09, 0.43] label [-27, -43]
-component Dr Google [0.10, 0.32] label [-92, 4]
+component Dr Google [0.09, 0.32] label [-92, 4]
 // component ailment [0.69, 0.70] label [12, 3]
 pipeline ailment // [0.63, 0.8]
-component clinical_decision [0.47, 0.67] label [-49, -24]
+component clinical_decision [0.47, 0.67] label [-39, -25]
 pipeline clinical_decision // [0.43, 0.75]
-component historical data [0.32, 0.38] label [-78, -6]
-pipeline historical data
+component historical DATA [0.32, 0.38] label [-78, -6]
+pipeline historical DATA
 // component triage [0.51, 0.04] label [11, 3]
 component diagnosis [0.50, 0.40] label [-75, 2]
-component Setting of care [0.11, 0.59] label [3, -47]
-pipeline Setting of care [0.31, 0.74]
+component SETTINGS OF CARE [0.11, 0.59] label [1, -44]
+pipeline SETTINGS OF CARE [0.31, 0.74]
 component 111 [0.09, 0.47] label [-8, 30]
 component ER [0.09, 0.63] label [-10, 23]
 component primary care [0.09, 0.73] label [20, 1]
 component health outcome [0.42, 0.78] label [10, -2]
-component clinical outcome [0.71, 0.65] label [-66, -31]
+component CLINICAL OUTCOME [0.71, 0.65] label [-66, -31]
 //component payer constraints [0.82, 0.08] label [5, -10]
-pipeline clinical outcome // [0.61, 0.72]
+pipeline CLINICAL OUTCOME // [0.61, 0.72]
 component virtual visits [0.09, 0.40] label [-88, 32]
 // component population [0.15, 0.05] label [9, 2]
-component applied AI [0.41, 0.28] label [-74, 34]
+component applied AI [0.40, 0.28] label [-93, 1]
 // component consultation [0.46, 0.10] label [-101, 3]
-component symptoms [0.56, 0.73] label [20, 5]
-component cause [0.56, 0.38] label [-61, 4]
-component comorbidity [0.24, 0.47] label [-44, 24]
+component symptoms [0.55, 0.73] label [20, 5]
+component cause [0.55, 0.38] label [-61, 4]
+component comorbidity [0.24, 0.47] label [-58, 24]
 // component re-admission [0.41, 0.10] label [-97, 1]
 // component service objectives [0.65, 0.04] label [15, -12]
-component national clinical guidelines [0.40, 0.54] label [-22, 10]
-component local protocols [0.41, 0.39] label [-28, 15]
+component national clinical guidelines [0.40, 0.54] label [10, -59]
+component local protocols [0.40, 0.39] label [-46, -44]
 // component cost [0.83, 0.93] label [8, 3]
-component decision support [0.42, 0.51] label [-39, -41]
-pipeline decision support [0.27, 0.62]
+component DECISION SUPPORT [0.42, 0.51] label [-63, -38]
+pipeline DECISION SUPPORT [0.27, 0.62]
 component intuition [0.40, 0.33] label [-41, 24]
-component data [0.26, 0.57] label [-20, -16]
-pipeline data [0.35, 0.72]
+component DATA [0.26, 0.57] label [-20, -16]
+pipeline DATA [0.35, 0.72]
 component observation [0.24, 0.71] label [18, 2]
 component lab tests [0.24, 0.61] label [-15, 26]
 // component social [0.08, 0.43] label [-13, 23]
-component social determinant [0.24, 0.40] label [-36, 13]
-component biosensors [0.24, 0.53] label [-38, 26]
-pipeline health
-component payers [0.88, 0.53] label [-57, 3]
-pipeline payers
+component social determinant [0.24, 0.40] label [-51, 13]
+component biosensors [0.24, 0.53] label [-33, 25]
+pipeline HEALTH
+component PAYERS [0.88, 0.53] label [-57, 3]
+pipeline PAYERS
 
-component compliance to standards of care [0.68, 0.71] label [12, -36]
+component compliance to standards of care [0.68, 0.71] label [17, -28]
 
 // component networked contracts [0.71, 0.05] label [19, -13]
 
-component codes of practice [0.64, 0.54] label [-55, -21]
+component codes of practice [0.64, 0.54] label [-52, -18]
 // component AI model [0.67, 0.21] label [-37, 25]
 
 // links
-clinical_decision->data
-clinical_decision->decision support
-decision support->historical data
-data->historical data
+clinical_decision->DATA
+clinical_decision->DECISION SUPPORT
+DECISION SUPPORT->historical DATA
+DATA->historical DATA
 treatment->clinical_decision
 symptoms->observation
 cause->diagnosis
-diagnosis->decision support
-// ailment->Setting of care
+diagnosis->DECISION SUPPORT
+// ailment->SETTINGS OF CARE
 // ailment->treatment
-treatment of ailment->clinical_decision
-// treatment of ailment->health
-health->outcome
-outcome->treatment of ailment
-patient->health
-treatment of ailment->health outcome
-health->health outcome
-treatment of ailment->clinical outcome
-data->Setting of care
-medical institute->payers
-payers->compliance to standards of care
+TREATMENT OF AILMENT->clinical_decision
+// TREATMENT OF AILMENT->health
+HEALTH->outcome
+outcome->TREATMENT OF AILMENT
+patient->HEALTH
+TREATMENT OF AILMENT->health outcome
+HEALTH->health outcome
+TREATMENT OF AILMENT->CLINICAL OUTCOME
+DATA->SETTINGS OF CARE
+medical institute->PAYERS
+PAYERS->compliance to standards of care
 medical practioner->medical institute
-medical practioner->clinical outcome
+medical practioner->CLINICAL OUTCOME
 medical practioner->status
 compliance to standards of care->status
 status->codes of practice
-compliance to standards of care->clinical outcome
-codes of practice->clinical outcome
-clinical outcome->health of patient
-clinical outcome->exceptions (individual funding requests)
+compliance to standards of care->CLINICAL OUTCOME
+codes of practice->CLINICAL OUTCOME
+CLINICAL OUTCOME->health of patient
+CLINICAL OUTCOME->exceptions (individual funding requests)
 //status->exceptions (individual funding requests)
-payers->exceptions (individual funding requests)
-fairness->clinical outcome
+PAYERS->exceptions (individual funding requests)
+fairness->CLINICAL OUTCOME
 codes of practice->local protocols
 codes of practice->national clinical guidelines
 permissable treatment->codes of practice
-reviews->historical data
-reviews->local protocols
-reviews->national clinical guidelines
-reviews->permissable treatment
-clinical trials->reviews
+REVIEWS->historical DATA
+REVIEWS->local protocols
+REVIEWS->national clinical guidelines
+REVIEWS->permissable treatment
+clinical trials->REVIEWS
