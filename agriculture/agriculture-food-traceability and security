@@ -64,7 +64,7 @@ component AVs [0.03, 0.62] label [19, 11]
 component AI [0.03, 0.53] label [-35, 4]
 
 evolve transparency 0.50 label [-475, 453]
-evolve traceability 0.5 label [-622, 231]
+evolve traceability 0.5 label [-603, -3141]
 evolve enviromental labelling 0.53 label [-475, 453]
 
 //links
@@ -122,4 +122,3 @@ labour->AVs
 AVs->JIT
 monoculture->AUTOMATION
 monoculture->bioengineering
-sustainability->externality
