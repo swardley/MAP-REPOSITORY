@@ -1,7 +1,6 @@
-title Colombia v0.1
-
+title Colombia v0.2
 component fairness [0.84, 0.62] label [-8, 20]
-component accessibility [0.42, 0.49] label [-69, 31]
+component accessibility [0.42, 0.49] label [-79, 1]
 component insurance [0.71, 0.74] label [8, 3]
 pipeline insurance
 
@@ -14,7 +13,7 @@ component Government [0.95, 0.66] label [-22, -13]
 component demand management [0.38, 0.59] label [-54, -34]
 component queuing system [0.11, 0.48] label [-102, 8]
 component auditing [0.27, 0.71] label [14, 4]
-component education [0.25, 0.51] label [-42, 15]
+component education [0.25, 0.51] label [-31, 17]
 component local services [0.73, 0.49] label [21, 8]
 component central services [0.73, 0.38] label [-74, -9]
 component voters [0.89, 0.61] label [-41, -3]
@@ -25,7 +24,7 @@ pipeline medical needs
 component services [0.74, 0.45] label [-41, -13]
 pipeline services [0.37, 0.5]
 component politicians [0.95, 0.59] label [-67, -8]
-component payment [0.22, 0.59] label [-60, 4]
+component payment [0.22, 0.59] label [-40, 18]
 component guidelines (NICE) [0.04, 0.58] label [-70, -6]
 component treatment [0.46, 0.61] label [-36, -14]
 component healthy ageing agenda [0.06, 0.31] label [-76, -18]
@@ -34,7 +33,6 @@ component pathway management [0.17, 0.29] label [-75, -7]
 
 component lobbyists [0.93, 0.72] label [22, 3]
 component insurance companies [0.66, 0.75] label [10, -18]
-component ADRES [0.85, 0.34] label [11, 4]
 component Social Health Insurance Pot (ADRES) [0.79, 0.72] label [9, -40]
 
 component capitation fee [0.66, 0.70] label [-42, -16]
