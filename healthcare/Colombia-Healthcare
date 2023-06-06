@@ -1,57 +1,73 @@
 title Colombia v0.1
 
-component fairness [0.19, 0.67] label [-8, 21]
-component accessibility [0.26, 0.71] label [10, 7]
-component insurance [0.75, 0.74] label [8, -5]
+component fairness [0.84, 0.62] label [-8, 20]
+component accessibility [0.42, 0.49] label [-69, 31]
+component insurance [0.71, 0.74] label [8, 3]
 pipeline insurance
 
-component providers [0.50, 0.69] label [2, 22]
-pipeline providers
-component denial of service [0.56, 0.75] label [1, -17]
-component mandatory healthcare [0.86, 0.70] label [17, -8]
-component Government [0.95, 0.67] label [-22, -19]
-component subscription model [0.66, 0.71] label [18, -10]
-component demand management [0.60, 0.63] label [-40, -38]
-component budget [0.24, 0.64] label [-43, 24]
-component queuing system [0.42, 0.60] label [-102, 2]
-component auditing [0.32, 0.71] label [14, 4]
-component education [0.49, 0.55] label [-69, 2]
+component providers [0.34, 0.69] label [18, -14]
+pipeline providers [0.41, 0.73]
+component denial of service [0.18, 0.78] label [0, -19]
+component mandatory healthcare [0.85, 0.69] label [7, -26]
+component Government [0.95, 0.66] label [-22, -13]
+//component subscription model [0.62, 0.72] label [12, -8]
+component demand management [0.38, 0.59] label [-54, -34]
+component queuing system [0.11, 0.48] label [-102, 8]
+component auditing [0.27, 0.71] label [14, 4]
+component education [0.25, 0.51] label [-42, 15]
 component local services [0.73, 0.49] label [21, 8]
 component central services [0.73, 0.38] label [-74, -9]
-component voters [0.95, 0.61] label [-14, -16]
+component voters [0.89, 0.61] label [-41, -3]
 
 component medical needs [0.87, 0.56] label [-93, 3]
 pipeline medical needs
 
-component services [0.74, 0.45]
+component services [0.74, 0.45] label [-41, -13]
 pipeline services [0.37, 0.5]
-component politicians [0.95, 0.56] label [-44, -12]
-component payment [0.27, 0.59] label [-60, 4]
+component politicians [0.95, 0.59] label [-67, -8]
+component payment [0.22, 0.59] label [-60, 4]
 component guidelines (NICE) [0.04, 0.58] label [-70, -6]
-component treatment [0.35, 0.67] label [10, -11]
-component healthy ageing agenda [0.09, 0.70]
+component treatment [0.46, 0.61] label [-36, -14]
+component healthy ageing agenda [0.06, 0.31] label [-76, -18]
 
-component pathway management [0.13, 0.52] label [-75, -7]
+component pathway management [0.17, 0.29] label [-75, -7]
 
-component lobbyists [0.92, 0.72] label [10, 3]
+component lobbyists [0.93, 0.72] label [22, 3]
+component insurance companies [0.66, 0.75] label [10, -18]
+component ADRES [0.85, 0.34] label [11, 4]
+component Social Health Insurance Pot (ADRES) [0.79, 0.72] label [9, -40]
+
+component capitation fee [0.66, 0.70] label [-42, -16]
+component fee per profile [0.60, 0.70] label [-49, -24]
+component social charactertistics [0.57, 0.62] label [-12, -43]
+pipeline social charactertistics [0.59, 0.71]
+component location [0.56, 0.65] label [-25, 28]
+component age [0.55, 0.70] label [17, -11]
+component sex [0.56, 0.68] label [-10, 28]
+component social class [0.55, 0.60] label [-86, 0]
+pipeline treatment
+component profit per profile [0.62, 0.75] label [-6, -2]
+
+component risk of payment [0.48, 0.69] label [0, -25]
+component specialist [0.32, 0.42] label [-76, 4]
+component primary [0.32, 0.72] label [23, 0]
+component private payment [0.15, 0.55] label [-29, 11]
+pipeline private payment
 
 //link
 voters->mandatory healthcare
 mandatory healthcare->politicians
 Government->budget
 mandatory healthcare->budget
-mandatory healthcare->insurance
 insurance->subscription model
 denial of service->subscription model
 subscription model->demand management
 demand management->providers
-providers->insurance
 demand management->queuing system
 demand management->education
-voters->education
 providers->treatment
 treatment->auditing
-accessibility->treatment
+
 treatment->payment
 payment->budget
 guidelines (NICE)->payment
@@ -59,4 +75,32 @@ voters->medical needs
 medical needs->services
 medical needs->treatment
 auditing->guidelines (NICE)
-fairness->treatment
+
+providers->subscription model
+Social Health Insurance Pot (ADRES)->mandatory healthcare
+insurance->Social Health Insurance Pot (ADRES)
+insurance->insurance companies
+insurance->capitation fee
+
+capitation fee->fee per profile
+fee per profile->social charactertistics
+medical needs->social charactertistics
+treatment->demand management
+profit per profile->insurance companies
+profit per profile->denial of service
+fee per profile->profit per profile
+risk of payment->profit per profile
+
+risk of payment->treatment
+social charactertistics->education
+providers->payment
+specialist->education
+private payment->specialist
+demand management->denial of service
+
+treatment->accessibility
+accessibility->education
+accessibility->payment
+accessibility->private payment
+voters->fairness
+Government->voters
