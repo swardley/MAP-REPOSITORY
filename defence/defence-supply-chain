@@ -24,7 +24,7 @@ pipeline LANDSCAPE // [0.37, 0.66]
 
 // // MAJOR PIPELINES
 pipeline SOVEREIGNTY [0.40, 0.71]
-component territorial [0.89, 0.70] label [12, 4]
+component territorial [0.89, 0.70] label [15, 4]
 component economic [0.894, 0.53] label [-41, -17]
 component political [0.894, 0.45] label [-19, -17]
 component digital [0.89, 0.41] label [-66, 2]
@@ -62,7 +62,7 @@ component covert [0.583, 0.558] label [-60, 4]
 component overt [0.583, 0.672] label [16, 3]
 
 // AWARENESS CHAINS
-component FORECASTING [0.46, 0.35] label [-72, -3]
+component FORECASTING [0.46, 0.35] label [-90, -4]
 pipeline FORECASTING // [0.25, 0.4]
 component MODEL [0.40, 0.36] label [-44, -2]
 pipeline MODEL // [0.2, 0.48]
