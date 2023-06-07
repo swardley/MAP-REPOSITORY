@@ -1,4 +1,4 @@
-title defence - supply chain
+title DEFENCE - supply chain - OCT 2022
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
@@ -7,15 +7,15 @@ style wardley
 component GOVERNMENT [0.99, 0.67] label [-24, -10]
 component society [0.96, 0.72] label [6, 4]
 component legitimacy [0.96, 0.64] label [-79, -2]
-component SOVEREIGNTY [0.91, 0.60] label [-68, -12]
+component SOVEREIGNTY [0.91, 0.60] label [-52, -14]
 pipeline SOVEREIGNTY // [0.40, 0.71]
 component THEATRE [0.82, 0.60] label [7, -6]
 pipeline THEATRE // [0.46, 0.7]
-component COMPETITION [0.74, 0.63] label [-32, -12]
+component COMPETITION [0.74, 0.63] label [-39, -13]
 pipeline COMPETITION // [0.53, 0.68]
 component AWARENESS [0.54, 0.63] label [-81, -4]
 pipeline AWARENESS // [0.3, 0.73]
-component CAPABILITY [0.66, 0.55] label [-52, -8]
+component CAPABILITY [0.67, 0.55] label [-47, -11]
 pipeline CAPABILITY // [0.49, 0.68]
 component VISIBILITY [0.60, 0.65] label [5, -7]
 pipeline VISIBILITY // [0.55, 0.68]
@@ -24,12 +24,12 @@ pipeline LANDSCAPE // [0.37, 0.66]
 
 // // MAJOR PIPELINES
 pipeline SOVEREIGNTY [0.40, 0.71]
-component territorial [0.894, 0.702] label [12, 4]
-component economic [0.894, 0.53] label [-31, 22]
-component political [0.894, 0.45] label [-23, 19]
-component digital [0.894, 0.407] label [-76, 3]
+component territorial [0.89, 0.70] label [12, 4]
+component economic [0.894, 0.53] label [-41, -17]
+component political [0.894, 0.45] label [-19, -17]
+component digital [0.89, 0.41] label [-66, 2]
 component cultural [0.894, 0.66] label [-23, -19]
-component security [0.894, 0.57] label [-8, 21]
+component security [0.894, 0.57] label [-22, 22]
 
 pipeline THEATRE [0.46, 0.7]
 component land [0.804, 0.693] label [18, 6]
@@ -53,68 +53,68 @@ component territory [0.314, 0.378] label [-80, 3]
 
 // OTHER PIPELINES
 pipeline CAPABILITY [0.49, 0.68]
-component kinetic [0.643, 0.673] label [17, 0]
+component kinetic [0.65, 0.67] label [20, 4]
 component inflitration [0.643, 0.58] label [-35, 21]
-component influence [0.643, 0.498] label [-83, 3]
+component influence [0.65, 0.50] label [-83, 3]
 
 pipeline VISIBILITY [0.55, 0.68]
 component covert [0.583, 0.558] label [-60, 4]
 component overt [0.583, 0.672] label [16, 3]
 
 // AWARENESS CHAINS
-component forecasting [0.46, 0.35] label [-72, -7]
-pipeline forecasting // [0.25, 0.4]
-component model [0.40, 0.36] label [-22, -9]
-pipeline model // [0.2, 0.48]
+component FORECASTING [0.46, 0.35] label [-72, -3]
+pipeline FORECASTING // [0.25, 0.4]
+component MODEL [0.40, 0.36] label [-44, -2]
+pipeline MODEL // [0.2, 0.48]
 
 // AWARENESS DEETS
-pipeline forecasting [0.25, 0.4]
-component scenario planning [0.444, 0.392] label [14, -7]
+pipeline FORECASTING [0.25, 0.4]
+component scenario planning [0.444, 0.392] label [21, -11]
 component simulation [0.444, 0.258] label [-97, 1]
 
-pipeline model [0.2, 0.48]
+pipeline MODEL [0.2, 0.48]
 component visualisation [0.383, 0.472] label [16, 10]
-component RT simuluation [0.383, 0.39] label [-55, 21]
+component RT simuluation [0.383, 0.39] label [-55, 22]
 component HOOTL [0.383, 0.208] label [-59, 6]
-component whatif simulation [0.383, 0.28] label [-40, 11]
+component whatif simulation [0.383, 0.28] label [-40, 13]
 
 // SUPPLY CHAIN
-component delivery [0.26, 0.67] label [6, -8]
-pipeline delivery // [0.53, 0.7]
-component manufacturer [0.12, 0.61] label [-53, -10]
-pipeline manufacturer // [0.42, 0.69]
-component supplier [0.06, 0.68] label [6, -4]
-pipeline supplier // [0.59, 0.72]
-component transportation [0.20, 0.66] label [7, -3]
-pipeline transportation // [0.64, 0.72]
+component DELIVERY [0.26, 0.67] label [6, -8]
+pipeline DELIVERY // [0.53, 0.7]
+component MANUFACTURER [0.12, 0.61] label [-53, -10]
+pipeline MANUFACTURER // [0.42, 0.69]
+component SUPPLIER [0.06, 0.68] label [6, -4]
+pipeline SUPPLIER // [0.59, 0.72]
+component TRANSPORTATION [0.20, 0.66] label [7, -3]
+pipeline TRANSPORTATION // [0.64, 0.72]
 
 // SUPPLY CHAIN DEETS
-pipeline delivery [0.53, 0.7]
+pipeline DELIVERY [0.53, 0.7]
 component distributor [0.244, 0.692] label [16, 2]
-component logistics [0.244, 0.538] label [-86, 8]
+component logistics [0.24, 0.54] label [-86, 8]
 component marketplace [0.244, 0.65] label [-78, -17]
 
-pipeline transportation [0.64, 0.72]
+pipeline TRANSPORTATION [0.64, 0.72]
 component drones [0.183, 0.648] label [-21, 19]
-component HGV [0.183, 0.712] label [19, 2]
-component internet [0.183, 0.69] label [-13, 19]
+component HGV [0.183, 0.712] label [15, 6]
+component internet [0.183, 0.69] label [-19, 19]
 
-pipeline manufacturer [0.42, 0.69]
-component additive [0.104, 0.428] label [-36, 21]
+pipeline MANUFACTURER [0.42, 0.69]
+component additive [0.104, 0.428] label [-36, 26]
 component robotics [0.104, 0.58] label [-31, 26]
 component automation [0.104, 0.50] label [-38, -15]
 component factory [0.104, 0.682] label [14, -1]
-component analysis [0.104, 0.65] label [-8, -18]
+component analysis [0.104, 0.65] label [-9, -15]
 
-pipeline supplier [0.59, 0.72]
-component raw materials [0.043, 0.66] label [3, 19]
+pipeline SUPPLIER [0.59, 0.72]
+component raw materials [0.043, 0.66] label [0, 22]
 component raw data [0.043, 0.63] label [-34, 21]
-component energy [0.043, 0.712] label [18, 4]
+component energy [0.043, 0.712] label [11, 4]
 component critical minerals [0.043, 0.598] label [-80, -8]
 
 
 // // OTHER
-component other knowledge [0.16, 0.22]
+component other knowledge [0.16, 0.22] label [-63, -8]
 
 
 // //relationships
@@ -143,18 +143,17 @@ CNI->supply chain awareness
 security->CNI
 supply chain awareness->chain
 chain->digital chain awareness
-chain->manufacturer
-manufacturer->supplier
-chain->delivery
-delivery->manufacturer
+chain->MANUFACTURER
+MANUFACTURER->SUPPLIER
+chain->DELIVERY
+DELIVERY->MANUFACTURER
 CAPABILITY->chain
-logistics->transportation
-supply chain awareness->forecasting
-digital chain awareness->forecasting
-model->simulation
-chain->model
+logistics->TRANSPORTATION
+supply chain awareness->FORECASTING
+digital chain awareness->FORECASTING
+MODEL->simulation
+chain->MODEL
 digital->cyber
 inflitration->cyber
 other knowledge->chain
 AWARENESS->LANDSCAPE
-territory->territorial awareness
