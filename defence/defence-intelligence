@@ -1,18 +1,13 @@
-title defence - intelligence
+title DEFENCE - intelligence - MAR 2023
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
-// note unused [0.15, 0.03]
-// note +human on the loop [0.75, 0.76]
-// note +human in the loop [0.77, 0.74]
-// note +gut feel [0.73, 0.82]
-// note +bias [0.12, 0.03]
 
 component OPERATIONAL DECISION [0.83, 0.65] label [14, -26]
 pipeline OPERATIONAL DECISION [0.54, 0.71]
-component HOTL [0.81, 0.55] label [-48, 1]
+component HOTL [0.81, 0.55] label [-49, 3]
 component HITL [0.81, 0.70] label [17, 6]
-evolve HOTL 0.6
+evolve HOTL 0.6 label [3, -19]
 
 
 component target discovery [0.77, 0.46] label [-75, -9]
@@ -24,25 +19,25 @@ component INTELLIGENCE GATHERING [0.73, 0.60] label [19, -30]
 pipeline INTELLIGENCE GATHERING [0.55, 0.70]
 component agency [0.71, 0.69] label [19, 5]
 
-component COLLECTORS [0.38, 0.65] label [-52, -15]
+component COLLECTORS [0.38, 0.65] label [-51, -20]
 pipeline COLLECTORS [0.59, 0.72]
-component machine [0.36, 0.63] label [-13, 24]
+component machine [0.36, 0.63] label [-34, 24]
 component people [0.36, 0.71] label [17, 4]
 
-component public_data [0.36, 0.67] label [1, 23]
+component public_data [0.36, 0.67] label [-4, -18]
 component ANALYSIS [0.63, 0.61]
 pipeline ANALYSIS [0.45, 0.69]
 component AI [0.61, 0.52] label [0, -20]
 component data science [0.27, 0.58] label [-99, 4]
 component SOURCES [0.50, 0.65] label [-34, -13]
 pipeline SOURCES [0.5, 0.7]
-component diversity [0.48, 0.51] label [-43, 23]
+component diversity [0.48, 0.51] label [-90, 2]
 component verified [0.48, 0.69] label [26, 5]
 component ML Engine [0.20, 0.65] label [-43, 18]
 
 component ACTORS [0.99, 0.60] label [-11, -14]
 pipeline ACTORS [0.54, 0.68]
-component military [0.97, 0.63] label [-49, 25]
+component military [0.97, 0.63] label [-28, 24]
 component opponent [0.97, 0.55] label [-74, 1]
 
 component government [0.97, 0.67] label [24, 2]
@@ -57,19 +52,19 @@ component TRUST [0.09, 0.45] label [-15, -15]
 pipeline TRUST [0.35, 0.51]
 component competence [0.07, 0.36] label [-96, 1]
 component integrity [0.07, 0.43] label [-32, 27]
-component benevolence [0.07, 0.50] label [21, 2]
+component benevolence [0.07, 0.50] label [18, 6]
 
 component CAPABILITY [0.92, 0.51] label [-79, -8]
 pipeline CAPABILITY [0.3, 0.55]
-component misinformation [0.90, 0.54] label [22, 2]
+component misinformation [0.90, 0.54] label [17, 3]
 component attack vector [0.90, 0.43] label [-57, 26]
 pipeline attack vector
-component Prompt Engineering [0.90, 0.31] label [-27, -45]
+component Prompt Engineering [0.90, 0.31] label [-44, -45]
 
-component SENSORS [0.29, 0.69]
+component SENSORS [0.29, 0.69] label [11, -5]
 pipeline SENSORS [0.66, 0.73]
 component GPS [0.27, 0.70] label [-1, 20]
-component cameras [0.27, 0.72] label [14, -1]
+component cameras [0.27, 0.72] label [19, 3]
 component network signals [0.27, 0.67] label [-73, -20]
 
 evolve AI 0.59 label [-14, 22]
