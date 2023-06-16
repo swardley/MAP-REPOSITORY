@@ -1,6 +1,6 @@
 style wardley
-
-title Purpose of Education V6.3, 09/05 2023
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+title Purpose of Education V6.4, May 2023
 
 component Survival [0.69, 0.77] label [10, -5]
 
@@ -16,7 +16,6 @@ component Informal (Twitter Spaces) [0.10, 0.82] label [20, -20]
 component ENVIRONMENT [0.12, 0.73] label [8, -6]
 pipeline ENVIRONMENT [0.63, 0.83]
 
-
 component Inductive (Observe) [0.25, 0.68] label [26, -14]
 component Deductive (Act) [0.25, 0.55] label [-79, -20]
 component REASONING [0.27, 0.64] label [11, -9]
@@ -29,19 +28,18 @@ component HOOTL [0.16, 0.22] label [-57, 2]
 component MENTORS [0.18, 0.36] label [-52, -14]
 pipeline MENTORS [0.21, 0.55]
 
-
 component Society [0.81, 0.76] label [11, 1]
 component Government [1.00, 0.78] label [-2, -11]
 component Individual [0.80, 0.69] label [-44, -11]
 
 component agency [0.75, 0.45] label [-39, -18]
 
-component Personal  [0.39, 0.36] label [-46, 23]
-component Literacy [0.39, 0.72] label [-26, 29]
-component Critical thinking [0.39, 0.52] label [1, -44]
-component Procedural [0.39, 0.81] label [22, 5]
+component Declarative  [0.39, 0.64] label [-66, 24]
+component Literacy [0.39, 0.77] label [-30, 21]
+component Critical thinking [0.40, 0.52] label [1, -36]
+component Procedural [0.39, 0.81] label [18, 2]
 component SKILLS [0.41, 0.42] label [-17, -9]
-pipeline SKILLS [0.35, 0.82]
+pipeline SKILLS [0.25, 0.82]
 
 component KNOWLEDGE [0.55, 0.69] label [-3, 25]
 component Behavior [0.55, 0.35] label [-22, 22]
@@ -50,7 +48,7 @@ component Individual beliefs [0.55, 0.21] label [-88, -16]
 component CULTURE [0.57, 0.39] label [21, -2]
 pipeline CULTURE [0.2, 0.70]
 
-component Creativity [0.41, 0.25] label [-86, 4]
+component Creativity [0.39, 0.26] label [-94, -1]
 
 component Educational industry [0.80, 0.62] label [-63, -39]
 
@@ -143,3 +141,4 @@ KNOWLEDGE DISSEMINATION->CULTURE
 agency->KNOWLEDGE
 MENTORS->MODELS OF LEARNING
 REASONING->MODELS OF LEARNING
+ENVIRONMENT->MODELS OF LEARNING
