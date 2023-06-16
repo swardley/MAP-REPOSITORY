@@ -3,7 +3,7 @@
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
 
-title Telecoms - business model
+title TELECOMS - business model - JULY 2022
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
@@ -12,94 +12,94 @@ style wardley
 // note + gaming [0.80, 0.85]
 // note + healthcare [0.82, 0.85]
 // note + type of content [0.14, 0.02]
-note +Security [0.83, 0.84]
-note Coverage [0.89, 0.84]
-note Speed [0.87, 0.84]
-note Latency [0.85, 0.84]
+// note +Security [0.83, 0.84]
+// note Coverage [0.89, 0.84]
+// note Speed [0.87, 0.84]
+// note Latency [0.85, 0.84]
 // Reliability
 // Capacity (no of connections) 
 // Security
 
 //users
-component public [0.94, 0.78] label [6, -7]
+component public [0.91, 0.77] label [15, 2]
 component gov [0.98, 0.61] label [-8, -12]
-component Business [0.98, 0.75] label [-31, -10]
+component Business [0.98, 0.75] label [-19, -10]
 
-component sovereignty [0.93, 0.53] label [-78, -11]
-component economic [0.92, 0.43] label [-72, 4]
-component political [0.92, 0.52] label [-50, 25]
-component territorial [0.92, 0.61] label [23, 6]
+component SOVEREIGNTY [0.93, 0.53] label [-78, -11]
+component economic [0.91, 0.43] label [-75, 3]
+component political [0.91, 0.51] label [-39, 24]
+component territorial [0.91, 0.69] label [-87, 2]
 
-component exclusion [0.85, 0.69] label [-49, -14]
+component exclusion [0.86, 0.68] label [-74, 0]
 
 //components
 
-component CONTENT [0.83, 0.72] label [-10, -11]
+component CONTENT [0.83, 0.72] label [-29, -16]
 
-component content providers [0.71, 0.66] label [26, -22]
+component content providers [0.73, 0.66] label [11, -8]
 
-component location [0.64, 0.61] label [-23, 24]
-component identity [0.65, 0.71] label [-30, 27]
+component location [0.64, 0.60] label [6, 2]
+component identity [0.64, 0.72] label [17, 3]
 component USER DATA [0.66, 0.67] label [8, -4]
 
-component location based content [0.80, 0.48] label [-25, 5]
-component cloud based apps [0.79, 0.75] label [7, -11]
-component local apps [0.80, 0.64] label [-37, 16]
+component location based content [0.81, 0.46] label [-27, 12]
+component cloud based apps [0.81, 0.75] label [7, -11]
+component local apps [0.81, 0.65] label [-36, 20]
 
-component legislation [0.62, 0.38] label [-90, 4]
+component legislation [0.66, 0.38] label [-90, 4]
 component regulatory access [0.20, 0.32] label [-80, -10]
 
 component ACCESS NETWORK [0.64, 0.50] label [-46, -14]
 
 
-component Indoor [0.61, 0.46] label [-25, 16]
+component Indoor [0.62, 0.45] label [-60, 3]
 
 
 
-component population density [0.53, 0.60] label [17, -26]
-component rural [0.50, 0.51] label [-41, 16]
-component urban [0.50, 0.72] label [14, 15]
+component POPULATION DENSITY [0.53, 0.60] label [-14, -37]
+component rural [0.51, 0.48] label [13, 0]
+component urban [0.51, 0.74] label [17, 3]
 
 
-component DEPLOYMENT [0.40, 0.66] label [-105, -1]
-component mobile [0.38, 0.55] label [-12, 20]
+component DEPLOYMENT [0.40, 0.66] label [-79, -6]
+component mobile [0.38, 0.59] label [-53, 1]
 component Private networks [0.38, 0.39] label [-24, 14]
-component FTTx [0.38, 0.48] label [-3, 23]
-component satellite [0.38, 0.72] label [-34, 27]
+component FTTx [0.38, 0.48] label [-7, 23]
+component satellite [0.38, 0.74] label [19, 7]
 
-component NETWORK BUILDING BLOCKS [0.27, 0.65] label [-60, -39]
-component macrocells [0.25, 0.52] label [-31, 22]
-component Cloud VNFs [0.25, 0.66] label [-29, 20]
-component fibre [0.25, 0.83] label [-13, 21]
-component Satellite device [0.25, 0.76] label [-8, 9]
-
-
-component topology [0.14, 0.54] label [-70, -5]
-component space [0.13, 0.70] label [-6, 27]
-component real estate [0.13, 0.38] label [-73, 27]
+component NETWORK BUILDING BLOCKS [0.27, 0.65] label [-67, -41]
+component macrocells [0.25, 0.52] label [-9, 20]
+component Cloud VNFs [0.25, 0.66] label [-39, 20]
+component fibre [0.25, 0.85] label [15, 1]
+component Satellite device [0.25, 0.76] label [0, 13]
 
 
-component spectrum license [0.15, 0.76] label [7, -3]
+component TOPOLOGY [0.14, 0.54] label [-70, -5]
+component space [0.12, 0.70] label [20, 4]
+component real estate [0.12, 0.38] label [-98, 4]
+
+
+component spectrum license [0.15, 0.76] label [7, -14]
 component territory [0.05, 0.42] label [-41, 18]
 
 //pipelines
 
 
 pipeline ACCESS NETWORK [0.44, 0.58]
-pipeline population density [0.47, 0.75]
+pipeline POPULATION DENSITY [0.47, 0.75]
 pipeline DEPLOYMENT [0.37, 0.75]
 pipeline NETWORK BUILDING BLOCKS [0.43, 0.86]
 pipeline USER DATA [0.59, 0.73]
-pipeline topology [0.37, 0.71]
+pipeline TOPOLOGY [0.37, 0.71]
 pipeline CONTENT [0.45, 0.76]
 pipeline digital industry [0.63, 0.74]
-pipeline sovereignty [0.42, 0.62]
+pipeline SOVEREIGNTY [0.42, 0.70]
 // pipeline competition [0.45, 0.71]
 // pipeline property [0.58, 0.76]
 // pipeline access device [0.62, 0.72]
 
 //links
-gov->sovereignty
+gov->SOVEREIGNTY
 gov->public
 
 public->CONTENT
@@ -118,7 +118,7 @@ legislation->exclusion
 legislation->regulatory access
 real estate->territory
 
-NETWORK BUILDING BLOCKS->topology
+NETWORK BUILDING BLOCKS->TOPOLOGY
 
 spectrum license->regulatory access
 
@@ -127,7 +127,7 @@ economic->legislation
 
 CONTENT->ACCESS NETWORK
 ACCESS NETWORK-> TELCO PROVIDER
-TELCO PROVIDER->population density
+TELCO PROVIDER->POPULATION DENSITY
 
 urban -> FTTx
 rural->satellite connection
@@ -161,9 +161,9 @@ urban +<> satellite
 note +physics [0.44, 0.75]
 component Network Access [0.72, 0.59] label [-48, -6]
 Transmission->real estate
-component outdoor [0.61, 0.56] label [-21, 19]
+component outdoor [0.62, 0.57] label [-61, 5]
 Indoor->FTTx
 outdoor->mobile
 outdoor->satellite
-component Small Cells [0.24, 0.44] label [-66, 17]
+component Small Cells [0.25, 0.44] label [2, -17]
 Private networks->Small Cells
