@@ -1,4 +1,4 @@
-title Energy - regulation
+title ENERGY - regulation - NOV, 2022
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 
@@ -6,24 +6,24 @@ style wardley
 // note notes [0.91, 0.04]
 // note forcing functions [0.88, 0.04]
 
-component battery storage [0.25, 0.58] label [-22, -37]
+component battery storage [0.24, 0.58] label [-15, -45]
 component consumer [0.83, 0.69] label [9, 2]
 component government [0.97, 0.63] label [-3, -14]
-component perception of success [0.77, 0.65] label [-2, -21]
+component perception of success [0.77, 0.65] label [1, -24]
 component distributors [0.97, 0.57] label [-74, -15]
 component profit [0.89, 0.75] label [10, 0]
 component price [0.71, 0.73] label [-21, 18]
 component regulation [0.74, 0.40] label [-80, -3]
-component security [0.55, 0.62] label [-17, -16]
-pipeline security [0.52, 0.71]
-component power factors [0.53, 0.57] label [-73, 22]
+component SECURITY [0.55, 0.62] label [-17, -16]
+pipeline SECURITY [0.52, 0.71]
+component power factors [0.53, 0.57] label [-52, 27]
 component reliability [0.53, 0.66] label [-5, -21]
-component surplus [0.53, 0.63] label [-31, 22]
-component grid [0.38, 0.62] label [13, -9]
-pipeline grid [0.57, 0.69]
-component generation [0.36, 0.68] label [17, 3]
+component surplus [0.53, 0.63] label [-20, 26]
+component GRID [0.38, 0.62] label [13, -9]
+pipeline GRID [0.57, 0.69]
+component generation [0.36, 0.68] label [-5, -19]
 component transmission [0.36, 0.65] label [-40, 23]
-component storage [0.36, 0.58] label [-39, 23]
+component storage [0.36, 0.58] label [-71, 5]
 component legitimacy [0.83, 0.41] label [-82, 2]
 component CNI [0.69, 0.66] label [6, -5]
 pipeline CNI [0.50, 0.7]
@@ -33,30 +33,31 @@ component standards [0.17, 0.49] label [-34, 21]
 component grid model [0.42, 0.38] label [-11, 20]
 component supply chain [0.03, 0.69] label [9, 1]
 component awareness [0.12, 0.19] label [-77, 4]
-component continuity [0.53, 0.70] label [-29, 24]
-component cost [0.43, 0.76] label [8, 5]
-component safety cases [0.53, 0.53] label [-58, -24]
+component continuity [0.53, 0.70] label [-7, 23]
+component cost [0.43, 0.77] label [8, 5]
+component safety cases [0.53, 0.53] label [-70, -20]
 component society [0.90, 0.66] label [-4, 18]
-component smart cities [0.68, 0.51] label [-20, -19]
-component energy mix [0.26, 0.66] label [-22, -13]
-pipeline energy mix [0.17, 0.73]
-component fossil [0.24, 0.72] label [16, 6]
-component renewable [0.24, 0.67] label [-5, 21]
-component self generation [0.24, 0.62] label [-42, 12]
+component smart cities [0.67, 0.51] label [-45, 23]
+component ENERGY MIX [0.26, 0.66] label [-34, -14]
+pipeline ENERGY MIX [0.17, 0.73]
+component fossil [0.24, 0.72] label [-19, -19]
+component renewable [0.24, 0.67] label [-1, 22]
+component self generation [0.24, 0.62] label [-31, 14]
 component sustainability [0.82, 0.54] label [-26, -12]
 // component investors [0.94, 0.50] label [-77, -6]
 component ESG [0.90, 0.40] label [-35, 5]
-component fusion [0.25, 0.18] label [-68, 4]
-component workable hydrogen [0.24, 0.30] label [-13, 13]
+component fusion [0.24, 0.18] label [-68, 4]
+component WORKABLE HYDROGEN [0.24, 0.38] label [-43, 16]
+pipeline WORKABLE HYDROGEN
 // component Dyson sphere [0.24, 0.05] label [-12, -19]
-component nuclear fission [0.24, 0.43] label [-30, -45]
+component nuclear fission (SMNR) [0.24, 0.44] label [-31, -60]
 component media [0.74, 0.62] label [-22, 19]
-component enforcement mechanism [0.45, 0.50] label [-26, 7]
-pipeline enforcement mechanism
-component Scenario Planning [0.64, 0.25] label [-52, -43]
-pipeline Scenario Planning [0.2, 0.36]
+component ENFORCEMENT MECHANISM [0.45, 0.50] label [-26, 7]
+pipeline ENFORCEMENT MECHANISM
+component SCENARIO PLANNING [0.64, 0.25] label [-52, -43]
+pipeline SCENARIO PLANNING [0.2, 0.36]
 component Whatif? [0.62, 0.21] label [-71, 2]
-component digital twims [0.62, 0.28] label [-25, 24]
+component digital twims [0.62, 0.28] label [-42, 23]
 component decision support [0.62, 0.35] label [-20, -47]
 //link
 government->society
@@ -68,23 +69,23 @@ government->legitimacy
 // legitimacy->CNI
 government->regulation
 regulation->CNI
-regulation->security
+regulation->SECURITY
 regulation->standards
-CNI->security
-security->grid
-security->cost
-security->grid model
-grid model->grid
-grid->energy mix
-supply chain->energy mix
+CNI->SECURITY
+SECURITY->GRID
+SECURITY->cost
+SECURITY->grid model
+grid model->GRID
+GRID->ENERGY MIX
+supply chain->ENERGY MIX
 supply chain->awareness
-grid->standards
+GRID->standards
 grid model->awareness
 regulation->grid model
 distributors->profit
 profit->cost
 price->cost
-distributors->grid
+distributors->GRID
 cost->supply chain
 society->sustainability
 sustainability->awareness
@@ -99,9 +100,8 @@ profit->regulation
 distributors->ESG
 legitimacy->perception of success
 perception of success->media
-enforcement mechanism->regulation
+ENFORCEMENT MECHANISM->regulation
 regulation->WhatIf?
 WhatIf?->awareness
-Scenario Planning->regulation
-Scenario Planning->awareness
-legitimacy->ESG
+SCENARIO PLANNING->regulation
+SCENARIO PLANNING->awareness
