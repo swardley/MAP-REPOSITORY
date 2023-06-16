@@ -3,7 +3,7 @@
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
 
-title Energy - disruption, AUG 2022
+title ENERGY - disruption, AUG 2022
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 
@@ -12,52 +12,52 @@ style wardley
 // note +fragility [0.10, 0.02]
 // note +generational aspects [0.04, 0.02]
 
-note $1M / km air, 10x underground [0.28, 0.22]
-note >110kV [0.32, 0.37]
+// note $1M / km air, 10x underground [0.27, 0.22]
+note >110kV [0.30, 0.35]
 note <110kV [0.36, 0.60]
 
 component awareness [0.50, 0.31] label [-78, 2]
 component supply chain [0.40, 0.42] label [-101, 4]
 
-component user [0.94, 0.54]
-pipeline user [0.41, 0.64]
+component USER [0.94, 0.54]
+pipeline USER [0.41, 0.64]
 component today [0.92, 0.63] label [18, 5]
 component tomorrow [0.92, 0.42] label [-75, 3]
-component price [0.70, 0.69] label [16, 3]
-component cost [0.72, 0.63] label [-4, -11]
-pipeline cost [0.42, 0.7]
-component externality [0.70, 0.43] label [-91, 14]
+component price [0.70, 0.69] label [17, 3]
+component COST [0.72, 0.63] label [-4, -11]
+pipeline COST [0.42, 0.7]
+component externality [0.70, 0.43] label [-98, 9]
 component market [0.61, 0.69] label [19, 4]
-component transmission [0.30, 0.41] label [-97, 0]
-component capital [0.06, 0.72] label [4, 4]
-component protection system [0.04, 0.27] label [-75, -18]
+component transmission [0.32, 0.41] label [-97, 0]
+component capital [0.06, 0.72] label [8, 4]
+component protection system [0.04, 0.27] label [-79, -12]
 
-component reserve [0.02, 0.70] label [9, 4]
-pipeline reserve
+component RESERVE [0.02, 0.70] label [9, 7]
+pipeline RESERVE
 
-component synthetic [0.23, 0.20] label [-79, 2]
+component synthetic [0.23, 0.20] label [-83, 1]
 component distribution [0.35, 0.63] label [-93, 11]
-component solar collectors [0.11, 0.41] label [-42, 12]
-component landscape [0.12, 0.25] label [-76, 2]
+component solar collectors [0.11, 0.41] label [-40, 13]
+component landscape [0.12, 0.25] label [-78, -1]
 
 // pipeline distribution
 
 //component "other" [0.78, 0.64] label [8, 1]
 
 //component history [0.46, 0.46] label [-65, 5]
-component energy usage [0.56, 0.65] label [10, 1]
-pipeline energy usage //[0.3, 0.8]
+component ENERGY USAGE [0.57, 0.65] label [11, 4]
+pipeline ENERGY USAGE //[0.3, 0.8]
 //component air conditioning [0.58, 0.68] label [-30, 12]
 //component compute [0.58, 0.73] label [2, 25]
 //component heating [0.58, 0.79] label [23, 7]
-component energy mix [0.43, 0.67] label [12, -5]
-pipeline energy mix [0.59, 0.74]
+component ENERGY MIX [0.43, 0.67] label [12, -5]
+pipeline ENERGY MIX [0.59, 0.74]
 //component efficiency [0.65, 0.53] label [-39, 19]
 
-note (grid) [0.37, 0.38]
+note (grid) [0.38, 0.38]
 
-component energy production [0.13, 0.68] label [13, -30]
-pipeline energy production [0.37, 0.75]
+component ENERGY PRODUCTION [0.13, 0.68] label [-62, -37]
+pipeline ENERGY PRODUCTION [0.37, 0.75]
 //component consumers [0.89, 0.71] label [12, 2]
 // component behaviour [0.82, 0.55] label [-2, -12]
 // pipeline behaviour
@@ -65,15 +65,15 @@ pipeline energy production [0.37, 0.75]
 //component always on [0.72, 0.39] label [-31, 21]
 //component web 3 [0.72, 0.30] label [-40, 24]
 //component eco luddites [0.72, 0.45] label [-23, -15]
-component renewable [0.41, 0.60] label [-84, 5]
+component renewable [0.41, 0.60] label [-83, 0]
 component fossil [0.41, 0.73] label [17, 4]
 component solar microgen [0.11, 0.74] label [17, 4]
-component gas [0.11, 0.44] label [0, 21]
+component gas [0.11, 0.44] label [-7, -20]
 component nuclear [0.11, 0.38] label [-69, 5]
 //component space [0.72, 0.34] label [-34, 22]
-component energy generation [0.51, 0.65] label [-71, -29]
+component ENERGY GENERATION [0.51, 0.65] label [-71, -29]
 
-pipeline energy generation [0.58, 0.79]
+pipeline ENERGY GENERATION [0.58, 0.79]
 // Distrubuted generation and consumption, solar roof's feeding into grid
 // component distributed-generation distrubuted-consumption [0.41, 0.39] label [1, 15]
 // Centralised generation such as gas/coal/nuclear power stations, feeding into national grid
@@ -87,16 +87,16 @@ component OTC market [0.49, 0.59] label [-88, 3]
 // component options [0.58, 0.31] label [-20, 22]
 
 //component society [0.93, 0.64] label [-28, -13]
-component security [0.80, 0.68] label [17, 3]
+component security [0.80, 0.68] label [20, 4]
 //component industrial [0.58, 0.62] label [-70, 27]
-component storage [0.25, 0.57] label [-62, -4]
-pipeline storage [0.19, 0.71]
-component battery [0.23, 0.70] label [15, 7]
+component BATTERY (POWER) STORAGE [0.25, 0.57] label [-57, -45]
+pipeline BATTERY (POWER) STORAGE [0.19, 0.71]
+component electrical [0.23, 0.70] label [15, 7]
 component hydrogen [0.23, 0.40] label [-25, 22]
 component potential energy [0.23, 0.53] label [-49, 13]
 component sustainability [0.80, 0.43] label [-122, -2]
-component survivability [0.82, 0.55] label [-100, -12]
-pipeline survivability [0.42, 0.69]
+component SURVIVABILITY [0.82, 0.55] label [-100, -12]
+pipeline SURVIVABILITY [0.42, 0.69]
 //component political [0.85, 0.53] label [-22, 23]
 component education [0.74, 0.35] label [-79, 1]
 // pipeline education
@@ -106,74 +106,74 @@ component education [0.74, 0.35] label [-79, 1]
 component regulation [0.61, 0.60] label [-89, 5]
 component CO2 [0.60, 0.49] label [-36, 5]
 
-component control [0.63, 0.64] label [-63, -7]
-pipeline control [0.59, 0.7]
+component CONTROL [0.63, 0.64] label [-63, -7]
+pipeline CONTROL [0.59, 0.7]
 
-evolve transmission 0.52 label [8, 6]
-evolve distribution 0.75
+evolve transmission 0.49 label [-541, -3234]
+evolve distribution 0.75 label [-896, -3222]
 note +constraint [0.30, 0.66]
 
 //links
 society->consumers
 consumers->behaviour
 society->survival
-mkt_competition->energy usage
-// behaviour->energy usage
+mkt_competition->ENERGY USAGE
+// behaviour->ENERGY USAGE
 // sustainability->education
 education->efficiency
 behaviour->expectations
 political->expectations
-energy usage->energy generation
-energy generation->energy mix
-renewable->storage
-energy mix->energy production
-efficiency->energy usage
+ENERGY USAGE->ENERGY GENERATION
+ENERGY GENERATION->ENERGY MIX
+renewable->BATTERY (POWER) STORAGE
+ENERGY MIX->ENERGY PRODUCTION
+efficiency->ENERGY USAGE
 eco luddites->expectations
 expectations->history
-generators->energy usage
+generators->ENERGY USAGE
 government->society
 government->political
 // sustainability->regulation
 government->regulation
 mkt_competition->"other"
-energy generation->supply chain
+ENERGY GENERATION->supply chain
 regulation->awareness
 awareness->awareness
 supply chain->awareness
-encumbents->energy usage
-// education->energy usage
+encumbents->ENERGY USAGE
+// education->ENERGY USAGE
 consumers->mkt_competition
 providers->mkt_competition
 // behaviour->education
 sustainability->education
 sustainability->renewable 
-// survivability->energy usage
-// today->survivability
+// SURVIVABILITY->ENERGY USAGE
+// today->SURVIVABILITY
 tomorrow->sustainability
-// survivability->price
+// SURVIVABILITY->price
 sustainability->externality
-user->behaviour
-behaviour->cost
+USER->behaviour
+behaviour->COST
 price->market
 externality->regulation
 today->security
 security->price
-security->energy usage
-user->survivability
-survivability->cost
-survivability->control
-energy mix->transmission
+security->ENERGY USAGE
+USER->SURVIVABILITY
+SURVIVABILITY->COST
+SURVIVABILITY->CONTROL
+ENERGY MIX->transmission
 transmission->protection system
-energy production->capital
+ENERGY PRODUCTION->capital
 capital->transmission
-capital->storage
-distribution->energy mix
+capital->BATTERY (POWER) STORAGE
+distribution->ENERGY MIX
 supply chain->transmission
 supply chain->distribution
 solar microgen+<>distribution
 distribution->capital
 transmission->landscape
-reserve->gas
+RESERVE->gas
 externality->CO2
     
-CO2->energy mix
+CO2->ENERGY MIX
