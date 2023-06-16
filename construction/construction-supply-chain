@@ -242,3 +242,4 @@ CNI->Supply Chain Awareness
 //note Need Local supply of skill LABOUR [0.68, 0.08]
 CNI->skilled
 component locality [0.71, 0.29] label [-13, 20]
+CNI->locality
