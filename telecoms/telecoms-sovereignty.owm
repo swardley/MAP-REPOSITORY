@@ -2,12 +2,12 @@
 // Map is licensed under creative commons share alike.
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
-title Telecoms Group - Sovereignty
+title TELECOMS - Sovereignty - OCT 2022
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 // note DNS over HTTPS? - adds security is all [0.94, 0.01]
 // note What happens if UK goes to war with China/US? [0.91, 0.01]
-// note individual sovereignty = collective of one? [0.80, 0.02]
+// note individual sovereignty = COLLECTIVE of one? [0.80, 0.02]
 
 //USERS
 component corporation [1.00, 0.57] label [-88, 6]
@@ -16,15 +16,15 @@ component corporation [1.00, 0.57] label [-88, 6]
 // pipeline individual sovereignty
 
 component people [0.94, 0.69] label [12, 1]
-component gov [1.00, 0.63] label [-10, -12]
-pipeline gov
-component collective [0.97, 0.67] label [18, -10]
-pipeline collective // [0.52, 0.71]
-component perception of success [0.92, 0.63] label [4, -22]
-component communication [0.78, 0.66] label [7, -4]
-pipeline communication
-component legitimacy [0.95, 0.60] label [-58, 20]
-pipeline legitimacy
+component GOVERNMENT [1.00, 0.63] label [-24, -13]
+pipeline GOVERNMENT
+component COLLECTIVE [0.98, 0.67] label [10, -4]
+pipeline COLLECTIVE // [0.52, 0.71]
+component perception of success [0.92, 0.63] label [-1, -22]
+component COMMUNICATION [0.78, 0.66] label [13, 2]
+pipeline COMMUNICATION
+component LEGITIMACY [0.95, 0.60] label [-57, 20]
+pipeline LEGITIMACY
 
 //SOVEREIGNTY
 component SOVEREIGNTY [0.86, 0.53] label [-85, -5]
@@ -37,83 +37,83 @@ component digital [0.84, 0.33] label [-71, 3]
 component CNI [0.84, 0.52] label [-8, 23]
 
 // ACCESS DEVICE
-component ACCESS DEVICE [0.75, 0.70] label [11, -4]
+component ACCESS DEVICE [0.74, 0.70] label [11, -4]
 pipeline ACCESS DEVICE [0.55, 0.77]
-component radio/TV [0.73, 0.76] label [15, 2]
-component smartphone [0.73, 0.67] label [-58, 19]
-component sat phone [0.73, 0.60] label [-17, -20]
-component computer [0.73, 0.73] label [-11, 23]
-component IoT [0.73, 0.56] label [-38, 2]
+component radio/TV [0.72, 0.76] label [15, 2]
+component smartphone [0.72, 0.66] label [-57, 23]
+component sat phone [0.72, 0.60] label [-17, -17]
+component computer [0.72, 0.73] label [-11, 20]
+component IoT [0.72, 0.56] label [-38, 2]
 // note Network Perception [0.59, 0.01]
-// note Network Topology [0.40, 0.01]
+// note NETWORK TOPOLOGY [0.40, 0.01]
 // note legislation / regulatory [0.62, 0.01]
 // note +expertise to operate? [0.56, 0.01]
 // note +authority to operate? [0.53, 0.01]
-component doves [0.21, 0.67] label [-45, 7]
-evolve doves 0.72
+component doves [0.24, 0.67] label [-43, 4]
+evolve doves 0.72 label [9, -3227]
 
 //ACCESS NETWORK
 component ACCESS NETWORK [0.64, 0.73] label [8, -8]
 pipeline ACCESS NETWORK [0.67, 0.75]
 component satellite [0.37, 0.72] label [17, 4]
 // component microcell [0.54, 0.58] label [-33, -21]
-component Towers [0.37, 0.45] label [-7, 24]
+component Towers [0.37, 0.45] label [-12, 23]
 // component FTTP [0.42, 0.46] label [3, 25]
-component cable [0.37, 0.37] label [-30, -23]
+component cable [0.37, 0.37] label [-24, -21]
 // component BACKHAUL/INTERNET CORE [0.47, 0.31] label [-82, -23]
-component launch vehicles [0.29, 0.65] label [-41, 12]
+component launch vehicles [0.31, 0.65] label [-41, 6]
 // pipeline launch vehicles //[0.60, 0.67]
-component NETWORK EQPT [0.29, 0.51] label [18, 9]
+component NETWORK EQPT [0.30, 0.51] label [16, 6]
 pipeline NETWORK EQPT
 
-component quantum network [0.53, 0.17] label [-74, -14]
+component quantum network [0.53, 0.19] label [-74, -14]
 
 // component Isolated Medium Topology [0.44, 0.43] label [10, -49]
 // pipeline Isolated Medium Topology [0.39, 0.58]
-component Network_Topology [0.39, 0.64] label [-94, -20]
-pipeline Network_Topology [0.36, 0.73] 
+component NETWORK TOPOLOGY [0.39, 0.64] label [-71, -30]
+pipeline NETWORK TOPOLOGY [0.36, 0.73] 
 component Fixed [0.62, 0.74] label [17, 3]
 component Mobile [0.62, 0.68] label [-62, -1]
 // component freespace laser [0.42, 0.57] label [-19, 13]
-evolve launch vehicles 0.72 label [0, -5]
+evolve launch vehicles 0.72 label [0, -3225]
 
 evolve BACKHAUL/INTERNET CORE 0.8 label [-925, 305]
 // note +Gone into Space [0.35, 0.01]
 // component extraction [0.21, 0.31] label [-87, 3]
 //THEATRE
-component THEATRE [0.17, 0.50] label [-25, -13]
+component THEATRE [0.21, 0.50] label [-25, -13]
 pipeline THEATRE  [0.34, 0.71]
-component awareness of land-sea-air-space [0.15, 0.70] label [24, -17]
-component awareness of supply-chains [0.15, 0.35] label [-80, -19]
-component peering [0.53, 0.63] label [-26, 23]
+component awareness of land-sea-air-space [0.19, 0.70] label [24, -13]
+component awareness of supply-chains [0.19, 0.35] label [-80, -19]
+component peering [0.53, 0.63] label [-26, 18]
 
 //REALITY
-component REALITY [0.06, 0.49] label [-58, -4]
+component REALITY [0.09, 0.49] label [-58, -4]
 pipeline REALITY  [0.30, 0.73]
-component geography [0.04, 0.31] label [-85, 2]
-component physical supply chain [0.04, 0.64] label [8, -19]
-component space [0.04, 0.72] label [17, 3]
+component geography [0.07, 0.31] label [-85, 2]
+component physical supply chain [0.07, 0.64] label [-19, -58]
+component space [0.07, 0.72] label [17, 4]
 component Compute [0.19, 0.83] label [12, 0]
 component Power [0.05, 0.84] label [16, 2]
-component information supply chain [0.04, 0.59] label [-74, -12]
+component information supply chain [0.07, 0.59] label [-32, 9]
 
-evolve awareness of supply-chains 0.5 label [-654, 77]
-evolve freespace laser 0.8 label [-5, -18]
+evolve awareness of supply-chains 0.50 label [-654, -3277]
+evolve freespace laser 0.8 label [-5, -3218]
 
-component CONTROL_LAYER [0.55, 0.67] label [-93, -11]
-pipeline CONTROL_LAYER [0.16, 0.74]
-component DNSoverHTTPS [0.54, 0.51] label [-39, -15]
-component NationStateFirewalls [0.54, 0.44] label [-31, 20]
-component SIMS [0.54, 0.73] label [-14, 30]
+component CONTROL LAYER [0.55, 0.67] label [-93, -11]
+pipeline CONTROL LAYER [0.18, 0.74]
+component DNSoverHTTPS [0.53, 0.51] label [-34, -20]
+component NationStateFirewalls [0.53, 0.44] label [-33, 13]
+component SIMS [0.53, 0.73] label [-9, 23]
 component geofencing [0.53, 0.56] label [-39, 19]
-evolve DNSoverHTTPS 0.70 label [-921, 438]
+evolve DNSoverHTTPS 0.70 label [-921, -3438]
 
 // links
-gov->collective
-collective->people
-collective->behaviours
-gov->legitimacy
-legitimacy->SOVEREIGNTY
+GOVERNMENT->COLLECTIVE
+COLLECTIVE->people
+COLLECTIVE->behaviours
+GOVERNMENT->LEGITIMACY
+LEGITIMACY->SOVEREIGNTY
 people->perception of success
 perception of success->CNI
 territorial->landscape
@@ -129,16 +129,17 @@ satellite->launch vehicles
 awareness of land-sea-air-space->territorial
 geography->awareness of land-sea-air-space
 space->awareness of land-sea-air-space
-communication->ACCESS DEVICE
-communication->ACCESS NETWORK
+COMMUNICATION->ACCESS DEVICE
+COMMUNICATION->ACCESS NETWORK
 // ACCESS DEVICE->NETWORK EQPT
 // ACCESS NETWORK->NETWORK EQPT
 ACCESS NETWORK->Compute
 Compute->Power
-CNI->communication
+CNI->COMMUNICATION
 component Real estate [0.29, 0.31] label [-95, 4]
 mobile->Real estate
-component EXPERTISE [0.24, 0.46] label [-83, -1]
+component EXPERTISE [0.27, 0.46] label [-73, 1]
+pipeline EXPERTISE
 Software->EXPERTISE
 // note >>>LINK TO EDUCATION & MANUFACTURING! [0.38, 0.01]
 CNI->BACKHAUL/INTERNET CORE
@@ -170,19 +171,19 @@ Fixed->Directionally Constrained Medium
 Fixed->Isolated Tunnel
 Fixed->Isolated Medium
 Shared Medium->Mobile
-// Network_Topology->Mobile
+// NETWORK TOPOLOGY->Mobile
 Fixed->Isolated Medium Topology
 NETWORK EQPT->Isolated Medium Topology
 Isolated Medium Topology->peering
 // NETWORK EQPT->peering
-Network_Topology->NETWORK EQPT
+NETWORK TOPOLOGY->NETWORK EQPT
 // Fixed->cable
 // Mobile->Towers
 Mobile->satellite
 // ACCESS NETWORK->peering
-// Fixed->CONTROL_LAYER
-// CONTROL_LAYER->cable
-CONTROL_LAYER->Network_Topology
-CONTROL_LAYER->ACCESS NETWORK
+// Fixed->CONTROL LAYER
+// CONTROL LAYER->cable
+CONTROL LAYER->NETWORK TOPOLOGY
+CONTROL LAYER->ACCESS NETWORK
 corporation->SOVEREIGNTY
 satellite->doves
