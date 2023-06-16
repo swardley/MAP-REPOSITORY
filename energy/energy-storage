@@ -3,7 +3,7 @@
 // https://creativecommons.org/licenses/by-sa/4.0/
 // As this is a dynamic document, contributors to the map can be found on the github repository - https://github.com/swardley/Research2022
 
-title Electrical Energy - storage v2.0
+title ENERGY - electrical energy storage, APRIL 2023
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
 style wardley
 
@@ -37,22 +37,22 @@ pipeline ELECTRICITY // [0.61, 0.79]
 // component potential [0.63, 0.75] label [-11, -18]
 // component kinetic [0.63, 0.73] label [-17, 22]
 // component nuclear [0.63, 0.62] label [-66, 4]
-// component electrical [0.63, 0.70] label [-69, 22]
+// component electrical [0.20, 0.71] label [-69, 22]
 
 component GRID [0.80, 0.69] label [-41, -4]
 pipeline GRID [0.34, 0.81]
-component Trad grid [0.78, 0.80] label [18, 3]
+component Traditional grid (single machine view) [0.78, 0.80] label [22, -37]
 component Distributed grid [0.78, 0.35] label [-70, -32]
 //component micro grid [0.56, 0.26] label [-20, -18]
 
-component Auto Generation Control (Trad) [0.68, 0.79] label [27, -24]
-component Fault Tolerant TCP/IP [0.68, 0.31] label [-77, -42]
+component Auto Generation Control [0.68, 0.79] label [29, -7]
+component Fault Tolerant (TCP/IP like) [0.68, 0.31] label [-78, -49]
 
-component STORAGE [0.27, 0.65] label [-63, -4]
-pipeline STORAGE [0.26, 0.72]
-component battery [0.25, 0.71] label [15, 2]
-component hydro [0.25, 0.37] label [-15, 25]
-component hydrogen [0.25, 0.27] label [-43, 23]
+component BATTERY (POWER) STORAGE [0.22, 0.60] label [-65, -41]
+pipeline BATTERY (POWER) STORAGE [0.40, 0.72]
+component electrical [0.20, 0.71] label [18, 5]
+component hydro [0.20, 0.51] label [-15, 25]
+component hydrogen [0.20, 0.41] label [-79, 2]
 //component stockpile [0.38, 0.84] label [-80, 2]
 component spinning reserve [0.53, 0.69] label [17, -6]
 component fast response (<1s) [0.53, 0.26] label [-80, -29]
@@ -67,16 +67,16 @@ pipeline ENERGY PLATFORM   [0.25, 0.7]
 component MODEL OF CONTROL [0.70, 0.67] label [-65, -46]
 pipeline MODEL OF CONTROL [0.3, 0.80]
 
-component  GENERATION [0.17, 0.69] label [12, -8]
-pipeline  GENERATION [0.63, 0.75]
+component  GENERATION [0.13, 0.69] label [18, 4]
+pipeline  GENERATION
 
-component STOCKPILE [0.10, 0.65] label [-82, 3]
+component STOCKPILE [0.09, 0.64] label [-77, 4]
 pipeline STOCKPILE // [0.4, 0.9]
 
 component SOURCES [0.07, 0.69] label [17, 7]
 pipeline SOURCES // [0.4, 0.9]
 // component LNG [0.15, 0.27] label [-34, 4]
-// component hydrogen [0.25, 0.27] label [-66, 2]
+// component hydrogen [0.20, 0.41] label [-66, 2]
 // component coal [0.15, 0.30] label [12, 2]
 // component solar [0.18, 0.29] label [-47, 3]
 // component oil [0.16, 0.21]
@@ -84,8 +84,8 @@ pipeline SOURCES // [0.4, 0.9]
 component MATERIAL_SUPPLY_CHAIN [0.02, 0.68] label [57, -5]
 pipeline MATERIAL_SUPPLY_CHAIN // [0.4, 0.9]
 
-component energy_supply_chain [0.31, 0.70] label [47, -8]
-component awareness_of_chain [0.37, 0.42] label [-104, -8]
+component energy supply chain [0.28, 0.69] label [0, -24]
+component awareness of chain [0.36, 0.32] label [-68, -20]
 component INTEGRATION [0.46, 0.52] label [-35, -9]
 pipeline INTEGRATION [0.33, 0.62]
 
@@ -93,9 +93,9 @@ component pre-approval (discovery) [0.44, 0.61] label [33, -7]
 component adaptive [0.44, 0.34] label [-77, 3]
 component plug and play [0.62, 0.25] label [-105, 2]
 
-component fast control system [0.60, 0.31] label [7, -20]
+component fast control system [0.60, 0.31] label [10, -24]
 component TCP/IP [0.58, 0.76] label [8, 4]
-evolve Fault Tolerant TCP/IP 0.5 label [0, -56]
+evolve Fault Tolerant (TCP/IP like) 0.5 label [-590, -3312]
 
 // link
 government->local community
@@ -119,7 +119,7 @@ thermal->electrical
 ELECTRICITY->GRID
 //GRID->ENERGY PLATFORM
 //grid->ENERGY PLATFORM
-//GRID -> STORAGE
+//GRID -> BATTERY (POWER) STORAGE
 //GRID ->GENERATION
 
 
@@ -128,24 +128,25 @@ SOURCES->MATERIAL_SUPPLY_CHAIN
 SOURCES->STOCKPILE
 STOCKPILE-> GENERATION
 
-Trad grid -> Auto Generation Control (Trad)
-Distributed grid -> Fault Tolerant TCP/IP
-Auto Generation Control (Trad)->spinning reserve
-Fault Tolerant TCP/IP->fast response (<1s) battery
+Traditional grid (single machine view)-> Auto Generation Control 
+Distributed grid -> Fault Tolerant (TCP/IP like)
+Auto Generation Control ->spinning reserve
+Fault Tolerant (TCP/IP like)->fast response (<1s) electrical
 
-energy_supply_chain->STORAGE
-energy_supply_chain->GENERATION
+energy supply chain->BATTERY (POWER) STORAGE
+energy supply chain->GENERATION
 spinning reserve->pre-approval (discovery)
 
-adaptive->energy_supply_chain
-pre-approval (discovery)->awareness_of_chain
-awareness_of_chain->energy_supply_chain
-fast response (<1s)->battery
-Fault Tolerant TCP/IP->fast control system
-TCP/IP->Fault Tolerant TCP/IP
-SCADA->Auto Generation Control (Trad)
-Fault Tolerant TCP/IP->plug and play
+
+pre-approval (discovery)->awareness of chain
+awareness of chain->energy supply chain
+fast response (<1s)->electrical
+Fault Tolerant (TCP/IP like)->fast control system
+TCP/IP->Fault Tolerant (TCP/IP like)
+SCADA->Auto Generation Control
+Fault Tolerant (TCP/IP like)->plug and play
 plug and play->adaptive
 fast response (<1s)->plug and play
 fast control system->fast response (<1s)
-STORAGE->MATERIAL_SUPPLY_CHAIN
+BATTERY (POWER) STORAGE->MATERIAL_SUPPLY_CHAIN
+adaptive->awareness of chain
