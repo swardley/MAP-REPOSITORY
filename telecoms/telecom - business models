@@ -49,7 +49,7 @@ component local apps [0.81, 0.65] label [-36, 20]
 component legislation [0.66, 0.38] label [-90, 4]
 component regulatory access [0.20, 0.32] label [-80, -10]
 
-component ACCESS NETWORK [0.64, 0.50] label [-46, -14]
+component ACCESS NETWORK [0.64, 0.50] label [-82, -12]
 
 
 component Indoor [0.62, 0.45] label [-60, 3]
