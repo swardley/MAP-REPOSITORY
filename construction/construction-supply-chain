@@ -216,7 +216,7 @@ component circular materials [0.61, 0.54] label [-22, 9]
 component DISTRIBUTORS [0.29, 0.64] label [9, -4]
 pipeline DISTRIBUTORS [0.41, 0.72]
 component integrated [0.27, 0.49] label [-25, 20]
-component traditional [0.27, 0.71] label [17, 10]
+component traditional [0.27, 0.71] label [18, 3]
 component platform [0.27, 0.42] label [-79, 1]
 DISTRIBUTORS->MANUFACTURE
 //component Durability [0.18, 0.17]
