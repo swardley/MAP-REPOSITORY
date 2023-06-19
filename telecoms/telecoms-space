@@ -20,7 +20,7 @@ component corporation [0.99, 0.53] label [-55, -10]
 // component space [0.64, 0.69] label [11, -7]
 component government [0.99, 0.60] label [-14, -15]
 
-component LEO microsat [0.71, 0.70] label [19, 1]
+component LEO microsat [0.71, 0.70] label [-2, -18]
 component GEO Sat [0.71, 0.34] label [-69, 4]
 component backhaul [0.50, 0.73] label [10, 5]
 component USER TERMINAL [0.61, 0.72] label [13, 7]
@@ -55,11 +55,11 @@ component SPECTRUM [0.33, 0.68] label [9, -6]
 pipeline SPECTRUM [0.66, 0.71]
 component fleet management [0.20, 0.38] label [-84, -12]
 
-component Optical Sat2Sat Coms [0.56, 0.40] label [-32, -52]
+component Optical Sat2Sat Coms [0.56, 0.40] label [-44, 12]
 component PROPULSION [0.59, 0.66] label [-80, -3]
 pipeline PROPULSION [0.58, 0.68]
 
-component Krypton [0.57, 0.67] label [15, 1]
+component Krypton [0.57, 0.67] label [18, 3]
 component Xenon [0.57, 0.59] label [-52, 4]
 
 component power [0.65, 0.72] label [11, 3]
@@ -70,7 +70,7 @@ pipeline COOLING [0.5, 0.64]
 pipeline TOPOLOGY [0.34, 0.74]
 component mobile [0.79, 0.42] label [-22, 23]
 component fibre [0.79, 0.35] label [-56, 3]
-component NTN (non terrestrial Network) [0.79, 0.73] label [24, -18]
+component NTN (non terrestrial Network) [0.79, 0.73] label [28, -41]
 pipeline NTN (non terrestrial Network)
 
 component CONTROL SYSTEMS [0.22, 0.55] label [13, -27]
@@ -94,7 +94,7 @@ component fibre [0.79, 0.35] label [-56, 3]
 // component masts [0.09, 0.69] label [18, 7]
 // component cubesat [0.43, 0.65] label [-39, 16]
 // component wire [0.06, 0.69] label [3, 11]
-component launchers [0.68, 0.72] label [10, 5]
+component launchers [0.68, 0.72] label [6, -7]
 component mesh network [0.88, 0.47] label [-107, 0]
 
 //SATELLITE
@@ -176,9 +176,8 @@ LEO microsat->AUTOMATION
 AUTOMATION->supply chain awareness
 supply chains->supply chain awareness
 AUTOMATION->supply chains
-component SPACE REGULATION [0.10, 0.39] label [-86, -20]
+component SPACE REGULATION [0.10, 0.39] label [-80, -34]
 pipeline SPACE REGULATION 
 SPECTRUM->SPACE REGULATION
 orbit tracking->SPACE REGULATION
 SPACE REGULATION->SPACE REGULATION
-debris tracking->SPACE REGULATION
