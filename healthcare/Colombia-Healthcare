@@ -1,13 +1,15 @@
+// https://onlinewardleymaps.com/#Rzg4HS0sWMyuZ5OPBl
+
 title Colombia v0.2
 component fairness [0.84, 0.62] label [-8, 20]
 component accessibility [0.42, 0.49] label [-79, 1]
 component insurance [0.71, 0.74] label [8, 3]
 pipeline insurance
 
-component providers [0.34, 0.69] label [18, -14]
+component providers [0.34, 0.69] label [9, -10]
 pipeline providers [0.41, 0.73]
 component denial of service [0.18, 0.78] label [0, -19]
-component mandatory healthcare [0.85, 0.69] label [7, -26]
+component mandatory healthcare [0.87, 0.68] label [15, -25]
 component Government [0.95, 0.66] label [-22, -13]
 //component subscription model [0.62, 0.72] label [12, -8]
 component demand management [0.38, 0.59] label [-54, -34]
@@ -18,7 +20,7 @@ component local services [0.73, 0.49] label [21, 8]
 component central services [0.73, 0.38] label [-74, -9]
 component voters [0.89, 0.61] label [-41, -3]
 
-component medical needs [0.87, 0.56] label [-93, 3]
+component medical needs [0.82, 0.59] label [-97, -1]
 pipeline medical needs
 
 component services [0.74, 0.45] label [-41, -13]
@@ -26,29 +28,29 @@ pipeline services [0.37, 0.5]
 component politicians [0.95, 0.59] label [-67, -8]
 component payment [0.22, 0.59] label [-40, 18]
 component guidelines (NICE) [0.04, 0.58] label [-70, -6]
-component treatment [0.46, 0.61] label [-36, -14]
-component healthy ageing agenda [0.06, 0.31] label [-76, -18]
+component treatment [0.46, 0.62] label [1, -19]
+component healthy ageing agenda [0.08, 0.10] label [-76, -18]
 
-component pathway management [0.17, 0.29] label [-75, -7]
+component pathway management [0.15, 0.10] label [-75, -7]
 
-component lobbyists [0.93, 0.72] label [22, 3]
+component lobbyists [0.20, 0.10] label [-62, 2]
 component insurance companies [0.66, 0.75] label [10, -18]
-component Social Health Insurance Pot (ADRES) [0.79, 0.72] label [9, -40]
+component Social Health Insurance Pot (ADRES) [0.80, 0.71] label [13, -32]
 
-component capitation fee [0.66, 0.70] label [-42, -16]
+component capitation fee [0.66, 0.70] label [-57, -14]
 component fee per profile [0.60, 0.70] label [-49, -24]
-component social charactertistics [0.57, 0.62] label [-12, -43]
+component social charactertistics [0.57, 0.62] label [-40, -38]
 pipeline social charactertistics [0.59, 0.71]
-component location [0.56, 0.65] label [-25, 28]
-component age [0.55, 0.70] label [17, -11]
-component sex [0.56, 0.68] label [-10, 28]
+component location [0.55, 0.64] label [-25, 28]
+component age [0.55, 0.70] label [15, -17]
+component sex [0.55, 0.68] label [-10, 28]
 component social class [0.55, 0.60] label [-86, 0]
 pipeline treatment
 component profit per profile [0.62, 0.75] label [-6, -2]
 
-component risk of payment [0.48, 0.69] label [0, -25]
+component risk of payment [0.48, 0.69] label [-6, -14]
 component specialist [0.32, 0.42] label [-76, 4]
-component primary [0.32, 0.72] label [23, 0]
+component primary [0.32, 0.72] label [18, 0]
 component private payment [0.15, 0.55] label [-29, 11]
 pipeline private payment
 
@@ -102,3 +104,4 @@ accessibility->payment
 accessibility->private payment
 voters->fairness
 Government->voters
+treatment->social class
