@@ -1,10 +1,10 @@
-title GOVERNMENT-SOVEREIGNTY 2023
+title GOVERNMENT-SOVEREIGNTY - APRIL 2023
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
 
 //actors and chain
-component SUPRANATIONAL [0.98, 0.62] label [-103, -4]
+component SUPRANATIONAL [0.98, 0.62] label [-104, 2]
 pipeline SUPRANATIONAL
 
 component INTL LAW [0.62, 0.53] label [-70, 5]
@@ -12,36 +12,36 @@ component INTL LAW [0.62, 0.53] label [-70, 5]
 component GOVERNMENT [0.95, 0.67] label [10, -3]
 pipeline GOVERNMENT
 
-component CORPORATIONS [0.90, 0.62] label [-88, -9]
+component CORPORATIONS [0.90, 0.62] label [-84, -9]
 pipeline CORPORATIONS
 
 component shareholders [0.84, 0.71] label [7, 9]
 
 component society [0.88, 0.72] label [12, 4]
 component legitimacy [0.90, 0.66] label [6, -4]
-component perception of success [0.77, 0.67] label [14, -18]
+component perception of success [0.77, 0.67] label [5, -27]
 component public belonging [0.84, 0.55] label [-56, -39]
 component inclusion [0.79, 0.52] label [-84, 4]
-component crisis [0.97, 0.38] label [-58, 0]
-pipeline crisis //[0.3, 0.53]
-component crisis response [0.81, 0.36] label [-71, -9]
+component CRISIS [0.97, 0.38] label [-58, 0]
+pipeline CRISIS //[0.3, 0.53]
+component crisis response [0.83, 0.33] label [-71, -9]
 component MEDIA [0.07, 0.50] label [-41, -7]
 pipeline MEDIA [0.39, 0.74]
-component Social media [0.05, 0.60] label [-82, 20]
-component military power [0.41, 0.72] label [15, 2]
-component propaganda [0.41, 0.65] label [-39, 23]
-component soft power [0.41, 0.60] label [-21, -22]
+component Social media [0.05, 0.60] label [-62, 23]
+component military power [0.41, 0.72] label [18, 4]
+component propaganda [0.41, 0.62] label [-33, 26]
+component soft power [0.41, 0.58] label [-51, -20]
 //SOVREIGN
-component SOVEREIGNTY [0.55, 0.59] label [-7, -15]
+component SOVEREIGNTY [0.55, 0.59] label [-13, -21]
 // note  (authority + power to enforce?) [0.48, 0.70]
 pipeline SOVEREIGNTY // [0.40, 0.71]
-component THEATRE [0.16, 0.62] label [-65, -5]
+component THEATRE [0.16, 0.61] label [-13, -15]
 pipeline THEATRE // [0.46, 0.7]
 // component COMPETITION [0.58, 0.63] label [-46, -14]
 // pipeline COMPETITION // [0.53, 0.68]
-component AWARENESS [0.31, 0.65] label [11, -7]
+component AWARENESS [0.31, 0.65] label [-14, -10]
 pipeline AWARENESS // [0.3, 0.73]
-// component CAPABILITY [0.43, 0.67] label [-52, -8]
+// component CAPABILITY [0.43, 0.65] label [-52, -8]
 // pipeline CAPABILITY // [0.49, 0.68]
 // component VISIBILITY [0.34, 0.66] label [5, -7]
 // pipeline VISIBILITY // [0.55, 0.68]
@@ -51,23 +51,23 @@ pipeline AWARENESS // [0.3, 0.73]
 // // MAJOR PIPELINES
 pipeline SOVEREIGNTY [0.40, 0.71]
 component territorial [0.53, 0.70] label [17, 2]
-component economic [0.53, 0.55] label [-63, -22]
-component political [0.54, 0.47] label [-44, 30]
-component digital [0.53, 0.41] label [-70, 4]
+component economic [0.53, 0.55] label [-69, -18]
+component political [0.53, 0.47] label [-54, -19]
+component digital [0.53, 0.41] label [-71, 2]
 component cultural [0.53, 0.64] label [-17, 21]
 component security [0.53, 0.52] label [20, 25]
 
 component OSINT [0.20, 0.34] label [-43, 7]
 
 pipeline THEATRE [0.56, 0.7]
-component land [0.14, 0.69] label [11, 17]
-component supply chain [0.15, 0.67] label [-38, -16]
+component land [0.14, 0.69] label [5, 23]
+component supply chain [0.14, 0.67] label [-39, -19]
 // component sea [0.67, 0.65] label [-17, 26]
 component cyber [0.14, 0.57] label [-26, 27]
-component CNI [0.21, 0.48] label [-35, 0]
+component CNI [0.47, 0.51] label [-25, -11]
 
-component CAPABILITY [0.43, 0.67] label [-1, -13]
-pipeline CAPABILITY [0.47, 0.73]
+component CAPABILITY [0.43, 0.65] label [-49, -12]
+pipeline CAPABILITY [0.57, 0.73]
 
 // pipeline COMPETITION [0.53, 0.69]
 // component conflict [0.56, 0.68] label [15, 3]
@@ -78,33 +78,33 @@ pipeline CAPABILITY [0.47, 0.73]
 // component exclusion [0.60, 0.74] label [10, 0]
 // component law [0.53, 0.74] label [10, 5]
 
-component Education [0.06, 0.67] label [-39, 27]
-component Art [0.05, 0.40] label [-44, 5]
-component Mainstream media [0.05, 0.73] label [27, -15]
-pipeline Art 
-component SOCIAL NORMS [0.72, 0.52] label [-72, -14]
+component Education [0.05, 0.67] label [-40, 23]
+component ART [0.05, 0.40] label [-44, 5]
+component Mainstream media [0.05, 0.73] label [25, -6]
+pipeline ART 
+component SOCIAL NORMS [0.72, 0.52] label [-29, -14]
 pipeline SOCIAL NORMS [0.36, 0.72]
-component integrity [0.71, 0.47] label [-12, 30]
-component benevolence [0.70, 0.37] label [-99, -1]
-component fairness [0.71, 0.71] label [16, 1]
+component integrity [0.70, 0.47] label [-12, 23]
+component benevolence [0.70, 0.37] label [-98, 1]
+component fairness [0.70, 0.71] label [16, 6]
 component competency [0.70, 0.57] label [-28, 22]
-component elections [0.15, 0.64] label [-40, 29]
+component elections [0.14, 0.64] label [-49, 25]
 component identity [0.70, 0.42] label [-19, 21]
 
 pipeline AWARENESS [0.3, 0.73]
 component supply chain awareness [0.29, 0.31] label [-76, -19]
 // note  (additional components of awareness?) [0.21, 0.19]
 component territorial awareness [0.29, 0.72] label [26, -14]
-component digital chain awareness [0.30, 0.43] label [-51, -51]
+component digital chain awareness [0.29, 0.43] label [-49, -57]
 
-component laws [0.41, 0.48] label [-53, -2]
-
+component laws [0.41, 0.68] label [-14, 23]
+pipeline INTL LAW
 // pipeline LANDSCAPE [0.37, 0.66]
 // component chain [0.04, 0.65] label [18, 2]
 // component territory [0.04, 0.38] label [-80, 3]
 
 // // OTHER PIPELINES
-// pipeline CAPABILITY [0.47, 0.73]
+// pipeline CAPABILITY [0.57, 0.73]
 // component kinetic [0.39, 0.67] label [17, 0]
 // component inflitration [0.40, 0.58] label [-34, 28]
 // component influence [0.39, 0.50] label [-83, 3]
@@ -173,7 +173,7 @@ territory->territorial awareness
 society->success
 society->public belonging
 public belonging->inclusion
-crisis->crisis response
+CRISIS->crisis response
 perception of success->SOVEREIGNTY
 success->COMPETITION
 fairness->inclusion
@@ -209,3 +209,4 @@ CORPORATIONS->SOVEREIGNTY
 CORPORATIONS->shareholders
 CORPORATIONS->GOVERNMENT
 AWARENESS->MEDIA
+security->security
