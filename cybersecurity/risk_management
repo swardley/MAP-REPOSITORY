@@ -1,45 +1,47 @@
-title Cyber security, risk management, 2023-05-16
+title Cyber security, risk management, MAY 2023
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
 
 anchor Executives [0.98, 0.64]
 
 component P&L [0.90, 0.82] label [5, -10]
 component Compliance [0.89, 0.53] label [20, 6]
 component Risk Identification Practice [0.72, 0.25] label [-51, -54]
-component Cybersecurity Expertise [0.48, 0.25] label [-60, -36]
-component Business Expertise [0.47, 0.29] label [-6, -34]
-component Asset inventory [0.60, 0.31] label [-8, 10]
-component risk register [0.57, 0.41] label [-57, 23]
+component Cybersecurity Expertise [0.48, 0.25] label [-76, -20]
+component Business Expertise [0.47, 0.29] label [-4, 13]
+component Asset inventory [0.60, 0.32] label [-28, 10]
+component risk register [0.56, 0.40] label [-44, 17]
 component Security Testing [0.49, 0.72] label [3, -26]
 
 component Risk Assessment Methodology [0.62, 0.41] label [-79, -26]
 component controls [0.32, 0.62] label [-26, 19]
 component Monitoring [0.45, 0.54] label [20, 10]
-component SOC Tools [0.38, 0.52] label [-44, -14]
+component SOC Tools [0.38, 0.52] label [-7, 19]
 
-component Risk Frameworks [0.69, 0.55] label [-1, -4]
+component Risk Frameworks [0.69, 0.55] label [-24, 15]
 
-component Compliance Frameworks [0.72, 0.66] label [20, -16]
+component Compliance Frameworks [0.72, 0.66] label [18, -14]
 
-component Risk Awareness [0.37, 0.41] label [-66, -11]
+component Risk Awareness [0.39, 0.42] label [-60, -16]
 component reporting [0.54, 0.63]
 
-component Risk Quantification [0.24, 0.46] label [10, -34]
-pipeline Risk Quantification [0.30, 0.68]
-component risk matrices [0.22, 0.44] label [-4, 24]
-component impact [0.22, 0.60] label [6, 22]
-component likelihood [0.22, 0.36] label [-4, 24]
+component RISK QUANTIFICATION [0.24, 0.46] label [10, -34]
+pipeline RISK QUANTIFICATION [0.36, 0.62]
+component risk matrices [0.22, 0.44] label [-18, 24]
+component impact [0.22, 0.61] label [20, 3]
+component likelihood [0.22, 0.37] label [-91, 0]
 component FAIR Model [0.22, 0.53] label [-11, 24]
 component risk apetite [0.91, 0.44] label [-41, -13]
 
 
-component risk mitigation [0.75, 0.51] label [-29, 10]
-component risk transfer [0.79, 0.44] label [-51, 20]
+component risk mitigation [0.74, 0.51] label [-54, 0]
+component risk transfer [0.79, 0.44] label [-36, -10]
 component risk acceptance [0.80, 0.37] label [-52, -6]
 
 component cyber insurance [0.71, 0.40] label [-68, -12]
 
 component LLMs [0.10, 0.65] label [-3, -16]
-component Security LLMs [0.16, 0.19] label [6, 24]
+component Security LLMs [0.16, 0.19] label [-46, 25]
 
 Executives->Compliance
 Executives->P&L
@@ -67,14 +69,14 @@ risk apetite->Risk Assessment Methodology
 Risk Frameworks->Risk Assessment Methodology
 
 
-Risk Identification Practice->Risk Quantification
+Risk Identification Practice->RISK QUANTIFICATION
 Risk Identification Practice->Cybersecurity Expertise
 Risk Identification Practice->Asset inventory
 Risk Identification Practice->Business Expertise
 
 risk register->Asset inventory
 
-Risk Assessment Methodology->Risk Quantification
+Risk Assessment Methodology->RISK QUANTIFICATION
 Risk Assessment Methodology->risk register
 
 Risk Awareness->reporting
@@ -88,7 +90,7 @@ Monitoring->Security Testing
 
 
 Risk Identification Practice->Security LLMs
-Risk Quantification->Security LLMs
+RISK QUANTIFICATION->Security LLMs
 Risk Frameworks->Security LLMs
 Compliance Frameworks->Security LLMs
 reporting->Security LLMs
@@ -105,10 +107,10 @@ risk register->Incident Response
 Security Testing->Penetration testing
 Security Testing->Bug bounty
 
-note Risk management allows corporations to take (controlled) risk [0.97, 0.67] label [0.97, 0.67]
-note Regulatory obligations are part of the compliance component [0.97, 0.28]
+note +Controlled bets / opportunities [0.97, 0.45] label [0.97, 0.45]
+note +Regulatory Obligations [0.93, 0.59]
 
 component Penetration testing [0.41, 0.76] label [10, -17]
-component Bug bounty [0.39, 0.71] label [-26, 35]
+component Bug bounty [0.39, 0.71] label [-29, 22]
 component Cloud Infrastructure [0.07, 0.82] label [3, -2]
 component Incident Response [0.51, 0.52] label [-56, 7]
