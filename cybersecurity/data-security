@@ -34,7 +34,7 @@ VULNERABILITY -> DATA STORE
 VULNERABILITY -> DATA SOURCE
 
 component Data Location [0.73, 0.58] label [-26, 18]
-component Analytics [0.84, 0.66] label [11, 16]
+component Analytics [0.84, 0.66] label [19, 2]
 
 
 DATA POLICY -> REGULATIONS
@@ -85,9 +85,9 @@ component ChatGPT interface ban [0.52, 0.16] label [-81, -19]
 component central govt crypto [0.53, 0.39] label [-37, 18]
 component GDPR [0.52, 0.64] label [-21, 28]
 component SOC [0.52, 0.71] label [-17, -18]
-component HIPPA [0.52, 0.75] label [18, 2]
+component HIPPA [0.52, 0.75] label [22, 5]
 
-component Personnel [0.84, 0.38] label [-76, 0]
+component Personnel [0.84, 0.38] label [-85, 4]
 component Enforcement [0.85, 0.61] label [-37, -15]
 component Incident Response [0.73, 0.53] label [-66, -10]
 // component Investigate Incidents [0.67, 0.72] label [9, -23]
