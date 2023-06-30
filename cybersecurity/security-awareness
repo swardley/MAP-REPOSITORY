@@ -1,109 +1,104 @@
-title Cybersecurity - May 2023 - Security Awareness - v2
+title Cybersecurity - May 2023 - Security Awareness - v3.1
 anchor Employee [0.99, 0.50]
 anchor CISO/Legal Counsel [1.00, 0.60]
 
-//change to "security awareness"
-component Adoption (metric) [0.92, 0.67] label [22, -2]
+component security awareness (metric) [0.92, 0.67] label [9, -41]
+component EXPECTATIONS [0.87, 0.45] label [-21, -14]
+pipeline EXPECTATIONS [0.21, 0.74]
+component personal/family choice [0.85, 0.22] label [-92.16, -15.740000000000009]
+component society [0.85, 0.40] label [-31.15, -18.57]
+component coporporate [0.85, 0.73] label [19, 0]
 
-component Expectations [0.87, 0.45] label [-32, -19]
-pipeline Expectations [0.21, 0.74]
-component personal/family choice [0.86, 0.22] label [-34.16, -45.74000000000001]
-component society [0.86, 0.40] label [-11.149999999999999, -19.57]
-component coporporate [0.86, 0.73] label [-25, -23]
+component cultural norms [0.76, 0.27] label [-96, 3]
 
-component cultural norms [0.76, 0.20] label [-30, -25]
+component SECURITY PRACTICES [0.70, 0.55] label [-31, -36]
+pipeline SECURITY PRACTICES [0.27, 0.90]
+component detecting org specific risks [0.68, 0.37] label [-21, -73]
+component best/standard practices [0.68, 0.89] label [31, -10]
+component responsible disclosure [0.68, 0.28] label [-82, -28]
+component ethical hacking [0.68, 0.34] label [-46, -42]
+component MFA [0.68, 0.52] label [-11, 25]
+component VPN [0.68, 0.65] label [-13, -20]
+component general security behaviors [0.68, 0.69] label [-15, -54]
+component password hygiene [0.68, 0.82] label [-18, 14]
+component password rules [0.68, 0.80] label [-74, -20]
 
-component Security Practices [0.70, 0.55] label [-28, -39]
-pipeline Security Practices [0.10, 1]
-component detecting org specific risks [0.69, 0.38] label [-65, 17]
-component best/standard practices [0.69, 0.99] label [-65, 31]
-component responsible disclosure [0.69, 0.29] label [6, -56]
-component ethical hacking [0.69, 0.35] label [2, -49]
-component MFA [0.69, 0.51] label [3, -23]
-component VPN [0.69, 0.65] label [-12, -21]
-component general security behaviors [0.69, 0.69] label [-37, -67]
-component password hygiene [0.69, 0.95] label [-33, -49]
-component password rules [0.69, 0.90] label [-38, 34]
+component TRAINING [0.47, 0.66] label [-31, -15]
+pipeline TRAINING [0.23, 0.88]
+component social engineering [0.45, 0.46] label [-19, -46]
+component gamification [0.45, 0.35] label [-31, -20]
+component learning from past incidents [0.45, 0.56] label [-9, -73]
+component customized content [0.45, 0.24] label [-87, -12]
+component standard content [0.45, 0.87] label [17, -13]
+component written content [0.45, 0.77] label [-29, -43]
+component video content [0.45, 0.73] label [-80, 25]
 
-component Training [0.47, 0.66] label [-61, -11]
-pipeline Training [0.10, 1]
-component social engineering [0.46, 0.43] label [-36, 27]
-component gamification [0.46, 0.35] label [-27, 39]
-component learning from past incidents [0.46, 0.56] label [-26, 24]
-component customized content [0.46, 0.27] label [-22, 27]
-component standard content [0.46, 0.89] label [-36, -49]
-component written content [0.46, 0.77] label [-32, 25]
-component video content [0.46, 0.73] label [-32, -20]
+component CMS/Application [0.18, 0.92] label [-54, 11]
 
-component CMS/Application [0.18, 0.92] label [-96, -24]
+component TESTING [0.34, 0.51] label [-40, -12]
+pipeline TESTING [0.18, 0.95]
 
-component Testing [0.34, 0.51] label [-54, -19]
-pipeline Testing [0.10, 1]
+component physical/ anti-tailgating testing [0.32, 0.19] label [-94, -26]
+component voice phishing [0.32, 0.28] label [-48, -19]
+note skills shortage [0.29, 0.37]
+component (multi-channel) Social engineering [0.32, 0.36] inertia label [-28, -60] 
+component email/sms phishing [0.32, 0.88] label [-27, 16]
+component survey [0.32, 0.94] label [19, 4]
+component impersonation [0.32, 0.91] label [-40, -20]
+component spoofing [0.32, 0.85] label [-43, -19]
 
-component physical/ anti-tailgating testing [0.33, 0.21] label [-30, 23]
-component voice phishing [0.33, 0.28] label [-33, -20]
-component (multi-channel) Social engineering [0.33, 0.35] inertia label [1, -59] label [1, -59]
-component email/sms phishing [0.33, 0.88] label [-25, 20]
-component survey [0.33, 0.94] label [-13, 38]
-component impersonation [0.33, 0.91] label [-43, -19]
-component spoofing [0.33, 0.86] label [-29, -20]
+component THREAT [0.17, 0.52] label [-59, -5]
+pipeline THREAT 
 
-component Threat [0.17, 0.53] label [-44, -24]
-pipeline Threat [0.10, 0.70]
-component cloud security vendor [0.16, 0.51] label [-36, 31] inertia
-component zero day [0.16, 0.11] label [-23, -18]
-component targeted attack [0.16, 0.27] label [-29, 23]
-component passkeys [0.16, 0.22]
+component SECURITY CENTRE OF EXCELLENCE [0.58, 0.36] label [-83, -57]
+pipeline SECURITY CENTRE OF EXCELLENCE  [0.18, 0.64]
+component start-up [0.56, 0.19] label [-66, 8]
+component hyperscale [0.56, 0.43] label [-27, -19]
+component corporate [0.56, 0.63] label [-22, -18]
+evolve detecting org specific risks 0.50 label [19, -3222]
 
-component AI (deep fakes) [0.06, 0.10]
+annotations [1.00, 0.03]
+annotation 1 [[0.65,0.48] ] ISO 27001 adoption & cyberinsurance
 
-component Security Center of Excellence [0.58, 0.26] label [-56, -72]
-pipeline Security Center of Excellence  [0.10, 0.75]
-component start-up [0.57, 0.14] label [-16, -22]
-component hyperscale [0.57, 0.42] label [-27, -26]
-component corporate [0.57, 0.65] label [-30, -19]
-evolve detecting org specific risks 0.5 label [19, 22]
-
-annotations [0.96, 0.04]
-annotation 1 [[0.19,0.56] ] Abstracts away awarness need
-annotation 2 [[0.04,0.15] ] Uncany valley
-annotation 3 [[0.66,0.50] ] ISO 27001 adoption & cyberinsurance
-annotation 4 [[0.35,0.41] ] Skills shortage
-
-// Notes - Change Annotactions to notes?
-note Change to pipeline & zero-shot-TTS/celebrity deep fake [0.02, 0.06]
-note Add interia to zero-shot-TTS [0.01, 0.06]
-note Change to Security Awareness (Metric) per conversation with Simon [0.93, 0.69]
+component AI (DEEP FAKES) [0.06, 0.24] label [-33, -52]
+pipeline AI (DEEP FAKES) [0.15, 0.4]
+note uncanny valley [0.01, 0.37]
+component non-celebrity deep fake [0.04, 0.16] label [-86, -27] inertia
+component celebrity deep-fake [0.04, 0.35] label [-29, -42]
 
 //Links
-Employee -> Expectations
-CISO/Legal Counsel -> Expectations
-CISO/Legal Counsel -> Adoption (metric)
+Employee -> EXPECTATIONS
+CISO/Legal Counsel -> EXPECTATIONS
+CISO/Legal Counsel -> security awareness (metric)
 CISO/Legal Counsel -> detecting org specific risks t
 
-Expectations -> cultural norms
-Expectations -> Security Practices
+EXPECTATIONS -> cultural norms
+EXPECTATIONS -> SECURITY PRACTICES
 
-Adoption (metric) -> Expectations
-Adoption (metric) -> Security Practices
-Adoption (metric) -> Security Center of Excellence
-Adoption (metric) -> Training
-Adoption (metric) -> Testing
+security awareness (metric) -> EXPECTATIONS
+security awareness (metric) -> SECURITY PRACTICES
+security awareness (metric) -> SECURITY CENTRE OF EXCELLENCE
+security awareness (metric) -> TRAINING
+security awareness (metric) -> TESTING
 
-Security Practices -> Training
-Training -> Testing
+TRAINING -> THREAT
+TESTING -> THREAT
 
-detecting org specific risks -> Threat
+SECURITY PRACTICES -> TRAINING
+TRAINING -> TESTING
 
-Skills -> AI (deep fakes)
-voice phishing -> AI (deep fakes)
-Threat -> AI (deep fakes)
+detecting org specific risks -> THREAT
+
+(multi-channel) Social engineering -> non-celebrity deep fake
+
+voice phishing -> non-celebrity deep fake
+THREAT -> AI (DEEP FAKES)
 
 standard content -> CMS/Application
 video content -> CMS/Application
 written content -> CMS/Application
 
 //Evolution
-evolve AI (deep fakes) 0.5
-evolve voice phishing 0.7
-evolve (multi-channel) Social engineering 0.6 label [13, -53]
+evolve non-celebrity deep fake 0.5 label [29, -3244]
+evolve voice phishing 0.7 label [2, -4341]
+evolve (multi-channel) Social engineering 0.6 label [13, -3253]
