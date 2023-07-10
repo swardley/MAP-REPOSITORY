@@ -10,19 +10,19 @@ style wardley
 // Arttu Laitinen <laitinen.arttu@gmail.com>
 
 //users
-component USERS [0.95, 0.59]
+component USERS [0.95, 0.59] label [-4, -10]
 pipeline USERS [0.50, 0.71]
-component Citizens [0.94, 0.66] label [-13, -10]
-component Gov [0.93, 0.70] label [20, -3]
-component Enterprises [0.94, 0.60] label [-9, 29]
-component SME [0.93, 0.56] label [-11, -19]
+component Citizens [0.93, 0.66] label [-4, -18]
+component Gov [0.93, 0.70] label [20, 4]
+component Enterprises [0.93, 0.60] label [-18, 24]
+component SME [0.93, 0.56] label [-17, -18]
 component Researcher [0.93, 0.51] label [-91, 2]
 
 //needs
 component JTBD [0.85, 0.55] label [-35, -8]
 pipeline JTBD [0.40, 0.70]
-component proposable [0.83, 0.41] label [-96, -4]
-component definable [0.84, 0.57] label [-34, 30]
+component proposable [0.83, 0.41] label [-90, 2]
+component definable [0.83, 0.57] label [-35, 24]
 component executable [0.83, 0.69] label [18, 3]
 
 component TRUST [0.57, 0.32] label [-46, 4]
@@ -30,22 +30,22 @@ pipeline TRUST //[0.25, 0.45]
 
 component PRACTICE [0.77, 0.37] label [-62, -8]
 pipeline PRACTICE [0.30, 0.45]
-component tactical [0.75, 0.44] label [29, -1]
-component strategic [0.76, 0.31] label [-85, 4]
+component tactical [0.75, 0.44] label [19, 3]
+component strategic [0.75, 0.31] label [-85, 4]
 
 component KNOWLEDGE TASKS [0.68, 0.51] label [-4, -30] // inertia
 pipeline KNOWLEDGE TASKS [0.1, 0.77]
-component empathizing [0.66, 0.30] label [-64, 23]
-component creating [0.67, 0.11] label [-81, 7]
+component empathizing [0.66, 0.30] label [-68, 23]
+component creating [0.66, 0.11] label [-82, -1]
 component designing [0.66, 0.22] label [-59, 21]
-component operating [0.66, 0.41] label [-33, 22] ?
-component optimizing [0.67, 0.37] label [-64, -11]
-component augmenting [0.66, 0.46] label [-38, -22]
-component sensing [0.66, 0.53] label [-13, 23]
-component conversing [0.66, 0.59] label [-17, 23] //CONVERTING?
-component converting [0.66, 0.67] label [-19, 25]
-component summarizing [0.66, 0.70] label [-4, -22]
-component automating [0.67, 0.65] label [-72, -14]
+component operating [0.66, 0.41] label [-48, 21] ?
+component optimizing [0.66, 0.37] label [-64, -18]
+component augmenting [0.66, 0.46] label [-55, -19]
+component sensing [0.66, 0.53] label [-10, 21]
+component conversing [0.66, 0.59] label [-9, 21] //CONVERTING?
+component converting [0.66, 0.67] label [-6, 22]
+component summarizing [0.66, 0.70] label [0, -19]
+component automating [0.66, 0.65] label [-71, -20]
 component recommending [0.66, 0.76] label [14, 3]
 // component analyzing [0.66, 0.84] label [-27, -31]
 
@@ -62,42 +62,42 @@ pipeline INTERFACE
 component APPLIED MODEL [0.49, 0.50] label [5, -10]
 pipeline APPLIED MODEL [0.37, 0.65]
 component custom [0.47, 0.38] label [-67, -1]
-component fine-tuned [0.47, 0.46] label [-51, 22]
+component fine-tuned [0.47, 0.45] label [-41, 22]
 component out-of-the-box [0.47, 0.64] label [18, 1]
 
 component FOUNDATIONAL MODEL [0.12, 0.66] label [-3, -43]
 pipeline FOUNDATIONAL MODEL [0.25, 0.72]
 component multimodal [0.10, 0.26] label [-91, -1]
-component llm [0.11, 0.49] label [-10, -13]
-component neural network [0.11, 0.61] label [-91, 27]
+component llm [0.10, 0.49] label [-10, -13]
+component neural network [0.10, 0.61] label [-97, 25]
 component classical (markov) [0.10, 0.71] label [19, -30]
 
 component MLOPS [0.39, 0.49] label [-39, -11]
 pipeline MLOPS [0.3, 0.58]
 component bespoke [0.37, 0.31] label [-68, 0]
-component automated [0.37, 0.57] label [-5, 20]
-component managed service [0.37, 0.51] label [-33, 8]
+component automated [0.37, 0.57] label [6, 21]
+component managed service [0.37, 0.51] label [-5, 8]
 
 component TRAINING DATA [0.32, 0.69]
 pipeline TRAINING DATA [0.35, 0.87]
 component private [0.30, 0.36] label [-73, 1]
 component commercial [0.30, 0.57] label [-33, 23]
-component public [0.30, 0.86] label [16, 0]
+component public [0.30, 0.86] label [16, 5]
 
-component MODEL TRAINING [0.23, 0.31] label [5, -10]
+component MODEL TRAINING [0.23, 0.31] label [-94, -12]
 pipeline MODEL TRAINING [0.2, 0.49]
-component reinforcement [0.22, 0.39] label [-42, 29]
-component (un)supervised [0.22, 0.48] label [20, 9]
+component reinforcement [0.21, 0.40] label [-56, 25]
+component (un)supervised [0.21, 0.48] label [20, 9]
 component rlhf [0.21, 0.21] label [-51, 1]
 
 component COMPUTE [0.06, 0.75] label [9, -6]
 pipeline COMPUTE [0.10, 0.80]
 component quantum [0.04, 0.11] label [-72, -1]
 component fpga [0.04, 0.63] label [-14, 19]
-component gpu [0.05, 0.72] label [-12, 27]
+component gpu [0.04, 0.72] label [-13, 22]
 component tpu [0.04, 0.79] label [17, -1]
 
-component STORAGE [0.03, 0.88]
+component STORAGE [0.04, 0.88]
 pipeline STORAGE
 
 //flows
