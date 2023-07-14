@@ -8,6 +8,7 @@ style wardley
 // Bill Murray <bmurray25@dxc.com>
 // Josh Schairbaum <josh.schairbaum@ttecdigital.com>
 // Arttu Laitinen <laitinen.arttu@gmail.com>
+// MODIFIED BY @swardley
 
 //users
 component USERS [0.95, 0.59] label [-4, -10]
