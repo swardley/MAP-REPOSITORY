@@ -1,0 +1,74 @@
+title SUSTAINABILITY, MAR 2021
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+component company [0.95, 0.67] label [-28, -15]
+component FINANCIAL SURVIVAL [0.88, 0.64] label [-70, -27]
+pipeline FINANCIAL SURVIVAL [0.3, 0.71]
+component today [0.86, 0.70] label [18, 2]
+component tomorrow [0.86, 0.31] label [-75, 3]
+component sustainability [0.64, 0.30] label [-114, 1]
+component profit [0.77, 0.76] label [-6, -12]
+component GOODS [0.74, 0.70] label [-14, -15]
+pipeline GOODS
+component supply chain [0.19, 0.73] label [3, 15]
+component awareness of supply chain [0.56, 0.20] label [-70, -18]
+component standards [0.11, 0.25] label [-78, 13] inertia
+component cost [0.03, 0.65] label [13, 10]
+component COMPETITION [0.56, 0.55] label [-54, -11]
+pipeline COMPETITION [0.31, 0.64]
+component conflict [0.54, 0.63] label [1, 28]
+component collaboration [0.54, 0.32] label [-24, 28] inertia
+component open data [0.19, 0.38] label [-43, 25] inertia
+component advantage [0.43, 0.58] label [11, 3]
+component society [0.97, 0.59] label [-62, 3]
+
+component status [0.70, 0.63] label [-26, -13]
+component 1 [0.86, 0.31] label [-103, -3557]
+evolve 1 0.70 label [-884, -32604]
+component 2 [0.64, 0.30] label [-60, -3266]
+evolve 2 0.6 label [-110, -3224]
+// evolve tomorrow 0.70 label [-884, 604]
+// evolve sustainability 0.6 label [-33, 17]
+
+evolve open data 0.6 label [-27, 19]
+evolve standards 0.61 label [-16, 19]
+
+
+note (+counters) [0.27, 0.66]
+note (+counters) [0.25, 0.37]
+note (+counters) [0.28, 0.44]
+note (+counters) [0.47, 0.44]
+
+evolve collaboration 0.5 label [-5, -3222]
+
+
+//link
+company->FINANCIAL SURVIVAL
+tomorrow->sustainability
+today->profit
+profit->GOODS
+GOODS->supply chain
+sustainability->awareness of supply chain
+awareness of supply chain->supply chain
+standards->awareness of supply chain
+COMPETITION->FINANCIAL SURVIVAL
+GOODS->conflict
+sustainability->collaboration
+open data->awareness of supply chain
+standards->cost
+awareness of supply chain->cost
+profit -> cost
+conflict->advantage
+advantage ->open data
+advantage ->standards
+
+// today->conflict
+collaboration ->advantage
+GOODS->marketing
+marketing->sustainability
+marketing->sustainability
+GOODS->status
+status->sustainability
+society->sustainability
+awareness of supply chain->collaboration
