@@ -1,0 +1,29 @@
+title producer or consumer or user? July 2023
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+
+component A [0.93, 0.63] label [15, 2]
+component B [0.69, 0.58] label [22, 3]
+component D [0.34, 0.72] label [16, 4]
+component C [0.35, 0.49] label [13, 14]
+
+
+B->A
+B->C
+D->B
+
+
+note (producer of B) [0.69, 0.61]
+note (user of C and D) [0.66, 0.61]
+note (producer of A) [0.93, 0.66]
+note (user of B) [0.90, 0.66]
+
+note NEEDS [0.79, 0.55]
+note NEEDS [0.51, 0.49]
+note NEEDS [0.49, 0.67]
+
+annotation 1 [[0.95,0.75] ] producer of things that are outside the limit of the space we are observing. Normally referred to as the user of B
+annotation 2 [[0.82,0.58],[0.52,0.71],[0.55,0.52] ] A relationship, a bi-directional exchange, the medium of exhange could be any form of capital from tokens of exchange to information to social.
+annotation 3 [[0.67,0.71] ] the production of something does not require that components are consumed to destruction
+annotation 4 [[0.36,0.52],[0.36,0.75] ] user of things outside the limits of the space we are observing
+annotations [0.24, 0.03]
