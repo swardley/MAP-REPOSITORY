@@ -1,58 +1,76 @@
 // https://onlinewardleymaps.com/#Rzg4HS0sWMyuZ5OPBl
 
-title Colombia v0.2
+title Colombia v0.3, "AS IS" state
 component fairness [0.84, 0.62] label [-8, 20]
 component accessibility [0.42, 0.49] label [-79, 1]
-component insurance [0.71, 0.74] label [8, 3]
-pipeline insurance
+component insurance [0.73, 0.74] label [-1, -12]
+component medical services company [0.91, 0.48] label [-74, -19]
+pipeline insurance [0.7,0.8]
+component public [0.71, 0.79] label [17, 0]
+component premium (pre-paid) [0.71, 0.71] label [-80, -15]
 
-component providers [0.34, 0.69] label [9, -10]
+component providers [0.34, 0.69] label [11, -8]
 pipeline providers [0.41, 0.73]
-component denial of service [0.18, 0.78] label [0, -19]
+component denial of service [0.18, 0.78] label [-2, -5]
 component mandatory healthcare [0.87, 0.68] label [15, -25]
 component Government [0.95, 0.66] label [-22, -13]
 //component subscription model [0.62, 0.72] label [12, -8]
-component demand management [0.38, 0.59] label [-54, -34]
+component demand management [0.38, 0.59] label [-24, -37]
 component queuing system [0.11, 0.48] label [-102, 8]
 component auditing [0.27, 0.71] label [14, 4]
 component education [0.25, 0.51] label [-31, 17]
-component local services [0.73, 0.49] label [21, 8]
-component central services [0.73, 0.38] label [-74, -9]
 component voters [0.89, 0.61] label [-41, -3]
 
-component medical needs [0.82, 0.59] label [-97, -1]
+component medical needs [0.84, 0.58] label [-53, -12]
 pipeline medical needs
 
-component services [0.74, 0.45] label [-41, -13]
-pipeline services [0.37, 0.5]
+// component services [0.74, 0.45] label [-41, -13]
+// pipeline services [0.37, 0.5]
+// component local services [0.72, 0.49] label [16, 3]
+// component central services [0.72, 0.38] label [-74, -9]
+
 component politicians [0.95, 0.59] label [-67, -8]
-component payment [0.22, 0.59] label [-40, 18]
+component payment [0.23, 0.59] label [-52, 17]
 component guidelines (NICE) [0.04, 0.58] label [-70, -6]
-component treatment [0.46, 0.62] label [1, -19]
-component healthy ageing agenda [0.08, 0.10] label [-76, -18]
+component treatment [0.46, 0.62] label [-60, -10]
 
-component pathway management [0.15, 0.10] label [-75, -7]
+annotation 1 [[0.94,0.48],[0.67,0.82],[0.20,0.62] ] Medical service company provides public insurance, healthcare providers (including private) and medical facilities 
+annotation 2 [0.36, 0.61] Clinical pathway is managed by the insurance company i.e. what appointment and with whom (Vertical integration)
+annotation 3 [0.15, 0.77] Denial of serice for medical treatment is used to maximise profit
+annotation 4 [[0.60,0.79],[0.80,0.57] ] System is controlled by profit per profile and not health outcome
+annotation 5 [0.65, 0.72]  Contribution (can be kicked out by insurance) and Subsidised users (can't be kicked out)
+annotation 6 [0.78, 0.77]  6% are premium, 50% are contribution (incl. premium), 50% are subsidised
+annotations [0.75, 0.02]
 
-component lobbyists [0.20, 0.10] label [-62, 2]
+
+// component healthy ageing agenda [0.08, 0.10] label [-76, -18]
+// component lobbyists [0.20, 0.10] label [-62, 2]
+// component pathway management [0.15, 0.10] label [-75, -7]
+
 component insurance companies [0.66, 0.75] label [10, -18]
-component Social Health Insurance Pot (ADRES) [0.80, 0.71] label [13, -32]
+component Social Health Insurance Pot (ADRES) [0.80, 0.71] label [-68, -33]
 
-component capitation fee [0.66, 0.70] label [-57, -14]
+component capitation fee [0.66, 0.70] label [-87, 2]
 component fee per profile [0.60, 0.70] label [-49, -24]
-component social charactertistics [0.57, 0.62] label [-40, -38]
+component social charactertistics [0.57, 0.62] label [-28, -35]
 pipeline social charactertistics [0.59, 0.71]
-component location [0.55, 0.64] label [-25, 28]
-component age [0.55, 0.70] label [15, -17]
-component sex [0.55, 0.68] label [-10, 28]
-component social class [0.55, 0.60] label [-86, 0]
+component location [0.55, 0.64] label [-20, 22]
+component age [0.55, 0.70] label [17, 1]
+component sex [0.55, 0.68] label [-10, 22]
+component social class [0.55, 0.60] label [-86, -1]
 pipeline treatment
 component profit per profile [0.62, 0.75] label [-6, -2]
 
+component medical facility services [0.18, 0.64] label [-52, 9]
+
 component risk of payment [0.48, 0.69] label [-6, -14]
 component specialist [0.32, 0.42] label [-76, 4]
-component primary [0.32, 0.72] label [18, 0]
+component primary [0.32, 0.72] label [18, 2]
+component private [0.32, 0.58] label [-14, 26]
 component private payment [0.15, 0.55] label [-29, 11]
 pipeline private payment
+
+pipeline capitation fee
 
 //link
 voters->mandatory healthcare
@@ -80,7 +98,7 @@ providers->subscription model
 Social Health Insurance Pot (ADRES)->mandatory healthcare
 insurance->Social Health Insurance Pot (ADRES)
 insurance->insurance companies
-insurance->capitation fee
+public->capitation fee
 
 capitation fee->fee per profile
 fee per profile->social charactertistics
@@ -105,3 +123,9 @@ accessibility->private payment
 voters->fairness
 Government->voters
 treatment->social class
+
+medical services company->insurance companies
+medical services company->providers
+medical services company->private
+providers->medical facility services
+medical facility services->medical services company
