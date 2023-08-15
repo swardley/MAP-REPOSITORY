@@ -36,11 +36,12 @@ component treatment [0.46, 0.62] label [-60, -10]
 
 annotation 1 [[0.94,0.48],[0.67,0.82],[0.20,0.62] ] Medical service company provides public insurance, healthcare providers (including private) and medical facilities 
 annotation 2 [0.36, 0.61] Clinical pathway is managed by the insurance company i.e. what appointment and with whom (Vertical integration)
-annotation 3 [0.15, 0.77] Denial of serice for medical treatment is used to maximise profit
+annotation 3 [0.15, 0.77] Denial of service for medical treatment is used to maximise profit
 annotation 4 [[0.60,0.79],[0.80,0.57] ] System is controlled by profit per profile and not health outcome
 annotation 5 [0.65, 0.72]  Contribution (can be kicked out by insurance) and Subsidised users (can't be kicked out)
 annotation 6 [0.78, 0.77]  6% are premium, 50% are contribution (incl. premium), 50% are subsidised
-annotations [0.75, 0.02]
+annotation 7 [0.24, 0.71]  Insurers audit themselves. There are health inspectors but thats more on paper than practice and not related to outcome.
+annotations [0.79, 0.00]
 
 
 // component healthy ageing agenda [0.08, 0.10] label [-76, -18]
