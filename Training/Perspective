@@ -1,0 +1,53 @@
+// https://onlinewardleymaps.com/#CgwbgpLb5BnDDwpL5E
+
+title Example of Perspectives, August 2023
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity/ accepted
+style wardley
+
+component Electricity company [0.96, 0.64] label [-74, -20]
+component Electricity generation company [0.37, 0.59] label [-83, -26]
+component Software Vendor [0.64, 0.53] label [8, -22]
+
+component consumer [0.88, 0.74] label [10, -5]
+component kettle [0.81, 0.73] label [9, 8]
+component POWER [0.71, 0.74] label [10, -13]
+pipeline POWER [0.70, 0.76]
+component gas [0.69, 0.71] label [-41, 1]
+component electricity [0.69, 0.75] label [22, 3]
+
+component DISTRIBUTION [0.53, 0.67] label [-97, -9]
+pipeline DISTRIBUTION [0.38, 0.74]
+component Standard wires [0.51, 0.73] label [17, 5]
+component Pylons [0.51, 0.70] label [-13, 25]
+component Substation Transformers [0.51, 0.61] label [-51, 12]
+component Automation Generation Control systems [0.51, 0.39] label [-34, 19]
+
+component ELECTRICITY MARKET [0.38, 0.70] label [22, -18]
+pipeline  ELECTRICITY MARKET
+
+component GENERATION [0.28, 0.67] label [-88, -6]
+pipeline GENERATION [0.39, 0.71]
+
+component wind farm [0.26, 0.70] label [-4, -22]
+component CHP Gas plant [0.26, 0.40] label [-120, -1]
+
+component wind turbines [0.11, 0.70] label [16, 6]
+component land [0.10, 0.39] label [-41, 2]
+
+
+
+electricity->DISTRIBUTION
+
+POWER->kettle
+kettle->consumer
+DISTRIBUTION->electricity market
+ELECTRICITY MARKET->DISTRIBUTION
+ELECTRICITY MARKET->GENERATION
+wind farm->land
+wind farm->wind turbines
+GENERATION->electricity generation company
+
+Software Vendor->Automation Generation Control systems
+Electricity company->consumer
+DISTRIBUTION->Electricity company
+GENERATION->Electricity generation company
