@@ -1,0 +1,33 @@
+title Sustainability in the perspective of Education and Awareness Sept 6, 2023
+
+anchor Student [0.99, 0.20]
+anchor Educator [0.96, 0.36]
+anchor Producer [0.96, 0.52]
+anchor Consumer [0.96, 0.64]
+anchor Owner [0.97, 0.76]
+component Information [0.88, 0.20] label [6, -8]
+Student->Information
+component Evidence [0.75, 0.15] label [-59, 9]
+component Data [0.75, 0.24]
+Information->Evidence
+Information->Data
+component Media [0.85, 0.35]
+component Community [0.61, 0.26]
+component Governance [0.59, 0.12]
+component Resources
+component Tools & Equipment [0.59, 0.38]
+component Communications [0.80, 0.07]
+component Accountability [0.31, 0.62]
+component Public [0.31, 0.54]
+component Private [0.28, 0.45]
+component Funding [0.29, 0.36]
+component Autonomy [0.27, 0.22]
+component Feedback [0.53, 0.58]
+component Behavior [0.63, 0.62]
+component Values [0.69, 0.55]
+component Roadmap [0.79, 0.55]
+component Critical Thinking [0.10, 0.29]
+component Trust [0.20, 0.08]
+component Sharing Lessons Learned [0.35, 0.07]
+component Leadership [0.44, 0.23]
+component Diversity [0.47, 0.06]
