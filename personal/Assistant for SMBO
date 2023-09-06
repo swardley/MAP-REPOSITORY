@@ -1,0 +1,66 @@
+title AI Assistant for SMBO, SEPT 2023
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+component photographer [0.96, 0.71] label [20, 3]
+
+component SMBO [0.98, 0.67] label [-15, -13]
+pipeline SMBO [0.49, 0.72]
+component grant writing [0.96, 0.50] label [-115, 2]
+
+component customers [0.87, 0.72] label [10, 3]
+component payment [0.85, 0.69] label [-60, 9]
+component customer capture [0.78, 0.66] label [-64, -30]
+pipeline customer capture [0.59, 0.74]
+
+
+component website [0.76, 0.73] label [19, 3]
+component social media presence [0.76, 0.67] label [-32, 12]
+component search engine optimisation [0.76, 0.60] label [-53, 16]
+component newsletter [0.76, 0.72] label [-11, -18]
+
+component AI driven site builder [0.36, 0.47] label [-33, 14]
+
+component backoffice [0.17, 0.60] label [-58, -10]
+pipeline backoffice [0.41, 0.72]
+
+component scheduling [0.15, 0.62] label [-89, 24]
+component billing [0.15, 0.71] label [-2, 23]
+component invoicing [0.15, 0.68] label [-35, -20]
+
+component out of hours assistant [0.37, 0.35] label [-20, 18]
+component alias phone [0.27, 0.29] label [-101, 7]
+component alias emails [0.21, 0.30] label [-44, 27]
+component AI assistant [0.38, 0.41] label [-56, -23]
+pipeline AI assistant [0.34, 0.57]
+
+component accounting [0.15, 0.65] label [-41, 29]
+
+component social media co-ordination [0.50, 0.62] label [-55, -55]
+pipeline social media co-ordination [0.59, 0.69]
+component content [0.48, 0.68] label [-14, -21]
+component auto generation content [0.36, 0.56] label [-28, 12]
+component analysis [0.48, 0.60] label [-77, 3]
+component gallery [0.76, 0.70] label [-11, 19]
+
+component ChatGPT [0.34, 0.67] label [-4, -14]
+
+component social media data [0.25, 0.66] label [0, -14]
+note +closed garden [0.28, 0.67]
+
+SMBO->customers
+payment->SMBO
+customers->customer capture
+scheduling->payment
+billing->payment
+customers->scheduling
+
+customer capture->AI driven site builder
+AI assistant->SMBO
+social media presence->social media co-ordination
+ChatGPT->auto generation content
+auto generation content->content
+ChatGPT->social media data
+AI assistant->out of hours assistantr
+out of hours assistant->alias emails
+out of hours assistant->alias phone
