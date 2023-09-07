@@ -1,0 +1,79 @@
+title sustainability from a complexity perspective
+
+component organization [0.96, 0.35]
+component institutional environments [0.96, 0.61] label [18, 3]
+component macro-social phenomena [0.96, 0.50] label [-11, 16]
+component primary work system [0.88, 0.37] label [0, -18]
+organization->primary work system
+component sustainability [0.78, 0.33] label [-87, -2]
+organization->sustainability
+component interventions [0.73, 0.35] label [-85, 3]
+sustainability->interventions
+component production system [0.74, 0.43] label [9, -18]
+interventions->production system
+primary work system->production system
+component innovating [0.67, 0.30] label [-82, 5]
+interventions->innovating
+component representation [0.56, 0.36] label [5, -7]
+pipeline representation [0.32, 0.43]
+component understanding [0.67, 0.36] label [14, 1]
+interventions->understanding
+component organizational patterns [0.54, 0.20] label [-67, -25]
+pipeline organizational patterns [0.15, 0.26]
+innovating->organizational patterns
+component measurement [0.27, 0.32] label [19, 2]
+pipeline measurement [0.2, 0.4]
+
+component modelling [0.44, 0.41]
+pipeline modelling [0.33, 0.51]
+representation->modelling
+understanding->modelling
+production system->modelling
+component training and education [0.61, 0.28] label [4, -14]
+understanding->training and education
+component market requirements [0.59, 0.52]
+understanding->market requirements
+component client requirements [0.44, 0.22] label [5, -6]
+understanding->client requirements
+component identifying process waste [0.19, 0.27] label [9, -22]
+component risk assessment [0.58, 0.45] label [-2, -6]
+component cycle time [0.14, 0.17] label [16, 0]
+component lead time [0.09, 0.20]
+component throughput [0.11, 0.29]
+component variability of throughput [0.08, 0.23] label [12, -9]
+component efficiency calculation [0.16, 0.36] label [5, -10]
+component flow of value [0.24, 0.21] label [9, -5]
+
+component environmental impact measurement [0.16, 0.41] label [12, -18]
+component governmental environmental standards [0.50, 0.65] label [19, -10]
+institutional environments->governmental environmental standards
+
+governmental environmental standards->measurement
+component data [0.06, 0.54]
+measurement->data
+pipeline data [0.38, 0.72]
+
+component company industry specific data [0.39, 0.53] label [9, 8]
+component product compliance [0.39, 0.57] label [-52, 14]
+component trade compliance [0.40, 0.61] label [-39, 14]
+component ESG compliance (GSCDDA) [0.39, 0.63] label [3, 4]
+understanding->representation
+modelling->measurement
+understanding->risk assessment
+risk assessment->modelling
+component leadership [0.87, 0.27] label [-73, 6]
+organization->leadership
+leadership->understanding
+component awareness [0.80, 0.21] label [-72, 2]
+leadership->awareness
+component energy return on energy invested [0.54, 0.33] label [-35, 12]
+component visualization [0.54, 0.37] label [-28, 25]
+component digital twin [0.42, 0.43] label [-30, 30]
+component cynefin [0.42, 0.34] label [-17, 24]
+component compliance [0.41, 0.58] label [14, -4]
+pipeline compliance [0.5, 0.65]
+governmental environmental standards->compliance
+organization->compliance
+component reporting [0.32, 0.43] label [16, 0]
+compliance->reporting
+reporting->measurement
