@@ -1,0 +1,91 @@
+title SUSTAINABILITY - LEADERSHIP & GOVERNANCE, SEPT 2023
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+
+component COLLECTIVE [0.90, 0.49] label [-4, -14]
+pipeline COLLECTIVE [0.42, 0.73]
+
+component BELIEFS [0.51, 0.61] label [-15, -18]
+pipeline BELIEFS [0.5, 0.72]
+
+component LEADERSHIP [0.77, 0.56] label [-3, -10]
+pipeline LEADERSHIP [0.3, 0.65]
+
+component SURVIVIAL [0.28, 0.50] label [22, -8]
+pipeline SURVIVIAL [0.3, 0.74]
+
+component SUSTAINABILITY [0.16, 0.53] label [-27, -13]
+pipeline SUSTAINABILITY [0.48, 0.68]
+
+component tomorrow [0.26, 0.31] label [-90, 4]
+component today [0.26, 0.73] label [17, 2]
+
+component corporation [0.88, 0.64] label [-48, -20]
+component government [0.88, 0.72] label [-20, -20]
+component society [0.88, 0.43] label [-74, 3]
+
+component people [0.50, 0.80] label [15, 0]
+
+component dictator [0.75, 0.64] label [19, 2]
+component DAO [0.75, 0.31] label [-44, 7]
+
+component property [0.49, 0.71] label [17, 2]
+component reciprocity [0.49, 0.51] label [-21, 24]
+component fairness [0.49, 0.58] label [-39, -22]
+
+component CAPABILITY [0.60, 0.62] label [-33, -17]
+pipeline CAPABILITY [0.43, 0.68]
+component power over [0.58, 0.67] label [6, -21]
+component influence [0.58, 0.44] label [-13, -24]
+component trust [0.47, 0.45] label [-49, 2]
+
+component AWARENESS [0.06, 0.40] label [-77, -12]
+pipeline AWARENESS [0.26, 0.7]
+
+component energy [0.14, 0.67] label [18, 4]
+component food [0.14, 0.63] label [-10, -19]
+component economy [0.14, 0.59] label [-33, 21]
+component environment [0.14, 0.49] label [-96, 4]
+
+component territitoy [0.04, 0.69] label [26, 7]
+component supply chains [0.04, 0.30] label [-25, 25]
+component technology [0.04, 0.27] label [-88, -1]
+component media [0.33, 0.61] label [9, 9]
+
+component STORIES [0.41, 0.59] label [-17, -14]
+pipeline STORIES [0.52, 0.67]
+component history [0.39, 0.61] label [-3, 23]
+component symbols [0.39, 0.64] label [-10, -19]
+component art [0.39, 0.53] label [-25, 19]
+component myths [0.39, 0.66] label [19, 4]
+component mandate [0.54, 0.71] label [-3, -7]
+
+// links
+
+COLLECTIVE->BELIEFS
+COLLECTIVE->LEADERSHIP
+COLLECTIVE->SURVIVIAL
+tomorrow->SUSTAINABILITY
+COLLECTIVE->people
+LEADERSHIP->CAPABILITY
+AWARENESS->LEADERSHIP
+power with->DAO
+SUSTAINABILITY->AWARENESS
+STORIES->BELIEFS
+
+dictator->power over
+influence->DAO
+reciprocity->influence
+fairness->influence
+influence->trust
+trust->STORIES
+STORIES->media
+power over->property
+power over->STORIES
+property->economy
+today->people
+mandate->power over
+mandate->people
+today->food
+today->energy
