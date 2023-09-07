@@ -1,0 +1,80 @@
+title Sustainability in the perspective of Education and Awareness Sept 6, 2023
+
+
+anchor Society [0.98, 0.50]
+
+// anchor Owner [0.97, 0.76]
+component Information [0.74, 0.54] label [21, 5]
+Society->Information
+component Evidence [0.72, 0.31] label [-59, 9]
+component Data [0.73, 0.73]
+Information->Evidence
+Information->Data
+component Media [0.83, 0.76]
+component Community [0.24, 0.40]
+component Governance [0.39, 0.80]
+component Resources [0.41, 0.35]
+component Tools & Equipment [0.41, 0.50]
+component Communications [0.85, 0.43] label [-107, -2]
+component Accountability [0.19, 0.82]
+component Public [0.90, 0.73] label [13, 13]
+component Private [0.90, 0.43] label [-39, 19]
+component Funding [0.28, 0.25]
+component Autonomy [0.54, 0.31] label [-24, 15]
+component Feedback [0.07, 0.35] label [-50, 17] inertia
+component Behavior [0.61, 0.38] label [9, 10]
+component Values [0.78, 0.32]
+component Roadmap [0.59, 0.81]
+component Critical Thinking [0.19, 0.32] label [-61, -12]
+component Trust [0.78, 0.24] label [-46, 5]
+component Sharing Lessons Learned [0.73, 0.78]
+component Leadership [0.47, 0.80]
+component Diversity [0.13, 0.40]
+component Coordination [0.17, 0.73]
+
+
+component 1 [0.90, 0.43] label [-46, -330009]
+component 2 [0.07, 0.69] label [-27, -3300050]
+1->2
+note +feeback [0.28, 0.61]
+
+Behavior->Media
+Media->Values
+
+Communications->Trust
+Producer->Information
+Consumer->Information
+Information->Media
+
+Media->Sharing Lessons Learned
+Funding->Resources
+Behavior->Resources
+Resources->Tools & Equipment
+Behavior->Autonomy
+Governance->Accountability
+Coordination->Governance
+Leadership->Governance
+Leadership->Roadmap
+Community->Critical Thinking
+Diversity->Critical Thinking
+Diversity->Feedback
+Society->Behavior
+Society->Communications
+Society->OWNER
+Society->Media
+Values->Trust
+//values->Behavior
+
+//information->Feedback
+
+evolve Feedback 0.68
+
+
+component OWNER [0.92, 0.57]
+pipeline OWNER [0.42, 0.74]
+Public->Community
+Governance->OWNER
+
+pipeline Information [0.3, 0.74]
+
+//Feedback evolve to Innovation to speed up impact on Sustainability
