@@ -3,53 +3,93 @@ title Sustainability: Social Equity, September 2023
 // "We map to how things are in the market
 // not how we would like them to be"
 
+// 2nd day: initial point is not enough discussion of sustainability
+// at present in this map.
+
+note "We map to how things are in the market not how we would like them to be" [0.05, 0.02]
 
 anchor Society [1.00, 0.51]
 
-component safety [0.96, 0.09] label [-47, 2]
+component safety [0.81, 0.09] label [-47, 2]
 //component engagement [0.65, 0.14] label [-86, 8]
-component land [0.37, 0.45] label [12, 5]
-component material resources [0.37, 0.52] label [-30, 10]
-component habitable living [0.50, 0.50] label [8, -30]
-component communities [0.91, 0.59] label [10, -5]
-component stabilised climate [0.36, 0.34] label [-78, -11]
+component land [0.12, 0.44] label [12, 5]
+component material resources [0.75, 0.80] label [-42, -41]
+component habitable living [0.16, 0.50] label [8, -30]
+component communities [0.90, 0.55] label [10, -5]
+component stabilised climate [0.10, 0.33] label [-78, -11]
+component natural capital [0.75, 0.84]
+component ecosystem [0.07, 0.72] label [23, 4]
 
 component governance [0.98, 0.40] label [-37, -11]
 pipeline governance [0.3, 0.7]
 
-component mechanism for governance? [0.86, 0.09] label [-74, -8]
+// component mechanism for governance? [0.86, 0.09] label [-74, -8]
 component constitution [0.96, 0.31] label [-52, -19]
 
 // is inequity there because of lack of good governance
 
+// governance
+component intellectual property [0.39, 0.34] label [-27, -42]
+component rights [0.61, 0.56] label [-16, -19]
+component bureaucracy [0.61, 0.65] label [-36, 29]
+// institutions
+component institutions [0.63, 0.49] label [-42, -14]
+pipeline institutions [0.2, 0.80]
+
+governance->rights
+rights->schools
+rights->healthcare 
+governance->bureaucracy
+governance->institutions
+// social norms->institutions
+
+// Capital?
+component forms of capital [0.77, 0.65] label [-1, -44]
+pipeline forms of capital [0.5,0.85]
+component financial capital [0.75, 0.75] label [-25, 14]
+component time capital [0.75, 0.66] label [-25, 25]
+component social capital [0.75, 0.58] label [-35, 28]
+individuals->forms of capital
+communities->forms of capital
+// forms of capital->financial capital
+// forms of capital->time capital
+// forms of capital->social capital
+
+// Capital transfer
+// component capital transfer? [0.52, 0.10] label [-57, -25]
+
+// moving money from one owner to another owner
+component capital exchange/market [0.69, 0.44] label [-33, -37]
+component capital rules [0.61, 0.45] label [8, 23]
+forms of capital->capital exchange/market
+capital exchange/market->capital rules
+
 
 // Communities need ?
-component knowledge transfer [0.76, 0.59] label [7, -32]
-pipeline knowledge transfer [0.3, 0.8]
-component stories [0.74, 0.73] label [-14, -17]
-component schools [0.74, 0.46] label [-24, -17]
-component belonging [0.82, 0.67] label [9, 2]
-component communication [0.84, 0.78] label [14, 3]
-component shared interests [0.89, 0.76] label [7, -16]
-component social norms [0.85, 0.57] label [-56, 21]
+component knowledge transfer [0.41, 0.60] label [5, -30]
+pipeline knowledge transfer [0.3, 0.73]
+component stories [0.39, 0.69] label [-20, -17]
+component schools [0.39, 0.46] label [-35, -17]
+component belonging [0.83, 0.58] label [-19, 18]
+component communication [0.85, 0.65] label [6, 2]
+component shared interests [0.89, 0.67] label [7, -16]
+component social norms [0.61, 0.30] label [-62, -17]
 
 // what about infrastructure?
 // What does Society need?
 // Infrastructure and Amenities
-component access control? [0.50, 0.38] label [-94, 4]
+component access control [0.61, 0.39] label [-83, 26]
 
 // happiness?
 component contentment? [0.72, 0.09] label [-89, 5]
 component happiness? [0.76, 0.09] label [-83, 5]
 
-// institutions
-component institutions? [0.91, 0.09] label [-81, 2]
-
 // "sense of community"
 // cohesion?
-component food [0.37, 0.63] label [13, 4]
-component clean air [0.42, 0.68] label [14, 4]
-component clean water [0.48, 0.76]
+component food [0.11, 0.61] label [13, 4]
+component clean air [0.13, 0.67] label [14, 4]
+component clean water [0.16, 0.74] label [12, 9]
+
 
 // caring
 // for people who are unwell
@@ -57,18 +97,37 @@ component clean water [0.48, 0.76]
 // e.g. raising a family
 // or people with medical needs
 // caring for people in old age
-component care [0.63, 0.43] label [-17, -14]
-pipeline care [0.3, 0.8]
-component healthcare [0.61, 0.48] label [-28, -17]
-component childcare [0.61, 0.79] label [16, 5]
-component mental health care [0.61, 0.35] label [-35, -58]
+
+// REMOVED FOR THE MOMENT
+component wellbeing [0.33, 0.38] label [-66, 3]
+component care [0.28, 0.37] label [-38, -6]
+pipeline care [0.20, 0.8]
+component healthcare [0.26, 0.53] label [10, -16]
+component childcare [0.26, 0.79] label [-13, -18]
+component mental health care [0.26, 0.26] label [-35, -58]
+
 // and so on
 
+// "wellbeing"
+// component wellbeing [0.33, 0.38] label [-64, -4]
+component individuals [0.84, 0.36] label [-71, 0]
+wellbeing->habitable living
+communities->individuals
+individuals->wellbeing
+wellbeing->care
+
+
+// connections
 habitable living->clean water
 habitable living->clean air
 habitable living->food
 habitable living->land
 habitable living->stabilised climate
+// habitable living->ecosystem
+clean air->ecosystem
+clean water->ecosystem
+food->ecosystem
+stabilised climate->ecosystem
 
 Society->habitable living
 Society->governance
@@ -80,7 +139,10 @@ communities->belonging
 communities->knowledge transfer
 communities->social norms
 
-governance->access control?
-access control?->land
+governance->access control
+access control->land
 governance->knowledge transfer
 
+natural capital->clean air
+natural capital->clean water
+natural capital->food
