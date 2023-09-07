@@ -1,0 +1,43 @@
+title Livable earth/Nature sustainability, Sept 2023
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+component life on Earth [0.83, 0.15] label [-35, 40]
+pipeline life on Earth [0.13, 0.75]
+component resource [0.81, 0.72] label [-36, -19]
+component <- life towards genesis [0.81, 0.72] label [-241, -71]
+
+note (corporations) [0.87, 0.67]
+note (local communities) [0.86, 0.11]
+
+component nutrition [0.73, 0.15] label [264, -5]
+pipeline nutrition [0.32, 0.75]
+component soylent [0.70, 0.72] label [41, 3]
+component locally grown food [0.71, 0.72] label [-445, -11]
+note <- towards genesis [0.74, 0.50]
+
+component breathable atmosphere [0.60, 0.77] label [-27, 10]
+
+pipeline social equity [0.75, 0.2]
+component social equity [0.47, 0.22] label [196, 42]
+component availability/covenience [0.47, 0.22] label [480, 32]inertia
+component sustainable choices [0.44, 0.22] label [-9, 17]inertia
+
+component novel foods (impossible burger) [0.35, 0.17] label [-24, 14]
+
+component chaotic disruption (covid-19) [0.66, 0.06] label [-30, 17]
+
+component bioregionality [0.77, 0.07] label [-49, 27]
+
+
+component non-potable water [0.53, 0.84] label [-1, 11]
+component technology [0.54, 0.56] label [-30, -19]
+component education [0.32, 0.57] label [-31, -21]
+component Funding [0.19, 0.31] label [-20, -14]
+component policy [0.50, 0.43] label [-19, -15]
+component sunlight [0.28, 0.78]
+component gravity [0.23, 0.80]
+component effective measurement [0.12, 0.07] label [-19, -38]
+component public perception [0.59, 0.17] label [3, -2]
+component sustainable energy [0.54, 0.37] label [-32, -50]
+
