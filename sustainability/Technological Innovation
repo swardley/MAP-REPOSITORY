@@ -1,0 +1,79 @@
+title Sustainability - Technological Innovation - Sept 2023
+anchor Companies [0.99, 0.73]
+anchor Users [0.99, 0.44]
+
+// main consumer/user value chain
+component Consumer Choice [0.90, 0.21] label [7, -8]
+component Env Values [0.79, 0.21]
+component Reports/Analysis [0.73, 0.26] label [-54, 15]
+component Data [0.56, 0.38] label [5, -10]
+
+
+component Products [0.86, 0.63]
+pipeline Products [0.35,0.75]
+component low-impact [0.84, 0.36] label [-11,28]
+component high-impact [0.84, 0.74] label [-11,28]
+
+//Company Needs
+component Profit [0.94, 0.81]
+component Reputation [0.91, 0.59]
+component Governance [0.91, 0.37]
+
+// Emmissions Data
+component Emissions [0.68, 0.32]
+pipeline Emissions [0.10, 0.5]
+component scope 1 [0.66, 0.49] label [-11,28]
+
+
+// Energy related pipelines
+component Energy [0.31, 0.75]
+component Storage [0.14, 0.28]
+
+// revisit lables for pipeline - Tom
+pipeline Storage [0.21,0.75]
+component decentralized [0.12, 0.22] label [-11, 28]
+component centralized [0.12, 0.74] label [-11, 28]
+
+component Transmission [0.23, 0.64] label [5, -10]
+pipeline Transmission [0.25,0.89]
+
+component Generation [0.05, 0.81]
+pipeline Generation [0.25,0.89]
+
+component sensors [0.46, 0.23] label [5, -10]
+pipeline sensors [0.75, 0.21]
+component IoT [0.44, 0.22] label [-27, 28]
+component barometer [0.44, 0.76] label [-27, 28]
+
+// Materials
+component Planetary Resources [-0.01, 0.52] label [10, -9]
+component Materials [0.34, 0.41]
+component Supply Chain [0.64, 0.64]
+
+
+
+// link
+Users->Consumer Choice
+Consumer Choice->Products
+Consumer Choice->Env Values
+Env Values->Reports/Analysis
+Reports/Analysis->Data
+Reports/Analysis->Emissions
+Emissions->Data
+Products->Emissions
+Data->sensors
+sensors->Energy
+Energy->Storage
+Energy->Generation
+Energy->Transmission
+Products->Supply Chain
+Supply Chain->Materials
+Materials->Planetary Resources
+Supply Chain->Energy
+Companies->Reputation
+Companies->Profit
+Companies->Governance
+Governance->Emissions
+Governance->Products
+Governance->Reports
+
