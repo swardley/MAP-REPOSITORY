@@ -1,0 +1,140 @@
+//--CONTEXT--
+title LEADERSHIP AND GOVERNANCE (only value chain not evolution)
+
+//x-axis
+//Activités
+//evolution Phase 1 :🧪 Genèse -> Phase 2 : ⚒️ Sur mesure -> Phase 3 : 🛒 Produit (+location) -> Phase 4 : ⛽ Commodité (+service public)
+//Pratiques
+//evolution  1. Nouvelles -> 2. Emergentes -> 3. Bonnes -> 4. Meilleures
+//Données
+//evolution 1. Non-modélisées -> 2. Divergentes -> 3. Convergentes -> 4. Modélisées
+//Connaissances
+//evolution 1. Concept -> 2. Hypothèses -> 3. Théories -> 4. Répandue
+
+//y-axis
+//_/!\_En vrai il n'y a pas d'axe des ordonnées. La carte se suffit a elle même pour ça
+y-axis ->->Value Chain
+//--END-CONTEXT--
+
+
+//There's a link between Society and leader 
+
+anchor Uk Prime minister [0.99, 0.69]
+//first chain
+component Awarness [0.60, 0.14] label [12, -3]
+Uk Prime minister -> Awarness
+component Information [0.51, 0.11]
+Awarness->Information
+note (Understanding the impact of their actions) [0.50, 0.13]
+component Media [0.39, 0.18] label [7, 4]
+Information->Media
+pipeline Media [0.11, 0.78]
+
+component social media [0.37, 0.29] label [5, -10]
+component radio [0.38, 0.45]
+component newspaper [0.38, 0.70]
+component podcast [0.38, 0.59]
+
+
+//second chain
+component Credibility [0.85, 0.35]
+Uk Prime minister->Credibility
+component Influence [0.17, 0.40] label [10, -16]
+Influence->Media
+pipeline Influence [0.33, 0.60]
+component Charisma [0.16, 0.34] label [-40, -17]
+component Coercion [0.16, 0.59] label [-4, 26]
+note Schwartz’s theory of culture-level value prioritie [0.17, 0.42]
+// component Trust [0.10, 0.41]
+// Trust->Influence
+
+// component Authenticuty [0.14, 0.41]
+// Authenticuty->Trust
+
+// Credibility -> Authenticuty
+
+Credibility -> Influence
+component Trust [0.10, 0.41]
+Influence->Trust
+
+component Authenticity [0.05, 0.43] label [12, -3]
+Trust->Authenticity
+
+component Power [0.62, 0.70] label [5, -10]
+pipeline Power [0.64, 0.76]
+
+component Soft Power [0.61, 0.65] label [-23, -15]
+Soft Power->Media
+component Hard Power [0.61, 0.74] label [2, -27]
+note (Military, economic) [0.59, 0.67]
+
+
+component Authority [0.26, 0.75] label [-26, -19]
+pipeline Authority [0.57, 0.85]
+
+component Leadeship (collective authority) [0.25, 0.70] label [-34, 13]
+component Controle [0.25, 0.84] label [-13, -25]
+component Chaos [0.25, 0.58] label [-22, -15]
+
+Uk Prime minister->Power
+Power->Influence
+component Finance [0.56, 0.53] label [14, 0]
+Power->Finance
+component Filtering the highest political priority [0.50, 0.64] label [6, -46]
+Finance->Filtering the highest political priority
+component Democratic Mandate [0.41, 0.53] label [4, -33]
+Power->Democratic Mandate
+
+component Pressure [0.31, 0.08]
+pipeline Pressure [0.01, 0.37]
+component Conformity (social)  [0.30, 0.03] label [-27, -40]
+component Obedience (social)  [0.29, 0.36] label [-44, -45]
+component economic pressure [0.30, 0.19] label [3, -27]
+component technological advancement pressure [0.30, 0.11] label [-34, 17]
+
+Information->Pressure
+
+// pipeline Mandate [0.15, 0.79]
+// component Earth Mandate [0.09, 0.16]
+// component Climate Mandate [0.03, 0.33] label [5, -8]
+// component Biodiversity Mandate [0.03, 0.10] label [8, -23]
+// Earth Mandate->Climate Mandate
+// Earth Mandate->Biodiversity Mandate
+
+// component Community Mandate [0.08, 0.48] label [-17, 12]
+// Pressure->Community Mandate
+
+ component People [0.42, 0.69]
+// Community Mandate->People
+
+anchor Collectives (communities) [0.59, 0.87]
+Collectives (communities)->People
+
+Democratic Mandate->People
+
+component Common value [0.21, 0.85] label [5, -10]
+Collectives (communities)->Common value
+note Not discuss [0.20, 0.87]
+note Not discuss [0.01, 0.13]
+
+Influence->Democratic Mandate
+
+component Agent (execution) [0.48, 0.54] label [-3, 5]
+Power->Agent (execution)
+Agent (execution)->Influence
+
+Power->Media
+
+People -> Filtering the highest political priority
+Media->Pressure
+
+component Moral Value [0.09, 0.73]
+
+
+component Coping Menanism [0.15, 0.16] label [-1, -38]
+
+Pressure->Coping Menanism
+Coping Menanism->Coping Menanism
+Coping Menanism->Trust
+
+Power->Authority
