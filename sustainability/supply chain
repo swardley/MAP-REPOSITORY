@@ -1,0 +1,108 @@
+style wardley
+
+title Supply Chain Sustainability
+
+component Producer [0.95, 0.54] label [9, 4]
+
+component Retailer [0.94, 0.46] label [11, 4]
+
+component Packaging & Presentation [0.78, 0.42] label [29, -14]
+
+component Temperature & Freshness [0.74, 0.38] label [-75, -22]
+
+component Manufacturing [0.69, 0.45] label [-5, -12]
+
+component Open market driven [0.50, 0.56] label [-66, 29]
+component Sustainbility regulated [0.50, 0.44] label [-86, 29]
+component Sourcing [0.52, 0.49] label [-18, -9]
+pipeline Sourcing [0.43, 0.57]
+
+component Raw Materials [0.23, 0.57] label [-20, 31]
+component Complex Product [0.23, 0.45] label [-72, 2]
+component Product [0.25, 0.51] label [8, -7]
+pipeline Product [0.44, 0.58]
+
+component Waste [0.60, 0.55] label [-9, 28]
+component Cost [0.60, 0.65] label [-10, 29]
+component Measurements [0.62, 0.60] label [-37, -8]
+pipeline Measurements [0.54, 0.66]
+
+component Maintainability [0.63, 0.47] label [-31, -7]
+
+component Reusability [0.59, 0.43] label [-38, 29]
+
+component Last mile [0.13, 0.42] label [-30, 29]
+component Backhaul [0.13, 0.34] label [-26, 29]
+component Transportation [0.15, 0.37] label [-109, -15]
+pipeline Transportation [0.33, 0.43]
+
+component Choice [0.31, 0.41] label [-29, -6]
+
+component R&D  [0.64, 0.29] label [-34, 4]
+
+component Resource Efficiency [0.56, 0.32] label [-78, -12]
+
+component Scientific Research [0.48, 0.24] label [-57, 16]
+
+component Regulator [0.95, 0.68] label [-29, -5]
+
+component Bureacracy [0.56, 0.86] label [-37, 28]
+component Actionable [0.56, 0.75] label [-42, 28]
+component Guidelines [0.58, 0.80] label [-28, -3]
+pipeline Guidelines [0.74, 0.87]
+
+component Consumer [0.38, 0.40] label [-44, -8]
+
+component Online [0.88, 0.43] label [-10, 30]
+component Storefront [0.88, 0.35] label [-4, 30]
+component Coop [0.88, 0.30] label [-10, 29]
+component Distribution [0.90, 0.38] label [-37, -5]
+pipeline Distribution [0.29, 0.44]
+
+component Monitoring & Audit [0.77, 0.73] label [-44, 30]
+component Disclosure [0.77, 0.67] label [-34, 29]
+component Label [0.77, 0.81] label [-14, 29]
+component Compliance [0.79, 0.70] label [-27, -11]
+pipeline Compliance [0.66, 0.82]
+
+component Laws [0.84, 0.80] label [-10, 29]
+component Trade agreements [0.84, 0.89] label [-38, 29]
+component Sanctions [0.84, 0.84] label [-30, 29]
+component Regulations [0.86, 0.81] label [-37, -8]
+pipeline Regulations [0.79, 0.90]
+
+component Compliance Certs [0.41, 0.72] label [-14, 22]
+component My Rating [0.41, 0.65] label [-35, 33]
+component Compliance mechanisms [0.43, 0.66] label [-24, -40]
+pipeline Compliance mechanisms [0.64, 0.73]
+
+
+Guidelines->Actionable
+Manufacturing->R&D 
+Producer->Packaging & Presentation
+Packaging & Presentation->Temperature & Freshness
+Temperature & Freshness->Manufacturing
+Sourcing->Product
+Choice->Consumer
+Consumer->My Rating
+Product->Transportation
+R&D ->Resource Efficiency
+R&D ->Scientific Research
+Packaging & Presentation->Manufacturing
+Manufacturing->Resource Efficiency
+Choice->Product
+Choice->Transportation
+Manufacturing->Sourcing
+Manufacturing->Maintainability
+Manufacturing->Measurements
+Manufacturing->Reusability
+Retailer->Distribution
+Distribution->Packaging & Presentation
+Sustainbility regulated->Regulator
+Guidelines->Bureacracy
+Producer->Compliance
+Retailer->Compliance
+Compliance->Guidelines
+Regulator->Regulations
+Regulations->Compliance
+Compliance->Compliance mechanisms
