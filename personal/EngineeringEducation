@@ -1,0 +1,62 @@
+title ENGINEERING EDUCATION, SEPT 2023
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+component developer [0.99, 0.73]
+
+component ENGINEERING SKILLS [0.86, 0.67] label [-59, -41]
+pipeline ENGINEERING SKILLS [0.35, 0.8]
+
+component traditional coding [0.84, 0.79] label [22, -7]
+component AI Enabled Development [0.84, 0.36] label [-86, -20]
+
+
+component TOOLS [0.70, 0.62] label [-58, -29]
+pipeline TOOLS [0.32, 0.8]
+
+
+component EDUCATION [0.49, 0.69] label [4, -16]
+pipeline EDUCATION  [0.38, 0.8]
+
+component Vi [0.68, 0.79] label [14, -16]
+component codepilot [0.68, 0.44] label [-6, -19]
+component python [0.47, 0.79] label [25, 3]
+component prompt engineering [0.47, 0.39] label [18, -44]
+component coversational programming [0.68, 0.33] label [-96, 0]
+
+
+component EDUCATIONAL CONTENT [0.35, 0.54] label [-80, -32]
+pipeline EDUCATIONAL CONTENT [0.18, 0.8]
+
+component LEARN PYTHON IN 100 DAYS [0.33, 0.79] label [15, -39]
+
+component AI STUFF THAT HASN'T BEEN WRITTEN [0.33, 0.19] label [-94, -33]
+
+component DELIVERY MECHANISM [0.19, 0.59] label [29, -33]
+pipeline DELIVERY MECHANISM [0.3, 0.8]
+
+component video courses [0.17, 0.79] label [19, 3]
+component AI Tutor [0.17, 0.31] label [-75, 3]
+
+
+evolve AI Enabled Development 0.6 label [-286, -33105]
+evolve coversational programming 0.65 label [14, -33367]
+evolve prompt engineering 0.6 label [1, -3385]
+evolve AI STUFF THAT HASN'T BEEN WRITTEN 0.6 label [-208, -33314]
+evolve AI Tutor 0.6 label [4, -3345]
+
+developer->ENGINEERING SKILLS
+TOOLS->ENGINEERING SKILLS
+EDUCATION->ENGINEERING SKILLS
+AI Enabled Development->coversational programming
+AI Enabled Development->codepilot
+codepilot->prompt engineering
+prompt engineering->coversational programming
+Vi->traditional coding
+Vi->python
+LEARN PYTHON IN 100 DAYS->python
+prompt engineering->AI STUFF THAT HASN'T BEEN WRITTEN
+EDUCATION->EDUCATIONAL CONTENT
+EDUCATION->DELIVERY MECHANISM
+prompt engineering->AI Tutor
+video courses->LEARN PYTHON IN 100 DAYS
