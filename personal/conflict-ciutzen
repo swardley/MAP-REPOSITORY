@@ -1,0 +1,82 @@
+// URL https://onlinewardleymaps.com/#g1vjfxy907LP8wXgnC
+
+title Conflict from the perspective of citizens, Oct 2023
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+
+component Citizen [0.97, 0.66] label [-4, -13]
+pipeline Citizen 
+
+component collective [0.89, 0.68] label [11, 2]
+
+component space [0.71, 0.68] label [12, -11]
+pipeline space [0.34, 0.73]
+
+component territorial [0.69, 0.72] label [18, 3]
+component virtual [0.69, 0.59] label [-17, -19]
+component psychological [0.69, 0.35] label [-116, 1]
+
+note how we operate [0.61, 0.36]
+note what we believe / value [0.44, 0.33]
+
+component beliefs [0.49, 0.57] label [-38, -15]
+pipeline beliefs [0.23, 0.71]
+
+component core values [0.47, 0.65] label [-32, 24]
+component laws [0.47, 0.62] label [-26, -19]
+component universal beliefs [0.47, 0.70] label [22, -18]
+component international laws [0.47, 0.68] label [-45, -45]
+
+component opinions [0.47, 0.23] label [-65, -1]
+
+component principles [0.60, 0.55] label [-85, -7]
+pipeline principles [0.31, 0.69]
+component universally accepted principles [0.58, 0.68] label [26, -26]
+component experiment [0.58, 0.32] label [-90, -1]
+component practice [0.58, 0.53] label [-58, 23]
+
+component Collective memory [0.25, 0.69] label [-16, -45]
+pipeline Collective memory [0.63, 0.72]
+
+component stories [0.23, 0.71] label [19, 4]
+component symbols [0.23, 0.64] label [-56, 22]
+component rituals [0.23, 0.66] label [-48, -21]
+component heroes [0.23, 0.68] label [-29, 23]
+component events [0.23, 0.70] label [-4, 25]
+
+component identity [0.85, 0.65] label [10, 6]
+
+component economic [0.69, 0.55] label [-29, 25]
+component technological [0.69, 0.48] label [-60, 24]
+component political [0.69, 0.52] label [-61, -19]
+component cultural [0.69, 0.44] label [-69, -21]
+
+component behaviour [0.83, 0.58] label [-75, 4]
+component hypothesis [0.47, 0.26] label [-57, 24]
+component safety [0.94, 0.58] label [-58, -7]
+pipeline safety 
+
+component power [0.91, 0.62] label [9, -8]
+pipeline power
+
+
+//links
+collective->Citizen
+
+Collective memory->beliefs
+identity->beliefs
+identity->Collective memory
+identity->space
+collective->behaviour
+Citizen->safety
+safety->behaviour
+power->safety
+collective->power
+behaviour->identity
+collective->space
+identity->collective
+behaviour->beliefs
+principles->behaviour
+
+hypothesis->experiment
