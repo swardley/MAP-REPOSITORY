@@ -1,0 +1,56 @@
+title Gaming Industry - Consumer Perspective, 2023 - CREATED BY CHATGPT4
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+// Components
+component Consumer [0.95, 0.74] label [2, -13]
+
+component GAME PLATFORMS [0.8, 0.5] label [-58, -15]
+pipeline GAME PLATFORMS [0.44, 0.72]
+component PC Gaming [0.78, 0.71] label [25, 2]
+component Consoles [0.78, 0.60] label [2, -17]
+component Mobile Gaming [0.78, 0.45] label [-113, -3]
+component Cloud Gaming [0.78, 0.53] label [-18, 26]
+component Virtual Reality [0.58, 0.64] label [-24, 20]
+
+component GAME TYPES [0.60, 0.61] label [-37, -14]
+pipeline GAME TYPES [0.50, 0.73]
+component AAA Titles [0.58, 0.72] label [20, 4]
+component Indie Games [0.58, 0.57] label [-35, 26]
+component Casual Games [0.58, 0.51] label [-104, 2]
+component Esports [0.58, 0.67] label [-7, 22]
+
+component MONETIZATION MODELS [0.48, 0.49] label [-62, -34]
+pipeline MONETIZATION MODELS [0.36, 0.72]
+component Subscription [0.46, 0.56] label [-19, -19]
+component Microtransactions [0.46, 0.43] label [-14, 13]
+component Ad-supported [0.46, 0.37] label [-107, -1]
+component one-time fee [0.46, 0.71] label [-13, 23]
+
+component GAME COMMUNITIES [0.34, 0.56] label [-83, -29]
+pipeline GAME COMMUNITIES [0.46, 0.70]
+component Forums [0.32, 0.69] label [22, 6]
+component Multiplayer Chats [0.32, 0.61] label [-26, -43]
+component Streaming Platforms [0.32, 0.47] label [-92, -13]
+
+component HARDWARE & ACCESSORIES [0.23, 0.65] label [19, -47]
+pipeline HARDWARE & ACCESSORIES [0.58, 0.7]
+component Gaming PCs [0.21, 0.63] label [-11, 23]
+component VR Headsets [0.21, 0.59] label [-97, 4]
+component Gamepads [0.21, 0.69] label [25, 3]
+
+component GAME CONTENT [0.12, 0.57] label [-90, -13]
+pipeline GAME CONTENT [0.53, 0.71]
+component Storyline [0.10, 0.70] label [21, 3]
+component Graphics [0.10, 0.64] label [-33, 29]
+component Soundtrack [0.10, 0.54] label [-99, 5]
+
+// Links
+Consumer -> GAME PLATFORMS
+Consumer -> GAME TYPES
+
+GAME PLATFORMS -> HARDWARE & ACCESSORIES
+GAME TYPES -> MONETIZATION MODELS
+GAME COMMUNITIES -> GAME PLATFORMS
+GAME COMMUNITIES -> GAME TYPES
+GAME CONTENT -> GAME TYPES
