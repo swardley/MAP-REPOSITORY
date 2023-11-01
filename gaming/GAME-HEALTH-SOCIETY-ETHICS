@@ -1,0 +1,139 @@
+title Gaming Industry - Health, Wellbeing, Society, Ethics. OCT 2023 - CREATED BY Group 5
+
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+// Creative Commons 4.0 Share Alike - CC by SA
+// note If you zoom out on the browser ... say 80% ... it should look a lot cleaner. [0.91, 0.02]
+
+anchor Society [0.94, 0.46]
+
+
+// Components 
+
+
+component Safety [0.90, 0.43] label [27, -7]
+component Regulatory mechanisms [0.87, 0.38] label [-89, -24]
+component Commercial governance [0.81, 0.32] label [-93, -29]
+
+
+
+component Industry body [0.73, 0.35] label [-131, -5]
+
+component Charter [0.67, 0.29] label [-70, -2]
+component Enforcement [0.56, 0.32] label [-96, 2]
+component Regulations [0.64, 0.43] label [11, -5]
+component Member companies [0.44, 0.45] label [27, -17]
+component Reps/Participants [0.69, 0.17] label [-105, 5]
+
+
+
+component Gaming company [0.35, 0.50] label [22, 3]
+
+
+component Game type [0.29, 0.41] label [-80, -13]
+
+
+component Individual [0.15, 0.51] label [6, 23]
+component Collective [0.14, 0.32] label [-92, 12]
+component Player [0.06, 0.45] label [-55, 19]
+
+
+// Connections 
+
+Society->Safety
+
+Safety->Regulatory mechanisms
+Regulatory mechanisms->Commercial governance
+Commercial governance->Industry body
+
+Industry body->Enforcement
+Industry body->Reps/Participants
+Industry body->Member companies
+Industry body->Charter
+Industry body->Regulations
+
+
+Regulatory mechanisms->Regulations
+
+component Maintainence Framework [0.59, 0.47] label [60, -16]
+Regulations->Maintainence Framework
+
+component Principles [0.60, 0.27] label [-80, 20]
+component Support [0.62, 0.25] label [-68, 11]
+component Roadmap [0.64, 0.23] label [-56, -11]
+
+Charter->Principles
+Charter->Support
+Charter->Roadmap
+Member companies->Gaming company
+
+
+// Types of protections 
+component Individuals protection [0.21, 0.52] label [34, -10]
+component Collective protections [0.21, 0.27] label [-91, 1]
+
+Individual protection->Individual
+Collective protections->Collective
+Individuals protection->Individual
+Enforcement->Collective protections
+Enforcement->Individuals protection
+
+
+
+// Failure modes & Ressiliance eng 
+component Anticipated failures [0.47, 0.84] label [26, -8]
+component Unanticipated failures [0.47, 0.75] label [-102, -16]
+
+component Safety I [0.32, 0.72] label [5, -10] // Preventing failure 
+component Safety II [0.28, 0.76] // Handling failure 
+
+
+
+Collective->Player
+Individual->Player
+Gaming company->Game type
+
+component Moderators [0.17, 0.42] label [-88, 31]
+component Auditors [0.53, 0.36] label [-77, 16]
+
+
+component Proactive [0.32, 0.91]
+component Reactive [0.38, 0.89]
+
+Industry body->Auditors
+Auditors->Gaming company
+Gaming company->Moderators
+Moderators->Player
+component Ratings [0.36, 0.12]
+component Safety team [0.44, 0.14] label [-78, -10]
+Game type->Collective
+Game type->Individual
+Moderators->Individual
+Moderators->Collective
+Game type->Moderators
+
+
+component Safe spaces [0.27, 0.64]
+
+component Surveillance [0.68, 0.75]
+component Data [0.65, 0.77]
+component Intended use [0.54, 0.83] label [15, 1]
+component Unintended use [0.53, 0.75] label [-122, -6]
+Intended use->Unanticipated failures
+Unintended use->Anticipated failures
+Unintended use->Unanticipated failures
+Intended use->Anticipated failures
+component Commons [0.63, 0.86]
+component Game Governance [0.23, 0.32] label [-62, -39]
+
+
+Game Governance->Moderators
+Auditors->Game Governance
+Game type->Game Governance
+component Ethics [0.83, 0.47] label [-62, -9]
+Enforcement->Auditors
+component Ethical Framework [0.79, 0.48] label [17, -1]
+component Values [0.87, 0.46]
+Values->Ethics
+Ethics->Ethical Framework
