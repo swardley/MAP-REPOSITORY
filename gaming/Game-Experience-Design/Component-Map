@@ -1,0 +1,129 @@
+title Game Design and UX
+
+
+evolution Novel->Emerging->Good->Best
+
+// Gaming Research
+// Creative Commons Share-Alike
+// Authors
+// 
+
+////////////////////////////////////////////////////////////////
+/////////////  Assumptions / decisions
+////////////////////////////////////////////////////////////////
+
+// we can differentiate storybased games and mechanic based games
+// Single games are very different to multi-user games
+// Differences between competitive and collaborative games 
+// Focus on entertainment (leave serious gaming out)
+// Different age ranges demands different researches of the audience and their evolution as real personas and needs
+// In gambling games the understanding and nurturing of habits is key
+// 
+
+////// Comments
+// Phase 1 : Ideation
+// During the ideation you evaluate the technical constrains
+// On which platform do we want to build this game?
+// Decide about what type of commercialization model we are going to use?
+// What is the monetization model we are going to use?
+// What are going to be the distribution layers?
+
+// Specific climatic patterns we can have in the Gaming Industry
+// Distributor channel rules change, for instance: Unity run-time changes in the pricing, or google marketplace change of rules.
+// Social media trends 
+
+// note 
+note Specific climatic patterns we can have in the Gaming Industry [0.08, 0.03]
+note -Distributor channel rules change [0.06, 0.05]
+note -Social media trends [0.04, 0.05]
+
+
+////////////////////////////////////////////////////////////////
+/////////////  Users
+////////////////////////////////////////////////////////////////
+
+// Producers
+//    Designers
+//    Distributors
+anchor Producers [0.96, 0.86]
+// Consumers
+//    Gamers
+
+anchor Consumer [0.97, 0.58]
+
+// Moders
+//    Streamers
+//    Marketers
+anchor Moders [0.97, 0.23]
+anchor Designer [0.98, 0.37]
+
+
+
+////////////////////////////////////////////////////////////////
+/////////////  components
+////////////////////////////////////////////////////////////////
+
+component maximize-profits [0.88, 0.83] label [33, -7]
+component target-audience [0.64, 0.89]
+
+component Vision [0.62, 0.62]
+component Focus-on-elements [0.69, 0.34] label [-97, -9]
+component Build-story [0.62, 0.44]
+component Commercialization-model [0.54, 0.78] label [57, -5]
+component Visualize-end-product [0.47, 0.51] label [56, -4]
+component Monetization-model [0.45, 0.87] label [40, -4]
+component Drama-Tension-Curiosity [0.66, 0.15] label [-112, -5]
+component Building-&-release-of-tension [0.58, 0.12] label [-128, -6]
+
+component Ideal-gamer-persona [0.92, 0.36] label [45, -3]
+component Build-user-base [0.71, 0.72] label [28, -5]
+
+
+
+
+component Design-a-Game [0.91, 0.48] label [9, 2]
+component Prototyping [0.32, 0.73] label [10, 5]
+
+component Mental-space [0.36, 0.44] label [9, 4]
+
+
+
+component Experience [0.91, 0.64]
+component First-Impression [0.84, 0.64] label [28, -3]
+component Status [0.86, 0.74] label [18, 4]
+
+component Laws [0.24, 0.75] label [14, 4]
+component Incentives [0.17, 0.78] label [11, 4]
+
+////////////////////////////////////////////////////////////////
+/////////////  Links
+////////////////////////////////////////////////////////////////
+
+Producers->maximize-profits
+
+maximize-profits->Commercialization-model
+maximize-profits->Monetization-model
+maximize-profits->target-audience
+target-audience->Build-user-base
+target-audience->Status
+Monetization-model->Laws
+Laws->Incentives
+Moders->Vision
+
+Consumer->Experience
+Experience->Vision
+Experience->First-Impression
+Experience->Status
+
+Vision->Focus-on-elements
+Vision->Build-story
+Vision->Visualize-end-product
+Vision->Commercialization-model
+Vision->Monetization-model
+
+Build-story->Drama-Tension-Curiosity
+Drama-Tension-Curiosity->Building-&-release-of-tension
+
+Designer->Ideal-gamer-persona
+Designer->Design-a-Game
+Ideal-gamer-persona->Build-user-base
