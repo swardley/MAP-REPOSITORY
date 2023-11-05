@@ -1,0 +1,177 @@
+title Game & Experience Design
+
+
+// Creative Commons Share-Alike
+// Authors
+// 
+
+////////////////////////////////////////////////////////////////
+/////////////  Assumptions / decisions
+////////////////////////////////////////////////////////////////
+
+// we can differentiate storybased games and mechanic based games
+// Single games are very different to multi-user games
+// Differences between competitive and collaborative games 
+// Focus on entertainment (leave serious gaming out)
+// Different age ranges demands different researches of the audience and their evolution as real personas and needs
+// In gambling games the understanding and nurturing of habits is key
+// 
+
+////// Comments
+// Phase 1 : Ideation
+// During the ideation you evaluate the technical constrains
+// On which platform do we want to build this game?
+// Decide about what type of commercialization model we are going to use?
+// What is the monetization model we are going to use?
+// What are going to be the distribution layers?
+
+// Specific climatic patterns we can have in the Gaming Industry
+// Distributor channel rules change, for instance: Unity run-time changes in the pricing, or google marketplace change of rules.
+// Social media trends 
+
+
+component gamers [0.98, 0.85] label [5, -10]
+component drama [0.90, 0.39] label [2, -26]
+component status [0.90, 0.23] label [-28, -21]
+component tension [0.90, 0.49] label [5, 24]
+component dopamine [0.90, 0.38] label [-46, 22]
+
+
+component designers [0.98, 0.47]
+component vision [0.77, 0.51]
+designers->vision
+gamers->experience
+
+
+component technical platforms [0.05, 0.84] label [7, -27]
+pipeline technical platforms [0.25, 0.9]
+component distribution platforms [0.19, 0.76] label [14, -14]
+pipeline distribution platforms [0.4, 0.95]
+component game engine [0.12, 0.67]
+pipeline game engine [0.3, 0.8]
+component game mechanics [0.59, 0.44]
+component world building [0.65, 0.47] label [-21, 18]
+component story [0.71, 0.38] label [-29, -14]
+pipeline story [0.3, 0.8]
+component monetisation strategy [0.41, 0.74] label [11, -30]
+pipeline monetisation strategy [0.6, 0.8]
+component streamers [0.97, 0.71]
+component watchers [0.96, 0.91]
+component streaming platforms [0.23, 0.88]
+streaming platforms->watchers
+streaming platforms->streamers
+component target audience [0.56, 0.43] label [-66, -12]
+vision->story
+story->target audience
+component producers [0.99, 0.42] label [-71, -5]
+producers->monetisation strategy
+vision->game mechanics
+story->world building
+story->game mechanics
+component crossselling [0.29, 0.79] label [23, 4]
+component nurturing habits [0.29, 0.68] label [-39, 15]
+
+component disconnect from life [0.90, 0.27] label [-27, -57]
+
+drama->story
+component social [0.90, 0.46] label [-20, 24]
+gamers->experience
+watchers->drama
+watchers->tension
+streamers->monetisation strategy
+component tension creation [0.77, 0.24] label [-63, -16]
+vision->tension creation
+tension creation->story
+component coop vs competitive [0.43, 0.47] label [-57, -16]
+component betatesting [0.49, 0.76]
+story->betatesting
+component data [0.53, 0.65] label [-24, -8]
+betatesting->data
+component modders [0.98, 0.56]
+modders->game engine
+component evaluation [0.62, 0.76]
+evaluation->betatesting
+story->evaluation
+evaluation->data
+component build release cycle [0.63, 0.55] label [-2, -22]
+story->build release cycle
+component profit [0.79, 0.69]
+designers->profit
+producers->profit
+streamers->profit
+profit->monetisation strategy
+monetisation strategy->game engine
+monetisation strategy->distribution platforms
+monetisation strategy->streaming platforms
+monetisation strategy->technical platforms
+component agency [0.73, 0.28] label [-62, 0]
+drama->agency
+dopamine->agency
+social->agency
+gamers->agency
+designers->story
+betatesting->target audience
+component marketing [0.31, 0.59]
+pipeline marketing [0.3,0.8]
+target audience->marketing
+game mechanics->coop vs competitive
+
+
+pipeline technical platforms [0.25, 0.9]
+game engine->technical platforms
+component unity [0.10, 0.68] label [-10, 23]
+component unreal [0.10, 0.67] label [-40, 24]
+component roblox [0.10, 0.69] label [9, 20]
+component custom [0.10, 0.37] label [1, -15]
+component play store, apple store, [0.17, 0.91] label [38, -15]
+component webpage [0.17, 0.44] label [7, 23]
+distribution platforms->technical platforms
+component subscription [0.39, 0.79] label [19, -4]
+component ads [0.39, 0.71] label [-10, 19]
+component pay to win [0.39, 0.68] label [-36, -20]
+component growth hacking [0.29, 0.34] label [-65, 28]
+monetisation strategy->marketing
+component experience [0.92, 0.32] label [-16, -12]
+pipeline experience [0.2,0.5]
+profit->monetisation strategy
+coop vs competitive->game engine
+coop vs competitive->technical platforms
+component empathy [0.49, 0.24] label [-47, -14]
+story->empathy
+target audience->empathy
+evaluation->empathy
+component story building (?) [0.59, 0.27] label [-65, -17]
+story->story building (?)
+story building (?)->empathy
+drama->tension creation
+tension->tension creation
+dopamine->tension creation
+tension creation->agency
+agency->story
+agency->game mechanics
+component artisan [0.69, 0.31] label [-55, 10]
+component conveyor belt [0.69, 0.79] label [18, -2]
+component genre [0.69, 0.76] label [0, -20]
+profit->evaluation
+target audience->data
+component in game monitoring (?) [0.44, 0.24] label [-53, -8]
+data->in game monitoring (?)
+empathy->in game monitoring (?)
+component game context monitoring [0.43, 0.28]
+empathy->game context monitoring
+designers->game context monitoring
+story->game context monitoring
+world building->game mechanics
+build release cycle->world building
+build release cycle->world building
+producers->in game monitoring (?)
+modders->status
+modders->social
+component mod support [0.90, 0.25] label [-36, 25]
+modders->mod support
+vision->empathy
+component continous challenge [0.69, 0.53] label [-22, -39]
+continous challenge->build release cycle
+component progression [0.69, 0.62] label [-47, -21]
+component control [0.90, 0.32] label [-26, 24]
+component developers [0.99, 0.64]
