@@ -1,6 +1,10 @@
-title Purposful gaming
+title Gaming Industry - Purposful gaming. NOV 2023
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
 
-anchor Learner [0.96, 0.66]
+//CC by SA
+
+component Learner [0.96, 0.66]
 //anchor Sponsor [0.95, 0.78]
 
 component Knowledge and ability to apply it in RL [0.68, 0.71] label [24, -38]
