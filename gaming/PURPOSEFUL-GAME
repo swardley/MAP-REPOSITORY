@@ -1,0 +1,58 @@
+title Purposful gaming
+
+anchor Learner [0.96, 0.66]
+//anchor Sponsor [0.95, 0.78]
+
+component Knowledge and ability to apply it in RL [0.68, 0.71] label [24, -38]
+component Knowledge (theory) [0.60, 0.66]
+
+
+component Motivation [0.85, 0.41] label [-55, -17]
+pipeline Motivation [0.26, 0.75] label [0.26, 0.75]
+component Fast Learning [0.78, 0.31] label [-45, 27]
+component Entertainment [0.64, 0.40] label [-43, 26]
+component Status [0.71, 0.36] label [-22, 24]
+
+component Relevant/Meaning [0.66, 0.18]
+component Safe learning environment [0.36, 0.05] label [-30, -62]
+component Feedback [0.18, 0.10]
+component Validation [0.36, 0.53]
+
+//
+component ? RL Practice [0.19, 0.81]
+
+
+component Game [0.37, 0.35]
+component Content [0.08, 0.33] label [-33, -16]
+component Game Design [0.33, 0.13]
+component Delivery Mode [0.51, 0.11]
+component Delivery Mechanics [0.26, 0.44]
+
+component Virtual [0.12, 0.51]
+component Physical [0.09, 0.66]
+
+
+
+
+//evolve Kettle 0.62 label [16, 7]
+//component Power [0.1, 0.7] label [-27, 20]
+//evolve Power 0.89 label [-12, 21]
+
+Learner->Knowledge and ability to apply it in RL
+Learner->Motivation
+
+Knowledge and ability to apply it in RL->Knowledge (theory) 
+
+
+//Public->Cup of Tea
+//Cup of Tea->Cup
+//Cup of Tea->Tea
+//Cup of Tea->Hot Water
+
+//annotation 1 [[0.42,0.49],[0.08,0.79] ] Standardising power allows Kettles to evolve faster
+//annotation 2 [0.48, 0.85] Hot water is obvious and well known
+//annotations [0.60, 0.02]
+
+//note +a generic note appeared [0.23, 0.33]
+
+style wardley
