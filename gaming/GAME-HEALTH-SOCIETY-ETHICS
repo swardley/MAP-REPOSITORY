@@ -59,12 +59,12 @@ Industry body->Regulations
 
 Regulatory mechanisms->Regulations
 
-component Maintainence Framework [0.53, 0.49] label [29, -14]
+component Maintainence Framework [0.56, 0.49] label [29, -14]
 Regulations->Maintainence Framework
 
 component Principles [0.55, 0.32] label [-80, 20]
-component Support [0.55, 0.25] label [-68, 11]
-component Roadmap [0.53, 0.20] label [-56, -11]
+component Support [0.52, 0.24] label [-68, 11]
+component Roadmap [0.54, 0.21] label [-56, -11]
 
 Charter->Principles
 Charter->Support
@@ -143,7 +143,7 @@ component Public Safety [0.62, 0.78] label [5, -10]
 component Product Liability [0.62, 0.71] label [7, 3]
 component National Security [0.61, 0.81] label [4, 12]
 component AI Regulation [0.62, 0.03] label [-19, -12]
-component Web3 Regulation [0.62, 0.11] label [-18, 9]
+component Web3 Regulation [0.61, 0.14] label [-18, 9]
 component AR./VR [0.61, 0.06] label [-5, 26]
 component Data Protection/Privacy [0.62, 0.64] label [-4, 5]
 component Cyber Security [0.61, 0.50] label [3, 7]
@@ -151,14 +151,14 @@ component Cyber Security [0.61, 0.50] label [3, 7]
 
 
 component Societal Progress [0.82, 0.08]
-component ESG/Equality Law [0.81, 0.58] label [34, -8]
+component ESG [0.61, 0.46] label [7, 8]
 component Environmental Reqs [0.75, 0.68] label [27, -11]
 component Education [0.75, 0.53]
 component Gamifying positive habits [0.76, 0.43] label [25, -5]
 component Enablement [0.78, 0.12] label [9, -6]
 Societal Progress->Regulatory mechanisms
 Societal Progress->Enablement
-pipeline Enablement [0.04, 0.93]
+pipeline Enablement [0.05, 0.81]
 component Propaganda [0.76, 0.08] label [8, 1]
 component Civic Organization [0.77, 0.19]
 component Education [0.75, 0.53]
@@ -176,15 +176,15 @@ Ethical Framework->Societal Progress
 Ethical Framework->Safety
 Safety->Safe spaces
 Safe spaces->Enablement
-component Legal Mechanisms [0.84, 0.74] label [14, -8]
+component Legal Mechanisms [0.83, 0.65] label [14, -8]
 Safety->Legal Mechanisms
-component HEalth/wellbeing [0.53, 0.89]
-component Mental wellbeing [0.51, 0.88]
-component Impulse Control [0.45, 0.88]
-component What to measure [0.39, 0.11] label [5, -10]
+//component HEalth/wellbeing [0.53, 0.89]
+//component Mental wellbeing [0.51, 0.88]
+//component Impulse Control [0.45, 0.88] label [5, -10]
+//component What to measure [0.39, 0.11] label [5, -10]
 //component Gaming measures the most exploitive thing [0.39, 0.04] label [10, -41]
-component Company level levers [0.32, 0.61]
-component Good and Bad use of dopamine [0.45, 0.68] label [4, -41]
+//component Company level levers [0.32, 0.61]
+//component Good and Bad use of dopamine [0.45, 0.68] label [4, -41]
 //component Measuring user centric outcomes vs Economic incentives [0.39, 0.12] label [21, -43]
 //component Measuring post gaming experience [0.09, 0.04] label [6, -30]
 component Revenue Maximization [0.69, 0.70] label [19, -16]
@@ -193,11 +193,16 @@ component Revenue Maximization [0.69, 0.70] label [19, -16]
 component Attention Maximizing [0.69, 0.82]
 component Player Acquisition [0.70, 0.41] label [5, -10]
 component Brand Maximization [0.69, 0.18]
-component Community relations [0.46, 0.55] label [23, -9]
-component Individual relations [0.49, 0.58] label [18, -14]
+//component Community relations [0.46, 0.55] label [23, -9]
+//component Individual relations [0.49, 0.58] label [18, -14]
 component Trust [0.92, 0.42] label [9, 2]
 Values->Trust
-component Reliability [0.46, 0.79]
-component Competence [0.39, 0.79]
-component Care [0.33, 0.73]
+//component Reliability [0.46, 0.79] label [5, -10]
+//component Competence [0.39, 0.79]
+//component Care [0.69, 0.10]
 Monitoring->What to measure
+Regulations->Monitoring
+Legal Mechanisms->Industry body
+Trust->Safety
+Trust->Gaming Ethical Framework
+Ethics->Gaming Ethical Framework
