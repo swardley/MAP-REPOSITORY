@@ -1,4 +1,4 @@
-title Gaming Industry - Health, Wellbeing, Society, Ethics. OCT 2023 - CREATED BY Group 5
+title Gaming Industry - Health, Wellbeing, Society, Ethics 2023 - CREATED BY Group 5 - v2
 
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
@@ -6,29 +6,30 @@ style wardley
 // Creative Commons 4.0 Share Alike - CC by SA
 // note If you zoom out on the browser ... say 80% ... it should look a lot cleaner. [0.91, 0.02]
 
-anchor Society [0.94, 0.46]
+anchor Society [0.97, 0.50]
 
 
 // Components 
 
 
-component Safety [0.90, 0.43] label [27, -7]
-component Regulatory mechanisms [0.87, 0.38] label [-89, -24]
-component Commercial governance [0.81, 0.32] label [-93, -29]
+component Safety [0.91, 0.53] label [28, 3]
+component Regulatory mechanisms [0.87, 0.48] label [-89, -24]
+component Commercial governance [0.81, 0.42] label [-93, -22]
 
 
 
-component Industry body [0.73, 0.35] label [-131, -5]
+component Industry body [0.65, 0.34] label [-131, -5]
 
-component Charter [0.67, 0.29] label [-70, -2]
-component Enforcement [0.56, 0.32] label [-96, 2]
-component Regulations [0.64, 0.43] label [11, -5]
+component Charter [0.63, 0.29] label [-84, 3]
+component Enforcement [0.47, 0.32] label [-96, 2]
+component Regulations [0.62, 0.44] label [11, -5]
 component Member companies [0.44, 0.45] label [27, -17]
-component Reps/Participants [0.69, 0.17] label [-105, 5]
+component Reps/Participants [0.53, 0.45] label [-105, 5]
 
 
 
 component Gaming company [0.35, 0.50] label [22, 3]
+
 
 
 component Game type [0.29, 0.41] label [-80, -13]
@@ -41,7 +42,9 @@ component Player [0.06, 0.45] label [-55, 19]
 
 // Connections 
 
-Society->Safety
+Society->Values
+Values -> Safety
+Values -> Societal Progress
 
 Safety->Regulatory mechanisms
 Regulatory mechanisms->Commercial governance
@@ -56,12 +59,12 @@ Industry body->Regulations
 
 Regulatory mechanisms->Regulations
 
-component Maintainence Framework [0.59, 0.47] label [60, -16]
+component Maintainence Framework [0.53, 0.49] label [29, -14]
 Regulations->Maintainence Framework
 
-component Principles [0.60, 0.27] label [-80, 20]
-component Support [0.62, 0.25] label [-68, 11]
-component Roadmap [0.64, 0.23] label [-56, -11]
+component Principles [0.55, 0.32] label [-80, 20]
+component Support [0.55, 0.25] label [-68, 11]
+component Roadmap [0.53, 0.20] label [-56, -11]
 
 Charter->Principles
 Charter->Support
@@ -70,8 +73,8 @@ Member companies->Gaming company
 
 
 // Types of protections 
-component Individuals protection [0.21, 0.52] label [34, -10]
-component Collective protections [0.21, 0.27] label [-91, 1]
+component Individuals protection [0.21, 0.63] label [34, -10]
+component Collective protections [0.21, 0.19] label [-91, 5]
 
 Individual protection->Individual
 Collective protections->Collective
@@ -79,14 +82,14 @@ Individuals protection->Individual
 Enforcement->Collective protections
 Enforcement->Individuals protection
 
+pipeline Regulations [0.02, 0.92]
 
 
-// Failure modes & Ressiliance eng 
-component Anticipated failures [0.47, 0.84] label [26, -8]
-component Unanticipated failures [0.47, 0.75] label [-102, -16]
 
-component Safety I [0.32, 0.72] label [5, -10] // Preventing failure 
-component Safety II [0.28, 0.76] // Handling failure 
+
+
+component Safety I [0.21, 0.76] label [5, -10] // Preventing failure 
+component Safety II [0.22, 0.16] // Handling failure 
 
 
 
@@ -95,18 +98,15 @@ Individual->Player
 Gaming company->Game type
 
 component Moderators [0.17, 0.42] label [-88, 31]
-component Auditors [0.53, 0.36] label [-77, 16]
+component Auditors [0.43, 0.34] label [-77, 16]
 
 
-component Proactive [0.32, 0.91]
-component Reactive [0.38, 0.89]
 
 Industry body->Auditors
 Auditors->Gaming company
 Gaming company->Moderators
 Moderators->Player
-component Ratings [0.36, 0.12]
-component Safety team [0.44, 0.14] label [-78, -10]
+
 Game type->Collective
 Game type->Individual
 Moderators->Individual
@@ -114,26 +114,90 @@ Moderators->Collective
 Game type->Moderators
 
 
-component Safe spaces [0.27, 0.64]
+component Safe spaces [0.85, 0.53]
 
-component Surveillance [0.68, 0.75]
-component Data [0.65, 0.77]
-component Intended use [0.54, 0.83] label [15, 1]
-component Unintended use [0.53, 0.75] label [-122, -6]
-Intended use->Unanticipated failures
-Unintended use->Anticipated failures
-Unintended use->Unanticipated failures
-Intended use->Anticipated failures
+component Surveillance [0.61, 0.88]
+component Data [0.61, 0.86]
+
+
 component Commons [0.63, 0.86]
-component Game Governance [0.23, 0.32] label [-62, -39]
+component Game Governance [0.23, 0.32] label [-78, -40]
 
 
 Game Governance->Moderators
 Auditors->Game Governance
 Game type->Game Governance
-component Ethics [0.83, 0.47] label [-62, -9]
+component Ethics [0.93, 0.64] label [3, -10]
 Enforcement->Auditors
-component Ethical Framework [0.79, 0.48] label [17, -1]
-component Values [0.87, 0.46]
+component Gaming Ethical Framework [0.88, 0.23] label [17, -1]
+component Values [0.95, 0.42] label [20, -11]
 Values->Ethics
 Ethics->Ethical Framework
+component Agency [0.23, 0.78]
+component Participation [0.18, 0.81]
+
+pipeline Group Size [0.11, 0.9]
+component Group Size [0.23, 0.08]
+
+component Public Safety [0.62, 0.78] label [5, -10]
+component Product Liability [0.62, 0.71] label [7, 3]
+component National Security [0.61, 0.81] label [4, 12]
+component AI Regulation [0.62, 0.03] label [-19, -12]
+component Web3 Regulation [0.62, 0.11] label [-18, 9]
+component AR./VR [0.61, 0.06] label [-5, 26]
+component Data Protection/Privacy [0.62, 0.64] label [-4, 5]
+component Cyber Security [0.61, 0.50] label [3, 7]
+
+
+
+component Societal Progress [0.82, 0.08]
+component ESG/Equality Law [0.81, 0.58] label [34, -8]
+component Environmental Reqs [0.75, 0.68] label [27, -11]
+component Education [0.75, 0.53]
+component Gamifying positive habits [0.76, 0.43] label [25, -5]
+component Enablement [0.78, 0.12] label [9, -6]
+Societal Progress->Regulatory mechanisms
+Societal Progress->Enablement
+pipeline Enablement [0.04, 0.93]
+component Propaganda [0.76, 0.08] label [8, 1]
+component Civic Organization [0.77, 0.19]
+component Education [0.75, 0.53]
+component Accessibility/Diversity [0.76, 0.39] label [-129, -18]
+component Monitoring [0.46, 0.15] label [5, -10]
+component Economic incentives [0.71, 0.49] label [22, -3]
+pipeline Economic incentives [0.04, 0.9]
+
+Monitoring->Enforcement
+Enablement->Monitoring
+Gamifying positive habits->Industry body
+Economic incentives->Industry body
+Ethical Framework->Regulatory mechanisms
+Ethical Framework->Societal Progress
+Ethical Framework->Safety
+Safety->Safe spaces
+Safe spaces->Enablement
+component Legal Mechanisms [0.84, 0.74] label [14, -8]
+Safety->Legal Mechanisms
+component HEalth/wellbeing [0.53, 0.89]
+component Mental wellbeing [0.51, 0.88]
+component Impulse Control [0.45, 0.88]
+component What to measure [0.39, 0.11] label [5, -10]
+//component Gaming measures the most exploitive thing [0.39, 0.04] label [10, -41]
+component Company level levers [0.32, 0.61]
+component Good and Bad use of dopamine [0.45, 0.68] label [4, -41]
+//component Measuring user centric outcomes vs Economic incentives [0.39, 0.12] label [21, -43]
+//component Measuring post gaming experience [0.09, 0.04] label [6, -30]
+component Revenue Maximization [0.69, 0.70] label [19, -16]
+component Player Retention [0.69, 0.61]
+component Revenue Maximization [0.69, 0.70] label [19, -16]
+component Attention Maximizing [0.69, 0.82]
+component Player Acquisition [0.70, 0.41] label [5, -10]
+component Brand Maximization [0.69, 0.18]
+component Community relations [0.46, 0.55] label [23, -9]
+component Individual relations [0.49, 0.58] label [18, -14]
+component Trust [0.92, 0.42] label [9, 2]
+Values->Trust
+component Reliability [0.46, 0.79]
+component Competence [0.39, 0.79]
+component Care [0.33, 0.73]
+Monitoring->What to measure
