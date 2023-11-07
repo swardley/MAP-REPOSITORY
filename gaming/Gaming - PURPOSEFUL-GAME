@@ -1,62 +1,106 @@
-title Gaming Industry - Purposful gaming. NOV 2023
+title Gaming Industry - Purposful Gaming. NOV 2023
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
 //CC by SA
 
-component Learner [0.96, 0.66]
-//anchor Sponsor [0.95, 0.78]
+component Learner [0.97, 0.66] label [29, -9]
+component Sponsor [0.97, 0.62] label [-20, -16]
 
-component Knowledge and ability to apply it in RL [0.68, 0.71] label [24, -38]
-component Knowledge (theory) [0.60, 0.66]
+component ADVANTAGE [0.94, 0.51] label [-78, 4]
+pipeline ADVANTAGE
 
-
-component Motivation [0.85, 0.41] label [-55, -17]
-pipeline Motivation [0.26, 0.75] label [0.26, 0.75]
-component Fast Learning [0.78, 0.31] label [-45, 27]
-component Entertainment [0.64, 0.40] label [-43, 26]
-component Status [0.71, 0.36] label [-22, 24]
-
-component Relevant/Meaning [0.66, 0.18]
-component Safe learning environment [0.36, 0.05] label [-30, -62]
-component Feedback [0.18, 0.10]
-component Validation [0.36, 0.53]
-
-//
-component ? RL Practice [0.19, 0.81]
-
-
-component Game [0.37, 0.35]
-component Content [0.08, 0.33] label [-33, -16]
-component Game Design [0.33, 0.13]
-component Delivery Mode [0.51, 0.11]
-component Delivery Mechanics [0.26, 0.44]
-
-component Virtual [0.12, 0.51]
-component Physical [0.09, 0.66]
+component Skills [0.53, 0.65] label [-53, -2]
+pipeline Skills [0.58, 0.80]
+component Talent [0.51, 0.65] label [-16, 26]
+component Artefacts [0.51, 0.72] label [-20, 21]
+component Cross-Disciplinary [0.51, 0.69] label [11, -33]
+component Mastery [0.51, 0.79] label [-22, 25]
+component Heuristics [0.51, 0.59] label [-35, 24]
+component Motivation [0.85, 0.52] label [-79, -11]
+pipeline Motivation [0.19, 0.7] label [0.19, 0.7]
+component Urgency [0.83, 0.43] label [-22, 27]
+component Goal [0.83, 0.32] label [-17, 25]
+component Agility [0.82, 0.20] label [-40, 24]
+component Data and Insights [0.82, 0.50] label [-31, 12]
+component Entertainment [0.83, 0.56] label [-34, 26]
+component Status [0.83, 0.69] label [-26, 26]
+component self actualisation [0.83, 0.38] label [-32, 15]
+component Benevolence [0.83, 0.26] label [-43, 26]
 
 
+component DELIVERY MECHANISM [0.18, 0.43] label [-78, -27]
+pipeline DELIVERY MECHANISM [0.29, 0.83]
 
+component online course [0.16, 0.73] label [-13, 22]
+component PURPOSEFUL GAME [0.16, 0.50] label [-55, 18]
+pipeline PURPOSEFUL GAME
 
-//evolve Kettle 0.62 label [16, 7]
-//component Power [0.1, 0.7] label [-27, 20]
-//evolve Power 0.89 label [-12, 21]
+component FEEDBACK [0.55, 0.35] label [-34, -12]
+pipeline FEEDBACK [0.31, 0.45]
+component Validation [0.79, 0.81] label [-6, -13]
+pipeline Validation [0.75, 0.85]
 
+component Incentive [0.53, 0.44] label [-14, 23]
+component Admonition [0.53, 0.32] label [-43, 24]
+
+component DELIVERY MODE [0.09, 0.61] label [-23, -13]
+pipeline DELIVERY MODE [0.50, 0.71]
+
+component LEARNING OBJECTIVE [0.35, 0.43] label [12, -29]
+pipeline LEARNING OBJECTIVE [ 0.2, 0.8]
+component Critical Thinking [0.33, 0.21] label [-35, 17]
+component Problem Solving [0.33, 0.34] label [-23, 17]
+component Progress Tracking [0.33, 0.76] label [-23, 14]
+component Knowledge [0.33, 0.44] label [-32, 26]
+component Demonstration [0.33, 0.58] label [-28, 28]
+component Innovation [0.33, 0.27] label [-29, 28]
+
+component Virtual [0.07, 0.55] label [-20, 27]
+component Physical [0.07, 0.65] label [-8, 26]
+
+component certification [0.77, 0.80] label [-21, 27]
+
+component Evaluation [0.66, 0.81] label [8, -6]
+pipeline Evaluation [0.77, 0.85]
+component Assessment [0.64, 0.81] label [-31, 26]
+
+component PRACTICE SIMULATION [0.68, 0.24] label [-45, -39]
+pipeline PRACTICE SIMULATION [0.18, 0.54]
+component Experience (ARAP) [0.66, 0.19] label [-41, 18]
+component Feedback  Loops [0.66, 0.24] label [-23, 18]
+component Perspectives (ADAP) [0.66, 0.31] label [-21, 16]
+component Application of Skills (AMAP) [0.66, 0.48] label [-25, 16]
+component Environment Safe or Not [0.66, 0.40] label [-28, 14]
+
+component SIMULATION PROFILES [0.49, 0.24] label [-70, -29]
+pipeline SIMULATION PROFILES [0.18, 0.45]
+component Adaptive [0.47, 0.19] label [-38, 19]
+component Tailored [0.47, 0.26] label [-38, 25]
+component Learning   Path [0.47, 0.31] label [-23, 16]
+component Levels(BIE) [0.46, 0.36] label [-10, 19]
+component Culture [0.47, 0.44] label [-7, 24]
+
+// connections
 Learner->Knowledge and ability to apply it in RL
 Learner->Motivation
 
-Knowledge and ability to apply it in RL->Knowledge (theory) 
-
-
-//Public->Cup of Tea
-//Cup of Tea->Cup
-//Cup of Tea->Tea
-//Cup of Tea->Hot Water
-
-//annotation 1 [[0.42,0.49],[0.08,0.79] ] Standardising power allows Kettles to evolve faster
-//annotation 2 [0.48, 0.85] Hot water is obvious and well known
-//annotations [0.60, 0.02]
-
-//note +a generic note appeared [0.23, 0.33]
-
-style wardley
+Learner->Skills
+ADVANTAGE->Sponsor
+ADVANTAGE->Skills
+online course->certification
+Entertainment->Purposeful game
+PURPOSEFUL GAME->Entertainment
+PURPOSEFUL GAME->Skills
+PURPOSEFUL GAME->DELIVERY MODE
+Status->Validation
+Skills->Validation
+Validation->Evaluation
+ADVANTAGE->Motivation
+Motivation->PRACTICE SIMULATION
+PRACTICE SIMULATION->Feedback  Loops
+PRACTICE SIMULATION->SIMULATION PROFILES
+SIMULATION PROFILES->LEARNING OBJECTIVE
+LEARNING OBJECTIVE->PURPOSEFUL GAME
+PRACTICE SIMULATION->DELIVERY MECHANISM
+PRACTICE SIMULATION->FEEDBACK
