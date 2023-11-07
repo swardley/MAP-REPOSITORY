@@ -1,0 +1,64 @@
+title Game Economies
+anchor Publisher [0.95, 0.45]
+anchor Players [0.94, 0.66]
+component Game [0.87, 0.43] label [21, -14]
+component Investing/Funding Communities [0.65, 0.25] label [-40, -40]
+component Business Model [0.55, 0.25] label [-103, -16]
+component VCs [0.45, 0.48] label [8, -6]
+component Private Investors [0.43, 0.44] label [12, -7]
+component Business Planning and Strategy [0.49, 0.25] label [-72, -21]
+component Game Catalogue [0.70, 0.38] label [11, -4]
+component Game Store [0.85, 0.36] label [-83, -15]
+component Game-Specific Marketplace [0.80, 0.29]
+component Funding Model [0.44, 0.33] label [-19, -14]
+component Game Trust & Safety [0.75, 0.52] label [-9, -35]
+component Alternative Distribution [0.74, 0.65] label [32, -11]
+component Published Game Content [0.78, 0.32] label [1, -20]
+component Virtual Items [0.75, 0.24] label [-114, 3]
+component Game Marketing [0.60, 0.33] label [14, 11]
+component Campaigns [0.62, 0.42] label [11, 7]
+component Game Tournaments [0.66, 0.41] label [24, -20]
+component Game Influencer Communities [0.86, 0.60] label [7, -5]
+component Player Profiling [0.26, 0.29] label [5, -6]
+component Game Platform [0.55, 0.50] label [15, 4]
+component Hardware [0.50, 0.47] label [-67, -11]
+component Buzz Channel [0.68, 0.55] label [15, 6]
+component Game Developers [0.48, 0.56] label [0, -6]
+
+pipeline Game
+pipeline Business Model
+pipeline Investing/Funding Communities 
+pipeline Buzz Channel
+
+Publisher->Game
+Players->Game
+Publisher->Business Model
+Players->Investing/Funding Communities
+Investing/Funding Communities->VCs
+Investing/Funding Communities->Private Investors
+Business Planning and Strategy->Business Model
+Game Store->Game
+Funding Model->Business Model
+Funding Model->VCs
+Funding Model->Private Investors
+Game-Specific Marketplace->Game
+Business Model->Game Catalogue
+Game Catalogue->Game
+Game Trust & Safety->Game
+Game->Alternative Distribution
+Virtual Items->Game-Specific Marketplace
+Published Game Content->Game Store
+Game Marketing->Game
+Campaigns->Game Marketing
+Game Tournaments->Game Marketing
+Game Marketing->Business Model
+Game Influencer Communities->Game Marketing
+Players->Game Influencer Communities
+Game Platform->Game
+Buzz Channel->Game Influencer Communities
+Buzz Channel->Game Marketing
+Hardware->Game Platform
+Game Developers->Game Platform
+note +a generic note appeared [0.16, 0.32]
+
+style wardley
