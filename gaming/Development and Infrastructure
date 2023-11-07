@@ -1,0 +1,93 @@
+title 2023-11-07 -- Game Development & Infrastructure
+
+// Users
+anchor Gamer co-creation [0.98, 0.12]
+anchor Modders [0.98, 0.22]
+anchor Indie Game studio [0.98, 0.28]
+anchor Gamers (End user) [0.98, 0.68]
+anchor Game Creator [0.98, 0.57]
+anchor Established game studio [0.98, 0.81]
+anchor Established Tech Companies [0.98, 0.92] label [5, -10]
+
+// Needs
+component Purpose [0.87, 0.46]
+pipeline Purpose [0.2, 0.75]
+component Passion/Meaning [0.86, 0.21] label [-3, 13]
+component Profit [0.86, 0.74] label [-23, -18]
+
+component Mod Framework / Dev Kit [0.78, 0.19] label [-68, -22]
+component Game [0.74, 0.36]
+
+Gamer co-creation->Mod Framework / Dev Kit
+Modders->Mod Framework / Dev Kit
+Gamers (End user)->Game
+Established game studio->Profit
+Established Tech Companies->Profit
+Indie Game studio->Passion/Meaning
+Passion/Meaning->Game
+Profit->Game
+Mod Framework / Dev Kit->Game
+
+// Capabilities
+component Intellectual Property [0.67, 0.67] label [-19, -34]
+pipeline Intellectual Property [0.6, 0.80]
+component Creator Experience [0.61, 0.41] label [5, -10]
+component Assets [0.60, 0.34]
+component Game Identity / Universe [0.66, 0.20] label [-60, -23]
+component Asset Creation Tool [0.54, 0.41] label [4, -27]
+pipeline Asset Creation Tool [0.1,0.8]
+component Copyright [0.54, 0.85] label [7, 4]
+component AI Generated 3D models [0.53, 0.11] label [-34, 13]
+component AI Generated Stories [0.53, 0.17] label [-31, -54]
+component AI Generated Music [0.53, 0.19] label [-29, 12]
+component Maya 3D [0.52, 0.74] label [-22, 20]
+component Music - Sounds [0.52, 0.79] label [-44, -25]
+component Data [0.52, 0.38] label [-12, 20]
+component Dopamine [0.78, 0.89]
+component Exclusion [0.39, 0.94]
+component Create Addicts [0.86, 0.32] label [-3, -14]
+component Story [0.52, 0.95]
+component Immersion [0.62, 0.85]
+component Game Engine [0.43, 0.47]
+component Version Management Tool [0.45, 0.38] label [-1, -6]
+component Creation Culture [0.35, 0.56] label [-1, -26]
+pipeline Creation Culture [0.35, 0.75]
+component Hardware / Device Infra [0.21, 0.50] label [-6, -56]
+pipeline Hardware / Device Infra [0.15, 0.75]
+component Experimentation [0.34, 0.36] label [-14, -27]
+component Experience Feedback [0.33, 0.42] label [-23, 8]
+component CI/CD [0.33, 0.58] label [-15, 22]
+component Kanban [0.33, 0.64] label [-12, 15]
+component Agile [0.33, 0.61] label [-8, 16]
+component waterfall [0.34, 0.74] label [-18, -19]
+component Original IP [0.66, 0.61] label [-51, -12]
+component Film/TV/Literary/Franchise [0.66, 0.79] label [65, -5]
+
+Game Creator->Creator Experience
+Game->Assets
+Game Identity / Universe->Assets
+Mod Framework / Dev Kit->Game Identity / Universe
+Game->Game Identity / Universe
+Creator Experience->Asset Creation Tool
+Assets->Asset Creation Tool
+Game->Intellectual Property
+Profit->Dopamine
+Game->Dopamine
+Intellectual Property->Copyright
+Copyright->Exclusion
+Indie Game studio->Create Addicts
+Established game studio->Create Addicts
+Create Addicts->Dopamine
+Game->Game Creator
+Immersion->Story
+Game Identity / Universe->Immersion
+Asset Creation Tool->Game Engine
+Asset Creation Tool->Version Management Tool
+Game Engine->Creation Culture
+Game Engine->Hardware / Device Infra
+Intellectual Property->Story
+Game Identity / Universe->Experience Feedback
+
+
+annotations [0.04, 0.02]
+annotation 1 [0.68, 0.76] Universe, Stories, Assets, Game Framework, Game engine, etc.
