@@ -1,38 +1,47 @@
-title Game Economies
-anchor Publisher [0.95, 0.45]
-anchor Players [0.94, 0.66]
-component Game [0.87, 0.43] label [21, -14]
-component Investing/Funding Communities [0.65, 0.25] label [-40, -40]
-component Business Model [0.55, 0.25] label [-103, -16]
+title Game Economies - November 2023
+anchor Publisher [0.95, 0.43]
+anchor Players [0.95, 0.60]
+component Game [0.87, 0.43] label [12, -14]
+component Investing/Funding Communities [0.61, 0.26] label [-92, -25]
+component Business Model [0.47, 0.24] label [-103, -16]
 component VCs [0.45, 0.48] label [8, -6]
 component Private Investors [0.43, 0.44] label [12, -7]
-component Business Planning and Strategy [0.49, 0.25] label [-72, -21]
-component Game Catalogue [0.70, 0.38] label [11, -4]
-component Game Store [0.85, 0.36] label [-83, -15]
-component Game-Specific Marketplace [0.80, 0.29]
-component Funding Model [0.44, 0.33] label [-19, -14]
-component Game Trust & Safety [0.75, 0.52] label [-9, -35]
-component Alternative Distribution [0.74, 0.65] label [32, -11]
-component Published Game Content [0.78, 0.32] label [1, -20]
+component Business Planning and Strategy [0.37, 0.24] label [-72, -21]
+component Catalogue [0.75, 0.35] label [-28, -11]
+component Game Store [0.87, 0.34] label [-28, -13]
+component Game-Specific Marketplace [0.78, 0.31] label [-92, -24]
+component Funding Model [0.46, 0.34] label [-10, -8]
+component Alternative Distribution [0.87, 0.66] label [32, -11]
+component Published Game Content [0.85, 0.29] label [-74, -36]
 component Virtual Items [0.75, 0.24] label [-114, 3]
-component Game Marketing [0.60, 0.33] label [14, 11]
-component Campaigns [0.62, 0.42] label [11, 7]
-component Game Tournaments [0.66, 0.41] label [24, -20]
-component Game Influencer Communities [0.86, 0.60] label [7, -5]
-component Player Profiling [0.26, 0.29] label [5, -6]
-component Game Platform [0.55, 0.50] label [15, 4]
+component Game Marketing [0.60, 0.33] label [13, 18]
+component Campaigns [0.61, 0.42] label [11, 7]
+component Game Tournaments [0.67, 0.41] label [7, -38]
+component Game Influencer Communities [0.78, 0.62] label [-77, -45]
+component Player Profiling [0.30, 0.30] label [5, -6]
+component Game Platform [0.61, 0.52] label [15, 4]
 component Hardware [0.50, 0.47] label [-67, -11]
-component Buzz Channel [0.68, 0.55] label [15, 6]
-component Game Developers [0.48, 0.56] label [0, -6]
+component Buzz Channel [0.66, 0.54] label [15, 6]
+component Game Developers [0.53, 0.57] label [27, -19]
+component In-Game Economy [0.73, 0.31] label [-72, 7]
+component Licensing/Subscriptions [0.39, 0.42] label [71, 1]
+component Partnerships [0.73, 0.42] label [1, -12]
+component Ad Platform [0.33, 0.49] label [10, -3]
+component Advertisers [0.32, 0.70] label [13, 3]
+component Game Engines [0.44, 0.63]
+component Development Tools [0.47, 0.54] label [7, 11]
+component Game Video Content (Streams) [0.74, 0.66] label [9, -36]
+component Social Platforms [0.73, 0.61] label [-9, 8]
 
 pipeline Game
 pipeline Business Model
 pipeline Investing/Funding Communities 
 pipeline Buzz Channel
+pipeline In-Game Economy
 
 Publisher->Game
 Players->Game
-Publisher->Business Model
+
 Players->Investing/Funding Communities
 Investing/Funding Communities->VCs
 Investing/Funding Communities->Private Investors
@@ -42,8 +51,8 @@ Funding Model->Business Model
 Funding Model->VCs
 Funding Model->Private Investors
 Game-Specific Marketplace->Game
-Business Model->Game Catalogue
-Game Catalogue->Game
+Business Model->Catalogue
+Publisher->Catalogue
 Game Trust & Safety->Game
 Game->Alternative Distribution
 Virtual Items->Game-Specific Marketplace
@@ -59,6 +68,22 @@ Buzz Channel->Game Influencer Communities
 Buzz Channel->Game Marketing
 Hardware->Game Platform
 Game Developers->Game Platform
-note +a generic note appeared [0.16, 0.32]
+In-Game Economy->Game-Specific Marketplace
+Social Login Identity->Business Planning and Strategy
+Licensing/Subscriptions->Business Model
+Player Profiling->Game Marketing
+Partnerships->Game Influencer Communities
+Partnerships->Game Marketing
+Ad Platform->Business Model
+Advertisers->Ad Platform
+Game Engines->Game Developers
+Development Tools->Game Developers
+Game Video Content (Streams)->Game Influencer Communities
+Social Platforms->Game Influencer Communities
+Buzz Channel->Social Platforms
+Social Platforms->Game Video Content (Streams)
+Virtual Items->In-Game Economy
+
+note *trust and safety required at the game, platform, and community levels or the economy collapses under toxicity [0.05, 0.09]
 
 style wardley
