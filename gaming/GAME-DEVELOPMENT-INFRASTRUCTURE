@@ -37,11 +37,11 @@ component Game Identity / Universe [0.66, 0.20] label [-60, -23]
 component Asset Creation Tool [0.54, 0.41] label [4, -27]
 pipeline Asset Creation Tool [0.1,0.8]
 component Copyright [0.54, 0.85] label [7, 4]
-component AI Generated 3D models [0.53, 0.11] label [-34, 13]
-component AI Generated Stories [0.53, 0.17] label [-31, -54]
-component AI Generated Music [0.53, 0.19] label [-29, 12]
-component Maya 3D [0.52, 0.74] label [-22, 20]
-component Music - Sounds [0.52, 0.79] label [-44, -25]
+component AI Generated 3D models [0.52, 0.11] label [-33, 8]
+component AI Generated Stories [0.52, 0.17] label [-30, -49]
+component AI Generated Music [0.52, 0.19] label [-29, 12]
+component Maya 3D [0.53, 0.74] label [-22, 20]
+component Music - Sounds [0.53, 0.79] label [-46, -17]
 component Data [0.52, 0.38] label [-12, 20]
 component Dopamine [0.78, 0.89]
 component Exclusion [0.39, 0.94]
@@ -56,12 +56,12 @@ component Hardware / Device Infra [0.21, 0.50] label [-6, -56]
 pipeline Hardware / Device Infra [0.15, 0.75]
 component Experimentation [0.34, 0.36] label [-14, -27]
 component Experience Feedback [0.33, 0.42] label [-23, 8]
-component CI/CD [0.33, 0.58] label [-15, 22]
-component Kanban [0.33, 0.64] label [-12, 15]
-component Agile [0.33, 0.61] label [-8, 16]
+component CI/CD [0.34, 0.58] label [-15, 22]
+component Kanban [0.34, 0.64] label [-10, 17]
+component Agile [0.34, 0.61] label [-8, 16]
 component waterfall [0.34, 0.74] label [-18, -19]
-component Original IP [0.66, 0.61] label [-51, -12]
-component Film/TV/Literary/Franchise [0.66, 0.79] label [65, -5]
+component Original IP [0.66, 0.61] label [-44, -16]
+component Film/TV/Literary/Franchise [0.66, 0.79] label [61, -10]
 
 Game Creator->Creator Experience
 Game->Assets
@@ -91,3 +91,8 @@ Game Identity / Universe->Experience Feedback
 
 annotations [0.04, 0.02]
 annotation 1 [0.68, 0.76] Universe, Stories, Assets, Game Framework, Game engine, etc.
+
+//Evolution
+evolve Asset Creation Tool 0.05 label [-34, 19]
+Gamer co-creation->Asset Creation Tool
+note AI driven [0.52, 0.02]
