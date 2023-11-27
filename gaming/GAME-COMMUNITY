@@ -1,139 +1,152 @@
-title Gaming (Community)
-anchor Players [0.95, 0.25]
-anchor Social Groups [0.95, 0.50]
-anchor Businesses [0.95, 0.78]
+title Gaming Industry - Community. NOV 2023
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 
-component Safety [0.9, 0.25]
-Players -> Safety
-component Self-expression [0.9, 0.35]
-Players -> Self-expression
 
-component Ownership [0.9, 0.5]
-Social Groups -> Ownership
+//CC by SA
 
-component Revenue [0.9, 0.8]
-Businesses -> Revenue
-component Broad Audience [0.85, 0.75]
-Revenue -> Broad Audience
-component Value [0.85, 0.85]
-Revenue -> Value
+note "OOG" = "Out of game" [0.97, 0.02]
 
-component Technical R&D [0.82, 0.45]
-Value -> Technical R&D
+component Diegetic [0.21, 0.21] label [-20, -12]
+component Non-diegetic [0.21, 0.67] label [-36, -14]
 
-component Social Capital [0.82, 0.65]
-Value -> Social Capital
-component Game experience [0.82, 0.69]
-Value -> Game experience
+component Ingame [0.44, 0.28] label [-23, -11]
+component Out of game [0.44, 0.56] label [-32, -10]
 
-component Motivation [0.8, 0.25]
-pipeline Motivation [0.1, 0.76]
-Players -> Motivation
-Broad Audience -> Motivation
+component Businesses [1.00, 0.73] label[-33, -12]
+component Value [0.91, 0.64] label[-15, -15]
+component Revenue [0.94, 0.70] label[-22, -12]
+component Broad audience [0.92, 0.73] label[-34, -17]
 
-component Social [0.785, 0.37]
-component Escapism [0.785, 0.41]
-component Distraction [0.785, 0.43]
+component Communities [0.99, 0.86]
+component Identity [0.92, 0.79]
+component Purpose [0.89, 0.90] label [5, -10]
+component Organisation [0.95, 0.89]
 
-component Cheating [0.785, 0.55]
-component Competition [0.785, 0.57]
+component Players [0.99, 0.63] label [-15, -12]
+component Values [0.86, 0.84] label [5, -10]
 
-component Addiction [0.785, 0.7]
-component Fun [0.785, 0.75]
+component Games [0.86, 0.47] label [5, -10]
 
-component Identity Representation [0.75, 0.35]
-Social -> Identity Representation
-Self-expression -> Identity Representation
 
-component Programmed Game [0.75, 0.64]
-Broad Audience -> Programmed Game
-Game experience -> Programmed Game
+pipeline I/O [0.02, 0.98]
+component I/O [0.8, 0.43] label [-8, -15]
+component Buttons [0.8, 0.91]
+component Screen [0.8, 0.79] label [-18, -12]
+component Touch [0.8, 0.74] label [-15, -13]
+component Voice [0.8, 0.68] label [-16, -11]
+component Camera [0.8, 0.49] label [-21, -12]
+component Keyboard [0.8, 0.87] label [-19, -16]
+component Mouse [0.8, 0.83] label [-25, -15]
+component Motion tracking [0.8, 0.29] label [-28, -38]
+component VR [0.8, 0.11]
+component XR [0.8, 0.16] label [-8, -10]
 
-component Content Creator [0.7, 0.46]
-pipeline Content Creator [0.08, 0.73]
-Players -> Content Creator
-Broad Audience -> Content Creator
+pipeline Channels [0.18, 0.98]
+component Channels [0.70, 0.48] label [-23, -13]
+component Heavy multimodality (Discord) [0.7, 0.23] label [-35, -51]
+component Custom platform (leagues) [0.70, 0.43] label [-32, -52]
+component Synchronous text chat [0.7, 0.88] label [-32, -56]
+component Asynchronous text chat [0.7, 0.94] label [-33, -55]
+component Websites [0.7, 0.79] label [-30, -13]
+component Steam [0.70, 0.60]
+component Platforms [0.70, 0.69] label [-28, -16]
 
-component AI Streamer [0.685, 0.175]
-component VTuber [0.685, 0.5]
-component Fan artists/fanfic [0.685, 0.57]
-component Wiki/Lore maintainers [0.685, 0.6]
-component Cosplayer [0.685, 0.65]
-component Streamer [0.685, 0.697]
 
-component Voice Actors [0.65, 0.8]
-Programmed Game -> Voice Actors
+pipeline OOG community content [0.08, 0.93]
+component OOG community content [0.6, 0.43] label [-33, -54]
+component Visual arts [0.6, 0.70] label [-29, 32] // (cosplay / fan art etc) 
+component YouTubers [0.6, 0.62] label [-30, -14] // asynchronous content
+component Live streamers [0.6, 0.55] label [-37, -16] // synchronous content
+component eSports events [0.6, 0.18] label [-43, -17]
+component Lore/Wiki Maintainers [0.6, 0.28] label [-33, -41]
+component Casual events (PAX) [0.6, 0.23] label [-29, -56]
+component In-game photography [0.6, 0.10] label [-27, -40]
+component Game journalism [0.6, 0.80] label [-28, 8]
+component Game reviews [0.60, 0.82] label [-37, -10]
+component Guides and tutorials [0.6, 0.85] label [-35, -64]
+component Fanfiction [0.60, 0.78] label [-30, -18]
+component Tournaments and leagues [0.6, 0.48] label [-31, -53]
+component Merch [0.6, 0.67] label [-18, -17]
+component Warez groups [0.6, 0.74] label [-41, -15]
 
-component Developers [0.63, 0.75]
-Programmed Game -> Developers
+pipeline Governance and rules [0.02, 0.98]
+component Governance and rules [0.50, 0.41] label [-29, -49]
+component DAOs [0.5, 0.04]
+component Self moderation and regulation [0.5, 0.25] label [-33, -70]
+component Community and peer moderation [0.5, 0.64] label [-33, -69]
+component Rigid automated tools [0.5, 0.75] label [-29, -50]
+component Flexable AI automated tools [0.5, 0.14] label [-31, -68]
+component Social norms [0.5, 0.95] label [-42, -16]
+component Moderators and officials [0.5, 0.52] label [-32, -52]
+component Regulations and laws [0.5, 0.91] label [-31, -51]
+component Customer support [0.5, 0.79] label [-29, -39]
+component Game mechanics [0.5, 0.87] label [-58, -15]
 
-component Game Engine Programs [0.6, 0.68]
-Programmed Game -> Game Engine Programs
 
-component Art [0.55, 0.1]
-pipeline Art [0.01, 0.17]
-Self-expression->Art
-Content Creator -> Art
-Cosplayer -> Art
+pipeline Game Mods [0.08, 0.89]
+component Game Mods [0.40, 0.42] label [-31, -13]
+component Aesthetic modifications [0.4, 0.63] label [-32, -38]
+component Heavily altered mechanics [0.4, 0.22] label [-33, -51]
+component API or source code [0.4, 0.67] label [-35, -70]
+component Standards [0.4, 0.76] label [-29, -12] // file formats etc
+component Asset stores [0.4, 0.83] label [-34, -12]
 
-component Interactive World Building [0.53, 0.02]
-component Visual Art [0.53, 0.03]
-component Lore, Storytelling [0.53, 0.05]
-component Dissent [0.53, 0.07]
 
-component Moderation [0.48, 0.27]
-pipeline Moderation [0.1, 0.8]
-Safety->Moderation
-Social Groups -> Moderation
-Broad Audience -> Moderation
+pipeline Tools [0.01, 0.93]
+component Tools [0.30, 0.42] label [-14, -16]
+component AI assisted traditional tools [0.3, 0.23] label [-32, -72]
+component AI first novel tools [0.3, 0.18] label [-32, -70]
+component AI toolchains [0.3, 0.10] label [-35, -12]
+component AI tool entailment [0.3, 0.03] label [-35, -56]
+component Game creation platforms [0.3, 0.66] label [-35, -56]
+component Sculpture, graphics, audio [0.3, 0.80] label [-27, -54]
+component Game engines [0.3, 0.86] label [-40, -16]
 
-component DAOs [0.465, 0.2]
-component Self moderation/regulation [0.465, 0.28]
-component Community/peer moderation [0.465, 0.33]
-component Automated tools [0.465, 0.4]
-component Active human participation [0.465, 0.42]
-component Guided moderation [0.465, 0.5]
 
-component Social Norms [0.4, 0.4]
-Moderation->Social Norms
+//Hmm
+//component Social [0.20, 0.14] // people who want to hang out with friends / community label [-16, -10]
+//component Seeking social [0.21, 0.08] // people who want to hang out with friends / community label [-26, -13]
+//component Hackers [0.10, 0.05] label [-21, -16]
+//component Achievement based [0.17, 0.03] // Speedrunners / Competitive gamers label [-29, -38]
+//component Trolls [0.15, 0.10] label [-16, -13]
+//component Imperfect rule enforcement [0.11, 0.13] label [-1, -17]
+//component Emotional responses [0.11, 0.09] label [-34, 12]
 
-component "Protective" roles [0.4, 0.72]
-pipeline "Protective" roles [0.46, 0.9]
-Moderation -> "Protective" roles
+//component AIs [0.16, 0.14]
 
-component Moderators [0.385, 0.52]
-component Community managers [0.385, 0.57]
-component Social media managers [0.385, 0.59]
-component Customer support [0.385, 0.7]
-component Lawyers [0.385, 0.78]
-component Regulators/Legislators [0.385, 0.82]
-component Regulations/Laws [0.385, 0.88]
-Safety->Regulations/Laws
+//component Shared Experiences [0.92, 0.03] label [-22, -38]
+//component Information filtering systems [0.91, 0.09] label [-31, -53]
 
-component extensions(modding) [0.32, 0.5]
-pipeline extensions(modding) [0.33, 0.8]
-Self-expression->extensions(modding)
-Content Creator->extensions(modding)
-Game Engine Programs->extensions(modding)
+//component Knowledge dissemination [0.33, 0.57] label [-5, -27]
+component Logs / Recordings [0.07, 0.76] label [5, -10]
 
-component hacking [0.305, 0.35]
-component integrated builder kit [0.305, 0.74]
+component Data [0.03, 0.87]
 
-component anti-cheat [0.23, 0.63]
-Community managers->anti-cheat
 
-component Buffer capture [0.2, 0.71]
-"Protective" roles -> Buffer capture
-anti-cheat->Buffer capture
-
-component Standards/Open source [0.18, 0.27]
-extensions(modding)->Standards/Open source
-
-component Telemetry [0.13, 0.9]
-"Protective" roles->Telemetry
-
-component Server storage [0.08, 0.9]
-Telemetry->Server storage
-Buffer capture->Server storage
-
-style wardley
+Communities->Organisation
+Communities->Purpose
+Communities->Identity
+Communities->Revenue
+Communities->Values
+Businesses->Revenue
+Revenue->Broad audience
+Revenue->Value
+Value->Games
+Identity->Games
+Games->I/O
+Organisation->Channels
+Tools->Non-diegetic
+Organisation->Governance and rules
+Governance and rules->Logs / Recordings
+Logs / Recordings->Data
+Game Mods->Ingame
+Game Mods->Out of game
+Trolls->Emotional responses
+Trolls->Imperfect rule enforcement
+AI tool entailment->Logs / Recordings
+Flexable AI automated tools->Logs / Recordings
+Communities->OOG community content
+OOG community content->Game Mods
+Game Mods->Tools
+Games->Tools
+Tools->Diegetic
