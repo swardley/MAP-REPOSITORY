@@ -1,5 +1,7 @@
 style wardley
 
+//Copyright - Creative commmons 4.0 share alike - CC by SA - by the mapping community
+
 title Supply Chain Sustainability
 
 component Producer [0.95, 0.54] label [9, 4]
