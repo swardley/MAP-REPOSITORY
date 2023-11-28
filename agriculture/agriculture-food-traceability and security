@@ -2,6 +2,8 @@ title AGRICULTURE - traceability / security - FEB 2023
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
 style wardley
 
+//Copyright - Creative commmons 4.0 share alike - CC by SA - by the mapping community
+
 component society [0.93, 0.76] label [3, -7]
 component SEED [0.34, 0.55] label [-4, -12]
 component labour [0.10, 0.68] label [-3, 20]
