@@ -1,4 +1,7 @@
-title gender
+//Copyright - Creative commmons 4.0 share alike - CC by SA - by the mapping community
+
+title gender MAR 2022
+
 //components
 component identity [0.99, 0.60] label [13, 3]
 component phenotype [0.16, 0.71] label [13, 4]
