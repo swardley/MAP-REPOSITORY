@@ -1,5 +1,8 @@
 title Cybersecurity, People, May 2023, version 0.3
 evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+
+//Copyright - Creative commmons 4.0 share alike - CC by SA - by the mapping community
+
 style wardley
 
 component External Users [0.95, 0.70] label [2, -10]
