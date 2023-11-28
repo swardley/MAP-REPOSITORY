@@ -1,4 +1,6 @@
 title Game Economies - November 2023
+//CC by SA
+
 anchor Publisher [0.95, 0.43]
 anchor Players [0.95, 0.60]
 component Game [0.87, 0.43] label [12, -14]
