@@ -1,5 +1,7 @@
 title Individual Learning V2
 
+//Copyright - Creative commmons 4.0 share alike - CC by SA - by the mapping community
+
 component Motivation [0.97, 0.60]
 pipeline Motivation [0.88, 0.28]
 component Job [0.96, 0.85] label [-12, -20]
