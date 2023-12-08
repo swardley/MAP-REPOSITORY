@@ -1,0 +1,58 @@
+title Intuitive Finance, Investor, Dec 2023
+evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
+style wardley
+
+
+//Nodes
+component investors [1.00, 0.68] label [-5, -12]
+
+component risk profile [0.86, 0.40] label [-33, -21]
+pipeline risk profile [0.38, 0.72]
+
+component market risk [0.84, 0.42] label [-67, 24]
+component risk appetite [0.84, 0.39] label [-114, 3]
+component brand [0.84, 0.69] label [-25, 20]
+component domain expertise [0.84, 0.57] label [-34, -47]
+component capital [0.84, 0.71] label [19, 1]
+component strategy [0.84, 0.46] label [-8, 24]
+
+component industry [0.20, 0.66] label [15, 3]
+
+component prediction score [0.95, 0.58] label [-74, -30]
+
+component investment type [0.63, 0.68] label [-7, -39]
+pipeline investment type [0.57, 0.72]
+component stock [0.61, 0.64] label [-21, 23]
+component real estates [0.61, 0.68] label [-6, 23]
+component treasury bonds [0.61, 0.62] label [-81, -23]
+pipeline treasury bonds
+
+component derivatives [0.61, 0.58] label [-98, 2]
+pipeline derivatives
+
+component cash [0.61, 0.71] label [19, 3]
+
+component investment criteria checklist [0.40, 0.40] label [-43, -57]
+pipeline investment criteria checklist [0.21, 0.70]
+
+component emotional attachment [0.38, 0.53] label [-10, 12]
+component bias [0.38, 0.38] label [-12, 28]
+component circle of competence [0.38, 0.57] label [-34, -64]
+component executive brand [0.38, 0.24] label [-20, -44]
+component need / product analysis [0.38, 0.51] label [-48, -74]
+component business strategy [0.38, 0.22] label [-49, 15]
+component market analysis [0.38, 0.65] label [-9, 14]
+component finances [0.38, 0.69] label [-33, -25]
+
+component luck [0.94, 0.69] label [8, 5]
+component assets [0.94, 0.67] label [-41, 15]
+
+// link
+investors->prediction score
+prediction score->risk profile
+prediction score->investment type
+investment type->investment criteria checklist
+industry->domain expertise
+circle of competence->industry
+luck->investors
+assets->investors
