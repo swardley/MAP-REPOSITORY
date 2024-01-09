@@ -1,0 +1,38 @@
+
+title Some Random Map
+
+component user [0.99, 0.69]
+component Thing the user needs [0.83, 0.62] label [-63, -28]
+
+component Capability to meet the Thing the user needs [0.62, 0.67] label [-2, -126]
+
+pipeline  Capability to meet the Thing the user needs 
+{
+component competitor 1 [0.52] label [-50, -8],
+component competitor 2 [0.62] label [-48, -6]
+component competitor 3 [0.67] label [-11, 38]
+}
+
+// High links
+
+Thing the user needs->user ; expresses
+Capability to meet the Thing the user needs->Thing the user needs ; fufilled by
+
+// subcomponents
+component thing required [0.32, 0.35] label [19, 3]
+component another thing required [0.35, 0.49] label [1, -1]
+component and another thing [0.08, 0.42] label [-1, -6]
+component and other thing [0.15, 0.62] label [-2, -8]
+
+component other thing [0.30, 0.27] label [-69, 14]
+component expensive consultants [0.48, 0.26] label [-75, -7]
+
+// subcomponent links
+thing required->competitor 3 ; needs
+and another thing->thing required ; needs
+another thing required->competitor 3 ; needs
+expensive consultants->competitor 1 ; uses
+other thing->competitor 1 ; needs
+and other thing->thing required ; needs
+and another thing->another thing required ; needs
+thing required->other thing ; needs
