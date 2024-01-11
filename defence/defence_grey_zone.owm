@@ -5,7 +5,6 @@ evolution genesis / concept -> custom / emerging -> product/ converging -> commo
 
 style wardley
 
-
 component government [0.95, 0.67] label [13, -4]
 component private / proxy [0.88, 0.61] label [3, -25]
 component sovereignty [0.76, 0.59] label [4, -7]

@@ -1,0 +1,13 @@
+title twitter
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+// users
+component user [0.98, 0.70] label [1, -15]
+component twitter [0.98, 0.52] label [-40, -17]
+component advertisers [0.98, 0.66] label [-49, -15]
+component regulators [0.98, 0.58] label [-46, -16]
+component device [0.95, 0.72] label [18, 5]
+
+//Specific needs
+component adverts [0.96, 0.68] label [-61, 4]
