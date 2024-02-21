@@ -1,5 +1,5 @@
 title VALUE TALK, FEB 2024
-evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+evolution genesis / concept -> custom / emerging -> PRODUCT CHARACTERISTICS/ converging -> commodity / accepted
 style wardley
 
 
@@ -14,57 +14,70 @@ component society [0.61] label [-62, 12]
 
 
 //basic components
-component VALUE [0.76, 0.65] label [-15, -11]
+component VALUE [0.78, 0.65] label [-16, -10]
 
 pipeline VALUE 
 {
-    component solves a problem [0.67] label [-5, 25]
+    component solves a problem [0.67] label [7, 29]
     component financial return [0.75] label [8, -21]
     component supports a belief [0.54] label [-82, -12]
 }   
                 
-component payment [0.57, 0.77]
+component payment [0.63, 0.77] label [12, 6]
 
 
-component BELIEFS [0.58, 0.55] label [-56, -10]
+component BELIEFS [0.66, 0.57] label [-34, -13]
 pipeline BELIEFS
 {
  component sustainability [0.53] label [-69, 36]
-component property rights [0.69] label [6, -21]
+component property rights [0.69] label [12, 5]
 }
 
 
-component MEASURES [0.11, 0.67] label [-70, -4]
+component MEASURES [0.06, 0.67] label [-70, -4]
 pipeline MEASURES
 {
     component happy customer [0.69] label [16, 17]
-    component environmental impact [0.57] label [-99, 7]
+    component environmental impact [0.42] label [-96, -4]
 }
 
-component developers [0.81, 0.60] label [7, 6]
+component developers [0.82, 0.60] label [7, 6]
 
-component PRODUCT [0.45, 0.64] label [-58, -5]
+component PRODUCT [0.56, 0.65] label [-61, 4]
 pipeline PRODUCT
+
+component PRODUCT CHARACTERISTICS [0.49, 0.65] label [-17, -38]
+pipeline PRODUCT CHARACTERISTICS
 {
-component technical debt [0.56] label [-18, 35]
-component usability [0.69] label [-9, -5]
-component habitability [0.41] label [-76, 37]
+component technical debt [0.57] label [-72, -5]
+component usability [0.71] label [-33, 41]
+component habitability [0.39] label [-68, 38]
 }
 
-component FEEDBACK [0.31, 0.62] label [-6, -16]
+component FEEDBACK [0.31, 0.63] label [-6, -16]
 pipeline FEEDBACK
 {
-component review [0.65] label [6, 33]
-component demo [0.52] label [-47, 13]
+component review [0.67] label [-34, 34]
+component demo [0.58] label [-11, -7]
 }
 
-component SCENARIO [0.21, 0.59] label [-19, -14]
+component SCENARIO [0.14, 0.52] label [-52, -15]
 pipeline SCENARIO
 {
-component context [0.63] label [-19, -6]
-component conflict [0.54] label [-30, 38]
-component resolution [0.50] label [-88, 13]
+component context [0.53] label [-12, 38]
+component conflict [0.55] label [14, 16]
+component resolution [0.50] label [-60, 38]
 }
+
+component DESIGN [0.41, 0.60] label [10, -2]
+pipeline DESIGN
+{
+component form [0.53] label [-49, 17]
+component content [0.65] label [13, 16]
+}
+
+ 
+
 
 //Links
 financial return->payment
@@ -77,13 +90,17 @@ BELIEFS->supports a belief
 environmental impact->sustainability; understanding of
 solves a problem->BELIEFS ; complies with
 business->developers ; employs
-PRODUCT->property rights
-PRODUCT->payment
-PRODUCT->solves a problem
+PRODUCT ->property rights
+PRODUCT ->payment
+PRODUCT ->solves a problem
 usability->happy customer
 developers->habitability
-PRODUCT->FEEDBACK
+PRODUCT CHARACTERISTICS->FEEDBACK
 review->MEASURES
 SCENARIO->demo
 developers->PRODUCT; builds
 VALUE->SCENARIO
+PRODUCT->PRODUCT CHARACTERISTICS
+PRODUCT->DESIGN
+usability->form
+DESIGN->FEEDBACK
