@@ -1,0 +1,72 @@
+title VALUE TALK, FEB 2024
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+//anchors
+component USERS [0.92, 0.69]
+pipeline USERS
+{
+component public [0.73] label [15, 11]
+component business [0.66] label [-9, 37]
+component society [0.61] label [-62, 12]
+}
+
+
+//basic components
+component VALUE [0.76, 0.69] label [-1, -11]
+
+pipeline VALUE 
+{
+    component solves a problem [0.66] label [6, 28]
+    component financial return [0.75] label [8, -21]
+    component supports a belief [0.54] label [-82, -12]
+}   
+                
+component payment [0.57, 0.77]
+
+
+component BELIEFS [0.58, 0.55] label [-56, -10]
+pipeline BELIEFS
+{
+ component sustainability [0.53] label [-113, 14]
+component property rights [0.69] label [6, -21]
+}
+
+
+component MEASURES [0.21, 0.67] label [-53, -16]
+pipeline MEASURES
+{
+    component happy customer [0.69] label [16, 17]
+    component environmental impact [0.57] label [-99, 7]
+}
+
+component developers [0.81, 0.60] label [-11, -15]
+
+component PRODUCT [0.45, 0.63] label [-55, -10]
+pipeline PRODUCT
+{
+component technical debt [0.46] label [-115, 12]
+component usability [0.65] label [12, 28]
+component habitability [0.52] label [-76, 37]
+}
+
+component feedback [0.31, 0.62] label [-24, -9]
+
+//Links
+financial return->payment
+business->financial return
+public->solves a problem
+supports a belief->society
+happy customer->payment
+happy customer->solves a problem
+BELIEFS->supports a belief
+environmental impact->sustainability; understanding of
+solves a problem->BELIEFS ; complies with
+business->developers
+PRODUCT->property rights
+PRODUCT->payment
+PRODUCT->solves a problem
+usability->happy customer
+developers->habitability
+PRODUCT->feedback
+feedback->MEASURES
