@@ -1,0 +1,69 @@
+title Cyberpunk 2077 - March 2024
+style wardley
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+
+// External Factors
+component GAMING_INDUSTRY [0.91, 0.60] label [-58, -29]
+pipeline GAMING_INDUSTRY
+component CYBERPUNK_GENRE [0.89, 0.82] label [-16, -26]
+pipeline CYBERPUNK_GENRE
+component OPEN_WORLD_GAMES [0.78, 0.71] label [-38, -30] 
+pipeline OPEN_WORLD_GAMES
+component RPG_ELEMENTS [0.74, 0.66] label [-68, -16]
+pipeline RPG_ELEMENTS
+
+// Main Components
+component CYBERPUNK_2077_GAME [0.82, 0.55] label [-123, -12]  
+pipeline CYBERPUNK_2077_GAME
+component STORY_AND_QUESTS [0.61, 0.70] label [34, -21]
+pipeline STORY_AND_QUESTS
+component CHARACTERS [0.44, 0.65] label [8, -5]
+pipeline CHARACTERS
+component NIGHT_CITY_SETTING [0.58, 0.58] label [-40, -22]
+pipeline NIGHT_CITY_SETTING  
+component THEMES [0.37, 0.50] label [-62, 3]
+pipeline THEMES
+component GAMEPLAY_MECHANICS [0.61, 0.46] label [-27, -25]
+pipeline GAMEPLAY_MECHANICS
+
+// Sub-Components
+component V_Storyline [0.53, 0.74] label [9, 1]
+component Side_Quests [0.54, 0.69] label [-35, 20]  
+component Johnny_Silverhand [0.40, 0.60] label [-55, 13]
+component Jackie_Welles [0.32, 0.63] label [-9, 22]
+component Corporations [0.50, 0.57] label [-44, 24]  
+component Cybernetic_Enhancements [0.55, 0.54] label [-49, 6]
+component Transhumanism [0.24, 0.54] label [4, 20]
+component Social_Inequality [0.31, 0.50] label [-80, 9]  
+component Identity_and_Memory [0.22, 0.43] label [-85, 16]
+component First_Person_Shooter [0.45, 0.44] label [-77, 13]
+component Hacking_and_Netrunning [0.50, 0.40] label [-129, -8]  
+component Character_Customization [0.58, 0.40] label [-124, -16]
+
+// Relationships
+CYBERPUNK_GENRE->CYBERPUNK_2077_GAME
+OPEN_WORLD_GAMES->CYBERPUNK_2077_GAME
+RPG_ELEMENTS->CYBERPUNK_2077_GAME
+CYBERPUNK_2077_GAME->STORY_AND_QUESTS
+CYBERPUNK_2077_GAME->CHARACTERS
+CYBERPUNK_2077_GAME->NIGHT_CITY_SETTING
+CYBERPUNK_2077_GAME->THEMES  
+CYBERPUNK_2077_GAME->GAMEPLAY_MECHANICS
+STORY_AND_QUESTS->V_Storyline
+STORY_AND_QUESTS->Side_Quests
+CHARACTERS->Johnny_Silverhand
+CHARACTERS->Jackie_Welles
+NIGHT_CITY_SETTING->Corporations
+NIGHT_CITY_SETTING->Cybernetic_Enhancements
+THEMES->Transhumanism  
+THEMES->Social_Inequality
+THEMES->Identity_and_Memory
+GAMEPLAY_MECHANICS->First_Person_Shooter
+GAMEPLAY_MECHANICS->Hacking_and_Netrunning
+GAMEPLAY_MECHANICS->Character_Customization
+CYBERPUNK_GENRE->THEMES
+CYBERPUNK_GENRE->NIGHT_CITY_SETTING
+OPEN_WORLD_GAMES->NIGHT_CITY_SETTING  
+RPG_ELEMENTS->GAMEPLAY_MECHANICS
+RPG_ELEMENTS->STORY_AND_QUESTS
+GAMING_INDUSTRY->CYBERPUNK_2077_GAME
