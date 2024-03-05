@@ -1,0 +1,100 @@
+//https://onlinewardleymaps.com/#XvHskIirMu2oQBVWxp
+// Claude 3
+
+title Economic Sovereignty in Defence Industry - Claude 3, Mar 2024
+style wardley
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+
+// External Factors  
+component GEOPOLITICAL_DYNAMICS [0.07, 0.73] label [15, 19]
+pipeline GEOPOLITICAL_DYNAMICS
+component TECHNOLOGICAL_ADVANCEMENTS [0.43, 0.62] label [6, -24]  
+pipeline TECHNOLOGICAL_ADVANCEMENTS
+component ECONOMIC_CONDITIONS [0.40, 0.77] label [1, 18]
+pipeline ECONOMIC_CONDITIONS
+
+// Main Components
+component GOVERNMENT [0.99, 0.67] label [-24, -10]
+component DEFENCE_INDUSTRY [0.95, 0.68] label [29, 10]
+pipeline DEFENCE_INDUSTRY  
+component ECONOMIC_SOVEREIGNTY [0.94, 0.56] label [-64, -24]
+pipeline ECONOMIC_SOVEREIGNTY
+component SITUATIONAL_AWARENESS [0.86, 0.45] label [-38, -25]
+pipeline SITUATIONAL_AWARENESS
+component CYBER_DEFENCE [0.76, 0.79] label [15, 2]  
+pipeline CYBER_DEFENCE
+component INTELLIGENCE_GATHERING [0.69, 0.65] label [-93, -18]
+pipeline INTELLIGENCE_GATHERING
+component SUPPLY_CHAIN_RESILIENCE [0.89, 0.31] label [-111, -28] 
+pipeline SUPPLY_CHAIN_RESILIENCE
+component SUPPLY_CHAIN_AWARENESS [0.60, 0.21] label [-56, 22]
+pipeline SUPPLY_CHAIN_AWARENESS
+component INDUSTRY_PARTNERSHIPS [0.3, 0.35] label [-15, -28]
+pipeline INDUSTRY_PARTNERSHIPS
+component RD_AND_INNOVATION [0.15, 0.21] label [-123, -13]
+pipeline RD_AND_INNOVATION
+
+// Sub-Components  
+component Territorial_Awareness [0.26, 0.74] label [44, 24]
+component Economic_awareness [0.78, 0.66] label [-8, -23]
+component Cultural_Awareness [0.80, 0.44] label [-52, 10]  
+component Political_Awareness [0.80, 0.54] label [-26, 10]
+component Threat_Intelligence [0.66, 0.81] label [31, 9]
+component Incident_Response [0.59, 0.79] label [-42, 8]  
+component Vulnerability_Management [0.69, 0.73] label [5, -26]
+component OSINT [0.66, 0.67] label [1, 20]
+component HUMINT [0.62, 0.60] label [-2, 18]
+component SIGINT [0.56, 0.66] label [5, -10]  
+component Secure_Sourcing [0.46, 0.49] label [1, 9] 
+component Logistics_Management [0.43, 0.44] label [-11, 25]
+component Inventory_Management [0.50, 0.44] label [-5, -25]
+component Public_Private_Partnerships [0.18, 0.43] label [2, 12]
+component International_Collaborations [0.27, 0.36] label [34, 10]
+component Technology_Transfer [0.25, 0.3] label [-99, -19]  
+component Basic_Research [0.10, 0.24] label [4, 19]
+component Applied_Research [0.12, 0.26] label [40, -1]  
+component Prototype_Development [0.09, 0.19] label [-43, 12]
+
+
+// Relationships  
+GOVERNMENT->DEFENCE_INDUSTRY
+DEFENCE_INDUSTRY->ECONOMIC_SOVEREIGNTY
+ECONOMIC_SOVEREIGNTY->SITUATIONAL_AWARENESS
+SITUATIONAL_AWARENESS->Territorial_Awareness
+SITUATIONAL_AWARENESS->Cultural_Awareness
+SITUATIONAL_AWARENESS->Political_Awareness  
+ECONOMIC_SOVEREIGNTY->CYBER_DEFENCE
+CYBER_DEFENCE->Threat_Intelligence
+CYBER_DEFENCE->Incident_Response
+CYBER_DEFENCE->Vulnerability_Management
+ECONOMIC_SOVEREIGNTY->INTELLIGENCE_GATHERING
+INTELLIGENCE_GATHERING->OSINT
+INTELLIGENCE_GATHERING->HUMINT
+INTELLIGENCE_GATHERING->SIGINT
+ECONOMIC_SOVEREIGNTY->SUPPLY_CHAIN_RESILIENCE
+SUPPLY_CHAIN_AWARENESS->SUPPLY_CHAIN_RESILIENCE
+SUPPLY_CHAIN_RESILIENCE->Inventory_Management
+ECONOMIC_SOVEREIGNTY->INDUSTRY_PARTNERSHIPS
+INDUSTRY_PARTNERSHIPS->Public_Private_Partnerships
+INDUSTRY_PARTNERSHIPS->International_Collaborations 
+INDUSTRY_PARTNERSHIPS->Technology_Transfer
+ECONOMIC_SOVEREIGNTY->RD_AND_INNOVATION
+RD_AND_INNOVATION->Basic_Research
+RD_AND_INNOVATION->Applied_Research
+RD_AND_INNOVATION->Prototype_Development
+GEOPOLITICAL_DYNAMICS->RD_AND_INNOVATION
+GEOPOLITICAL_DYNAMICS->INDUSTRY_PARTNERSHIPS
+GEOPOLITICAL_DYNAMICS->SUPPLY_CHAIN_RESILIENCE 
+TECHNOLOGICAL_ADVANCEMENTS->RD_AND_INNOVATION
+TECHNOLOGICAL_ADVANCEMENTS->CYBER_DEFENCE
+ECONOMIC_CONDITIONS->SUPPLY_CHAIN_RESILIENCE
+ECONOMIC_CONDITIONS->INDUSTRY_PARTNERSHIPS
+SITUATIONAL_AWARENESS->SUPPLY_CHAIN_AWARENESS 
+Economic_awareness->SITUATIONAL_AWARENESS
+Logistics_Management->Inventory_Management
+Secure_Sourcing->Inventory_Management
+Secure_Sourcing->SUPPLY_CHAIN_AWARENESS
+Economic_awareness->ECONOMIC_CONDITIONS
+Economic_awareness->SUPPLY_CHAIN_AWARENESS
+Logistics_Management->Territorial_Awareness
+TECHNOLOGICAL_ADVANCEMENTS->ECONOMIC_CONDITIONS
