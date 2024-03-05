@@ -1,0 +1,68 @@
+title Animal Farm - March 2024
+style wardley
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+
+// External Factors
+component PUBLISHING_INDUSTRY [0.93, 0.62] label [-14, -25]
+pipeline PUBLISHING_INDUSTRY
+component POLITICAL_SATIRE [0.88, 0.82] label [12, -27]
+pipeline POLITICAL_SATIRE
+component SOVIET_UNION [0.70, 0.75] label [6, -9]  
+pipeline SOVIET_UNION
+component ALLEGORY [0.68, 0.68] label [13, 0]
+pipeline ALLEGORY
+
+// Main Components  
+component ANIMAL_FARM_NOVEL [0.83, 0.56] label [-105, -11]
+pipeline ANIMAL_FARM_NOVEL
+component PLOT_AND_STORY [0.54, 0.70] label [-3, -15]
+pipeline PLOT_AND_STORY
+component CHARACTERS [0.42, 0.64] label [12, -7]  
+pipeline CHARACTERS
+component SETTING [0.59, 0.59] label [-66, -2]
+pipeline SETTING
+component THEMES [0.40, 0.52] label [-49, -16]  
+pipeline THEMES
+component WRITING_STYLE [0.66, 0.46] label [-80, -16]
+pipeline WRITING_STYLE
+
+// Sub-Components
+component Animal_Rebellion [0.44, 0.74] label [25, 15] 
+component Rise_of_Pigs [0.50, 0.69] label [-35, 20]
+component Napoleon [0.34, 0.61] label [-24, 19]
+component Snowball [0.37, 0.66] label [10, 8]  
+component Boxer [0.39, 0.59] label [-53, 7]
+component Manor_Farm [0.51, 0.59] label [-35, 20]
+component Animalism [0.54, 0.56] label [-53, 16]  
+component Totalitarianism [0.26, 0.54] label [-20, 16]
+component Revolution_Betrayed [0.37, 0.48] label [-116, -2]
+component Corruption_of_Power [0.29, 0.48] label [-71, 12]  
+component Simple_Language [0.52, 0.45] label [-65, 9]
+component Irony_And_Satire [0.59, 0.41] label [-113, -4]
+
+// Relationships
+POLITICAL_SATIRE->ANIMAL_FARM_NOVEL
+SOVIET_UNION->ANIMAL_FARM_NOVEL
+ALLEGORY->ANIMAL_FARM_NOVEL
+ANIMAL_FARM_NOVEL->PLOT_AND_STORY
+ANIMAL_FARM_NOVEL->CHARACTERS  
+ANIMAL_FARM_NOVEL->SETTING
+ANIMAL_FARM_NOVEL->THEMES
+ANIMAL_FARM_NOVEL->WRITING_STYLE
+PLOT_AND_STORY->Animal_Rebellion
+PLOT_AND_STORY->Rise_of_Pigs
+CHARACTERS->Napoleon
+CHARACTERS->Snowball
+CHARACTERS->Boxer  
+SETTING->Manor_Farm
+SETTING->Animalism
+THEMES->Totalitarianism
+THEMES->Revolution_Betrayed
+THEMES->Corruption_of_Power
+WRITING_STYLE->Simple_Language
+WRITING_STYLE->Irony_And_Satire
+SOVIET_UNION->THEMES  
+POLITICAL_SATIRE->WRITING_STYLE
+ALLEGORY->CHARACTERS
+ALLEGORY->SETTING
+PUBLISHING_INDUSTRY->ANIMAL_FARM_NOVEL
