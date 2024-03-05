@@ -1,0 +1,68 @@
+title Do Androids Dream of Electric Sheep? - March 2024
+style wardley
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+
+// External Factorspipeline TOLKIEN_MYTHOLOGY
+component PUBLISHING_INDUSTRY [0.93, 0.59] label [-58, -29]
+pipeline PUBLISHING_INDUSTRY
+
+component SCI_FI_GENRE [0.93, 0.74] label [10, 2]  
+pipeline SCI_FI_GENRE
+component COLD_WAR_ANXIETIES [0.74, 0.74] label [-1, -32]
+pipeline COLD_WAR_ANXIETIES
+component EXISTENTIALISM [0.63, 0.70] label [15, -3]
+pipeline EXISTENTIALISM
+
+// Main Components
+component DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP [0.83, 0.57] label [-161, -18]
+pipeline DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP
+component PLOT_AND_STORY [0.55, 0.71] label [12, -7]
+pipeline PLOT_AND_STORY  
+component CHARACTERS [0.35, 0.64] label [13, 5]
+pipeline CHARACTERS
+component SETTING_AND_WORLD [0.69, 0.58] label [-56, -21] 
+pipeline SETTING_AND_WORLD
+component THEMES [0.41, 0.49] label [-67, 10]
+pipeline THEMES
+component WRITING_STYLE [0.66, 0.44] label [-90, -19]
+pipeline WRITING_STYLE
+
+// Sub-Components
+component Bounty_Hunter_Storyline [0.44, 0.73] label [25, 15]
+component Android_Empathy_Test [0.49, 0.69] label [-40, 14]  
+component Rick_Deckard [0.24, 0.63] label [-35, 25]
+component Rachael_Rosen [0.27, 0.68] label [21, 9]
+component Post_Apocalyptic_Earth [0.57, 0.58] label [33, 8]
+component Animal_Extinction [0.54, 0.54] label [-40, 8]
+component Kipple_And_Entropy [0.63, 0.55] label [-43, 5]  
+component Empathy [0.32, 0.54] label [8, 4]
+component What_Is_Human [0.34, 0.50] label [-60, 27]
+component Reality_vs_Illusion [0.28, 0.43] label [-80, 9]
+component Noir_Tone [0.58, 0.45] label [-18, 21]
+component Philosophical_Musings [0.58, 0.41] label [-116, -1]
+
+// Relationships
+SCI_FI_GENRE->DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP
+COLD_WAR_ANXIETIES->DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP
+EXISTENTIALISM->DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP
+DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP->PLOT_AND_STORY
+DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP->CHARACTERS
+DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP->SETTING_AND_WORLD
+DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP->THEMES
+DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP->WRITING_STYLE  
+PLOT_AND_STORY->Bounty_Hunter_Storyline
+PLOT_AND_STORY->Android_Empathy_Test
+CHARACTERS->Rick_Deckard
+CHARACTERS->Rachael_Rosen
+SETTING_AND_WORLD->Post_Apocalyptic_Earth
+SETTING_AND_WORLD->Animal_Extinction
+SETTING_AND_WORLD->Kipple_And_Entropy
+THEMES->Empathy
+THEMES->What_Is_Human
+THEMES->Reality_vs_Illusion
+WRITING_STYLE->Noir_Tone  
+WRITING_STYLE->Philosophical_Musings
+COLD_WAR_ANXIETIES->THEMES
+EXISTENTIALISM->THEMES
+SCI_FI_GENRE->SETTING_AND_WORLD
+PUBLISHING_INDUSTRY->DO_ANDROIDS_DREAM_OF_ELECTRIC_SHEEP
