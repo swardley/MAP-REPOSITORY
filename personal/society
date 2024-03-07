@@ -1,37 +1,42 @@
-title society
+title society. AUGUST 2022
 evolution genesis / concept -> custom / emerging -> product / converging -> commodity / accepted
 style wardley
 
-component government [0.94, 0.67] label [-44, -13]
-component society [0.89, 0.70] label [10, -1]
-component people [0.80, 0.75] label [11, 7]
-component belonging [0.75, 0.59] label [-78, 1]
-component values [0.67, 0.63] label [0, -10]
-pipeline values // [0.40, 0.76]
+component Government [0.97, 0.68] label [-33, -13]
+component society [0.92, 0.71] label [13, -1]
+component people [0.83, 0.74] label [11, 7]
+component belonging [0.76, 0.56] label [-83, 4]
 
-pipeline values [0.37, 0.76]
-component property [0.65, 0.72] label [-24, -20]
-component exclusion [0.32, 0.75] label [6, 12]
-component law [0.17, 0.72] label [6, 7]
-component enforcement [0.11, 0.70] label [9, 9]
+component VALUES [0.66, 0.61] label [-50, -11]
 
-component fairness [0.65, 0.75] label [13, 8]
-component inclusion [0.56, 0.75] label [3, 15]
-component redistribution [0.47, 0.63] label [-81, -9]
-component taxation [0.21, 0.66] label [-69, 5]
+pipeline VALUES
+{
+component property [0.72] label [28, 17]
+component fairness [0.70] label [-58, 36]
+component other [0.40] label [-55, 15]
+}
 
-component market [0.95, 0.60] label [-38, -10]
-component trade [0.90, 0.64] label [-45, 12]
+component inclusion [0.50, 0.63] label [-89, 4]
+component exclusion [0.51, 0.72] label [21, 6]
 
-// component neoliberalism [0.65, 0.38] label [-113, 2]
-// note NOT [0.41, 0.50]
+component law [0.27, 0.72] label [13, 2]
+component enforcement [0.20, 0.65] label [-97, 1]
 
-/links
+component redistribution [0.40, 0.60] label [-118, 3]
+component taxation [0.33, 0.67] label [-56, 17]
+
+component market [0.92, 0.67] label [-52, 2]
+component trade [0.88, 0.65] label [-48, 5]
+component policy [0.13, 0.66] label [-59, 3]
+
+component Parliament [0.06, 0.67] label [-13, 24]
+
+//links
 society->people
-government->society
+Government->society
 people->belonging
 belonging->society
-belonging->values
+belonging->fairness
 
 trade->market
 trade->people
@@ -39,12 +44,12 @@ trade->property
 property->exclusion
 fairness->inclusion
 inclusion->redistribution
-redistribution->exclusion
 redistribution->taxation
 law->enforcement
 law->exclusion
 government->taxation
-government->law
-neoliberalism->law
-neoliberalism +<> taxation
 taxation->law
+Government->market
+people->VALUES
+law->policy
+Parliament->policy
