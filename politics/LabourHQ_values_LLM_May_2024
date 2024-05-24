@@ -1,0 +1,102 @@
+title Labour HQ values, MAY 2024, [created by LLM using GT]
+
+//Copyright - Creative commmons 4.0 share alike - CC by SA - by the mapping community
+
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+
+style wardley
+
+component Media Relations [0.64, 0.26] label [-64, -10]
+
+component Fundraising Activities [0.44, 0.29] label [8, 11]
+
+component Research and Policy Development [0.65, 0.13] label [-55, -31]
+
+component Workers' Rights [0.22, 0.52] label [-63, -12]
+
+component Private Sector Collaboration [0.42, 0.25] label [-61, -16]
+
+component Public Sector Investment [0.74, 0.44] label [4, -18]
+
+component Climate Change Action [0.35, 0.35] label [0, 16]
+
+component Internal Party Democracy [0.46, 0.15] label [-69, -30]
+
+component Digital Transformation [0.30, 0.20] label [-42, 10]
+
+component Anti-Discrimination [0.12, 0.62] label [50, 0]
+
+component Keir Starmer(*) [0.96, 0.17] label [-94, -7]
+
+component Party Policy Framework [0.86, 0.23] label [-80, -19]
+
+component UK Voters(*) [0.90, 0.76] label [7, -10]
+
+component Public Engagement [0.58, 0.37] label [-44, -42]
+
+component Economic Equality [0.78, 0.51] label [-18, -42]
+
+component International Relations [0.18, 0.20] label [-88, -4]
+
+component Social Justice [0.27, 0.58] label [3, 19]
+
+component Stakeholder Engagement [0.49, 0.25] label [-79, -22]
+
+component Community Programs [0.21, 0.32] label [-75, -10]
+
+component Campaign Strategies [0.53, 0.32] label [15, -8]
+
+component Labour Party Members(*) [0.36, 0.69] label [17, -14]
+
+component Education Access [0.07, 0.58] label [12, -15]
+
+component Housing Policy [0.05, 0.46] label [-57, -18]
+
+component National Security [0.08, 0.34] label [2, 13]
+
+component Volunteer Mobilization [0.45, 0.39] label [-13, 13]
+
+component Healthcare Access [0.08, 0.53] label [-31, 10]
+
+component Infrastructure Development [0.70, 0.38] label [-89, -15]
+
+
+Media Relations->Public Engagement
+Research and Policy Development->Campaign Strategies
+Workers' Rights->Anti-Discrimination
+Private Sector Collaboration->Fundraising Activities
+Public Sector Investment->Infrastructure Development
+Public Sector Investment->Healthcare Access
+Public Sector Investment->Education Access
+Climate Change Action->International Relations
+Digital Transformation->Internal Party Democracy
+Keir Starmer(*)->Party Policy Framework
+Keir Starmer(*)->UK Voters(*)
+Keir Starmer(*)->Labour Party Members(*)
+Party Policy Framework->Economic Equality
+Party Policy Framework->Climate Change Action
+Party Policy Framework->Public Sector Investment
+Party Policy Framework->Research and Policy Development
+Economic Equality->Workers' Rights
+Social Justice->Community Programs
+Stakeholder Engagement->Private Sector Collaboration
+Campaign Strategies->Volunteer Mobilization
+Education Access->Social Justice
+Housing Policy->Social Justice
+National Security->International Relations
+Healthcare Access->Social Justice
+
+Labour Party Members(*)->Social Justice
+Workers' Rights->Social Justice
+UK Voters(*)->Social Justice
+Climate Change Action->Social Justice
+Public Engagement->UK Voters(*)
+Media Relations->Party Policy Framework
+Campaign Strategies->Public Engagement
+Volunteer Mobilization->Labour Party Members(*)
+Stakeholder Engagement->Campaign Strategies
+Internal Party Democracy->Party Policy Framework
+Fundraising Activities->Campaign Strategies
+Infrastructure Development->Private Sector Collaboration
