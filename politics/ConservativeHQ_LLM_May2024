@@ -1,0 +1,96 @@
+title Conservative HQ values, MAY 2024, [created by LLM using GT]
+
+//Copyright - Creative commmons 4.0 share alike - CC by SA - by the mapping community
+
+evolution genesis / concept -> custom / emerging -> product/ converging -> commodity / accepted
+style wardley
+
+
+component Party Leadership(*) [0.96, 0.36] label [-89, -33]
+
+component Public Services [0.54, 0.56] label [-25, 12]
+
+component Fiscal Responsibility [0.70, 0.25] label [-87, -34]
+
+component Environmental Policy [0.21, 0.44] label [-25, 12]
+
+component Innovation and Research Investment [0.08, 0.65] label [-70, -26]
+
+component Employment [0.57, 0.47] label [-33, 14]
+
+component Voters(*) [0.93, 0.70] label [13, 3]
+
+component Housing [0.18, 0.27] label [-40, 23]
+
+component Tax Policy [0.59, 0.19] label [-79, -23]
+
+component Education Policy [0.43, 0.54] label [-9, 13]
+
+component Foreign Relations [0.68, 0.71] label [14, -12]
+
+component Healthcare Policy [0.37, 0.47] label [-12, 10]
+
+component Business Support [0.62, 0.53] label [-7, 5]
+
+component Free Market Economy [0.69, 0.63] label [-19, 12]
+
+component Public Spending [0.56, 0.26] label [-64, -7]
+
+component Economic Growth [0.79, 0.51] label [-18, -35]
+
+component Digital Transformation [0.43, 0.67] label [13, -7]
+
+component Local Government [0.10, 0.33] label [5, 3]
+
+component Social Welfare [0.58, 0.36] label [-38, -12]
+
+component Party Members(*) [0.89, 0.20] label [-68, -5]
+
+component Trade Agreements [0.56, 0.76] label [-18, 12]
+
+component Law & Order [0.81, 0.68] label [10, -10]
+
+component National Security [0.86, 0.61] label [-46, -37]
+
+component Infrastructure Development [0.67, 0.39] label [-90, -21]
+
+component Immigration Policy [0.74, 0.73] label [12, -19]
+
+
+Party Leadership(*)->Fiscal Responsibility
+Party Leadership(*)->Economic Growth
+Party Leadership(*)->National Security
+Party Leadership(*)->Education Policy
+Party Leadership(*)->Healthcare Policy
+Party Leadership(*)->Social Welfare
+Party Leadership(*)->Housing
+Party Leadership(*)->Immigration Policy
+Party Leadership(*)->Foreign Relations
+Party Leadership(*)->Environmental Policy
+Party Leadership(*)->Digital Transformation
+Party Leadership(*)->Infrastructure Development
+Fiscal Responsibility->Tax Policy
+Fiscal Responsibility->Public Spending
+Voters(*)->Party Leadership(*)
+Foreign Relations->Trade Agreements
+Business Support->Employment
+Free Market Economy->Business Support
+Economic Growth->Free Market Economy
+Digital Transformation->Public Services
+Digital Transformation->Innovation and Research Investment
+Party Members(*)->Party Leadership(*)
+National Security->Law & Order
+Infrastructure Development->Local Government
+Trade Agreements->Free Market Economy
+Housing->Local Government
+Economic Growth->Fiscal Responsibility
+Social Welfare->Public Spending
+Infrastructure Development->Public Spending
+Infrastructure Development->Economic Growth
+Infrastructure Development->Business Support
+Public Spending->Public Services
+Digital Transformation->Economic Growth
+Employment->Voters(*)
+Social Welfare->Voters(*)
+Healthcare Policy->Social Welfare
+Education Policy->Social Welfare
