@@ -110,7 +110,7 @@ risk register->Incident Response
 Security Testing->Penetration testing
 Security Testing->Bug bounty
 
-note +Controlled bets / opportunities [0.97, 0.45] label [0.97, 0.45]
+note +Controlled bets / opportunities [0.97, 0.45] // label [0.97, 0.45]
 note +Regulatory Obligations [0.93, 0.59]
 
 component Penetration testing [0.41, 0.76] label [10, -17]
