@@ -9,100 +9,121 @@ note (supply chain) [0.07, 0.21]
 
 component legitimacy [0.96, 0.59] label [-74, -7]
 component threat [0.92, 0.64] label [9, 7]
-
-component zero_day [0.47, 0.43] label [-15, 23]
-
-// TACTIC pipeline and components
+component statecraft [0.22, 0.39] label [-44, -16]
+component zero day [0.47, 0.43] label [-15, 23]
 component TACTIC [0.64, 0.71] label [7, -7]
 pipeline TACTIC [0.64, 0.76]
-component exfiltration [0.625, 0.7535] label [19, 5]
-component infiltration [0.625, 0.6465] label [-106, 2]
 
-// TARGET pipeline and components
-component TARGET [0.35, 0.63] label [-44, -9]
-pipeline TARGET [0.57, 0.73]
-component defense_in_depth [0.335, 0.5765] label [-105.23, -7.57]
-component defensive_tools [0.335, 0.66] label [-2, 15]
-component separation_of_concerns [0.335, 0.7235] label [59.27, -5.00]
-
-// OPERATING_MODEL pipeline and components
-component OPERATING_MODEL [0.14, 0.62] label [13, -26]
-pipeline OPERATING_MODEL [0.43, 0.67]
-component centralised [0.125, 0.6635] label [16, 6]
-component decentralised [0.125, 0.4365] label [-26, 20]
-
-// EXPLOITS pipeline and components
-component EXPLOITS [0.49, 0.66] label [-16.00, -11.00]
-pipeline EXPLOITS [0.36, 0.72]
-component standard_exploits [0.475, 0.7135] label [43.94, -7.00]
-component target_location [0.475, 0.56] label [-53, 13]
-component social_engineering [0.475, 0.60] label [-23, -40]
-component misinformation [0.475, 0.49] label [-57, -17]
-component hacktivism [0.475, 0.3665] label [-83.38, 1.76]
-
-// EFFECT pipeline and components
-component EFFECT [0.75, 0.51] label [-46, -11]
-pipeline EFFECT [0.4, 0.65]
-component political_effect [0.735, 0.58] label [-39, 12]
-component economic_effect [0.735, 0.4065] label [-104.01, -7.89]
-component cultural_effect [0.735, 0.47] label [-53, 14]
-component material_effect [0.735, 0.6435] label [33.62, -9.04]
-
-// SUPPORTING_THE_MILITARY_COMPLEX pipeline and components
-component SUPPORTING_THE_MILITARY_COMPLEX [0.83, 0.69] label [51.30, -29.14]
-pipeline SUPPORTING_THE_MILITARY_COMPLEX
-
-// CYBERSECURITY_DOCTRINE pipeline and components
-component CYBERSECURITY_DOCTRINE [0.24, 0.53] label [-78, -29]
-pipeline CYBERSECURITY_DOCTRINE [0.38, 0.58]
-component education [0.225, 0.5735] label [-51, 23]
-component awareness [0.225, 0.47] label [-12.46, 19.82]
-component statecraft [0.225, 0.3865] label [-79.22, 2.65]
-
-// Other components
+component standard exploits [0.47, 0.71] label [17, -7]
+component defense in depth [0.33, 0.58] label [-70, -20]
+component defensive tools [0.33, 0.66] label [-2, 15]
+component separation of concerns [0.33, 0.72] label [23, -5]
 component threshold [0.76, 0.29] label [-68, -11]
 component risk [0.64, 0.24] label [-48, -1]
 component appetite [0.54, 0.19] label [-73, 0]
 // component military [0.89, 0.58] label [-19, 19]
 // component citizen [0.87, 0.70]
 component government [0.99, 0.65] label [-47, -10]
-component information_operations [0.91, 0.54] label [-81, -24]
+component information operations [0.91, 0.54] label [-81, -24]
 // component orchestration [0.30, 0.26] label [-51, 17]
-// component power_to_the_edge [0.03, 0.39] label [-73, -40]
-// component historical_constraints [0.78, 0.04] label [22, -6]
+component TARGET [0.35, 0.63] label [-44, -9]
+pipeline TARGET [0.57, 0.73]
+// component power to the edge [0.03, 0.39] label [-73, -40]
+component awareness [0.22, 0.46] label [-28, 25]
+component education [0.22, 0.57] label [-51, 23]
+// component historical constraints [0.78, 0.04] label [22, -6]
 component protect [0.81, 0.56] label [8, 3]
+component exfiltration [0.62, 0.75] label [19, 5]
+component political effect [0.73, 0.58] label [-39, 12]
+component economic effect [0.73, 0.41] label [-75, -11]
+component cultural effect [0.73, 0.47] label [-53, 14]
+component target location [0.47, 0.56] label [-53, 13]
+component social engineering [0.47, 0.60] label [-23, -40]
+component hacktivism [0.47, 0.37] label [-44, -20]
 component deniability [0.86, 0.45] label [-93, 6]
+component misinformation [0.47, 0.49] label [-57, -17]
 // component trust [0.03, 0.53] label [-47, 5]
-// component command_and_control [0.08, 0.63] label [6, -43]
-// pipeline command_and_control [0.43, 0.67]
+component OPERATING MODEL [0.14, 0.62] label [13, -26]
+pipeline OPERATING MODEL [0.43, 0.67]
+// component command and control [0.08, 0.63] label [6, -43]
+// pipeline command and control [0.43, 0.67]
+component centralised [0.12, 0.66] label [16, 6]
+component decentralised [0.12, 0.44] label [-26, 20]
+component EXPLOITS [0.49, 0.66] label [-16, -11]
+pipeline EXPLOITS [0.36, 0.72]
+component material effect [0.73, 0.64] label [16, -8]
+component infiltration [0.62, 0.65] label [-106, 2]
+component EFFECT [0.75, 0.51] label [-46, -11]
+pipeline EFFECT [0.4, 0.65]
+component offense [0.84, 0.53] label [-60, -5]
 // component society [0.95, 0.46]
 // component beliefs [0.87, 0.38] label [-55, -5]
 // component espionage [0.37, 0.68] label [6, 3]
 // component success [0.56, 0.31] label [-28, -19]
-component supply_chain [0.03, 0.65] label [8, 4]
+component SUPPORTING THE MILITARY COMPLEX [0.83, 0.69] label [14, -25]
+pipeline SUPPORTING THE MILITARY COMPLEX
+component supply chain [0.03, 0.65] label [8, 4]
 component skillsets [0.55, 0.72] label [13, 2]
 // component marketplace [0.41, 0.59] label [-20, 21]
-component awareness_of [0.10, 0.29] label [-98, 4]
-component offense [0.84, 0.53] label [-60, -5]
+component CYBERSECURITY DOCTRINE [0.24, 0.53] label [-78, -29]
+pipeline CYBERSECURITY DOCTRINE [0.38, 0.58]
+
+component awareness of [0.10, 0.29] label [-98, 4]
 
 //links
-EXPLOITS -> skillsets
-skillsets -> TACTIC
-TACTIC -> EXPLOITS
-information_operations->deniability
-information_operations->protect
+military->information operations
+information operations->deniability
+information operations->protect
 protect->EFFECT
-information_operations->offense
+information operations->offense
 offense->EFFECT
+// government->political effect
+citizen->political effect
+government->citizen
+// EFFECT->EXPLOITS
+deep fakes->trust
+EXPLOITS->command and control
+centralised->trust
+government->military
+society->citizen
+society->beliefs
+infiltration->espionage
+espionage->deniability
+beliefs->success
+EFFECT->success
+success->hacktivism
+information operations->cost of war
+// skillsets->information operations
+skillsets->EXPLOITS
+cost->information operations
+EXPLOITS->marketplace
+cost->marketplace
+government->trust
+hacktivism->orchestration
+decentralised->power to the edge
+hacktivism->power to the edge
 EXPLOITS->TARGET
-TARGET->CYBERSECURITY_DOCTRINE
-protect->CYBERSECURITY_DOCTRINE
+TARGET->CYBERSECURITY DOCTRINE
+protect->CYBERSECURITY DOCTRINE
 offense->threshold
 threshold->risk
-risk->awareness_of
+risk->awareness of
 risk->appetite
-government->legitimacy
-information_operations->legitimacy
-EXPLOITS->OPERATING_MODEL
-awareness_of->supply_chain
-EFFECT->supply_chain
+marketplace->criminal activity
+criminal activity->marketplace
+hacktivism->criminal activity
+social media->awareness
+government-> legitimacy
+information operations -> legitimacy
+EXPLOITS->OPERATING MODEL
+awareness of->supply chain
+EFFECT->supply chain
+social engineering->awareness
+outcome->EXPLOITS
+EFFECT->goal
+goal->EXPLOITS
+EFFECT->TACTIC
+TACTIC->EXPLOITS
+TACTIC->skillsets
+information operations->SUPPORTING THE MILITARY COMPLEX
+awareness->awareness of
