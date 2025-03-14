@@ -12,7 +12,7 @@ component threat [0.92, 0.64] label [9, 7]
 component statecraft [0.22, 0.39] label [-44, -16]
 component zero_day [0.47, 0.43] label [-15, 23]
 component TACTIC [0.64, 0.71] label [7, -7]
-pipeline TACTIC [0.60, 0.80]
+pipeline TACTIC [0.64, 0.76]
 
 component standard_exploits [0.47, 0.71] label [17, -7]
 component defense_in_depth [0.33, 0.58] label [-70, -20]
@@ -28,10 +28,10 @@ component information_operations [0.91, 0.54] label [-81, -24]
 // component orchestration [0.30, 0.26] label [-51, 17]
 component TARGET [0.35, 0.63] label [-44, -9]
 pipeline TARGET [0.57, 0.73]
-// component power to the edge [0.03, 0.39] label [-73, -40]
+// component power_to_the_edge [0.03, 0.39] label [-73, -40]
 component awareness [0.22, 0.46] label [-28, 25]
 component education [0.22, 0.57] label [-51, 23]
-// component historical constraints [0.78, 0.04] label [22, -6]
+// component historical_constraints [0.78, 0.04] label [22, -6]
 component protect [0.81, 0.56] label [8, 3]
 component exfiltration [0.62, 0.75] label [19, 5]
 component political_effect [0.73, 0.58] label [-39, 12]
@@ -45,8 +45,8 @@ component misinformation [0.47, 0.49] label [-57, -17]
 // component trust [0.03, 0.53] label [-47, 5]
 component OPERATING_MODEL [0.14, 0.62] label [13, -26]
 pipeline OPERATING_MODEL [0.43, 0.67]
-// component command and control [0.08, 0.63] label [6, -43]
-// pipeline command and control [0.43, 0.67]
+// component command_and_control [0.08, 0.63] label [6, -43]
+// pipeline command_and_control [0.43, 0.67]
 component centralised [0.12, 0.66] label [16, 6]
 component decentralised [0.12, 0.44] label [-26, 20]
 component EXPLOITS [0.49, 0.66] label [-16, -11]
@@ -60,8 +60,8 @@ component offense [0.84, 0.53] label [-60, -5]
 // component beliefs [0.87, 0.38] label [-55, -5]
 // component espionage [0.37, 0.68] label [6, 3]
 // component success [0.56, 0.31] label [-28, -19]
-component SUPPORTING_MILITARY_COMPLEX [0.83, 0.69] label [14, -25]
-pipeline SUPPORTING_MILITARY_COMPLEX [0.65, 0.75]
+component SUPPORTING_THE_MILITARY_COMPLEX [0.83, 0.69] label [14, -25]
+pipeline SUPPORTING_THE_MILITARY_COMPLEX
 component supply_chain [0.03, 0.65] label [8, 4]
 component skillsets [0.55, 0.72] label [13, 2]
 // component marketplace [0.41, 0.59] label [-20, 21]
@@ -76,31 +76,6 @@ information_operations->protect
 protect->EFFECT
 information_operations->offense
 offense->EFFECT
-// government->political effect
-citizen->political_effect
-government->citizen
-// EFFECT->EXPLOITS
-deep fakes->trust
-EXPLOITS->command and control
-centralised->trust
-government->military
-society->citizen
-society->beliefs
-infiltration->espionage
-espionage->deniability
-beliefs->success
-EFFECT->success
-success->hacktivism
-information_operations->cost of war
-// skillsets->information operations
-skillsets->EXPLOITS
-cost->information operations
-EXPLOITS->marketplace
-cost->marketplace
-government->trust
-hacktivism->orchestration
-decentralised->power to the edge
-hacktivism->power to the edge
 EXPLOITS->TARGET
 TARGET->CYBERSECURITY_DOCTRINE
 protect->CYBERSECURITY_DOCTRINE
@@ -108,21 +83,14 @@ offense->threshold
 threshold->risk
 risk->awareness_of
 risk->appetite
-marketplace->criminal activity
-criminal activity->marketplace
-hacktivism->criminal activity
-social media->awareness
-government-> legitimacy
-information_operations-> legitimacy
+government->legitimacy
+information_operations->legitimacy
 EXPLOITS->OPERATING_MODEL
 awareness_of->supply_chain
 EFFECT->supply_chain
 social_engineering->awareness
-outcome->EXPLOITS
-EFFECT->goal
-goal->EXPLOITS
 EFFECT->TACTIC
 TACTIC->EXPLOITS
 TACTIC->skillsets
-information_operations->SUPPORTING_MILITARY_COMPLEX
+information_operations->SUPPORTING_THE_MILITARY_COMPLEX
 awareness->awareness_of
