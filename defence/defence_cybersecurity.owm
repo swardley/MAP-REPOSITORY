@@ -9,7 +9,7 @@ note (supply chain) [0.07, 0.21]
 
 component legitimacy [0.96, 0.59] label [-74, -7]
 component threat [0.92, 0.64] label [9, 7]
-component statecraft [0.22, 0.39] label [-85.44, -5.64]
+
 component zero_day [0.47, 0.43] label [-15, 23]
 
 // TACTIC pipeline and components
@@ -32,7 +32,7 @@ component centralised [0.125, 0.6635] label [16, 6]
 component decentralised [0.125, 0.4365] label [-26, 20]
 
 // EXPLOITS pipeline and components
-component EXPLOITS [0.49, 0.66] label [-16, -11]
+component EXPLOITS [0.49, 0.66] label [-16.00, -11.00]
 pipeline EXPLOITS [0.36, 0.72]
 component standard_exploits [0.475, 0.7135] label [43.94, -7.00]
 component target_location [0.475, 0.56] label [-53, 13]
@@ -49,14 +49,15 @@ component cultural_effect [0.735, 0.47] label [-53, 14]
 component material_effect [0.735, 0.6435] label [33.62, -9.04]
 
 // SUPPORTING_THE_MILITARY_COMPLEX pipeline and components
-component SUPPORTING_THE_MILITARY_COMPLEX [0.83, 0.69] label [14, -25]
+component SUPPORTING_THE_MILITARY_COMPLEX [0.83, 0.69] label [51.30, -29.14]
 pipeline SUPPORTING_THE_MILITARY_COMPLEX
 
 // CYBERSECURITY_DOCTRINE pipeline and components
 component CYBERSECURITY_DOCTRINE [0.24, 0.53] label [-78, -29]
 pipeline CYBERSECURITY_DOCTRINE [0.38, 0.58]
 component education [0.225, 0.5735] label [-51, 23]
-component awareness [0.22, 0.47] label [-12.46, 19.82]
+component awareness [0.225, 0.47] label [-12.46, 19.82]
+component statecraft [0.225, 0.3865] label [-79.22, 2.65]
 
 // Other components
 component threshold [0.76, 0.29] label [-68, -11]
@@ -85,6 +86,9 @@ component awareness_of [0.10, 0.29] label [-98, 4]
 component offense [0.84, 0.53] label [-60, -5]
 
 //links
+EXPLOITS -> skillsets
+skillsets -> TACTIC
+TACTIC -> EXPLOITS
 information_operations->deniability
 information_operations->protect
 protect->EFFECT
@@ -102,5 +106,3 @@ information_operations->legitimacy
 EXPLOITS->OPERATING_MODEL
 awareness_of->supply_chain
 EFFECT->supply_chain
-social_engineering->awareness
-EFFECT->TACTIC
